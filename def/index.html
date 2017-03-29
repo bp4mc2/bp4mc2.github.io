@@ -1,0 +1,159 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://dublincore.org/documents/dcmi-terms/> .
+@prefix ro: <http://www.obofoundry.org/ro/> .
+@prefix lifecycle: <http://vocab.org/lifecycle/schema> .
+@prefix bp4mc2: <http://bp4mc2.org/def#> .
+
+### Class definitions ###
+
+bp4mc2:Concept		a	owl:Class;
+	rdfs:label			"Concept"@en;
+	rdfs:label			"Begrip"@nl;
+	rdfs:subClassOf		skos:Concept;
+.
+bp4mc2:Domain		a	owl:Class;
+	rdfs:label			"Domain"@en;
+	rdfs:label			"Domein"@nl;
+	rdfs:subClassOf		skos:Scheme;
+.
+
+### Datatype properties - Descriptive ###
+
+bp4mc2:name			a	owl:DatatypeProperty;
+	rdfs:label			"name"@en;
+	rdfs:label			"naam"@nl;
+	rdfs:subPropertyOf	skos:prefLabel;
+.
+bp4mc2:definition	a	owl:DatatypeProperty;
+	rdfs:label			"definition"@en;
+	rdfs:label			"definitie"@nl;
+	rdfs:subPropertyOf	skos:definition;
+.
+bp4mc2:comment		a	owl:DatatypeProperty;
+	rdfs:label			"comment"@en;
+	rdfs:label			"uitleg"@nl;
+	rdfs:subPropertyOf	rdfs:comment;
+.
+bp4mc2:clarification	a	owl:DatatypeProperty;
+	rdfs:label			"clarification"@en;
+	rdfs:label			"toelichting"@nl;
+	rdfs:subPropertyOf	skos:scopeNote;
+.
+bp4mc2:rationale	a	owl:DatatypeProperty;
+	rdfs:label			"rationale"@en;
+	rdfs:label			"rationale"@nl;
+	rdfs:subPropertyOf	skos:editorialNote;
+.
+bp4mc2:synonym		a	owl:DatatypeProperty;
+	rdfs:label			"synonym"@en;
+	rdfs:label			"synoniem"@nl;
+	rdfs:subPropertyOf	skos:altLabel;
+.
+bp4mc2:origin		a	owl:DatatypeProperty;
+	rdfs:label			"origin"@en;
+	rdfs:label			"herkomst"@nl;
+	rdfs:subPropertyOf	skos:editorialNote;
+	rdfs:comment		"The origin gives a non-formal description of the origin of the semantics of a concept, in contrast to the source, which gives a formal reference to the source of the semantics"@en;
+	rdfs:comment		"De herkomst geeft een niet-formele beschrijving van de herkomst van de betekenis van een begrip, in tegenstelling tot de bron, die een formele referentie bevat naar de bron van de betekenis"@nl;
+.
+
+### Datatype properties - Meta ###
+
+bp4mc2:verification-annotation	a	owl:DatatypeProperty;
+	rdfs:label			"verification annotation"@en;
+	rdfs:label			"verificatie annotatie"@nl;
+	rdfs:subPropertyOf	skos:editorialNote;
+.
+bp4mc2:validation-annotation	a	owl:DatatypeProperty;
+	rdfs:label			"validation annotation"@en;
+	rdfs:label			"validatie annotatie"@nl;
+	rdfs:subPropertyOf	skos:editorialNote;
+.
+bp4mc2:change-note	a	owl:DatatypeProperty;
+	rdfs:label			"change note"@en;
+	rdfs:label			"wijzigingsnotitie"@nl;
+	rdfs:subPropertyOf	skos:changeNote;
+.
+
+### Object properties - Model relations ###
+
+bp4mc2:specialization-of	a	owl:ObjectProperty;
+	rdfs:label			"specialization of"@en;
+	rdfs:label			"specialisatie van"@nl;
+	rdfs:subPropertyOf	skos:broader;
+.
+bp4mc2:generalization-of	a	owl:ObjectProperty;
+	rdfs:label			"generalization of"@en;
+	rdfs:label			"generalisatie van"@nl;
+	rdfs:subPropertyOf	skos:narrower;
+.
+bp4mc2:part-of		a	owl:ObjectProperty;
+	rdfs:label			"part of"@en;
+	rdfs:label			"onderdeel van"@nl;
+	rdfs:subPropertyOf	ro:part_of;
+.
+bp4mc2:has-part		a	owl:ObjectProperty;
+	rdfs:label			"has part"@en;
+	rdfs:label			"bestaat uit"@nl;
+	rdfs:subPropertyOf	ro:has_part;
+.
+bp4mc2:related		a	owl:ObjectProperty;
+	rdfs:label			"related"@en;
+	rdfs:label			"gerelateerd aan"@nl;
+	rdfs:subPropertyOf	skos:semanticRelation;
+.
+bp4mc2:see-also		a	owl:ObjectProperty;
+	rdfs:label			"see also"@en;
+	rdfs:label			"zie ook"@nl;
+	rdfs:subPropertyOf	skos:related;
+.
+
+### Object properties - Intermodel relations ###
+
+bp4mc2:resembles	a	owl:ObjectProperty;
+	rdfs:label			"resembles"@en;
+	rdfs:label			"lijkt op"@nl;
+	rdfs:subPropertyOf	skos:relatedMatch;
+.
+bp4mc2:matches	a	owl:ObjectProperty;
+	rdfs:label			"matches"@en;
+	rdfs:label			"gelijk aan"@nl;
+	rdfs:subPropertyOf	skos:exactMatch;
+.
+bp4mc2:same-as		a	owl:ObjectProperty;
+	rdfs:label			"same-as"@en;
+	rdfs:label			"exact gelijk aan"@nl;
+	rdfs:subPropertyOf	owl:sameAs;
+.
+bp4mc2:represents	a	rdfs:Property;
+	rdfs:label			"represents"@en;
+	rdfs:label			"representeert"@nl;
+	rdfs:comment		"The represents property is used to link an implementation class (e.g. owl:Class) with a bp4mc2:Concept. It states that the owl:Class represents (information about) the bp4mc2:Concept"@en;
+	rdfs:comment		"De representeert eigenschap wordt gebruikt om een implementatieklasse (bv: owl:Class) te relateren aan een bp4mc2 begrip. Het stelt dat de owl:Class een representatie is van (informatie over) een bp4mc2 begrip"@nl;
+.
+
+### Object properties - Descriptive ###
+
+bp4mc2:domain		a	owl:ObjectProperty;
+	rdfs:label			"domain"@en;
+	rdfs:label			"domein"@nl;
+	rdfs:subPropertyOf	skos:inScheme;
+.
+bp4mc2:source		a	owl:ObjectProperty;
+	rdfs:label			"source"@en;
+	rdfs:label			"bron"@nl;
+	rdfs:subPropertyOf	dcterms:source;
+	rdfs:comment		"States the source of the semantics of a concept. Should be a resource, such as (a reference to) a law, regulation or simple a document"@en;
+	rdfs:comment		"Betreft de bron van de betekenis van een begrip. Dit behoord een resource te zijn, zoals (een verwijzing naar) een wet, regeling of simpelweg een document"@nl;
+.
+
+### Object properties - meta ###
+
+bp4mc2:status		a	owl:ObjectProperty;
+	rdfs:label			"status"@en;
+	rdfs:label			"status"@nl;
+	rdfs:subPropertyOf	lifecycle:status;
+.

@@ -1,0 +1,2060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:UML="http://www.kenniskluis.nl/uml/2.2#" xmlns:cogniam="http://www.pna-consulting.com/doctool/2.0/rdf#" xmlns:doctool="http://www.pna-consulting.com/doctool/2.0/export.xsd" xmlns:elmoview="http://xmlns.org/2012/02/26/elmoview#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>Best Practices for meaningful connected computing</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+	</head>
+	<body>
+		<div class="body">
+			<h1><img class="logo" src="plaatjes/bp4mc2.png" alt="bp4mc2"/>Best Practices for meaningful connected computing</h1>
+			<h2>PiLOD resultaten - best practices voor betekenisvol verbinden van informatievoorzieningen met Linked Data</h2>
+			<dl>
+				<dt>Deze versie:</dt>
+				<dd>
+					<a href="http://www.bp4mc2.org/2014-06-06">http://www.bp4mc2.org/2014-06-06</a>
+				</dd>
+				<dt>Laatste versie:</dt>
+				<dd>
+					<a href="http://www.bp4mc2.org">http://www.bp4mc2.org</a>
+				</dd>
+				<dt>Vorige versie:</dt>
+				<dd>
+					<a href="http://www.bp4mc2.org/2014-06-02">http://www.bp4mc2.org/2014-06-02</a>
+				</dd>
+				<dt>Auteurs:</dt>
+				<dd>Marco Brattinga, Hans Overbeek, Arjen Santema</dd>
+				<dt>Bijdragen van:</dt>
+				<dd/>
+			</dl>
+			<hr/>
+			<h2>Samenvatting</h2>
+			<samenvatting>
+				<p>De afgelopen drie jaar is vanuit het Platform implementatie Linked (Open) Data (PiLOD) onderzoek uitgevoerd en concrete ervaring opgedaan met de mogelijkheden die het internet biedt voor het ontsluiten en uitwisselen van informatie met behulp van ‘linked data’.</p>
+				<p>Dit heeft geleid tot een schat aan (best) practices rondom de denkwijze, werkwijze en modelleerwijze van semantiek, datamodellen en uitwisselingsstandaarden. Dit document geeft een beschrijving van deze best-practices.</p>
+				<p>Geheel in stijl met het principe van ‘linked data’, is zoveel mogelijk geprobeerd om dit document te verbinden met andere informatiebronnen die op het internet beschikbaar zijn, zoals wetenschappelijke publicaties, andere best-practices en relevante onderzoeken en standaarden.</p>
+				<p>Dit document is niet bedoeld als academisch of wetenschappelijk verantwoorde vastlegging van een onderzoeksresultaat. Ook is dit document niet bedoeld als standaard. Het document bevat (best) practices: ervaringen die -in een specifieke context- nuttig bleken.</p>
+			</samenvatting>
+			<h2>Status van dit document</h2>
+			<documentstatus>
+				<p>Dit document is in ontwikkeling.</p>
+			</documentstatus>
+			<hr/>
+			<h2>Inhoudsopgave</h2>
+			<ul class="toc">
+				<li>
+					<a href="#inleiding">1 Inleiding</a>
+				</li>
+				<ul>
+					<li>
+						<a href="#aanleiding">1.1 Aanleiding</a>
+					</li>
+					<ul>
+						<li>1.1.1 De waarde van informatie</li>
+						<li>1.1.2 De e-overheid: de waarde van informatie voor de Nederlandse overheid</li>
+						<li>1.1.3 Linked Data</li>
+					</ul>
+					<li>
+						<a href="#principes">1.2 Van 20e eeuw principes naar 21e eeuw principes</a>
+					</li>
+					<li>
+						<a href="#aanpak">1.3 BP4MC2: Een bruikbare en in de praktijk bewezen aanpak</a>
+					</li>
+					<li>
+						<a href="#opbouw">1.4 Opbouw van dit document</a>
+					</li>
+				</ul>
+				<li>
+					<a href="#denkwijze">2 Denkwijze</a>
+				</li>
+				<ul>
+					<li>
+						<a href="#semantiek">2.1 De symboliek van communicatie: termen, woorden en URI's</a>
+					</li>
+					<ul>
+						<li>2.1.1 Begripsdriehoek</li>
+						<li>2.1.2 Context: spreker en toehoorder</li>
+						<li>2.1.3 URI-term</li>
+						<li>2.1.4 Begrippen in deze sectie</li>
+					</ul>
+					<li>
+						<a href="#communicatievorm">2.2 Vorm van communicatie</a>
+					</li>
+					<ul>
+						<li>2.2.1 Soorten zinnen naar communicatieve functie</li>
+						<li>2.2.2 HTTP (Hypertext Transfer Protocol)</li>
+						<li>2.2.3 De mededelende zin</li>
+						<li>2.2.4 De URI (Uniform Resource Identifier)</li>
+						<li>2.2.5 De URL (Uniform Resource Location) als vraag</li>
+						<li>2.2.6 Overige URL vragen</li>
+						<li>2.2.7 Begrippen in deze sectie</li>
+					</ul>
+					<li>
+						<a href="#semantiek">2.3 Betekenis van communicatie</a>
+					</li>
+					<ul>
+						<li>2.3.1 Feiten: omstandigheden en gebeurtenissen</li>
+						<li>2.3.2 Relatie tussen de brute werkelijkheid en de institutionele, juridische werkelijkheid</li>
+						<li>2.3.3 Administratieve werkelijkheid</li>
+						<li>2.3.4 Begrippen in deze sectie</li>
+					</ul>
+					<li>
+						<a href="#gebruik">2.4 Gebruik</a>
+					</li>
+					<ul>
+						<li>2.4.1 Begrippen</li>
+						<li>2.4.2 Formalisering in een axiomatisch begrippenstelsel</li>
+						<li>2.4.3 Brute werkelijkheid versus data</li>
+						<li>2.4.4 Context van data</li>
+						<li>2.4.5 Correcties</li>
+						<li>2.4.6 Van begrippen naar (vastlegging van) data</li>
+						<li>2.4.7 Begrippen in deze sectie</li>
+					</ul>
+				</ul>
+				<li>
+					<a href="#modelleerwijze">3 Modelleerwijze</a>
+				</li>
+				<ul>
+					<li>
+						<a href="#uri-strategie">3.1 URI Design pattern voor Linked Data</a>
+					</li>
+					<ul>
+						<li>3.1.1 No register, no identifier</li>
+						<li>3.1.2 No register, no model</li>
+						<li>3.1.3 Hergebruik zonder register</li>
+						<li>3.1.4 Uitgangspunten</li>
+						<li>3.1.5 URI-patroon</li>
+						<li>3.1.6 URI-patroon: {domain}</li>
+						<li>3.1.7 URI-patroon: {type}</li>
+						<li>3.1.8 URI-patroon: {concept}</li>
+						<li>3.1.9 URI-patroon: {reference}</li>
+						<li>3.1.10 Aanbevelingen voor "private" data</li>
+					</ul>
+					<li>
+						<a href="#begripkader">3.2 Begripkader</a>
+					</li>
+					<ul>
+						<li>3.2.1 Model</li>
+						<li>3.2.2 Definities en klare taal</li>
+						<li>3.2.3 Begrippen</li>
+						<li>3.2.4 Relatie met standaard vocabulaires</li>
+						<li>3.2.5 Grafische representatie</li>
+						<li>3.2.6 Voorbeeld</li>
+					</ul>
+					<li>
+						<a href="#gebeurtenissen">3.3 Gebeurtenissen</a>
+					</li>
+					<ul>
+						<li>3.3.1 Model</li>
+						<li>3.3.2 Gebeurtenis</li>
+						<li>3.3.3 Voorbeeld</li>
+					</ul>
+					<li>
+						<a href="#datamodel">3.4 Datamodel</a>
+					</li>
+					<ul>
+						<li>3.4.1 Vertaling begrippenkader naar een relationeel datamodel</li>
+						<li>3.4.2 Metadata</li>
+						<li>3.4.3 Waardelijsten</li>
+						<li>3.4.4 Vertaling van het begrippenkader naar een owl/dl ontologie</li>
+						<li>3.4.5 Grafische representatie</li>
+						<li>3.4.6 Voorbeeld</li>
+					</ul>
+				</ul>
+				<li>
+					<a href="#werkwijze">4 Werkwijze</a>
+				</li>
+				<ul>
+					<li>
+						<a href="#toepassenuri">4.1 Toepassen URI strategie</a>
+					</li>
+					<ul>
+						<li>4.1.1 Bepalen domeinnaam</li>
+						<li>4.1.2 type, concept en referentie toegepast op het begrippenkader</li>
+						<li>4.1.3 type, concept en referentie toegepast op het datamodel</li>
+						<li>4.1.4 type, concept en referentie toegepast op de data</li>
+						<li>4.1.5 Ontwerpoverwegingen</li>
+					</ul>
+					<li>
+						<a href="#samenhang">4.2 Inventariseren en analyseren van de samenhang</a>
+					</li>
+					<ul>
+						<li>4.2.1 Bepalen basis set te definiëren begrippen</li>
+						<li>4.2.2 Bepalen basis set te definiëren gebeurtenissen</li>
+						<li>4.2.3 Toevoegen context</li>
+					</ul>
+					<li>
+						<a href="#RVV">4.3 Redigeren, valideren en verifiëren</a>
+					</li>
+					<ul>
+						<li>4.3.1 Redigeren: definieren en documenteren begrippen en gebeurtenissen</li>
+						<li>4.3.2 Valideren</li>
+						<li>4.3.3 Verifiëren</li>
+					</ul>
+					<li>
+						<a href="#publiceren">4.4 Publiceren</a>
+					</li>
+					<li>
+						<a href="#datamodelpub">4.5 Definieren datamodel</a>
+					</li>
+					<ul>
+						<li>4.5.1 Beschrijven van een relationeel datamodel</li>
+						<li>4.5.2 Beschrijven van een ontologie</li>
+					</ul>
+				</ul>
+				<li>
+					<a href="#ondersteuning">5 Ondersteuning</a>
+				</li>
+				<ul>
+					<li>
+						<a href="#architectuur">5.1 Architectuur</a>
+					</li>
+					<ul>
+						<li>5.1.1 Triple store</li>
+						<li>5.1.2 SPARQL endpoint</li>
+						<li>5.1.3 Linked Data API</li>
+						<li>5.1.4 Content negotiation</li>
+						<li>5.1.3 Linked Data grafische representatie</li>
+						<li>5.1.4 Infrastructuur</li>
+					</ul>
+					<li>
+						<a href="#voorbeelden">5.2 Voorbeeld</a>
+					</li>
+					<ul>
+						<li>5.2.3 Grafisch</li>
+					</ul>
+					<li>
+						<a href="#tooling">5.3 Tooling</a>
+					</li>
+				</ul>
+			</ul>
+			<hr/>
+			<h2 id="inleiding">1 Inleiding</h2>
+			<h3 id="aanleiding">1.1 Aanleiding</h3>
+			<h4>1.1.1 De waarde van informatie</h4>
+			<p>In onze maatschappij neemt de waarde van (goede) informatie toe. Algemeen geaccepteerd is het principe dat goede bedrijfsbeslissingen (die ervoor zorgen dat een bedrijf of instellingen haar doelstellingen sneller, beter, goedkoper kan bereiken) afhankelijk zijn van de toegang tot goede informatie.</p>
+			<p>Het is (nog) niet gebruikelijk om informatie als "asset" (vermogen) op de balans te plaatsen. Sinds 9-11 is een bewustwording op gang gekomen dat informatie van strategische waarde is voor een organisatie, met als gevolg de ontwikkeling van infonomics: het vakgebied dat (bedrijfs)economie en informatie bij elkaar brengt [<a href="#refINFONOMICS">INFONOMICS</a>].</p>
+			<p>Infonomics kan bedrijven helpen om te komen tot betere bedrijfsresultaten, door strategische beslissingen te nemen over het beheer en vergaren van (goede) informatie. In "the economics of information management" [<a href="#refECONIM">ECONIM</a>] worden daarbij de volgende principes neergezet voor het verbeteren van de informatie in een organisatie:</p>
+			<ul>
+				<li>Verbeter de kwaliteit;</li>
+				<li>Verbeter de beschikbaarheid;</li>
+				<li>Verbeter het gemak waarmee informatie gebruikt kan worden;</li>
+				<li>Innoveer: introduceer nieuwe technologie (zodat data omgezet kan worden in beter bruikbare informatie);</li>
+				<li>Voeg nieuwe of (toegang tot) externe databronnen toe</li>
+			</ul>
+			<p>BP4mc2 geeft best practices om bovenstaande voor elkaar te krijgen.</p>
+			<h4>1.1.2 De e-overheid: de waarde van informatie voor de Nederlandse overheid</h4>
+			<p>Een belangrijke doelstelling van de e-overheid is om de overheid transparant te laten zijn, overheidsinformatie te delen en beschikbare informatie te (her)gebruiken. Het kabinet heeft haar ambitie op dit vlak kenbaar gemaakt in het "Actieplan open overheid" [<a href="#refAPOO">APOO</a>]. In dit licht is in de loop van 2011 in de ‘Aanwijzing voor de regelgeving’ een bepaling opgenomen, die het zoveel mogelijk aansluiten op begrippen en data in basisregistraties voorschrijft [<a href="#refAANW161">AANW161</a>]. Door het eenmalig verzamelen van data worden de administratieve lasten voor burgers en bedrijven verminderd. Voor de overheid zelf worden kwaliteitsverbeteringen en kostenbesparingen gerealiseerd. Als data meer en beter worden gebruikt, komt er meer terugkoppeling op de kwaliteit en worden minder fouten gemaakt.</p>
+			<h4>1.1.3 Linked Data</h4>
+			<p>Linked data lijkt een bruikbare technologie om (overheids)data direct via het web te publiceren. In het artikel "Een nieuwe wereld, een nieuwe informatie architectuur" [<a href="#refRIJNSANT">RIJNSANT</a>] beschrijven Ria van Rijn en Arjen Santema wat de potentiële mogelijkheden voor linked data zijn. Nu nog wordt data in het beste geval via webservices, maar vaak ook nog gewoon als databestand tussen organisaties uitgewisseld. Dergelijke oplossingen hebben vaak als kenmerk dat ze als point-solution zijn gerealiseerd en moeilijk op te schalen zijn naar breder gebruik. Een belangrijke reden hiervoor is dat een impliciete context wordt verondersteld waarbinnen de data bruikbaar is, zonder dat deze context met de data wordt meegeleverd.</p>
+			<p>Door data via het web te publiceren wordt deze in een keer, voor iedereen beschikbaar, vanuit een herkenbare bron gepubliceerd. Linked Data kan inclusief context worden gepubliceerd. Met context wordt de uitleg van de betekenis van data en metadata bedoeld. Metadata zijn bijvoorbeeld de wijze van inwinning, volledigheid, betrouwbaarheid, tijdigheid, en herkomst. Linked Data biedt de mogelijkheid om deze metadata in dezelfde vorm te publiceerd als de data zelf.</p>
+			<h3 id="principes">1.2 Van 20e eeuw principes naar 21e eeuw principes</h3>
+			<p>In zijn presentatie op het PiLOD congres op 13 november 2013 [<a href="#refLIKNSP">LIKNSP</a>] schetst Christophe Guéret treffend de wijze waarop het delen van kennis zich in de afgelopen decennia heeft ontwikkeld door het internet. Tot 1989 waren documenten de gangbare vorm om informatie uit te wisselen. Documenten werden op bulletin boards geplaatst vanwaar men ze kon downloaden. Vervolgens moest men eerst op zoek naar software om dit te kunnen lezen (bijvoorbeeld Wordpad of WordPerfect). Via news groups werden nieuwe documenten en nieuwe versies van documenten bekendgemaakt en welke verwijzingen er waren.</p>
+			<p>Het web heeft danig verandering gebracht in het kunnen zoeken, vinden en verbinden van informatie. Informatie wordt steeds meer aangeboden als webpagina die door elke browser aan de gebruiker kan worden getoond. Die webpagina wordt gegenereerd door een applicatie die versies beheert en die navigatie naar vele andere gerelateerde informatie geautomatiseerd aanbiedt. Bijvoorbeeld linkjes naar een pagina over de auteur, andere versies van de informatie, andere pagina’s over hetzelfde onderwerp, enzovoort. Elk linkje is een zogenaamde Unique Resource Identifier (URI) waardoor die iedere pagina een duidelijk adres op het internet geeft, waarnaar direct kan worden verwezen zodat informatie steeds nauwkeuriger wordt verbonden.</p>
+			<p>Maar als het om data gaat, gebeurt vaak nog hetzelfde als dertig jaar geleden met documenten gebeurde. Als je een dataset vindt moet je op zoek naar software om deze in te lezen (meestal een database of spreadsheet programma). Je moet zelf goed bewaken dat je alle updates krijgt om de gereproduceerde dataset synchroon te houden met het origineel. En links naar andere datasets moeten voor iedere reproductie van een dataset opnieuw worden aangebracht. Dit klinkt inderdaad wel een beetje ‘jaren negentig’.</p>
+			<p>Met vier eenvoudige door Tim Berners Lee aangedragen principes kunnen de bewezen principes voor het internet ook worden toegepast op data [<a href="#refLINKEDDATA">LINKEDDATA</a>]:</p>
+			<ul>
+				<li>Gebruik URI’s als verwijzing naar "dingen".</li>
+				<li>Gebruik http URI’s zodat informatie over deze ‘dingen’ gevonden kan worden via het internet;</li>
+				<li>Geef iemand bruikbare informatie terug als iemand een URI opzoekt, volgens de standaarden van het internet;</li>
+				<li>Neem links op naar andere URI’s zodat meer (gerelateerde) informatie kan worden gevonden.</li>
+			</ul>
+			<p>Met deze principes worden data gepubliceerd via het web en wordt gebruik gemaakt van web-standaarden. Dit is fundamenteel anders dan het ‘jaren negentig-achtige’ op het web zetten van een databestand en een welgemeend “zoek het verder zelf maar uit!”.</p>
+			<h3 id="aanpak">1.3 BP4MC2: Een bruikbare en in de praktijk bewezen aanpak</h3>
+			<p>Vanuit het W3C zijn er standaarden om betekenis vast te leggen en om datamodellen voor linked data te maken. Zo is SKOS [<a href="#refSKOS">SKOS</a>] (Simple Knowledge Organisation System) een bruikbare, door het W3C vastgestelde standaard voor het definiëren van begrippen en hun samenhang in de vorm van een thesaurus of taxonomie. Voor het definiëren van een ontologie als basis voor een in RDF te representeren datamodel is OWL [<a href="#refOWL">OWL</a>] (Web Ontology Language) en in de praktijk OWL/DL (Description Logic), als eenvoudige, maar voor de meeste toepassingen voldoende compleet vocabulair beschikbaar.</p>
+			<p>Er zijn echter nog weinig beschreven practices waarin wordt beschreven hoe en in welke stappen een ‘old school’ jaren negentig dataset kan worden omgezet naar een structuur die maximaal aansluit bij de moderne web standaarden. Dit boekje is de neerslag van de eerste praktische ervaringen op dit gebied in Nederland. Doel is om te laten zien hoe de Nederlandse URI-strategie in de praktijk kan worden toegepast en hoe data betekenisvol, inclusief context kan worden gemodelleerd en gepubliceerd.</p>
+			<p>BP4MC2 (in het Engels: Best Practices for Meaningful Connected Computing) is een open methode om vanuit juridische of vakmatige richtlijnen de betekenis, structuur en dynamiek van een registratie te beschrijven. Daarbij wordt gebruik gemaakt van concepten uit de semantiek en de wereld van linked data.</p>
+			<h3 id="opbouw">1.4 Opbouw van dit document</h3>
+			<p>BP4MC2 is een open methode, iedereen wordt dan ook uitgenodigd om zijn bijdrage te leveren aan het verbeteren en optimaliseren van BP4MC2. De methode wordt beschreven aan de hand van het raamwerk van Seligman, Wijers en Sol. In dit raamwerk worden 4 aspecten van een mehode onderscheiden. (zie Selligman, P.G. Wijers en H. Sol (1989): Analyzing teh structure of I.S. methodologies, an alternative approach, in:Proceedings of the firts Dutch Conference on information systems en Wijers, G. (1991): Modelling support in information systems development. Proefschrift Technische Universiteit Delft, Thesis [<a href="#refMSISD">MSISD</a>]</p>
+			<p>Een methode bestaat uit:</p>
+			<ul>
+				<li>een denkwijze (way of thinking, ofwel theoretisch kader)</li>
+				<li>een representatiewijze (way of modelling, ofwel modelleerwijze)</li>
+				<li>een werkwijze (way of working, dit betreft de processen)</li>
+				<li>een ondersteuningswijze (way of supporting, ofwel de ondersteunende templates en tooling)</li>
+			</ul>
+			<img class="plaatje" src="plaatjes/wijers.png" alt="wijers" width="400"/>
+			<p>De hoofdstukken 2 t/m 4 beschrijven de methode langs de lijnen van dit raamwerk.</p>
+			<ul>
+				<li>Hoofdstuk 2 beschrijft de denkwijze achter de ontwikkelde practices. Deze zijn ontleent aan de taalkunde, semiotiek, rechtswetenschap en de architectuur van het internet.</li>
+				<li>Hoofdstuk 3 beschrijft de practices om betekenisvol te modelleren. Deze beschrijving valt uiteen in een beschrijving van de gebruikte vocubulaires, richtlijnen voor het modelleren en de wijze waarop deze modellen gerepresenteerd kunnen worden.</li>
+				<li>Hoofdstuk 4 beschrijft hoe, in welke stappen en met welke deskundigheid de practices in de praktijk kunnen worden toegepast.</li>
+				<li>Hoofdstuk 5 beschrijft de architectuur ten behoeve van betekenisvol modelleren. Daarnaast worden enkele voorbeelden gegeven van concrete implementaties.</li>
+			</ul>
+			<hr/>
+			<h2 id="denkwijze">2 Denkwijze</h2>
+			<p>Begrip, in de zin van elkaar begrijpen staat centraal bij betekenisvol modelleren. Data bevatten informatie en informatie gaat over de werkelijkheid. De essentie van betekenisvol modelleren is dat het begrijpen van en het communiceren over de werkelijkheid altijd gebeurt met een begrippenkader. Als mensen elkaar begrijpen kunnen ze met elkaar communiceren en raken ze verbonden. Als data in informatiesystemen begrijpelijk zijn kunnen data worden verbonden.</p>
+			<p>Betekenisvol modelleren gaat dus in twee stappen. Eerst wordt een begrippenkader gemaakt waarmee begrip ontstaat. Dit symboliseren we met een "a"</p>
+			<p>Vervolgens wordt rond dit begrippenkader de data gemodelleerd. In dezelfde stijl symboliseren we dit met een "@"</p>
+			<p>Dit hoofdstuk beschrijft de denkwijze vanuit de onderdelen waaruit communicatie is opgebouwd:</p>
+			<ul>
+				<li>De <i>symboliek</i> van communicatie (hoe drukken we ons uit: termen en woorden versus URI's);</li>
+				<li>De <i>vorm</i> van communicatie (zinnen en gesprekken);</li>
+				<li>De <i>betekenis</i> van communicatie (waar gaat het over: feiten, gebeurtenissen, werkelijkheden);</li>
+				<li>Het <i>gebruik</i> van communicatie.</li>
+			</ul>
+			<h3 id="semantiek">2.1 De symboliek van communicatie: termen, woorden en URI's</h3>
+			<h4>2.1.1 Begripsdriehoek</h4>
+			<p>Een belangrijk aspect van communicatie en informatica is het gebruik van symbolen om te verwijzen naar specifieke objecten. In de communicatie wordt daarbij vaak de ‘triangle of meaning’ aangehaald. Dit model is afkomstig uit de semiotiek en beschrijft hoe symbolen (of ‘termen’) gebruikt worden door een spreker om te verwijzen naar een specifiek ‘ding’.</p>
+			<img class="plaatje" src="plaatjes/begripsdriehoek.png" alt="begripsdriehoek" width="600"/>
+			<p>De derde hoek van de driehoek bestaat uit de gedachte die de spreker had van dit ‘ding’ op het moment dat hij hierover sprak. De spreker heeft het feitelijk niet over het echte ‘ding’, maar over zijn gedachte van dit "ding". De triangle of meaning is in 1923 gepubliceerd Ogden and Richards. Hoewel vaak wordt gerefereerd aan de ‘Ogden/Richards triangle’ is het idee zelf al in 1810 uitgewerkt door Bernard Bolzano (Beiträge zu einer begründeteren Darstellung der Mathematik). De echte wortels gaan nog verder terug, namelijk tot Aristoteles Peri Hermeneias (De Interpretatione, tweede boek van de Organon).</p>
+			<h4>2.1.2 Context: spreker en toehoorder</h4>
+			<p>Een belangrijk aspect van de begripsdriehoek is het idee dat een term verwijst naar een ding zoals de spreker dit bedoelt. De toehoorder zal bij het horen van de mededeling van de spreker altijd zijn eigen gedachte van de term hebben, en dus mogelijk een ander ‘ding’ of ander aspect van dit ‘ding’ voor ogen hebben.</p>
+			<img class="plaatje" src="plaatjes/langejan.png" alt="langejan" width="600"/>
+			<p>Bovenstaand figuur geeft een voorbeeld waar een dergelijke spraakverwarring is afgebeeld. De spreker gebruikt de term ‘Lange Jan’ en heeft daarbij zijn eigen gedachte over een specifiek gebouw (de Onze Lieve Vrouwetoren in Amersfoort, Kadastraal middelpunt van Nederland en in de volksmond ook wel de "lange Jan" genoemd). De toehoorder zit met zijn gedachten ergens anders (namelijk: in de efteling), en veronderstelt dat de spreker het over iets heel anders heeft dan een gebouw.</p>
+			<p>Begrip ontstaat als er voldoende overlap is in de gedachten die sprekers en toehoorders hebben bij eenzelfde term. Dit idee is voor het eerst uitgewerkt door Peirce, en de consequenties voor de ICT verder door Sowa in Ontology, Metadata and Semiotics [<a href="#refONTOMETA">ONTOMETA</a>]. Context is daarbij cruciaal: verschillende contexten maken dat dezelfde termen naar andere begrippen verwijzen. Dit verschil in context wordt mooi geillustreerd in het sesamstraat tekenfilmpje over "grote dingen" [<a href="#refSS-TAAT">SS-TAAT</a>].</p>
+			<img class="plaatje" src="plaatjes/begripcontext.png" alt="begripcontext"/>
+			<p>Het vervelende aan ‘natuurlijke’ taal is echter in geschreven taal aan de term niet zichtbaar is wie de spreker is. Bij gesproken taal is dit anders: daar is duidelijk wie de woorden uit, dus ook wie ‘bezitter’ is van de gedachte. Zo kan een gesprek ontstaan, waarbij de toehoorder aan de ‘bezitter’ vragen stelt over de gedachte, om zo beter te begrijpen wat de spreker bedoeld. Zie bijvoorbeeld het sesamstraat tekenfilmpje "guess who I met today"[<a href="#refSS-GWIMT">SS-GWIMT</a>]</p>
+			<img class="plaatje" src="plaatjes/humptydumpty.png" alt="humptydumpty" width="200"/>
+			<p>In "Through the looking-glass" van Lewis Caroll wordt deze innige relatie tussen de betekenis van een term zijn spreker verwoord in het gesprek tussen Alice en Humpty-Dumpty:</p>
+			<p>
+				<i>
+					"I don't know what you mean by 'glory'", Alice said.<br/>
+					Humpty Dumpty smiled contemptuously. "Of course you don't. Till I tell you. I meant 'there's a nice knock-down argument for you!'"<br/>
+					"But 'glory' doesn't mean 'a nice knock-down argument'," Alice objected.<br/>
+					"When I use a word," Humpty Dumpty said in rather a scornful tone. "It means just what I choose it to mean - neither more or less."<br/>
+					"The question is," said Alice, "whether you can make words mean so many different things."<br/>
+					"The question is," said Humpty Dumpty, "which is to be master - that's all."
+				</i>
+			</p>
+			<p>Hier stelt Humpty Dumpty dat hijzelf, en alleen hijzelf kan bepalen wat een woord betekent. Strikt genomen heeft hij gelijk. Maal als men betekenisvol wil communiceren en daarmee ook betekenisvol modelleren, dan is enige duidelijkheid nodig wat ‘we’ er mee bedoelen. Deze duidelijkheid kan worden bereikt door het definiëren van begrippen.</p>
+			<p>Het belang van het geven van betekenis aan woorden wordt vooral duidelijk als met woorden iets betekenisvol wordt afgebakend. Een voorbeeld uit de rechtspraak (waarbij bovendien de woorden van Lewis Caroll worden geciteerd) is de zaak Liversidge versus Anderson uit 1942 in Engeland [<a href="#refLIVAN">LIVAN</a>], waarbij de vraag op tafel lag of de woorden van een wet in verschillende situaties anders uitgelegd mochten worden, ofwel: wie bepaald in ultimo wat de betekenis is van de woorden uit de wet? Een voorbeeld uit Nederland is het elektriciteitsarrest [<a href="#refEARREST">EARREST</a>], waarin een Haagse tandarts beschuldigd wordt van diefstal van elektriciteit door de meter te blokkeren met een breinaald. In cassatie verweert de tandarts zich met de stelling dat elektriciteit niet als "enig goed" valt te kwalificeren, zodat niet aan de delictsomschrijving van artikel 310 Sr (diefstal) is voldaan.</p>
+			<p>Om betekenis te kunnen geven aan symbolen, is het van belang om de afspraken te kennen, of ten minste een verwijzing te hebben naar een ander symbool waar de afspraak wel van bekend is. Een voorbeeld van dit laatste is de Rosetta Stone [<a href="#refROSETTA">ROSETTA</a>].</p>
+			<p>Humpty Dumpty, Liversedge versus Anderson en het electriciteitsarrest zijn voorbeelden van de noodzaak van afspraken over de manier waarop waarnemingen dingen en gebeurtenissen in de brute werkelijkheid worden vertaald naar een representatie van deze dingen en gebeurtenissen. Daardoor kan die representatie worden geïnterpreteerd, ofwel worden terugvertaald naar de werkelijkheid zoals iemand zich die voorstelt. Daarmee kan iemand zich een beeld vormen van de werkelijkheid, ook al heeft hij die niet zelf waargenomen. Dit beeld is in wezen een administratie van de werkelijkheid, ofwel een administratieve werkelijkheid.</p>
+			<p>Tegenwoordig wordt de meeste informatie vastgelegd in digitale informatiesystemen. Conceptueel verschilt dit niet wezenlijk van handgeschreven vastlegging. Nieuw is wel dat digitale informatiesystemen hun informatie direct met elkaar kunnen uitwisselen zonder menselijke tussenkomst. Bij uitwisseling tussen traditionele informatiesystemen is er altijd iemand die het bronsysteem leest, de informatie begrijpt en vervolgens de informatie in het doelsysteem wijzigt. Afwijkingen tussen de modellen van de twee systemen worden daarbij door de persoon in kwestie ‘vertaald’ van het ene naar het andere model.</p>
+			<p>Bij digitale uitwisseling controleert niemand of de symbolen die in het bronsysteem zijn gebruikt wel hetzelfde betekenen als in het doelsysteem. Niemand kan bij een afwijking in betekenis ingrijpen om te zorgen dat de informatie ‘correct’ wordt ontvangen in het ontvangende systeem. ‘Correct’ wil hier zeggen dat het ontvangende systeem de symbolen naar dezelfde werkelijkheid terugvertaalt als dat het bronsysteem dat zou doen. Deze controle en eventuele vertaling moet dus voor systemen herkenbaar worden vastgelegd om te voorkomen dat verkeerde conclusies worden getrokken.</p>
+			<h4>2.1.3 URI-term</h4>
+			<p>We kunnen het model van de begripsdriehoek ook toepassen op een informatiesysteem. De term in de driehoek correspondeert dan met een identificatie in het informatiesysteem, de gedachte correspondeert met een onderdeel uit het conceptuele model van het systeem en het ding blijft, net als in natuurlijke taal, het "echte" ding: het is geen onderdeel van het systeem.</p>
+			<p>De eerste twee principes van Linked Data, zoals genoemd in Hoofdstuk 1, geven een elegante manier om identificaties zo te kiezen dat problemen met synoniemen en homoniemen zo veel mogelijk worden voorkomen. Bovendien kunnen de identificaties verwijzen naar hun "eigenaar", wat de mogelijkheid geeft om meer informatie te verzamelen en zo een beter begrip te krijgen.</p>
+			<ol>
+				<li><i>Gebruik URIs als namen voor dingen.</i><br/>URI staat voor “Uniform Resource Identifier” een URI is dus iets waarmee je op een eenduidige manier naar iets verwijst. De URI correspondeert met de term uit de begripsdriehoek. De resource correspondeert met het begrip van het ding zoals het informatiesysteem (hier de spreker) dat heeft van het ding in de werkelijkheid. Merk op dat TBL de onderste zijde van de driehoek verwoordt: De URI refereert aan een ding.</li>
+				<li><i>Gebruik http URIs zodat mensen die namen kunnen opzoeken.</i><br/>HTTP URIs hebben de vorm van een internetadres. Het zijn URLs en dus kun je ze ‘activeren’. Met een URL kun je informatie ophalen die op een server beschikbaar wordt gesteld. Bovendien is duidelijk van wie die informatie afkomstig is: van de eigenaar van het internetdomein van de URI.</li>
+			</ol>
+			<img class="plaatje" src="plaatjes/uriterm.png" alt="uriterm"/>
+			<p>Merk op dat we in dit plaatje expliciet niet spreken over de "BAG gedachte van een pand". Informatiesystemen zijn deterministische apparaten die in onze ogen geen gedachten hebben zoals mensen deze hebben. Daarom spreker wij liever van een "(conceptueel) model". Dit wil overigens nog niet zeggen dat dit model goed beschreven is! Een slecht gedocumenteerd informatiesysteem kan net zo ondoorgrondelijk zijn als de gedachten van een mens!</p>
+			<h4>2.1.4 Begrippen in deze sectie</h4>
+			<table class="glossary">
+				<tr>
+					<td>
+						<img src="imgbegrip/Term.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">term</a> is een aaneenschakeling van één of meerdere woorden.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Ding.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">ding</a> is iets in een werkelijkheid: een object, mens, machine, etc.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Naam.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">naam</a> is een term die gebruikt wordt om te verwijzen naar een ding.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Actor.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">actor</a> is een mens of IT systeem: iemand of iets dat een communicatieve handeling kan uitvoeren.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Gedachte.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">gedachte</a> is het denkbeeld dat een mens heeft in een bepaalde context over een ding.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Context.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">context</a> is een begrip waarbinnen andere begrippen begrepen kunnen worden</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Begrip.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">begrip</a> is de overeengekomen betekenis van een term in een bepaalde context</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Model.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">model</a> is een vereenvoudigde representatie van een ding</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/URI-Naam.png" width="70"/>
+					</td>
+					<td>
+						<p><a href="#">uri-naam</a></p>
+					</td>
+				</tr>
+			</table>
+			<h3 id="communicatievorm">2.2 Vorm van communicatie</h3>
+			<p>Communicatie van natuurlijke taal vindt plaats volgens een model dat we de grammatica van een taal noemen. Eenvoudige uitspraken hebben de vorm [onderwerp] – [gezegde] – [lijdend voorwerp]. Bijvoorbeeld in de zin "Paul kent John" is "Paul" het onderwerp, "kent" het gezegde en "John" het lijdend voorwerp. Linked data is gebaseerd op het uitgangspunt dat we ook met data dergelijke basale uitspraken kunnen doen. Deze uitspraken volgen een grammatica die erg veel lijkt op die van natuurlijke taal. Een linked data uitspraak heeft de vorm van een triple: [subject] – [predicate] – [object].</p>
+			<img class="plaatje" src="plaatjes/triple.png" alt="triple"/>
+			<p>Met een triple wordt in feite een ‘korte zin’ uitgedrukt (zie ook "wat is een zin", Algemene Nederlandse Spraakkunst [<a href="#refANS-ZIN">ANS-ZIN</a>]). Een triple is een uitspraak die bestaat uit drie delen, namelijk ‘subject’, ‘predicate’ en ‘object’, in het Nederlands onderwerp, gezegde en (leidend) voorwerp. Een ‘object’ kan weer een ‘subject’ zijn in een volgende uitspraak, waardoor een netwerk van samenhangende dingen en uitspraken ontstaat. Grafisch wordt een triple vaak afgebeeld als een gerichte graaf: twee bolletjes (voorstelling van subject en object) die met elkaar verbonden zijn met een pijl die het predicate voorstelt. Als het object zelf niet gebruikt worden worden om verder door te verwijzen (omdat het geen URI is, maar een vaste waarde, een literal [<a href="#refLITERAL">LITERAL</a>]), dan wordt vaak in plaats van een bolletje een rechthoek gebruikt.</p>
+			<img class="plaatje" src="plaatjes/ldvoorbeeld.png" alt="ldvoorbeeld"/>
+			<p>Bovenstaand voorbeeld toont plaatjes in plaats van URI's voor de (menselijke) leesbaarheid. Dit plaatje zou er in Linked Data met echte URI's als volgt uitzien. Voor de leesbaarheid zijn deze URI's met prefixen.</p>
+			<img class="plaatje" src="plaatjes/ldvoorbeeld2.png" alt="ldvoorbeeld2" width="600"/>
+			<p>Aangezien alleen ruimte is voor een onderwerp, gezegde en (lijdend) voorwerp, is er in de korte zin geen mogelijkheid om ook de context uit te drukken waarbinnen een mededeling als ‘waar’ moet worden beschouwd. Hiervoor kent linked data de mogelijkheid van een "named graph" (in goed Nederlands de "benoemde graaf"). Een set samenhangende triples vormt samen een ‘named graph’ die zelf ook weer een URI heeft, en de context van deze triples geeft. Via de URI van de "graph" kan ook de herkomst van de mededeling worden vastgelegd: wie deed de mededeling, wanneer en vanuit welke gedachte.</p>
+			<img class="plaatje" src="plaatjes/ldvoorbeeld3.png" alt="ldvoorbeeld3" width="500"/>
+			<h4>2.2.1 Soorten zinnen naar communicatieve functie</h4>
+			<p>Natuurlijke taal kent drie soorten zinnen naar communicatieve functie [<a href="#refANS">ANS</a>]:</p>
+			<ul>
+				<li><i>Mededelende zinnen</i>: een <b>uiting</b> van een mededeling, dat wil zeggen: een mededeling;</li>
+				<li><i>Vragende zinnen</i>: een <b>verzoek</b> om een mededeling, dat wil zeggen: een vraag;</li>
+				<li><i>Bevelende zinnen</i>: een <b>verzoek</b> om een actie, dat wil zeggen: een bevel.</li>
+			</ul>
+			<p>De ANS spreekt nog van een vierde soort zin: de uitroepende zin. Dit is een zin die een emotie uitdrukt. Zo’n zin eindigt meestal op een uitroepteken. Daarbij wordt vermeld dat een dergelijke uitroepende zin in communicatieve functie weer een mededeling, vraag of bevel kan bevatten. Daarom beschouwen we de uitroepende zin hierna niet als een afzonderlijke soort zin.</p>
+			<p>Voor vragende zinnen is het gebruikelijk om een vraagteken (‘?’) aan het einde van de zin te plaatsen. Voor mededelende zinnen is het gebruikelijk om een punt (‘.’) aan het einde van de zin te plaatsen. Voor bevelende zinnen bestaat geen eenduidigheid. Verderop gebruiken we hiervoor een uitroepteken (‘!’).</p>
+			<p>Voorbeelden van deze drie soorten zinnen zijn:</p>
+			<ul>
+				<li>"Jan is geboren op 17 maart." (mededeling)</li>
+				<li>"Kun je iets vertellen over Jan?" (vraag)</li>
+				<li>"Vergeet alles wat je over Jan kunt vertellen!" (bevel)</li>
+			</ul>
+			<h4>2.2.2 HTTP (Hypertext Transfer Protocol)</h4>
+			<p>Het world wide web, dat toegankelijk is via de browser en waar ook Linked Data op is gebaseerd, volgt het hypertext transfer protocol (http). Dit protocol [<a href="#refHTTP">HTTP</a>][<a href="#refPROTOCOLS">PROTOCOLS</a>] is vergelijkbaar met hoe een gesprek wordt gevoerd tussen twee mensen.</p>
+			<p>Een <code>http-request</code> komt overeen met:</p>
+			<ul>
+				<li>Een <i>vragende zin</i>, als sprake is van een verzoek om een mededeling, zonder dat een andere actie (zoals: "sla dit op"). De meest gebruikte methode in het geval van een bevelende zin is "GET"</li>
+				<li>Een <i>bevelende zin</i>, als sprake is van een verzoek om actie (zoals: "sla dit op"). De meest gebruikte methode in het geval van een bevelende zin is "PUT", "POST" en "DELETE". Het gebruik van "GET" voor een bevelende zin druist in tegen de specificaties van het http-protocol.</li>
+			</ul>
+			<p>Een <code>http-response</code> komt overeen met:</p>
+			<ul>
+				<li>Een <i>mededelende zin</i>, als het antwoord op een vragende zin;</li>
+				<li>Een <i>mededelende zin</i>, als het antwoord op een bevelende zin. In een dergelijk geval zegt de mededeling iets over de belofte of het resultaat van de verzochte actie).</li>
+			</ul>
+			<p>In relatie tot de publicatie en het raadplegen van Linked Data gaat het om vragende en mededelende zinnen en de ‘GET’ http-request methode. Hiervoor geldt:</p>
+			<ul>
+				<li>Een <i>vragende zin</i> komt overeen met de URL die wordt ingetypt in de browser;</li>
+				<li>Een <i>mededelende zin</i> komt overeen met de webpagina die vervolgens wordt getoond in de browser.</li>
+			</ul>
+			<h4>2.2.3 De mededelende zin</h4>
+			<p>Een eenvoudige, enkelvoudige mededelende zin heeft de vorm:</p>
+			<ul>
+				<li>Onderwerp (subject) - Gezegde (predikaat) - Voorwerp (object)</li>
+			</ul>
+			<p>Deze vorm is identiek aan de opzet van een triple in Linked Data:</p>
+			<ul>
+				<li>
+					<code>&lt;subject&gt; &lt;predicate&gt; &lt;object&gt;</code>
+				</li>
+			</ul>
+			<p>Zo is de zin: "Jan kent Piet" gelijk aan de Linked Data representatie in Turtle-syntax [<a href="#refTURTLE">TURTLE</a>]:</p>
+			<p>
+				<div class="xmlsyn">@prefix ex: &lt;http://bp4mc2.org/voorbeeld/id/&gt;<br/>ex:persoon/Jan ex:predikaat/kent ex:persoon/Piet.</div>
+			</p>
+			<p>In een triple wordt <code>subject</code> en <code>predicate</code> altijd afgebeeld op een <code>URI</code>. Een object mag zowel afgebeeld zijn op een <code>URI</code> als op een <code>literal</code>. Een literal is een stukje tekst, een datum, of een nummer.</p>
+			<p>Dit betekent dat in een mededelende zin veel woorden (beter gezegd: termen) vervangen worden door identificerende elementen. Dit helpt om specifieke, formele uitspraken te doen: het wordt gemakkelijker om te begrijpen wat wordt bedoeld, er is geen misverstand. Vaak wordt hier de term ‘disambiguation’ gebruikt.</p>
+			<p>De volgende voorbeelden laten dit zien:</p>
+			<ul>
+				<li>Marco zei tegen Marco: "Heb je Marco al gesproken?"</li>
+				<li>Marco Polo zei tegen Marco Janssen: "Heb je Marco Janssen al gesproken?"</li>
+				<li>De persoon met BSN 1234 zei tegen de persoon met BSN 4321: "Heb je de persoon met BSN 8743 al gesproken?"</li>
+			</ul>
+			<p>De eerste zin kent de minst specifieke aanduiding voor "Marco". Dit maakt de zin lastig te begrijpen. Immers: over welke Marco hebben we het? De tweede zin kent al een iets specifiekere aanduiding voor "Marco". Hij klinkt een stuk formeler, en leest minder prettig, maar is wel beter te begrijpen. De derde zin kent een zeer specifieke aanduiding. De derde zin is volstrekt duidelijk en ondubbelzinnig, maar zeer onprettig om te lezen.</p>
+			<h4>2.2.4 De URI (Uniform Resource Identifier)</h4>
+			<p>In een Linked Data zin worden het onderwerp, gezegde en soms ook het (lijdend) voorwerp uitgedrukt met URI's. De URI is dus eigenlijk de naam van het onderwerp, gezegde of (lijdend) voorwerp. Een URI kan verschillende vormen hebben. Zie hiervoor de URI specificaties [<a href="#refRFC3986">RFC3986</a>], of de meer leesbare wikipedia beschrijving [<a href="#refURI">URI</a>].</p>
+			<p>Voorbeelden van correcte URI-namen van ‘Marco’, ‘Marco Polo’ en ‘BSN 1234’ zijn:</p>
+			<ol>
+				<li>
+					<code>urn:term:Marco</code>
+				</li>
+				<li>
+					<code>http://bp4mc2.org/voorbeeld/id/persoon/Marco</code>
+				</li>
+				<li>
+					<code>urn:uuid:1234</code>
+				</li>
+				<li>
+					<code>http://bp4mc2.org/voorbeeld/id/persoon/1234</code>
+				</li>
+			</ol>
+			<p>De oneven URI’s zijn URN’s. Dit zijn gewoon namen, zonder dat hiermee ook een (internet) locatie wordt gegeven (URN = Uniform Resource Name). De even URI-namen zijn URL’s (URL = Uniform Resource Location), dat wil zeggen namen die gelijktijdig ook een (internet) locatie aanduiden.</p>
+			<p>Aangezien een internetlocatie overeen komt met de URL wordt ingetypt in de browser, is een URL hiermee niet alleen een naam, maar gelijktijdig ook een vragende zin!</p>
+			<ul>
+				<li>Een <code>URL</code> vertegenwoordigt zowel een naam (identificatie) als een vraag</li>
+				<li>Een <code>URN</code> vertegenwoordigt slechts een naam (identificatie)</li>
+			</ul>
+			<h4>2.2.5 De URL (Uniform Resource Location) als vraag</h4>
+			<p>Een URL kan dus zowel een vraag als de naam van ‘iets’ zijn. Het is duidelijk wat wordt bedoeld met de URL als naam voor ‘iets’, namelijk precies dit ‘iets’:</p>
+			<ul>
+				<li>De url <code>http://bp4mc2.org/voorbeeld/id/persoon/1234</code> is hier de naam (of identificatie) van een persoon met de volledige naam ‘Marco Polo’, voornaam ‘Marco’ en BSN ‘1234’.</li>
+			</ul>
+			<p>Ook is duidelijk dat een URL nooit een mededelende zin kan zijn. Zo'n zin is immers geen triple. Hij bevat wel een onderwerp, maar geen gezegde of leidend voorwerp. In onderstaand voorbeeld is de eerste zin geen linked data zin, de tweede wel.</p>
+			<p>
+				<div class="xmlsyn">
+					<p>&lt;http://bp4mc2.org/voorbeeld/id/persoon/1234&gt;.</p>
+					<p>&lt;http://bp4mc2.org/voorbeeld/id/persoon/1234&gt; &lt;http://bp4mc2.org/voorbeeld/id/predikaat/sprak-met&gt; &lt;http://bp4mc2.org/voorbeeld/id/persoon/8743&gt;.</p>
+				</div>
+			</p>
+			<p>In de wereld van Linked Data kan een URL ook worden gebruikt als vraag. Het derde Linked Data principe stelt: ‘When someone looks up a URI, provide useful information’ [<a href="#refLINKEDDATA">LINKEDDATA</a>])</p>
+			<p>In het voorbeeld kan dit het volgende gesprek opleveren:</p>
+			<ul>
+				<li>Vraag: "De persoon met BSN 1234?"</li>
+				<li>Antwoord: "De persoon met BSN 1234 heet 'Marco Polo', we noemen hem vaak 'Marco', zijn BSN is 1234 en hij sprak met de persoon met BSN 8743".</li>
+			</ul>
+			<p>Of in Linked Data (Turtle syntax):</p>
+			<p>
+				<div class="xmlsyn">
+					<p><i>http-request:</i><br/>http://bp4mc2.org/voorbeeld/id/persoon/1234&gt;</p>
+					<p><i>http-response:</i><br/>&lt;http://bp4mc2.org/voorbeeld/id/persoon/1234&gt;
+						<ul>
+							<li>&lt;http://bp4mc2.org/voorbeeld/id/predikaat/Naam&gt; "Marco Polo";</li>
+							<li>&lt;http://bp4mc2.org/voorbeeld/id/predikaat/Roepnaam&gt; "Marco";</li>
+							<li>&lt;http://bp4mc2.org/voorbeeld/id/predikaat/BSN&gt; 1234;</li>
+							<li>&lt;http://bp4mc2.org/voorbeeld/id/predikaat/sprak-met&gt; http://bp4mc2.org/voorbeeld/id/persoon/8743&gt;.</li>
+						</ul></p>
+				</div>
+			</p>
+			<h4>2.2.6 Overige URL vragen</h4>
+			<p>In de voorgaande sectie hebben we de URL besproken die zowel een "Naam" was als een "Vraag". Er zijn echter veel meer vragen denkbaar, en ook veel meer URL's.</p>
+			<p>Zo willen we onderscheid maken tussen de URL-Naam en de URL-Vraag. Elke URL-Vraag is een URL die geen URL-Naam is.</p>
+			<p>Om in de vormgeving een URL-Naam te kunnen onderscheiden van een URL-Vraag stellen we voor om in de URL een vraagteken op te nemen, gevolgd door aanvullende informatie met betrekking tot de vraag, dus bijvoorbeeld:</p>
+			<p>
+				<div class="xmlsyn"><i>http-request:</i><br/>http://bp4mc2.org/voorbeeld/query/kun-je-iets_vertellen?over=personen&amp;voornaam=Marco
+				</div>
+			</p>
+			<p>Deze URL-Vraag komt overeen met de zin in natuurlijk taal:</p>
+			<ul>
+				<li>Kun je iets vertellen over personen met voornaam "Marco"?</li>
+			</ul>
+			<p>Het antwoord op deze vraag zou kunnen zijn: (waarbij de overeenkomstige http-response codes [<a href="#refRFC2616">RFC2616</a>] staan benoemd):</p>
+			<ul>
+				<li>http-response 200: "Ja, ik ken 1 persoon, die heet Marco Polo, we noemen hem vaak 'Marco', zijn BSN..."</li>
+				<li>http-response 304: "Dat heb ik je al verteld"</li>
+				<li>http-response 400: "Ik snap je vraag niet"</li>
+				<li>http-response 401: "Dat mag ik je niet vertellen"</li>
+				<li>http-response 402: "Alleen als je me er voor betaald hebt"</li>
+				<li>http-response 403: "Dat mag ik niemand vertellen"</li>
+				<li>http-response 404: "Nee, ik ken geen personen die 'Marco' heten"</li>
+			</ul>
+			<p>Onderstaande tabel geeft een totaaloverzicht van URN's, URL's en het gebruik</p>
+			<table class="simple">
+				<tr>
+					<th colspan="3"/>
+					<th>Voorbeeld</th>
+					<th>Naam/Id</th>
+					<th>Vraag</th>
+				</tr>
+				<tr>
+					<td rowspan="3">URI</td>
+					<td colspan="2">URN</td>
+					<td>
+						<code>urn:uuid:1234</code>
+					</td>
+					<td>Ja</td>
+					<td>Nee</td>
+				</tr>
+				<tr>
+					<td rowspan="2">URL</td>
+					<td>URL-Naam</td>
+					<td>
+						<code>http://bp4mc2.org/voorbeeld/id/persoon/1234</code>
+					</td>
+					<td>Ja</td>
+					<td>Ja</td>
+				</tr>
+				<tr>
+					<td>URL-Vraag</td>
+					<td>
+						<code>http://bp4mc2.org/voorbeeld/query/vertel-iets-over?wie=persoon&amp;voornaam=Marco</code>
+					</td>
+					<td>Nee</td>
+					<td>Ja</td>
+				</tr>
+			</table>
+			<h4>2.2.7 Begrippen in deze sectie</h4>
+			<table class="glossary">
+				<tr>
+					<td>
+						<img src="imgbegrip/Triple.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">triple</a> is de combinatie van "onderwerp", "gezegde" en "(lijdend) voorwerp": [subject, predicate, object]</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Graph.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">graph</a> is een verzameling van triples</p>
+					</td>
+				</tr>
+			</table>
+			<h3 id="semantiek">2.3 Betekenis van communicatie</h3>
+			<h4>2.3.1 Feiten: omstandigheden en gebeurtenissen</h4>
+			<p>De werkelijkheid kent ‘feiten’. Een feit is een gebeurtenis of omstandigheid waarvan de werkelijkheid vaststaat. Het tijdsaspect is van belang bij het beschouwen van een feit: de werkelijkheid van een omstandigheid kan vaststaan op één moment in tijd, maar op een ander moment in tijd juist zijn verdwenen.</p>
+			<p>Gebeurtenissen zijn juist nooit op een stilstaand moment te aanschouwen. Een gebeurtenis stelt feitelijk voor dat de ene omstandigheid verandert in een andere omstandigheid. Wil een gebeurtenis een feit zijn, dan moet de werkelijkheid van beide omstandigheden vaststaan, maar bovendien moet vaststaan dat er een ‘regel’ is die feitelijk (dus waarvan de werkelijkheid ook vaststaat) veronderstelt dat omstandigheid A wetmatig resulteert in omstandigheid B. Zie voor een uitleg van wat een regel is: defining business rules – what are the really [<a href="#refRULES">RULES</a>].In de brute werkelijkheid zijn dit de natuurwetten. Zo valt een appel van een boom als de zwaartekracht die op deze appel wordt uitgeoefend groter is dan de sterkte van de verbinding tussen de appel en de tak waaraan hij hangt.</p>
+			<img class="plaatje" src="plaatjes/gebeurtenis2.png" alt="gebeurtenis2" width="600"/>
+			<p>De definitie van een feit kent een open eind: wat staat als werkelijkheid vast? Van enkele zaken zal iedereen veronderstellen dat deze ‘vaststaan’: weinig mensen zullen ontkennen dat een brug over een rivier waarover hij loopt ‘bestaat’: zonder de brug zou je immers vallen (een natuurwet). Andere aspecten die wij mensen als de ‘vaststaande werkelijkheid’ beschouwen zijn echter niet natuurlijk en hebben te maken met sociale afspraken: dat er zoiets bestaat als ‘Nederland’ is een afspraak waar de meeste mensen zich aan houden, dus daarmee is ‘Nederland’ (op dit moment) een feit. Maar in 1500 waren er nog maar weinig mensen die ‘Nederland’ als feit zouden erkennen.</p>
+			<p>Dit laatstgenoemde feit is een voorbeeld van een institutioneel feit. Een institutioneel feit is een feit waarvan de werkelijkheid zijn grondslag heeft in sociale instituties, in dit geval internationale afspraken over soevereine staten (‘Statische en dynamische rechtsfeiten’, prof. dr. J.C. Hage, Universiteit Maastricht).</p>
+			<p>De wereld van het recht is onderdeel van de sociale werkelijkheid. We noemen dit de juridische werkelijkheid. Deze juridische werkelijkheid bestaat uit rechtsfeiten. Zo ontstaat een onderscheid tussen de brute werkelijkheid, zoals wij die in het dagelijks leven waarnemen, en de juridische werkelijkheid, waarin rechtsregels centraal staan.</p>
+			<h4>2.3.2 Relatie tussen de brute werkelijkheid en de institutionele, juridische werkelijkheid</h4>
+			<p>Alles wat de overheid, waartoe ook uitvoeringsorganisaties als het Kadaster en de Kamer van Koophandel behoren, doet, wordt vastgelegd in een zogenaamd wettelijk kader. De wet omschrijft de begrippen die relevant zijn binnen het toepassingsgebied van de betreffende wet. Ook omschrijft de wet wat in welke gevallen mag of juist niet mag met de dingen die met die begrippen worden aangeduid.</p>
+			<p>Om begrip van de wet te krijgen, is het van belang om te begrijpen dat regelgeving gelaagd is en afhankelijkheden tussen regelingen de betekenis van een begrip in de wet kan beinvloeden.</p>
+			<p>De regelgeving kent hiervoor de volgende vier principes:</p>
+			<ul>
+				<li><i>Lex specialis</i> - specifieke bepalingen gaan voor algemene bepalingen.</li>
+				<li><i>Lex superior</i> - hogere wetgeving geeft kaders voor lagere wetgeving.</li>
+				<li><i>Lex posterior</i> - jongere wetgeving gaat voor oudere wetgeving.</li>
+				<li><i>Jurisprudentie</i> - een uitspraak van een rechter in een concrete zaak kan invulling geven aan de interpretatie van de wetgeving.</li>
+			</ul>
+			<p>Volgens de paradigma's in de rechtsinformatica (zie o.a. Travis D. Breaux : Legal Requirements Acquisition for the Specification of Legally Compliant Information Systems,.Ph. D. Thesis, North Carolina State University, 2009 en R. van Kralingen : A Conceptual Frame-based Ontology for the Law, Proceedings of the First International Workshop on Legal Ontologies, 1997) is de wet opgebouwd uit:</p>
+			<ul>
+				<li>Begrippen die de dingen in de werkelijkheid aanduiden waar de betreffende wet betrekking op heeft.</li>
+				<li>Gebeurtenissen of rechtshandelingen die met betrekking tot de dingen die met deze begrippen worden aangeduid kunnen plaatsvinden.</li>
+				<li>De regels waaronder deze rechtshandelingen mogen worden uitgevoerd.</li>
+			</ul>
+			<img class="plaatje" src="plaatjes/regels.png" alt="regels" width="600"/>
+			<p>Bovenstaand figuur laat de dynamiek zien waarlangs rechtsgevolgen ontstaan door gebeurtenissen in de "brute" werkelijkheid:</p>
+			<ul>
+				<li>Een institutioneel feit heeft altijd een aanleiding in de ‘brute’ werkelijkheid. Voorbeelden zijn een geboorte die aanleiding is voor het opstellen van een geboorteakte, de oprichting van een organisatie die aanleiding is voor het opstellen van een oprichtingsakte en de levering van een huis die aanleiding is voor het opstellen van een leveringsakte.</li>
+				<li>Zo’n feit heeft altijd een rechtsgevolg, dat wil zeggen het leidt tot een nieuw institutioneel feit. Na de verwerking van een geboorteakte in het bevolkingsarchief bestaat een kind juridisch, na de verwerking van een oprichtingsakte door de Kamer van Koophandel kan een organisatie rechtshandelingen uitvoeren en na de levering van een huis is iemand als eigenaar bekend bij het Kadaster.</li>
+				<li>Aanleiding, voorwaarde en eindsituatie kunnen worden beschreven in de vorm van regels. Aanleiding en voorwaarde vormen de "preconditie". De aanleiding geeft aan "wanneer" de gebeurtenis optreedt (wat de "trigger" is), de voorwaarde geeft aan of de gebeurtenis ook mag optreden. De eindsituatie vormt de postconditie: de beschrijving van de situatie die geldt na afloop van de gebeurtenis.</li>
+			</ul>
+			<h4>2.3.3 Administratieve werkelijkheid</h4>
+			<p>De institutionele (en daarmee ook de juridische) werkelijkheid is niet waar te nemen. Het is als een mondeling afspraak: achteraf kun je alleen nog via het geheugen van getuigen achterhalen wat de institutionele feiten zouden moeten zijn.</p>
+			<p>Registreren van juridische feiten in een administratie is dan ook noodzakelijk voor een goede verstandhouding tussen mensen, en in het bijzonder: voor een goede rechtsorde.</p>
+			<img class="plaatje" src="plaatjes/compliancy.png" alt="compliancy" width="600"/>
+			<p>Bovenstaand figuur laat zien hoe dit proces in zijn werk gaat:</p>
+			<ul>
+				<li>Een bepaalde levensgebeurtenis heeft, volgens de institutionele afspraken, rechtsgevolgen.</li>
+				<li>Om deze rechtsgevolgen te kunnen registreren, zal een actor (die daartoe in deze specifieke situatie bevoegd is, zoals bijvoorbeeld een notaris) de levensgebeurtenis registreren ("waarvan akte").</li>
+				<li>De actor zorgt (direct of indirect) voor het opvoeren van de gegevens met betrekking tot de levensgebeurtenis. Dit opvoeren is feitelijk ook weer een gebeurtenis, nu in de administratie.</li>
+				<li>Er is sprake van compliancy als de geregistreerde gegevens overeen komen met de rechtsgevolgen.</li>
+			</ul>
+			<p>Op het niveau van de regels is er sprake van compliancy als de procesafspraken leiden tot gegevensregistratie die overeen komen met de juridische regels.</p>
+			<h4>2.3.4 Begrippen in deze sectie</h4>
+			<table class="glossary">
+				<tr>
+					<td>
+						<img src="imgbegrip/Feit.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">feit</a> is een gebeurtenis of omstandigheid waarvan de werkelijkheid vaststaat.</p>
+						<p>Bron: <a href="http://nl.wikipedia.org/wiki/Feit">http://nl.wikipedia.org/wiki/Feit</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Natuurlijk feit.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">natuurlijk feit</a> is een feit dat werkelijkheid is in de natuurlijke werkelijkheid.</p>
+						<p>Bron: "The Construction of social reality", John Searle, 1995; <a href="http://www.angelfire.com/md2/timewarp/searle.html">http://www.angelfire.com/md2/timewarp/searle.html (Annotaties t.a.v. John Searle)</a></p>
+						<p class="toelichting">Toelichting</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Institutioneel feit.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">institutioneel feit</a> is een feit dat werkelijkheid is conform een stelsel van afspraken (instituut).</p>
+						<p>Bron: <a href="http://www.jaaphage.nl/Institutionele%20rechtstheorieen.pdf">http://www.jaaphage.nl/Institutionele%20rechtstheorieen.pdf</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Gegeven.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">gegeven</a> is een administratief feit dat als zodanig is geregistreerd in een informatiesysteem.</p>
+						<p class="toelichting">Toelichting</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Werkelijkheid.png" width="70"/>
+					</td>
+					<td>
+						<p>De <a href="#">werkelijkheid</a> is datgene dat iemand voor waar aanneemt.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Natuurlijke werkelijkheid.png" width="70"/>
+					</td>
+					<td>
+						<p>De <a href="#">natuurlijke werkelijkheid</a> is de werkelijkheid waarin wij leven, waarin natuurwetten gelden</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Administratieve werkelijkheid.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">administratieve werkelijkheid</a> is een werkelijkheid zoals in een IT systeem</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Institutionele werkelijkheid.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">institutionele werkelijkheid</a> is een werkelijkheid volgens algemeen aanvaarde afspraken</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Juridische werkelijkheid.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">juridische werkelijkheid</a> is een institutionele werkelijkheid waarin de wet- en regelgeving geldt</p>
+					</td>
+				</tr>
+			</table>
+			<h3 id="gebruik">2.4 Gebruik</h3>
+			<p>Soms wordt de werkelijkheid zelf vastgelegd om deze veilig te stellen, zodat die werkelijkheid op een later tijdstip, door onszelf of door anderen, opnieuw opgeroepen of gereconstrueerd kan worden. Dit gebeurt bijvoorbeeld bij het verzamelen van vlinders of postzegels, of van bewijsstukken bij een rechtszaak. De veilig gestelde objecten kunnen, mits goed bewaard, later aantonen hoe de werkelijkheid was. Maar er gaat altijd informatie verloren. De vlinder wordt gedood en opgeprikt, de postzegel wordt van een envelop gehaald en wie garandeert dat het pistool na de moord niet door een ander is aangeraakt?</p>
+			<p>Vaak is het onmogelijk om de werkelijkheid zelf vast te leggen. De wereld draait door en de context van tijd en plaats is lastig te vangen. Het is meestal praktischer om een representatie van de werkelijkheid vast te leggen. Dit kan in een realistische representatie zoals een afbeelding, een foto, een film of een geluidsopname. Maar meestal wordt informatie vastgelegd in symbolen of in tekst. Meer abstracte begrippen zoals prijs, gewicht en productiedatum kunnen alleen maar op die manier worden vastgelegd. En tijd en ruimte zijn een uitdaging op zich.</p>
+			<h4>2.4.1 Begrippen</h4>
+			<p>In het voorgaande hoofdstuk hebben we het over concrete zaken gehad: een geboorte, een gebouw, een registratie van gegevens.</p>
+			<p>Om de betekenis van deze zaken te kunnen beschrijven, is het noodzakelijk om een abstractie te introduceren: de abstractie van "begrippen".</p>
+			<p>Een "begrip" geeft de betekenis van een term in een specifieke context. Een "begrip" heeft geen betrekking op een concrete zaak, maar om een abstractie hiervan.</p>
+			<img class="plaatje" src="plaatjes/begrip2.png" alt="begrip2"/>
+			<p>Een begrip wordt aangeduid met een term. Ook hier kunnen we de begripsdriehoek gebruiken. Alleen gaat het in dit geval niet om een gedachte, maar om een daadwerkelijke <i>afspraak</i> over wat het begrip zou moeten betekenen. Dit drukken we uit met een "a". Onderstaand figuur geeft de driehoek weer voor het begrip "Pand" uit de BAG.</p>
+			<img class="plaatje" src="plaatjes/a.png" alt="a"/>
+			<p>Het "ding" aan de rechterkant is in dit geval geen concreet "ding", maar een abstractie: een "pand" zoals bedoeld in de BAG. Het wolkje bovenin betreft de afspraak over de betekenis van een "Pand". Dit sectie beschrijft hoe een dergelijke afspraak gerepresenteerd kan worden.</p>
+			<h4>2.4.2 Formalisering in een axiomatisch begrippenstelsel</h4>
+			<p>Een begrip is te identificeren door een term te verbinden met een context. Hiermee is duidelijk wanneer twee begrippen dezelfde betekenis hebben (term+context is gelijk), of wanneer twee begrippen van elkaar verschillen (term+context is anders)</p>
+			<img class="plaatje" src="plaatjes/termcontextbegrip.png" alt="termcontextbegrip"/>
+			<p>Dit geeft nog geen duiding aan de betekenis van het begrip. Daarvoor is het noodzakelijk om begrippen met elkaar te verbinden op een manier waardoor de betekenis verder wordt geduid. Hiervoor biedt het vakgebied van de semantiek aanknopingspunten. In dit vakgebied is het gebruikelijk om ‘description logic’ toe te passen voor het beschrijven van de betekenis van begrippen.</p>
+			<p>‘Description logic’ is een variant van predicatenlogica, die op zichzelf weer gestoeld is op verzamelingenleer. Het idee hierachter is dat betekenis uitgedrukt kan worden in classificaties. Elk begrip is dan een classificatie van concrete voorkomens. De verzameling van alle potentiele voorkomens waarvan gezegd kan worden: ‘dit is er zo 1’’ wordt de extensie van een dergelijke classificatie genoemd. Twee begrippen hebben vervolgens dezelfde betekenis is als de bijbehorende extensies precies dezelfde elementen bevat.</p>
+			<img class="plaatje" src="plaatjes/extensie.png" alt="extensie"/>
+			<p>Een begrippenmodel kan qua diepgang beperkt zijn of juist heel diep gaan:</p>
+			<ul>
+				<li>Het model kan zich beperken tot een opsomming van termen, met een (woordelijke) uitleg, zonder enig verband tussen de termen. Dit leidt tot een woordenlijst.</li>
+				<li>Een taxonomie is een model van begrippen, waarin wordt aangegeven welke begrippen een ‘ruimere’ betekenis hebben dan een ander begrip.</li>
+				<li>Een thesaurus gaat een stapje verder. Naast hiërarchische relaties tussen begrippen kent een thesaurus ook andere relaties zoals ‘heeft relatie met’.</li>
+				<li>Aanvullend op de thesaurus zijn ook deel-geheel relaties denkbaar.</li>
+				<li>Een volledige description logic kent alle rijkdom van eerste orde predikatenlogica. Dat is een volledig uitgewerkte ontologie.</li>
+			</ul>
+			<p>De taxonomie gaat uit van de wiskundige betekenis dat de extensie van een ‘smaller’ begrip altijd een deelverzameling is van de extensie van een ‘breder’ begrip. Bovenin staat dan iets als het begrip ‘ding’ (of ‘iets’), dat wiskundig gedefinieerd kan worden als ‘het begrip met de extensie van alle mogelijke dingen’, en onderin staat het begrip ‘niets’, dat als extensie de lege verzameling heeft.</p>
+			<p>Deze wiskundige betekenis introduceert een probleem dat benoemd is door Betrand Russell: een begrip is immers ook weer ‘iets’, dus de verzameling van alles moet ook deze begrippen omvatten. Daarom is het verstandig om gelaagdheid aan te brengen: een begrip kan niet gelijktijdig ook onderdeel zijn van de extensie van dat begrip (een begrip kan geen voorbeeld van zichzelf zijn).</p>
+			<p>Het nadeel van dergelijke modellen, is dat het niet duidelijk is hoe deze modellen zich verhouden tot de brute werkelijkheid: het model creëert een eigen (wiskundige, logische) werkelijkheid, zonder enig verband met de brute werkelijkheid.</p>
+			<p>Hiervoor introduceren we het axiomatisch begrippenstelsel. Een dergelijk stelsel kent als eigenschappen:</p>
+			<ul>
+				<li>Begrippen worden gedefinieerd in termen van andere begrippen.</li>
+				<li>Elke (betekenisvolle) relatie tussen twee begrippen heeft een richting: van het begrip (A) dat voor zijn betekenis afhankelijk is van het begrip (B).</li>
+				<li>Een begrip is voor zijn betekenis afhankelijk van een ander begrip, als dit begrip wordt gebruikt in de definitie.</li>
+				<li>Als begrip (A) afhankelijk is van begrip (B), dan betekent dit ook dat begrip (A) pas te begrijpen is, als je begrip (B) wordt begrepen.</li>
+				<li>Alle betekenisvolle relaties zijn asymetrisch. Dat betekent dat als A-&gt;B, dan mag niet gelden: B-&gt;A.</li>
+				<li>Alle betekenisvolle relaties zijn transitief. Dat betekent dat als A-&gt;B en B-&gt;C, dan geldt ook A-&gt;B-&gt;C.</li>
+				<li>Er mogen geen circulaire relaties ontstaan. Dat betekent dat niet mag gelden: A-&gt;B-&gt;C-&gt;A.</li>
+				<li>Het axiomatisch begrippenstelsel kent uiteindelijk ‘axioma's’: begrippen die niet verder worden gedefinieerd in termen van andere begrippen, maar als ‘axioma's’ worden gezien: begrippen die niet verder toegelicht hoeven te worden, omdat er vanuit gegaan mag worden dat iedereen (binnen de specifieke context) deze begrippen welk begrijpt.</li>
+			</ul>
+			<p>Optimaal is als de axioma's begrippen zijn die als ‘eenvoudig’ worden gekenmerkt, zie hiervoor: woordenlijst taalniveau B1 [<a href="#refEENVWOORD">EENVWOORD</a>].</p>
+			<h4>2.4.3 Brute werkelijkheid versus data</h4>
+			<p>Met een axiomatisch begrippenkader kan het sociaal/juridisch kader min of meer geformaliseerd worden beschreven. Dit is echter nog geen model in de zin van een volledig uitgewerkte ontologie waarin die werkelijkheid kan worden gerepresenteerd zodat data over de werkelijkheid kunnen worden gebruikt. In de ‘wet basisregistratie adressen en gebouwen’ wordt bijvoorbeeld gedefinieerd wat een straat is, wat een huisnummer is en wat een woonplaats is. Deze definities kunnen worden gerepresenteerd in een samenhangend axiomatisch begrippenkader. Dat geeft inzicht, maar is nog niet voldoende voor het ontwerpen van een informatiesysteem waarin data over de ‘dingen’ die met een straat, huisnummer en woonplaats worden aangeduid kunnen worden opslagen.</p>
+			<p>Zo kan in de BAG bij een ‘nummeraanduiding’ worden gedefinieerd dat deze ‘is gerelateerd aan’ een ‘openbare ruimte’ en dat een ‘openbare ruimte’ is ‘gerelateerd aan’ een ‘woonplaats’. Voor een ontologie is veel meer nuance nodig. Bijvoorbeeld ‘in 1 openbare ruimte mag een nummeraanduiding maar 1 keer voorkomen’. </p>
+			<p>Wat daarbij soms uit het oog wordt verloren, is het feit dat het om een registratie gaat en niet om de echte (brute) werkelijkheid. Een registratie bevat alleen maar data die iets veronderstellen over de brute werkelijkheid: een klantenregistratie bevat geen ‘klanten’, maar ‘data over klanten’. En zelfs een registratie van artikelprijzen bevat geen ‘artikelprijzen’, maar slechts ‘data over artikelprijzen’.</p>
+			<p>Als dit onderscheid uit het oog wordt verloren, kan het leiden tot Kafkaëske-toestanden: ‘Ik bel u, omdat ik een aanmaning heb ontvangen dat ik mijn telefoonabonnement niet zou hebben betaald, maar ik ben helemaal geen klant van u’. Reactie: ‘Dat klopt, u staat niet in ons computersysteem. U hoeft niet te betalen’. Vervolg: ‘Maar er staat nu wel een deurwaarder mijn huis leeg te halen!!’. Reactie: ‘Dat kan niet, u bent geen klant volgens ons computersysteem’. Hier wordt de ‘echte’ werkelijkheid ontkend, en de ‘administratieve’ werkelijkheid als de ware verondersteld! (meer voorbeelden op bijvoorbeeld "Computer says no" [<a href="#refCOMPSAYSNO">COMPSAYSNO</a>])</p>
+			<p>Als sketch in een humoristisch programma zal iedereen dit herkennen en er om lachen, maar er zijn ook schrijnende gevallen waarbij mensen hun uitkering of toeslagen verliezen omdat de administratieve werkelijkheid voor de echte werkelijkheid wordt gehouden. Aan de andere kant wordt ook misbruik gemaakt van de soms gebrekkige koppeling tussen data in administratieve werkelijkheden, bijvoorbeeld bij BV fraudes.</p>
+			<h4>2.4.4 Context van data</h4>
+			<p>Een registratie bestaat uit data. Data is de vastgelegde uitdrukking van 1 of meerdere feiten (zie ook [<a href="#refGEGEVEN">GEGEVEN</a>]. Wij gebruiken in dit document het begrip "data" als synoniem voor het (Nederlandse) begrip "Gegeven"). Dergelijke feiten kunnen afkomstig zijn uit verschillende werkelijkheden:</p>
+			<ul>
+				<li>Het kunnen feiten uit de brute werkelijkheid zijn die zijn waargenomen door een sensor, of door een persoon ingevoerd in het informatiesysteem.</li>
+				<li>Het kunnen feiten uit een (andere) administratieve werkelijkheid zijn, die via een automatisch koppeling het informatiesysteem binnenkomen.</li>
+				<li>Het kunnen (veronderstelde) feiten uit een institutionele werkelijkheid zijn, ingevoerd door mensen of afgeleid op basis van rekenregels.</li>
+			</ul>
+			<p>data vormen een discrete representatie van het waargenomen continuüm. Het betreft een waarneming van de voortdurend veranderende werkelijkheid, die op enig moment volgens een bepaald model (dat wil zeggen: een vereenvoudiging van de werkelijkheid) wordt vastgelegd. Het kan dus best zo zijn dat een waarneming van diezelfde werkelijkheid, op een ander moment, of op hetzelfde moment maar volgens een ander model, leidt tot andere data.</p>
+			<p>Het model specificeert welke aspecten van de werkelijkheid worden vastgelegd. Vrijwel elke moderne modelleringswijze maakt daarbij onderscheid tussen representaties van dingen en representaties van eigenschappen van die dingen. Dingen zijn concreet (een persoon, een gebouw, een voertuig), of abstract (een organisatie, een begrip, een kleur). Met eigenschappen worden dingen aan elkaar gerelateerd. Vaak wordt dan ook van een relatie gesproken.</p>
+			<p>Elke specificatie gaat uit van reeds aanwezige kennis bij degene die de specificatie leest en toepast. Hoe uitgebreider en nauwkeuriger de specificatie, hoe beter gebruikers begrijpen hoe zij hun waarnemingen moeten vertalen naar data. Andersom helpt dit gebruikers om data te interpreteren, dat wil zeggen terug te vertalen naar de werkelijkheid.</p>
+			<p>Een basisregistratie (bijvoorbeeld de kadastrale registratie) pretendeert een representatie te zijn van de werkelijkheid, maar het is niet de werkelijkheid. Bovendien is de representatie een afspiegeling van de juridische werkelijkheid. We illustreren dit aan de hand van het voorbeeld "kopen van een huis":</p>
+			<ul>
+				<li>Het kopen van een huis is typisch een ‘levensgebeurtenis’ in de ‘brute’ werkelijkheid.</li>
+				<li>Daarvoor moeten juridisch meerdere dingen worden, zoals de aflossing van de hypotheek door de vorige eigenaar, het vestigen van een hypotheek en de overdracht. Dit zijn verschillende juridische feiten die stuk voor stuk als zodanig worden vastgelegd door een notaris.</li>
+				<li>Deze juridische feiten leiden tot een bijwerking van de Kadastrale registratie.</li>
+			</ul>
+			<p>Zo bekeken is een basisregistratiehouder eigenlijk een 2e lijns organisatie. De betrokkenen in de brute werkelijkheid gaan naar een loket om hun zaken juridisch te regelen. Bij een vastgoedtransactie is dit een notaris die de transactie juridisch vastlegt in een akte (‘waarvan akte’), bij een geboorte is dit een ambtenaar van de burgerlijke stand die een geboorteakte opstelt.</p>
+			<p>De basisregistratie schrijft deze akte in en verwerkt de in de akte opgetekende rechtsfeiten in de registratie. Daarbij hanteert de houder een standaard basispatroon dat bij iedere basisregistratie wordt gebruikt:</p>
+			<ul>
+				<li>Een basisregistratie wordt altijd bijgewerkt op basis van een brondocument met een juridische status. Bij het Kadaster zijn dat meestal notariële akten, maar het kan ook een beschikking van een publiekrechtelijke organisatie zijn. Voorbeelden uit andere basisregistraties zijn een oprichtingsakte van een bedrijf of een geboorteakte van een persoon.</li>
+				<li>In dit brondocument zijn een of meerdere rechtsfeiten opgetekend.</li>
+				<li>Er is altijd een aanleiding in de brute werkelijkheid om een specifiek brondocument met de betreffende rechtsfeiten op te stellen.</li>
+				<li>De rechtsfeiten worden verwerkt in de registratie. Daarbij is sprake van een was-situatie (vóór de verwerking van het rechtsfeit) en een wordt-situatie (ná de verwerking van het rechtsfeit). De laatste geeft de nieuwe actuele rechtssituatie aan.</li>
+				<li>Wijzigingen in de registratie zijn al dan niet relevant voor ketenpartners die informatie afnemen. Zo zal een gemeente voor wat betreft de basisregistratie Kadaster geïnteresseerd zijn in ‘overdracht van eigendom’ om de WOZ aanslag naar het goede adres te kunnen sturen, maar niet in ‘inschrijving hypotheek’.</li>
+			</ul>
+			<p>Een ander voorbeeld van een situatie waarin duidelijk is dat de data niet de werkelijkheid zijn is een kadastrale grens die in een kaart is getekend. Als een lijn op de kaart wordt vergroot naar ware grootte kan deze wel een meter breed worden. De meeste conflicten over een erfgrens gaan over minder. Bij zo’n conflict, dat regelmatig is te zien bij het TV programm "de rijdende rechter", gaat een rechter in de regel samen met een landmeter naar de betreffende locatie zodat hij kan beoordelen hoe de werkelijkheid is. De uitspraak van de rechter is dan op basis van zijn beeld van de werkelijkheid.</p>
+			<p>Om data te kunnen beoordelen is dus altijd informatie nodig over de wijze waarop deze is ingewonnen en wanneer en waar deze is ingewonnen. In sommige gevallen is het zelfs van belang om te weten wanneer data is geregistreerd. Voor het verkrijgen van huurtoeslag is het niet voldoende ergens te wonen waar je recht hebt op die toeslag. Dit moet op tijd (niet na bijvoorbeeld een aantal jaren) worden gemeld aan de houder van de registratie op basis waarvan die toeslag wordt toegekend.</p>
+			<h4>2.4.5 Correcties</h4>
+			<p>Een bijzonder patroon vormen correcties in de registratie. Ten opzichte van het basispatroon zijn er vooral enkele nuanceverschillen:</p>
+			<ul>
+				<li>Het brondocument is een intern stuk dat is opgesteld door iemand die daartoe bevoegd is.</li>
+				<li>De aanleiding zit niet in de brute werkelijkheid en ook niet in de juridische werkelijkheid. Aanleiding is een constatering dat de registratie niet in overeenstemming is met de feitelijke juridische situatie.</li>
+				<li>In de registratie is nog steeds sprake van een was-wordt transformatie.</li>
+				<li>Deze wijziging is wel degelijk relevant voor afnemers die hun processen baseren op de informatie uit de registratie. Daarmee is het ook relevant om niet alleen vast te leggen dat het een correctie betreft, maar ook welke gebeurtenis is gecorrigeerd. Dit kan er bijvoorbeeld toe leiden dat een aanvankelijk geweigerde toeslag alsnog wordt toegekend.</li>
+			</ul>
+			<h4>2.4.6 Van begrippen naar (vastlegging van) data</h4>
+			<p>Met het begrip dat verkregen is van de onderwerpen uit de wet, kan een datamodel geformuleerd worden, zoals afgebeeld in onderstaand figuur:</p>
+			<img class="plaatje" src="plaatjes/at.png" alt="at" width="400"/>
+			<p>Op deze wijze wordt uitdrukking gegeven aan het volledige model:</p>
+			<img class="plaatje" src="plaatjes/vandingnaarwet.png" alt="vandingnaarwet" width="600"/>
+			<h4>2.4.7 Begrippen in deze sectie</h4>
+			<table class="glossary">
+				<tr>
+					<td>
+						<img src="imgbegrip/Administratieve gebeurtenis.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">administratieve gebeurtenis</a> is een gebeurtenis in een IT systeem (zoals het toevoegen van data)</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Levensgebeurtenis.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">levensgebeurtenis</a> is een gebeurtenis in de natuurlijke werkelijkheid, in "het leven van een mens"</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Rechtshandeling.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">rechtshandeling</a> is een juridische gebeurtenis die plaatsvindt conform de wet- en regelgeving</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="imgbegrip/Regel.png" width="70"/>
+					</td>
+					<td>
+						<p>Een <a href="#">regel</a> beschrijft hoe feitelijke situaties zich ten opzichte van elkaar verhouden</p>
+					</td>
+				</tr>
+			</table>
+			<hr/>
+			<h2 id="modelleerwijze">3 Modelleerwijze</h2>
+			<h3 id="uri-strategie">3.1 URI Design pattern voor Linked Data</h3>
+			<p>De URI-strategie is primair bedoeld voor data waarmee objecten of concepten worden gedefinieerd, waar andere toepassingen naar kunnen verwijzen. Data waar niet naar wordt gelinkt valt buiten de scope. Om dit toe te lichten worden drie categorieën informatiebronnen onderscheiden:</p>
+			<ol>
+				<li>Standaarden</li>
+				<li>Authentieke registraties</li>
+				<li>"gewone" Applicaties</li>
+			</ol>
+			<p>Elk met de nadruk op een van drie categorieën "data":</p>
+			<ol>
+				<li>Metadata (zoals begrippen in een conceptueel model)</li>
+				<li>Referentiedata</li>
+				<li>"gewone" Data</li>
+			</ol>
+			<p>Dit onderscheid in verschillende soorten "data" is al in 2006 benoemd door Malholm Chisholm in "Master Data versus Reference Data" [<a href="#refREFDATA">REFDATA</a>]. Malcolm maakt onderscheid in de volgende catagorieen:</p>
+			<img class="plaatje" src="plaatjes/masterdata.png" alt="masterdata"/>
+			<p>Opvallend in dit figuur is dat niet alleen metadata en referentiedata relevant is voor de buitenwereld. Ook "gewone" data kan relevant zijn voor de buitenwereld, bijvoorbeeld in een supply chain.</p>
+			<img class="plaatje" src="plaatjes/9-vlaksmodel-A.png" alt="9-vlaksmodel-A" width="600"/>
+			<p>De grootte van een cel in het diagram geeft een indicatie van het gewicht van de categorie concepten in die categorie van informatiebronnen. De belangrijkste functie van een standaard is gewoonlijk om een conceptueel model te definiëren. (a1) Authentieke registraties worden doorgaans opgezet om een administratie van Referentieobjecten bij te houden (b2) en een 'gewone' Applicatie heeft gewoonlijk slechts de functie om Data te verzamelen voor een specifiek doel (c3).</p>
+			<p>Uiteraard kunnen een Authentieke registratie en een Applicatie een eigen Model hebben (b1 en c1), sommige Standaarden verstrekken een lijst met Referentiewaarden (a2) en Applicaties kunnen lokale Referentiegegevens hebben (c2). Ook kunnen Standaarden en Registers wat 'gewone' data nodig hebben (a3 en b3), bijvoorbeeld om wijzigingen en herkomst van hun referentiegegevens vast te leggen.</p>
+			<p>De URI-strategie ondersteunt het hergebruik van Concepten en Referentieobjecten door andere data-collecties. De interessante categorieën zijn dan ook de termen in de Modellen en de Referentiegegevens.</p>
+			<img class="plaatje" src="plaatjes/9-vlaksmodel-B.png" alt="9-vlaksmodel-B" width="600"/>
+			<p>Termen, zoals klassen en eigenschappen, die zijn gedefinieerd in de Modellen van een Standaard of een Authentieke registratie, worden gebruikt om Referentieobjecten en Data te classificeren.</p>
+			<img class="plaatje" src="plaatjes/9-vlaksmodel-C.png" alt="9-vlaksmodel-C" width="600"/>
+			<p>Referentieobjecten, gedefinieerd door Standaarden (denk aan waardenlijsten), maar vooral die beheerd worden in Authentieke registraties, worden gebruikt in "gewone" Applicaties.</p>
+			<img class="plaatje" src="plaatjes/9-vlaksmodel-D.png" alt="9-vlaksmodel-D" width="600"/>
+			<p>De URI-strategie is bedoeld voor Modellen en Referentieobjecten van zowel Standaarden als Authentieke registraties. Dus niet in eerste instantie voor de "gewone" Data (rij 3) of concepten in "gewone" Applicaties (kolom c) aangezien daar nou eenmaal niet of nauwelijks naar wordt gelinkt.</p>
+			<p>Gedurende de PiLOD heeft de Werkgroep URI-strategie een aantal inzichten opgedaan bij de analyse van de voorgestelde varianten.</p>
+			<h4>3.1.1 No register, no identifier</h4>
+			<p>In Linked Data theorie wordt nogal eens beweerd dat het nodig is om voor elk concept of object een URI te definiëren, waardoor het lijkt alsof je pas kunt beginnen als je voor elk concept of object een nieuwe Linked Data URI hebt verzonnen en 'gemunt' (to mint a URI). Maar waarom zou je alles opnieuw definiëren? De mensheid definieert al eeuwen lang authentieke identificatie voor standaard begrippen en referentieobjecten. Denk aan encyclopedieën, taxonomieën en registraties van inwoners of van onroerende goederen. We noemen hier een voorziening voor het authentiek definiëren en identificeren van concepten of referentieobjecten een register. Onder register verstaan we hier dus zowel een specificatie van begrippen/concepten in een standaard, als een authentieke registratie van referentieobjecten.</p>
+			<p>Doel van deze niet geringe inspanning om registers op te zetten is, om vanuit verschillende administraties op een eenduidige manier met een afgesproken term (een identifier) naar nauwkeurige en meer uitgebreide definities van abstracte begrippen en objecten te kunnen verwijzen zodat iedereen weet wat bedoeld wordt. Informatie uit verschillende administraties kan vervolgens gekoppeld worden door – handmatig – gelijke termen (gewoonlijk namen of nummers) bij elkaar te zetten.</p>
+			<p>Nu we dat willen gaan automatiseren is er niets op tegen om deze bestaande registers te blijven gebruiken. Maar wat nou, als we naar begrippen of objecten willen verwijzen waar nog geen register voor bestaat? De enige manier om voor ontbrekende begrippen en objecten een URI te munten is toch door deze vast te leggen in een nieuw register. Als we merken dat er voor bepaalde begrippen of objecten geen register bestaat, terwijl we hier wel URIs voor willen hebben, dan is de enige manier om een register aan te leggen. Kortom: je kunt alleen URIs munten voor begrippen of objecten die vastliggen in een register. Dit belangrijke inzicht vatten we samen in het adagium: 'No register, No identifier'.</p>
+			<h4>3.1.2 No register, no model</h4>
+			<p>Een URI "hoort" bij de registratie die oorspronkelijk de URI heeft gemunt. Maar niet alleen de identificatie en de registratie zijn met elkaar verbonden, ook de betekenis van de URI is verbonden met de registratie.</p>
+			<p>De (eigenaar van de) registratie bepaalt wat de URI inhoudt. Vandaar ook het belang om in de URI de naam van de registratie op te nemen. Via de domeinregistratie (in Nederland SIDN [<a href="#refSIDN">SIDN</a>]) is vervolgens te lezen wie de eigenaar is van deze registratie. Op die manier is duidelijk wie de "eigenaar" is van deze URI, en daarmee van de betekenis en de identificatie</p>
+			<h4>3.1.3 Hergebruik zonder register</h4>
+			<p>Bovenstaande opmerkingen lijken te suggereren dat het altijd noodzakelijk is om URI's te maken die zich houden aan de URI-strategie en vanuit een register worden bediend. Dat is echter niet het geval.</p>
+			<p>Er zijn situaties denkbaar om een afwijkende URI strategie te hanteren. Twee veelgebruikte voorbeelden zijn:</p>
+			<ol>
+				<li>Een URN, zoals in de ECLI standaard: <code>jci1.3:c:BWBR0023466&amp;hoofdstuk=1&amp;artikel=1</code>;</li>
+				<li>Een UUID, bijvoorbeeld: <code>urn:uuid:550e8400-e29b-41d4-a716-446655440000</code>.</li>
+			</ol>
+			<p>Het gebruik van een URN is aan te bevelen als er niet automatisch een uniek register aan te wijzen is, maar als er wel een afspraak is wat een URI betekent en welk model er bij hoort (zoals in dit geval bij de ECLI standaard).</p>
+			<p>Het gebruik van een UUID is aan te bevelen als het gaat om data waarvan niet verwacht wordt dat deze buiten de applicatie wordt gebruikt.</p>
+			<p>Mocht op een later moment de data alsnog via een register ontsloten worden, dan kan in beide gevallen de URN of UUID omgezet worden naar een URL, bijvoorbeeld:</p>
+			<ol>
+				<li>ECLI via wetten.nl: <code>http://wetten.overheid.nl/1.0:c:BWBR0023466&amp;hoofdstuk=1&amp;artikel=1</code>;</li>
+				<li>Een UUID omgezet naar URL: <code>http://bp4mc2.org/id/550e8400-e29b-41d4-a716-446655440000</code></li>
+			</ol>
+			<h4>3.1.4 Uitgangspunten</h4>
+			<p>De volgende uitgangspunten zijn in de loop der jaren geformuleerd (in afnemende volgorde van belang):</p>
+			<p><b>Sluit aan bij internationale best-practices</b><br/>Alleen ga je sneller, maar samen kom je verder. Door aan te sluiten op internationale ontwikkelingen profiteer je van oplossingen die wereldwijd bedacht worden. Ook is Europese regelgeving van steeds groter belang voor de Nederlandse overheid.</p>
+			<p><b>Sluit aan bij bestaande ontwikkelingen.</b><br/>De strategie raakt vele partijen en systemen en kan niet in een keer als iets nieuws worden ingevoerd. Kijk daarom goed naar wat er op het gebied van standaardisatie en authentieke registraties toch al gebeurt en maak daar maximaal gebruik van.</p>
+			<p><b>Houd rekening met afwijkende strategieën.</b><br/>Ook als er systemen worden gemaakt die om wat voor reden dan ook niet de nationale strategie volgen, moet hiermee gelinkt kunnen worden.</p>
+			<p><b>Houd het zo simpel mogelijk, maar niet simpeler.</b><br/>Bij een te complexe benadering zal de strategie niet of onvoldoende worden toegepast, bij een te eenvoudige benadering zal de strategie niet voldoende opleveren.</p>
+			<p><b>Persistentie.</b><br/>Persistentie betekent dat oplossingen ook stand houden als de organisatie eromheen wijzigt. Ook al moeten we accepteren dat we nog niet alles weten en dat voortschrijdend inzicht tot andere keuzes kan leiden. Persistentie betekent niet voor de eeuwigheid, maar een onderneming of instantie moet er wel bedrijfskritische systemen op durven te ontwikkelen.</p>
+			<p><b>Schaalbaarheid.</b><br/>Schaalbaarheid is van belang om beheerkosten te kunnen blijven overzien, ook als toepassingen groeien. Het is onvoorspelbaar hoeveel applicaties er de komende jaren zullen ontstaan. Elk onderdeel van de strategie zal dan ook schaalbaar moeten worden opgezet.</p>
+			<p><b>Begrijpelijkheid.</b><br/>Begrijpelijkheid is noodzakelijk om te zorgen dat afspraken makkelijk worden opgepakt en overgenomen.</p>
+			<p><b>Vertrouwen.</b><br/>Vertrouwen is nodig om organisaties te bewegen om zelf strategisch te kiezen voor het gebruik en publicatie van Linked Data.</p>
+			<p><b>Machine-leesbaarheid.</b><br/>Machine-leesbaarheid zorgt ervoor dat er met Linked Data ook werkende oplossingen kunnen worden gebouwd.</p>
+			<p><b>Menselijke leesbaarheid</b><br/>Menselijke leesbaarheid is ook belangrijk om te zorgen dat men oplossingen vertrouwt en begrijpt. Maar als de machine de data niet goed gebruiken kan, dan werkt het überhaupt niet.</p>
+			<h4>3.1.5 URI-patroon</h4>
+			<p>In navolging van de drie eerder genoemde bronnen gaan wij er vanuit dat http-URIs de voor de hand liggende keuze vormen. In alle drie de strategieën wordt uitgegaan van nadere afspraken over het te gebruiken patroon om de http-URI op te bouwen. Het patroon voor http-URIs dat in deze bronnen wordt aanbevolen - en wat wij daarom overnemen - is:</p>
+			<p>
+				<code>http://{domain}/{type}/{concept}/{reference}</code>
+			</p>
+			<p>We behandelen de vier onderdelen hierna één voor één.</p>
+			<h4>3.1.6 URI-patroon: {domain}</h4>
+			<p>Het <code>{domain}</code> deel bevat het internet domein en eventueel een pad binnen dat domein:</p>
+			<p>
+				<code>{domain} = {internet domain}/{path}.</code>
+			</p>
+			<p>Het <code>{domain}</code> dient twee doelen. Ten eerste is het een belangrijk instrument om unieke identificaties te verkrijgen: twee objecten, die beheerd worden in twee verschillende databases, kunnen toevallig dezelfde identificatie krijgen (bijvoorbeeld een kadastraal perceel met id 010101 en een rechtspersoon met id 010101). Als nu zowel het Kadaster als het Nieuw HandelsRegister (NHR) besluit om deze objecten als linked data te publiceren, worden er toch twee unieke URIs gevormd: de een begint bijvoorbeeld met http://brk.nl/ en de ander met http://nhr.nl/. Ten tweede zorgt een goedgekozen domein voor herkenbaarheid en vertrouwen. Kadastrale percelen met een URI als http://data.brk.nl/perceel/010101 hebben een betrouwbaarder uitstraling dan bijvoorbeeld http://data.vindhethier.eu/perceel/010101.</p>
+			<p>Het <code>{path}</code> kan worden gebruikt als binnen een register verschillende verzamelingen objecten leven, waarbij dubbele id's kunnen voorkomen. Het <code>{path}</code> kan dan gebruikt worden om extra namespaces te creëren.</p>
+			<p>
+				<b>Aanbevelingen</b>
+			</p>
+			<ol>
+				<li>Één taak: het register<br/>Het <code>{domain}</code> is bij voorkeur exclusief gereserveerd voor publicatie van het register en het resolven van de URIs van het register. Als het domein namelijk een onderdeel is van een uitgebreider domein, waarop ook nog andere publicaties plaatsvinden, dan kan er vroeger of later sprake zijn van de noodzaak tot her-organisatie van de publicaties, met alle gevolgen van dien voor de persistentie van de URIs in het register.<br/>Het idee om voor de overheid een centraal domein beschikbaar te stellen voor URIs (zoals de Britse overheid dat ooit opperde https://www.gov.uk/government/publications/designing-uri-sets-for-the-uk-public-sector) hebben we na uitgebreide afweging verworpen. Deze benadering is afhankelijk van een centrale voorziening die weer door een partij moet worden beheerd. De houders van de registers zouden op die manier afhankelijk worden van deze partij om hun URIs te kunnen munten volgens de URI-strategie. Een centraal register van registers mag dus nooit een onmisbaar onderdeel van het stelsel worden. De registerhouders moeten volledig zelfstandig kunnen beschikken over het domein van hun register. Zie ook [<a href="#refISSUE2">ISSUE2</a>]</li>
+				<li>Geen organisatienaam in het <code>{domain}</code><br/>Het is sterk af te raden om in het <code>{domain}</code> een organisatienaam op te nemen, hoe verleidelijk dat ook vanuit marketing oogpunt kan zijn. Opnieuw is persistentie hierbij het belangrijkste argument. Organisaties kunnen immers gesplitst, gefuseerd, of hernoemd worden en zij krijgen dan doorgaans een nieuwe naam en kiezen een nieuw internetdomein. Het hernoemen van de URIs verstoort de persistentie. Het blijven gebruiken van het oude domein – iets waar puur technisch niets op tegen zou zijn – kan echter de indruk wekken dat de data ook verouderd is. Registers zullen over het algemeen blijven bestaan zolang ze een bepaald nut dienen. Als het register daadwerkelijk wordt opgeheven of overgaat in een nieuw register, dan zijn de modellen en referentieobjecten in het oude register doorgaans ook daadwerkelijk uit de tijd.</li>
+				<li>Terughoudend met <code>{path}</code><br/>Probeer het gebruik van <code>{path}</code> zo veel mogelijk te vermijden. Hoe korter de URI, hoe handiger in gebruik. Hoe minder informatie in de URI, hoe kleiner de kans dat er later op teruggekomen moet worden.</li>
+			</ol>
+			<h4>3.1.7 URI-patroon: {type}</h4>
+			<p>Het <code>{type}</code> geeft aan om wat voor soort URI het gaat. Dit kan zijn:</p>
+			<ul>
+				<li>'id': identifier van een object (individual/instance) in een register.</li>
+				<li>'doc': documentatie (metadata) over het object in het register.</li>
+				<li>'def': definitie van een term in een ontologie.</li>
+			</ul>
+			<p>
+				<b>Aanbevelingen</b>
+			</p>
+			<ol>
+				<li>Gebruik 303 redirect van de 'id'-URI naar de 'doc'-URI<br/>In [<a href="#refCOOLURIS">COOLURIS</a>] wordt in sectie 4.2 uitgelegd hoe dit bedoeld is.</li>
+				<li>Gebruik Hash-URIs voor termen uit het model.<br/>In een Linked Data applicatie is het onderscheid tussen model en content soms moeilijk te maken. In een relationele database is dat onderscheid doorgaans duidelijker: tabellen en kolommen geven het model aan en de inhoud van de tabellen vormen de content. In Linked Data kun je echter een klasse ook beschouwen als een instance (namelijk van de klasse rdfs:Class). Om de gebruiker van een register meer duidelijkheid te verschaffen over welke termen echt tot het model behoren en welke termen gezien kunnen worden als inhoud van het register, verdient het aanbeveling om de URIs van de eersten als hash-URI (#-URI) te definiëren: http://{domain}/def#{term}. Dit heeft als bijkomend voordeel dat de URI http://{domain}/def alle termen uit het model oplevert. In 'Cool URIs for the Semantic Web' wordt uitgelegd hoe dit bedoeld is in sectie 4.1. Als de ontologie erg omvangrijk is, kan ook gekozen worden om geen gebruik te maken van hash-URIs.</li>
+			</ol>
+			<h4>3.1.8 URI-patroon: {concept}</h4>
+			<p>Het <code>{concept}</code> geeft de menselijke lezer een indicatie van het soort concept dat de URI identificeert. Het <code>{concept}</code> is belangrijk om twee redenen. Ten eerste kan het een uitkomst bieden als objecten binnen de registratie geen unieke identifiers hebben, maar wel uniek zijn per soort object. Bijvoorbeeld gemeente Utrecht en provincie Utrecht. Ten tweede, en dit is belangrijker, levert het een begrijpelijker URI op. Een menselijke lezer kan vermoeden dat http://bagregister.nl/id/pand/01010101 de URI van een pand uit de BAG is.</p>
+			<p>Een mogelijk nadeel van het opnemen van {concept} in de URI is dat hiermee betekenis in de URI wordt opgenomen, terwijl betekenisloze IDs over het algemeen eenvoudiger persistent te maken zijn.</p>
+			<p>
+				<b>Aanbevelingen</b>
+			</p>
+			<ol>
+				<li><code>{concept}</code> betekent niets.<br/>Het is zeer onverstandig om <code>{concept}</code> enige betekenis toe te kennen voor de machine. URIs zijn in technische zin [<a href="#refAXIOMS">AXIOMS</a>]. Het is dus niet zo dat het {concept} per se de klasse is waartoe een object behoort. Het helpt alleen de menselijke lezer, bijvoorbeeld de beheerder van een semantisch model, om de URIs te herkennen. [[<a href="#refCOOLURIS">COOLURIS</a>]] en [[<a href="#refURISTYLE">URISTYLE</a>]]</li>
+				<li>Denk ook bij het kiezen van <code>{concept}</code> aan persistentie.<br/>Als het in een registratie denkbaar is dat objecttypen (klassen) van naam veranderen, maar dan nog wel dezelfde klasse vertegenwoordigen, is het niet verstandig dit onderdeel in de URI op te nemen. Neem in dat geval een hogere klasse op. Volgens sommigen betekent het veranderen van het type van een instance per definitie dat er niet langer sprake is van dezelfde instance, maar van een andere instance, van het andere type. Voorbeeld: stel dat het Centraal Orgaan opvang Asielzoekers (COA) wordt omgevormd van zelfstandig bestuursorgaan (zbo) naar agentschap. [[<a href="#refKST-33042-21">KST-33042-21</a>]] En dat we als URI van het COA zouden kiezen voor: <code>{domein}/id/zbo/coa</code>. Dan wordt dat na de omvorming <code>{domein}/id/agentschap/coa</code>. Zouden we kiezen voor <code>{domein}/id/organisatie/coa</code> dan hoeven we de URI niet aan te passen, maar kunnen we ook geen onderscheid meer maken tussen de COA als ZBO en de COA als agentschap.</li>
+			</ol>
+			<h4>3.1.9 URI-patroon: {reference}</h4>
+			<p>De <code>{reference}</code> is de identificerende naam of code van het individuele object. Wat betreft <code>{reference}</code> geeft de URI strategie veel vrijheid, aangezien de eisen in verschillende toepassingen sterk uiteen kunnen lopen. Een <code>{reference}</code> kan zijn: een identificerend nummer, een alfanumerieke code, een woord of naam, etc. Elk register heeft wel een manier om de individuele objecten in de verzameling uniek aan te duiden. Deze unieke aanduiding kan worden opgenomen in de <code>{reference}</code>.</p>
+			<p>
+				<b>Aanbevelingen</b>
+			</p>
+			<ol>
+				<li>Namen of nummers?<br/>Er is vaak discussie over het gebruik van 'betekenisloze' identifiers versus 'betekenisvolle' identifiers. Zolang computers geen bewustzijn hebben is elke URI voor de machine een betekenisloze string. Voor mensen kan ook een betekenisloze string betekenis krijgen (020 wordt veel gebruikt door mensen die het label 'Amsterdam' of 'Ajax' niet willen uitspreken, 013 (Tilburgs poppodium), 9292 (OV-informatie), nummer 14 (Johan Cruijff). Namen of nummers, voor beiden is wat te zeggen. Nummeren heeft als voordeel dat het nauwkeuriger lijkt en er geen homoniemen voor kunnen komen. Maar je verliest herkenbaarheid en hanteerbaarheid voor mensen, zonder steeds de labels bij de hand te hebben.
+					<ul>
+						<li>In de praktijk zijn de URIs voor de concepten in vrijwel alle semantische standaarden betekenisvol en bevatten zij doorgaans het volledige label (naam) waarmee de term voor de mens wordt aangeduid (meestal als CamelCase geschreven zodat er geen spaties in voorkomen).</li>
+						<li>Bij grote aantallen objecten wordt het ondoenlijk om voor elk object een herkenbare unieke naam te bedenken. We gaan dan - vrijwel vanzelf - nummeren.</li>
+						<li>Tussen deze twee uitersten zit een grijs gebied. Voor kleine, stabiele sets met objecten (bijvoorbeeld provincies) is het voordelig om de hele naam in de URI op te nemen, bij iets grotere sets, met meer mutaties, komen vaak lange namen voor die de URI onhandelbaar maken. Het kan dan een oplossing zijn om afkortingen in de URI te gebruiken.</li>
+					</ul></li>
+				<li>Vermijd vreemde tekens in een URI.<br/>Het beste is om zich te beperken tot lowercase letters, cijfers, en eventueel koppeltekens als scheidingsteken.</li>
+			</ol>
+			<h4>3.1.10 Aanbevelingen voor "private" data</h4>
+			<p>Steeds meer “private” data wordt gepubliceerd, waardoor het wellicht moeilijk is om de grens te trekken tussen “eigen” data (die niet de publieke URI-strategie hoeft te volgen), en “eigen data ter gebruik door anderen” (die wel de publieke URI-strategie zou moeten volgen?). Daarom de aanbevelingen:</p>
+			<ul>
+				<li>Gebruik als je nieuwe ID’s uitgeeft een UUID;</li>
+				<li>Gebruik als je een URI maakt iets dat uniek is in de wereld (dus volg in ieder geval de URI strategie voor het deel achter het domein, of gebruik UUID’s)</li>
+				<li>Maak eventueel een owl:sameAs naar een URI die WEL publiek is, als je dit later wilt.</li>
+				<li>Maak onderscheid tussen de ID en de DOC uri: ID uri’s kun je later toevoegen, maar moeten publiek uniek zijn, doc-uri’s mogen naar andere domeinen gaan.</li>
+			</ul>
+			<h3 id="begripkader">3.2 Begripkader</h3>
+			<p>Begrippen maken duidelijk welke "onderwerpen van gesprek" er bestaan: over welke actoren, objecten en gebeurtenissen er wordt gesproken. Alle deze begrippen worden formeel gedefinieerd, waarbij iedere definitie wordt opgebouwd volgens strikte regels. De essentie is dat elk begrip wordt uitgelegd in termen van andere begrippen, totdat uiteindelijk elk begrip is gedefinieerd. Om te voorkomen dat dit proces nergens eindigt wordt gestopt bij begrippen waarvan de betekenis als vanzelfsprekend wordt aangenomen. In een logisch model worden dit axioma's genoemd. In het begrippenkader zijn dit de begrippen die in het model niet worden gedefinieerd.</p>
+			<h4>3.2.1 Model</h4>
+			<b>Specialisatie en generalisatie</b>
+			<p>Iedere definitie heeft een duidelijke opbouw, namelijk ‘Een {te definiëren begrip} Is een {ander begrip} dat..’. Bijvoorbeeld in de context van het Kadaster: ‘Een zakelijk recht is een recht dat..’ Een recht is een typisch voorbeeld van een basisbegrip ofwel een axioma in het model. Dit kan juridisch worden uitgelegd, maar voor een leek zal die niet meer duidelijkheid geven dan het besef dat het bij het Kadaster net als bij elke overheidsorganisatie om het vastleggen en bewaken van rechten en plichten gaat.</p>
+			<p>Het definiëren van een begrip in termen van een ander begrip kan op twee manieren:</p>
+			<ul>
+				<li>Een {begrip} is een {een ander begrip} dat..</li>
+				<li>Een {begrip} is een {een ander begrip} of {nog een ander begrip} of..</li>
+			</ul>
+			<p>In het eerste geval gaat het om een specialisatie. In het tweede geval gaat het om een generalisatie. Een voorbeeld van een specialisatie is het hierboven genoemde ‘zakelijk recht’ dat een specialisatie is van ‘recht’. Je moet eerst het begrip ‘recht’ begrijpen om te begrijpen van een ‘zakelijk recht is’.</p>
+			<p>Een voorbeeld van een generalisatie is het begrip ‘persoon’ bij de overheid. Dit is een generalisatie van ‘natuurlijke persoon’ en ‘rechtspersoon’. Een natuurlijk persoon is een mens in zijn juridische betekenis. Juristen formuleren dat dan in de trant van ‘in zijn hoedanigheid als drager van rechten en plichten’. Een rechtspersoon is een organisatie, die ook drager van rechten en plichten is. In dit geval moet je eerst de begrippen ‘natuurlijk persoon’ en ‘rechtspersoon’ begrijpen om te begrijpen wat een ‘persoon’ is.</p>
+			<b>Is opgebouwd uit</b>
+			<p>Soms komt het voor dat een bepaald begrip is opgebouwd uit onderdelen van andere begrippen. Deze constructie heeft een opbouw vergelijkbaar met een specialisatie of generalisatie:</p>
+			<ul>
+				<li>Een {begrip} is opgebouwd uit een {een ander begrip} en een {nog een ander begrip} en..</li>
+			</ul>
+			<p>Een voorbeeld is het begrip ‘adres’ in de BAG. Dit wordt gedefinieerd als ‘Een adres is een .. bestaande uit de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats’. Om te begrijpen wat een adres betekent moet je begrijpen wat een ‘openbare ruimte’ is, wat een ‘nummeraanduiding’ is en wat een ‘woonplaats’ is.</p>
+			<b>Is onderdeel van</b>
+			<p>Ook het tegenovergestelde komt voor. Een begrip kan onderdeel zijn van een ander begrip. Deze constructie ziet er als volgt uit:</p>
+			<ul>
+				<li>Een {begrip} is een onderdeel van een {een ander begrip} dat..</li>
+			</ul>
+			<p>Een voorbeeld is het begrip ‘vestiging’ in het NHR. Dit wordt gedefinieerd als ‘Een vestiging’ is een onderdeel van een maatschappelijke activitiet dat..’. Om dit te begrijpen moet je eerst begrijpen wat een maatschappelijke activiteit is.</p>
+			<b>Semantische relatie</b>
+			<p>Tot slot kan een begrip betrekking hebben op een ander begrip. Dat heet een semantische relatie. Deze constructie komt vaak voor in combinatie met een specialisatie en ziet er dan als volgt uit:</p>
+			<ul>
+				<li>Een {begrip} is een {een ander begrip} dat betrekking heeft op {nog een ander begrip}..</li>
+			</ul>
+			<p>Een voorbeeld is het eerder genoemde begrip ‘zakelijk recht’ bij het Kadaster. De volledige definitie daarvan is ‘Een zakelijk recht is een .. recht op een zaak..’. In dit geval moet je ook begrijpen wat een ‘zaak’ is om het begrip ‘zakelijk recht’ te begrijpen.</p>
+			<b>Bronvermelding</b>
+			<p>Het is van belang dat voor elk begrip een bronverwijzing (liefst een juridische) wordt gevonden, waarmee duidelijk wordt welk begrip bedoeld wordt.</p>
+			<h4>3.2.2 Definities en klare taal</h4>
+			<p>De formele definitie is typisch ontleend aan de wet of aan vakliteratuur. Dit is vaak in een begrippenkader dat alleen door ingewijden in het betreffende jargon is te begrijpen. Daarom is meestal een vertaling naar ‘klare taal’ nodig om een begrip ook voor niet-ingewijden duidelijk te beschrijven. Klare taal bevat uitsluitend woorden die door 95% van de mensen worden begrepen. Klare taal is altijd expliciet (‘klaar’). Het bevat geen impliciete duidingen. Er staat gewoon wat er staat, niets meer en ook niets minder. Bij het uitleggen in klare taal worden de volgende richtlijnen gebruikt:</p>
+			<ul>
+				<li>Bij het uitleggen van een begrip in klare taal worden dezelfde logische constructies gebruikt als bij de formele definitie, namelijk specialisatie, generalisatie, opgebouwd uit, onderdeel van en semantische relatie.</li>
+				<li>Termen die op zich niet klare taal zijn, maar ergens anders binnen het begrippenkader worden uitgelegd, kunnen worden gebruikt in deze logische constructies.</li>
+				<li>Alle andere woorden in een uitleg moeten voorkomen in de zogenaamde B1 lijst. Dit is een beperkte woordenlijst die alleen woorden bevat waarvan bekend is dat 95% van alle mensen deze begrijpt.</li>
+			</ul>
+			<p>De klare taal uitleg verbindt het juridische vakjargon met het begrippenkader dat we als gewone mensen met elkaar gemeen hebben. Bovendien wordt via het begrip ook de link gelegd met de administratieve registratie.</p>
+			<img class="plaatje" src="plaatjes/begrip.png" alt="begrip" width="600"/>
+			<h4>3.2.3 Begrippen</h4>
+			<p>Het formulier voor een Begrip kent de volgende opbouw:</p>
+			<table class="simple">
+				<tr>
+					<th>Eigenschap</th>
+					<th>Verwachte waarde</th>
+					<th>Voorbeeld</th>
+				</tr>
+				<tr>
+					<td>naam</td>
+					<td>Geef hier de voorkeursterm op die voor het betreffende begrip gebruikt wordt.</td>
+					<td>"Fiets"</td>
+				</tr>
+				<tr>
+					<td>domein</td>
+					<td>Geef hiermee het domein aan dat beschreven wordt. Binnen 1 domein mag een term niet verwijzen naar twee begrippen. Mocht dit toch dreigen te gebeuren, dan zal of een andere term gekozen moeten worden, of een ander (sub)domein</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>definitie</td>
+					<td>Geef hier de formele uitleg van het begrip in woorden.Zie ook: <a href="#definitie">definitie</a></td>
+					<td>"Een fiets is een voertuig dat door spierkracht wordt aangedreven"</td>
+				</tr>
+				<tr>
+					<td>uitleg</td>
+					<td>Vaak is de formele uitleg niet direct begrijpbaar. Naast de formele uitleg, kan een "klare taal" uitleg van toegevoegde waarde zijn.Zie ook: <a href="#klare taal">klare taal</a></td>
+					<td>"Een fiets is wat iedereen in Nederland een fiets noemt"</td>
+				</tr>
+				<tr>
+					<td>toelichting</td>
+					<td>Geef hier eventueel een toelichting op de definitie: aanvullingen, extra uitleg, voorbeelden</td>
+					<td>"Het is niet uitgesloten dat een fiets een motor heeft, bijvoorbeeld bij een electrische fiets</td>
+				</tr>
+				<tr>
+					<td>rationale</td>
+					<td>Hierin geef je aan waarom je voor deze definitie hebt gekozen. Bijvoorbeeld in het geval waarin verschillende wetten een andere definitie geven aan een bepaald begrip. In de rationele geef je aan waarom je juist voor deze definitie hebt gekozen en niet voor de andere. Ook zou je kunnen denken aan een toelichting waarom je in de definiëring afwijkt van de wettelijke definitie, of een toelichting uit de Memorie van Toelichting op een wetsartikel.</td>
+					<td>"Overgenomen van wikipedia"</td>
+				</tr>
+				<tr>
+					<td>synoniem</td>
+					<td>Geef eventuele alternatieve aanduidingen voor het begrip op. Dit kan een afkorting zijn of een term die in het verleden gebruikt werd voor het begrip, maar nu niet meer de voorkeur heeft.</td>
+					<td>"Rijwiel"</td>
+				</tr>
+				<tr>
+					<td>bron</td>
+					<td>Neem hier verwijzingen op naar relevante (wettelijke) bronnen. Indien de bron een webpagina is, dan is het gebruik van een URL gewenst. Indien verwezen wordt naar een onderdeel uit de wet, dan wordt hiervoor de standaard juridische verwijzingsmethode gebruikt.</td>
+					<td>http://nl.wikipedia.org/wiki/Fiets; Voertuigreglement, hoofdstuk 5, Afdeling 9.</td>
+				</tr>
+				<tr>
+					<td>specialisatie van</td>
+					<td>Verwijs hier naar het begrip dat een meer algemene, "ruimere" definitie kent, indien een dergelijk begrip in de definitie is opgenomen. Verwijzing wordt gedaan met behulp van de term van het begrip waarnaar wordt verwezen.</td>
+					<td>Voertuig</td>
+				</tr>
+				<tr>
+					<td>generalisatie van</td>
+					<td>Verwijs hier naar het begrip dat een meer specifieke, "smallere" definitie kent en dit "smallere" begrip de betekenis van het begrip bepaald. Deze constructie is eigenlijk alleen zinvol als enkele begrippen worden samengenomen tot een overkoepelend begrip</td>
+					<td>Vader; Moeder (bij het begrip: "Een ouder is een vader of een moeder")</td>
+				</tr>
+				<tr>
+					<td>onderdeel van</td>
+					<td>Verwijs hier naar het begrip dat het geheel vormt, en waarvan de betekenis van dit begrip vanaf hangt.</td>
+					<td>Fiets (bij een Fietsbel)</td>
+				</tr>
+				<tr>
+					<td>bestaat uit</td>
+					<td>Verwijs hier naar het begrip dat het onderdeel is, en waarvan de betekenis van dit begrip vanaf hangt.</td>
+					<td>Wiel; Trapper; Frame (bij een Fiets)</td>
+				</tr>
+				<tr>
+					<td>gerelateerd aan</td>
+					<td>Neem hier de begrippen op de niet eerder zijn meegenomen, en wel bepalend zijn voor de definitie</td>
+					<td>Spierkrachtaandrijving</td>
+				</tr>
+				<tr>
+					<td>zie ook</td>
+					<td>Neem hier begrippen op waarvan het zinvol kan zijn om te bekijken, zonder dat er een betekenisafhankelijkheid is</td>
+					<td>Motorfiets</td>
+				</tr>
+				<tr>
+					<td>lijkt op</td>
+					<td>Gebruik dit element om twee begrippen uit verschillende begrippenstelsels met elkaar te verbinden. Lijkt op geeft aan dat de begrippen op elkaar lijken (maar in detail kunnen verschillen)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>gelijk aan</td>
+					<td>Gebruik dit element om twee begrippen uit verschillende begrippenstelsels met elkaar te verbinden. Gelijk aan geeft aan dat van de begrippen wordt verondersteld dat ze het zelfde zouden moeten betekenen.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>exact gelijk aan</td>
+					<td>Gebruik dit element als je een begrip uit een ander begrippenstelsel wilt incorpereren in je eigen begrippenstelsel, zonder dat je een eigen begrip wilt introduceren</td>
+					<td></td>
+				</tr>
+			</table>
+			<p>Naast deze eigenschappen, kent de beschrijving van het begrip ook nog enkele specifieke meta-elementen</p>
+			<p>Het formulier voor een Beschrijving kent de volgende opbouw:</p>
+			<table class="simple">
+				<tr>
+					<th>Eigenschap</th>
+					<th>Verwachte waarde</th>
+					<th>Voorbeeld</th>
+				</tr>
+				<tr>
+					<td>status</td>
+					<td>Geef hiermee de status van de beschrijving van een begrip aan</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>verificatie annotatie</td>
+					<td>Degene die de verificatie uitvoert, kan hier een opmerking plaatsen die betrekking heeft op de huidige beschrijving van het begrip</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>validatie annotatie</td>
+					<td>Degene die de validatie uitvoert, kan hier een opmerking plaatsen die betrekking heeft op de huidige beschrijving van het bedgrip</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>wijzigingsnotitie</td>
+					<td>De redacteur van de beschrijving kan hier aangeven welke wijziging is doorgevoerd.</td>
+					<td></td>
+				</tr>
+			</table>
+			<h4>3.2.4 Relatie met standaard vocabulaires</h4>
+			<p>BP4mc2 verwijst zo veel mogelijk naar standaard vocabulaires. Er is voor gekozen om wel een volledige eigen vocabulaire op te bouwen. De reden hiervoor is om vrijheid te behouden in de precieze betekenis die we aan het model willen geven (in het bijzonder het axiomatisch stelsel). Door de koppeling met standaard vocabulaires is het voor elke gebruiker altijd weer mogelijk om terug te vallen naar de standaard. De volgende standaarden worden gebruikt:</p>
+			<p>
+				<table class="simple">
+					<tr>
+						<th>Naam</th>
+						<th>Prefix</th>
+						<th>Standaard</th>
+					</tr>
+					<tr>
+						<td>skos</td>
+						<td>
+							<code>http://www.w3.org/2004/02/skos/core#</code>
+						</td>
+						<td>Simple Knowledge Organisation System</td>
+					</tr>
+					<tr>
+						<td>rdfs</td>
+						<td>
+							<code>http://www.w3.org/2000/01/rdf-schema#</code>
+						</td>
+						<td>The RDF Schema vocabulary (RDFS)</td>
+					</tr>
+					<tr>
+						<td>dc</td>
+						<td>
+							<code>http://dublincore.org/documents/dcmi-terms/</code>
+						</td>
+						<td>Dublin Core Metadata terms</td>
+					</tr>
+					<tr>
+						<td>owl</td>
+						<td>
+							<code>http://www.w3.org/2002/07/owl#</code>
+						</td>
+						<td>The Web Ontology Language (OWL)</td>
+					</tr>
+					<tr>
+						<td>lifecycle</td>
+						<td>
+							<code>http://vocab.org/lifecycle/schema</code>
+						</td>
+						<td>Lifecycle ontology</td>
+					</tr>
+					<tr>
+						<td>ro</td>
+						<td>
+							<code>http://www.obofoundry.org/ro/</code>
+						</td>
+						<td>OBO ontology</td>
+					</tr>
+				</table>
+			</p>
+			<table class="simple">
+				<tr>
+					<th>Eigenschap</th>
+					<th>Afgeleid van</th>
+					<th>Uitleg</th>
+				</tr>
+				<tr>
+					<td>Begrip</td>
+					<td>
+						<code>skos:Concept</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>naam</td>
+					<td>
+						<code>skos:prevLabel</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>domein</td>
+					<td>
+						<code>skos:inScheme</code>
+					</td>
+					<td>De term domein past beter bij de URI-strategie en met wat we bedoelen. Vanuit de context van een thesauris is het feitelijk een "scheme" (of "schema" op z'n Nederlands</td>
+				</tr>
+				<tr>
+					<td>definitie</td>
+					<td>
+						<code>skos:definition</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>uitleg</td>
+					<td>
+						<code>rdfs:comment</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>toelichting</td>
+					<td>
+						<code>skos:scopeNote</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>rationale</td>
+					<td>
+						<code>skos:editorialNote</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>synoniem</td>
+					<td>
+						<code>skos:altLabel</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>bron</td>
+					<td>
+						<code>dc:source</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>specialisatie van</td>
+					<td>
+						<code>skos:broader</code>
+					</td>
+					<td>Hoewel de term "broader" of "breder" c.q. "ruimer" in thesauri vrij gebruikelijk is, hebben we gekozen voor de term "specialisatie van" die beter past op normaal taalgebruik. Daarnaaast geldt dat bij BP4mc2 deze relatie niet de inverse is van "narrower"</td>
+				</tr>
+				<tr>
+					<td>generalisatie van</td>
+					<td>
+						<code>skos:narower</code>
+					</td>
+					<td>Hoewel de term "narrower" of "smaller" in thesauri vrij gebruikelijk is, hebben we gekozen voor de term "generalisatie van" die beter past op normaal taalgebruik. Daarnaaast geldt dat bij BP4mc2 deze relatie niet de inverse is van "broader"</td>
+				</tr>
+				<tr>
+					<td>onderdeel van</td>
+					<td>
+						<code>ro:part_of</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>bestaat uit</td>
+					<td>
+						<code>ro:has_part</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>gerelateerd aan</td>
+					<td>
+						<code>skos:semanticRelation</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>zie ook</td>
+					<td>
+						<code>skos:related</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>lijkt op</td>
+					<td>
+						<code>skos:relatedMatch</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>gelijk aan</td>
+					<td>
+						<code>skos:exactMatch</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>exact gelijk aan</td>
+					<td>
+						<code>owl:sameAs</code>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<p/>
+			<table class="simple">
+				<tr>
+					<th>Eigenschap</th>
+					<th>Afgeleid van</th>
+					<th>Uitleg</th>
+				</tr>
+				<tr>
+					<td>Beschrijving</td>
+					<td>
+						<code></code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>status</td>
+					<td>
+						<code>lifecycle:state</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>verificatie annotatie</td>
+					<td>
+						<code>skos:editorialNote</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>validatie annotatie</td>
+					<td>
+						<code>skos:editorialNote</code>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>wijzigingsnotitie</td>
+					<td>
+						<code>skos:changeNote</code>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<h4>3.2.5 Grafische representatie</h4>
+			<img class="plaatje" src="plaatjes/grafisch-begrip.png" alt="grafisch-begrip"/>
+			<p>Voor elk begrip wordt een rechthoek of een elipse gebruikt. Elipsen worden gebruikt voor begrippen met een eigen identiteit, terwijl rechthoeken worden gebruikt voor begrippen die geen eigen identiteit zijn (maar meer een aspect/eigenschap/hoedanigheid van een ander begrip zijn). In bovenstaand voorbeeld is bovendien een kleurstelling gebruikt. Deze is vrij te kiezen. Alle pijlen hebben een richting. De vorm van de pijl geeft aan wat voor soort relatie is gespecificeerd.</p>
+			<b>Gerelateerd aan</b>
+			<p>Een gestippelde lijn met pijlpunt geeft aan dat een begrip voor zijn betekenis afhankelijk is van een ander begrip</p>
+			<img class="plaatje" src="plaatjes/grafisch-gerelateerd-aan.png" alt="grafisch-gerelateerd-aan"/>
+			<br/>
+			<b>Generalisatie van</b>
+			<p>Een vaste lijn met pijlpunt geeft aan dat een begrip een generalisatie is van een ander begrip</p>
+			<img class="plaatje" src="plaatjes/grafisch-generalisatie-van.png" alt="grafisch-generalisatie-van"/>
+			<br/>
+			<b>Specialisatie van</b>
+			<p>Een vaste lijn met open pijlpunt geeft aan dat een begrip een specialisatie is van een ander begrip</p>
+			<img class="plaatje" src="plaatjes/grafisch-specialisatie-van.png" alt="grafisch-specialisatie-van"/>
+			<br/>
+			<b>Bestaat uit</b>
+			<p>Een vaste lijn met een open wiebertje geeft aan dat een begrip bestaat uit een ander begrip (open wiebertje aan de kant van het "geheel")</p>
+			<img class="plaatje" src="plaatjes/grafisch-bestaat-uit.png" alt="grafisch-bestaat-uit"/>
+			<br/>
+			<b>Onderdeel van</b>
+			<p>Een gestippelde lijn met pijlpunt en een open bolletje geeft aan dat een begrip onderdeel is van een ander begrip (open bolletje aan de kant van het "onderdeel")</p>
+			<img class="plaatje" src="plaatjes/grafisch-onderdeel-van.png" alt="grafisch-onderdeel-van"/>
+			<h4>3.2.6 Voorbeeld</h4>
+			<img class="plaatje" src="plaatjes/bag-begrippen.png" alt="bag-begrippen" width="900"/>
+			<p>Een op deze manier uitgewerkt voorbeeld van het model van de BAG is te vinden op <code>
+					<a href="http://bag.kadaster.nl">http://bag.kadaster.nl</a>
+				</code>. Dit voorbeeld is beschikbaar als html webpagina, in turtle en als grafische representatie.</p>
+			<p>Dit voorbeeld laat ook mooi zien hoe de uri-strategie werkt. Wanneer in de browser de "vraag" <code>
+					<a href="http://bag.kadaster.nl/id/begrip/Nummeraanduiding">http://bag.kadaster.nl/id/begrip/Nummeraanduiding</a>
+				</code> wordt ingetoetst, geeft de achterliggende Linked Data store "some usefull information" terug via de webpagina <code>
+					<a href="http://bag.kadaster.nl/doc/begrip/Nummeraanduiding">http://bag.kadaster.nl/doc/begrip/Nummeraanduiding</a>
+				</code> en toont de bij dit begrip behorende informatie.</p>
+			<h3 id="gebeurtenissen">3.3 Gebeurtenissen</h3>
+			<h4>3.3.1 Model</h4>
+			<p>Gebeurtenissen hebben dezelfde kenmerken als begrippen die objecten aanduiden, maar hebben ook nog enkele andere kenmerken. Gebeurtenissen zijn alleen van belang als ze betrekking hebben op een object dat onderdeel uitmaakt van de registratie. Gebeurtenissen maken de dynamiek van een registratie zichtbaar. Om te begrijpen wat er is veranderd in een registratie helpt het om te zien wat er is gebeurd.</p>
+			<p>Het gaat daarbij nog steeds om institutionele feiten, ofwel juridische gebeurtenissen. Deze hebben altijd een aanleiding in de brute werkelijkheid. Juridische gebeurtenissen zijn zoals in de denkwijze aangegeven onderdeel van de sociale werkelijkheid en kennen daarmee vaak een of meerdere actoren, bijvoorbeeld de verkoper en de koper bij de overdracht van een huis. En niet iedereen is bevoegd om een juridisch feit vast te leggen. Dat gebeurt door een beëdigd ambtenaar of door een notaris. Dit wordt een ‘agent’ (in de Engelse betekenis van het woord) genoemd. Tot slot zijn er de regels waaraan moet zijn voordat het feit kan plaatsvinden, de preconditie en de regels die leiden tot het resultaat van het feit, de postconditie.</p>
+			<p>Bij het definiëren van begrippen worden de volgende richtlijnen gebruikt:</p>
+			<ul>
+				<li>Een gebeurtenis hangt sterk samen met een handeling (in het engels een ‘Act’). Een handeling kan beschreven met een werkwoord, bijvoorbeeld x 'betaalt' y. Een gebeurtenis kan worden beschreven met een verzelfstandigd werkwoord, bijvoorbeeld ‘Het betalen’. Of als handeling: ‘Betalen rekening’ (dan is ook gelijk duidelijk waarop het werkwoord betrekking heeft). Voor gebeurtenissen geldt dat de nadruk niet ligt op de handeling (‘Het betalen’), maar op de overgang van beginsituatie (aanleiding+voorwaarde) naar eindsituatie. Dit zijn vaak woorden die eindigen op ‘ing’ (hoewel dat niet altijd zo hoeft te zijn). In dit geval dus: ‘De betaling’ (De gebeurtenis bij het overdragen is niet overdraging, maar overdracht). Dit staat bekend onder het substantiveren van werkwoorden. Grappig is dat dit niet werkt voor werkwoorden die niet leiden tot een resultaat. Het lukt bijvoorbeeld niet voor ‘lopen’: de handeling lukt nog wel (‘het lopen’), maar de gebeurtenis niet.</li>
+				<li>Daarnaast wordt ook voor een gebeurtenis de definitievorm ‘een {gebeurtenis} is {uitleg} gehanteerd. Dan worden weer werkwoorden gebruikt in de definitie die algemener zijn dan in de gebeurtenis. Ook hier ontstaat dus uiteindelijk een taxonomie van gebeurtenissen.</li>
+				<li>De aanleiding wordt altijd beschreven met een voltooid deelwoord, bijvoorbeeld 'koper en verkoper zijn overeengekomen dat een bepaald zakelijk recht wordt verkocht'.</li>
+				<li>De preconditie wordt beschreven met een werkwoord in de tegenwoordige tijd. Bijvoorbeeld 'de verkoper is eigenaar'. 'De levering gebeurt per notariële akte, die aan de volgende voorwaarden ... voldoet'.</li>
+				<li>Ook de postconditie wordt beschreven in termen van een voltooid deelwoord, bijvoorbeeld 'de koper is eigenaar geworden'.</li>
+			</ul>
+			<h4>3.3.2 Gebeurtenis</h4>
+			<p>Het formulier voor een Gebeurtenis kent de volgende opbouw:</p>
+			<table class="simple">
+				<tr>
+					<th>Eigenschap</th>
+					<th>Verwachte waarde</th>
+					<th>Voorbeeld</th>
+				</tr>
+				<tr>
+					<td>naam</td>
+					<td>Geef hier de voorkeursterm op die voor het betreffende begrip gebruikt wordt.</td>
+					<td>"Fietsen"</td>
+				</tr>
+				<tr>
+					<td>domein</td>
+					<td>Geef hiermee het domein aan dat beschreven wordt. Binnen 1 domein mag een term niet verwijzen naar twee begrippen. Mocht dit toch dreigen te gebeuren, dan zal of een andere term gekozen moeten worden, of een ander (sub)domein</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>definitie</td>
+					<td>Geef hier de formele uitleg van het begrip in woorden.Zie ook: <a href="#definitie">definitie</a></td>
+					<td>"Fietsen is het doen voortbeweging van een fiets door spierkrachtaandrijving"</td>
+				</tr>
+				<tr>
+					<td>uitleg</td>
+					<td>Vaak is de formele uitleg niet direct begrijpbaar. Naast de formele uitleg, kan een "klare taal" uitleg van toegevoegde waarde zijn.Zie ook: <a href="#klare taal">klare taal</a></td>
+					<td>Fietsen is wat je doet op een fiets als je ergens heen wilt</td>
+				</tr>
+				<tr>
+					<td>toelichting</td>
+					<td>Geef hier eventueel een toelichting op de definitie: aanvullingen, extra uitleg, voorbeelden</td>
+					<td>"Het voortbeweging van een fiets door te steppen of naast de fiets te lopen zien we niet als fietsen: in dat geval is er geen sprake van aandrijving.</td>
+				</tr>
+				<tr>
+					<td>rationale</td>
+					<td>Hierin geef je aan waarom je voor deze definitie hebt gekozen. Bijvoorbeeld in het geval waarin verschillende wetten een andere definitie geven aan een bepaald begrip. In de rationele geef je aan waarom je juist voor deze definitie hebt gekozen en niet voor de andere. Ook zou je kunnen denken aan een toelichting waarom je in de definiëring afwijkt van de wettelijke definitie, of een toelichting uit de Memorie van Toelichting op een wetsartikel.</td>
+					<td>"In lijn gehouden met de definitie van fiets"</td>
+				</tr>
+				<tr>
+					<td>synoniem</td>
+					<td>Geef eventuele alternatieve aanduidingen voor het begrip op. Dit kan een afkorting zijn of een term die in het verleden gebruikt werd voor het begrip, maar nu niet meer de voorkeur heeft.</td>
+					<td>"Peddelen"</td>
+				</tr>
+				<tr>
+					<td>bron</td>
+					<td>Neem hier verwijzingen op naar relevante (wettelijke) bronnen. Indien de bron een webpagina is, dan is het gebruik van een URL gewenst. Indien verwezen wordt naar een onderdeel uit de wet, dan wordt hiervoor de standaard juridische verwijzingsmethode gebruikt.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>specialisatie van</td>
+					<td>Verwijs hier naar het begrip dat een meer algemene, "ruimere" definitie kent, indien een dergelijk begrip in de definitie is opgenomen. Verwijzing wordt gedaan met behulp van de term van het begrip waarnaar wordt verwezen.</td>
+					<td>Voortbewegen</td>
+				</tr>
+				<tr>
+					<td>generalisatie van</td>
+					<td>Verwijs hier naar het begrip dat een meer specifieke, "smallere" definitie kent en dit "smallere" begrip de betekenis van het begrip bepaald. Deze constructie is eigenlijk alleen zinvol als enkele begrippen worden samengenomen tot een overkoepelend begrip</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>onderdeel van</td>
+					<td>Verwijs hier naar het begrip dat het geheel vormt, en waarvan de betekenis van dit begrip vanaf hangt.</td>
+					<td>Meerdaagse wielerwedstrijd (bij een Etappe)</td>
+				</tr>
+				<tr>
+					<td>bestaat uit</td>
+					<td>Verwijs hier naar het begrip dat het onderdeel is, en waarvan de betekenis van dit begrip vanaf hangt.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>gerelateerd aan</td>
+					<td>Neem hier de begrippen op de niet eerder zijn meegenomen, en wel bepalend zijn voor de definitie</td>
+					<td>Fiets</td>
+				</tr>
+				<tr>
+					<td>zie ook</td>
+					<td>Neem hier begrippen op waarvan het zinvol kan zijn om te bekijken, zonder dat er een betekenisafhankelijkheid is</td>
+					<td>Steppen</td>
+				</tr>
+				<tr>
+					<td>lijkt op</td>
+					<td>Gebruik dit element om twee begrippen uit verschillende begrippenstelsels met elkaar te verbinden. Lijkt op geeft aan dat de begrippen op elkaar lijken (maar in detail kunnen verschillen)</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>gelijk aan</td>
+					<td>Gebruik dit element om twee begrippen uit verschillende begrippenstelsels met elkaar te verbinden. Gelijk aan geeft aan dat van de begrippen wordt verondersteld dat ze het zelfde zouden moeten betekenen.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>exact gelijk aan</td>
+					<td>Gebruik dit element als je een begrip uit een ander begrippenstelsel wilt incorpereren in je eigen begrippenstelsel, zonder dat je een eigen begrip wilt introduceren</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>actor</td>
+					<td>Verwijs hier naar de actor of actoren die een werkelijke rol spelen bij deze gebeurtenis</td>
+					<td>Fietser</td>
+				</tr>
+				<tr>
+					<td>agent</td>
+					<td>Verwijs hier naar de actor of actoren die noodzakelijk zijn bij de gebeurtenis, maar er niet echt aan deelnemen</td>
+					<td>Scheidsrechter</td>
+				</tr>
+				<tr>
+					<td>object</td>
+					<td>Geef hier de objecten (niet-actoren) op die betrokken zijn bij de gebeurtenis: gebruikt worden, verwerkt worden of juist ontstaan uit de gebeurtenis</td>
+					<td>Fiets</td>
+				</tr>
+				<tr>
+					<td>aanleiding</td>
+					<td>Beschrijf hier de situatie die de aanleiding vormt dat de gebeurtenis optreedt. Verwijs naar een gebeurtenis als de aanleiding zelf ook een gebeurtenis is.</td>
+					<td>Het startschot klinkt</td>
+				</tr>
+				<tr>
+					<td>voorwaarde</td>
+					<td>Beschrijf hier de situatie die moet gelden voordat de gebeurtenis succesvol kan plaatsvinden</td>
+					<td>Alle deelnemers staan stil achter de startlijn</td>
+				</tr>
+				<tr>
+					<td>eindsituatie</td>
+					<td>Beschrijf hier de situatie na afloop van de gebeurtenis</td>
+					<td>De deelnemers zijn vertrokken</td>
+				</tr>
+			</table>
+			<p>Naast deze eigenschappen, kent de beschrijving van de gebeurtenis ook nog enkele specifieke meta-elementen</p>
+			<p>Het formulier voor een Beschrijving kent de volgende opbouw:</p>
+			<table class="simple">
+				<tr>
+					<th>Eigenschap</th>
+					<th>Verwachte waarde</th>
+					<th>Voorbeeld</th>
+				</tr>
+				<tr>
+					<td>status</td>
+					<td>Geef hiermee de status van de beschrijving van een begrip aan</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>verificatie annotatie</td>
+					<td>Degene die de verificatie uitvoert, kan hier een opmerking plaatsen die betrekking heeft op de huidige beschrijving van het begrip</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>validatie annotatie</td>
+					<td>Degene die de validatie uitvoert, kan hier een opmerking plaatsen die betrekking heeft op de huidige beschrijving van het bedgrip</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>wijzigingsnotitie</td>
+					<td>De redacteur van de beschrijving kan hier aangeven welke wijziging is doorgevoerd.</td>
+					<td></td>
+				</tr>
+			</table>
+			<p>Een gebeurtenis is gerelateerd aan één of meerdere actoren, objecten en/of agenten. Voor het beschrijven van actoren, objecten en agenten kan gebruik gemaakt worden van hetzelfde formulier als voor "normale" begrippen.</p>
+			<h4>3.3.3 Voorbeeld</h4>
+			<p>Een op deze manier uitgewerkt voorbeeld van het model van de BRK is te vinden op <code>
+					<a href="http://brk.kadaster.nl/id/begrip/Overdracht_eigendom">http://brk.kadaster.nl/id/begrip/Overdracht_eigendom</a>
+				</code>. Ook dit is beschikbaar in turtle, als html webpagina en als grafische representatie.</p>
+			<h3 id="datamodel">3.4 Datamodel</h3>
+			<p>De registratie zelf bevat data. Deze wordt vastgelegd conform een datamodel waarin dataklassen, eigenschappen e.d. worden beschreven. Dat kan een klassiek relationeel datamodel zijn dat typisch wordt vastgelegd in UML, bijvoorbeeld conform het best-practices metamodel. Het kan ook een ontologie zijn die een op een uitwerking is van het begrippenmodel.</p>
+			<h4>3.4.1 Vertaling begrippenkader naar een relationeel datamodel</h4>
+			<p>Het begrippenkader is bruikbaar om met domeineigenaren en data afnemers te communiceren over de inhoud van een registratie. Het vertalen van dit begrip naar een samenhangend datamodel is het werkveld van de data architect. Een datamodel kan worden opgevat als een ontwerp van een structuur waarin data over de begrippen in het semantische model kunnen worden opgeslagen. Het onderstaande model is een metamodel voor een relationeel model dat is gebaseerd op het metamodel dat is ontwikkeld in de werkgroep ‘best practices basisregistraties’. Dit metamodel is gebaseerd op het RSGB metamodel. Het model bevat objectklassen, attribuutklassen, gegevensgroepen (een set samenhangende attribuutklassen) en relatieklassen.</p>
+			<p>Het formulier voor een Gegevenselement kent de volgende opbouw:</p>
+			<table class="simple">
+				<tr>
+					<th>Eigenschap</th>
+					<th>Verwachte waarde</th>
+					<th>Voorbeeld</th>
+				</tr>
+				<tr>
+					<td>naam</td>
+					<td></td>
+					<td>Fietsgegevens</td>
+				</tr>
+				<tr>
+					<td>type</td>
+					<td>Verwijzing naar de klasse uit het metamodel</td>
+					<td>Gegevensklasse, Attribuutsoort, Datatype, Waardelijst, Waarde</td>
+				</tr>
+				<tr>
+					<td>begrip</td>
+					<td>Een verwijzing naar een of meerdere overeenkomstige begrip(pen) waar dit gegevenselement naar refereert</td>
+					<td>Fiets</td>
+				</tr>
+				<tr>
+					<td>afkorting</td>
+					<td>Drieletterige afkorting van de naam van het informatie-element</td>
+					<td>FTS</td>
+				</tr>
+				<tr>
+					<td>herkomst</td>
+					<td>De basisregistratie in wiens catalogus het gegeven is gespecificeerd (oftewel de basisregistratie waar het concept deel van uitmaakt).</td>
+					<td>Basisregistratie fietsen</td>
+				</tr>
+				<tr>
+					<td>datum registratie vanaf</td>
+					<td>De datum waarop het concept is opgenomen in het model. In het RSGB is dit het veld "Datum opname"</td>
+					<td>2014-05-21</td>
+				</tr>
+				<tr>
+					<td>datum ingang geldigheid vanaf</td>
+					<td>De datum vanaf welk moment gegevens van deze klasse in de registratie worden bijgehouden</td>
+					<td>2014-05-21</td>
+				</tr>
+				<tr>
+					<td>indicatie materiële historie</td>
+					<td>Indicatie of de materiële historie wordt bewaard</td>
+					<td>Ja; Nee</td>
+				</tr>
+				<tr>
+					<td>indicatie formele historie</td>
+					<td>Indicatie of de formele historie wordt bewaard</td>
+					<td>Ja; Nee</td>
+				</tr>
+				<tr>
+					<td>indicatie in onderzoek</td>
+					<td>De indicatie of het mogelijk is dat er twijfel is of is geweest aan de juistheid van instanties van het concept en dat een onderzoek wordt of is uitgevoerd naar de juistheid van instanties van het concept.</td>
+					<td>Ja; Nee</td>
+				</tr>
+				<tr>
+					<td>XML tag</td>
+					<td>De naam van de XML tag</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>waardelijst</td>
+					<td>Formele naam van de waardeverzameling.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>indicatie is voidable</td>
+					<td>Dit concept kan niet worden gerealiseerd (bijv. Opgenomen in leveringen) omdat er autorisatieregels gelden, of omdat het gegeven niet altijd beschikbaar is.</td>
+					<td></td>
+				</tr>
+			</table>
+			<p>Een op deze manier uitgewerkt voorbeeld van het model van de BRK is te vinden op <code>
+					<a href="http://brk.kadaster.nl/def/gegevenselement/AdresseerbaarObject#hoofdadres">http://brk.kadaster.nl/def/gegevenselement/AdresseerbaarObject#hoofdadres</a>
+				</code>. Dit voorbeeld is beschikbaar als html webpagina, in turtle en als grafische representatie.</p>
+			<p>Dit voorbeeld laat ook mooi zien hoe de uri-strategie voor het beschrijven van een datamodel werkt. Het intypen van bovenstaande URL zal leiden tot de weergave van de pagina <code>
+					<a href="http://brk.kadaster.nl/def/gegevenselement/AdresseerbaarObject">http://brk.kadaster.nl/def/gegevenselement/AdresseerbaarObject</a>
+				</code> (het deel voor de "#"). Met andere woorden: de beschrijving van de entiteit "Adresseerbaar object".</p>
+			<h4>3.4.2 Metadata</h4>
+			<p>Metadata gaan over pragmatische zaken zoals de wijze waarop data worden ingewonnen, de kwaliteit (tijdigheid, betrouwbaarheid en volledigheid) en de status (authenticiteit) van data die over ‘het ding dat met een begrip wordt aangeduid’ worden vastgelegd. Metadata zijn nodig om reikwijdte en bruikbaarheid van data beter te begrijpen.</p>
+			<p>Metadata kunnen op verschillende niveaus worden vastgelegd. Metadata kan betrekking hebben op alle data van een bepaald type in de registratie, op data van een bepaald type die zijn verzameld gedurende een bepaalde periode maar ook op specifieke data. Het metagegeven ’wijze van inwinning’ wordt meestal per dataelement gedefinieerd. Kwaliteitsmetingen kunnen worden gebaseerd op een audit over een bepaalde periode. En de BAG kent bijvoorbeeld het element ‘gebaseerd op proces verbaal’. Dat betekent dat data over een specifiek object zijn geconstateerd door iemand die ter plekke is gaan kijken en de administratieve werkelijkheid in overeenstemming heeft gebracht met brute werkelijkheid.</p>
+			<h4>3.4.3 Waardelijsten</h4>
+			<p>Een speciale categorie waarin informatie over begrippen wordt vastgelegd betreft waardelijsten. Waarden zijn termen die bepaalde, samenhangende begrippen aanduiden waaraan in verschillende toepassingen en soms zelfs bij verschillende organisaties wordt gerefereerd. Soms worden dit daarom ook referentiedata genoemd.</p>
+			<p>Elementen in een waardelijst worden stuk voor stuk aangeduid met een begrip in het begrippenkader. Een voorbeeld uit de BAG is het ‘gebruiksdoel’ van een ‘pand’. Dat kan ‘wonen’, ‘winkel’, ‘kantoor’, et cetera zijn. Semantisch betekent dit dat er verschillende soorten panden zijn, namelijk woonhuizen, winkels en kantoren. Om het datamodel overzichtelijk te houden is in de BAG de ontwerpkeuze gemaakt om 1 objecttype te definiëren. Dit heeft als attribuuttype ‘gebruiksdoel’, dat de waarden ‘wonen’, ‘winkel’, ‘kantoor’, et cetera in de waardelijst kan aannemen. Bijkomend voordeel is dat het datamodel niet hoeft te worden aangepast als er een gebruiksdoel bij komt. Dan hoeft alleen maar een nieuw element aan de waardelijst te worden toegevoegd.</p>
+			<h4>3.4.4 Vertaling van het begrippenkader naar een owl/dl ontologie</h4>
+			<p>De traditionele manier is om een datamodel te presenteren als entiteit-attribuut model (relationeel model of object model. Dergelijke modellen zijn "closed world" modellen: het model veronderstelt dat de gegevens in het model niets meer betekenen dan wat oorspronkelijk bedoeld was met dit model. Een gegeven behoort bij een entiteit. Zo'n model zou je kunnen representeren als een "letterbak": het maakt niet uit wat je er in stop, maar linksboven horen "A's" te zitten. Een andere eigenschap van een entiteit-attribuut model is dat een attribuut slechts betekenis heeft als onderdeel van de entiteit. Zo heeft het attribuut "naam" pas betekenis als duidelijk is waar het attribuut bij hoort: woonplaats.naam, openbareRuimte.naam.</p>
+			<img class="plaatje" src="plaatjes/letterbak.png" alt="letterbak" width="300"/>
+			<p>Een datamodel dat meer bij Linked Data past is een ontologie. Een ontologie kent een klasse-eigenschap model. Dergelijke modellen zijn "open world" modellen: het model veronderstelt dat er eerst gegevens zijn, en dat vervolgens deze gegevens worden geclassificeerd. Meerdere classificaties op hetzelfde gegeven zijn daarbij gebruikelijk. Zo'n model zou je kunnen representeren als een "tag": je begint met de gegevens, om ze vervolgens een of meerdere "tags" te geven. Een andere eigenschap van een klasse-eigenschap model is dat een eigenschap op zichzelf betekenis heeft. Het is geen onderdeel van de klasse. Zo  heeft de eigenschap "naam" al direct betekenis. Als er onderscheid nodig is tussen de naam van een woonplaats en de naam van een openbare ruimte, dan zijn twee eigenschappen nodig: woonplaatsnaam, naamOpenbareRuimte</p>
+			<img class="plaatje" src="plaatjes/tags.png" alt="tags"/>
+			<p>Waar de toepassing van SKOS gebruikelijk is voor het definieren van begrippen, is het gebruik van OWL gebruikelijk bij het maken van een instantieerbare ontologie.</p>
+			<h4>3.4.5 Grafische representatie</h4>
+			<img class="plaatje" src="plaatjes/grafisch-owl.png" alt="grafisch-owl"/>
+			<p>Voor elke <code>owl:Class</code> wordt een elipse gebruikt. Voor elk <code>owl:DatatypeProperty</code> wordt een rechthoek gebruikt. Voor elk <code>owl:ObjectProperty</code> wordt een rechthoek met afgevlakte hoeken gebruikt. In bovenstaand voorbeeld is bovendien een kleurstelling gebruikt. Deze is vrij te kiezen.</p>
+			<p>Alle pijlen in het model hebben een richting:</p>
+			<ul>
+				<li>De vaste pijl met open pijlpunt geeft een <code>rdfs:subClassOf</code> relatie aan</li>
+				<li>De gebogen lijn zonder pijlpunt geeft aan dat het <code>rdfs:domein</code> van het betreffende <code>owl:DatatypeProperty</code> of <code>owl:ObjectProperty</code> gelijk is aan de <code>owl:Class</code> waar de lijn uitkomt</li>
+				<li>De vaste pijl vanuit een een <code>owl:ObjectProperty</code> verbindt deze met een <code>owl:Class</code> (de <code>rdfs:range</code>)</li>
+			</ul>
+			<p>Merk op dat het niet verplicht is dat een <code>owl:objectProperty</code> en een <code>owl:DatatypeProperty</code> een <code>rdfs:range</code> of <code>rdfs:domein</code> hebben. Zij kunnen dus ook los op zichzelf, of (bij objectproperties) slecht aan 1 kant verbonden zijn met een ander element</p>
+			<h4>3.4.6 Voorbeeld</h4>
+			<img class="plaatje" src="plaatjes/bag-gegevensmodel.png" alt="bag-gegevensmodel" width="900"/>
+			<p>Een op deze manier uitgewerkt voorbeeld van het model van de BAG is te vinden op <code>
+					<a href="http://bag.kadaster.nl/def/ontologie#AdresseerbaarObject">http://bag.kadaster.nl/def/ontologie#AdresseerbaarObject</a>
+				</code>. Dit voorbeeld is beschikbaar als html webpagina, in turtle en als grafische representatie.</p>
+			<hr/>
+			<h2 id="werkwijze">4 Werkwijze</h2>
+			<p>De werkwijze bij BP4MC2 bestaat grofweg uit vier fasen:</p>
+			<p>Voor elk begrip is het mogelijk dat deze zich in een andere fase bevindt. Wel is het gebruikelijk dat de fasen inventarisatie en analyse voor alle begrippen in een domein gelijktijdig wordt uitgevoerd. In het geval van een basisregistratie is het doel het inzichtelijk maken van de inhoud en de werking van een basisregistratie, inclusief de rationale daarachter. Omdat basisregistraties wettelijk zijn vastgelegd is deze rationale in de regel juridisch.</p>
+			<h3 id="toepassenuri">4.1 Toepassen URI strategie</h3>
+			<h4>4.1.1 Bepalen domeinnaam</h4>
+			<p>De eerste stap is het bepalen van een domeinnaam waarbinnen de data van een registratie worden gepubliceerd. De uitgangspunten en aanbevelingen voor een domeinnaam zijn in paragraaf 4.1 beschreven, maar de praktijk is soms weerbarstiger.</p>
+			<p>Op basis van de uitgangspunten en aanbevelingen ligt voor de BAG een domein http://bag.nl voor de hand of http://bag.basisregistratie.nl. De meeste drieletterige domeinnamen die beginnen met een ‘b’ blijken in Nederland echter geregistreerd bij bureaus die allerlei diensten verlenen, meestal op het gebied van financiële advisering of kredietbemiddeling. Ook de domeinnamen ‘basisregistratie.nl’ is al geregistreerd door een dienstverlenend bedrijf.</p>
+			<p>In deze jungle van domeinnamen is het eigenlijk onmogelijk zomaar een domeinnaam te introduceren die het vertrouwen geeft dat deze de bron is van een authentieke registratie. De enige manier is het vastleggen van de domeinnaam die de authentieke bron representeert in de wet. Een voorbeeld is https://www.officielebekendmakingen.nl, waar alle officiële bekendmakingen van de overheid worden gepubliceerd. Deze domeinnaam is vastgelegd in artikel 1 van de bekendmakingsregeling.</p>
+			<p>Voor de BAG is, in afwachting van een wetsaanpassing waarin een domeinnaam voor publicatie van de authentieke data wordt vastgesteld, gekozen voor een voorlopige tussenoplossing. In de wet ‘Basisregistraties adressen en gebouwen’ staat in Hoofstuk 4, artikel 26: ‘De Dienst (i.c. het Kadaster) houdt een geautomatiseerde landelijke voorziening waarin de data uit de in de gemeenten gehouden adressenregistraties en de gebouwenregistraties zijn opgenomen.’ Daarom lijkt http://bag.kadaster.nl op dit moment de meest bruikbare domeinnaam waaraan zichtbaar is dat het om de authentieke data uit de landelijke voorziening voor de BAG gaat.</p>
+			<h4>4.1.2 type, concept en referentie toegepast op het begrippenkader</h4>
+			<p>Alle in het begrippenkader gedefinieerde begrippen zijn ook concepten. Conform de uri-strategie krijgt ieder begrip een id en wordt de documentatie over een begrip via een 303-redirect gepresenteerd in een doc.</p>
+			<ul>
+				<li>Zo krijgt het begrip ‘nummeraanduiding’ in de BAG de URI http://bag.kadaster.nl/id/begrip/Nummeraanduiding. Dit is de identificatie (type=id) van het begrip (concept) dat wordt aangeduid met de term Nummeraanduiding (referentie).</li>
+				<li>Als deze uri als http-vraag wordt ingetoetst in de browser wordt de documentatie over het begrip dat wordt aangeduid met de term Nummeraanduiding gepresenteerd in een html pagina met als uri http://bag.kadaster.nl/doc/begrip/Nummeraanduiding.</li>
+				<li>De documentatie over een bepaald begrip kan in de loop der tijd wijzigen. Daarom is het ook mogelijk om een jaar, maand en dag toe te voegen aan de referentie om de documentatie op een specifiek tijdstip op te vragen. Dit kan via uri http://bag.kadaster.nl/doc/2014/04/01/begrip/Nummeraanduiding.</li>
+			</ul>
+			<h4>4.1.3 type, concept en referentie toegepast op het datamodel</h4>
+			<p>In de uri-strategie wordt aanbevolen data te definiëren met het uri-type def.</p>
+			<ul>
+				<li>Zo krijgt het gegevenselement ‘nummeraanduiding in de BAG de URI http://bag.kadaster.nl/def/gegevenselement/Nummeraanduiding#. Dit is de definitie (type=def) van het gegevenselement dat verwijst naar de data die opgeslagen is bij klassen aangeduid met de term Nummeraanduiding (referentie).</li>
+				<li>Als deze uri als http-vraag wordt ingetoetst in de browser wordt de documentatie en metadata over het data-element OpenbareRuimte gepresenteerd in een html pagina met als uri http://bag.kadaster.nl/def/gegevenselement/Nummeraanduiding.</li>
+				<li>De documentatie over een bepaald begrip kan in de loop der tijd wijzigen. Daarom is het ook mogelijk om een jaar, maand en dag toe te voegen aan de referentie om de documentatie op een specifiek tijdstip op te vragen. Dit kan via uri http://bag.kadaster.nl/def/2014/04/01/gegevenselement/Nummeraanduiding.</li>
+			</ul>
+			<h4>4.1.4 type, concept en referentie toegepast op de data</h4>
+			<p>In de uri-strategie wordt aanbevolen data te definiëren met het uri-type id.</p>
+			<ul>
+				<li>Zo krijgt het de woonplaats "Amersfoort" in de BAG de URI <code>
+						<a href="http://bag.kadaster.nl/id/woonplaats/1664">http://bag.kadaster.nl/id/woonplaats/1664</a>
+					</code>. Dit is de identificatie (type=id) van de woonplaats die in de BAG de identificatie "1664" heeft.</li>
+				<li>Als deze URI als http-vraag wordt ingetoetst in de browser wordt de documentatie en metadata over de gegevens van Amersfoort gepresenteerd in een html pagina met als uri http://bag.kadaster.nl/doc/woonplaats/1664.</li>
+				<li>De gegevens over een bepaalde woonplaats kunnen in de loop der tijd wijzigen. Daarom is het ook mogelijk om een jaar, maand en dag toe te voegen aan de referentie om de documentatie op een specifiek tijdstip op te vragen. Dit via uri http://bag.kadaster.nl/doc/2014/04/01/woonplaats/1664.</li>
+			</ul>
+			<h4>4.1.5 Ontwerpoverwegingen</h4>
+			<p>De volgende best-practices gelden voor het formuleren van de URI:</p>
+			<ul>
+				<li>Voor begrippen is de identificatie gelijk aan de term van het begrip. We stellen voor om deze te laten beginnen met een hoofdletter, gevolgt door kleine letters. Spaties worden vervangen door CamelCase. Diacrieten en specifieke verboden leestekens (zoals "#" en "&amp;") worden verwijderd.</li>
+				<li>Voor klassen en eigenschappen geldt hetzelfde, waarbij een klasse begint met een hoofdletter en een eigenschap met een kleine letter</li>
+				<li>Voor begrippen is het handig om als <code>{concept}</code> te kiezen voor "begrip" of het engelse "concept"</li>
+				<li>Voor entiteit-attribuut modellen is het handig om als <code>{concept}</code> te kiezen voor "element"</li>
+				<li>Voor klasse-eigenschap modellen is het handig om als <code>{concept}</code> te kiezen voor "ontologie" of het engelse "ontology"</li>
+				<li>Voor entiteit-attribuut modellen is het handig om voor de "#" de klassenaam te plaatsen en achter de "#" het attribuut (of relatie)</li>
+				<li>Voor klasse-entiteit modellen is het handig om zowel de klasse als de entiteit achter de "#" te plaatsen</li>
+			</ul>
+			<p>De volgende best-practices gelden voor de redirect:</p>
+			<ul>
+				<li>Maak gebruik van 303-redirect met id en doc URI's</li>
+				<li>De redirect kan gaan naar de meest actuele versie (een "doc" URI zonder een datum of tijdnotatie), dan wel naar een specifieke versie</li>
+				<li>De datum en/of tijdnotatie in de URL behoord te verwijzen naar een pijldatum. De gegevens die worden teruggegeven zouden niet meer mogelijk wijzigen, ook als op een later moment opnieuw dezelfde vraag wordt gesteld.</li>
+				<li>Aanvullende contextuele vragen horen geen URI's te zijn volgende de URI-strategie, maar URI-Vragen (dus met een "?")</li>
+			</ul>
+			<h3 id="samenhang">4.2 Inventariseren en analyseren van de samenhang</h3>
+			<h4>4.2.1 Bepalen basis set te definiëren begrippen</h4>
+			<p>De meeste basisregistraties kennen een informatiemodel. Daarin worden alle objecten, attributen en relaties uit het informatiemodel benoemd. Voor de BAG is hiertoe bijvoorbeeld de documentatie van het InformatieModel BAG (IMBAG) gebruikt. Daarbij komen de begrippen in de waardelijsten. Juridisch gezien is de betekenis van al deze subtypes ook van belang. Deze begrippen worden daarom aan de lijst met te definiëren begrippen toegevoegd.</p>
+			<p>Van elke term wordt een begrip gemaakt. Ook wordt gefilterd op homoniemen en synoniemen. Omdat vanuit het UML model ook al veel relaties bekend zijn, kunnen de begrippen meteen al aan elkaar worden gerelateerd. De relaties uit het UML model worden daarvoor vertaald naar de relaties in het BP4MC2 metamodel.</p>
+			<ul>
+				<li>Subtypen uit het informatiemodel en uit waardelijsten worden vertaald naar de taxonomische relatie ‘is subtype van’.</li>
+				<li>Relaties uit het informatiemodel worden vertaald naar de taxonomische relatie ‘is gerelateerd aan’.</li>
+				<li>Sommige attributen worden na handmatige analyse vertaald naar de taxonomische relatie ‘is onderdeel van’.</li>
+				<li>De overige attributen worden vertaald naar de taxonomische relatie ‘is eigenschap van’.</li>
+			</ul>
+			<p>Op deze wijze ontstaat een eerste versie van een semantisch netwerk in de vorm van een axiomatisch begrippenkader van het domein.</p>
+			<p>N.B. Waardelijsten zijn in het informatiemodel ‘gewoon’ lijstjes met omschrijvingen. In het semantisch model krijgen deze begrippen expliciet een plaats op basis van hun juridische betekenis. Daarmee ontstaat meteen een mechanisme om dit soort begrippen te beheren.</p>
+			<p>Deze werkwijze vanuit de registratie werkt in de praktijk aanzienlijk efficiënter dan de vaak gevolgde omgekeerde weg. Dan wordt de relevante wetgeving pagina voor pagina, zin voor zin semantisch ontleed. Zelfstandige naamwoorden zijn kandidaat begrippen, sommige werkwoorden duiden op gebeurtenissen en sommige werkwoorden in combinatie met termen als 'moeten'. 'mogen' en 'zullen' duiden op regels, die in BP4MC2 worden geduid in situaties. Voor zo'n proces is gedetailleerde en specialistische juridische kennis nodig om discussies te kunnen voeren over wat de wet nu precies bedoelt, wat in de praktijk wel of niet relevant is en hoe een en ander vertaald moet worden naar de registratie. Het simpelweg als uitgangspunt nemen van de praktijk, ofwel de registratie omzeilt al dit soort discussie en maakt het mogelijk begrippen gewoon op te zoeken en te valideren in de wet. In de praktijk blijkt dit voor het gros van de begrippen goed te doen voor iemand met een HBO/juridische achtergrond die een beetje de weg weet in wetgeving.</p>
+			<h4>4.2.2 Bepalen basis set te definiëren gebeurtenissen</h4>
+			<p>Voor het vaststellen van juridisch relevante gebeurtenissen binnen het domein wordt de volgende werkwijze gehanteerd:</p>
+			<ul>
+				<li>Alle ‘objectiveerbare’ elementen uit het informatiemodel kunnen, net als de begrippen die als typeringen (type, soort, aard) voorkomen in waardelijsten kunnen een eigen levenscyclus hebben. Dat wil zeggen dat ze op enig moment op enige manier ontstaan, misschien nog een keer wijzigen en misschien kunnen verdwijnen. Een voorbeeld is de status van een pand in de BAG. Deze kan wijzigen van ‘in aanbouw’ naar ‘bebouwd’ naar ‘gesloopt’.</li>
+				<li>Sommige begrippen kunnen worden gegroepeerd. In de bijvoorbeeld de Kadastrale registratie blijkt dat een aantal typen zakelijke rechten dezelfde levenscyclus hebben. Ze kunnen worden gevestigd, overgedragen en tenietgaan. Door deze te groeperen als 'overdraagbare zakelijke rechten' kan iedere gebeurtenis steeds voor deze groep als geheel worden vastgesteld.</li>
+				<li>Dit is conform de opbouw van de wet. Zo kent het Burgerlijk Wetboek een hoofdstuk 'zakelijke rechten', waarin onder andere wordt gedefinieerd wat daarmee wordt bedoeld en hoe en onder welke condities ze kunnen worden gevestigd, overgedragen of tenietgaan. Het is een beetje een kwestie van stijl wat wordt gedefinieerd in het axiomatisch begrippenkader en wat wordt gedefinieerd in regels. Zo kan eigendom, opstal en erfpacht op een hoop worden gegooid en in regels worden aangeven dat opstal en erfpacht alleen kunnen worden gevestigd op het eigendom en opstal ook nog op erfpacht. Dit kan ook worden uit gemodelleerd in gedetailleerde gebeurtenissen zoals 'vestiging 'erfpacht', 'vestiging opstal op eigendom' en 'vestiging opstal op erfpacht', et cetera. Om een registratie voor afnemers van data een beetje doorzichtig te houden is het handig de granulariteit van gebeurtenissen zo te kiezen dat er maximaal 50 tot 100 gebeurtenissen ontstaan.</li>
+			</ul>
+			<h4>4.2.3 Toevoegen context</h4>
+			<p>Iedere gebeurtenis vindt plaats in een bepaalde context:</p>
+			<ul>
+				<li>Er is altijd een aanleiding in de "brute werkelijkheid".</li>
+				<li>Er zijn altijd een of meerdere voorwaarden waaronder de gebeurtenis leidt tot het gewenste resultaat.</li>
+				<li>De gebeurtenis resulteert in een nieuwe (eind)situatie in de 'brute werkelijkheid'.</li>
+			</ul>
+			<h3 id="RVV">4.3 Redigeren, valideren en verifiëren</h3>
+			<h4>4.3.1 Redigeren: definieren en documenteren begrippen en gebeurtenissen</h4>
+			<p>Als het raamwerk in de vorm van een axiomatisch stelsel van begrippen en gebeurtenissen door een semantic web specialist is ingericht (en al vast is ingevuld met voorlopige definities uit bestaande glossaria) kan dit in een relatief strak proces worden ingevuld.</p>
+			<p>Per begrip en gebeurtenis worden de definitie en overige documentatie worden geredigeerd door een juridisch medewerker met een HBO/juridische achtergrond die een beetje de weg weet in wetgeving.</p>
+			<h4>4.3.2 Valideren</h4>
+			<p>De ingevulde raamwerken worden gevalideerd door een daartoe geautoriseerde medewerker die is gemandateerd door de domeineigenaar. Meestal is dit een beleidsverantwoordelijke jurist. Als de invulling niet voldoet, dan wordt deze aangepast door de beleidsverantwoordelijke zelf, of door c.q. in samenwerking met de juridisch medewerker.</p>
+			<h4>4.3.3 Verifiëren</h4>
+			<p>Het ingevulde raamwerk moet niet alleen juridisch juist zijn, maar het moet ook passen in de overige raamwerken en in lijn zijn met de regels die gelden voor BP4MC2. Dit wordt uitgevoerd door een medewerker met specifieke kennis op het gebied van kennistechnologie en semantiek.</p>
+			<h3 id="publiceren">4.4 Publiceren</h3>
+			<p>In principe wordt het semantisch raamwerk gepubliceerd met geverifieerde begrippen. Het is echter ook mogelijk begrippen met de status 'gevalideerd' en/of 'ter validatie' al vast te publiceren. De begrippen, gebeurtenissen en situaties worden opgeslagen in rdf/owl. Dat maakt het mogelijk om ze, afhankelijk van het doel, te representeren in een uitgebreide woordenlijst, als semantisch netwerk (al dan niet grafisch), taxonomie, semantische wiki of wat dan ook.</p>
+			<h3 id="datamodelpub">4.5 Definieren datamodel</h3>
+			<h4>4.5.1 Beschrijven van een relationeel datamodel</h4>
+			<p>Door eerst een begrippenkader te definiëren en daarna het datamodel te beschrijven kan het datamodel ook echt worden beschreven als wat het is. Een datamodel is een beschrijving van een structuur waarin data kunnen worden opgeslagen, die betrekking hebben op een identificeerbaar object in de brute werkelijkheid, waarvan het type wordt aangeduid met een in het sociaal/juridische begrippenkader gedefinieerd begrip.</p>
+			<p>Omdat alle begrippen om pragmatische redenen al waren afgeleid van het datamodel is de relatie tussen een data-element waarin informatie wordt opgeslagen over een object van het type dat wordt aangeduid met een bepaald begrip en dat begrip bekend.</p>
+			<p>Definities van data-objecten krijgen dan de volgende vorm:</p>
+			<ul>
+				<li>Het datatype OpenbareRuimte bevat de data over het objecten die worden aangeduid met het begrip OpenbareRuimte.</li>
+			</ul>
+			<p>Soms worden begrippen in een datamodel op een hoop gegooid en gegeneraliseerd. Dat leidt tot een definitie als:</p>
+			<ul>
+				<li>Het datatype AdresseerbaarObject is een generalisatie van de datatype Verblijfsobject, Ligplaats en Standplaats.</li>
+			</ul>
+			<p>Het begrip ‘adresseerbaar object’ komt in de wet niet voor, maar is in het datamodel opgevoerd als hulpmiddel om aan zowel verblijfsobjecten, ligplaatsen en standplaatsen een adres te kunnen toekennen, het is een zogenaamd ‘abstract datatype’, dat niet zichtbaar is in de brute werkelijkheid in de juridische werkelijkheid.</p>
+			<p>Een laatste categorie zijn begrippen die juridisch allemaal hun eigen betekenis hebben, maar in het datamodel op een hoop worden gegooid. Dit komt vooral voor in meer ingewikkelde registraties die al wat een langere geschiedenis hebben. Een voorbeeld zijn de rechten die worden vastgelegd in de BRK:</p>
+			<ul>
+				<li>Het datatype ZakelijkRecht bevat de data over het objecten die worden aangeduid met de begrippen Eigendom, Opstal, Erfpacht, Vruchtgebruik, …</li>
+			</ul>
+			<h4>4.5.2 Beschrijven van een ontologie</h4>
+			<p>Voor de BAG is ook een vertaling gemaakt van het begrippenmodel naar een ontologie die hier direct op aansluit. Daarbij wordt de relatie tussen klassen en begrippen 1 op 1. Definities zien er dan uit als:</p>
+			<ul>
+				<li>De klasse OpenbareRuimte bevat de data over de objecten die worden aangeduid met het begrip OpenbareRuimte.</li>
+			</ul>
+			<p>In deze implementatie zijn een aantal ontwerpkeuzes gemaakt:</p>
+			<ul>
+				<li>Gebeurtenissen worden apart uitgemodelleerd.</li>
+				<li>Tijd en plaats – graph properties</li>
+				<li>Provenance data</li>
+			</ul>
+			<p>Traditioneel wordt data beschermd door een applicatie: de software “bovenop” de database. Deze applicatie zorgt voor transactionele integriteit, maar ook toegang, “betekenis” van de data, etc, etc.</p>
+			<p>Traditionele data is geissoleerd: het is moeilijk voor anderen te gebruiken, aangezien je steeds “door” of “langs” de applicatie moet.</p>
+			<p>Linked data kent deze beschermmuur niet. Dat heeft voordelen (je kunt er makkelijk bij), maar ook nadelen (er is geen duidelijk toegangspoort, vgl de problemen die dimitri ervaart, etc, etc). Maar belangrijker: er is geen beschermer meer van de integriteit.</p>
+			<p>Integriteit van data in Linked Data termen betekent integriteit van de context van de data. Dwz: van elke triple is duidelijk wat de context is, en deze context is voldoende te begrijpen. Context is in deze: herkomst, betekenis, etc, etc, etc.</p>
+			<hr/>
+			<h2 id="ondersteuning">5 Ondersteuning</h2>
+			<h3 id="architectuur">5.1 Architectuur</h3>
+			<p>Onderstaand figuur geeft een overzicht van de architectuur:</p>
+			<img class="plaatje" src="plaatjes/architecture-overview.png" alt="architecture-overview" width="600"/>
+			<h4>5.1.1 Triple store</h4>
+			<p>De basis voor de opslag van linked data is een triple store. Een triple store is een database die specifiek is ingericht op het efficiënt opslaan en ontsluiten van data die als triples zijn geordend. De meeste triple stores zijn tegenwoordig eigenlijk een quad store. Een quad store is een triple store die het mogelijk maakt om ook de ‘context’, de graph op te slaan. Aan iedere triple wordt de graph als context toegevoegd, waardoor een quad (graph – subject – predicate - object) ontstaat.</p>
+			<h4>5.1.2 SPARQL endpoint</h4>
+			<p>Standaard kent een triple store de mogelijkheid om via een SPARQL endpoint data op te vragen uit deze store. SPARQL (SPARQL Protocol and RDF Query Language) is een door de W3C gedefinieerde zoektaal die gebruikt wordt om een triple store te bevragen via zoekopdrachten. Dit gebeurt met een standaard protocol op basis van een zogenaamde http RESTful service [<a href="#refGRAPHSTORE">GRAPHSTORE</a>][<a href="#refSPARQL11">SPARQL11</a>].</p>
+			<p>In het voorbeeld van de BAG kan aan een SPARQL endpoint bijvoorbeeld de volgende vraag worden gesteld. Deze vraagt de gegevens op van het pand aan de Krankeledenstraaat 40 in Amersfoort:</p>
+			<p>
+				<div class="xmlsyn">prefix bag: http://bag.kadaster.nl/def#
+					<br/>select ?pand ?eigenschap ?waarde
+					<br/>where {
+					<br/>?openbareRuimte bag:naamOpenbareRuimte "Krankeledenstraat”.
+					<br/>?nummeraanduiding bag:gerelateerdeOpenbareRuimte ?openbareRuimte.
+					<br/>?nummeraanduiding bag:huisnummer "30".
+					<br/>?verblijfsobject bag:hoofdadres ?nummeraanduiding.
+					<br/>?verblijfsobject bag:onderdeelVan ?pand.
+					<br/>?pand ?eigenschap ?waarde.
+					<br/>}</div>
+			</p>
+			<p>Om zo’n vraag te kunnen stellen is toch wel wat gespecialiseerde SPARQL kennis nodig. Deze vraag levert ook een antwoord op dat een standaard SPARQL vorm heeft. Dit is niet de meest praktische vorm. Daarom is er een linked data API (application programming interface). Dit is een verzameling definities op basis waarvan een computerprogramma kan communiceren met de triple store.</p>
+			<h4>5.1.3 Linked Data API</h4>
+			<p>De linked data API is een voorziening die het mogelijk maakt om antwoord te geven op URL's en URL-Vragen naar Linked Data. Zo kun je direct in de brouwser de volgende relatief eenvoudige URL-vraag stellen:</p>
+			<p>Als deze vraag wordt gesteld vanuit de browser herkent de API dat en toont deze als antwoord een nette, in de gewenste huisstijl van de organisatie opgemaakte webpagina.</p>
+			<p>Het is ook mogelijk om een voor programmeurs aantrekkelijk protocol te gebruiken, namelijk RESTful services [<a href="#refREST">REST</a>] die JSON [<a href="#refJSON">JSON</a>] retourneren. Daardoor hebben programmeurs niet (veel) kennis nodig van linked data om een app of programma maken waarin linked data wordt gebruikt.</p>
+			<p>De API biedt bovendien de mogelijkheid om autorisatie toe te passen op de getoonde informatie, zodat alleen geautoriseerde personen toegang hebben tot de gegevens. Dan zijn het niet meer open data, maar moet er bijvoorbeeld voor worden betaald of zijn bepaalde data niet voor iedereen toegangkelijk.</p>
+			<p>De Linked Data API kent als interface een "normaal" http endpoint. Dat betekent dat http GET requests afgehandeld worden door de Linked Data API. Voor de specificaties van de Linked Data API bestaan op dit moment twee varianten:</p>
+			<ul>
+				<li>De vrij generieke en vanuit de W3C opgestelde Linked Data Platform (LDP) [<a href="#refLDP">LDP</a>];</li>
+				<li>De meer specifieke en op implementatie gerichte Linked Data API specificatie [<a href="#refLDAPI">LDAPI</a>].</li>
+			</ul>
+			<p>Door het aanbieden van een Linked Data API kunnen verschillende systemen aansluiten op de Linked Data API:</p>
+			<ul>
+				<li>Een App, waarbij de App via een RESTful JSON http service gegevens opvraagd van de Linked Data API;</li>
+				<li>Een website, waarbij http links zijn opgenomen. Door te klikken op de website, navigeer je naar een website van de Linked Data API zelf, en zal in de browser van de gebruiker de Linked Data als een html webpagina worden getoond;</li>
+				<li>Een informatiesysteem, waarbij een machine-naar-machine interface is geimplementeerd door middel van een RESTful http webservice. Daarmee biedt deze architectuur de mogelijkheid om opgenomen te worden in een SOA landschap (maar dan niet met een SOAP webservice [<a href="#refSOAP">SOAP</a>], maar een RESTful webservice).</li>
+				<li>Een interactieve website, waarbij via Javascript Ajax-calls [<a href="#refAJAX">AJAX</a>] worden uitgevoerd, zodat de inhoud van het scherm dynamisch kan worden bijgewerkt, bijvoorbeeld voor het tonen van een grafische representatie, zie ook verderop in dit hoofdstuk.</li>
+			</ul>
+			<p>Het bepalen van de vorm waarin het resultaat wordt teruggegeven gebeurt via ‘content negotiation’.</p>
+			<h4>5.1.4 Content negotiation</h4>
+			<p>Het http protocol kent de mogelijkheid van "content negotiation". Dit betekent dat op basis van de http-request header, de http server een andere "vorm" van de webpagina zal teruggeven.</p>
+			<img class="plaatje" src="plaatjes/cooluri.png" alt="cooluri"/>
+			<p>In bovenstaand plaatje is dit uitgebeeld. De URL <code>http://bag.kadaster.nl/doc/pand/0307100000333887</code> kan hier op drie verschillende manieren worden weergegeven:</p>
+			<ul>
+				<li>Als "gewone" webpagina (html), voor menselijke gebruikers. Het intypen van de URL in een browser zal normaal gesproken dit gedrag vertonen</li>
+				<li>Als JSON-LD document, voor App bouwers die van JSON services houden (de meeste programmeurs);</li>
+				<li>Als RDF/XML document, voor de meer hard-core Linked Data specialisten.</li>
+			</ul>
+			<p>Overigens is het gebruikelijk om ook specifiek (los van de http-request header) een formaat op te vragen, door achter de URL een extensie toe te voegen die het formaat weergeeft. Zo geeft onderstaande URL-vraag een JSON response terug.</p>
+			<p>Bovenstaand figuur laat ook het http-303 redirect gedrag zien. Op grond van de richtlijnen uit de URI strategie zal de "id" URL leiden tot een http-303 redirect response. Dit leidt ertoe dat de browser opnieuw een pagina zal opvragen, in dit geval de "doc" URL.</p>
+			<h4>5.1.3 Linked Data grafische representatie</h4>
+			<p>Linked Data leent zich erg goed voor het grafisch representeren van data. Het generieke datamodel voor Linked Data is feitelijk een gelabelde gerichte graaf [<a href="#refGRAPH">GRAPH</a>]. Door gebruik te maken van een standaard Javascript library (D3.js), is het vrij eenvoudig om een dergelijk graaf zichtbaar te maken. Een dergelijk voorbeeld is gepresenteerd in sectie 5.2.</p>
+			<img class="plaatje" src="plaatjes/architecture-d3.png" alt="architecture-d3"/>
+			<h4>5.1.4 Infrastructuur</h4>
+			<img class="plaatje" src="plaatjes/architecture-infrastructure.png" alt="architecture-infrastructure"/>
+			<p>TODO</p>
+			<h3 id="voorbeelden">5.2 Voorbeeld</h3>
+			<h4>5.2.3 Grafisch</h4>
+			<img class="plaatje" src="plaatjes/voorbeeld.png" alt="voorbeeld" width="900"/>
+			<h3 id="tooling">5.3 Tooling</h3>
+			<hr/>
+			<h2 id="references">Bijlage XX Referenties</h2>
+			<table class="glossary">
+				<tr>
+					<td id="refAANW161">[AANW161]</td>
+					<td>Aanwijzing 161<br/><a href="@href">http://wetten.overheid.nl/BWBR0005730/Hoofdstuk4/411/Aanwijzing161</a></td>
+				</tr>
+				<tr>
+					<td id="refAJAX">[AJAX]</td>
+					<td>AJAX - Asynchronous Javascript and XML<br/><a href="@href">http://en.wikipedia.org/wiki/Ajax_(programming)</a></td>
+				</tr>
+				<tr>
+					<td id="refANS">[ANS]</td>
+					<td>Algemene Nederlandse Spraakkunst<br/><a href="@href">http://ans.ruhosting.nl/e-ans/index.html</a></td>
+				</tr>
+				<tr>
+					<td id="refANS-ZIN">[ANS-ZIN]</td>
+					<td>Wat is een zin, Algemene Nederlandse Spraakkunst<br/><a href="@href">http://ans.ruhosting.nl/e-ans/19/01/01/body.html</a></td>
+				</tr>
+				<tr>
+					<td id="refAPOO">[APOO]</td>
+					<td>Actieplan Open Overheid<br/><a href="@href">https://data.overheid.nl/sites/data.overheid.nl/files/actieplan-open-overheid.pdf</a></td>
+				</tr>
+				<tr>
+					<td id="refAXIOMS">[AXIOMS]</td>
+					<td>opaque<br/><a href="@href">http://www.w3.org/DesignIssues/Axioms.html#opaque</a></td>
+				</tr>
+				<tr>
+					<td id="refCOMPSAYSNO">[COMPSAYSNO]</td>
+					<td>Computer says no<br/><a href="@href">https://www.youtube.com/watch?v=sX6hMhL1YsQ&amp;index=8&amp;list=RD0n_Ty_72Qds</a></td>
+				</tr>
+				<tr>
+					<td id="refCOOLURIS">[COOLURIS]</td>
+					<td>Cool URIs for the Semantic Web<br/><a href="@href">http://www.w3.org/TR/cooluris/#cooluris</a></td>
+				</tr>
+				<tr>
+					<td id="refCOOLURIS">[COOLURIS]</td>
+					<td>Cool URIs<br/><a href="@href">http://www.w3.org/TR/cooluris/#cooluris</a></td>
+				</tr>
+				<tr>
+					<td id="refEARREST">[EARREST]</td>
+					<td>Elektriciteitsarrest<br/><a href="@href">http://nl.wikipedia.org/wiki/Elektriciteitsarrest</a></td>
+				</tr>
+				<tr>
+					<td id="refECONIM">[ECONIM]</td>
+					<td>The economics of information management<br/><a href="@href">http://pv.tl/blog/2014/04/13/the-economics-of-information-management/</a></td>
+				</tr>
+				<tr>
+					<td id="refEENVWOORD">[EENVWOORD]</td>
+					<td>Woordenlijst taalniveau B1 op de website "zoek eenvoudige woorden"<br/><a href="@href">http://www.zoekeenvoudigewoorden.nl</a></td>
+				</tr>
+				<tr>
+					<td id="refGEGEVEN">[GEGEVEN]</td>
+					<td>Wikipedia, "Gegeven"<br/><a href="@href">http://nl.wikipedia.org/wiki/Gegeven</a></td>
+				</tr>
+				<tr>
+					<td id="refGRAPH">[GRAPH]</td>
+					<td>Directed graph<br/><a href="@href">http://en.wikipedia.org/wiki/Directed_graph</a></td>
+				</tr>
+				<tr>
+					<td id="refGRAPHSTORE">[GRAPHSTORE]</td>
+					<td>SPARQL 1.1 Graph Store HTTP Protocol<br/><a href="@href">http://www.w3.org/TR/sparql11-http-rdf-update/</a></td>
+				</tr>
+				<tr>
+					<td id="refHTTP">[HTTP]</td>
+					<td>Hypertext Transfer Protocol<br/><a href="@href">http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</a></td>
+				</tr>
+				<tr>
+					<td id="refINFONOMICS">[INFONOMICS]</td>
+					<td>Wikipedia: infonomics<br/><a href="@href">http://en.wikipedia.org/wiki/Infonomics</a></td>
+				</tr>
+				<tr>
+					<td id="refISSUE2">[ISSUE2]</td>
+					<td>Issue 2<br/><a href="@href">http://www.pilod.nl/wiki/Boek/URI-strategie#Issue_2:_Herkenbaar_internetdomein</a></td>
+				</tr>
+				<tr>
+					<td id="refJSON">[JSON]</td>
+					<td>JSON - JavaScript Object Notation<br/><a href="@href">http://en.wikipedia.org/wiki/JSON</a></td>
+				</tr>
+				<tr>
+					<td id="refKST-33042-21">[KST-33042-21]</td>
+					<td>Kamerstuk 10-04-2013 over het COA<br/><a href="@href">https://zoek.officielebekendmakingen.nl/kst-33042-21.html</a></td>
+				</tr>
+				<tr>
+					<td id="refLDAPI">[LDAPI]</td>
+					<td>Linked Data API<br/><a href="@href">http://code.google.com/p/linked-data-api/</a></td>
+				</tr>
+				<tr>
+					<td id="refLDP">[LDP]</td>
+					<td>Linked Data Platform 1.0<br/><a href="@href">http://www.w3.org/TR/ldp/</a></td>
+				</tr>
+				<tr>
+					<td id="refLIKNSP">[LIKNSP]</td>
+					<td>Linked knowledge space<br/><a href="@href">http://www.pilod.nl/w/images/5/5c/Christophe_Gueret_Linking_Knowledge_Spaces.pdf</a></td>
+				</tr>
+				<tr>
+					<td id="refLINKEDDATA">[LINKEDDATA]</td>
+					<td>Linked Data<br/><a href="@href">http://www.w3.org/DesignIssues/LinkedData.html</a></td>
+				</tr>
+				<tr>
+					<td id="refLINKEDDATA">[LINKEDDATA]</td>
+					<td>Linked Data Design Issues<br/><a href="@href">http://www.w3.org/DesignIssues/LinkedData.html</a></td>
+				</tr>
+				<tr>
+					<td id="refLITERAL">[LITERAL]</td>
+					<td>Wikipedia: literal (computer programming)<br/><a href="@href">http://en.wikipedia.org/wiki/Literal_(computer_programming)</a></td>
+				</tr>
+				<tr>
+					<td id="refLIVAN">[LIVAN]</td>
+					<td>Liversidge versus Anderson<br/><a href="@href">http://en.wikipedia.org/wiki/Liversidge_v._Anderson</a></td>
+				</tr>
+				<tr>
+					<td id="refMSISD">[MSISD]</td>
+					<td>Modelling support in information systems development.<br/><a href="@href">http://resolver.tudelft.nl/uuid:959fa3b8-7557-41fa-9eae-043f9f03cadc</a></td>
+				</tr>
+				<tr>
+					<td id="refONTOMETA">[ONTOMETA]</td>
+					<td>Ontology, Metadata and Semiotics<br/><a href="@href">http://www.jfsowa.com/ontology/ontometa.htm)</a></td>
+				</tr>
+				<tr>
+					<td id="refOWL">[OWL]</td>
+					<td>OWL, Web Ontology Language<br/><a href="@href">http://www.w3.org/OWL</a></td>
+				</tr>
+				<tr>
+					<td id="refPROTOCOLS">[PROTOCOLS]</td>
+					<td>Internet protocols<br/><a href="@href">http://www.w3.org/Protocols</a></td>
+				</tr>
+				<tr>
+					<td id="refREFDATA">[REFDATA]</td>
+					<td>Master Data versus Reference Data<br/><a href="@href">http://www.information-management.com/issues/20060401/1051002-1.html</a></td>
+				</tr>
+				<tr>
+					<td id="refREST">[REST]</td>
+					<td>Wikipedia: RESTful - Representational State Transfer<br/><a href="@href">http://en.wikipedia.org/wiki/Representational_state_transfer</a></td>
+				</tr>
+				<tr>
+					<td id="refRFC2616">[RFC2616]</td>
+					<td>http protocol-statussen<br/><a href="@href">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a></td>
+				</tr>
+				<tr>
+					<td id="refRFC3986">[RFC3986]</td>
+					<td>RFC3986, URI specificaties<br/><a href="@href">http://tools.ietf.org/html/rfc3986</a></td>
+				</tr>
+				<tr>
+					<td id="refRIJNSANT">[RIJNSANT]</td>
+					<td>Een nieuwe wereld, een nieuwe informatie architectuur<br/><a href="@href">http://www.pilod.nl/wiki/Boek/RijnSantema</a></td>
+				</tr>
+				<tr>
+					<td id="refROSETTA">[ROSETTA]</td>
+					<td>Steen van Rosetta<br/><a href="@href">http://nl.wikipedia.org/wiki/Steen_van_Rosetta</a></td>
+				</tr>
+				<tr>
+					<td id="refRULES">[RULES]</td>
+					<td>Business Rules Group - wat is een regel<br/><a href="@href">http://www.businessrulesgroup.org/first_paper/BRG-whatisBR_3ed.pdf)</a></td>
+				</tr>
+				<tr>
+					<td id="refSIDN">[SIDN]</td>
+					<td>Domeinregistratie SIDN<br/><a href="@href">http://www.sidn.nl</a></td>
+				</tr>
+				<tr>
+					<td id="refSKOS">[SKOS]</td>
+					<td>Simple Knowledge Organisation System<br/><a href="@href">http://www.w3.org/skos</a></td>
+				</tr>
+				<tr>
+					<td id="refSOAP">[SOAP]</td>
+					<td>SOAP - Simple Object Access Protocol<br/><a href="@href">http://en.wikipedia.org/wiki/SOAP</a></td>
+				</tr>
+				<tr>
+					<td id="refSPARQL11">[SPARQL11]</td>
+					<td>SPARQL 1.1 Protocol<br/><a href="@href">http://www.w3.org/TR/sparql11-protocol/</a></td>
+				</tr>
+				<tr>
+					<td id="refSS-GWIMT">[SS-GWIMT]</td>
+					<td>Sesame Street - Guess who I met today<br/><a href="@href">http://www.youtube.com/watch?v=ItcwsvWgIs0</a></td>
+				</tr>
+				<tr>
+					<td id="refSS-TAAT">[SS-TAAT]</td>
+					<td>Sesame Street - Thought about a thought (big things)<br/><a href="@href">http://www.youtube.com/watch?v=MnZ8yhamJgQ</a></td>
+				</tr>
+				<tr>
+					<td id="refTURTLE">[TURTLE]</td>
+					<td>Turtle-syntax<br/><a href="@href">http://en.wikipedia.org/wiki/Turtle_(syntax)</a></td>
+				</tr>
+				<tr>
+					<td id="refURI">[URI]</td>
+					<td>Wikipedia over URI's (Uniform Resource Identifier)<br/><a href="@href">http://en.wikipedia.org/wiki/Uniform_resource_identifier</a></td>
+				</tr>
+				<tr>
+					<td id="refURISTYLE">[URISTYLE]</td>
+					<td>Hypertext Style: Cool URIs don't change<br/><a href="@href">http://www.w3.org/Provider/Style/URI</a></td>
+				</tr>
+			</table>
+			<hr/>
+		</div>
+	</body>
+</html>
