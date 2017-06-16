@@ -1,0 +1,324 @@
+@prefix rdf:		<http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs:		<http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd:		<http://www.w3.org/2001/XMLSchema#>.
+@prefix owl:		<http://www.w3.org/2002/07/owl#>.
+@prefix sh:			<http://www.w3.org/ns/shacl#>.
+@prefix dcat:		<http://www.w3.org/ns/dcat#>.
+@prefix dct:		<http://purl.org/dc/terms/>.
+@prefix dctype:		<http://purl.org/dc/dcmitype/>.
+@prefix foaf:		<http://xmlns.com/foaf/0.1/>.
+@prefix skos:		<http://www.w3.org/2004/02/skos/core#>.
+@prefix skoslex: 	<http://bp4mc2.org/def/skos-lex/>.
+@prefix prov:		<http://www.w3.org/ns/prov#>.
+@prefix dqv: 		<http://www.w3.org/ns/dqv#>.
+@prefix adms: 		<http://www.w3.org/ns/adms#>.
+@prefix wdrs: 		<http://www.w3.org/2007/05/powder-s#>.
+@prefix xsi: 		<http://www.w3.org/2001/XMLSchema-instance>.
+@prefix ldqd:    	<http://www.w3.org/2016/05/ldqd#>.
+
+@prefix kkg:		<http://bp4mc2.org/def/kkg#>.
+@prefix kkgshape: 	<http://bp4mc2.org/def/kkg/>.
+
+#Imported from 
+
+<http://bp4mc2.org/def/kkg#> a owl:Ontology;
+	rdfs:label "KKG metamodel vocabulary"@en;
+	rdfs:label "KKG metamodel vocabulaire"@nl;
+	rdfs:comment "";
+	rdfs:comment "";
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+
+### Class definitions ###
+
+kkg:Objecttype rdf:type owl:Class;
+	rdfs:label "Objecttype"@en;
+	rdfs:label "Objecttype"@nl;
+	rdfs:comment "The classification of a group of objects (in the real world), that are relevant in a certain domain, and are considered to be similar."@en;
+	rdfs:comment "De typering van een groep objecten (in de werkelijkheid) die binnen een domein relevant zijn en gelijksoortig worden beschouwd."@nl;
+	rdfs:subClassOf rdfs:Class;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Generalisatie rdf:type owl:Class;
+	rdfs:label "Generalisation"@en;
+	rdfs:label "Generalisatie"@nl;
+	rdfs:comment "The classification of the hierarchical connection between a more general object of an objecttype and a more specific object of another objecttype, where lastmentioned object inherits properties from the first mentioned object"@en;
+	rdfs:comment "De typering van het hierarchische verband tussen een meer generiek object van een objecttype en een meer specifiek object van een ander objecttype waarbij het laatstgenoemde object eigenschappen van het eerstgenoemde object overerft."@nl;
+	rdfs:subClassOf rdfs:Class;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Gegevensgroeptype rdf:type owl:Class;
+	rdfs:label "Data grouptype"@en;
+	rdfs:label "Gegevensgroep type"@nl;
+	rdfs:comment "A group of related attributes. A data grou type is always a type of data group."@en;
+	rdfs:comment "Een groep van met elkaar samenhangende attribuutsoorten. Een gegevensgroeptype is altijd een type van een gegevensgroep."@nl;
+	rdfs:subClassOf rdfs:Class;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Relatieklasse rdf:type owl:Class;
+	rdfs:label "Relation Class"@en;
+	rdfs:label "Relatieklasse"@nl;
+	rdfs:comment "A relation type with properties"@en;
+	rdfs:comment "Een relatiesoort met eigenschappen"@nl;
+	rdfs:subClassOf rdfs:Class;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+
+### Datatype properties ###
+kkg:naam 		rdf:type 	owl:DatatypeProperty;
+	rdfs:label 				"name"@en;
+	rdfs:label 				"naam"@nl;
+	rdfs:subPropertyOf		skos:preflabel;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:herkomst	rdf:type	owl:DatatypeProperty;
+	rdfs:label 				"source"@en;
+	rdfs:label				"herkomst"@nl;
+	rdfs:subPropertyOf 		dct:source;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:code		rdf:type 	owl:DatatypeProperty;
+	rdfs:label 				"code"@en;
+	rdfs:label 				"code"@nl;
+	rdfs:subPropertyOf		xsd:simpletype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:definitie	rdf:type 	owl:DatatypeProperty;
+	rdfs:label 				"definition"@en;
+	rdfs:label 				"definitie"@nl;
+	rdfs:subPropertyOf		skos:definition;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:datumOpname	rdf:type	owl:DatatypeProperty;
+	rdfs:label				"generation date"@en;
+	rdfs:label				"datum opname"@nl;
+	rdfs:subPropertyOf		prov:generatedAtTime;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:uniekeAanduiding rdf:type owl:DatatypeProperty;
+	rdfs:label 				"unique identifier"@en;
+	rdfs:label 				"unieke aanduiding"@nl;
+	rdfs:subPropertyOf		skos:notation;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:populatie	rdf:type 	owl:DatatypeProperty;
+	rdfs:label				"population"@en;
+	rdfs:label 				"populatie"@nl;
+	rdfs:subPropertyOf		ldqd:completeness;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:kwaliteit	rdf:type 	owl:DatatypeProperty;
+	rdfs:label 				"quality"@en;
+	rdfs:label 				"kwaliteit"@nl;
+	rdfs:subPropertyOf		ldqd:semanticAccuracy;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:toelichting	rdf:type	owl:DatatypeProperty;
+	rdfs:label 				"clarification"@en;
+	rdfs:label				"toelichting"@@nl;
+	rdfs:subPropertyOf		skos:scopeNote;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:indicatieAbstractObject rdf:type	owl:DatatypeProperty;
+	rdfs:label 				"Indication abstract object"@en;
+	rdfs:label				"Indicatie abstract object"@nl;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:indicatieMaterieleHistorie rdf:type owl:DatatypeProperty;
+	rdfs:label 				"Indication material history"@en;
+	rdfs:label 				"Indicatie materiële historie"@nl;
+	rdfs:subPropertyOf		rdf:Property;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:indicatieFormeleHistorie rdf:type owl:DatatypeProperty;
+	rdfs:label 				"Indication formal history"@en;
+	rdfs:label 				"Indicatie formele historie"@nl;
+	rdfs:subPropertyOf		rdf:Property;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:kardinaliteit	rdf:type	owl:DatatypeProperty;
+	rdfs:label				"Cardinality"@en;
+	rdfs:label 				"Kardinaliteit"@nl;
+	rdfs:subPropertyOf		owl:cardinality;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:authentiek		rdf:type 	owl:DatatypeProperty;
+	rdfs:label 				"Authentic"@en;
+	rdfs:label 				"Authentiek"@nl;
+	rdfs:subPropertyOf		ldqd:trustworthiness;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:indicatieAfleidbaar	rdf:type owl:DatatypeProperty;
+	rdfs:label 				"Indication deducatable"@en;
+	rdfs:label 				"Indicatie afleidbaar"@nl;
+	rdfs:subPropertyOf		prov:wasDerivedFrom;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:mogelijkGeenWaarde	rdf:type owl:DatatypeProperty;
+	rdfs:label 				"Possibly no value"@en;
+	rdfs:label 				"Mogelijk geen waarde"@nl;
+	rdfs:subPropertyOf		xsi:nil;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:identificerend 		rdf:type owl:DatatypeProperty;
+	rdfs:label 				"Identifying"@en;
+	rdfs:label 				"Identificerend"@nl;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:uniDirectioneel		rdf:type owl:DatatypeProperty;
+	rdfs:label 				"Uni directional"@en;
+	rdfs:label 				"Uni-Directioneel"@nl;
+	rdfs:subPropertyOf		rdf:object;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:ComplexDatatype rdf:type 	owl:DatatypeProperty;
+	rdfs:label "Complex Datatype"@en;
+	rdfs:label "Complex Datatype"@nl;
+	rdfs:comment "Specifically named, structured datatype that describes the structure of an element, composed of at least two elements"@en;
+	rdfs:comment "Specifiek benoemd gestrucutreerd datatype dayt de structuur van een gegeven beschrijft, samengesteld uit minimaal twee elementen"@nl;
+	rdfs:subPropertyOf 	xsi:ComplexDatatype;	
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Enumeratie rdf:type owl:DatatypeProperty;
+	rdfs:label "Enumeration"@en;
+	rdfs:label "Enumeratie"@nl;
+	rdfs:comment "A datatype of which the possible values are listed in a reference list";
+	rdfs:comment "Een datatype waarvan de mogelijke waarden zijn opgesomd in een lijst";
+	rdfs:subClassOf xsi:Datatype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Referentielijst rdf:type owl:DatatypeProperty;
+	rdfs:label "Referenence list"@en;
+	rdfs:label "Referentielijst"@nl;
+	rdfs:comment "A list with a summary of the possible domainvalues of an attribute type, that is administrated in an external Value list. The domain values in the list can be adjusted, expanded, or deleted over time, without the need of adjusting the information model (in contrast to adjustments to an enumration)@en; 
+	rdfs:comment "Een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardelijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijdered worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie)"@nl;
+	rdfs:subClassOf rdf:list;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Union rdf:type owl:DatatypeProperty;
+	rdfs:label "Union"@en;
+	rdfs:label "Union"@nl;
+	rdfs:comment "A structured datatype, whereby is indicated that there are multiple options to choose from dor a datatype of an attribute. The attribute itself is identified as a datatype of the type union. The union offers the choice from different datatypes, each one described in a separate union element"@en;
+	rdfs:comment "Gestructureerd datatype, waarmee wordt aangegeven dat er meer dan een mogelijkheid is voor het datatype van een attribuut. Het attribuut zelf krijgt als datatype de union. De union biedt een keuze uit verschillende datatypes, elk afzonderlijk beschreven in een union element."@nl;
+	rdfs:subClassOf rdfs::Datatype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Codelijst rdf:type owl:DatatypeProperty;
+	rdfs:label "Codelist"@en;
+	rdfs:label "Codelijst"@nl;
+	rdfs:comment "De definition of a codelist is equal to the definition of a reference list"@en;
+	rdfs:comment "De definitie van een codelijst is gelijk aan de definitie van een referentielijst"@nl;
+	rdfs:subClassOf rdf:Datatype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:PrimitiefDatatype rdf:type owl:DatatypeProperty;
+	rdfs:label "Primitive datatype"@en;
+	rdfs:label "Primitief datatype"@nl;
+	rdfs:comment "A standard datatype, as known in many specification languages, which describes the structure of a data element. The metamodel follows, where possible, the definitions as described in ISO standards. These datatypes will always have been given a name and definition in their respective standards, and these will be used"@en;
+	rdfs:comment "Een standaard datatype, zoals bekend in vele specificatietalen, dat de structuur van een gegeven beschrijft. Het metamodel volgt waar mogelijk de definities zoals beschreven in ISO standaarden. Deze datatypes hebben altijd al een naam en definitie gekregen vanuit deze standaarden en deze worden gebruikt."@nl;
+	rdfs:subClassOf xsi:simpletype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:DataElement rdf:type owl:DatatypeProperty;
+	rdfs:label "Data element"@en;
+	rdfs:label "Data element"@nl;
+	rdfs:comment "A part/element of a complex datatype, that has a datatype as type"@en;
+	rdfs:comment "Een onderdeel/element van een complex datatype die als type een datatype heeft";
+	rdfs:subPropertyOf xsi:complexdatatype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Enumeratiewaarde rdf:type owl:DatatypeProperty;
+	rdfs:label "Enumeration value"@en;
+	rdfs:label "Enumeratiewaarde"@nl;
+	rdfs:comment "A defined value, in the form of a one time established constant data element".@en;
+	rdfs:comment "Een gedefinieerde waarde, in de vorm van een eenmalig vastgesteld constant gegeven."@nl;
+	rdfs:subPropertyOf xsi:Datatype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:ReferentieElement rdf:type owl:DatatypeProperty;
+	rdfs:label "Reference element"@en;
+	rdfs:label "Referentie element"@nl;
+	rdfs:comment "A property of an object in a reference list in the form of an element."@en;
+	rdfs:comment "Een eigenschap van een object in een referentielijst in de vorm van een gegeven"@nl;
+	rdfs:subPropertyOf rdf:Property;
+	rdfs:domain kkg:Referentielijst;
+	rdfs:range	rdfs:Resource;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:UnionElement rdf:type owl:DatatypeProperty;
+	rdfs:label "Union element"@en;
+	rdfs:label "Union element"@nl;
+	rdfs:comment "A type that can be used as attribute, as is described in the definition of a Union. The union element is part of a union, expressed as an attribute of a union, that is represented as a choice within the union"@en;
+	rdfs:comment "Een type dat gebruikt kan worden voor het attribuut zoals beschreven in de definitie van Union. Het union element is een onderdeel van een Union, uitgedrukt in een eigenschap (attribute) van een Union, die als keuze binnen de Union is gerepresenteerd..."@nl;
+	rdfs:subPropertyOf rdf:Property;
+	rdfs:domain kkg:Union;
+	rdfs:range	rdfs:Resource;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+
+### Object properties	- 	Model relations ###
+
+kkg:bezit			rdf:type	owl:ObjectProperty;
+	rdfs:label 				"posesses"@en;
+	rdfs:label				"bezit"@nl;
+	rdfs:subPropertyOf		rdf:object;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:heeft	rdf:type	owl:ObjectProperty;
+	rdfs:label 				"has"@en;
+	rdfs:label				"heeft"@nl;
+	rdfs:domain				kkg:Gegevensgroeptype;
+	rdfs:subPropertyOf		kkg:Gegevensgroep;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:verwijstNaar	rdf:type	owl:ObjectProperty;
+	rdfs:label				"refers to"@en;
+	rdfs:label				"verwijst naar"@en;
+	rdfs:subPropertyOf		skoslex:refersTo;
+	rdfs:domain				kkg:Relatiesoort;
+	rdfs:range				kkg:Objecttype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:verwijstNaarGenerieke	rdf:type	owl:ObjectProperty;
+	rdfs:label				"refers to generalisation"@en;
+	rdfs:label				"verwijst naar generieke"@nl;
+	rdfs:subPropertyOf		skosthes:broaderGeneric;
+	rdfs:domain				kkg:objecttype;
+	rdfs:range				kkg:Generalisatie;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Attribuutsoort 			rdf:type 	owl:ObjectProperty;
+	rdfs:label 				"Attribute type"@en;
+	rdfs:label 				"Attribuutsoort"@nl;
+	rdfs:comment 			"The classification of similar data, that apply to an objecttype"@en;
+	rdfs:comment 			"De typering van gelijksoortige gegevens die voor een objecttype van toepassing is."@nl;
+	rdfs:subPropertyOf 		rdfs:domain;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Gegevensgroep 			rdf:type 	owl:ObjectProperty;
+	rdfs:label 				"Data group"@en;
+	rdfs:label 				"Gegevensgroep"@nl;
+	rdfs:comment 			"A classification of a group of similar data, that apply to an objecttype"@en;
+	rdfs:comment 			"Een typering van een groep van gelijksoortige gegevens die voor een objecttype van toepassing is"@nl;
+	rdfs:subPropertyOf		skoslex:refersTo;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.	
+kkg:Relatiesoort rdf:type owl:ObjectProperty;
+	rdfs:label "Relation type"@en;
+	rdfs:label "Relatiesoort"@nl;
+	rdfs:comment "The classification of the structural connection between an object of a certain objecttype and another object of a different (or the same) objecttype"@en;
+	rdfs:comment "De typering van het structurele verband tussen een object van een objecttype en een (ander) object van een ander (of hetzelfde) objecttype."@nl;
+	rdfs:subClassOf kkg:verwijstNaar;
+	rdfs:domain kkg:Objecttype;
+	rdfs:range kkg:Objecttype;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
+kkg:Relatierol rdf:type owl:ObjectProperty;
+	rdfs:label "Relation role"@en;
+	rdfs:label "Relatierol"@nl;
+	rdfs:comment "The naming of the way in which an object participates in a relation with another object"@en;
+	rdfs:comment "De benaming van de manier waarop een object deelneemt aan een relatie met een ander object"@nl;
+	rdfs:domain kkg:Relatiesoort;
+	rdfs:range	kkg:Relatierol;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
+.
