@@ -15,6 +15,7 @@
 @prefix wdrs: 		<http://www.w3.org/2007/05/powder-s#>.
 @prefix xsi: 		<http://www.w3.org/2001/XMLSchema-instance>.
 @prefix ldqd:    	<http://www.w3.org/2016/05/ldqd#>.
+@prefix thes: 		<http://purl.org/iso25964/skos-thes#>.
 
 @prefix kkg:		<http://bp4mc2.org/def/kkg#>.
 @prefix kkgshape: 	<http://bp4mc2.org/def/kkg/>.
@@ -115,7 +116,7 @@ kkg:kwaliteit	rdf:type 	owl:DatatypeProperty;
 .
 kkg:toelichting	rdf:type	owl:DatatypeProperty;
 	rdfs:label 				"clarification"@en;
-	rdfs:label				"toelichting"@@nl;
+	rdfs:label				"toelichting"@nl;
 	rdfs:subPropertyOf		skos:scopeNote;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
 .
@@ -190,7 +191,7 @@ kkg:Enumeratie rdf:type owl:DatatypeProperty;
 kkg:Referentielijst rdf:type owl:DatatypeProperty;
 	rdfs:label "Referenence list"@en;
 	rdfs:label "Referentielijst"@nl;
-	rdfs:comment "A list with a summary of the possible domainvalues of an attribute type, that is administrated in an external Value list. The domain values in the list can be adjusted, expanded, or deleted over time, without the need of adjusting the information model (in contrast to adjustments to an enumration)@en; 
+	rdfs:comment "A list with a summary of the possible domainvalues of an attribute type, that is administrated in an external Value list. The domain values in the list can be adjusted, expanded, or deleted over time, without the need of adjusting the information model (in contrast to adjustments to an enumration)"@en; 
 	rdfs:comment "Een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardelijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijdered worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie)"@nl;
 	rdfs:subClassOf rdf:list;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
@@ -230,7 +231,7 @@ kkg:DataElement rdf:type owl:DatatypeProperty;
 kkg:Enumeratiewaarde rdf:type owl:DatatypeProperty;
 	rdfs:label "Enumeration value"@en;
 	rdfs:label "Enumeratiewaarde"@nl;
-	rdfs:comment "A defined value, in the form of a one time established constant data element".@en;
+	rdfs:comment "A defined value, in the form of a one time established constant data element."@en;
 	rdfs:comment "Een gedefinieerde waarde, in de vorm van een eenmalig vastgesteld constant gegeven."@nl;
 	rdfs:subPropertyOf xsi:Datatype;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
@@ -282,7 +283,7 @@ kkg:verwijstNaar	rdf:type	owl:ObjectProperty;
 kkg:verwijstNaarGenerieke	rdf:type	owl:ObjectProperty;
 	rdfs:label				"refers to generalisation"@en;
 	rdfs:label				"verwijst naar generieke"@nl;
-	rdfs:subPropertyOf		skosthes:broaderGeneric;
+	rdfs:subPropertyOf		thes:broaderGeneric;
 	rdfs:domain				kkg:objecttype;
 	rdfs:range				kkg:Generalisatie;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/kkg>;
