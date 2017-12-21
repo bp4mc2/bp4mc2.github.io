@@ -26,9 +26,9 @@ We begin with the most difficult question. At least, it is a question that is be
 
 To start with the answer:
 
-- The [original article]((https://pdfs.semanticscholar.org/566c/1c6bd366b4c9e07fc37eb372771690d5ba31.pdf)) states: "*particular things (people, Web pages or whatever)*;
-- The [original design note about Linked Data]() states: "*any kind of object or  concept*";
-- The [Architecture of the World Wide Web, volume one]() states: "*whatever might be identified by a URI*".
+- The [original article](https://pdfs.semanticscholar.org/566c/1c6bd366b4c9e07fc37eb372771690d5ba31.pdf) states: "*particular things (people, Web pages or whatever)*;
+- The [original design note about Linked Data](http://www.w3.org/DesignIssues/LinkedData.html) states: "*any kind of object or  concept*";
+- The [Architecture of the World Wide Web, volume one](http://www.w3.org/TR/webarch/) states: "*whatever might be identified by a URI*".
 
 Some of the discussion is captured by the following documents:
 
