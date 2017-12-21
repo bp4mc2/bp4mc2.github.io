@@ -22,7 +22,7 @@ This document is about the fundamentals of modeling in the semantic world, and m
 - How to deal with versioning?
 
 ## What do http URIs identify?
-We begin with the most difficult question. At least, it is a question that is been on the minds of people from the dawn of the semantic web till this day. And although the answer seems obvious (being: "*anything you want*"), the implications are not.
+We begin with the most difficult question. At least, it is a question that is been on the minds of people from the dawn of the semantic web till this day. And although the answer seems obvious (being: "*anything you want*"), the implications are not. And maybe we might have good reasons to limit the things we may *want* that http URIs identify.
 
 To start with the answer:
 
