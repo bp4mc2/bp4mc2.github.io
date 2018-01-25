@@ -17,7 +17,7 @@ As value lists are used to constrain values, the SHACL vocabulary can be used:
 
 The `sh:node` predicate states that the property `ex:someProperty` might only be used when the values (at the "object" position in a triple) conform to the ex:SomeValueList shape. You might say that ex:SomeValueList is a value list.
 
-To specify which values are part of the value list, you should make the distinction between the tree different types of meaning.
+To specify which values are part of the value list, you should make the distinction between the three different types of meaning.
 
 ### Enumeration
 
@@ -62,7 +62,7 @@ It might be more appropriate to use a `skos:ConceptScheme` instead of a `skos:Co
 		]
 	.
 	ex:Demolished skos:inScheme ex:BuildingStatuses.
-	ex:Demolished skos:inScheme ex:BuildingStatuses.
+	ex:InUse skos:inScheme ex:BuildingStatuses.
 
 ### Reference
 
