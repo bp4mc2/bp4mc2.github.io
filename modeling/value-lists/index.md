@@ -95,26 +95,26 @@ Value lists are typed as SHACL nodeshapes. But not all SHACL nodeshapes are valu
 
 ### Solution A: using a class
 
-  ex:ValueList a rdfs:Class;
-    rdfs:label "Value list";
-    rdfs:comment "The class of all value lists";
-  .
+	ex:ValueList a rdfs:Class;
+		rdfs:label "Value list";
+		rdfs:comment "The class of all value lists";
+	.
 	ex:Countries a sh:NodeShape, ex:ValueList.
 	ex:BuildingStatusValueList a sh:NodeShape, ex:ValueList.
   
 ### Solution B: using a property
 
-  ex:stereotype a owl:AnnotationProperty;
-    rdfs:label "stereotype";
-    rdfs:comment "a property that stereotypes a resource";
-  .
-  ex:ValueList a skos:Concept;
-    rdfs:label "Value list";
-    skos:definition "A stereotype that marks a NodeShape as a value list";
-  .
-  ex:Countries a sh:NodeShape;
-    ex:stereotype ex:ValueList
-  .
+	ex:stereotype a owl:AnnotationProperty;
+		rdfs:label "stereotype";
+		rdfs:comment "a property that stereotypes a resource";
+	.
+	ex:ValueList a skos:Concept;
+		rdfs:label "Value list";
+		skos:definition "A stereotype that marks a NodeShape as a value list";
+	.
+	ex:Countries a sh:NodeShape;
+	ex:stereotype ex:ValueList
+	.
   
 ### Considerations
 Both solutions require the extension of existing frameworks. Semantically they differ. Solution A adds formal semantics to ex:Countries and ex:BuildingStatusValueList.
