@@ -112,9 +112,8 @@ Value lists are typed as SHACL nodeshapes. But not all SHACL nodeshapes are valu
 		rdfs:label "Value list";
 		skos:definition "A stereotype that marks a NodeShape as a value list";
 	.
-	ex:Countries a sh:NodeShape;
-	ex:stereotype ex:ValueList
-	.
+	ex:Countries ex:stereotype ex:ValueList.
+	ex:BuildingStatusValueList ex:stereotype ex:ValueList.
   
 ### Considerations
 Both solutions require the extension of existing frameworks. Semantically they differ. Solution A adds formal semantics to ex:Countries and ex:BuildingStatusValueList.
