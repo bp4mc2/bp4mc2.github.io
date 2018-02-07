@@ -13,14 +13,14 @@ Dit leidt tot de volgende opzet voor het beschrijven van een begrippenkader:
 
 ![](begrippenkader.png)
 
-Concept schema’s, collecties en concepten krijgt een uri volgens het patroon:
--	`http://{domain}/id/ConceptScheme}/{rdfs:label}` voor concepten schema’s
+Concept schemaâ€™s, collecties en concepten krijgt een uri volgens het patroon:
+-	`http://{domain}/id/ConceptScheme}/{rdfs:label}` voor concepten schemaâ€™s
 -	`http://{domain}/id/Collection}/{rdfs:label}` voor collecties
 -	`http://{domain}/id/Concept}/{rdfs:label}` voor concepten
 
 |Requirement|aanduiding|vocabulair|Voorbeeld
 |---|---|---|---
 |Een concepten schema heeft een voor mensen leesbare naam. De conventie is om deze naam in UpperCamelCase te noteren.|has label|rdfs:label|Het schema dat het domein regelgeving in het DSO beschrijft heeft als label 'Regelgeving'.
-|Een concepten schema heeft 1 begrip dat het schema zelf aanduidt.|has top concept|skos:hasTopConcept|Het schema met als label ‘Regelgeving’ heeft als topconcept 'Regelgeving'.
+|Een concepten schema heeft 1 begrip dat het schema zelf aanduidt.|has top concept|skos:hasTopConcept|Het schema met als label â€˜Regelgevingâ€™ heeft als topconcept 'Regelgeving'.
 
 
