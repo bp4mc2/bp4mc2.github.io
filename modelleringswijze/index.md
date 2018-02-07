@@ -12,8 +12,6 @@ Voor het beschrijven van begrippen worden de volgende standaarden gebruikt:
 
 Dit leidt tot de volgende opzet voor het beschrijven van een begrippenkader:
 
-begrippenkader.png
-
 ![](begrippenkader.png)
 
 Concept schema’s, collecties en concepten krijgt een uri volgens het patroon:
