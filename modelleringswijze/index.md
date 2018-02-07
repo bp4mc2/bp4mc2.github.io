@@ -83,4 +83,26 @@ Naast deze eigenschappen die direct betrekking hebben op het begrip zelf, kent d
 |Een versie is formeel/juridisch geldig gedurende een periode.|is geldig in|dcterms:temporal|
 |Een versie is formeel bekend gemaakt op een bepaald moment.|is issued|dcterms:issued|
 
+## Gebeurtenissen
+### Uitgangspunten
+Gebeurtenissen zijn net als begrippen 'concepten'. Ze hebben dezelfde kenmerken als begrippen, die objecten aanduiden, maar hebben ook nog enkele andere kenmerken. 
+- Gebeurtenissen worden in wet- en regelgeving beschreven als mogelijke (rechts)handelingen die kunnen plaatsvinden in een bepaald domein. Een voorbeeld is het exploiteren van een jachthaven in het domein van het Besluit Activiteiten Leefomgeving (BAL). 
+- In een registratie maken gebeurtenissen de dynamiek van een registratie zichtbaar. Om te begrijpen wat er is veranderd in een registratie helpt het om te zien wat er is gebeurd. Een voorbeeld is het overdragen van een onroerend goed, waarvan het resultaat wordt vastgelegd in de BRK.
+Omdat het begrippenkader is gebaseerd op een institutionele bron gaat het daarbij nog steeds om institutionele gebeurtenissen, bijvoorbeeld rechtshandelingen. Deze hebben altijd een aanleiding in de natuurlijke werkelijkheid. Institutionele gebeurtenissen zijn, zoals in de denkwijze aangegeven, onderdeel van de institutionele werkelijkheid en kennen daarmee vaak een of meerdere actoren, bijvoorbeeld de verkoper en de koper bij de overdracht van een huis. En niet iedereen is bevoegd om een institutionele gebeurtenis vast te leggen. Dat gebeurt door een beëdigd ambtenaar of door een notaris. Dit wordt een ‘agent’ (in de Engelse betekenis van het woord) genoemd. Tot slot zijn er de regels ofwel normen waaraan voldaan moet zijn voordat het feit kan plaatsvinden, de voorwaarde en de regels waaraan het resultaat van de gebeurtenis voldoet, de eindsituatie.
+
+### Model
+Om gebeurtenissen c.q. rechtshandelingen te kunnen beschrijven worden begrippen getypeerd als activiteit (act), actor, agent, norm en object. De samenhang tussen deze begrippen is weergegeven in onderstaande figuur. In juridische termen wordt een actor ook wel een normadressaat genoemd.
+
+![](gebeurtenissen.png)
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+|Een handeling wordt uitgevoerd door een actor|actor|skoslex:actor|
+||agent|skoslex:agent|
+|Een handeling wordt uitgevoerd in relatie tot een object|object|skoslex:object|
+||refersTo|skoslex:refersTo|
+
+## Waardelijsten
+
+
 
