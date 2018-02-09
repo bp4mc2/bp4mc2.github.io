@@ -4,10 +4,11 @@ Er is voor gekozen veel mogelijk gebruik te maken van standaard vocabulaires. Da
 Voor het beschrijven van begrippen worden de volgende standaarden gebruikt:
 
 
-|prefix|uri
-|---|---
-|rdfs|http://www.w3.org/2000/01/rdf-schema#
-|skos|http://www.w3.org/2004/02/skos/core#
+|prefix|uri|website
+|---|---|---
+|dct|http://dublincore.org/documents/dcmi-terms/|[http://www.dublincore.org/documents/dcmi-terms/](http://www.dublincore.org/documents/dcmi-terms/)
+|rdfs|http://www.w3.org/2000/01/rdf-schema#|[http://www.w3.org/TR/rdf-schema/](http://www.w3.org/TR/rdf-schema/)
+|skos|http://www.w3.org/2004/02/skos/core#|[http://www.w3.org/TR/skos-reference/](http://www.w3.org/TR/skos-reference/)
 
 ## Begrippenkader
 Dit leidt tot de volgende opzet voor het beschrijven van een begrippenkader:
@@ -24,7 +25,7 @@ Concept schema's, collecties en concepten krijgt een uri volgens het patroon:
 |---|---|---|---
 ||Begrippenkader|skos:ConceptScheme|
 |Een concepten schema heeft een voor mensen leesbare naam. De conventie is om deze naam in UpperCamelCase te noteren.|has label|rdfs:label|Het schema dat het domein regelgeving in het DSO beschrijft heeft als label 'Regelgeving'.
-|Een concepten schema heeft 1 begrip dat het schema zelf aanduidt.|has top concept|skos:hasTopConcept|Het schema met als label ‘Regelgeving’ heeft als topconcept 'Regelgeving'.
+|Een concepten schema heeft 1 begrip dat het schema zelf aanduidt.|has top concept|skos:hasTopConcept|Het schema met als label 'Regelgeving' heeft als topconcept 'Regelgeving'.
 
 ### Collectie
 
@@ -32,24 +33,25 @@ Concept schema's, collecties en concepten krijgt een uri volgens het patroon:
 |---|---|---|---
 ||Collectie|skos:Collection|
 |Een collectie schema heeft een voor mensen leesbare naam. De conventie is om deze naam in UpperCamelCase te noteren.|has label|rdfs:label|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
+|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's|heeft lid|skos:member|de collectie 'ZakelijkeRechten' bevat het begrip 'Erfpacht'
 
 ### Concept
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Begrip|skos:Concept|
-|Een begrip bestaat uit een aantal onderdelen.|bestaat uit|skosthes:narrowerPartitive|Een schip bestaat uit een romp, kajuit, motor, … 
-|Een begrip is een generalisatie van een begrip met een engere of nauwere betekenis.|generalisatie van|skosthes:narrowerGeneric|Een KadastraalObject is een OnroerendGoed of een Registergoed.
-|Een begrip is gerelateerd aan een ander begrip.|gerelateerd aan|skos:semanticRelation|Een perceel is gerelateerd aan KadastraleGrens.
-|Een begrip is gedefinieerd in een bepaald domein|has a domain|skos:inScheme|Basisregistratie Adressen en Gebouwen (BAG)
 |Een begrip heeft een uitleg in 'klare taal'.|has comment|rdfs:comment|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
 |Een begrip heeft een formele definitie. Deze wordt waar mogelijk overgenomen uit een officiële publicatie.|has formal definition|skos:definition|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
 |Een begrip heeft een voor mensen leesbare naam. De conventie is om deze naam in UpperCamelCase te noteren.|has label|rdfs:label|Perceel
 |Een begrip heeft een voor mensen leesbare naam die in documentatie kan worden gebruikt. Dit label kan meertalig zijn, aangegeven door @nl of @en|has preferred label|skos:prefLabel|"Kadastraal perceel"@nl / "Cadastral parcel"@en
 |Een begrip kan nader worden toegelicht.|has scope note|skos:scopeNote|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
 |Een begrip is ontleend aan een formele bron. Dit kan een geschreven bron zijn.|has source|dc:source|Europees verdrag voor de rechten van de mens
-|Een begrip is ontleend aan een formele bron. Dit kan een bron zijn die direct als ‘resource’ op het web vindbaar is.|has source|dcterms:source|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
 |Een begrip kan een synoniem hebben|has synonym|skos:altLabel|KadastraalPerceel
+|Een begrip bestaat uit een aantal onderdelen.|bestaat uit|skosthes:narrowerPartitive|Een schip bestaat uit een romp, kajuit, motor, … 
+|Een begrip is een generalisatie van een begrip met een engere of nauwere betekenis.|generalisatie van|skosthes:narrowerGeneric|Een KadastraalObject is een OnroerendGoed of een Registergoed.
+|Een begrip is gerelateerd aan een ander begrip.|gerelateerd aan|skos:semanticRelation|Een perceel is gerelateerd aan KadastraleGrens.
+|Een begrip is gedefinieerd in een bepaald domein|has a domain|skos:inScheme|Basisregistratie Adressen en Gebouwen (BAG)
+|Een begrip is ontleend aan een formele bron. Dit kan een bron zijn die direct als 'resource' op het web vindbaar is.|has source|dcterms:source|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
 |Een begrip gaat over een deel van een breder begrip.|onderdeel van|skosthes:broaderPartitive|Een motor is onderdeel van een schip.
 |Een begrip is een specialisatie van een begrip met een bredere betekenis.|specialisatie van|skosthes:broaderGeneric|Een Perceel is een OnroerendGoed.
 
@@ -83,9 +85,15 @@ Naast deze eigenschappen die direct betrekking hebben op het begrip zelf, kent d
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Metadata|prov:Entity|
+|Een versie is gemaakt met een bepaalde reden.|has change note|skos:changeNote|De toelichting is uitgebreid vanwege een onduidelijkheid.
+|Een versie is formeel bekend gemaakt op een bepaald moment.|is issued|dcterms:issued|21/10/2017 20:21
 |Een versie heeft een administratieve status.|heeft status|adms:status|Proposed
 |Een versie is formeel/juridisch geldig gedurende een periode.|is geldig in|dcterms:temporal|22/10/2017 - 
-|Een versie is formeel bekend gemaakt op een bepaald moment.|is issued|dcterms:issued|21/10/2017 20:21
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+|Een versie is formeel/juridisch geldig tot|End|dcmiperiod:end|23/10/2017
+|Een versie is formeel/juridisch geldig vanaf|Start|dcmiperiod:start|21/10/2017
 
 ## Gebeurtenissen
 ### Uitgangspunten
@@ -101,11 +109,16 @@ Om gebeurtenissen c.q. rechtshandelingen te kunnen beschrijven worden begrippen 
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-||Handeling Act|skoslex:Act|
-|actor relates an Act with the Actor that performs the act.|actor|skoslex:actor|
+|An act is a legal construct representing a set of activities, performed by an Actor and with respect to some Object.|Act|skoslex:Act|
 |agent relates an Act with the Agent involved in the act.|agent|skoslex:agent|
+|actor relates an Act with the Actor that performs the act.|is performed by|skoslex:actor|
 |object relates an Act with the object that is created, changed or used during the act.|object|skoslex:object|
 |refersTo relates a norm with the Act that is refered by the norm. Such an act has some relation with the norm, without further specification. It might be effected by the norm, but could also be a precondition or simply mentioned in the rules.|refersTo|skoslex:refersTo|
+|An actor is some person (individual, group or organization) that performs some Act|Actor|skoslex:Actor|
+|An agent is some person (individual, group or organization) involved in some act, without actually performing the act.|Agent|skoslex:Agent|
+|A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act.|Norm|skoslex:Norm|
+|Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm.|affects|skoslex:affects|
+|An object is some thing (not an actor) that is created, used or changed during some Act|Object|skoslex:Object|
 
 ## Waardelijsten
 Een speciale categorie waarin informatie over begrippen wordt vastgelegd betreft waardenlijsten. Waarden zijn termen die bepaalde, samenhangende begrippen aanduiden waaraan in verschillende toepassingen en soms zelfs bij verschillende organisaties wordt gerefereerd. Soms worden dit daarom ook referentiedata genoemd.
@@ -168,11 +181,11 @@ Iedere fysieke verspreidingsvorm van een dataset (dat is altijd een informatiepr
 ### Model
 Voor calalogi worden de volgende standaarden gebruikt:
 
-|prefix|uri
-|---|---
-|prov|http://www.w3.org/TR/prov-o#
-|adms|http://www.w3.org/TR/vocab-adms#
-|dcat|http://www.w3.org/TR/vocab-dcat/
+|prefix|uri|website
+|---|---|---
+|adms|http://www.w3.org/ns/adms#|[http://www.w3.org/TR/vocab-adms/](http://www.w3.org/TR/vocab-adms/)
+|dcat|http://www.w3.org/ns/dcat#|[http://www.w3.org/TR/vocab-dcat/](http://www.w3.org/TR/vocab-dcat/)
+|prov|http://www.w3.org/ns/prov#|[http://www.w3.org/TR/prov-o/](http://www.w3.org/TR/prov-o/)
 
 De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en distributie (dcat:Distribution).
 
@@ -184,8 +197,12 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 |---|---|---|---
 ||Catalogus|dcat:Catalog|
 |De catalogus heeft een duidelijke beschrijving|beschrijving|dcterms:description|De Catalogus voor de Omgevingswet is een centrale ingang tot het stelsel, waarin wetgeving, begrippen, regels, informatiemodellen, datasets, producten en services met elkaar worden verbonden. De catalogus is daarmee een centrale plek waar de verschillende gebruikersgroepen van het stelsel kunnen zien waar het stelsel uit bestaat, wat begrippen betekenen en hoe de verschillende elementen van het stelsel aan elkaar zijn gerelateerd.
+|De datum waarop iets in de catalogus zelf is veranderd, wordt bewaard, bijvoorbeeld een eigenschap van de catalogus of een nieuwe dataset|datum wijziging|dcterms:modified|1/10/2016
+|De catalogus als portaal is vindbaar op een homepage.|homepage|foaf:homepage|http://catalogus.kadaster.nl/
+|Een licentie is van toepassing op de catalogus zelf. Dit kan een andere licentie zijn als de licentie voor distributies van datasets|licentie|dcterms:license|Creative Commons Naamsvermelding 4.0 licentie
 |De catalogus heeft een naam|naam|dcterms:title|Catalogus Omgevingswet
 |De catalogus is op een bepaalde datum gepubliceerd|publicatiedatum|dcterms:issued|1/10/2016
+|Een beschrijving van de rechten die van toepassing is op de catalogus. Dit kunnen andere rechten zijn als die voor distributies van datasets|rechten|dcterms:rights|Proclaimer: De Catalogus voor de Omgevingswet verbindt definities, toelichtingen en uitleg van begrippen, regels, informatiemodellen, producten en services met elkaar. De datasets waarin deze worden beschreven worden federatief beheerd door de betreffende bronhouders. Bij iedere dataset wordt aangegeven wie de bronhouder is en daarmee verantwoordelijk is voor de inhoud.
 |De taal waarin de catalogus is beschreven|taal|dcterms:language|@nl
 
 #### Dataset
@@ -197,14 +214,32 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 |De dataset heeft een naam|naam|dcterms:title|'Omgevingswet','BAL','BRK', etc'
 |De dataset is op een bepaalde datum gepubliceerd. Dit is de oorspronkelijke publicatiedatum. Het is niet per se de datum van opname van de dataset in de catalogus.|publicatiedatum|dcterms:issued|1/10/2017
 |De taal waarin de dataset is beschreven (vanwege de compatibiliteit met het DCAT-AP NL)|taal|dcterms:language|@nl
-|De dataset heeft een naam|name|dcterms:title|'Omgevingswet','BAL','BRK', etc'
+
+#### Dataset versie
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+||Datasetversie|dcat:Dataset|
+|De versie van de dataset.|versie|adms:version|2.1.0
+|Een versie heeft release notes.|versie notes|adms:versionNotes|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
+|De data in een dataset is beschreven in een informatiemodel.|beschreven in|wdrs:describedBy|kadaster.nl/schemas/imkad
+|Een dataset kan worden verspreid via verschillende kanalen.|distributie|dcat:distribution|Digitale Kadastrale Kaart download service.
+|Het gebied waar de dataset over gaat|geografische afbakening|dcterms:spatial|gemeente Apeldoorn
+|Een concreet, geversioneerd productmodel is afgeleid van een concreet, geversioneerd informatiemodel.|gerelateerd aan|dcterms:relation|
+|Een concrete, geversioneerde dataset is afgeleid van een abstracte dataset. A versioned datasets is derived from the general dataset and a productmodel is derived from an informationmodel|versie van|dcterms:isVersionOf|IMKAD 2.1.0 is een concrete versie van IMKAD.
+
+#### Locatie
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+||Locatie|dcterms:Location|
 
 #### Distributie
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-|Een distributie kan een API zijn of een webservice die beschikbaar is via een uri.|API/servicelocatie|dcat:accessURL|https://data.pdok.nl/brk/api/v1
 ||Distributie|dcat:Distribution|
+|Een distributie kan een API zijn of een webservice die beschikbaar is via een uri.|API/servicelocatie|dcat:accessURL|https://data.pdok.nl/brk/api/v1
 |De distributie heeft een duidelijke beschrijving.|beschrijving|dcterms:description|Het Kadaster is houder van de Basisregistratie Kadaster (BRK). Onderdeel van de BRK is de Digitale kadastrale kaart. Deze is beschikbaar als open data en nu via dit portaal ook als Linked Open Data (vooralsnog zonder de topografie).
 |Een distributie kan een downloadservice zijn die beschikbaar is via een uri.|downloadlocatie|dcat:downloadURL|https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-kadaster/kadastrale-kaart
 |Een licentie is van toepassing op de catalogus.|licentie|dcterms:license|uri-beerware
@@ -231,22 +266,22 @@ In de aansluitvoorwaarden voor informatiehuizen wordt bepaald dat een informatie
 |------------------|----------
 |1. Definitie van het informatieproduct, dat minimaal bestaat uit een naam, omschrijving en een versienummer.|Deze wordt vastgelegd via de name, description en version in de dcat:Dataset beschrijving van het informatieproduct
 |2. Informatiemodel van het informatieproduct.|Bij deze dataset hoort een (product)informatiemodel.
-|3. Informatiemodellen van brongegevens die ten grondslag liggen aan het informatiemodel voor het informatieproduct.	Het productinformatiemodel is afgeleid van een of meerdere concrete datasets. Dit kan bijvoorbeeld een model zijn voor het informatiehuis ruimte dat een product levert op basis van het ruimtelijke plannen versie 2012, versie 2008 en eventuele eerder versies.
-4. Kwaliteitseigenschappen.|<Voor de beschrijving van de kwaliteitsnorm van de dataset als geheel – kwaliteitselementen die nu op object- en attribuutniveau worden gehanteerd in KKG toepassen op dataset>
-5. Relevante begrippen.|Begrippen zitten in het begrippenmodel dat hoort bij de abstracte dataset
-6. Services:|
-6.1. Verwijzingen naar services in de registratie van het Stelselknooppunt DSO.|Bij iedere dataset die een informatieproduct beschrijft hoort een datadistributie. Het gegeven ‘has access url’ verwijst naar de url van de API op het knooppunt.
-6.2. De endpoints van de laatste in gebruik zijnde productieversies van de services.|Via de laatste ‘issued date’ kan de laatste in gebruik zijnde versie worden gevonden. <invalidated at time nog toevoegen>
-7. Gebruiksdoel(en) en doelgroep(en).|De 'rights' in de distributiebeschrijving van het informatieproduct kan worden gebruikt als proclaimer. Hierin kunnen indien gewenst ook statements over gebruiksdoel(en) en doelgroep(en) worden opgenomen.
-8. Ondersteunde zoekdimensies. |<dit komt niet in de catalogus, maar in de OAS>
-9. Verbeeldingsstandaard. |Deze kan worden opgenomen bij de waardenlijsten
-10. Brongegevens en daarvoor verantwoordelijke bronhouders (Dit geldt ook voor eventuele generieke gegevens, informatieproducten van andere informatiehuizen en stam/referentiegegevens die worden gebruikt bij de totstandkoming van een informatieproduct..)|Als deze bronnen ook zijn gedocumenteerd in een vergelijkbare catalogus kan daaraan worden gelinkt. Het informatieproduct wordt dan afgeleid (via dct:realation) van al deze bronnen.  <Als het niet-linked data bronnen zijn, moet er iets worden verzonnen via dc:source oid>
-11. BIV-Classificatie.|<nog uitwerken – is een lastige: op de onderliggende ISO standaard rust copyright, dus een vocabulaire publiceren dat deze standaard representeert kan niet zomaari>
-12. Indicatie of het vertrouwelijke of persoonsgegevens bevat.|<dit is een van de elementen van het ldqv (linked data quality vocabulary)>
-13. Werkingsgebied.|Via dct:location dat de geldigheid van de dataset aangeeft
-14. Metadata voor archivering van informatieproducten, waaronder minimaal de verplichte velden zoals beschreven in de Richtlijn Metagegevens Overheidsinformatie.|met het tijdreismodel en de provenance informatie zou je hieraan moeten voldoen
-15. Coördinaatstelsel, waarbij minimaal RD en/of ETRS89 wordt ondersteund (indien het informatieproduct een geografische component bevat).|<In DCAT-AP, no equivalent term is foreseen. This is also the case for the NeoGeo [NEOGEO], GeoSPARQL [GEOSPARQL], and the Core Location Vocabulary [LOCN]. Based on this, these elements are provisionally mapped to property dct:conformsTo. Moreover, in order to indicate that the object of dct:conformsTo denotes a reference system, an additional statement with predicate dct:type is added, with a code list value defining the notion of (spatial / temporal) reference system, taken from the glossary operated by the INSPIRE Registry.>
-16. Verwijzing naar documentatie op website van informatiehuis|Profiel uitbreiden met dcat:landingpage
+|3. Informatiemodellen van brongegevens die ten grondslag liggen aan het informatiemodel voor het informatieproduct.|Het productinformatiemodel is afgeleid van een of meerdere concrete datasets. Dit kan bijvoorbeeld een model zijn voor het informatiehuis ruimte dat een product levert op basis van het ruimtelijke plannen versie 2012, versie 2008 en eventuele eerder versies.
+|4. Kwaliteitseigenschappen.|<Voor de beschrijving van de kwaliteitsnorm van de dataset als geheel – kwaliteitselementen die nu op object- en attribuutniveau worden gehanteerd in KKG toepassen op dataset>
+|5. Relevante begrippen.|Begrippen zitten in het begrippenmodel dat hoort bij de abstracte dataset
+|6. Services:|
+|6.1. Verwijzingen naar services in de registratie van het Stelselknooppunt DSO.|Bij iedere dataset die een informatieproduct beschrijft hoort een datadistributie. Het gegeven ‘has access url’ verwijst naar de url van de API op het knooppunt.
+|6.2. De endpoints van de laatste in gebruik zijnde productieversies van de services.|Via de laatste ‘issued date’ kan de laatste in gebruik zijnde versie worden gevonden. <invalidated at time nog toevoegen>
+|7. Gebruiksdoel(en) en doelgroep(en).|De 'rights' in de distributiebeschrijving van het informatieproduct kan worden gebruikt als proclaimer. Hierin kunnen indien gewenst ook statements over gebruiksdoel(en) en doelgroep(en) worden opgenomen.
+|8. Ondersteunde zoekdimensies. |<dit komt niet in de catalogus, maar in de OAS>
+|9. Verbeeldingsstandaard. |Deze kan worden opgenomen bij de waardenlijsten
+|10. Brongegevens en daarvoor verantwoordelijke bronhouders (Dit geldt ook voor eventuele generieke gegevens, informatieproducten van andere informatiehuizen en stam/referentiegegevens die worden gebruikt bij de totstandkoming van een informatieproduct..)|Als deze bronnen ook zijn gedocumenteerd in een vergelijkbare catalogus kan daaraan worden gelinkt. Het informatieproduct wordt dan afgeleid (via dct:realation) van al deze bronnen.  <Als het niet-linked data bronnen zijn, moet er iets worden verzonnen via dc:source oid>
+|11. BIV-Classificatie.|<nog uitwerken – is een lastige: op de onderliggende ISO standaard rust copyright, dus een vocabulaire publiceren dat deze standaard representeert kan niet zomaari>
+|12. Indicatie of het vertrouwelijke of persoonsgegevens bevat.|<dit is een van de elementen van het ldqv (linked data quality vocabulary)>
+|13. Werkingsgebied.|Via dct:location dat de geldigheid van de dataset aangeeft
+|14. Metadata voor archivering van informatieproducten, waaronder minimaal de verplichte velden zoals beschreven in de Richtlijn Metagegevens Overheidsinformatie.|met het tijdreismodel en de provenance informatie zou je hieraan moeten voldoen
+|15. Coördinaatstelsel, waarbij minimaal RD en/of ETRS89 wordt ondersteund (indien het informatieproduct een geografische component bevat).|<In DCAT-AP, no equivalent term is foreseen. This is also the case for the NeoGeo [NEOGEO], GeoSPARQL [GEOSPARQL], and the Core Location Vocabulary [LOCN]. Based on this, these elements are provisionally mapped to property dct:conformsTo. Moreover, in order to indicate that the object of dct:conformsTo denotes a reference system, an additional statement with predicate dct:type is added, with a code list value defining the notion of (spatial / temporal) reference system, taken from the glossary operated by the INSPIRE Registry.>
+|16. Verwijzing naar documentatie op website van informatiehuis|Profiel uitbreiden met dcat:landingpage
 
 ## Provenance
 Administratieve aspecten worden bijgehouden conform het de prov ontologie. Hierbij gaat het om wie, wat, wanneer en om wat voor reden heeft vastgelegd of gewijzigd. 
@@ -260,8 +295,28 @@ Administratieve aspecten worden bijgehouden conform het de prov ontologie. Hierb
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Metadata|prov:Entity|
+|Een versie is gemaakt met een bepaalde reden.|has change note|skos:changeNote|De toelichting is uitgebreid vanwege een onduidelijkheid.
+|Een versie is formeel bekend gemaakt op een bepaald moment.|is issued|dcterms:issued|21/10/2017 20:21
 |Een versie heeft een administratieve status.|heeft status|adms:status|Proposed
 |Een versie is formeel/juridisch geldig gedurende een periode.|is geldig in|dcterms:temporal|22/10/2017 - 
-|Een versie is formeel bekend gemaakt op een bepaald moment.|is issued|dcterms:issued|21/10/2017 20:21
+
+### Cataloguswijziging
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+|De catalogus graph omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dwz: een sd:Graph|Catalog graph|sd:Graph|
+|De rationale van de aanpassing kan worden aangegeven.|change note|skos:changeNote|Een tikfout.
+|De datum en tijd van de administratieve handeling wordt bewaard. Daardoor is altijd terug te halen wat op welk tijdstip aan informatie bekend was.|generated at time|prov:generatedAtTime|
+|De persoon of organisatie die de wijziging heeft (laten) doorvoeren|was attributed to|prov:wasAttributedTo|Het Kadaster
+
+### Provenance agent (person, organization or software agent)
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+|An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. |Agent|prov:Agent|
+|Een persoon of organisatie kan opereren namens een andere persoon of organisatie|acted on behalf of|prov:actedOnBehalfOf|overheid:Rijswaterstaat
+|An organization is a social or legal institution such as a company, society, etc.|Organization|prov:Organization|
+|A human person|ProvenancePerson|prov:Person|
+|A software agent is running software.|ProvenanceSoftwareAgent|prov:SoftwareAgent|
 
 
