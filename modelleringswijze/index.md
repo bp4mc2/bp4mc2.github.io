@@ -80,7 +80,7 @@ Naast deze eigenschappen die direct betrekking hebben op het begrip zelf, kent d
 - Op deze wijze wordt een door een standaarden beheerder centraal beheerd begrip via regelgeving juridisch geldig in een of meer bestuurlijke gebieden.
 - In het geval van een begrippenmodel van een (basis)registratie vallen regelgeving en standaard samen. Er is 1 beheerder, namelijk de beheerder van de (basis)registratie, die vaak in wet- of regelgeving is aangewezen als een soort van bevoegd gezag voor deze registratie.
 
-![](metadata.png)
+![](metadata-begrippen.png)
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
@@ -219,7 +219,7 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-||Datasetversie|dcat:Dataset|
+||Datasetversie|dcat:Dataset (versie)|
 |De versie van de dataset.|versie|adms:version|2.1.0
 |Een versie heeft release notes.|versie notes|adms:versionNotes|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
 |De data in een dataset is beschreven in een informatiemodel.|beschreven in|wdrs:describedBy|kadaster.nl/schemas/imkad
