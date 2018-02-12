@@ -70,8 +70,7 @@ The following vocabularies are used:
 
 |name|vocabulair|definition
 |---|---|---
-|Distribution|dcat:Distribution|Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset or different 
- endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed
+|Distribution|dcat:Distribution|Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset or different endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed
 |Access URL|dcat:accessURL|Could be any kind of URL that gives access to a distribution of the dataset. E.g. landing page, download, feed URL, SPARQL endpoint. Use when your catalog does not have information on which it is or when it is definitely not a download.
 |Byte size|dcat:byteSize|The size of a distribution in bytes.
 |Description|dct:description|An account of the resource.
