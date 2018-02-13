@@ -214,6 +214,7 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 |De dataset heeft een naam|naam|dcterms:title|'Omgevingswet','BAL','BRK', etc'
 |De dataset is op een bepaalde datum gepubliceerd. Dit is de oorspronkelijke publicatiedatum. Het is niet per se de datum van opname van de dataset in de catalogus.|publicatiedatum|dcterms:issued|1/10/2017
 |De taal waarin de dataset is beschreven (vanwege de compatibiliteit met het DCAT-AP NL)|taal|dcterms:language|@nl
+|Het is bekend door wie een dataset wordt gepubliceerd. Deze organisatie of persoon heeft toestemming om deze handeling uit te voeren|publicist|dcterms:publisher|overheid:Rijkswaterstaat
 
 #### Dataset versie
 
@@ -311,10 +312,14 @@ Administratieve aspecten worden bijgehouden conform het de prov ontologie. Hierb
 
 ### Provenance agent (person, organization or software agent)
 
+![](agents.png)
+
+Een wijziging in de data wordt vastgelegd in een eigen `sd:graph` (de verzameling van gewijzigde elementen in 1 transactie). Deze wijziging is afkomstig van een `prov:agent`. Deze `prov:agent` dient geautoriseerd te zijn om een dergelijke wijziging uit te voeren. Dit betekent dat de `prov:agent` ook als `foaf:Agent` bekend is in een lijst met partijen (feitelijk een lijst van organisaties). Via de relatie `dcterms:publisher` is duidelijk wie de publicist is van een dataset, en daarmee degene die wijzigingen op de informatie over deze dataset mag doorvoeren.
+
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 |An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. |Agent|prov:Agent|
-|Een persoon of organisatie kan opereren namens een andere persoon of organisatie|acted on behalf of|prov:actedOnBehalfOf|overheid:Rijswaterstaat
+|Een persoon of organisatie kan opereren namens een andere persoon of organisatie|acted on behalf of|prov:actedOnBehalfOf|overheid:Rijkswaterstaat
 |An organization is a social or legal institution such as a company, society, etc.|Organization|prov:Organization|
 |A human person|ProvenancePerson|prov:Person|
 |A software agent is running software.|ProvenanceSoftwareAgent|prov:SoftwareAgent|
