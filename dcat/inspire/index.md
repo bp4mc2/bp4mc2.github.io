@@ -3,6 +3,9 @@ This document described the INSPIRE Profile
 
 For the dutch original source document can be found at: [https://geonovum.github.io/Metadata-ISO19115/](https://geonovum.github.io/Metadata-ISO19115/)
 
+Directive: [http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32007L0002&from=EN](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32007L0002&from=EN)
+Regulation: [http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02008R1205-20081224&qid=1519380654689&from=en](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02008R1205-20081224&qid=1519380654689&from=en)
+
 This profile is described as SHACL shape graph, but does **not** use any vocabularies. A [seperate mapping]() to GEO-DCAT-AP is provided.
 
 ![](inspire.png)
