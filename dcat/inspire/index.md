@@ -1,7 +1,7 @@
 # Inspire metadataprofiel
 This document described the INSPIRE Profile
 
-The original source document can be found at: 
+For the dutch original source document can be found at: [https://geonovum.github.io/Metadata-ISO19115/](https://geonovum.github.io/Metadata-ISO19115/)
 
 This profile is described as SHACL shape graph, but does **not** use any vocabularies. A [seperate mapping]() to GEO-DCAT-AP is provided.
 
