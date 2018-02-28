@@ -16,7 +16,7 @@ The following vocabularies are used:
 |skos|http://www.w3.org/2004/02/skos/core#
 |vcard|http://www.w3.org/2006/vcard/ns#
 
-![](/images/w3c-dcat-profiel.png)
+![](w3c-dcat-profile.png)
 
 ## Classes
 
