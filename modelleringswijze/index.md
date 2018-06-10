@@ -36,15 +36,15 @@ Op het moment bovenstaande nog niet tot een unieke URI leidt (bijvoorbeeld als b
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Begrippenkader|skos:ConceptScheme|
-|Een concepten schema heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel.|has label|rdfs:label|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
-|Een concepten schema heeft 1 begrip dat het schema zelf aanduidt.|has top concept|skos:hasTopConcept|Het schema met als label 'Regelgeving' heeft als topconcept 'Regelgeving'.
+|Een concepten schema heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel.|label|rdfs:label|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
+|Een concepten schema heeft 1 begrip dat het schema zelf aanduidt.|top concept|skos:hasTopConcept|Het schema met als label 'Regelgeving' heeft als topconcept 'Regelgeving'.
 
 ### Collectie
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Collectie|skos:Collection|
-|Een collectie schema heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel.|has label|rdfs:label|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
+|Een collectie schema heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel.|label|rdfs:label|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
 |Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's|heeft lid|skos:member|de collectie 'Zakelijke rechten' bevat het begrip 'Erfpacht'
 
 ### Concept
@@ -52,18 +52,18 @@ Op het moment bovenstaande nog niet tot een unieke URI leidt (bijvoorbeeld als b
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Begrip|skos:Concept|
-|Een begrip heeft een uitleg in 'klare taal'.|has comment|rdfs:comment|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
-|Een begrip heeft een formele definitie. Deze wordt waar mogelijk overgenomen uit een officiële publicatie.|has formal definition|skos:definition|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
-|Een begrip heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. In dat geval bevat alleen het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan (wel) meertalig zijn, aangegeven door @nl of @en|has label|rdfs:label|"Kadastraal perceel"@nl / "Cadastral parcel"@en
-|Een begrip heeft een voor mensen leesbare naam die als voorkeursterm voor dit begrip wordt gehanteerd. Er is precies 1 voorkeursterm in de voorkeurstaal (dit veld is dus niet meertalig)|has preferred label|skos:prefLabel|"Kadastraal perceel"
-|Een begrip kan nader worden toegelicht.|has scope note|skos:scopeNote|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
-|Een begrip is ontleend aan een formele bron. Dit kan een geschreven bron zijn.|has source|dc:source|Europees verdrag voor de rechten van de mens
-|Een begrip kan een synoniem hebben|has synonym|skos:altLabel|KadastraalPerceel
+|Een begrip kan een alternatieve aanduiding, een synoniem hebben|alternatieve aanduiding|skos:altLabel|KadastraalPerceel
+|Een begrip is ontleend aan een formele bron. Dit kan een geschreven bron zijn.|bron|dc:source|Europees verdrag voor de rechten van de mens
+|Een begrip heeft een formele definitie. Deze wordt waar mogelijk overgenomen uit een officiële publicatie.|definitie|skos:definition|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
+|Een begrip heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. In dat geval bevat alleen het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan (wel) meertalig zijn, aangegeven door @nl of @en|label|rdfs:label|"Kadastraal perceel"@nl / "Cadastral parcel"@en
+|Een begrip kan nader worden toegelicht.|toelichting|skos:scopeNote|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
+|Een begrip heeft een uitleg in 'klare taal'.|uitleg|rdfs:comment|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
+|Een begrip heeft een voor mensen leesbare naam die als voorkeursterm voor dit begrip wordt gehanteerd. Er is precies 1 voorkeursterm in de voorkeurstaal (dit veld is dus niet meertalig)|voorkeursterm|skos:prefLabel|"Kadastraal perceel"
 |Een begrip bestaat uit een aantal onderdelen.|bestaat uit|skosthes:narrowerPartitive|Een schip bestaat uit een romp, kajuit, motor, ... 
 |Een begrip is een generalisatie van een begrip met een engere of nauwere betekenis.|generalisatie van|skosthes:narrowerGeneric|Een KadastraalObject is een OnroerendGoed of een Registergoed.
 |Een begrip is gerelateerd aan een ander begrip.|gerelateerd aan|skos:semanticRelation|Een perceel is gerelateerd aan KadastraleGrens.
-|Een begrip is gedefinieerd in een bepaald domein|has a domain|skos:inScheme|Basisregistratie Adressen en Gebouwen (BAG)
-|Een begrip is ontleend aan een formele bron. Dit kan een bron zijn die direct als 'resource' op het web vindbaar is.|has source|dcterms:source|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
+|Een begrip is ontleend aan een formele bron. Dit kan een bron zijn die direct als 'resource' op het web vindbaar is.|identificeerbare bron|dcterms:source|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
+|Een begrip is gedefinieerd in een bepaald begrippenkader|in begrippenkader|skos:inScheme|Basisregistratie Adressen en Gebouwen (BAG)
 |Een begrip gaat over een deel van een breder begrip.|onderdeel van|skosthes:broaderPartitive|Een motor is onderdeel van een schip.
 |Een begrip is een specialisatie van een begrip met een bredere betekenis.|specialisatie van|skosthes:broaderGeneric|Een Perceel is een OnroerendGoed.
 
@@ -71,8 +71,8 @@ Bovenstaande relaties gelden altijd binnen een domein (concept schema). Begrippe
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-|Een begrip is gerelateerd aan een begrip in een ander domein.|afgeleid van|skos:relatedMatch|Een Perceel in de BRK is gerelateerd aan een adres (Nummeraanduiding) in de BAG.
 |Een begrip betekent precies hetzelfde als een begrip in een ander domein.|exact gelijk aan|skos:exactMatch|Een Perceel in het BAL betekent hetzelfde als een Perceel in de BRK.
+|Een begrip is gerelateerd aan een begrip in een ander domein.|gerelateerd aan|skos:relatedMatch|Een Perceel in de BRK is gerelateerd aan een adres (Nummeraanduiding) in de BAG.
 |Een begrip is een specialisatie van een begrip in een ander domein.|lijkt op breder|skos:broadMatch|Een Appartementsrecht in de BRK is een specialisatie van een Verblijfsobject in de BAG.
 |Een begrip is een generalisatie van een begrip in een ander domein.|lijkt op smaller|skos:narrowMatch|Een Postadres is een generalisatie van een Nummeraanduiding en een Postbus.
 |Een begrip betekent bijna hetzelfde als een begrip in een ander domein.|vergelijkbaar met|skos:closeMatch|Een OnroerendGoed in de BRK is ongeveer hetzelfde als een WOZobject in de WOZ.
@@ -97,15 +97,15 @@ Naast deze eigenschappen die direct betrekking hebben op het begrip zelf, kent d
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Metadata|prov:Entity|
-|Een versie is gemaakt met een bepaalde reden.|has change note|skos:changeNote|De toelichting is uitgebreid vanwege een onduidelijkheid.
-|Een versie is formeel bekend gemaakt op een bepaald moment.|is issued|dcterms:issued|21/10/2017 20:21
-|Een versie heeft een administratieve status.|heeft status|adms:status|Proposed
-|Een versie is formeel/juridisch geldig gedurende een periode.|is geldig in|dcterms:temporal|22/10/2017 - 
+|Een versie is formeel bekend gemaakt op een bepaald moment.|bekendgemaakt op|dcterms:issued|21/10/2017 20:21
+|Een versie is gemaakt met een bepaalde reden.|wijzingsnotitie|skos:changeNote|De toelichting is uitgebreid vanwege een onduidelijkheid.
+|Een versie is formeel/juridisch geldig gedurende een periode.|geldig in|dcterms:temporal|22/10/2017 - 
+|Een versie heeft een administratieve status.|status|adms:status|Proposed
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-|Een versie is formeel/juridisch geldig tot|End|dcmiperiod:end|23/10/2017
-|Een versie is formeel/juridisch geldig vanaf|Start|dcmiperiod:start|21/10/2017
+|Een versie is formeel/juridisch geldig tot|einde|dcmiperiod:end|23/10/2017
+|Een versie is formeel/juridisch geldig vanaf|start|dcmiperiod:start|21/10/2017
 
 ## Gebeurtenissen
 ### Uitgangspunten
@@ -121,16 +121,16 @@ Om gebeurtenissen c.q. rechtshandelingen te kunnen beschrijven worden begrippen 
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-|An act is a legal construct representing a set of activities, performed by an Actor and with respect to some Object.|Act|skoslex:Act|
-|agent relates an Act with the Agent involved in the act.|agent|skoslex:agent|
-|actor relates an Act with the Actor that performs the act.|is performed by|skoslex:actor|
-|object relates an Act with the object that is created, changed or used during the act.|object|skoslex:object|
-|refersTo relates a norm with the Act that is refered by the norm. Such an act has some relation with the norm, without further specification. It might be effected by the norm, but could also be a precondition or simply mentioned in the rules.|refersTo|skoslex:refersTo|
-|An actor is some person (individual, group or organization) that performs some Act|Actor|skoslex:Actor|
-|An agent is some person (individual, group or organization) involved in some act, without actually performing the act.|Agent|skoslex:Agent|
-|A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act.|Norm|skoslex:Norm|
-|Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm.|affects|skoslex:affects|
-|An object is some thing (not an actor) that is created, used or changed during some Act|Object|skoslex:Object|
+|Een activiteit is een juridische constructie als representatie voor een aantal handelingen, uitgevoerd door een Actor met betrekking tot een bepaald Object|Activiteit|skoslex:Act|
+|De agent betrokken bij de activiteit|agent|skoslex:agent|
+|Het object m.b.t. de activiteit|object|skoslex:object|
+|De actor die de act uitvoert|uitgevoerd door|skoslex:actor|
+|De activiteit waar de norm naar verwijst|verwijst naar|skoslex:refersTo|
+|Een actor is een persoon (individu, groep of organisatie) die een activiteit uitvoert|Actor|skoslex:Actor|
+|Een agent is een persoon (individu, groep of organisatie) die betrokken is bij een activiteit, zonder daadwerkelijk de activiteit uit te voeren|Agent|skoslex:Agent|
+||Norm|skoslex:Norm|
+|Verwijst naar de activiteit die wordt genormeerd, beperkt, door de norm|normeert|skoslex:affects|
+|Een object is een ding (geen actor) die ontstaat, gebruikt wordt of veranderd gedurende een activiteit|Object|skoslex:Object|
 
 ## Waardelijsten
 Een speciale categorie waarin informatie over begrippen wordt vastgelegd betreft waardenlijsten. Waarden zijn termen die bepaalde, samenhangende begrippen aanduiden waaraan in verschillende toepassingen en soms zelfs bij verschillende organisaties wordt gerefereerd. Soms worden dit daarom ook referentiedata genoemd.
@@ -151,11 +151,11 @@ Voor de structuur van de waardenlijst maakt het niet uit of het een lijst (skos 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Asset (Waardelijst)|adms:Asset (Waardelijst)|
-|De waardelijst heeft een naam|name|rdfs:comment|'Lijst van landen'
 ||type asset = Waardelijst|dcterms:type|
+|De waardelijst heeft een naam|label|rdfs:label|'Lijst van landen'
+||distributie|dcat:distribution|
 ||specificatie|rdfs:isDefinedBy|
-||distribution|dcat:distribution|
-||WaardelijstDistributie|adms:Distribution|
+||Waardelijstdistributie|adms:Distribution|
 
 ## Administratieve werkelijkheid - Informatiemodel
 
@@ -164,9 +164,10 @@ Voor de structuur van de waardenlijst maakt het niet uit of het een lijst (skos 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Asset (Informatiemodel)|adms:Asset (Informatiemodel)|
-|Het informatiemodel heeft een naam|name|rdfs:comment|'IMKAD'
 ||type asset = informatiemodel|dcterms:type|
-||distribution|dcat:distribution|
+|Het informatiemodel heeft een naam|label|rdfs:label|'IMKAD'
+||distributie|dcat:distribution|
+||landingspagina|dcat:landingPage|
 
 ### Vertaling begrippenkader naar een datamodel
 Het begrippenkader is bruikbaar om met domeineigenaren en data afnemers te communiceren over de inhoud van een registratie. Het vertalen van dit begrip naar een samenhangend datamodel is het werkveld van de data architect. Een datamodel kan worden opgevat als een ontwerp van een structuur waarin data over de begrippen in het semantische model kunnen worden opgeslagen. 
@@ -226,13 +227,13 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 |---|---|---|---
 ||Catalogus|dcat:Catalog|
 |De catalogus heeft een duidelijke beschrijving|beschrijving|dcterms:description|De Catalogus voor de Omgevingswet is een centrale ingang tot het stelsel, waarin wetgeving, begrippen, regels, informatiemodellen, datasets, producten en services met elkaar worden verbonden. De catalogus is daarmee een centrale plek waar de verschillende gebruikersgroepen van het stelsel kunnen zien waar het stelsel uit bestaat, wat begrippen betekenen en hoe de verschillende elementen van het stelsel aan elkaar zijn gerelateerd.
-|De datum waarop iets in de catalogus zelf is veranderd, wordt bewaard, bijvoorbeeld een eigenschap van de catalogus of een nieuwe dataset|datum wijziging|dcterms:modified|1/10/2016
 |De catalogus als portaal is vindbaar op een homepage.|homepage|foaf:homepage|http://catalogus.kadaster.nl/
 |Een licentie is van toepassing op de catalogus zelf. Dit kan een andere licentie zijn als de licentie voor distributies van datasets|licentie|dcterms:license|Creative Commons Naamsvermelding 4.0 licentie
-|De catalogus heeft een naam|naam|dcterms:title|Catalogus Omgevingswet
 |De catalogus is op een bepaalde datum gepubliceerd|publicatiedatum|dcterms:issued|1/10/2016
 |Een beschrijving van de rechten die van toepassing is op de catalogus. Dit kunnen andere rechten zijn als die voor distributies van datasets|rechten|dcterms:rights|Proclaimer: De Catalogus voor de Omgevingswet verbindt definities, toelichtingen en uitleg van begrippen, regels, informatiemodellen, producten en services met elkaar. De datasets waarin deze worden beschreven worden federatief beheerd door de betreffende bronhouders. Bij iedere dataset wordt aangegeven wie de bronhouder is en daarmee verantwoordelijk is voor de inhoud.
 |De taal waarin de catalogus is beschreven|taal|dcterms:language|@nl
+|De catalogus heeft een titel|titel|dcterms:title|Catalogus Omgevingswet
+|De datum waarop iets in de catalogus zelf is veranderd, wordt bewaard, bijvoorbeeld een eigenschap van de catalogus of een nieuwe dataset|wijzigingsdatum|dcterms:modified|1/10/2016
 
 #### Dataset
 
@@ -251,8 +252,8 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 |---|---|---|---
 ||Datasetversie|dcat:Dataset (versie)|
 |De versie van de dataset.|versie|adms:version|2.1.0
-|Een versie heeft release notes.|versie notes|adms:versionNotes|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
-|De data in een dataset is beschreven in een informatiemodel.|beschreven in|wdrs:describedBy|kadaster.nl/schemas/imkad
+|Een versie heeft release notes.|versie-notities|adms:versionNotes|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
+|De data in een dataset is beschreven door een informatiemodel.|beschreven door|wdrs:describedBy|kadaster.nl/schemas/imkad
 |Een dataset kan worden verspreid via verschillende kanalen.|distributie|dcat:distribution|Digitale Kadastrale Kaart download service.
 |Het gebied waar de dataset over gaat|geografische afbakening|dcterms:spatial|gemeente Apeldoorn
 |Een concrete, geversioneerde dataset is afgeleid van een abstracte dataset. A versioned datasets is derived from the general dataset and a productmodel is derived from an informationmodel|versie van|dcterms:isVersionOf|IMKAD 2.1.0 is een concrete versie van IMKAD.
@@ -271,10 +272,10 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 |Een distributie kan een API zijn of een webservice die beschikbaar is via een uri.|API/servicelocatie|dcat:accessURL|https://data.pdok.nl/brk/api/v1
 |De distributie heeft een duidelijke beschrijving.|beschrijving|dcterms:description|Het Kadaster is houder van de Basisregistratie Kadaster (BRK). Onderdeel van de BRK is de Digitale kadastrale kaart. Deze is beschikbaar als open data en nu via dit portaal ook als Linked Open Data (vooralsnog zonder de topografie).
 |Een distributie kan een downloadservice zijn die beschikbaar is via een uri.|downloadlocatie|dcat:downloadURL|https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-kadaster/kadastrale-kaart
-|Een licentie is van toepassing op de catalogus.|licentie|dcterms:license|uri-beerware
-|De distributie heeft een naam|naam|dcterms:title|Digitale Kadastrale Kaart download service
+|Een licentie is van toepassing op de distributie.|licentie|dcterms:license|uri-beerware
 |De distributie is op een bepaalde datum gepubliceerd. Dit is de oorspronkelijke publicatiedatum. Het is niet per se de datum van opname van de distributie in de catalogus.|publicatiedatum|dcterms:issued|1/10/2016
 |De rechten met betrekking tot de distributie zijn beschreven. Zie ook: svbg:gebruiksvoorwaarden en iso:confidentiality|rechten|dcterms:rights|Wilt u direct aan  de slag met BRK Levering? Raadpleeg dan de reference card bij 'Documenten'. Daarin vindt u de stappen die u moet zetten om met BRK Levering te kunnen starten. Eerste of éénmalige levering tot 100.000 objecten, per object €1,16;tot 1.000.000 objecten, per object €0,98;bij meer dan 1.000.000 objecten, per object €0,73;Gebiedsuitbreiding van een bestaand abonnement, per object €1,16;Abonnementslevering, per jaar en per 1.000 objecten binnen abonnement €208,00;Extra (losse) levering van een bestand, per verstrekking €192,00;Tweede mutatie-abonnement, per jaar €192,00;Deze bedragen zijn vrij van btw;Dit product valt onder de budgetfinanciering BRK.
+|De distributie heeft een titel|titel|dcterms:title|Digitale Kadastrale Kaart download service
 
 ## Samenhang dataset, concepten schema en informatiemodel
 ### Samenhang
@@ -324,19 +325,19 @@ Administratieve aspecten worden bijgehouden conform het de prov ontologie. Hierb
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Metadata|prov:Entity|
-|Een versie is gemaakt met een bepaalde reden.|has change note|skos:changeNote|De toelichting is uitgebreid vanwege een onduidelijkheid.
-|Een versie is formeel bekend gemaakt op een bepaald moment.|is issued|dcterms:issued|21/10/2017 20:21
-|Een versie heeft een administratieve status.|heeft status|adms:status|Proposed
-|Een versie is formeel/juridisch geldig gedurende een periode.|is geldig in|dcterms:temporal|22/10/2017 - 
+|Een versie is formeel bekend gemaakt op een bepaald moment.|bekendgemaakt op|dcterms:issued|21/10/2017 20:21
+|Een versie is gemaakt met een bepaalde reden.|wijzingsnotitie|skos:changeNote|De toelichting is uitgebreid vanwege een onduidelijkheid.
+|Een versie is formeel/juridisch geldig gedurende een periode.|geldig in|dcterms:temporal|22/10/2017 - 
+|Een versie heeft een administratieve status.|status|adms:status|Proposed
 
 ### Cataloguswijziging
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-|De catalogus graph omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dwz: een sd:Graph|Catalog graph|sd:Graph|
-|De rationale van de aanpassing kan worden aangegeven.|change note|skos:changeNote|Een tikfout.
-|De datum en tijd van de administratieve handeling wordt bewaard. Daardoor is altijd terug te halen wat op welk tijdstip aan informatie bekend was.|generated at time|prov:generatedAtTime|
-|De persoon of organisatie die de wijziging heeft (laten) doorvoeren|was attributed to|prov:wasAttributedTo|Het Kadaster
+|De catalogus graph omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dwz: een sd:Graph|Catalogus graph|sd:Graph|
+|De datum en tijd van de administratieve handeling wordt bewaard. Daardoor is altijd terug te halen wat op welk tijdstip aan informatie bekend was.|registratiemoment|prov:generatedAtTime|
+|De rationale van de aanpassing kan worden aangegeven.|wijzigingsnotitie|skos:changeNote|Een tikfout.
+|De persoon of organisatie die de wijziging heeft (laten) doorvoeren|doorgevoerd door|prov:wasAttributedTo|Het Kadaster
 
 ### Provenance agent (person, organization or software agent)
 
@@ -346,10 +347,10 @@ Een wijziging in de data wordt vastgelegd in een eigen `sd:graph` (de verzamelin
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
-|An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. |Agent|prov:Agent|
-|Een persoon of organisatie kan opereren namens een andere persoon of organisatie|acted on behalf of|prov:actedOnBehalfOf|overheid:Rijkswaterstaat
-|An organization is a social or legal institution such as a company, society, etc.|Organization|prov:Organization|
-|A human person|ProvenancePerson|prov:Person|
-|A software agent is running software.|ProvenanceSoftwareAgent|prov:SoftwareAgent|
+|Een agent is een persoon die verantwoordelijk is voor een activiteit, de creatie van een entity of een activiteit van een ander|Agent|prov:Agent|
+|Een persoon of organisatie kan opereren namens een andere persoon of organisatie|uitvoerend namens|prov:actedOnBehalfOf|overheid:Rijkswaterstaat
+|Een organisatie is een sociaal en/of juridisch samenwerkingsverband, zoals een bedrijf, instelling|Organisatie|prov:Organization|
+|Een natuurlijk persoon|Persoon|prov:Person|
+|Software agent, een geautomatiseerd systeem|Software agent|prov:SoftwareAgent|
 
 
