@@ -16,15 +16,27 @@ Dit leidt tot de volgende opzet voor het beschrijven van een begrippenkader:
 ![](begrippenkader.png)
 
 Concept schema's, collecties en concepten krijgt een uri volgens het patroon:
--	`http://{domain}/id/ConceptScheme}/{rdfs:label}` voor concepten schema's
--	`http://{domain}/id/Collection}/{rdfs:label}` voor collecties
--	`http://{domain}/id/Concept}/{rdfs:label}` voor concepten
+-	`http://{domain}/id/ConceptScheme}/{UpperCamelCase(skos:prefLabel)}` voor concepten schema's
+-	`http://{domain}/id/Collection}/{UpperCamelCase(skos:prefLabel)}` voor collecties
+-	`http://{domain}/id/Concept}/{UpperCamelCase(skos:prefLabel)}` voor concepten
+
+Op het moment bovenstaande nog niet tot een unieke URI leidt (bijvoorbeeld als binnen een conceptschema twee concepten bestaan met hetzelfde `skos:prefLabel`), dan wordt de URI uitgebreid met een underscore (`_`), gevolgd door een term waaruit het onderscheid blijkt. Deze term wordt vervolgens ook tussen haakjes opgenomen in het `rdfs:label` van dit concept. Voorbeeld:
+
+	ex:Pand_Recht a skos:Concept;
+	  skos:prefLabel "Pand"@nl;
+	  rdfs:label "Pand (Recht)"@nl
+	.
+	ex:Pand_Gebouw a skos:Concept;
+	  skos:prefLabel "Pand"@nl;
+	  rdfs:label "Pand (Gebouw)"@nl
+	.
+
 ### Concepten schema
 
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Begrippenkader|skos:ConceptScheme|
-|Een concepten schema heeft een voor mensen leesbare naam. De conventie is om deze naam in UpperCamelCase te noteren.|has label|rdfs:label|Het schema dat het domein regelgeving in het DSO beschrijft heeft als label 'Regelgeving'.
+|Een concepten schema heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel.|has label|rdfs:label|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
 |Een concepten schema heeft 1 begrip dat het schema zelf aanduidt.|has top concept|skos:hasTopConcept|Het schema met als label 'Regelgeving' heeft als topconcept 'Regelgeving'.
 
 ### Collectie
@@ -32,8 +44,8 @@ Concept schema's, collecties en concepten krijgt een uri volgens het patroon:
 |requirement|aanduiding|vocabulair|voorbeeld
 |---|---|---|---
 ||Collectie|skos:Collection|
-|Een collectie schema heeft een voor mensen leesbare naam. De conventie is om deze naam in UpperCamelCase te noteren.|has label|rdfs:label|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
-|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's|heeft lid|skos:member|de collectie 'ZakelijkeRechten' bevat het begrip 'Erfpacht'
+|Een collectie schema heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel.|has label|rdfs:label|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
+|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's|heeft lid|skos:member|de collectie 'Zakelijke rechten' bevat het begrip 'Erfpacht'
 
 ### Concept
 
@@ -42,12 +54,12 @@ Concept schema's, collecties en concepten krijgt een uri volgens het patroon:
 ||Begrip|skos:Concept|
 |Een begrip heeft een uitleg in 'klare taal'.|has comment|rdfs:comment|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
 |Een begrip heeft een formele definitie. Deze wordt waar mogelijk overgenomen uit een officiële publicatie.|has formal definition|skos:definition|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
-|Een begrip heeft een voor mensen leesbare naam. De conventie is om deze naam in UpperCamelCase te noteren.|has label|rdfs:label|Perceel
-|Een begrip heeft een voor mensen leesbare naam die in documentatie kan worden gebruikt. Dit label kan meertalig zijn, aangegeven door @nl of @en|has preferred label|skos:prefLabel|"Kadastraal perceel"@nl / "Cadastral parcel"@en
+|Een begrip heeft een voor mensen leesbare naam (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. In dat geval bevat alleen het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan (wel) meertalig zijn, aangegeven door @nl of @en|has label|rdfs:label|"Kadastraal perceel"@nl / "Cadastral parcel"@en
+|Een begrip heeft een voor mensen leesbare naam die als voorkeursterm voor dit begrip wordt gehanteerd. Er is precies 1 voorkeursterm in de voorkeurstaal (dit veld is dus niet meertalig)|has preferred label|skos:prefLabel|"Kadastraal perceel"
 |Een begrip kan nader worden toegelicht.|has scope note|skos:scopeNote|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
 |Een begrip is ontleend aan een formele bron. Dit kan een geschreven bron zijn.|has source|dc:source|Europees verdrag voor de rechten van de mens
 |Een begrip kan een synoniem hebben|has synonym|skos:altLabel|KadastraalPerceel
-|Een begrip bestaat uit een aantal onderdelen.|bestaat uit|skosthes:narrowerPartitive|Een schip bestaat uit een romp, kajuit, motor, … 
+|Een begrip bestaat uit een aantal onderdelen.|bestaat uit|skosthes:narrowerPartitive|Een schip bestaat uit een romp, kajuit, motor, ... 
 |Een begrip is een generalisatie van een begrip met een engere of nauwere betekenis.|generalisatie van|skosthes:narrowerGeneric|Een KadastraalObject is een OnroerendGoed of een Registergoed.
 |Een begrip is gerelateerd aan een ander begrip.|gerelateerd aan|skos:semanticRelation|Een perceel is gerelateerd aan KadastraleGrens.
 |Een begrip is gedefinieerd in een bepaald domein|has a domain|skos:inScheme|Basisregistratie Adressen en Gebouwen (BAG)
@@ -133,18 +145,35 @@ Voor de structuur van de waardenlijst maakt het niet uit of het een lijst (skos 
     - Een waarde in een lijst met instanties van een klasse krijgt een uri volgens het patroon https://{domein}/id/{Klassenaam}/{rdfs:label}, waarbij het label de naam van de betreffende instantie is.
 - De waarden in de waardenlijst kunnen dezelfde metadata meekrijgen als begrippen, namelijk has status, is generated at time, is invalidated at time, is valid during, is issued, is valid at.
 - Indien gewenst kunnen extra kenmerken worden toegevoegd, bijvoorbeeld de geometrie van bestuurlijk gebied en visualisatiecodes voor afbeelding op een kaart.
+
+![](waardelijsten.png)
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+||Asset (Waardelijst)|adms:Asset (Waardelijst)|
+|De waardelijst heeft een naam|name|rdfs:comment|'Lijst van landen'
+||type asset = Waardelijst|dcterms:type|
+||specificatie|rdfs:isDefinedBy|
+||distribution|dcat:distribution|
+||WaardelijstDistributie|adms:Distribution|
+
 ## Administratieve werkelijkheid - Informatiemodel
+
+![](informatiemodel.png)
+
+|requirement|aanduiding|vocabulair|voorbeeld
+|---|---|---|---
+||Asset (Informatiemodel)|adms:Asset (Informatiemodel)|
+|Het informatiemodel heeft een naam|name|rdfs:comment|'IMKAD'
+||type asset = informatiemodel|dcterms:type|
+||distribution|dcat:distribution|
+
 ### Vertaling begrippenkader naar een datamodel
 Het begrippenkader is bruikbaar om met domeineigenaren en data afnemers te communiceren over de inhoud van een registratie. Het vertalen van dit begrip naar een samenhangend datamodel is het werkveld van de data architect. Een datamodel kan worden opgevat als een ontwerp van een structuur waarin data over de begrippen in het semantische model kunnen worden opgeslagen. 
 Een hulpmiddel voor het maken van een datamodel is het KKG-metamodel. Dit model bevat objectklassen, attribuutsoorten, gegevensgroepen, gegevensgroeptypen, generalisaties, relatiesoorten en relatieklassen. Een met KKG gemaakt informatiemodel kan worden uitgedrukt in UML of in RDF. Met andere woorden het is 'vormvrij'. 
 Een KKG-klasse is in de regel een realisatie van een begrip. Zo is het de attribuutsoort 'hoofdadres' in de BRK de realisatie van het begrip 'Hoofdadres' en de objectklasse 'AdresseerbaarObject', waarbij een 'hoofdadres' hoort de realisatie van het begrip 'AdresseerbaarObject'. Het begrip 'AdresseerbaarObject' gaat over de (talige, dat wil zeggen in taal) betekenis van een adresseerbaar object. De objectklasse is als het ware een 'bakje' waarin de data over een adresseerbaar object kan worden opgeslagen.
 Een op deze manier uitgewerkt voorbeeld van het model van de BRK is te vinden op [http://brk.basisregistraties.overheid.nl/def/objectklasse/AdresseerbaarObject#hoofdadres] . Dit voorbeeld is beschikbaar als html webpagina, in turtle en als grafische representatie.
 Dit voorbeeld laat ook mooi zien hoe de uri-strategie voor het beschrijven van een datamodel werkt. Het intypen van bovenstaande URL zal leiden tot de weergave van de pagina [http://brk.basisregistraties.overheid.nl/def/objectklasse/AdresseerbaarObject] (het deel voor de "#"). Met andere woorden: de beschrijving van de entiteit "Adresseerbaar object"
-
-|requirement|aanduiding|vocabulair|voorbeeld
-|---|---|---|---
-||Informatiemodel|adms:Asset|
-|Het informatiemodel heeft een naam|name|rdfs:comment|'IMKAD'
 
 ## Catalogus
 ### Uitgangspunten
@@ -226,7 +255,6 @@ De centrale elementen zijn catalogus (dcat:Catalog), dataset (dcat:Dataset) en d
 |De data in een dataset is beschreven in een informatiemodel.|beschreven in|wdrs:describedBy|kadaster.nl/schemas/imkad
 |Een dataset kan worden verspreid via verschillende kanalen.|distributie|dcat:distribution|Digitale Kadastrale Kaart download service.
 |Het gebied waar de dataset over gaat|geografische afbakening|dcterms:spatial|gemeente Apeldoorn
-|Een concreet, geversioneerd productmodel is afgeleid van een concreet, geversioneerd informatiemodel.|gerelateerd aan|dcterms:relation|
 |Een concrete, geversioneerde dataset is afgeleid van een abstracte dataset. A versioned datasets is derived from the general dataset and a productmodel is derived from an informationmodel|versie van|dcterms:isVersionOf|IMKAD 2.1.0 is een concrete versie van IMKAD.
 
 #### Locatie
