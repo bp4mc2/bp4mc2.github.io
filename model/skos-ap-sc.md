@@ -1,17 +1,15 @@
 # SKOS Toepassingsprofiel voor begrippenkaders
 
 
-Begrippen maken duidelijk welke 'onderwerpen van gesprek' er bestaan. In een stelselcatalogus worden begrippen formeel gedefinieerd, waarbij iedere definitie wordt opgebouwd volgens strikte regels. De essentie is dat elk begrip in een bepaald domein wordt uitgelegd in termen van andere begrippen. Ook die begrippen worden uitgelegd totdat uiteindelijk elk begrip wat uitleg nodig heeft is gedefinieerd. Uiteindelijk blijven de begrippen over waarvan de betekenis als vanzelfsprekend wordt aangenomen. In een logisch model worden dit axioma's genoemd. Zo ontstaat per domein een axiomatisch begrippenkader.
+Begrippen maken duidelijk welke ‘onderwerpen van gesprek’ er bestaan. In een stelselcatalogus worden begrippen formeel gedefinieerd, waarbij iedere definitie wordt opgebouwd volgens strikte regels. De essentie is dat elk begrip in een bepaald domein wordt uitgelegd in termen van andere begrippen. Ook die begrippen worden uitgelegd totdat uiteindelijk elk begrip wat uitleg nodig heeft is gedefinieerd. Uiteindelijk blijven de begrippen over waarvan de betekenis als vanzelfsprekend wordt aangenomen. In een logisch model worden dit axioma's genoemd. Zo ontstaat per domein een axiomatisch begrippenkader. Dit begrippenkader kan worden beschouwd als een min of meer geformaliseerde beschrijving van de institutionele werkelijkheid van het domein.
 
 Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland op de pas-toe-leg-uit lijst voor overheden.
 
-- Ieder begrip wordt gerepresenteerd door een skos:concept.
-- Ieder domein heeft zijn eigen begrippenkader. Het begrippenkader voor een bepaald domein wordt gerepresenteerd door een skos:ConceptScheme.
-- Begrippen kunnen worden geordend in collecties. Een collectie wordt gerepresenteerd door een skos:collection.
-- Begrippen in verschillende domeinen kunnen worden verbonden via matching mechanismes. Door deze verbinding van begrippen tussen domeinen ontstaat een stelsel van samenhangende begrippenkaders. Dit stelsel van samenhangende begrippenkaders kan worden gezien als de kennisbasis voor een stelselcatalogus.
+* Ieder begrip wordt gerepresenteerd door een skos:concept.
+* Ieder domein heeft zijn eigen begrippenkader. Het begrippenkader voor een bepaald domein wordt gerepresenteerd door een skos:ConceptScheme.
+* Begrippen kunnen worden geordend in collecties. Een collectie wordt gerepresenteerd door een skos:collection.
+* Begrippen in verschillende domeinen kunnen worden verbonden via matching mechanismes. Door deze verbinding van begrippen tussen domeinen ontstaat een stelsel van samenhangende begrippenkaders. Dit stelsel van samenhangende begrippenkaders kan worden gezien als de kennisbasis voor een stelselcatalogus.
 
-
-![](skos-ap-sc.png)
 
 ## Begrip
 
@@ -225,6 +223,17 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Eigenschappen|[heeft lid](http://bp4mc2.org/profiles/skos-ap-sc#Collection_hasMember), [label (collectie)](http://bp4mc2.org/profiles/skos-ap-sc#Collection_label), [herkomst (collectie)](http://bp4mc2.org/profiles/skos-ap-sc#Collection_provenance)
 
 
+### Relaties
+
+|Eigenschap|Waarde
+|----------|------
+|Label|heeft lid
+|Eigenschap|[skos:member](http://www.w3.org/2004/02/skos/core#member)
+|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Uitleg|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's
+|Voorbeeld|de collectie 'Zakelijke rechten' bevat het begrip 'Erfpacht'
+
+
 ### Eigenschappen
 
 |Eigenschap|Waarde
@@ -247,46 +256,22 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Min card.|1
 
 
-### Relaties
+## Begrip
 
 |Eigenschap|Waarde
 |----------|------
-|Label|heeft lid
-|Eigenschap|[skos:member](http://www.w3.org/2004/02/skos/core#member)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
-|Uitleg|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's
-|Voorbeeld|de collectie 'Zakelijke rechten' bevat het begrip 'Erfpacht'
+|exampple|het begrip 'Perceel' in de BRK
+|Label|Begrip
+|Klasse|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Uitleg|Een begrip is een idee of notitie, een eenheid van denken, een onderwerp van gesprek.
+|Eigenschappen|[lijkt op breder](http://bp4mc2.org/profiles/skos-ap-sc#Concept_broadlyMatches), [vergelijkbaar met](http://bp4mc2.org/profiles/skos-ap-sc#Concept_closelyMatches), [uitleg](http://bp4mc2.org/profiles/skos-ap-sc#Concept_comment), [bestaat uit](http://bp4mc2.org/profiles/skos-ap-sc#Concept_consistsOf), [geschreven bron](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dcsource), [bron op het web](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dctsource), [definitie](http://bp4mc2.org/profiles/skos-ap-sc#Concept_definition), [domein](http://bp4mc2.org/profiles/skos-ap-sc#Concept_domain), [redactionele opmerking](http://bp4mc2.org/profiles/skos-ap-sc#Concept_editorialNote), [exact gelijk aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_exactlyMatches), [generalisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_generalisationOf), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_isRelatedTo), [label (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_label), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_metadata), [lijkt op smaller](http://bp4mc2.org/profiles/skos-ap-sc#Concept_narrowlyMatches), [onderdeel van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_partOf), [voorkeursterm](http://bp4mc2.org/profiles/skos-ap-sc#Concept_prefLabel), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_provenance), [toelichting](http://bp4mc2.org/profiles/skos-ap-sc#Concept_scopeNote), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_seeAlso), [specialisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_specialisationOf), [alternatieve aanduiding](http://bp4mc2.org/profiles/skos-ap-sc#Concept_synonym)
 
 
-## Begrippenkader
 
-|Eigenschap|Waarde
-|----------|------
-|Label|Begrippenkader
-|Klasse|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
-|Uitleg|De kennis over de fysieke werkelijkheid wordt beschreven in een talig model, een begrippenmodel.  In een begrippenmodel wordt deze kennis zodanig gestructureerd vastgelegd dat deze door zowel mensen als door computers wordt begrepen.
-|Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein. Deze begrippen vinden hun oorsprong in de Kadasterwet, die beschrijft wat percelen en rechten daarop betekenen.
-|Eigenschappen|[top concept](http://bp4mc2.org/profiles/skos-ap-sc#ConceptScheme_hasTopConcept), [label](http://bp4mc2.org/profiles/skos-ap-sc#ConceptScheme_label)
+Concept schema’s, collecties en concepten krijgen een uri volgens het patroon:
 
+* http://{domain}/id/{ConceptScheme}/{UpperCamelCase(rdfs:label)} voor begrippenkaders
+* http://{domain}/id/{Collection}/{UpperCamelCase(rdfs:label)} voor collecties
+* http://{domain}/id/{Concept}/{UpperCamelCase(skos:prefLabel)} voor concepten
 
-### Relaties
-
-|Eigenschap|Waarde
-|----------|------
-|Label|top concept
-|Eigenschap|[skos:hasTopConcept](http://www.w3.org/2004/02/skos/core#hasTopConcept)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
-|Uitleg|Een concepten schema kan concepten bevatten die die het meest generiek zijn in een hiërarchie van specialisaties/generalisaties.
-|Voorbeeld|Het concept 'Zakelijk recht' als meest generieke concept voor 'Eigendom', 'Opstal', 'Erfpacht', etc.
-
-
-### Eigenschappen
-
-|Eigenschap|Waarde
-|----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label
-|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan.
-|Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
-|Min card.|1
+Good practice is om binnen een domein (begrippenkader) alle prefLabels uniek te maken. Soms is het daarbij nodig de context te vermelden. Dit gebeurt dan tussen haakjes, bijvoorbeeld ‘breedteklasse (wegdeel)’ en ‘breedteklasse (waterdeel)’. Als dit niet gebeurt zijn uri’s niet voorspelbaar op basis van het prefLabel en moeten ze handmatig worden toegekend.
