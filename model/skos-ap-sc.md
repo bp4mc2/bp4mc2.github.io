@@ -134,17 +134,17 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Label|lijkt op breder
 |Eigenschap|[skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)
+|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Uitleg|Een begrip kan een specialisatie zijn van een begrip in een ander domein.
 |Voorbeeld|Een Appartementsrecht in de BRK is een specialisatie van een Verblijfsobject in de BAG.
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Label|vergelijkbaar met
 |Eigenschap|[skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch)
+|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Uitleg|Een begrip kan bijna hetzelfde betekenen als een begrip in een ander domein.
 |Voorbeeld|Een OnroerendGoed in de BRK is ongeveer hetzelfde als een WOZobject in de WOZ.
 
@@ -175,9 +175,9 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Label|exact gelijk aan
 |Eigenschap|[skos:exactMatch](http://www.w3.org/2004/02/skos/core#exactMatch)
+|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Uitleg|Een begrip kan precies hetzelfde betekenen als een begrip in een ander domein.
 |Voorbeeld|Een Perceel in het BAL betekent hetzelfde als een Perceel in de BRK.
 
@@ -208,9 +208,9 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Label|lijkt op smaller
 |Eigenschap|[skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch)
+|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Uitleg|Een begrip kan een generalisatie zijn van een begrip in een ander domein.
 |Voorbeeld|Een Postadres is een generalisatie van een Nummeraanduiding en een Postbus.
 
@@ -233,9 +233,9 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Label|gerelateerd aan
 |Eigenschap|[skos:relatedMatch](http://www.w3.org/2004/02/skos/core#relatedMatch)
+|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
 |Uitleg|Een begrip kan zijn gerelateerd aan een begrip in een ander domein.
 |Voorbeeld|Een Perceel in de BRK is gerelateerd aan een adres (Nummeraanduiding) in de BAG.
 
