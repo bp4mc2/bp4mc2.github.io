@@ -21,7 +21,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Klasse|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
 |Uitleg|De kennis over de fysieke werkelijkheid wordt beschreven in een talig model, een begrippenmodel.  In een begrippenmodel wordt deze kennis zodanig gestructureerd vastgelegd dat deze door zowel mensen als door computers wordt begrepen.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein. Deze begrippen vinden hun oorsprong in de Kadasterwet, die beschrijft wat percelen en rechten daarop betekenen.
-|Eigenschappen|[top concept](http://bp4mc2.org/profiles/skos-ap-sc#ConceptScheme_hasTopConcept), [label](http://bp4mc2.org/profiles/skos-ap-sc#ConceptScheme_label)
+|Eigenschappen en relaties|[top concept](http://bp4mc2.org/profiles/skos-ap-sc#ConceptScheme_hasTopConcept), [label](http://bp4mc2.org/profiles/skos-ap-sc#ConceptScheme_label)
 
 
 ### Eigenschappen
@@ -31,7 +31,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
 |Label|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan.
+|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan. 
 |Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
 |Min card.|1
 
@@ -55,7 +55,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Label|Begrip
 |Klasse|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip is een idee of notitie, een eenheid van denken, een onderwerp van gesprek.
-|Eigenschappen|[lijkt op breder](http://bp4mc2.org/profiles/skos-ap-sc#Concept_broadlyMatches), [vergelijkbaar met](http://bp4mc2.org/profiles/skos-ap-sc#Concept_closelyMatches), [uitleg](http://bp4mc2.org/profiles/skos-ap-sc#Concept_comment), [bestaat uit](http://bp4mc2.org/profiles/skos-ap-sc#Concept_consistsOf), [geschreven bron](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dcsource), [bron op het web](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dctsource), [definitie](http://bp4mc2.org/profiles/skos-ap-sc#Concept_definition), [domein](http://bp4mc2.org/profiles/skos-ap-sc#Concept_domain), [redactionele opmerking](http://bp4mc2.org/profiles/skos-ap-sc#Concept_editorialNote), [exact gelijk aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_exactlyMatches), [generalisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_generalisationOf), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_isRelatedTo), [label (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_label), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_metadata), [lijkt op smaller](http://bp4mc2.org/profiles/skos-ap-sc#Concept_narrowlyMatches), [onderdeel van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_partOf), [voorkeursterm](http://bp4mc2.org/profiles/skos-ap-sc#Concept_prefLabel), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_provenance), [toelichting](http://bp4mc2.org/profiles/skos-ap-sc#Concept_scopeNote), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_seeAlso), [specialisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_specialisationOf), [alternatieve aanduiding](http://bp4mc2.org/profiles/skos-ap-sc#Concept_synonym)
+|Eigenschappen en relaties|[lijkt op breder](http://bp4mc2.org/profiles/skos-ap-sc#Concept_broadlyMatches), [vergelijkbaar met](http://bp4mc2.org/profiles/skos-ap-sc#Concept_closelyMatches), [uitleg](http://bp4mc2.org/profiles/skos-ap-sc#Concept_comment), [bestaat uit](http://bp4mc2.org/profiles/skos-ap-sc#Concept_consistsOf), [geschreven bron](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dcsource), [bron op het web](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dctsource), [definitie](http://bp4mc2.org/profiles/skos-ap-sc#Concept_definition), [domein](http://bp4mc2.org/profiles/skos-ap-sc#Concept_domain), [redactionele opmerking](http://bp4mc2.org/profiles/skos-ap-sc#Concept_editorialNote), [exact gelijk aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_exactlyMatches), [generalisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_generalisationOf), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_isRelatedTo), [label (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_label), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_metadata), [lijkt op smaller](http://bp4mc2.org/profiles/skos-ap-sc#Concept_narrowlyMatches), [onderdeel van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_partOf), [voorkeursterm](http://bp4mc2.org/profiles/skos-ap-sc#Concept_prefLabel), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_provenance), [toelichting](http://bp4mc2.org/profiles/skos-ap-sc#Concept_scopeNote), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_seeAlso), [specialisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_specialisationOf), [alternatieve aanduiding](http://bp4mc2.org/profiles/skos-ap-sc#Concept_synonym)
 
 
 ### Eigenschappen
@@ -154,7 +154,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Eigenschap|[skosthes:narrowerPartitive](http://purl.org/iso25964/skos-thes#narrowerPartitive)
 |Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip kan kan gaan over een aantal onderdelen.
-|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ...
+|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ... 
 
 |Eigenschap|Waarde
 |----------|------
@@ -256,7 +256,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Klasse|[skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)
 |Uitleg|Een groep samenhangende begrippen kan worden gebundeld in een collectie.
 |Voorbeeld|De collectie die alle activiteiten in het BAL beschrijft.
-|Eigenschappen|[heeft lid](http://bp4mc2.org/profiles/skos-ap-sc#Collection_hasMember), [label (collectie)](http://bp4mc2.org/profiles/skos-ap-sc#Collection_label), [herkomst (collectie)](http://bp4mc2.org/profiles/skos-ap-sc#Collection_provenance)
+|Eigenschappen en relaties|[heeft lid](http://bp4mc2.org/profiles/skos-ap-sc#Collection_hasMember), [label (collectie)](http://bp4mc2.org/profiles/skos-ap-sc#Collection_label), [herkomst (collectie)](http://bp4mc2.org/profiles/skos-ap-sc#Collection_provenance)
 
 
 ### Eigenschappen
@@ -311,3 +311,5 @@ Concept schema’s, collecties en concepten krijgen een uri volgens het patroon:
 * http://{domain}/id/{Concept}/{UpperCamelCase(skos:prefLabel)} voor concepten
 
 Good practice is om binnen een domein (begrippenkader) alle prefLabels uniek te maken. Soms is het daarbij nodig de context te vermelden. Dit gebeurt dan tussen haakjes, bijvoorbeeld ‘breedteklasse (wegdeel)’ en ‘breedteklasse (waterdeel)’. Als dit niet gebeurt zijn uri’s niet voorspelbaar op basis van het prefLabel en moeten ze handmatig worden toegekend.
+
+

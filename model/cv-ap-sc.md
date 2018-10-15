@@ -43,10 +43,48 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 |Eigenschap|Waarde
 |----------|------
-|sh:hasValue|[http://purl.org/dc/dcmitype/ControlledVocabulary](http://purl.org/dc/dcmitype/ControlledVocabulary)
+|sh:hasValue|[Asset (Waardelijst)](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary)
 |Label|type asset = Waardelijst
 |Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
 |Uitleg|Een waardelijst wordt expliciet getypeerd als waardelijst.
 |Voorbeeld|
 |Min card.|1
 |Max card.|1
+
+
+## Waardelijst als begrippenkader
+
+|Eigenschap|Waarde
+|----------|------
+|Label|begrippenkader specificatie
+|Uitleg|Een waardelijst kan worden gespecificeerd als apart begrippenkader.
+|Voorbeeld|The Inspire lijst met een europees afgestemd kader voor de typering van kabels en leidingen.
+|Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property)
+
+
+### Eigenschappen
+
+
+### Relaties
+
+|Eigenschap|Waarde
+|----------|------
+|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
+|Eigenschap|[sh:property](http://www.w3.org/ns/shacl#property)
+|Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec)
+|Min card.|1
+|Max card.|1
+
+
+## Uri strategie
+
+
+Een lijst (collectie of schema) van begrippen of een lijst met instanties van een klasse krijgt een uri conform de beschrijvende asset.
+
+Een waarde in een lijst (collectie of schema) van begrippen krijgt een uri volgens het patroon: 
+* https://{domein}/id/Concept/{rdfs:label}, waarbij het rdfs:label het label van de collectie of het schema is.
+
+Een waarde in een lijst met instanties van een klasse krijgt een uri volgens het patroon:
+* https://{domein}/id/{Klassenaam}/{rdfs:label}, waarbij het rdfs:label de naam van de betreffende instantie is.
+
+

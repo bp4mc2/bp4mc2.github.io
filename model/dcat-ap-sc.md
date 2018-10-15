@@ -33,7 +33,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Klasse|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Uitleg|Een dataset is een algemene beschrijving van een verzameling data, gepubliceerd of samengesteld door één beheerder.
 |Voorbeeld|De Basisregistratie Kadaster (BRK) bestaat uit de kadastrale registratie van onroerende zaken, zakelijke rechten en de kadastrale kaart.
-|Eigenschappen|[beschrijving](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [naam (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [herkomst (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publicist](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
+|Eigenschappen en relaties|[beschrijving](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [naam (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [herkomst (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publicist](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
 
 
 ### Eigenschappen
@@ -61,9 +61,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Taal](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Label|taal
 |Eigenschap|[dcterms:language](http://purl.org/dc/terms/language)
+|Relatie met|[Taal](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Uitleg|De taal waarin de dataset is beschreven (vanwege de compatibiliteit met het DCAT-AP NL) kan worden vastgelegd.
 |Voorbeeld|@nl
 
@@ -86,9 +86,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Datasettype](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetType)
 |Label|type dataset
 |Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
+|Relatie met|[Datasettype](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetType)
 |Min card.|1
 |Max card.|1
 
@@ -101,7 +101,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Label|Dataset (versie)
 |Uitleg|Een dataset (versie) is een concrete, geversioneerde beschrijving van een verzameling data, gepubliceerd of samengesteld door één beheerder.
 |Voorbeeld|De Basisregistratie Kadaster (BRK) zoals beschreven in IMKAD 2.1.
-|Eigenschappen|[beschreven door](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_describedBy), [distributie (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_distribution), [geografische afbakening](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_geometricDemarcation), [herkomst (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_provenance), [type dataset = DatasetVersie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_type), [versie (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_version), [versie-notities (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionNotes), [versie van](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionOf)
+|Eigenschappen en relaties|[beschreven door](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_describedBy), [distributie (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_distribution), [geografische afbakening](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_geometricDemarcation), [herkomst (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_provenance), [type dataset = DatasetVersie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_type), [versie (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_version), [versie-notities (dataset versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionNotes), [versie van](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionOf)
 
 
 ### Eigenschappen
@@ -169,9 +169,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset)
 |Label|versie van
 |Eigenschap|[dcterms:isVersionOf](http://purl.org/dc/terms/isVersionOf)
+|Relatie met|[Dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset)
 |Uitleg|Een dataset (versie) kan zijn afgeleid van een dataset (algemeen).
 |Voorbeeld|IMKAD 2.1.0 is een concrete versie van IMKAD.
 |Max card.|1
@@ -185,7 +185,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Label|dataset (product)
 |Uitleg|Een dataset (product) is een concreet, geversioneerd informatieproduct op basis van de data in een dataset (versie)
 |Voorbeeld|De BRK levering versie 2.2 zoals beschreven in BRKlevering.uml
-|Eigenschappen|[distributie (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_distribution), [afgeleid van](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_isDerivedFrom), [herkomst (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_provenance), [heeft gemeten kwaliteit](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_qualityMeasurement), [versie (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_version), [versie notities (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_versionNotes), [type dataset = DatasetVersie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_type)
+|Eigenschappen en relaties|[distributie (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_distribution), [afgeleid van](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_isDerivedFrom), [herkomst (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_provenance), [heeft gemeten kwaliteit](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_qualityMeasurement), [type dataset = DatasetProduct](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_type), [versie (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_version), [versie notities (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_versionNotes)
 
 
 ### Eigenschappen
@@ -219,9 +219,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Label|afgeleid van
 |Eigenschap|[dcterms:relation (derived from)](http://purl.org/dc/terms/relation)
+|Relatie met|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Uitleg|Een dataset (product) kan zijn afgeleid van een dataset (versie).
 |Voorbeeld|BRK levering 2.2 isafgeleid van IMKAD 2.1.0.
 
@@ -244,10 +244,10 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|hasValue|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
-|Label|type dataset = DatasetVersie
+|hasValue|[dataset (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct)
+|Label|type dataset = DatasetProduct
 |Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
-|Uitleg|Indien sprake is van een datasetversie, dan wordt deze als zodanig getypeerd
+|Uitleg|Indien sprake is van een datasetproduct, dan wordt deze als zodanig getypeerd
 |Voorbeeld|
 |Min card.|1
 |Max card.|1
@@ -261,7 +261,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Klasse|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Uitleg|Een catalogus is een samengestelde verzameling (federatief beheerde) metagegevens over datasets (algemeen, versie en product), distributies en bijbehorende assets
 |Voorbeeld|De catalogus voor de BRK met de verschillende versies, informatieproducten, begrippen, waardelijsten en informatiemodellen
-|Eigenschappen|[bevat dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [beschrijving (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [webpagina](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [licentie (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [naam (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [herkomst (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rechten (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
+|Eigenschappen en relaties|[bevat dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [beschrijving (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [webpagina](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [licentie (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [naam (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [herkomst (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rechten (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
 
 
 ### Eigenschappen
@@ -302,9 +302,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|node|[Taal](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Label|taal
 |Eigenschap|[dcterms:language](http://purl.org/dc/terms/language)
+|Relatie met|[Taal](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Uitleg|De taal waarin de metadata de catalogus is beschreven kan worden gespecificeerd.
 |Voorbeeld|@nl
 
@@ -340,7 +340,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Klasse|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Uitleg|Een catalogus is een samengestelde verzameling (federatief beheerde) metagegevens over datasets (algemeen, versie en product), distributies en bijbehorende assets
 |Voorbeeld|De catalogus voor de BRK met de verschillende versies, informatieproducten, begrippen, waardelijsten en informatiemodellen
-|Eigenschappen|[bevat dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [beschrijving (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [webpagina](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [licentie (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [naam (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [herkomst (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rechten (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
+|Eigenschappen en relaties|[bevat dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [beschrijving (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [webpagina](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [licentie (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [naam (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [herkomst (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rechten (catalogus)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
 
 
 ### Eigenschappen
@@ -412,3 +412,5 @@ Catalogi, datasets (algemeen), datasets (versie), datasets (product) en distirbu
 * http://{domain}/id/{DatasetVersion}/{UpperCamelCase(rdfs:label)} voor datasets (versie)
 * http://{domain}/id/{DatasetProduct}/{UpperCamelCase(rdfs:label)} voor datasets (product)
 * http://{domain}/id/{Distribution}/{UpperCamelCase(rdfs:label)} voor distributies
+
+
