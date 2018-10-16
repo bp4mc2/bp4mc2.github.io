@@ -34,23 +34,58 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 |Min card.|1
 
 
-## Werk als bron
+## Bibliografische beschrijving
 
 |Eigenschap|Waarde
 |----------|------
-|Label|algemeen bibliografische bron
+|Label|bibliografische beschrijving
+|Klasse|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
+|Uitleg|Een bibliografische beschrijving van een werk of expressie.
+|Voorbeeld|Artikel 1 van het burgerlijk wetboek of artikel 1 van het burgerlijk wetboek van 1838
+|Eigenschappen en relaties|[onderwerp van](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_isTopicOf), [label](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_label)
+
+
+### Eigenschappen
+
+|Eigenschap|Waarde
+|----------|------
+|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
+|Label|label
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Uitleg|Een bibliografische beschrijving heeft een voor mensen leesbare naam.
+|Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
+|Min card.|1
+
+
+### Relaties
+
+|Eigenschap|Waarde
+|----------|------
+|Label|onderwerp van
+|Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
+|Relatie met|[Document](http://bp4mc2.org/profiles/frbr-ap-sc#Document)
+|Uitleg|Een bibliografische beschrijving kan een onderwerp zijn van een document.
+|Voorbeeld|Artikel 1 BW is een onderwerp in het Burgerlijk Wetboek
+|Max card.|1
+
+
+## Werk
+
+|Eigenschap|Waarde
+|----------|------
+|Label|Werk
 |Klasse|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
-|Uitleg|Een via het web identificeerbare bibliografische bron, zonder dat expliciet wordt verwezen naar een specifieke versie.
+|Uitleg|Een bibliografische beschrijving, zonder dat expliciet wordt verwezen naar een specifieke versie.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek
 
 
-## Expressie als bron
+## Expressie (versie van een werk)
 
 |Eigenschap|Waarde
 |----------|------
-|Label|versie bibliografische bron
+|Label|expressie, versie van een werk
 |Klasse|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
-|Uitleg|Een specifieke versie van een op het web identificeerbare bibliografische bron.
+|Uitleg|Een specifieke versie van een werk.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
 
 
