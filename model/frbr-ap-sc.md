@@ -4,15 +4,34 @@
 FRBR is de standaard om te kunnen verwijzen naar een bibliografische bron (bijvoorbeeld een wetsartikel) in het algemeen of een versie van een bron zoals dat op een bepaald moment geldig was. Formele begrippen worden meestal gedefinieerd in een besluit of een wet. Bij verwijzing naar zo’n begrip is het belangrijk om te weten of naar dat begrip in het algemeen of naar een beschrijving van dat begrip op een specifiek moment wordt verwezen.
 
 Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
-* een beschrijving van een document dat zelf niet vindbaar is op het web, bijvoorbeeld een boek. De beschrijving van het boek is wel vindbaar, het boek zelf met de inhoud niet.
-* een bibliografische bron op het web, waarvan de inhoud direct via het web beschikbaar is, een web’resource’. Een verwijzing naar een dergelijke bron kan twee vormen hebben:
-** de verwijzing naar de beschrijving in het algemeen
-** de verwijzing naar een specifieke versie van de beschrijving zoals die op een bepaald moment geldig was.
+* een document dat direct vindbaar is op het web, bijvoorbeeld een wikipedia pagina. Voor een stabiele verwijzing kan het handig zijn om te verwijzen naar een specifieke versie, zoals deze beschikbaar was op het moment dat de verwijzing is aangebracht.
+* een bibliografische beschrijving, zonder dat het document zelf vindbaar is op het web. Indien het document wel vindbaar is, dan kan deze verwijzing ook opgenomen worden. Bibliografische beschrijvingen kennen we in twee vormen:
+  * een beschrijving van het werk, zonder dat daarbij wordt verwezen naar een specifieke versie van dit werk, bijvoorbeeld "De grondwet";
+  * een beschrijving van een versie van het werk, de "expressie". Bijvoorbeeld "De grondwet, zoals geldig op 17 november 2017".
 
 
 ![](frbr-ap-sc.png)
 
-## Brondocument
+## Document
+
+|Eigenschap|Waarde
+|----------|------
+|Label|Document
+|Uitleg|Een document dat vindbaar is op het web.
+|Voorbeeld|[https://wetten.overheid.nl/BWBR0001840/2017-11-17](https://wetten.overheid.nl/BWBR0001840/2017-11-17)
+|Eigenschappen en relaties|[label](http://bp4mc2.org/profiles/frbr-ap-sc#Document_label)
+
+
+### Eigenschappen
+
+|Eigenschap|Waarde
+|----------|------
+|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
+|Label|label
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Uitleg|Een document heeft een voor mensen leesbaar label.
+|Voorbeeld|Grondwet
+|Min card.|1
 
 
 ## Werk als bron
