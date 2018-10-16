@@ -25,7 +25,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 |Label|Asset (Waardelijst)
 |Uitleg|Een waardelijst is een verzameling van begrippen of elementen die worden gebruikt om inhoud te indexeren en / of inhoud op te halen via browsen of zoeken. Hij bevat meestal voorkeurs- en varianttermen en heeft een gedefinieerde scope of beschrijft een specifiek domein.
 |Voorbeeld|De lijst met Kadastrale gemeenten.
-|Eigenschappen en relaties|[gespecificeerd](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_specification), [type asset = Waardelijst](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeWaardelijst)
+|Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [gespecificeerd](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_specification)
 
 
 ### Eigenschappen
@@ -40,16 +40,6 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 |Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#NodeShape](http://bp4mc2.org/profiles/cv-ap-sc#NodeShape)
 |Uitleg|Een waardelijst kan worden gespecificeerd als begrippenkader, collectie van begrippen of als referentielijst.
 |Voorbeeld|De referentielijst met Kadastrale gemeenten.
-
-|Eigenschap|Waarde
-|----------|------
-|sh:hasValue|[Asset (Waardelijst)](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary)
-|Label|type asset = Waardelijst
-|Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
-|Uitleg|Een waardelijst wordt expliciet getypeerd als waardelijst.
-|Voorbeeld|
-|Min card.|1
-|Max card.|1
 
 
 ## Waardelijst als begrippenkader
