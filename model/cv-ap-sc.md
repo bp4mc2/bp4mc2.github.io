@@ -1,4 +1,4 @@
-# Toepassingsprofiel voor waardelijsten
+# CV Toepassingsprofiel voor waardelijsten
 
 
 Waardelijsten zijn lijstjes met elementen waaraan vanuit verschillende toepassingen, soms zelfs vanuit verschillende organisaties wordt gerefereerd. Soms worden dit ook wel referentiedata genoemd. Waardelijsten kunnen 3 verschillende vormen hebben:
@@ -71,7 +71,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 Een lijst (collectie of schema) van begrippen of een lijst met instanties van een klasse krijgt een uri conform de beschrijvende asset.
 
-Een waarde in een lijst (collectie of schema) van begrippen krijgt een uri volgens het patroon: 
+Een waarde in een lijst (collectie of schema) van begrippen krijgt een uri volgens het patroon:
 * https://{domein}/id/Concept/{rdfs:label}, waarbij het rdfs:label het label van de collectie of het schema is.
 
 Een waarde in een lijst met instanties van een klasse krijgt een uri volgens het patroon:

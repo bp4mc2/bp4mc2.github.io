@@ -1,4 +1,4 @@
-# Toepassingsprofiel voor provenance informatie
+# PROV Toepassingsprofiel voor herkomstinformatie
 
 
 Administratieve aspecten worden bijgehouden conform het de prov ontologie. Hierbij gaat het om wie, wat, wanneer en om wat voor reden heeft vastgelegd of gewijzigd.

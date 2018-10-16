@@ -1,4 +1,4 @@
-# Toepassingsprofiel voor informatiemodellen
+# DM Toepassingsprofiel voor informatiemodellen
 
 
 Een informatiemodel is een beschrijving van de structuur waarin data over dingen die worden aangeduid met begrippen in het semantische model kunnen worden opgeslagen. Het begrippenkader is bruikbaar om met domeineigenaren en data afnemers te communiceren over de inhoud van een registratie. Het vertalen van een begrippenkader naar een samenhangend datamodel is het werkveld van de data architect.
