@@ -23,9 +23,6 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |Eigenschappen en relaties|[actor](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_actor), [agent](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_agent), [object](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_object), [verwijst naar](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_refersTo)
 
 
-### Eigenschappen
-
-
 ### Relaties
 
 |Eigenschap|Waarde
@@ -72,9 +69,6 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |Eigenschappen en relaties|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
-### Eigenschappen
-
-
 ## Actor
 
 |Eigenschap|Waarde
@@ -92,9 +86,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |----------|------
 |Label|Agent
 |Klasse|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
-|Uitleg|De klasse van agenten. Een agent is een persoon (individu, groep of organisatie) die bij een handeling betrokken is, zonder de handeling
-
-feitelijk uit te voeren.
+|Uitleg|De klasse van agenten. Een agent is een persoon (individu, groep of organisatie) die bij een handeling betrokken is, zonder de handeling feitelijk uit te voeren.
 |Voorbeeld|Notaris Pietersen.
 |Eigenschappen en relaties|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
@@ -112,6 +104,11 @@ feitelijk uit te voeren.
 
 ### Eigenschappen
 
+|Eigenschap|Waarde
+|----------|------
+|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+
 
 ### Relaties
 
@@ -121,10 +118,6 @@ feitelijk uit te voeren.
 |Eigenschap|[skoslex:affects](http://bp4mc2.org/def/skos-lex#affects)
 |Verwijst naar|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Uitleg|Normeert relateert een norm aan de handeling die de norm normeert. Zo'n handeling wordt beperkt door de regels van de norm
-
-|Eigenschap|Waarde
-|----------|------
-|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 
 
 ## Uri strategie
