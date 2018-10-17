@@ -92,11 +92,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 ## Uri strategie
 
 
-Een brondocument, bron op het web, werk als bron, respectievelijk expressie als bron krijgt een uri volgens het patroon:
-
-* http://{domain}/id/{SourceDocument}/{UpperCamelCase(rdfs:Label)} voor een brondocument
-* http://{domain}/id/{Source}/{UpperCamelCase(rdfs:Label)} voor een bibliografische bron op het web
-* http://{domain}/id/{WorkAsSource}/{UpperCamelCase(rdfs:Label)} voor een algemeen bibliografische bron op het web
-* http://{domain}/id/{ExpressionAsSource}/{UpperCamelCase(rdfs:Label)} voor een specifieke versie van een bibliografische bron op het web
+Een document, algemeen bibliografische resourcewerk op het web (work) of specifieke versie van een bibliografische resource op het web (expression) heeft een uri die gemunt is door degene die het document of de resource publiceert. In een stelselcatalogus worden hiervoor geen uri's gemunt.
 
 
