@@ -59,7 +59,17 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 Assets en asset distributies krijgen een uri volgens het patroon:
 
-* http://{domain}/id/{Asset}/{UpperCamelCase(rdfs:label)} voor assets
-* http://{domain}/id/{AssetDistribution}/{UpperCamelCase(rdfs:label)} voor asset distributies
+* http://{domain}/id/{asset-type}/{UpperCamelCase(rdfs:label)} voor assets
+* http://{domain}/id/{asset-type}/{UpperCamelCase(rdfs:label)}.{extension} voor asset distributies
+
+Daarbij geldt dat `{asset-type}` de volgende waarden kan hebben, afhankelijk van het type asset:
+* `codelist` voor waardelijsten;
+* `scheme` voor begrippenkaders;
+* `model` voor informatiemodellen.
+
+En voor `{extension}` geldt dat hiervoor de standaard bestandsformaat extensies worden gebruikt, zoals:
+* `ttl` voor turtle bestanden;
+* `pdf` voor pdf bestanden;
+* `xml` voor xml bestanden.
 
 

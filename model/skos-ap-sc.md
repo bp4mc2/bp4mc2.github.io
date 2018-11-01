@@ -297,9 +297,36 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|example|Het begrip Nummeraanduiding in de BAG in relatie tot het begrip Postadres in de BRK
 |Label|Extern begrip
 |Uitleg|Een begrip in een ander begrippenkader waarmee een relatie wordt gelegd.
+|Voorbeeld|Het begrip Nummeraanduiding in de BAG in relatie tot het begrip Postadres in de BRK
+
+
+## Begrippenkader als asset
+
+
+Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Dataset met als inhoud alle eigenschappen van de begrippen en collecties binnen dit begrippenkader.
+
+
+|Eigenschap|Waarde
+|----------|------
+|Label|Asset (Begrippenkader)
+|Uitleg|Een begrippenkader kan worden gezien als een asset.
+|Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
+|Eigenschappen en relaties|[type asset = Begrippenkader](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme_typeConceptScheme)
+
+
+### Relaties
+
+|Eigenschap|Waarde
+|----------|------
+|Label|type asset = Begrippenkader
+|Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
+|Waarde|[Asset (Begrippenkader)](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme)
+|Uitleg|Een begrippenkader wordt expliciet getypeerd als begrippenkader.
+|Voorbeeld|
+|Min card.|1
+|Max card.|1
 
 
 ## Uri strategie
@@ -307,10 +334,14 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 Concept schema’s, collecties en concepten krijgen een uri volgens het patroon:
 
-* http://{domain}/id/{ConceptScheme}/{UpperCamelCase(rdfs:label)} voor begrippenkaders
-* http://{domain}/id/{Collection}/{UpperCamelCase(rdfs:label)} voor collecties
-* http://{domain}/id/{Concept}/{UpperCamelCase(skos:prefLabel)} voor concepten
+* `http://{domain}/id/scheme/{UpperCamelCase(rdfs:label)}` voor begrippenkaders
+* `http://{domain}/id/collection/{UpperCamelCase(rdfs:label)}` voor collecties
+* `http://{domain}/id/concept/{UpperCamelCase(skos:prefLabel)}` voor concepten
 
-Good practice is om binnen een domein (begrippenkader) alle prefLabels uniek te maken. Soms is het daarbij nodig de context te vermelden. Dit gebeurt dan tussen haakjes, bijvoorbeeld ‘breedteklasse (wegdeel)’ en ‘breedteklasse (waterdeel)’. Als dit niet gebeurt zijn uri’s niet voorspelbaar op basis van het prefLabel en moeten ze handmatig worden toegekend.
+Bovenstaande gaat er vanuit dat `{domain}` het begrippenkader al uniek identificeert, waardoor de toevoegen van het `rdfs:label` puur voor opslaggemak zorgt. Mocht echter het `{domain}` het begrippenkader *niet* uniek identificeren, dan geldt voor concepten en collecties de volgende uitbreiding:
+* `http://{domain}/id/concept/{conceptscheme}/{term}` voor concepten
+* `http://{domain}/id/collection/{conceptscheme}/{term}` voor collecties
+
+The `{skos:prefLabel}` should be unique for all concepts in a particular concept scheme. If this is not the case, the URI should be extended with a `_{context}` postfix.
 
 

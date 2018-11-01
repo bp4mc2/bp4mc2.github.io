@@ -276,15 +276,36 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Description|A concept in another concept scheme, to which is referenced.
 
 
+## Concept scheme asset
+
+|Eigenschap|Waarde
+|----------|------
+|Label|Asset (ConceptScheme)
+|Description|A concept scheme can be identified as an asset.
+|Properties en relations|[type asset = Concept scheme](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme_typeConceptScheme)
+
+
+### Relations
+
+|Eigenschap|Waarde
+|----------|------
+|Label|type asset = Concept scheme
+|Property|[dcterms:type](http://purl.org/dc/terms/type)
+|Value|[Asset (ConceptScheme)](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme)
+|Description|A concept scheme is explicitly typed as a concept scheme.
+|Min card.|1
+|Max card.|1
+
+
 ## Uri strategy
 
 
 Concept schemes, collections and concepts get a uri according to the pattern:
 
-* http://{domain}/id/{ConceptScheme}/{UpperCamelCase(rdfs:label)} for concept schemes
-* http://{domain}/id/{Collection}/{UpperCamelCase(rdfs:label)} for collections
-* http://{domain}/id{Concept}/{UpperCamelCase(skos:prefLabel)} for concepts
+* `http://{domain}/id/scheme/{UpperCamelCase(rdfs:label)}` for concept schemes
+* `http://{domain}/id/collection/{UpperCamelCase(rdfs:label)}` for collections
+* `http://{domain}/id/concept/{UpperCamelCase(skos:prefLabel)}` for concepts
 
-Good practice is to make all prefLabels unique within a domain (concept scheme). Sometimes it is necessary to mention the context. This is done between brackets, for example 'width class (road section)' and 'width class (water section)'. Without this practice uris are not predictable on base of the prefLabel and must be assigned manually.
+Het `{skos:prefLabel}` hoort uniek te zijn voor alla concepten in een begrippenkader. Als dit niet het geval is, dan wordt de URI uitgebreid met een `_{context}` postfix.
 
 

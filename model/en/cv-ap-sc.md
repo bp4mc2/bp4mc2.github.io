@@ -66,9 +66,9 @@ For class instances, any additional attributes of that class required for use ou
 A list (collection or scheme) of concepts or a list of instances of a class gets a uri from the asset that describes the list.
 
 A value in a list (collection or schema) of concepts gets a uri according to the pattern:
-* https://{domain}/id/Concept/{rdfs:label}, where the rdfs:label is the label of the collection or schema.
+* `http://{domain}/id/concept/{rdfs:label}`, where the rdfs:label is the label of the collection or schema.
 
 A value in a list of instances of a class is given a uri according to the pattern:
-* https://{domain}/id/{ClassName}/{rdfs:label}, where the rdfs:label is the label of the relevant instance.
+* `http://{domain}/id/{class}/{rdfs:label}`, where the rdfs:label is the label of the relevant instance.
 
 

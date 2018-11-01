@@ -149,9 +149,9 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|hasValue|[Dataset (version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Label|type dataset = DatasetVersion
 |Property|[dcterms:type](http://purl.org/dc/terms/type)
+|Value|[Dataset (version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Description|In case of a dataset version, the dataset is typed accordingly
 |Min card.|1
 |Max card.|1
@@ -227,9 +227,9 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|hasValue|[dataset (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct)
 |Label|type dataset = DatasetProduct
 |Property|[dcterms:type](http://purl.org/dc/terms/type)
+|Value|[dataset (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct)
 |Description|In case of a dataset product, the dataset is typed accordingly
 |Min card.|1
 |Max card.|1
@@ -372,15 +372,24 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Description|The rights applied to the distribution can be specified. This can be nother rights as the rights for the catalog.
 
 
+## Language
+
+|Eigenschap|Waarde
+|----------|------
+|Label|Language
+|Role|[http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)
+|Controlled vocabulary|[http://publications.europa.eu/mdr/authority/language/](http://publications.europa.eu/mdr/authority/language/)
+
+
 ## Uri strategy
 
 
 Catalogs, datasets (general), datasets (version), datasets (product) and distirbutions get a uri according to the pattern:
 
-* http: // {domain}/id/{Catalog}/{UpperCamelCase (rdfs: label)} for catalogs
-* http: // {domain}/id/{DatasetGeneral}/{UpperCamelCase (rdfs: label)} for datasets (general)
-* http: // {domain}/id/{DatasetVersion}/{UpperCamelCase (rdfs: label)} for datasets (version)
-* http: // {domain}/id/{DatasetProduct}/{UpperCamelCase (rdfs: label)} for datasets (product)
-* http: // {domain}/id/{Distribution}/{UpperCamelCase (rdfs: label)} for distributions
+* `http://{domain}/id/catalog/{UpperCamelCase(rdfs:label)}` for catalogs
+* `http://{domain}/id/dataset/{UpperCamelCase(rdfs:label)}` for datasets (general)
+* `http://{domain}/id/dataset/{UpperCamelCase(rdfs:label)}` for datasets (version)
+* `http://{domain}/id/dataset/{UpperCamelCase(rdfs:label)}` for datasets (product)
+* `http://{domain}/id/distribution/{UpperCamelCase(rdfs:label)}` for distributions
 
 

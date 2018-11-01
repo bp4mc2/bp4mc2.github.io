@@ -123,8 +123,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 ## Uri strategie
 
 
-Assets en asset distributies krijgen een uri volgens het patroon:
-* http://{domain}/id/{Asset}/{UpperCamelCase(rdfs:label)} voor assets
-* http://{domain}/id/{AssetDistribution}/{UpperCamelCase(rdfs:label)} voor asset distributies
+Agents, objects en actors zijn concepten en volgende de URI opbouw van een concept. Voor Norm geldt het volgende template:
+* `http://{domain}/id/norm/{UpperCamelCase(rdfs:label)}`
 
 

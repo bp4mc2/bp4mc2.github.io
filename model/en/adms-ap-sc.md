@@ -57,9 +57,19 @@ Provenance can be tracked of metadata descriptions and distributions.
 ## Uri strategy
 
 
-Assets en asset  distirbutions get a uri according to the pattern:
+Assets en asset distributions get a uri according to the pattern:
 
-* http://{domain}/id/{Asset}/{UpperCamelCase(rdfs:label)} for assets
-* http://{domain}/id/{AssetDistribution}/{UpperCamelCase(rdfs:label)} for asset distributions
+* `http://{domain}/id/{asset-type}/{UpperCamelCase(rdfs:label)}` for assets
+* `http://{domain}/id/{asset-type}/{UpperCamelCase(rdfs:label)}.{extension}` for asset distributions
+
+Depending on the type of asset, `{asset-type}` is one of the following values:
+* `codelist` voor waardelijsten;
+* `scheme` voor begrippenkaders;
+* `model` voor informatiemodellen.
+
+And for `{extension}` the regular extensions for file types are used:
+* `ttl` for turtle files;
+* `pdf` for pdf files;
+* `xml` for xml files.
 
 

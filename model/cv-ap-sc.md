@@ -72,9 +72,9 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 Een lijst (collectie of schema) van begrippen of een lijst met instanties van een klasse krijgt een uri conform de beschrijvende asset.
 
 Een waarde in een lijst (collectie of schema) van begrippen krijgt een uri volgens het patroon:
-* https://{domein}/id/Concept/{rdfs:label}, waarbij het rdfs:label het label van de collectie of het schema is.
+* `http://{domain}/id/concept/{rdfs:label}`, waarbij het `{rdfs:label}` het label van de collectie of het schema is.
 
 Een waarde in een lijst met instanties van een klasse krijgt een uri volgens het patroon:
-* https://{domein}/id/{Klassenaam}/{rdfs:label}, waarbij het rdfs:label de naam van de betreffende instantie is.
+* `http://{domain}/id/{class}/{rdfs:label}`, waarbij het `{rdfs:label}` de naam van de betreffende instantie is.
 
 

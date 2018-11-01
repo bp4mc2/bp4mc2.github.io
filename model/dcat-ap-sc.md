@@ -159,9 +159,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|hasValue|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Label|type dataset = DatasetVersie
 |Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
+|Waarde|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Uitleg|Indien sprake is van een datasetversie, dan wordt deze als zodanig getypeerd
 |Voorbeeld|
 |Min card.|1
@@ -244,9 +244,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|hasValue|[dataset (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct)
 |Label|type dataset = DatasetProduct
 |Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
+|Waarde|[dataset (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct)
 |Uitleg|Indien sprake is van een datasetproduct, dan wordt deze als zodanig getypeerd
 |Voorbeeld|
 |Min card.|1
@@ -416,10 +416,10 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 Catalogi, datasets (algemeen), datasets (versie), datasets (product) en distirbuties krijgen een uri volgens het patroon:
 
-* http://{domain}/id/{Catalog}/{UpperCamelCase(rdfs:label)} voor catalogi
-* http://{domain}/id/{DatasetGeneral}/{UpperCamelCase(rdfs:label)} voor datasets (algemeen)
-* http://{domain}/id/{DatasetVersion}/{UpperCamelCase(rdfs:label)} voor datasets (versie)
-* http://{domain}/id/{DatasetProduct}/{UpperCamelCase(rdfs:label)} voor datasets (product)
-* http://{domain}/id/{Distribution}/{UpperCamelCase(rdfs:label)} voor distributies
+* `http://{domain}/id/catalog/{UpperCamelCase(rdfs:label)}` voor catalogi
+* `http://{domain}/id/dataset/{UpperCamelCase(rdfs:label)}` voor datasets (algemeen)
+* `http://{domain}/id/dataset/{UpperCamelCase(rdfs:label)}` voor datasets (versie)
+* `http://{domain}/id/dataset/{UpperCamelCase(rdfs:label)}` voor datasets (product)
+* `http://{domain}/id/distribution/{UpperCamelCase(rdfs:label)}` voor distributies
 
 

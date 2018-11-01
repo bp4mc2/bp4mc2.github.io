@@ -22,9 +22,6 @@ Events can be described as concepts. They then have the same characteristics as 
 |Properties en relations|[actor](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_actor), [agent](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_agent), [object](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_object), [refers to](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_refersTo)
 
 
-### Properties
-
-
 ### Relations
 
 |Eigenschap|Waarde
@@ -66,9 +63,6 @@ Events can be described as concepts. They then have the same characteristics as 
 |Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
-### Properties
-
-
 ## Actor
 
 |Eigenschap|Waarde
@@ -101,6 +95,11 @@ Events can be described as concepts. They then have the same characteristics as 
 
 ### Properties
 
+|Eigenschap|Waarde
+|----------|------
+|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
+|Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+
 
 ### Relations
 
@@ -111,16 +110,11 @@ Events can be described as concepts. They then have the same characteristics as 
 |Refers to|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Description|Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm
 
-|Eigenschap|Waarde
-|----------|------
-|Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-
 
 ## Uri strategy
 
 
-Assets en asset  distirbutions get a uri according to the pattern:
-* http://{domain}/id/{Asset}/{UpperCamelCase(rdfs:label)} for assets
-* http://{domain}/id/{AssetDistribution}/{UpperCamelCase(rdfs:label)} for asset distributions
+Agents, objects en actors are concepten and follow the URI template of a concept. The following template is used for a norm:
+* `http://{domain}/id/norm/{UpperCamelCase(rdfs:label)}`
 
 
