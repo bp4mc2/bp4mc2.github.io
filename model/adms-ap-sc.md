@@ -22,7 +22,6 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Asset
 |Uitleg|Een asset is een set van herbruikbare metadata en referentiegegevens die worden gebruikt voor de ontwikkeling van e-overheidssystemen.
 |Voorbeeld|De waardelijst met Kadastrale gemeenten.
 |Eigenschappen en relaties|[heeft distributie](http://bp4mc2.org/profiles/adms-ap-sc#Asset_distribution), [naam](http://bp4mc2.org/profiles/adms-ap-sc#Asset_label), [heeft webpagina](http://bp4mc2.org/profiles/adms-ap-sc#Asset_landingPage), [onderdeel van](http://bp4mc2.org/profiles/adms-ap-sc#Asset_partOf), [herkomst (asset)](http://bp4mc2.org/profiles/adms-ap-sc#Asset_provenance)
@@ -82,7 +81,6 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 |Eigenschap|Waarde
 |----------|------
-|Label|distributie
 |Klasse|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd.
 |Voorbeeld|De genericode publicatie van de lijst met Kadastrale gemeenten.

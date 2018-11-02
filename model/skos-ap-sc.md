@@ -17,7 +17,6 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Begrippenkader
 |Klasse|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
 |Uitleg|De kennis over de fysieke werkelijkheid wordt beschreven in een talig model, een begrippenmodel.  In een begrippenmodel wordt deze kennis zodanig gestructureerd vastgelegd dat deze door zowel mensen als door computers wordt begrepen.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein. Deze begrippen vinden hun oorsprong in de Kadasterwet, die beschrijft wat percelen en rechten daarop betekenen.
@@ -28,12 +27,100 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label
+|Naam|label (collectie)
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een collectie  heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn daarin toegestaan.
+|Voorbeeld|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|class|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Naam|herkomst (collectie)
+|Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Van een collectie kan de herkomst worden beschreven.
+|Voorbeeld|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|label
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan. 
 |Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
 |Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|uitleg
+|Eigenschap|[rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip heeft bij voorkeur een uitleg in ‘klare taal’.
+|Voorbeeld|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|geschreven bron
+|Eigenschap|[dc:source](http://purl.org/dc/elements/1.1/source)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip is ontleend aan een geschreven bron.
+|Voorbeeld|Europees verdrag voor de rechten van de mens
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|definitie
+|Eigenschap|[skos:definition](http://www.w3.org/2004/02/skos/core#definition)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan een formele definitiehebben. Deze wordt waar mogelijk overgenomen uit een officiële publicatie.
+|Voorbeeld|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|redactionele opmerking
+|Eigenschap|[skos:editorialNote](http://www.w3.org/2004/02/skos/core#editorialNote)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan een redactionele opmerking hebben.
+|Voorbeeld|Dit begrip wordt nog gewijzigd bij het invoeringsbesluit.
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|label (begrip)
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en
+|Voorbeeld|"Kadastraal perceel"@nl / "Cadastral parcel"@en
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|voorkeursterm
+|Eigenschap|[skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip heeft een voor mensen leesbare voorkeursterm. Er is precies 1 voorkeursterm in de voorkeurstaal (dit veld is dus niet meertalig). Het is een good practice dat ieder begrip binen 1 begrippenkader een uniek prefLabel heeft.
+|Voorbeeld|Kadastraal perceel
+|Min card.|1
+|Max card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|toelichting
+|Eigenschap|[skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan nader worden toegelicht.
+|Voorbeeld|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|alternatieve aanduiding
+|Eigenschap|[skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan een alternatieve aanduiding, een synoniem hebben
+|Voorbeeld|KadastraalPerceel
 
 
 ### Relaties
@@ -51,10 +138,9 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|example|het begrip 'Perceel' in de BRK
-|Label|Begrip
 |Klasse|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip is een idee of notitie, een eenheid van denken, een onderwerp van gesprek.
+|Voorbeeld|het begrip 'Perceel' in de BRK
 |Eigenschappen en relaties|[lijkt op breder](http://bp4mc2.org/profiles/skos-ap-sc#Concept_broadlyMatches), [vergelijkbaar met](http://bp4mc2.org/profiles/skos-ap-sc#Concept_closelyMatches), [uitleg](http://bp4mc2.org/profiles/skos-ap-sc#Concept_comment), [bestaat uit](http://bp4mc2.org/profiles/skos-ap-sc#Concept_consistsOf), [geschreven bron](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dcsource), [bron op het web](http://bp4mc2.org/profiles/skos-ap-sc#Concept_dctsource), [definitie](http://bp4mc2.org/profiles/skos-ap-sc#Concept_definition), [domein](http://bp4mc2.org/profiles/skos-ap-sc#Concept_domain), [redactionele opmerking](http://bp4mc2.org/profiles/skos-ap-sc#Concept_editorialNote), [exact gelijk aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_exactlyMatches), [generalisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_generalisationOf), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_isRelatedTo), [label (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_label), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_metadata), [lijkt op smaller](http://bp4mc2.org/profiles/skos-ap-sc#Concept_narrowlyMatches), [onderdeel van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_partOf), [voorkeursterm](http://bp4mc2.org/profiles/skos-ap-sc#Concept_prefLabel), [herkomst (begrip)](http://bp4mc2.org/profiles/skos-ap-sc#Concept_provenance), [toelichting](http://bp4mc2.org/profiles/skos-ap-sc#Concept_scopeNote), [gerelateerd aan](http://bp4mc2.org/profiles/skos-ap-sc#Concept_seeAlso), [specialisatie van](http://bp4mc2.org/profiles/skos-ap-sc#Concept_specialisationOf), [alternatieve aanduiding](http://bp4mc2.org/profiles/skos-ap-sc#Concept_synonym)
 
 
@@ -62,52 +148,80 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|uitleg
+|Naam|label (collectie)
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een collectie  heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn daarin toegestaan.
+|Voorbeeld|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|class|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Naam|herkomst (collectie)
+|Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Van een collectie kan de herkomst worden beschreven.
+|Voorbeeld|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|label
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan. 
+|Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|uitleg
 |Eigenschap|[rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip heeft bij voorkeur een uitleg in ‘klare taal’.
 |Voorbeeld|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
 |Min card.|1
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|geschreven bron
+|Naam|geschreven bron
 |Eigenschap|[dc:source](http://purl.org/dc/elements/1.1/source)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip is ontleend aan een geschreven bron.
 |Voorbeeld|Europees verdrag voor de rechten van de mens
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|definitie
+|Naam|definitie
 |Eigenschap|[skos:definition](http://www.w3.org/2004/02/skos/core#definition)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip kan een formele definitiehebben. Deze wordt waar mogelijk overgenomen uit een officiële publicatie.
 |Voorbeeld|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
 |Min card.|1
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|redactionele opmerking
+|Naam|redactionele opmerking
 |Eigenschap|[skos:editorialNote](http://www.w3.org/2004/02/skos/core#editorialNote)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip kan een redactionele opmerking hebben.
 |Voorbeeld|Dit begrip wordt nog gewijzigd bij het invoeringsbesluit.
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label (begrip)
+|Naam|label (begrip)
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en
 |Voorbeeld|"Kadastraal perceel"@nl / "Cadastral parcel"@en
 |Min card.|1
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|voorkeursterm
+|Naam|voorkeursterm
 |Eigenschap|[skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip heeft een voor mensen leesbare voorkeursterm. Er is precies 1 voorkeursterm in de voorkeurstaal (dit veld is dus niet meertalig). Het is een good practice dat ieder begrip binen 1 begrippenkader een uniek prefLabel heeft.
 |Voorbeeld|Kadastraal perceel
 |Min card.|1
@@ -115,17 +229,17 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|toelichting
+|Naam|toelichting
 |Eigenschap|[skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip kan nader worden toegelicht.
 |Voorbeeld|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|alternatieve aanduiding
+|Naam|alternatieve aanduiding
 |Eigenschap|[skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een begrip kan een alternatieve aanduiding, een synoniem hebben
 |Voorbeeld|KadastraalPerceel
 
@@ -253,7 +367,6 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Collectie
 |Klasse|[skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)
 |Uitleg|Een groep samenhangende begrippen kan worden gebundeld in een collectie.
 |Voorbeeld|De collectie die alle activiteiten in het BAL beschrijft.
@@ -264,22 +377,100 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label (collectie)
+|Naam|label (collectie)
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een collectie  heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn daarin toegestaan.
 |Voorbeeld|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
 |Min card.|1
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|herkomst (collectie)
+|class|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Naam|herkomst (collectie)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Van een collectie kan de herkomst worden beschreven.
 |Voorbeeld|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
 |Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|label
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan. 
+|Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|uitleg
+|Eigenschap|[rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip heeft bij voorkeur een uitleg in ‘klare taal’.
+|Voorbeeld|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|geschreven bron
+|Eigenschap|[dc:source](http://purl.org/dc/elements/1.1/source)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip is ontleend aan een geschreven bron.
+|Voorbeeld|Europees verdrag voor de rechten van de mens
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|definitie
+|Eigenschap|[skos:definition](http://www.w3.org/2004/02/skos/core#definition)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan een formele definitiehebben. Deze wordt waar mogelijk overgenomen uit een officiële publicatie.
+|Voorbeeld|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|redactionele opmerking
+|Eigenschap|[skos:editorialNote](http://www.w3.org/2004/02/skos/core#editorialNote)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan een redactionele opmerking hebben.
+|Voorbeeld|Dit begrip wordt nog gewijzigd bij het invoeringsbesluit.
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|label (begrip)
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip wordt aangeduid met een voor mensen leesbare term (inclusief spaties en diacrieten). Deze is gelijk aan het skos:prefLabel. Uitzondering hierop is de situatie dat binnen 1 conceptschema er vaker dezelfde skos:prefLabel wordt gebruikt. Dit is geen good practice en dient zoveel mogelijk voorkomen te worden. In het geval dat dit toch voorkomt, krijgt het rdfs:label een toevoeging tussen haakjes die het onderscheid aangeeft. Dit label kan meertalig zijn, aangegeven door @nl of @en
+|Voorbeeld|"Kadastraal perceel"@nl / "Cadastral parcel"@en
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|voorkeursterm
+|Eigenschap|[skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip heeft een voor mensen leesbare voorkeursterm. Er is precies 1 voorkeursterm in de voorkeurstaal (dit veld is dus niet meertalig). Het is een good practice dat ieder begrip binen 1 begrippenkader een uniek prefLabel heeft.
+|Voorbeeld|Kadastraal perceel
+|Min card.|1
+|Max card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|toelichting
+|Eigenschap|[skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan nader worden toegelicht.
+|Voorbeeld|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|alternatieve aanduiding
+|Eigenschap|[skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een begrip kan een alternatieve aanduiding, een synoniem hebben
+|Voorbeeld|KadastraalPerceel
 
 
 ### Relaties
@@ -297,7 +488,6 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Extern begrip
 |Uitleg|Een begrip in een ander begrippenkader waarmee een relatie wordt gelegd.
 |Voorbeeld|Het begrip Nummeraanduiding in de BAG in relatie tot het begrip Postadres in de BRK
 
@@ -310,7 +500,6 @@ Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Datas
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Asset (Begrippenkader)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
 |Eigenschappen en relaties|[type asset = Begrippenkader](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme_typeConceptScheme)

@@ -22,7 +22,6 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Asset (Waardelijst)
 |Uitleg|Een waardelijst is een verzameling van begrippen of elementen die worden gebruikt om inhoud te indexeren en / of inhoud op te halen via browsen of zoeken. Hij bevat meestal voorkeurs- en varianttermen en heeft een gedefinieerde scope of beschrijft een specifiek domein.
 |Voorbeeld|De lijst met Kadastrale gemeenten.
 |Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [gespecificeerd](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_specification)
@@ -46,7 +45,6 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|begrippenkader specificatie
 |Uitleg|Een waardelijst kan worden gespecificeerd als apart begrippenkader.
 |Voorbeeld|The Inspire lijst met een europees afgestemd kader voor de typering van kabels en leidingen.
 |Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property)

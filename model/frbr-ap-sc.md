@@ -16,7 +16,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Document
 |Uitleg|Een document dat vindbaar is op het web.
 |Voorbeeld|[https://wetten.overheid.nl/BWBR0001840/2017-11-17](https://wetten.overheid.nl/BWBR0001840/2017-11-17)
 |Eigenschappen en relaties|[label](http://bp4mc2.org/profiles/frbr-ap-sc#Document_label)
@@ -26,11 +25,20 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label
+|Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een document heeft een voor mensen leesbaar label.
 |Voorbeeld|Grondwet
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|label
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een bibliografische beschrijving heeft een voor mensen leesbare naam.
+|Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
 |Min card.|1
 
 
@@ -38,7 +46,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |Eigenschap|Waarde
 |----------|------
-|Label|bibliografische beschrijving
 |Klasse|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
 |Uitleg|Een bibliografische beschrijving van een werk of expressie.
 |Voorbeeld|Artikel 1 van het burgerlijk wetboek of artikel 1 van het burgerlijk wetboek van 1838
@@ -49,9 +56,18 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label
+|Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een document heeft een voor mensen leesbaar label.
+|Voorbeeld|Grondwet
+|Min card.|1
+
+|Eigenschap|Waarde
+|----------|------
+|Naam|label
+|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een bibliografische beschrijving heeft een voor mensen leesbare naam.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
 |Min card.|1
@@ -73,7 +89,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Werk
 |Klasse|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
 |Uitleg|Een bibliografische beschrijving, zonder dat expliciet wordt verwezen naar een specifieke versie.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek
@@ -83,7 +98,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |Eigenschap|Waarde
 |----------|------
-|Label|expressie, versie van een werk
 |Klasse|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
 |Uitleg|Een specifieke versie van een werk.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
