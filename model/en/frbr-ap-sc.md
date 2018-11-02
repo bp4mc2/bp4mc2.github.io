@@ -12,11 +12,22 @@ The FRBR application profile makes it possible to refer to:
 
 ![](frbr-ap-sc.png)
 
-## document
+## Concept
+
+### Relations
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Document
+|Label|source on the web
+|Property|[dcterms:source](http://purl.org/dc/terms/source)
+|Description|A concept can be derived from a source that can be found on the web. This can be a (version of) a description of a specific concept or a document in which a description of the concept can be found.
+
+
+## Document
+
+|Eigenschap|Waarde
+|----------|------
+|Class|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Description|A document that can be found on the web.
 |Example|[https://wetten.overheid.nl/BWBR0001840/2017-11-17](https://wetten.overheid.nl/BWBR0001840/2017-11-17)
 |Properties en relations|[label](http://bp4mc2.org/profiles/frbr-ap-sc#Document_label)
@@ -26,9 +37,9 @@ The FRBR application profile makes it possible to refer to:
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label
+|Naam|label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A document has a human-readable label.
 |Min card.|1
 
@@ -37,7 +48,6 @@ The FRBR application profile makes it possible to refer to:
 
 |Eigenschap|Waarde
 |----------|------
-|Label|bibliographic reference
 |Class|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
 |Description|A bibliographic reference of a work or expression.
 |Properties en relations|[topic of](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_isTopicOf), [label](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_label)
@@ -47,9 +57,9 @@ The FRBR application profile makes it possible to refer to:
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label
+|Naam|label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A bibliographic reference has a human readable label.
 |Min card.|1
 
@@ -69,7 +79,6 @@ The FRBR application profile makes it possible to refer to:
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Work
 |Class|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
 |Description|A bibliographic reference, without an explicit reference to a specific version.
 
@@ -78,7 +87,6 @@ The FRBR application profile makes it possible to refer to:
 
 |Eigenschap|Waarde
 |----------|------
-|Label|expression, version of a work
 |Class|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
 |Description|A specific version of a work.
 

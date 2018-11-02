@@ -19,7 +19,6 @@ For class instances, any additional attributes of that class required for use ou
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Asset (ControlledVocabulary)
 |Description|A controlled vocabulary is an organized arrangement of concepts or elements used to index content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain.
 |Properties en relations|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [specified](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_specification)
 
@@ -41,7 +40,6 @@ For class instances, any additional attributes of that class required for use ou
 
 |Eigenschap|Waarde
 |----------|------
-|Label|concept scheme specification
 |Description|A controlled vocabulary can be specified as a separate concept scheme.
 |Properties en relations|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property)
 

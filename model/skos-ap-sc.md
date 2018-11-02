@@ -216,7 +216,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |----------|------
 |Label|herkomst
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een begrip kan de herkomst worden beschreven.
 |Voorbeeld|Op basis van de nieuwe wet op de BAG is de definitie van het begrip 'verblijfsobject' aangepast.
 |Min card.|1
@@ -274,7 +274,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |----------|------
 |Label|herkomst
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een collectie kan de herkomst worden beschreven.
 |Voorbeeld|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
 |Min card.|1

@@ -29,7 +29,6 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Dataset
 |Class|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Description|A dataset is a description of a collection of data, published or curated by a single agent.
 |Properties en relations|[description](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [label (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [provenance (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publisher](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
@@ -39,16 +38,16 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|description
+|Naam|description
 |Property|[dcterms:description](http://purl.org/dc/terms/description)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The dataset can have a clear description.
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label (dataset)
+|Naam|label (dataset)
 |Property|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset has a label.
 |Min card.|1
 |Max card.|1
@@ -93,7 +92,6 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |inScheme|[Dataset types](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetTypes)
-|Label|Dataset (version)
 |Description|A dataset (general) is a concrete, versioned description of a collection of data, published or curated by a single agent.
 |Properties en relations|[described by](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_describedBy), [distribution (dataset version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_distribution), [geographical demarcation](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_geometricDemarcation), [provenance (dataset version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_provenance), [type dataset = DatasetVersion](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_type), [version (dataset version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_version), [version notes (dataset version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionNotes), [version of](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionOf)
 
@@ -102,16 +100,16 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|version (dataset version)
+|Naam|version (dataset version)
 |Property|[adms:version (product)](http://www.w3.org/ns/adms#version)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (version) can have a version indication.
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|version notes (dataset version)
+|Naam|version notes (dataset version)
 |Property|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (version) can contain release notes.
 
 
@@ -170,7 +168,6 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |inScheme|[Dataset types](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetTypes)
-|Label|dataset (product)
 |Description|A dataset (product) is a concrete, versioned information product based on the data in a dataset (version).
 |Properties en relations|[distribution (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_distribution), [derived from](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_isDerivedFrom), [provenance (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_provenance), [has quality measurement](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_qualityMeasurement), [type dataset = DatasetProduct](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_type), [version (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_version), [version notes (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_versionNotes)
 
@@ -179,17 +176,17 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|version (product)
+|Naam|version (product)
 |Property|[adms:version (product)](http://www.w3.org/ns/adms#version)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (product) can have a version indication.
 |Example|2.1.0
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|version notes (product)
+|Naam|version notes (product)
 |Property|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (product) can contain release notes.
 
 
@@ -239,7 +236,6 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Catalog
 |Class|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Description|A catalog is a curated collection of (federally managed) metadata about datasets (general, version or product), distributions and associated assets.
 |Properties en relations|[contains dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [description (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [landing page](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [license (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [label (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [provenance (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rights (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
@@ -249,16 +245,16 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|description (catalog)
+|Naam|description (catalog)
 |Property|[dcterms:description](http://purl.org/dc/terms/description)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|De catalog can be described.
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label (catalog)
+|Naam|label (catalog)
 |Property|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The catalog can have has a label
 |Example|Catalogus Omgevingswet
 
@@ -313,7 +309,6 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Catalog
 |Class|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Description|A catalog is a curated collection of (federally managed) metadata about datasets (general, version or product), distributions and associated assets.
 |Properties en relations|[contains dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [description (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [landing page](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [license (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [label (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [provenance (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rights (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
@@ -323,16 +318,16 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|description (distribution)
+|Naam|description (distribution)
 |Property|[dcterms:description](http://purl.org/dc/terms/description)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|De distribution can be described.
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
-|Label|label (distribution)
+|Naam|label (distribution)
 |Property|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|De distribution can have a label
 
 
@@ -376,7 +371,6 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Language
 |Role|[http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)
 |Controlled vocabulary|[http://publications.europa.eu/mdr/authority/language/](http://publications.europa.eu/mdr/authority/language/)
 

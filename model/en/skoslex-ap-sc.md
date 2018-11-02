@@ -16,7 +16,6 @@ Events can be described as concepts. They then have the same characteristics as 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Act
 |Class|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Description|The class of Acts. An act is a legal construct representing a set of activities, performed by an Actor and with respect to some Object.
 |Properties en relations|[actor](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_actor), [agent](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_agent), [object](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_object), [refers to](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_refersTo)
@@ -57,7 +56,6 @@ Events can be described as concepts. They then have the same characteristics as 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Object
 |Class|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Description|The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act
 |Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
@@ -67,7 +65,6 @@ Events can be described as concepts. They then have the same characteristics as 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Object
 |Class|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Description|The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act
 |Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
@@ -77,7 +74,6 @@ Events can be described as concepts. They then have the same characteristics as 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Agent
 |Class|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Description|The class of Agent. An agent is some person (individual, group or organisation) involved in some act, without actually performing the act.
 |Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
@@ -87,7 +83,6 @@ Events can be described as concepts. They then have the same characteristics as 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|Norm
 |Class|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Description|The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act.
 |Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label), [affects](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_affects)
@@ -97,8 +92,8 @@ Events can be described as concepts. They then have the same characteristics as 
 
 |Eigenschap|Waarde
 |----------|------
-|datatype|[http://www.w3.org/2001/XMLSchema#string](http://www.w3.org/2001/XMLSchema#string)
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 
 
 ### Relations
