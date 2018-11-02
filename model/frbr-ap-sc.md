@@ -12,10 +12,23 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ![](frbr-ap-sc.png)
 
+## Begrip
+
+### Relaties
+
+|Eigenschap|Waarde
+|----------|------
+|Label|bron op het web
+|Eigenschap|[dcterms:source](http://purl.org/dc/terms/source)
+|Uitleg|Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een beschrijving van een specifiek begrip of een document waarin een beschrijving van het begrip is te vinden.
+|Voorbeeld|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
+
+
 ## Document
 
 |Eigenschap|Waarde
 |----------|------
+|Klasse|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Uitleg|Een document dat vindbaar is op het web.
 |Voorbeeld|[https://wetten.overheid.nl/BWBR0001840/2017-11-17](https://wetten.overheid.nl/BWBR0001840/2017-11-17)
 |Eigenschappen en relaties|[label](http://bp4mc2.org/profiles/frbr-ap-sc#Document_label)
