@@ -268,7 +268,7 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 
 |Eigenschap|Waarde
 |----------|------
-|Role|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme), [adms:Asset](http://www.w3.org/ns/adms#Asset)
+|Role|[adms:Asset](http://www.w3.org/ns/adms#Asset), [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
 |Description|A concept scheme can be identified as an asset.
 |Properties en relations|[type asset = Concept scheme](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme_typeConceptScheme)
 
@@ -294,6 +294,6 @@ Concept schemes, collections and concepts get a uri according to the pattern:
 * `http://{domain}/id/collection/{UpperCamelCase(rdfs:label)}` for collections
 * `http://{domain}/id/concept/{UpperCamelCase(skos:prefLabel)}` for concepts
 
-Het `{skos:prefLabel}` hoort uniek te zijn voor alla concepten in een begrippenkader. Als dit niet het geval is, dan wordt de URI uitgebreid met een `_{context}` postfix.
+The `skos:prefLabel` is in most cases equal to the `rdfs:label` and these should be unique for all concepts in a particular concept scheme. If this is not the case, the URI should be extended with a `_{context}` postfix. In such a case, the `rdfs:label` is also extended with ` ({context})`.
 
 

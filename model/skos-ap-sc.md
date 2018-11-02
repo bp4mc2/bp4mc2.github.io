@@ -297,7 +297,7 @@ Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Datas
 
 |Eigenschap|Waarde
 |----------|------
-|Rol|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme), [adms:Asset](http://www.w3.org/ns/adms#Asset)
+|Rol|[adms:Asset](http://www.w3.org/ns/adms#Asset), [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
 |Eigenschappen en relaties|[type asset = Begrippenkader](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme_typeConceptScheme)
@@ -329,6 +329,6 @@ Bovenstaande gaat er vanuit dat `{domain}` het begrippenkader al uniek identific
 * `http://{domain}/id/concept/{conceptscheme}/{term}` voor concepten
 * `http://{domain}/id/collection/{conceptscheme}/{term}` voor collecties
 
-The `{skos:prefLabel}` should be unique for all concepts in a particular concept scheme. If this is not the case, the URI should be extended with a `_{context}` postfix.
+Het `skos:prefLabel` is in beginsel gelijk aan het `rdfs:label` en deze horen uniek te zijn voor alle concepten in een begrippenkader. Als dit niet het geval is, dan wordt de URI uitgebreid met een `_{context}` postfix. In een dergelijk geval wordt ook het `rdfs:label` uitgebreid met ` ({context})`.
 
 
