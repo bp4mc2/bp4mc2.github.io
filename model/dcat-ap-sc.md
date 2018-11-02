@@ -39,54 +39,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|Naam|beschrijving (catalogus)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een beschrijving hebben.
-|Voorbeeld|De Catalogus voor de Omgevingswet is een centrale ingang tot het stelsel, waarin wetgeving, begrippen, regels, informatiemodellen, datasets, producten en services met elkaar worden verbonden. De catalogus is daarmee een centrale plek waar de verschillende gebruikersgroepen van het stelsel kunnen zien waar het stelsel uit bestaat, wat begrippen betekenen en hoe de verschillende elementen van het stelsel aan elkaar zijn gerelateerd.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (catalogus)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een naam hebben
-|Voorbeeld|Catalogus Omgevingswet
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (product)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0, 2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie notities (product)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan release notes bevatten.
-|Voorbeeld|BRK levering 2.2 is aangepast aan IMKAD 2.1.0, waarmee de volgende nieuwe functionaliteit is toegevoegd ...
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (dataset versie)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie-notities (dataset versie)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan release notes bevatten.
-|Voorbeeld|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
-
-|Eigenschap|Waarde
-|----------|------
 |Naam|beschrijving
 |Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -102,22 +54,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Voorbeeld|de BRK (in algemene zin)
 |Min card.|1
 |Max card.|1
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving (distributie)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een beschrijving hebben.
-|Voorbeeld|Het Kadaster is houder van de Basisregistratie Kadaster (BRK). Onderdeel van de BRK is de Digitale kadastrale kaart. Deze is beschikbaar als open data en nu via dit portaal ook als Linked Open Data (vooralsnog zonder de topografie).
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (distirbutie)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een naam hebben
-|Voorbeeld|Digitale Kadastrale Kaart download service
 
 
 ### Relaties
@@ -170,38 +106,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|Naam|beschrijving (catalogus)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een beschrijving hebben.
-|Voorbeeld|De Catalogus voor de Omgevingswet is een centrale ingang tot het stelsel, waarin wetgeving, begrippen, regels, informatiemodellen, datasets, producten en services met elkaar worden verbonden. De catalogus is daarmee een centrale plek waar de verschillende gebruikersgroepen van het stelsel kunnen zien waar het stelsel uit bestaat, wat begrippen betekenen en hoe de verschillende elementen van het stelsel aan elkaar zijn gerelateerd.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (catalogus)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een naam hebben
-|Voorbeeld|Catalogus Omgevingswet
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (product)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0, 2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie notities (product)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan release notes bevatten.
-|Voorbeeld|BRK levering 2.2 is aangepast aan IMKAD 2.1.0, waarmee de volgende nieuwe functionaliteit is toegevoegd ...
-
-|Eigenschap|Waarde
-|----------|------
 |Naam|versie (dataset versie)
 |Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -215,40 +119,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (versie) kan release notes bevatten.
 |Voorbeeld|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De dataset kan een duidelijke beschrijving hebben.
-|Voorbeeld|Met de Omgevingswet wil de overheid de regels voor ruimtelijke ontwikkeling vereenvoudigen en samenvoegen. Zodat het straks bijvoorbeeld makkelijker is om bouwprojecten te starten. De Crisis- en herstelwet (Chw) maakt dit nu al mogelijk, bijvoorbeeld door bestaande regels aan te passen. Naar verwachting treedt de Omgevingswet in 2019 in werking.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (dataset)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset heeft een naam.
-|Voorbeeld|de BRK (in algemene zin)
-|Min card.|1
-|Max card.|1
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving (distributie)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een beschrijving hebben.
-|Voorbeeld|Het Kadaster is houder van de Basisregistratie Kadaster (BRK). Onderdeel van de BRK is de Digitale kadastrale kaart. Deze is beschikbaar als open data en nu via dit portaal ook als Linked Open Data (vooralsnog zonder de topografie).
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (distirbutie)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een naam hebben
-|Voorbeeld|Digitale Kadastrale Kaart download service
 
 
 ### Relaties
@@ -319,22 +189,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|Naam|beschrijving (catalogus)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een beschrijving hebben.
-|Voorbeeld|De Catalogus voor de Omgevingswet is een centrale ingang tot het stelsel, waarin wetgeving, begrippen, regels, informatiemodellen, datasets, producten en services met elkaar worden verbonden. De catalogus is daarmee een centrale plek waar de verschillende gebruikersgroepen van het stelsel kunnen zien waar het stelsel uit bestaat, wat begrippen betekenen en hoe de verschillende elementen van het stelsel aan elkaar zijn gerelateerd.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (catalogus)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een naam hebben
-|Voorbeeld|Catalogus Omgevingswet
-
-|Eigenschap|Waarde
-|----------|------
 |Naam|versie (product)
 |Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -348,56 +202,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (product) kan release notes bevatten.
 |Voorbeeld|BRK levering 2.2 is aangepast aan IMKAD 2.1.0, waarmee de volgende nieuwe functionaliteit is toegevoegd ...
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (dataset versie)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie-notities (dataset versie)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan release notes bevatten.
-|Voorbeeld|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De dataset kan een duidelijke beschrijving hebben.
-|Voorbeeld|Met de Omgevingswet wil de overheid de regels voor ruimtelijke ontwikkeling vereenvoudigen en samenvoegen. Zodat het straks bijvoorbeeld makkelijker is om bouwprojecten te starten. De Crisis- en herstelwet (Chw) maakt dit nu al mogelijk, bijvoorbeeld door bestaande regels aan te passen. Naar verwachting treedt de Omgevingswet in 2019 in werking.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (dataset)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset heeft een naam.
-|Voorbeeld|de BRK (in algemene zin)
-|Min card.|1
-|Max card.|1
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving (distributie)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een beschrijving hebben.
-|Voorbeeld|Het Kadaster is houder van de Basisregistratie Kadaster (BRK). Onderdeel van de BRK is de Digitale kadastrale kaart. Deze is beschikbaar als open data en nu via dit portaal ook als Linked Open Data (vooralsnog zonder de topografie).
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (distirbutie)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een naam hebben
-|Voorbeeld|Digitale Kadastrale Kaart download service
 
 
 ### Relaties
@@ -474,72 +278,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Uitleg|De catalogus kan een naam hebben
 |Voorbeeld|Catalogus Omgevingswet
 
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (product)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0, 2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie notities (product)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan release notes bevatten.
-|Voorbeeld|BRK levering 2.2 is aangepast aan IMKAD 2.1.0, waarmee de volgende nieuwe functionaliteit is toegevoegd ...
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (dataset versie)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie-notities (dataset versie)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan release notes bevatten.
-|Voorbeeld|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De dataset kan een duidelijke beschrijving hebben.
-|Voorbeeld|Met de Omgevingswet wil de overheid de regels voor ruimtelijke ontwikkeling vereenvoudigen en samenvoegen. Zodat het straks bijvoorbeeld makkelijker is om bouwprojecten te starten. De Crisis- en herstelwet (Chw) maakt dit nu al mogelijk, bijvoorbeeld door bestaande regels aan te passen. Naar verwachting treedt de Omgevingswet in 2019 in werking.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (dataset)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset heeft een naam.
-|Voorbeeld|de BRK (in algemene zin)
-|Min card.|1
-|Max card.|1
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving (distributie)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een beschrijving hebben.
-|Voorbeeld|Het Kadaster is houder van de Basisregistratie Kadaster (BRK). Onderdeel van de BRK is de Digitale kadastrale kaart. Deze is beschikbaar als open data en nu via dit portaal ook als Linked Open Data (vooralsnog zonder de topografie).
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (distirbutie)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De distributie kan een naam hebben
-|Voorbeeld|Digitale Kadastrale Kaart download service
-
 
 ### Relaties
 
@@ -601,72 +339,6 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 
 ### Eigenschappen
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving (catalogus)
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een beschrijving hebben.
-|Voorbeeld|De Catalogus voor de Omgevingswet is een centrale ingang tot het stelsel, waarin wetgeving, begrippen, regels, informatiemodellen, datasets, producten en services met elkaar worden verbonden. De catalogus is daarmee een centrale plek waar de verschillende gebruikersgroepen van het stelsel kunnen zien waar het stelsel uit bestaat, wat begrippen betekenen en hoe de verschillende elementen van het stelsel aan elkaar zijn gerelateerd.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (catalogus)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De catalogus kan een naam hebben
-|Voorbeeld|Catalogus Omgevingswet
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (product)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0, 2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie notities (product)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (product) kan release notes bevatten.
-|Voorbeeld|BRK levering 2.2 is aangepast aan IMKAD 2.1.0, waarmee de volgende nieuwe functionaliteit is toegevoegd ...
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie (dataset versie)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|versie-notities (dataset versie)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset (versie) kan release notes bevatten.
-|Voorbeeld|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|beschrijving
-|Eigenschap|[dcterms:description](http://purl.org/dc/terms/description)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|De dataset kan een duidelijke beschrijving hebben.
-|Voorbeeld|Met de Omgevingswet wil de overheid de regels voor ruimtelijke ontwikkeling vereenvoudigen en samenvoegen. Zodat het straks bijvoorbeeld makkelijker is om bouwprojecten te starten. De Crisis- en herstelwet (Chw) maakt dit nu al mogelijk, bijvoorbeeld door bestaande regels aan te passen. Naar verwachting treedt de Omgevingswet in 2019 in werking.
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|naam (dataset)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een dataset heeft een naam.
-|Voorbeeld|de BRK (in algemene zin)
-|Min card.|1
-|Max card.|1
 
 |Eigenschap|Waarde
 |----------|------

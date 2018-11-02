@@ -32,15 +32,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 |Voorbeeld|Grondwet
 |Min card.|1
 
-|Eigenschap|Waarde
-|----------|------
-|Naam|label
-|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een bibliografische beschrijving heeft een voor mensen leesbare naam.
-|Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
-|Min card.|1
-
 
 ## Bibliografische beschrijving
 
@@ -53,15 +44,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 
 ### Eigenschappen
-
-|Eigenschap|Waarde
-|----------|------
-|Naam|label
-|Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een document heeft een voor mensen leesbaar label.
-|Voorbeeld|Grondwet
-|Min card.|1
 
 |Eigenschap|Waarde
 |----------|------
