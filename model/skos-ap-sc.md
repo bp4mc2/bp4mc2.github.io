@@ -259,16 +259,6 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Voorbeeld|De collectie die alle activiteiten in het BAL beschrijft heeft als label 'BAL'
 |Min card.|1
 
-|Eigenschap|Waarde
-|----------|------
-|class|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
-|Naam|herkomst
-|Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Van een collectie kan de herkomst worden beschreven.
-|Voorbeeld|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
-|Min card.|1
-
 
 ### Relaties
 
@@ -280,11 +270,21 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's
 |Voorbeeld|de collectie 'Zakelijke rechten' bevat het begrip 'Erfpacht'
 
+|Eigenschap|Waarde
+|----------|------
+|Label|herkomst
+|Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
+|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Uitleg|Van een collectie kan de herkomst worden beschreven.
+|Voorbeeld|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
+|Min card.|1
+
 
 ## Begrip (external)
 
 |Eigenschap|Waarde
 |----------|------
+|Rol|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip in een ander begrippenkader waarmee een relatie wordt gelegd.
 |Voorbeeld|Het begrip Nummeraanduiding in de BAG in relatie tot het begrip Postadres in de BRK
 
@@ -297,6 +297,7 @@ Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Datas
 
 |Eigenschap|Waarde
 |----------|------
+|Rol|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme), [adms:Asset](http://www.w3.org/ns/adms#Asset)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
 |Eigenschappen en relaties|[type asset = Begrippenkader](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme_typeConceptScheme)
