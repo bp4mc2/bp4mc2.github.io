@@ -32,7 +32,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Klasse|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Uitleg|Een dataset is een algemene beschrijving van een verzameling data, gepubliceerd of samengesteld door één beheerder.
 |Voorbeeld|De Basisregistratie Kadaster (BRK) bestaat uit de kadastrale registratie van onroerende zaken, zakelijke rechten en de kadastrale kaart.
-|Eigenschappen en relaties|[beschrijving](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [naam (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [herkomst (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publicist](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
+|Eigenschappen en relaties|[beschrijving](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [titel](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [herkomst](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publicist](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
 
 
 ### Eigenschappen
@@ -47,8 +47,8 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|Naam|naam (dataset)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Naam|titel
+|Eigenschap|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset heeft een naam.
 |Voorbeeld|de BRK (in algemene zin)
@@ -68,9 +68,9 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 |Eigenschap|Waarde
 |----------|------
-|Label|herkomst (dataset)
+|Label|herkomst
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een dataset kan de herkomst worden beschreven.
 |Voorbeeld|De BAG is op xx/xx/xx gelanceerd
 |Min card.|1
@@ -107,7 +107,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Naam|versie (dataset versie)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
+|Eigenschap|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (versie) kan een versie aanduiding hebben.
 |Voorbeeld|2.1.0
@@ -115,7 +115,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Naam|versie-notities (dataset versie)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
+|Eigenschap|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (versie) kan release notes bevatten.
 |Voorbeeld|IMKAD 2.1.0 (publicatie 22-11-2011) is de final draft versie van IMKAD 2 zoals die is aangeboden aan belanghebbenden voor beoordeling. Het commentaar is voor zover mogelijk verwerkt in versie 2.1.1. Deze wijzigingen zijn terug te vinden in de change log.
@@ -133,7 +133,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Label|distributie (dataset versie)
-|Eigenschap|[dcat:distribution (datasetversion)](http://www.w3.org/ns/dcat#distribution)
+|Eigenschap|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Verwijst naar|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Uitleg|De kanalen via welke een dataset (versie) kan worden verspreid kunnen worden gespecificeerd.
 |Voorbeeld|Digitale Kadastrale Kaart download service.
@@ -150,7 +150,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |----------|------
 |Label|herkomst (dataset versie)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een dataset (versie) kan de herkomst worden beschreven.
 |Voorbeeld|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
@@ -190,7 +190,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Naam|versie (product)
-|Eigenschap|[adms:version (product)](http://www.w3.org/ns/adms#version)
+|Eigenschap|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (product) kan een versie aanduiding hebben.
 |Voorbeeld|2.1.0, 2.1.0
@@ -198,7 +198,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Naam|versie notities (product)
-|Eigenschap|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
+|Eigenschap|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (product) kan release notes bevatten.
 |Voorbeeld|BRK levering 2.2 is aangepast aan IMKAD 2.1.0, waarmee de volgende nieuwe functionaliteit is toegevoegd ...
@@ -209,7 +209,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Label|distributie (product)
-|Eigenschap|[dcat:distribution (datasetversion)](http://www.w3.org/ns/dcat#distribution)
+|Eigenschap|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Verwijst naar|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Uitleg|De kanalen via welke een dataset (product) kan worden verspreid kunnen worden gespecificeerd.
 |Voorbeeld|De 'BAG extract' download service.
@@ -217,7 +217,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Label|afgeleid van
-|Eigenschap|[dcterms:relation (derived from)](http://purl.org/dc/terms/relation)
+|Eigenschap|[dcterms:relation](http://purl.org/dc/terms/relation)
 |Relatie met|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Uitleg|Een dataset (product) kan zijn afgeleid van een dataset (versie).
 |Voorbeeld|BRK levering 2.2 isafgeleid van IMKAD 2.1.0.
@@ -226,7 +226,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |----------|------
 |Label|herkomst (product)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een informatie product kan de herkomst worden beschreven.
 |Voorbeeld|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
@@ -273,7 +273,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Naam|naam (catalogus)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Eigenschap|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De catalogus kan een naam hebben
 |Voorbeeld|Catalogus Omgevingswet
@@ -307,7 +307,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Label|licentie (catalogus)
-|Eigenschap|[dcterms:license (catalog)](http://purl.org/dc/terms/license)
+|Eigenschap|[dcterms:license](http://purl.org/dc/terms/license)
 |Uitleg|De licentie is van toepassing op de catalogus kan worden gespecificeerd. Dit kan een andere licentie zijn als de licentie voor distributies van datasets.
 |Voorbeeld|Creative Commons Naamsvermelding 4.0 licentie
 
@@ -315,7 +315,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |----------|------
 |Label|herkomst (catalogus)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een catalogus kan de herkomst worden beschreven.
 |Voorbeeld|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
@@ -323,7 +323,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Label|rechten (catalogus)
-|Eigenschap|[dcterms:rights (distribution)](http://purl.org/dc/terms/rights)
+|Eigenschap|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Uitleg|De rechten die van toepassing zijn op de catalogus kunnen worden beschreven. Dit kunnen andere rechten zijn als die voor distributies van datasets
 |Voorbeeld|Proclaimer: De Catalogus voor de Omgevingswet verbindt definities, toelichtingen en uitleg van begrippen, regels, informatiemodellen, producten en services met elkaar. De datasets waarin deze worden beschreven worden federatief beheerd door de betreffende bronhouders. Bij iedere dataset wordt aangegeven wie de bronhouder is en daarmee verantwoordelijk is voor de inhoud.
 
@@ -351,7 +351,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Naam|naam (distirbutie)
-|Eigenschap|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Eigenschap|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De distributie kan een naam hebben
 |Voorbeeld|Digitale Kadastrale Kaart download service
@@ -376,7 +376,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Label|licentie (distributie)
-|Eigenschap|[dcterms:license (catalog)](http://purl.org/dc/terms/license)
+|Eigenschap|[dcterms:license](http://purl.org/dc/terms/license)
 |Uitleg|De licentie is van toepassing op de distributie kan worden gespecificeerd. Dit kan een andere licentie zijn als de licentie voor de catalogus.
 |Voorbeeld|Creative Commons Naamsvermelding 4.0 licentie
 
@@ -384,7 +384,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |----------|------
 |Label|herkomst (distributie)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een distirbutie kan de herkomst worden beschreven.
 |Voorbeeld|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
@@ -392,7 +392,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Eigenschap|Waarde
 |----------|------
 |Label|rechten (distributie)
-|Eigenschap|[dcterms:rights (distribution)](http://purl.org/dc/terms/rights)
+|Eigenschap|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Uitleg|De rechten die van toepassing zijn op de distributie kunnen worden beschreven. Dit kunnen andere rechten zijn als die voor distributies van de catalogus. Zie ook: svbg:gebruiksvoorwaarden en iso:confidentiality., De rechten met betrekking tot de distributie zijn beschreven. See also svbg:gebruiksvoorwaarden en iso:confidentiality.
 |Voorbeeld|Wilt u direct aan  de slag met BRK Levering? Raadpleeg dan de reference card bij 'Documenten'. Daarin vindt u de stappen die u moet zetten om met BRK Levering te kunnen starten. Eerste of éénmalige levering tot 100.000 objecten, per object €1,16;tot 1.000.000 objecten, per object €0,98;bij meer dan 1.000.000 objecten, per object €0,73;Gebiedsuitbreiding van een bestaand abonnement, per object €1,16;Abonnementslevering, per jaar en per 1.000 objecten binnen abonnement €208,00;Extra (losse) levering van een bestand, per verstrekking €192,00;Tweede mutatie-abonnement, per jaar €192,00;Deze bedragen zijn vrij van btw;Dit product valt onder de budgetfinanciering BRK.
 

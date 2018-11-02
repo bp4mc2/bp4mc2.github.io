@@ -31,7 +31,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |----------|------
 |Class|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Description|A dataset is a description of a collection of data, published or curated by a single agent.
-|Properties en relations|[description](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [label (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [provenance (dataset)](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publisher](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
+|Properties en relations|[description](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [title](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [provenance](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publisher](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
 
 
 ### Properties
@@ -45,8 +45,8 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|Naam|label (dataset)
-|Property|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Naam|title
+|Property|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset has a label.
 |Min card.|1
@@ -64,9 +64,9 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 |Eigenschap|Waarde
 |----------|------
-|Label|provenance (dataset)
+|Label|provenance
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a dataset can be described.
 |Example|De BAG is op xx/xx/xx gelanceerd
 |Min card.|1
@@ -101,14 +101,14 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Naam|version (dataset version)
-|Property|[adms:version (product)](http://www.w3.org/ns/adms#version)
+|Property|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (version) can have a version indication.
 
 |Eigenschap|Waarde
 |----------|------
 |Naam|version notes (dataset version)
-|Property|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
+|Property|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (version) can contain release notes.
 
@@ -125,7 +125,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Label|distribution (dataset version)
-|Property|[dcat:distribution (datasetversion)](http://www.w3.org/ns/dcat#distribution)
+|Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Refers to|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Description|The channels through which a dataset (version) can be distributed can be recorded.
 
@@ -140,7 +140,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |----------|------
 |Label|provenance (dataset version)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a dataset (version) can be described.
 |Example|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
@@ -177,7 +177,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Naam|version (product)
-|Property|[adms:version (product)](http://www.w3.org/ns/adms#version)
+|Property|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (product) can have a version indication.
 |Example|2.1.0
@@ -185,7 +185,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Naam|version notes (product)
-|Property|[adms:versionNotes (dataset version)](http://www.w3.org/ns/adms#versionNotes)
+|Property|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (product) can contain release notes.
 
@@ -195,14 +195,14 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Label|distribution (product)
-|Property|[dcat:distribution (datasetversion)](http://www.w3.org/ns/dcat#distribution)
+|Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Refers to|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Description|The channels through which a dataset (product) can be distributed can be recorded.
 
 |Eigenschap|Waarde
 |----------|------
 |Label|derived from
-|Property|[dcterms:relation (derived from)](http://purl.org/dc/terms/relation)
+|Property|[dcterms:relation](http://purl.org/dc/terms/relation)
 |Related with|[Dataset (version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Description|A dataset (product) can be derived from a dataset (version).
 
@@ -210,7 +210,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |----------|------
 |Label|provenance (product)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of an information product can be described.
 |Example|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
@@ -253,7 +253,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Naam|label (catalog)
-|Property|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Property|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The catalog can have has a label
 |Example|Catalogus Omgevingswet
@@ -285,7 +285,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Label|license (catalog)
-|Property|[dcterms:license (catalog)](http://purl.org/dc/terms/license)
+|Property|[dcterms:license](http://purl.org/dc/terms/license)
 |Description|The license applied to the catalog can be specified. This can be another license as the license for distributions of datasets.
 |Example|Creative Commons Naamsvermelding 4.0 licentie
 
@@ -293,7 +293,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |----------|------
 |Label|provenance (catalog)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a catalog can be described.
 |Example|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
@@ -301,7 +301,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Label|rights (catalog)
-|Property|[dcterms:rights (distribution)](http://purl.org/dc/terms/rights)
+|Property|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Description|The rights applied to the catalog can be specified. This can be nother rights as the rights for distributions of datasets.
 
 
@@ -326,7 +326,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Naam|label (distribution)
-|Property|[dcterms:title (catalog)](http://purl.org/dc/terms/title)
+|Property|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|De distribution can have a label
 
@@ -348,14 +348,14 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Label|license (distribution)
-|Property|[dcterms:license (catalog)](http://purl.org/dc/terms/license)
+|Property|[dcterms:license](http://purl.org/dc/terms/license)
 |Description|The license applied to the distribution can be specified. This can be another license as the license for the catalog.
 
 |Eigenschap|Waarde
 |----------|------
 |Label|provenance (distribution)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a distribution can be described.
 |Example|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
@@ -363,7 +363,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |Eigenschap|Waarde
 |----------|------
 |Label|rights (distribution)
-|Property|[dcterms:rights (distribution)](http://purl.org/dc/terms/rights)
+|Property|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Description|The rights applied to the distribution can be specified. This can be nother rights as the rights for the catalog.
 
 
