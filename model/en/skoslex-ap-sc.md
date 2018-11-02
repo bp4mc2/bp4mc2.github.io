@@ -58,7 +58,6 @@ Events can be described as concepts. They then have the same characteristics as 
 |----------|------
 |Class|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Description|The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act
-|Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
 ## Actor
@@ -67,7 +66,6 @@ Events can be described as concepts. They then have the same characteristics as 
 |----------|------
 |Class|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Description|The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act
-|Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
 ## Agent
@@ -76,7 +74,6 @@ Events can be described as concepts. They then have the same characteristics as 
 |----------|------
 |Class|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Description|The class of Agent. An agent is some person (individual, group or organisation) involved in some act, without actually performing the act.
-|Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
 ## Norm
@@ -85,13 +82,14 @@ Events can be described as concepts. They then have the same characteristics as 
 |----------|------
 |Class|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Description|The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act.
-|Properties en relations|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label), [affects](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_affects)
+|Properties en relations|[affects](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_affects), [Label](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label)
 
 
 ### Properties
 
 |Eigenschap|Waarde
 |----------|------
+|Naam|Label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 

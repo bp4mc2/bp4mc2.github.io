@@ -297,7 +297,7 @@ Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Datas
 
 |Eigenschap|Waarde
 |----------|------
-|Rol|[adms:Asset](http://www.w3.org/ns/adms#Asset), [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
+|Rol|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme), [adms:Asset](http://www.w3.org/ns/adms#Asset)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
 |Eigenschappen en relaties|[type asset = Begrippenkader](http://bp4mc2.org/profiles/skos-ap-sc#AssetConceptScheme_typeConceptScheme)

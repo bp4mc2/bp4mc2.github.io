@@ -64,7 +64,6 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |Klasse|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Uitleg|De klasse van objecten. Een object is een ding (niet een actor) dat ontstaat, wijzigt of gebruikt wordt gedurende een handeling
 |Voorbeeld|Het onroerend goed DPV00 B 1207.
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
 ## Actor
@@ -74,7 +73,6 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |Klasse|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Uitleg|De klasse van objecten. Een object is een ding (niet een actor) dat ontstaat, wijzigt of gebruikt wordt gedurende een handeling
 |Voorbeeld|Het onroerend goed DPV00 B 1207.
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
 ## Agent
@@ -84,7 +82,6 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |Klasse|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Uitleg|De klasse van agenten. Een agent is een persoon (individu, groep of organisatie) die bij een handeling betrokken is, zonder de handeling feitelijk uit te voeren.
 |Voorbeeld|Notaris Pietersen.
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalLabel)
 
 
 ## Norm
@@ -94,13 +91,14 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |Klasse|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Uitleg|The klasse van normen. Een norm heeft effect op een handeling. De norm stelt wat 'zou moeten' of juist 'niet zo moeten' met betrekking tot de handeling. Een norm representeert de regels die gelden voor de handeling.
 |Voorbeeld|De verkoper van een onroerend goed moet bij de verkoop ervan kunnen aantonen dat hij eigenaar is.
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label), [normeert](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_affects)
+|Eigenschappen en relaties|[normeert](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_affects), [Label](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label)
 
 
 ### Eigenschappen
 
 |Eigenschap|Waarde
 |----------|------
+|Naam|Label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 
