@@ -15,7 +15,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ## Begrippenkader
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Klasse|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
 |Uitleg|De kennis over de fysieke werkelijkheid wordt beschreven in een talig model, een begrippenmodel.  In een begrippenmodel wordt deze kennis zodanig gestructureerd vastgelegd dat deze door zowel mensen als door computers wordt begrepen.
@@ -25,19 +25,19 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ### Eigenschappen
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan. 
+|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan.
 |Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
 |Min card.|1
 
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|top concept
 |Eigenschap|[skos:hasTopConcept](http://www.w3.org/2004/02/skos/core#hasTopConcept)
@@ -48,7 +48,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ## Begrip
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Klasse|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip is een idee of notitie, een eenheid van denken, een onderwerp van gesprek.
@@ -58,7 +58,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ### Eigenschappen
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|uitleg
 |Eigenschap|[rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment)
@@ -67,7 +67,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Voorbeeld|Een perceel is een stuk grond waarvan het Kadaster de grenzen heeft gemeten en dat bij het Kadaster een eigen nummer heeft.
 |Min card.|1
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|geschreven bron
 |Eigenschap|[dc:source](http://purl.org/dc/elements/1.1/source)
@@ -75,7 +75,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip is ontleend aan een geschreven bron.
 |Voorbeeld|Europees verdrag voor de rechten van de mens
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|definitie
 |Eigenschap|[skos:definition](http://www.w3.org/2004/02/skos/core#definition)
@@ -84,7 +84,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Voorbeeld|Een perceel is een begrensd deel van het Nederlands grondgebied dat kadastraal geïdentificeerd is en met kadastrale grenzen begrensd is.
 |Min card.|1
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|redactionele opmerking
 |Eigenschap|[skos:editorialNote](http://www.w3.org/2004/02/skos/core#editorialNote)
@@ -92,7 +92,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan een redactionele opmerking hebben.
 |Voorbeeld|Dit begrip wordt nog gewijzigd bij het invoeringsbesluit.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
@@ -101,7 +101,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Voorbeeld|"Kadastraal perceel"@nl / "Cadastral parcel"@en
 |Min card.|1
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|voorkeursterm
 |Eigenschap|[skos:prefLabel](http://www.w3.org/2004/02/skos/core#prefLabel)
@@ -111,7 +111,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|toelichting
 |Eigenschap|[skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)
@@ -119,7 +119,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan nader worden toegelicht.
 |Voorbeeld|Een perceel is een (2D) vlakvormig ruimtelijk object dat "opdelend" van structuur is. Dit betekent dat Nederland altijd naadloos en volledig is bedekt met perceelsvlakken, die elkaar niet mogen overlappen.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|alternatieve aanduiding
 |Eigenschap|[skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)
@@ -130,7 +130,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|lijkt op breder
 |Eigenschap|[skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)
@@ -138,7 +138,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan een specialisatie zijn van een begrip in een ander domein.
 |Voorbeeld|Een Appartementsrecht in de BRK is een specialisatie van een Verblijfsobject in de BAG.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|vergelijkbaar met
 |Eigenschap|[skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch)
@@ -146,15 +146,15 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan bijna hetzelfde betekenen als een begrip in een ander domein.
 |Voorbeeld|Een OnroerendGoed in de BRK is ongeveer hetzelfde als een WOZobject in de WOZ.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|bestaat uit
 |Eigenschap|[skosthes:narrowerPartitive](http://purl.org/iso25964/skos-thes#narrowerPartitive)
 |Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip kan kan gaan over een aantal onderdelen.
-|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ... 
+|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ...
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|bron op het web
 |Eigenschap|[dcterms:source](http://purl.org/dc/terms/source)
@@ -162,7 +162,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een beschrijving van een specifiek begrip of een document waarin een beschrijving van het begrip is te vinden.
 |Voorbeeld|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|domein
 |Eigenschap|[skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)
@@ -172,7 +172,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|exact gelijk aan
 |Eigenschap|[skos:exactMatch](http://www.w3.org/2004/02/skos/core#exactMatch)
@@ -180,7 +180,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan precies hetzelfde betekenen als een begrip in een ander domein.
 |Voorbeeld|Een Perceel in het BAL betekent hetzelfde als een Perceel in de BRK.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|generalisatie van
 |Eigenschap|[skosthes:narrowerGeneric](http://purl.org/iso25964/skos-thes#narrowerGeneric)
@@ -188,7 +188,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan een generalisatie zijn van een begrip met een engere of nauwere betekenis.
 |Voorbeeld|Een KadastraalObject is een OnroerendGoed of een Registergoed.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|gerelateerd aan
 |Eigenschap|[skos:semanticRelation](http://www.w3.org/2004/02/skos/core#semanticRelation)
@@ -196,7 +196,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan gerelateerd zijn aan een ander begrip.
 |Voorbeeld|Een perceel is gerelateerd aan KadastraleGrens.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|lijkt op smaller
 |Eigenschap|[skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch)
@@ -204,7 +204,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan een generalisatie zijn van een begrip in een ander domein.
 |Voorbeeld|Een Postadres is een generalisatie van een Nummeraanduiding en een Postbus.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|onderdeel van
 |Eigenschap|[skosthes:broaderPartitive](http://purl.org/iso25964/skos-thes#broaderPartitive)
@@ -212,7 +212,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan gaan over een deel van een breder begrip.
 |Voorbeeld|Een motor is onderdeel van een schip.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|herkomst
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
@@ -221,7 +221,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Voorbeeld|Op basis van de nieuwe wet op de BAG is de definitie van het begrip 'verblijfsobject' aangepast.
 |Min card.|1
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|gerelateerd aan
 |Eigenschap|[skos:relatedMatch](http://www.w3.org/2004/02/skos/core#relatedMatch)
@@ -229,7 +229,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een begrip kan zijn gerelateerd aan een begrip in een ander domein.
 |Voorbeeld|Een Perceel in de BRK is gerelateerd aan een adres (Nummeraanduiding) in de BAG.
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|specialisatie van
 |Eigenschap|[skosthes:broaderGeneric](http://purl.org/iso25964/skos-thes#broaderGeneric)
@@ -240,7 +240,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ## Collectie
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Klasse|[skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)
 |Uitleg|Een groep samenhangende begrippen kan worden gebundeld in een collectie.
@@ -250,7 +250,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ### Eigenschappen
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
@@ -262,7 +262,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|heeft lid
 |Eigenschap|[skos:member](http://www.w3.org/2004/02/skos/core#member)
@@ -270,7 +270,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Uitleg|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's
 |Voorbeeld|de collectie 'Zakelijke rechten' bevat het begrip 'Erfpacht'
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|herkomst
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
@@ -282,7 +282,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ## Begrip (external)
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Rol|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip in een ander begrippenkader waarmee een relatie wordt gelegd.
@@ -295,7 +295,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Dataset met als inhoud alle eigenschappen van de begrippen en collecties binnen dit begrippenkader.
 
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Rol|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme), [adms:Asset](http://www.w3.org/ns/adms#Asset)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
@@ -305,7 +305,7 @@ Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Datas
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!complex data!Eigenschap|Waarde
 |----------|------
 |Label|type asset = Begrippenkader
 |Eigenschap|[dcterms:type](http://purl.org/dc/terms/type)
@@ -330,5 +330,3 @@ Bovenstaande gaat er vanuit dat `{domain}` het begrippenkader al uniek identific
 * `http://{domain}/id/collection/{conceptscheme}/{term}` voor collecties
 
 Het `skos:prefLabel` is in beginsel gelijk aan het `rdfs:label` en deze horen uniek te zijn voor alle concepten in een begrippenkader. Als dit niet het geval is, dan wordt de URI uitgebreid met een `_{context}` postfix. In een dergelijk geval wordt ook het `rdfs:label` uitgebreid met ` ({context})`.
-
-
