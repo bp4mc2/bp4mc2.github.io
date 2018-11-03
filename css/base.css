@@ -882,6 +882,14 @@
 		text-align: center;
 	}
 
+	table.form.data th,
+	table.form.data td {
+		border: 1px solid silver;
+	}
+	table.form.data th:first-child {
+		width: 150px;
+	}
+
 	table.data.longlastcol td:last-child,
 	table.data td.long {
 	 vertical-align: baseline;
