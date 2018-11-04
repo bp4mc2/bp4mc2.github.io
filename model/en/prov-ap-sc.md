@@ -42,7 +42,7 @@ The provenance has two aspects:
 |!form data!Eigenschap|date issued
 |----------|------
 |Used term|[dcterms:issued](http://purl.org/dc/terms/issued)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
 |Description|A version can be issued from a certain moment in time.
 |Max card.|1
 
@@ -51,7 +51,6 @@ The provenance has two aspects:
 
 |!form data!Eigenschap|temporal validity
 |----------|------
-|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
 |Used term|[dcterms:temporal](http://purl.org/dc/terms/temporal)
 |Refers to|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
 |Description|A version can be formally / legally valid for a period.
@@ -97,7 +96,7 @@ The provenance has two aspects:
 |!form data!Eigenschap|end
 |----------|------
 |Used term|[dcmiperiod:end](http://dublincore.org/documents/2006/04/10/dcmi-period/end)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
 |Description|A period of time ends at a certain date. This date can be unknown (empty).
 |Example|01/08/2018
 |Max card.|1
@@ -105,7 +104,7 @@ The provenance has two aspects:
 |!form data!Eigenschap|start
 |----------|------
 |Used term|[dcmiperiod:start](http://dublincore.org/documents/2006/04/10/dcmi-period/start)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
 |Description|A period of time starts at a certain date. This date can be unknown (empty).
 |Example|22/10/2017
 |Max card.|1
@@ -133,8 +132,14 @@ The provenance has two aspects:
 |!form data!Eigenschap|change note
 |----------|------
 |Used term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dataTime](http://www.w3.org/2001/XMLSchema#dataTime)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The reason for a set of related changes can be explained.
+
+|!form data!Eigenschap|registration moment
+|----------|------
+|Used term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
+|Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
+|Description|The date and time of the administrative operation can be saved. This way you can always retrieve what information was known at what time.
 
 
 ### Relations
@@ -144,11 +149,6 @@ The provenance has two aspects:
 |Used term|[prov:wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo)
 |Refers to|[prov:Agent](http://www.w3.org/ns/prov#Agent)
 |Description|The person or organization that made or let make the change can be recorded.
-
-|!form data!Eigenschap|registration moment
-|----------|------
-|Used term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
-|Description|The date and time of the administrative operation can be saved. This way you can always retrieve what information was known at what time.
 
 
 ## Agent (provenance)

@@ -87,7 +87,6 @@ Data quality
 
 |!form data!Eigenschap|property
 |----------|------
-|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
 |Used term|[sh:property](http://www.w3.org/ns/shacl#property)
 |Related with|[Policy specification](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicySpec)
 |Description|The rule that belongs to the quality policy

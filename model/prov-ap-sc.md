@@ -44,7 +44,7 @@ De provenance kent 2 aspecten:
 |!form data!Eigenschap|datum bekendgemaakt
 |----------|------
 |Gebruikte term|[dcterms:issued](http://purl.org/dc/terms/issued)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
 |Uitleg|Een versie kan bekend worden gemaakt vanaf een bepaald moment.
 |Voorbeeld|21/10/2017 20:21
 |Max card.|1
@@ -54,7 +54,6 @@ De provenance kent 2 aspecten:
 
 |!form data!Eigenschap|geldig in tijd
 |----------|------
-|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
 |Gebruikte term|[dcterms:temporal](http://purl.org/dc/terms/temporal)
 |Verwijst naar|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
 |Uitleg|Een versie kan formeel/juridisch geldig zijn gedurende een periode.
@@ -103,7 +102,7 @@ De provenance kent 2 aspecten:
 |!form data!Eigenschap|einde
 |----------|------
 |Gebruikte term|[dcmiperiod:end](http://dublincore.org/documents/2006/04/10/dcmi-period/end)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
 |Uitleg|Een periode eindigt op een bepaalde dataum. Deze datum kan onbekend (leeg) zijn.
 |Voorbeeld|01/08/2018
 |Max card.|1
@@ -111,7 +110,7 @@ De provenance kent 2 aspecten:
 |!form data!Eigenschap|start
 |----------|------
 |Gebruikte term|[dcmiperiod:start](http://dublincore.org/documents/2006/04/10/dcmi-period/start)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
 |Uitleg|Een periode start op een bepaalde datum. Deze datum kan onbekend (leeg) zijn.
 |Voorbeeld|22/10/2017
 |Max card.|1
@@ -141,9 +140,16 @@ De provenance kent 2 aspecten:
 |!form data!Eigenschap|wijzigingsnotitie
 |----------|------
 |Gebruikte term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
-|Datatype|[http://www.w3.org/2001/XMLSchema#dataTime](http://www.w3.org/2001/XMLSchema#dataTime)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De reden van een set samenhangende wijzigingen kan worden toegelicht.
 |Voorbeeld|Alle definities zijn aangepast overeenkomstig de nieuwe wet op de BAG.
+
+|!form data!Eigenschap|registratiemoment
+|----------|------
+|Gebruikte term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
+|Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
+|Uitleg|De datum en tijd van de administratieve handeling kan worden bewaard. Daardoor is altijd terug te halen wat op welk tijdstip aan informatie bekend was.
+|Voorbeeld|21/10/2017 20:21
 
 
 ### Relaties
@@ -154,12 +160,6 @@ De provenance kent 2 aspecten:
 |Verwijst naar|[prov:Agent](http://www.w3.org/ns/prov#Agent)
 |Uitleg|De persoon of organisatie die de wijziging heeft (laten) doorvoeren kan worden vastgelegd
 |Voorbeeld|Het Kadaster
-
-|!form data!Eigenschap|registratiemoment
-|----------|------
-|Gebruikte term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
-|Uitleg|De datum en tijd van de administratieve handeling kan worden bewaard. Daardoor is altijd terug te halen wat op welk tijdstip aan informatie bekend was.
-|Voorbeeld|21/10/2017 20:21
 
 
 ## Agent (provenance)

@@ -50,7 +50,6 @@ For class instances, any additional attributes of that class required for use ou
 
 |!form data!Eigenschap|Waarde
 |----------|------
-|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
 |Used term|[sh:property](http://www.w3.org/ns/shacl#property)
 |Related with|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec)
 |Min card.|1

@@ -87,7 +87,6 @@ Datakwaliteit
 
 |!form data!Eigenschap|eigenschap
 |----------|------
-|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
 |Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
 |Relatie met|[Specificatie van de eis](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicySpec)
 |Uitleg|De regel behorende bij de kwaliteitseis

@@ -56,7 +56,6 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 |!form data!Eigenschap|Waarde
 |----------|------
-|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
 |Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
 |Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec)
 |Min card.|1
