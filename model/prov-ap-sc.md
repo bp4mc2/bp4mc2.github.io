@@ -24,17 +24,76 @@ De provenance kent 2 aspecten:
 
 ## Metadata
 
+|!form data!Klasse|Metadata
+|----------|------
+|Gebruikte term|[prov:Entity](http://www.w3.org/ns/prov#Entity)
+|Uitleg|Metadata van een versie van een entiteit kan worden beschreven.
+|Voorbeeld|De juridische geldigheid en/of de adnimistratieve housekeeping (provenance) gegevens van een entiteit
+|Eigenschappen en relaties|[wijzingsnotitie (metadata)](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [bekendgemaakt](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [geldig in tijd](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [geldig in gebied](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
+
 
 ### Eigenschappen
 
 
 ### Relaties
 
+|!form data!Eigenschap|wijzingsnotitie (metadata)
+|----------|------
+|Gebruikte term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
+|Uitleg|De reden van een versie en andere aandachtspunten bij een versie kunnen worden toegelicht.
+|Voorbeeld|De toelichting is uitgebreid vanwege een onduidelijkheid.
+
+|!form data!Eigenschap|bekendgemaakt
+|----------|------
+|Gebruikte term|[dcterms:issued](http://purl.org/dc/terms/issued)
+|Uitleg|Een versie kan bekend worden gemaakt vanaf een bepaald moment.
+|Voorbeeld|21/10/2017 20:21
+|Max card.|1
+
+|!form data!Eigenschap|geldig in tijd
+|----------|------
+|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
+|Gebruikte term|[dcterms:temporal](http://purl.org/dc/terms/temporal)
+|Verwijst naar|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
+|Uitleg|Een versie kan formeel/juridisch geldig zijn gedurende een periode.
+|Voorbeeld|22/10/2017 - 
+|Max card.|1
+
+|!form data!Eigenschap|geldig in gebied
+|----------|------
+|Gebruikte term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
+|Verwijst naar|[dcterms:Location](http://purl.org/dc/terms/Location)
+|Uitleg|Een versie kan formeel/juridisch geldig zijn in een geografisch gebied.
+|Voorbeeld|gemeente Apeldoorn
+|Max card.|1
+
+|!form data!Eigenschap|status
+|----------|------
+|Gebruikte term|[adms:status](http://www.w3.org/ns/adms#status)
+|Relatie met|[Status waardelijst](http://bp4mc2.org/profiles/prov-ap-sc#Status)
+|Uitleg|Een versie heeft een administratieve status op basis van de ADMS waardenlijst.
+|Voorbeeld|Completed
+|Min card.|1
+|Max card.|1
+
 
 ## Adms status
 
+|!form data!Klasse|Status waardelijst
+|----------|------
+|Uitleg|Een versie kan een administratieve status hebben die wordt ontleend aan de ADMS waardenlijst.
+|Voorbeeld|Completed
+|Waardelijst|[http://purl.org/adms/status/1.0](http://purl.org/adms/status/1.0)
+
 
 ## Metadata
+
+|!form data!Klasse|Tijdsperiode
+|----------|------
+|Gebruikte term|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
+|Uitleg|Een periode kan worden aangeduid met een startdatum en einddatum. 
+|Voorbeeld|22/10/2017 - 01/08/2018
+|Eigenschappen en relaties|[einde](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_end), [start](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_start)
 
 
 ### Tijdsperiode
@@ -42,8 +101,21 @@ De provenance kent 2 aspecten:
 
 ## Geografisch gebied
 
+|!form data!Klasse|Geografisch gebied
+|----------|------
+|Gebruikte term|[dcterms:Location](http://purl.org/dc/terms/Location)
+|Uitleg|De beschrijving van het geografisch gebied waarin een versie geldig is
+|Voorbeeld|de gemeente Apeldoorn
+
 
 ## Provenance graaf
+
+|!form data!Klasse|Provenance graaf
+|----------|------
+|Gebruikte term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
+|Uitleg|De provenance graaf omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dat wil zeggen: een sd:Graph
+|Voorbeeld|Alle wijzigingen en nieuwe data die op 8 augustus 2018 in een keer zijn geladen.
+|Eigenschappen en relaties|[doorgevoerd door](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [wijzigingsnotitie (provenance graaf)](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registratiemoment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
 
 
 ### Eigenschappen
@@ -54,6 +126,13 @@ De provenance kent 2 aspecten:
 
 ## Agent (provenance)
 
+|!form data!Klasse|Agent (provenance)
+|----------|------
+|Gebruikte term|[prov:Agent](http://www.w3.org/ns/prov#Agent)
+|Uitleg| De persoon of organisatie die verantwoordelijk is voor een activiteit, de creatie van een entity of een activiteit van een ander kan worden vastgelegd.
+|Voorbeeld|Het Ministerie van BZK
+|Eigenschappen en relaties|[uitgevoerd namens](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceAgent_OnBehalfOf)
+
 
 ### Eigenschappen
 
@@ -63,20 +142,57 @@ De provenance kent 2 aspecten:
 
 ## Persoon (provenance)
 
+|!form data!Klasse|Persoon (provenance)
+|----------|------
+|Gebruikte term|[prov:Person](http://www.w3.org/ns/prov#Person)
+|Uitleg|Een agent (provenance) kan een mens zijn.
+|Voorbeeld|Jan Jansen
+
 
 ## Software agent
+
+|!form data!Klasse|Software agent
+|----------|------
+|Gebruikte term|[prov:SoftwareAgent](http://www.w3.org/ns/prov#SoftwareAgent)
+|Uitleg|Een agent (provenance) kan een geautomatiseerde routine zijn.
+|Voorbeeld|Scheduled routine x
 
 
 ## Organisatie (provenance)
 
+|!form data!Klasse|Organisatie (provenance)
+|----------|------
+|Gebruikte term|[prov:Organization](http://www.w3.org/ns/prov#Organization)
+|Uitleg|Een agent (provenance) kan een organisatie zijn.
+|Voorbeeld|Rijkswaterstaat
+
 
 ## Agent (foaf)
+
+|!form data!Klasse|Agent (foaf)
+|----------|------
+|Gebruikte term|[foaf:Agent](http://xmlns.com/foaf/0.1/Agent)
+|Uitleg| De persoon of organisatie die verantwoordelijk is voor een dataset.
+|Voorbeeld|Het Ministerie van BZK
 
 
 ## Organisatie (foaf)
 
+|!form data!Klasse|Organisatie (foaf)
+|----------|------
+|Gebruikte term|[foaf:Organization](http://xmlns.com/foaf/0.1/Organization)
+|Uitleg| De organisatie die verantwoordelijk is voor een dataset.
+|Voorbeeld|Het Ministerie van BZK
+
 
 ## Organisatie (org)
+
+|!form data!Klasse|Organisatie (org)
+|----------|------
+|Gebruikte term|[org:Organization](http://www.w3.org/ns/org#Organization)
+|Uitleg|De organisatie zoals opgenomen in de formele lijst met OIN nummers.
+|Voorbeeld|345879873452
+|Eigenschappen en relaties|[heeft OIN](http://bp4mc2.org/profiles/prov-ap-sc#OrgOrganization_oin)
 
 
 ## Uri strategie

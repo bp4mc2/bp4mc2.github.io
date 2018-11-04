@@ -24,17 +24,70 @@ The provenance has two aspects:
 
 ## Metadata
 
+|!form data!Klasse|Waarde
+|----------|------
+|Used term|[prov:Entity](http://www.w3.org/ns/prov#Entity)
+|Description|Metadata of a version of an entity can be described.
+|Properties en relations|[change note (metadata)](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [issued](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [temporal validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [spatial validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
+
 
 ### Properties
 
 
 ### Relations
 
+|!form data!Eigenschap|change note (metadata)
+|----------|------
+|Used term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
+|Description|The reason for a version and other points of attention in a version can be explained.
+
+|!form data!Eigenschap|issued
+|----------|------
+|Used term|[dcterms:issued](http://purl.org/dc/terms/issued)
+|Description|A version can be issued from a certain moment in time.
+|Max card.|1
+
+|!form data!Eigenschap|temporal validity
+|----------|------
+|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
+|Used term|[dcterms:temporal](http://purl.org/dc/terms/temporal)
+|Refers to|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
+|Description|A version can be formally / legally valid for a period.
+|Example|22/10/2017 - 
+|Max card.|1
+
+|!form data!Eigenschap|spatial validity
+|----------|------
+|Used term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
+|Refers to|[dcterms:Location](http://purl.org/dc/terms/Location)
+|Description|A version can be formally / legally valid in an geographical area.
+|Example|gemeente Apeldoorn
+|Max card.|1
+
+|!form data!Eigenschap|status
+|----------|------
+|Used term|[adms:status](http://www.w3.org/ns/adms#status)
+|Related with|[Controlled vocabulary status](http://bp4mc2.org/profiles/prov-ap-sc#Status)
+|Description|A version has an administrative status based on the ADMS list of values.
+|Min card.|1
+|Max card.|1
+
 
 ## Adms status
 
+|!form data!Klasse|Controlled vocabulary status
+|----------|------
+|Description|A version can hav an administrative status that is based on the ADMS controlled vocabulary.
+|Controlled vocabulary|[http://purl.org/adms/status/1.0](http://purl.org/adms/status/1.0)
+
 
 ## Metadata
+
+|!form data!Klasse|Time period
+|----------|------
+|Used term|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
+|Description|A period of time is pointed out by a start date and end date.
+|Properties en relations|[end](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_end), [start](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_start)
 
 
 ### Time period
@@ -42,8 +95,19 @@ The provenance has two aspects:
 
 ## Geographical area
 
+|!form data!Klasse|Geographical area
+|----------|------
+|Used term|[dcterms:Location](http://purl.org/dc/terms/Location)
+|Description|The description of the geographical area in which a version is valid.
+
 
 ## Provenance graph
+
+|!form data!Klasse|Provenance graph
+|----------|------
+|Used term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
+|Description|The provenance graph contains both the concrete data (represented by a prov:Entity), and the metadata of the prov:Entity, that is: an sd:Graph
+|Properties en relations|[attributed to](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [change note (provenance graph)](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registration moment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
 
 
 ### Properties
@@ -54,6 +118,12 @@ The provenance has two aspects:
 
 ## Agent (provenance)
 
+|!form data!Klasse|Agent (provenance)
+|----------|------
+|Used term|[prov:Agent](http://www.w3.org/ns/prov#Agent)
+|Description|The person or organization that is responsible for an activity, the creation of a entity or an activity of another can be recorded.
+|Properties en relations|[acted on behalf of](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceAgent_OnBehalfOf)
+
 
 ### Properties
 
@@ -63,20 +133,51 @@ The provenance has two aspects:
 
 ## Person (provenance)
 
+|!form data!Klasse|Person (provenance)
+|----------|------
+|Used term|[prov:Person](http://www.w3.org/ns/prov#Person)
+|Description|An agent (provenance can be a human.
+
 
 ## Software agent
+
+|!form data!Klasse|Software agent
+|----------|------
+|Used term|[prov:SoftwareAgent](http://www.w3.org/ns/prov#SoftwareAgent)
+|Description|An agent (provenance can be an automated routine.
 
 
 ## Organization (provenance)
 
+|!form data!Klasse|Organization (provenance)
+|----------|------
+|Used term|[prov:Organization](http://www.w3.org/ns/prov#Organization)
+|Description|An agent (provenance can be an organization.
+
 
 ## Agent (foaf)
+
+|!form data!Klasse|Agent (foaf)
+|----------|------
+|Used term|[foaf:Agent](http://xmlns.com/foaf/0.1/Agent)
+|Description|The person or organization that is responsible for a dataset.
 
 
 ## Organization (foaf)
 
+|!form data!Klasse|Organization (foaf)
+|----------|------
+|Used term|[foaf:Organization](http://xmlns.com/foaf/0.1/Organization)
+|Description|The organization that is responsible for a dataset.
+
 
 ## Organization (org)
+
+|!form data!Klasse|Organization (org)
+|----------|------
+|Used term|[org:Organization](http://www.w3.org/ns/org#Organization)
+|Description|The organization as included in the formal list with OIN numbers.
+|Properties en relations|[has OIN](http://bp4mc2.org/profiles/prov-ap-sc#OrgOrganization_oin)
 
 
 ## Uri strategy
