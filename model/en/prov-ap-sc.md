@@ -1,4 +1,88 @@
-<!DOCTYPE HTML>
-<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>404 Niet gevonden</title><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/ldt-theme.min.css?version=1.23.1-SNAPSHOT"><script type="text/javascript" src="/js/jquery-3.1.1.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/jquery.dataTables.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/dataTables.bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" language="javascript" charset="utf-8">
-				var elmo_language = {language:{info:"_START_ tot _END_ van _TOTAL_ resultaten",search:"Zoeken:",lengthMenu:"Toon _MENU_ rijen",zeroRecords:"Niets gevonden",infoEmpty: "Geen resultaten",paginate:{first:"Eerste",previous:"Vorige",next:"Volgende",last:"Laatste"}},paging:true,searching:true,info:true}
-			</script></head><body><div id="page"><div class="content"><div class="container hidden-xs"><div class="row text-center"><img src="/images/ldt-logo.png"></div></div><div class="container"><div class="row"><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">404 Niet gevonden<a href="#" onclick="document.getElementById('errors').className = 'row';">.</a></h3></div><div class="panel-body"><p>Het antwoord op uw verzoek kan niet worden gevonden.</p><a href="#" class="btn btn-default" onclick="window.history.back();">Terug naar de vorige pagina.</a></div></div></div></div></div></div></body></html>
+# Application profile for provenance information
+
+
+Formal/legal validity and administrative aspects are recorded in accordance with the prov ontology. This involves who, what, when and for whatever reason has been recorded or changed.
+
+* To this end metadata are described in a prov:Entity.
+* The system catalog itself is the most generic entity on which provenance is recorded. This means that all changes in the catalog description are kept.
+* Provenance is also recorded on the descriptions of datasets (dataset, dataset version and dataset product) and (dataset) distributions.
+* For concepts models, value lists and information models, which are described as an asset, provenance is recorded on the asset description and on the asset distribution description.
+* For concepts and collections provenance is recorded per concept and collection.
+
+The provenance has two aspects:
+* The formal and legal validity.
+** The formal validity is recorded in the formal issued date. The formal status can also be established. For the formal status the EU value list for statuses (adms:status) is used.
+** The legal validity in time and place can be recorded in a time period and in a reference to a geographical area.
+** For concepts and collections of concepts that originate from the underlying laws and regulations, this period of time is the period as laid down in those laws and regulations. The geographical area is the area over which the relevant competent authority has jurisdiction.
+* The administrative / household aspects.
+** A change in the data is recorded in an sd:graph. The graph is the collection of changed elements in 1 transaction.
+** This change is made by a prov:agent.
+** This prov:agent must be authorized to make such a change. This implies that the prov:agent needs to be known as a foaf:Agent in a list of parties (actually a list of organizations). Via the dcterms:publisher relationship, it is clear who is the publicist of a dataset, and thus who is allowed to make changes to the information about this dataset.
+
+
+![](prov-ap-sc.png)
+
+## Metadata
+
+
+### Properties
+
+
+### Relations
+
+
+## Adms status
+
+
+## Metadata
+
+
+### Time period
+
+
+## Geographical area
+
+
+## Provenance graph
+
+
+### Properties
+
+
+### Relations
+
+
+## Agent (provenance)
+
+
+### Properties
+
+
+### Relations
+
+
+## Person (provenance)
+
+
+## Software agent
+
+
+## Organization (provenance)
+
+
+## Agent (foaf)
+
+
+## Organization (foaf)
+
+
+## Organization (org)
+
+
+## Uri strategy
+
+
+* The information about an entity as valid at a certain time can be requested via the doc-uri, supplemented with yyyy/mm/dd
+#* The information about a location as valid at a certain place can be requested via the doc-uri, supplemented with {UpperCamelCase (rdfs:label of the Location)}
+
+

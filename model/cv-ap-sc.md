@@ -1,4 +1,77 @@
-<!DOCTYPE HTML>
-<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>404 Niet gevonden</title><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/ldt-theme.min.css?version=1.23.1-SNAPSHOT"><script type="text/javascript" src="/js/jquery-3.1.1.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/jquery.dataTables.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/dataTables.bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" language="javascript" charset="utf-8">
-				var elmo_language = {language:{info:"_START_ tot _END_ van _TOTAL_ resultaten",search:"Zoeken:",lengthMenu:"Toon _MENU_ rijen",zeroRecords:"Niets gevonden",infoEmpty: "Geen resultaten",paginate:{first:"Eerste",previous:"Vorige",next:"Volgende",last:"Laatste"}},paging:true,searching:true,info:true}
-			</script></head><body><div id="page"><div class="content"><div class="container hidden-xs"><div class="row text-center"><img src="/images/ldt-logo.png"></div></div><div class="container"><div class="row"><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">404 Niet gevonden<a href="#" onclick="document.getElementById('errors').className = 'row';">.</a></h3></div><div class="panel-body"><p>Het antwoord op uw verzoek kan niet worden gevonden.</p><a href="#" class="btn btn-default" onclick="window.history.back();">Terug naar de vorige pagina.</a></div></div></div></div></div></div></body></html>
+# CV Toepassingsprofiel voor waardelijsten
+
+
+Waardelijsten zijn lijstjes met elementen waaraan vanuit verschillende toepassingen, soms zelfs vanuit verschillende organisaties wordt gerefereerd. Soms worden dit ook wel referentiedata genoemd. Waardelijsten kunnen 3 verschillende vormen hebben:
+* Waardelijsten met elementen die met een begrip in het begrippenkader (skos:ConceptScheme) worden aangeduid. Een voorbeeld uit de BAG is het ‘gebruiksdoel’ van een ‘Pand’. Dat kan ‘wonen’, ‘winkel’, ‘kantoor’, et cetera zijn. Semantisch betekent dit dat er verschillende soorten panden zijn, namelijk woonhuizen, winkels en kantoren. Om het datamodel overzichtelijk te houden is in de BAG de ontwerpkeuze gemaakt om 1 objecttype te definiëren. Dit heeft als attribuuttype ‘gebruiksdoel’, dat de waarden 'wonen', 'winkel', 'kantoor', et cetera in de waardenlijst kan aannemen. Bijkomend voordeel is dat het datamodel niet hoeft te worden aangepast als er een gebruiksdoel bij komt. Dan hoeft alleen maar een nieuw element aan de waardenlijst te worden toegevoegd. Als het om betekenis gaat zijn 'wonen', 'winkel', 'kantoor', et cetera specialisaties van het begrp 'gebruiksdoel'. Ze vormen een skos:Collections met als skos:Label 'gebruiksdoel' binnen het skos:ConceptScheme 'BAG'.
+* Een variant op dit type waardelijst is een lijst met begrippen die als zelfstandig begrippenkader (skos:ConceptScheme) worden gepubliceerd. Dit gebeurt bijvoorbeeld bij de Europese Inspire waardelijsten. De concepten in zo’n schema worden vaak als skos:TopConcept gedefinieerd, opdat ze in lokale waardelijsten, bijvoorbeeld Nederlandse waardelijsten, kunnen worden gedetailleerd.
+* Het derde type waardenlijst is een lijst met instanties van een klasse. Een voorbeeld is een lijst van Nederlandse gemeenten of een lijst met bestuurlijke gebieden. Dit zijn geen begrippen (skos:Concept), maar instanties van de klasse ‘Gemeente’ die door het Ministerie van BZK is gedefinieerd.
+
+Voor de basale representatie van de waardenlijst maakt het niet uit of het een lijst in de vorm van een skos:Collection of een skos:ConceptScheme is met instanties van skos concepten of een lijst met mogelijke instanties van een klasse. Beide vormen hebben een basale structuur met soms een code (bijvoorbeeld de CBS-gemeentecode) en altijd een omschrijving (bijvoorbeeld de gemeentenaam).
+* Voor de code kan skos:notation worden gebruikt.
+* Voor de omschrijving wordt het skos:prefLabel gebruikt.
+* Wanneer een waardenlijst als Linked data wordt gepubliceerd krijgt iedere waarde in die lijst bovendien een uri.
+
+De waarden in de waardenlijst kunnen dezelfde metadata meekrijgen als begrippen, namelijk 'has status', 'is generated at time', 'is invalidated at time', 'is valid during', 'is issued', 'is valid at'.
+
+Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig zijn voor gebruik buiten het domein waarin de oorspronkelijke klasse is gedefinieerd, worden toegevoegd. In het voorbeeld van de lijst met Nederlandse gemeenten kan dit de geometrie van het bestuurlijk gebied zijn en visualisatiecodes voor afbeelding op een kaart.
+
+
+![](cv-ap-sc.png)
+
+## Waardelijst
+
+|!form data!Klasse|Asset (Waardelijst)
+|----------|------
+|Uitleg|Een waardelijst is een verzameling van begrippen of elementen die worden gebruikt om inhoud te indexeren en / of inhoud op te halen via browsen of zoeken. Hij bevat meestal voorkeurs- en varianttermen en heeft een gedefinieerde scope of beschrijft een specifiek domein.
+|Voorbeeld|De lijst met Kadastrale gemeenten.
+|Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [gespecificeerd](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_specification)
+
+
+### Eigenschappen
+
+
+### Relaties
+
+|!form data!Eigenschap|gespecificeerd
+|----------|------
+|Gebruikte term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
+|Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#NodeShape](http://bp4mc2.org/profiles/cv-ap-sc#NodeShape)
+|Uitleg|Een waardelijst kan worden gespecificeerd als begrippenkader, collectie van begrippen of als referentielijst.
+|Voorbeeld|De referentielijst met Kadastrale gemeenten.
+
+
+## Waardelijst als begrippenkader
+
+|!form data!Klasse|begrippenkader specificatie
+|----------|------
+|Uitleg|Een waardelijst kan worden gespecificeerd als apart begrippenkader.
+|Voorbeeld|The Inspire lijst met een europees afgestemd kader voor de typering van kabels en leidingen.
+|Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property)
+
+
+### Eigenschappen
+
+
+### Relaties
+
+|!form data!Eigenschap|Waarde
+|----------|------
+|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
+|Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
+|Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec)
+|Min card.|1
+|Max card.|1
+
+
+## Uri strategie
+
+
+Een lijst (collectie of schema) van begrippen of een lijst met instanties van een klasse krijgt een uri conform de beschrijvende asset.
+
+Een waarde in een lijst (collectie of schema) van begrippen krijgt een uri volgens het patroon:
+* `http://{domain}/id/concept/{rdfs:label}`, waarbij het `{rdfs:label}` het label van de collectie of het schema is.
+
+Een waarde in een lijst met instanties van een klasse krijgt een uri volgens het patroon:
+* `http://{domain}/id/{class}/{rdfs:label}`, waarbij het `{rdfs:label}` de naam van de betreffende instantie is.
+
+

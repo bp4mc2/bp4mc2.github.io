@@ -1,4 +1,89 @@
-<!DOCTYPE HTML>
-<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>404 Niet gevonden</title><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/ldt-theme.min.css?version=1.23.1-SNAPSHOT"><script type="text/javascript" src="/js/jquery-3.1.1.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/jquery.dataTables.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/dataTables.bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" language="javascript" charset="utf-8">
-				var elmo_language = {language:{info:"_START_ tot _END_ van _TOTAL_ resultaten",search:"Zoeken:",lengthMenu:"Toon _MENU_ rijen",zeroRecords:"Niets gevonden",infoEmpty: "Geen resultaten",paginate:{first:"Eerste",previous:"Vorige",next:"Volgende",last:"Laatste"}},paging:true,searching:true,info:true}
-			</script></head><body><div id="page"><div class="content"><div class="container hidden-xs"><div class="row text-center"><img src="/images/ldt-logo.png"></div></div><div class="container"><div class="row"><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">404 Niet gevonden<a href="#" onclick="document.getElementById('errors').className = 'row';">.</a></h3></div><div class="panel-body"><p>Het antwoord op uw verzoek kan niet worden gevonden.</p><a href="#" class="btn btn-default" onclick="window.history.back();">Terug naar de vorige pagina.</a></div></div></div></div></div></div></body></html>
+# Toepassingsprofiel voor provenance informatie
+
+
+Formeel/juridische geldigheid en administratieve aspecten worden bijgehouden conform het de prov ontologie. Hierbij gaat het om wie, wat, wanneer en om wat voor reden heeft vastgelegd of gewijzigd.
+
+* Daartoe worden de metadata beschreven in een prov:Entity.
+* De stelselcatalogus zelf is de meest generieke provenance entiteit. Daarmee worden alle wijzigingen in de catalogus beschrijving bewaard.
+* Ook van de beschrijvingen van datasets (dataset, dataset versie en dataset product) en (dataset) distributies wordt provenance bijgehouden.
+* Voor begrippenmodellen, waardelijsten en informatiemodellen, die worden beschreven als een asset, geldt dat provenance wordt bijgehouden voor de asset beschrijving en voor de asset distributie beschrijving.
+* Voor begrippen en collecties wordt per begrip en collectie provenance bijgehouden.
+
+De provenance kent 2 aspecten:
+* De formele en juridische geldigheid.
+** De formele geldigheid wordt vastgelegd in de formele bekendmakingsdatum. Daarbij kan ook de formele status worden vastgelegd, waarvoor de EU waardelijst voor statussen (adms:status) wordt gehanteerd.
+** De juridische geldigheid in tijd en plaats kan worden vastgelegd in een tijdsperiode en een verwijzing naar een geografisch gebied.
+** Voor begrippen en collecties van begrippen die hun oorsprong vinden in de onderliggende wet- en regelgeving geldt dat deze tijdsperiode de periode is zoals in die wet- en regelgeving is vastgelegd en het geografisch gebied het gebied is waarover het betreffende bevoegd gezag zeggenschap heeft.
+* De administratief/huishoudelijke aspecten. 
+** Een wijziging in de data wordt vastgelegd in een eigen sd:graph (de verzameling van gewijzigde elementen in 1 transactie). 
+** Deze wijziging wordt doorgevoerd door een prov:agent. 
+** Deze prov:agent dient geautoriseerd te zijn om een dergelijke wijziging uit te voeren. Dit betekent dat de prov:agent ook als foaf:Agent bekend is in een lijst met partijen (feitelijk een lijst van organisaties). Via de relatie dcterms:publisher is duidelijk wie de publicist is van een dataset, en daarmee degene die wijzigingen op de informatie over deze dataset mag doorvoeren.
+
+
+![](prov-ap-sc.png)
+
+## Metadata
+
+
+### Eigenschappen
+
+
+### Relaties
+
+
+## Adms status
+
+
+## Metadata
+
+
+### Tijdsperiode
+
+
+## Geografisch gebied
+
+
+## Provenance graaf
+
+
+### Eigenschappen
+
+
+### Relaties
+
+
+## Agent (provenance)
+
+
+### Eigenschappen
+
+
+### Relaties
+
+
+## Persoon (provenance)
+
+
+## Software agent
+
+
+## Organisatie (provenance)
+
+
+## Agent (foaf)
+
+
+## Organisatie (foaf)
+
+
+## Organisatie (org)
+
+
+## Uri strategie
+
+
+Provenance hoort altijd bij een entiteit. 
+* De gegevens over een entiteit zoals die op een bepaald moment geldig is kunnen worden opgevraagd via de doc-uri, aangevuld met yyyy/mm/dd
+#* De gegevens over een locatie zoals die op een bepaalde plaats geldig is kunnen worden opgevraagd via de doc-uri, aangevuld met {UpperCamelCase (rdfs:label van de Locatie)}
+
+
