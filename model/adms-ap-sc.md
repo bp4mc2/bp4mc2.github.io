@@ -20,7 +20,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ## Asset
 
-|Eigenschap|Waarde
+|!form data!Klasse|Asset
 |----------|------
 |Uitleg|Een asset is een set van herbruikbare metadata en referentiegegevens die worden gebruikt voor de ontwikkeling van e-overheidssystemen.
 |Voorbeeld|De waardelijst met Kadastrale gemeenten.
@@ -79,7 +79,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ## Asset distributie
 
-|Eigenschap|Waarde
+|!form data!Klasse|distributie
 |----------|------
 |Klasse|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd.

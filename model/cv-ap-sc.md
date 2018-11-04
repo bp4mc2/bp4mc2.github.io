@@ -20,7 +20,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 ## Waardelijst
 
-|Eigenschap|Waarde
+|!form data!Klasse|Asset (Waardelijst)
 |----------|------
 |Uitleg|Een waardelijst is een verzameling van begrippen of elementen die worden gebruikt om inhoud te indexeren en / of inhoud op te halen via browsen of zoeken. Hij bevat meestal voorkeurs- en varianttermen en heeft een gedefinieerde scope of beschrijft een specifiek domein.
 |Voorbeeld|De lijst met Kadastrale gemeenten.
@@ -43,7 +43,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 ## Waardelijst als begrippenkader
 
-|Eigenschap|Waarde
+|!form data!Klasse|begrippenkader specificatie
 |----------|------
 |Uitleg|Een waardelijst kan worden gespecificeerd als apart begrippenkader.
 |Voorbeeld|The Inspire lijst met een europees afgestemd kader voor de typering van kabels en leidingen.

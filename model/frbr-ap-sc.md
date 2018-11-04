@@ -16,7 +16,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Relaties
 
-|!form data!Eigenschap|Waarde
+|Eigenschap|Waarde
 |----------|------
 |Label|bron op het web
 |Eigenschap|[dcterms:source](http://purl.org/dc/terms/source)
@@ -26,7 +26,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ## Document
 
-|!form data!Eigenschap|Waarde
+|!form data!Klasse|Document
 |----------|------
 |Klasse|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Uitleg|Een document dat vindbaar is op het web.
@@ -36,7 +36,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Eigenschappen
 
-|!form data!Eigenschap|Waarde
+|Eigenschap|Waarde
 |----------|------
 |Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
@@ -48,7 +48,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ## Bibliografische beschrijving
 
-|!form data!Eigenschap|Waarde
+|!form data!Klasse|bibliografische beschrijving
 |----------|------
 |Klasse|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
 |Uitleg|Een bibliografische beschrijving van een werk of expressie.
@@ -58,7 +58,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Eigenschappen
 
-|!form data!Eigenschap|Waarde
+|Eigenschap|Waarde
 |----------|------
 |Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
@@ -70,7 +70,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Relaties
 
-|!form data!Eigenschap|Waarde
+|Eigenschap|Waarde
 |----------|------
 |Label|onderwerp van
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
@@ -82,7 +82,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ## Werk
 
-|!form data!Eigenschap|Waarde
+|!form data!Klasse|Werk
 |----------|------
 |Klasse|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
 |Uitleg|Een bibliografische beschrijving, zonder dat expliciet wordt verwezen naar een specifieke versie.
@@ -91,7 +91,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ## Expressie (versie van een werk)
 
-|!form data!Eigenschap|Waarde
+|!form data!Klasse|expressie, versie van een werk
 |----------|------
 |Klasse|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
 |Uitleg|Een specifieke versie van een werk.
@@ -102,3 +102,5 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 
 Een document, algemeen bibliografische resourcewerk op het web (work) of specifieke versie van een bibliografische resource op het web (expression) heeft een uri die gemunt is door degene die het document of de resource publiceert. In een stelselcatalogus worden hiervoor geen uri's gemunt.
+
+

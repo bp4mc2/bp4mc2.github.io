@@ -14,7 +14,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 ## Handeling
 
-|Eigenschap|Waarde
+|!form data!Klasse|Handeling
 |----------|------
 |Klasse|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Uitleg|De klasse van handelingen. Een handeling is een juridische constructie die een verzamelingen activiteiten voorstelt, uitgevoerd door een Actor en op een Object.
@@ -59,7 +59,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 ## Object
 
-|Eigenschap|Waarde
+|!form data!Klasse|Object
 |----------|------
 |Klasse|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Uitleg|De klasse van objecten. Een object is een ding (niet een actor) dat ontstaat, wijzigt of gebruikt wordt gedurende een handeling
@@ -68,7 +68,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 ## Actor
 
-|Eigenschap|Waarde
+|!form data!Klasse|Object
 |----------|------
 |Klasse|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Uitleg|De klasse van objecten. Een object is een ding (niet een actor) dat ontstaat, wijzigt of gebruikt wordt gedurende een handeling
@@ -77,7 +77,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 ## Agent
 
-|Eigenschap|Waarde
+|!form data!Klasse|Agent
 |----------|------
 |Klasse|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Uitleg|De klasse van agenten. Een agent is een persoon (individu, groep of organisatie) die bij een handeling betrokken is, zonder de handeling feitelijk uit te voeren.
@@ -86,7 +86,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 ## Norm
 
-|Eigenschap|Waarde
+|!form data!Klasse|Norm
 |----------|------
 |Klasse|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Uitleg|The klasse van normen. Een norm heeft effect op een handeling. De norm stelt wat 'zou moeten' of juist 'niet zo moeten' met betrekking tot de handeling. Een norm representeert de regels die gelden voor de handeling.

@@ -27,7 +27,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ## Dataset (algemeen)
 
-|Eigenschap|Waarde
+|!form data!Klasse|Dataset
 |----------|------
 |Klasse|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Uitleg|Een dataset is een algemene beschrijving van een verzameling data, gepubliceerd of samengesteld door één beheerder.
@@ -94,7 +94,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ## Dataset (versie)
 
-|Eigenschap|Waarde
+|!form data!Klasse|Dataset (versie)
 |----------|------
 |inScheme|[Datasettypes](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetTypes)
 |Uitleg|Een dataset (versie) is een concrete, geversioneerde beschrijving van een verzameling data, gepubliceerd of samengesteld door één beheerder.
@@ -177,7 +177,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ## Dataset (product)
 
-|Eigenschap|Waarde
+|!form data!Klasse|dataset (product)
 |----------|------
 |inScheme|[Datasettypes](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetTypes)
 |Uitleg|Een dataset (product) is een concreet, geversioneerd informatieproduct op basis van de data in een dataset (versie)
@@ -252,7 +252,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ## Catalogus
 
-|Eigenschap|Waarde
+|!form data!Klasse|Catalogus
 |----------|------
 |Klasse|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Uitleg|Een catalogus is een samengestelde verzameling (federatief beheerde) metagegevens over datasets (algemeen, versie en product), distributies en bijbehorende assets
@@ -330,7 +330,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ## Distributie
 
-|Eigenschap|Waarde
+|!form data!Klasse|Catalogus
 |----------|------
 |Klasse|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Uitleg|Een catalogus is een samengestelde verzameling (federatief beheerde) metagegevens over datasets (algemeen, versie en product), distributies en bijbehorende assets
@@ -399,7 +399,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ## Taal
 
-|Eigenschap|Waarde
+|!form data!Klasse|Taal
 |----------|------
 |Rol|[http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)
 |Waardelijst|[http://publications.europa.eu/mdr/authority/language/](http://publications.europa.eu/mdr/authority/language/)
