@@ -109,6 +109,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |!form data!Eigenschap|described by
 |----------|------
 |Used term|[wdrs:describedBy](http://www.w3.org/2007/05/powder-s#describedBy)
+|Related with|[Datamodel](http://bp4mc2.org/profiles/dcat-ap-sc#Datamodel)
 |Description|The data in a dataset (version) is decribed by a data model.
 |Example|kadaster.nl/schemas/imkad
 
@@ -121,7 +122,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |!form data!Eigenschap|geographical demarcation
 |----------|------
 |Used term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
-|Refers to|[http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)
+|Refers to|[dcterms:Location](http://purl.org/dc/terms/Location)
 |Description|The area the dataset is about can be recorded.
 
 |!form data!Eigenschap|provenance
@@ -245,6 +246,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |!form data!Eigenschap|landing page
 |----------|------
 |Used term|[foaf:homepage](http://xmlns.com/foaf/0.1/homepage)
+|Refers to|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Description|De landing page on which the catalog can be found can be recorded.
 |Example|http://catalogus.kadaster.nl/
 
@@ -305,11 +307,13 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 |!form data!Eigenschap|access url
 |----------|------
 |Used term|[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL)
+|Refers to|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
 |Description|A distribution can be an API or a web service that is accesable via a url.
 
 |!form data!Eigenschap|download url
 |----------|------
 |Used term|[dcat:downloadURL](http://www.w3.org/ns/dcat#downloadURL)
+|Refers to|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
 |Description|A distribution can be a download service that is accesable via a url
 
 |!form data!Eigenschap|license

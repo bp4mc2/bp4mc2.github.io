@@ -117,6 +117,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |!form data!Eigenschap|beschreven door
 |----------|------
 |Gebruikte term|[wdrs:describedBy](http://www.w3.org/2007/05/powder-s#describedBy)
+|Relatie met|[Datamodel](http://bp4mc2.org/profiles/dcat-ap-sc#Datamodel)
 |Uitleg|De data in een dataset (version) is beschreven door een informatiemodel.
 |Voorbeeld|kadaster.nl/schemas/imkad
 
@@ -130,7 +131,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |!form data!Eigenschap|geografische afbakening
 |----------|------
 |Gebruikte term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
-|Verwijst naar|[http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)
+|Verwijst naar|[dcterms:Location](http://purl.org/dc/terms/Location)
 |Uitleg|Het gebied waar de dataset over gaat kan worden gespecificeerd.
 |Voorbeeld|de link naar de aanduiding voor de gemeente Apeldoorn
 
@@ -176,7 +177,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Gebruikte term|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (product) kan een versie aanduiding hebben.
-|Voorbeeld|2.1.0, 2.1.0
+|Voorbeeld|2.1.0
 
 |!form data!Eigenschap|versie notities
 |----------|------
@@ -266,6 +267,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |!form data!Eigenschap|webpagina
 |----------|------
 |Gebruikte term|[foaf:homepage](http://xmlns.com/foaf/0.1/homepage)
+|Verwijst naar|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Uitleg|De webpagina via welke de catalogus vindbaar is kan worden gespecificeerd.
 |Voorbeeld|http://catalogus.kadaster.nl/
 
@@ -331,12 +333,14 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |!form data!Eigenschap|toegangs url
 |----------|------
 |Gebruikte term|[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL)
+|Verwijst naar|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
 |Uitleg|Een distributie kan een API zijn of een webservice die toegankelijk is via een url.
 |Voorbeeld|https://data.pdok.nl/brk/api/v1
 
 |!form data!Eigenschap|download url
 |----------|------
 |Gebruikte term|[dcat:downloadURL](http://www.w3.org/ns/dcat#downloadURL)
+|Verwijst naar|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
 |Uitleg|Een distributie kan een downloadservice zijn die toegankelijk is via een url.
 |Voorbeeld|https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-kadaster/kadastrale-kaart
 
