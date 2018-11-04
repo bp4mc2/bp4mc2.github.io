@@ -887,7 +887,7 @@
 		border: 1px solid silver;
 	}
 	table.form.data th:first-child {
-		width: 150px;
+		width: 130px;
 	}
 
 	table.data.longlastcol td:last-child,
