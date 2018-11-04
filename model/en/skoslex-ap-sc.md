@@ -14,39 +14,35 @@ Events can be described as concepts. They then have the same characteristics as 
 
 ## Act
 
-|Eigenschap|Waarde
+|!form data!Klasse|Act
 |----------|------
-|Class|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
+|Used term|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Description|The class of Acts. An act is a legal construct representing a set of activities, performed by an Actor and with respect to some Object.
 |Properties en relations|[actor](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_actor), [agent](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_agent), [object](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_object), [refers to](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_refersTo)
 
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|actor
 |----------|------
-|Label|actor
 |Property|[skoslex:actor](http://bp4mc2.org/def/skos-lex#actor)
 |Refers to|[skoslex:Actor](http://bp4mc2.org/def/skos-lex#Actor)
 |Description|Actor relates an Act with the Actor that performs the act.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|agent
 |----------|------
-|Label|agent
 |Property|[skoslex:agent](http://bp4mc2.org/def/skos-lex#agent)
 |Refers to|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Description|Agent relates an Act with the Agent involved in the act.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|object
 |----------|------
-|Label|object
 |Property|[skoslex:object](http://bp4mc2.org/def/skos-lex#object)
 |Refers to|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Description|Object relates an Act with the object that is created, changed or used during the act
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|refers to
 |----------|------
-|Label|refers to
 |Property|[skoslex:refersTo](http://bp4mc2.org/def/skos-lex#refersTo)
 |Refers to|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Description|RefersTo relates a norm with the Act that is refered by the norm. Such an act has some relation with the norm, without further specification. It might be effected by the norm, but could also be a precondition or simply mentioned in the rules.
@@ -54,51 +50,49 @@ Events can be described as concepts. They then have the same characteristics as 
 
 ## Object
 
-|Eigenschap|Waarde
+|!form data!Klasse|Object
 |----------|------
-|Class|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
+|Used term|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Description|The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act
 
 
 ## Actor
 
-|Eigenschap|Waarde
+|!form data!Klasse|Object
 |----------|------
-|Class|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
+|Used term|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Description|The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act
 
 
 ## Agent
 
-|Eigenschap|Waarde
+|!form data!Klasse|Agent
 |----------|------
-|Class|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
+|Used term|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Description|The class of Agent. An agent is some person (individual, group or organisation) involved in some act, without actually performing the act.
 
 
 ## Norm
 
-|Eigenschap|Waarde
+|!form data!Klasse|Norm
 |----------|------
-|Class|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
+|Used term|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Description|The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act.
 |Properties en relations|[affects](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_affects), [Label](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label)
 
 
 ### Properties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|Label
 |----------|------
-|Naam|Label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|affects
 |----------|------
-|Label|affects
 |Property|[skoslex:affects](http://bp4mc2.org/def/skos-lex#affects)
 |Refers to|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Description|Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm

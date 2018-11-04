@@ -32,44 +32,39 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft distributie
 |----------|------
-|Label|heeft distributie
 |Eigenschap|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Relatie met|[distributie](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd kan worden aangegeven.
 |Voorbeeld|De lijst met Kadastrale gemeenten kan worden gepubliceerd in genericode.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|naam
 |----------|------
-|Label|naam
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Uitleg|Een asset heeft een naam.
 |Voorbeeld|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft webpagina
 |----------|------
-|Label|heeft webpagina
 |Eigenschap|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Relatie met|[webpagina](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Uitleg|De webpagina waarop een asset vindbaar is kan worden gespecificeerd.
 |Voorbeeld|kadaster.nl/waardelijsten.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|onderdeel van
 |----------|------
-|Label|onderdeel van
 |Eigenschap|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Relatie met|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Uitleg|Een asset kan onderdeel zijn van een dataset.
 |Voorbeeld|De lijst met Kadastrale gemeenten is onderdeel van de BRK.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|herkomst (asset)
 |----------|------
-|Label|herkomst (asset)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een asset kan de herkomst worden beschreven.
@@ -81,7 +76,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 |!form data!Klasse|distributie
 |----------|------
-|Klasse|[distribution](http://www.w3.org/ns/adms#Distribution)
+|Gebruikte term|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd.
 |Voorbeeld|De genericode publicatie van de lijst met Kadastrale gemeenten.
 |Eigenschappen en relaties|[toegang url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_accessURL), [download url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_downloadURL), [herkomst (asset distributie)](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_provenance), [representatie formaat](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_representationTechnique)
@@ -92,44 +87,39 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft distributie
 |----------|------
-|Label|heeft distributie
 |Eigenschap|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Relatie met|[distributie](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd kan worden aangegeven.
 |Voorbeeld|De lijst met Kadastrale gemeenten kan worden gepubliceerd in genericode.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|naam
 |----------|------
-|Label|naam
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Uitleg|Een asset heeft een naam.
 |Voorbeeld|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft webpagina
 |----------|------
-|Label|heeft webpagina
 |Eigenschap|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Relatie met|[webpagina](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Uitleg|De webpagina waarop een asset vindbaar is kan worden gespecificeerd.
 |Voorbeeld|kadaster.nl/waardelijsten.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|onderdeel van
 |----------|------
-|Label|onderdeel van
 |Eigenschap|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Relatie met|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Uitleg|Een asset kan onderdeel zijn van een dataset.
 |Voorbeeld|De lijst met Kadastrale gemeenten is onderdeel van de BRK.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|herkomst (asset)
 |----------|------
-|Label|herkomst (asset)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een asset kan de herkomst worden beschreven.
@@ -145,44 +135,39 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft distributie
 |----------|------
-|Label|heeft distributie
 |Eigenschap|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Relatie met|[distributie](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd kan worden aangegeven.
 |Voorbeeld|De lijst met Kadastrale gemeenten kan worden gepubliceerd in genericode.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|naam
 |----------|------
-|Label|naam
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Uitleg|Een asset heeft een naam.
 |Voorbeeld|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft webpagina
 |----------|------
-|Label|heeft webpagina
 |Eigenschap|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Relatie met|[webpagina](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Uitleg|De webpagina waarop een asset vindbaar is kan worden gespecificeerd.
 |Voorbeeld|kadaster.nl/waardelijsten.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|onderdeel van
 |----------|------
-|Label|onderdeel van
 |Eigenschap|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Relatie met|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Uitleg|Een asset kan onderdeel zijn van een dataset.
 |Voorbeeld|De lijst met Kadastrale gemeenten is onderdeel van de BRK.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|herkomst (asset)
 |----------|------
-|Label|herkomst (asset)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een asset kan de herkomst worden beschreven.
@@ -198,44 +183,39 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft distributie
 |----------|------
-|Label|heeft distributie
 |Eigenschap|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Relatie met|[distributie](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd kan worden aangegeven.
 |Voorbeeld|De lijst met Kadastrale gemeenten kan worden gepubliceerd in genericode.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|naam
 |----------|------
-|Label|naam
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Uitleg|Een asset heeft een naam.
 |Voorbeeld|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|heeft webpagina
 |----------|------
-|Label|heeft webpagina
 |Eigenschap|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Relatie met|[webpagina](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Uitleg|De webpagina waarop een asset vindbaar is kan worden gespecificeerd.
 |Voorbeeld|kadaster.nl/waardelijsten.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|onderdeel van
 |----------|------
-|Label|onderdeel van
 |Eigenschap|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Relatie met|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Uitleg|Een asset kan onderdeel zijn van een dataset.
 |Voorbeeld|De lijst met Kadastrale gemeenten is onderdeel van de BRK.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|herkomst (asset)
 |----------|------
-|Label|herkomst (asset)
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Van een asset kan de herkomst worden beschreven.

@@ -32,9 +32,8 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|gespecificeerd
 |----------|------
-|Label|gespecificeerd
 |Eigenschap|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
 |Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#NodeShape](http://bp4mc2.org/profiles/cv-ap-sc#NodeShape)
 |Uitleg|Een waardelijst kan worden gespecificeerd als begrippenkader, collectie van begrippen of als referentielijst.
@@ -55,7 +54,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|Waarde
 |----------|------
 |nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
 |Eigenschap|[sh:property](http://www.w3.org/ns/shacl#property)

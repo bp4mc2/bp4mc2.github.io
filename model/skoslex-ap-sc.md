@@ -16,7 +16,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 |!form data!Klasse|Handeling
 |----------|------
-|Klasse|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
+|Gebruikte term|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Uitleg|De klasse van handelingen. Een handeling is een juridische constructie die een verzamelingen activiteiten voorstelt, uitgevoerd door een Actor en op een Object.
 |Voorbeeld|De levering van een onroerend goed zoals vastgelegd in een notariele akte (rechtshandeling), Het bouwen van een bouwwerk (handeling)
 |Eigenschappen en relaties|[actor](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_actor), [agent](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_agent), [object](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_object), [verwijst naar](http://bp4mc2.org/profiles/skoslex-ap-sc#Act_refersTo)
@@ -24,33 +24,29 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|actor
 |----------|------
-|Label|actor
 |Eigenschap|[skoslex:actor](http://bp4mc2.org/def/skos-lex#actor)
 |Verwijst naar|[skoslex:Actor](http://bp4mc2.org/def/skos-lex#Actor)
 |Uitleg|Actor relateert een handeling aan de actor die de handeling uitvoert
 |Voorbeeld|Jan Jansen in zijn rol van koper van een onroerend goed.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|agent
 |----------|------
-|Label|agent
 |Eigenschap|[skoslex:agent](http://bp4mc2.org/def/skos-lex#agent)
 |Verwijst naar|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Uitleg|Agent relateert een handeling aan de agent die bij de handeling betrokken is
 |Voorbeeld|Een notaris die een akte opmaakt bij de koop van een onroerend goed.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|object
 |----------|------
-|Label|object
 |Eigenschap|[skoslex:object](http://bp4mc2.org/def/skos-lex#object)
 |Verwijst naar|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Uitleg|Object relateert een handeling met een object dat ontstaat, wijzigt of wordt gebruikt gedurende een act
 |Voorbeeld|Het onroerend goed DPV00 B 1207 als onderwerp van de koop.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|verwijst naar
 |----------|------
-|Label|verwijst naar
 |Eigenschap|[skoslex:refersTo](http://bp4mc2.org/def/skos-lex#refersTo)
 |Verwijst naar|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Uitleg|Verwijst naar relateert een norm aan de handeling waarnaar de norm refereert. Zo'n handeling heeft een relatie met de norm, zonder verdere specificatie. Het kan zijn dat de norm bepaalde zaken voorschrift, maar het kan ook zijn dat de handeling een preconditie is, of gewoon benoemd is in de regels.
@@ -61,7 +57,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 |!form data!Klasse|Object
 |----------|------
-|Klasse|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
+|Gebruikte term|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Uitleg|De klasse van objecten. Een object is een ding (niet een actor) dat ontstaat, wijzigt of gebruikt wordt gedurende een handeling
 |Voorbeeld|Het onroerend goed DPV00 B 1207.
 
@@ -70,7 +66,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 |!form data!Klasse|Object
 |----------|------
-|Klasse|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
+|Gebruikte term|[skoslex:Object](http://bp4mc2.org/def/skos-lex#Object)
 |Uitleg|De klasse van objecten. Een object is een ding (niet een actor) dat ontstaat, wijzigt of gebruikt wordt gedurende een handeling
 |Voorbeeld|Het onroerend goed DPV00 B 1207.
 
@@ -79,7 +75,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 |!form data!Klasse|Agent
 |----------|------
-|Klasse|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
+|Gebruikte term|[skoslex:Agent](http://bp4mc2.org/def/skos-lex#Agent)
 |Uitleg|De klasse van agenten. Een agent is een persoon (individu, groep of organisatie) die bij een handeling betrokken is, zonder de handeling feitelijk uit te voeren.
 |Voorbeeld|Notaris Pietersen.
 
@@ -88,7 +84,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 |!form data!Klasse|Norm
 |----------|------
-|Klasse|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
+|Gebruikte term|[skoslex:Norm](http://bp4mc2.org/def/skos-lex#Norm)
 |Uitleg|The klasse van normen. Een norm heeft effect op een handeling. De norm stelt wat 'zou moeten' of juist 'niet zo moeten' met betrekking tot de handeling. Een norm representeert de regels die gelden voor de handeling.
 |Voorbeeld|De verkoper van een onroerend goed moet bij de verkoop ervan kunnen aantonen dat hij eigenaar is.
 |Eigenschappen en relaties|[normeert](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_affects), [Label](http://bp4mc2.org/profiles/skoslex-ap-sc#LegalNorm_label)
@@ -96,18 +92,16 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 
 ### Eigenschappen
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|Label
 |----------|------
-|Naam|Label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|normeert
 |----------|------
-|Label|normeert
 |Eigenschap|[skoslex:affects](http://bp4mc2.org/def/skos-lex#affects)
 |Verwijst naar|[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act)
 |Uitleg|Normeert relateert een norm aan de handeling die de norm normeert. Zo'n handeling wordt beperkt door de regels van de norm

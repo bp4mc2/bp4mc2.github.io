@@ -20,7 +20,7 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ## Asset
 
-|Eigenschap|Waarde
+|!form data!Klasse|Asset
 |----------|------
 |Description|An asset is a set of reusable metadata and reference data  that are used for eGovernment system development.
 |Properties en relations|[has distribution](http://bp4mc2.org/profiles/adms-ap-sc#Asset_distribution), [label](http://bp4mc2.org/profiles/adms-ap-sc#Asset_label), [has landing page](http://bp4mc2.org/profiles/adms-ap-sc#Asset_landingPage), [part of](http://bp4mc2.org/profiles/adms-ap-sc#Asset_partOf), [provenance (asset)](http://bp4mc2.org/profiles/adms-ap-sc#Asset_provenance)
@@ -31,41 +31,36 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has distribution
 |----------|------
-|Label|has distribution
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label
 |----------|------
-|Label|label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Description|An asset has a label.
 |Example|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has landing page
 |----------|------
-|Label|has landing page
 |Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|part of
 |----------|------
-|Label|part of
 |Property|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Related with|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (asset)
 |----------|------
-|Label|provenance (asset)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a asset can be described.
@@ -75,9 +70,9 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ## Asset distribution
 
-|Eigenschap|Waarde
+|!form data!Klasse|distribution
 |----------|------
-|Class|[distribution](http://www.w3.org/ns/adms#Distribution)
+|Used term|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Description|The way in which an asset is published.
 |Properties en relations|[access url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_accessURL), [download url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_downloadURL), [provenance (asset distribution)](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_provenance), [representation format](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_representationTechnique)
 
@@ -87,41 +82,36 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has distribution
 |----------|------
-|Label|has distribution
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label
 |----------|------
-|Label|label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Description|An asset has a label.
 |Example|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has landing page
 |----------|------
-|Label|has landing page
 |Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|part of
 |----------|------
-|Label|part of
 |Property|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Related with|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (asset)
 |----------|------
-|Label|provenance (asset)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a asset can be described.
@@ -137,41 +127,36 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has distribution
 |----------|------
-|Label|has distribution
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label
 |----------|------
-|Label|label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Description|An asset has a label.
 |Example|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has landing page
 |----------|------
-|Label|has landing page
 |Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|part of
 |----------|------
-|Label|part of
 |Property|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Related with|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (asset)
 |----------|------
-|Label|provenance (asset)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a asset can be described.
@@ -187,41 +172,36 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has distribution
 |----------|------
-|Label|has distribution
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label
 |----------|------
-|Label|label
 |Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Description|An asset has a label.
 |Example|Landenlijst
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has landing page
 |----------|------
-|Label|has landing page
 |Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|part of
 |----------|------
-|Label|part of
 |Property|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Related with|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (asset)
 |----------|------
-|Label|provenance (asset)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a asset can be described.

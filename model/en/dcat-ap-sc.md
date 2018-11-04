@@ -27,25 +27,23 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ## Dataset (general)
 
-|Eigenschap|Waarde
+|!form data!Klasse|Dataset
 |----------|------
-|Class|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
+|Used term|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Description|A dataset is a description of a collection of data, published or curated by a single agent.
 |Properties en relations|[description](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [title](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [provenance](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publisher](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
 
 
 ### Properties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|description
 |----------|------
-|Naam|description
 |Property|[dcterms:description](http://purl.org/dc/terms/description)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The dataset can have a clear description.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|title
 |----------|------
-|Naam|title
 |Property|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset has a label.
@@ -55,32 +53,28 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|language
 |----------|------
-|Label|language
 |Property|[dcterms:language](http://purl.org/dc/terms/language)
 |Related with|[Language](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Description|The language in which the dataset is described (because of the compatibility with the DCAT-AP NL) can be recorded.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance
 |----------|------
-|Label|provenance
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a dataset can be described.
 |Example|De BAG is op xx/xx/xx gelanceerd
 |Min card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|publisher
 |----------|------
-|Label|publisher
 |Property|[dcterms:publisher](http://purl.org/dc/terms/publisher)
 |Refers to|[http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)
 |Description|The person who publishes a dataset can be recorded. This organization or person has permission to perform this action.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|type dataset
 |----------|------
-|Label|type dataset
 |Property|[dcterms:type](http://purl.org/dc/terms/type)
 |Related with|[Dataset type](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetType)
 |Min card.|1
@@ -89,7 +83,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ## Dataset (version)
 
-|Eigenschap|Waarde
+|!form data!Klasse|Dataset (version)
 |----------|------
 |inScheme|[Dataset types](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetTypes)
 |Description|A dataset (general) is a concrete, versioned description of a collection of data, published or curated by a single agent.
@@ -98,16 +92,14 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ### Properties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|version (dataset version)
 |----------|------
-|Naam|version (dataset version)
 |Property|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (version) can have a version indication.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|version notes (dataset version)
 |----------|------
-|Naam|version notes (dataset version)
 |Property|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (version) can contain release notes.
@@ -115,48 +107,42 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|described by
 |----------|------
-|Label|described by
 |Property|[wdrs:describedBy](http://www.w3.org/2007/05/powder-s#describedBy)
 |Description|The data in a dataset (version) is decribed by a data model.
 |Example|kadaster.nl/schemas/imkad
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|distribution (dataset version)
 |----------|------
-|Label|distribution (dataset version)
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Refers to|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Description|The channels through which a dataset (version) can be distributed can be recorded.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|geographical demarcation
 |----------|------
-|Label|geographical demarcation
 |Property|[dcterms:spatial](http://purl.org/dc/terms/spatial)
 |Refers to|[http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)
 |Description|The area the dataset is about can be recorded.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (dataset version)
 |----------|------
-|Label|provenance (dataset version)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a dataset (version) can be described.
 |Example|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|type dataset = DatasetVersion
 |----------|------
-|Label|type dataset = DatasetVersion
 |Property|[dcterms:type](http://purl.org/dc/terms/type)
 |Value|[Dataset (version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Description|In case of a dataset version, the dataset is typed accordingly
 |Min card.|1
 |Max card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|version of
 |----------|------
-|Label|version of
 |Property|[dcterms:isVersionOf](http://purl.org/dc/terms/isVersionOf)
 |Related with|[Dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset)
 |Description|A dataset (version) can be derived from a dataset (general).
@@ -165,7 +151,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ## Dataset (product)
 
-|Eigenschap|Waarde
+|!form data!Klasse|dataset (product)
 |----------|------
 |inScheme|[Dataset types](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetTypes)
 |Description|A dataset (product) is a concrete, versioned information product based on the data in a dataset (version).
@@ -174,17 +160,15 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ### Properties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|version (product)
 |----------|------
-|Naam|version (product)
 |Property|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (product) can have a version indication.
 |Example|2.1.0
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|version notes (product)
 |----------|------
-|Naam|version notes (product)
 |Property|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A dataset (product) can contain release notes.
@@ -192,39 +176,34 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|distribution (product)
 |----------|------
-|Label|distribution (product)
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Refers to|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Description|The channels through which a dataset (product) can be distributed can be recorded.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|derived from
 |----------|------
-|Label|derived from
 |Property|[dcterms:relation](http://purl.org/dc/terms/relation)
 |Related with|[Dataset (version)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Description|A dataset (product) can be derived from a dataset (version).
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (product)
 |----------|------
-|Label|provenance (product)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of an information product can be described.
 |Example|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|has quality measurement
 |----------|------
-|Label|has quality measurement
 |Property|[dqv:hasQualityMeasurement](http://www.w3.org/ns/dqv#hasQualityMeasurement)
 |Refers to|[http://www.w3.org/ns/dqv#QualityMeasurement](http://www.w3.org/ns/dqv#QualityMeasurement)
 |Description|A dataset (product) can have an quality evaluation against a specific quality metric.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|type dataset = DatasetProduct
 |----------|------
-|Label|type dataset = DatasetProduct
 |Property|[dcterms:type](http://purl.org/dc/terms/type)
 |Value|[dataset (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct)
 |Description|In case of a dataset product, the dataset is typed accordingly
@@ -234,25 +213,23 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ## Catalog
 
-|Eigenschap|Waarde
+|!form data!Klasse|Catalog
 |----------|------
-|Class|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
+|Used term|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Description|A catalog is a curated collection of (federally managed) metadata about datasets (general, version or product), distributions and associated assets.
 |Properties en relations|[contains dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [description (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [landing page](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [license (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [label (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [provenance (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rights (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
 
 
 ### Properties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|description (catalog)
 |----------|------
-|Naam|description (catalog)
 |Property|[dcterms:description](http://purl.org/dc/terms/description)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|De catalog can be described.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label (catalog)
 |----------|------
-|Naam|label (catalog)
 |Property|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The catalog can have has a label
@@ -261,71 +238,63 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|contains dataset
 |----------|------
-|Label|contains dataset
 |Property|[dcat:dataset](http://www.w3.org/ns/dcat#dataset)
 |Refers to|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Description|A dataset, which may or may not be managed elsewhere, can be included in the catalog via a link to that dataset (general).
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|landing page
 |----------|------
-|Label|landing page
 |Property|[foaf:homepage](http://xmlns.com/foaf/0.1/homepage)
 |Description|De landing page on which the catalog can be found can be recorded.
 |Example|http://catalogus.kadaster.nl/
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|language
 |----------|------
-|Label|language
 |Property|[dcterms:language](http://purl.org/dc/terms/language)
 |Related with|[Language](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Description|The language in which the metadata in the catalog is desribed can be recorded.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|license (catalog)
 |----------|------
-|Label|license (catalog)
 |Property|[dcterms:license](http://purl.org/dc/terms/license)
 |Description|The license applied to the catalog can be specified. This can be another license as the license for distributions of datasets.
 |Example|Creative Commons Naamsvermelding 4.0 licentie
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (catalog)
 |----------|------
-|Label|provenance (catalog)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a catalog can be described.
 |Example|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|rights (catalog)
 |----------|------
-|Label|rights (catalog)
 |Property|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Description|The rights applied to the catalog can be specified. This can be nother rights as the rights for distributions of datasets.
 
 
 ## Distribution
 
-|Eigenschap|Waarde
+|!form data!Klasse|Catalog
 |----------|------
-|Class|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
+|Used term|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Description|A catalog is a curated collection of (federally managed) metadata about datasets (general, version or product), distributions and associated assets.
 |Properties en relations|[contains dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [description (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [landing page](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [language](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [license (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [label (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [provenance (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rights (catalog)](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
 
 
 ### Properties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|description (distribution)
 |----------|------
-|Naam|description (distribution)
 |Property|[dcterms:description](http://purl.org/dc/terms/description)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|De distribution can be described.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label (distribution)
 |----------|------
-|Naam|label (distribution)
 |Property|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|De distribution can have a label
@@ -333,45 +302,40 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ### Relations
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|access url
 |----------|------
-|Label|access url
 |Property|[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL)
 |Description|A distribution can be an API or a web service that is accesable via a url.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|download url
 |----------|------
-|Label|download url
 |Property|[dcat:downloadURL](http://www.w3.org/ns/dcat#downloadURL)
 |Description|A distribution can be a download service that is accesable via a url
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|license (distribution)
 |----------|------
-|Label|license (distribution)
 |Property|[dcterms:license](http://purl.org/dc/terms/license)
 |Description|The license applied to the distribution can be specified. This can be another license as the license for the catalog.
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|provenance (distribution)
 |----------|------
-|Label|provenance (distribution)
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a distribution can be described.
 |Example|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|rights (distribution)
 |----------|------
-|Label|rights (distribution)
 |Property|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Description|The rights applied to the distribution can be specified. This can be nother rights as the rights for the catalog.
 
 
 ## Language
 
-|Eigenschap|Waarde
+|!form data!Klasse|Language
 |----------|------
-|Role|[http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)
+|Typed as|[http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)
 |Controlled vocabulary|[http://publications.europa.eu/mdr/authority/language/](http://publications.europa.eu/mdr/authority/language/)
 
 

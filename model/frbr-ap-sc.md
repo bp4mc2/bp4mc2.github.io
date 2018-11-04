@@ -16,9 +16,8 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|bron op het web
 |----------|------
-|Label|bron op het web
 |Eigenschap|[dcterms:source](http://purl.org/dc/terms/source)
 |Uitleg|Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een beschrijving van een specifiek begrip of een document waarin een beschrijving van het begrip is te vinden.
 |Voorbeeld|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
@@ -28,7 +27,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |!form data!Klasse|Document
 |----------|------
-|Klasse|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
+|Gebruikte term|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Uitleg|Een document dat vindbaar is op het web.
 |Voorbeeld|[https://wetten.overheid.nl/BWBR0001840/2017-11-17](https://wetten.overheid.nl/BWBR0001840/2017-11-17)
 |Eigenschappen en relaties|[label](http://bp4mc2.org/profiles/frbr-ap-sc#Document_label)
@@ -36,9 +35,8 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Eigenschappen
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label
 |----------|------
-|Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een document heeft een voor mensen leesbaar label.
@@ -50,7 +48,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |!form data!Klasse|bibliografische beschrijving
 |----------|------
-|Klasse|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
+|Gebruikte term|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
 |Uitleg|Een bibliografische beschrijving van een werk of expressie.
 |Voorbeeld|Artikel 1 van het burgerlijk wetboek of artikel 1 van het burgerlijk wetboek van 1838
 |Eigenschappen en relaties|[onderwerp van](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_isTopicOf), [label](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_label)
@@ -58,9 +56,8 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Eigenschappen
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|label
 |----------|------
-|Naam|label
 |Eigenschap|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een bibliografische beschrijving heeft een voor mensen leesbare naam.
@@ -70,9 +67,8 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ### Relaties
 
-|Eigenschap|Waarde
+|!form data!Eigenschap|onderwerp van
 |----------|------
-|Label|onderwerp van
 |Eigenschap|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Relatie met|[Document](http://bp4mc2.org/profiles/frbr-ap-sc#Document)
 |Uitleg|Een bibliografische beschrijving kan een onderwerp zijn van een document.
@@ -84,7 +80,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |!form data!Klasse|Werk
 |----------|------
-|Klasse|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
+|Gebruikte term|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
 |Uitleg|Een bibliografische beschrijving, zonder dat expliciet wordt verwezen naar een specifieke versie.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek
 
@@ -93,7 +89,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 |!form data!Klasse|expressie, versie van een werk
 |----------|------
-|Klasse|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
+|Gebruikte term|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
 |Uitleg|Een specifieke versie van een werk.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
 
