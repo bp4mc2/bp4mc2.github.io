@@ -17,7 +17,8 @@ Datakwaliteit
 
 |!form data!Klasse|Kwaliteitsindicator
 |----------|------
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/dqv-ap-sc#QualityIndicator_broader](http://bp4mc2.org/profiles/dqv-ap-sc#QualityIndicator_broader)
+|Getypeerd als|[dqv:Dimension](http://www.w3.org/ns/dqv#Dimension)
+|Eigenschappen en relaties|[Specialisatie van](http://bp4mc2.org/profiles/dqv-ap-sc#QualityIndicator_broader)
 
 
 ## Meting
@@ -25,72 +26,83 @@ Datakwaliteit
 |!form data!Klasse|Meetfunctie
 |----------|------
 |Gebruikte term|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/dqv-ap-sc#Metric_inDimension](http://bp4mc2.org/profiles/dqv-ap-sc#Metric_inDimension), [http://bp4mc2.org/profiles/dqv-ap-sc#Metric_label](http://bp4mc2.org/profiles/dqv-ap-sc#Metric_label), [http://bp4mc2.org/profiles/dqv-ap-sc#Metric_expectedDataType](http://bp4mc2.org/profiles/dqv-ap-sc#Metric_expectedDataType)
+|Eigenschappen en relaties|[Verwachtte datatype](http://bp4mc2.org/profiles/dqv-ap-sc#Metric_expectedDataType), [in dimensie](http://bp4mc2.org/profiles/dqv-ap-sc#Metric_inDimension), [Label](http://bp4mc2.org/profiles/dqv-ap-sc#Metric_label)
 
 
 ### Eigenschappen
 
+|!form data!Eigenschap|Label
+|----------|------
+|Gebruikte term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|Een meting kent een voor mensen leesbaar label
+
 
 ### Relaties
 
-|!form data!Eigenschap|Waarde
+|!form data!Eigenschap|Verwachtte datatype
 |----------|------
 |Gebruikte term|[dqv:expectedDataType](http://www.w3.org/ns/dqv#expectedDataType)
+|Verwijst naar|[rdfs:Datatype](http://www.w3.org/2000/01/rdf-schema#Datatype)
+|Uitleg|Het te verwachten datatype van de meting
 
-|!form data!Eigenschap|Waarde
+|!form data!Eigenschap|in dimensie
 |----------|------
 |Gebruikte term|[dqv:inDimension](http://www.w3.org/ns/dqv#inDimension)
 |Relatie met|[Kwaliteitsindicator](http://bp4mc2.org/profiles/dqv-ap-sc#QualityIndicator)
-
-|!form data!Eigenschap|Waarde
-|----------|------
-|Gebruikte term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Uitleg|Een meting betreft een kwaliteitsdimensie
 
 
 ## Kwaliteitsmeetwaarde
 
-|!form data!Klasse|Waarde
+|!form data!Klasse|Kwaliteitsmeetwaarde
 |----------|------
 |Gebruikte term|[dqv:QualityMeasurement](http://www.w3.org/ns/dqv#QualityMeasurement)
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/dqv-ap-sc#QualityMeasurement_isMeasurementOf](http://bp4mc2.org/profiles/dqv-ap-sc#QualityMeasurement_isMeasurementOf), [http://bp4mc2.org/profiles/dqv-ap-sc#QualityMeasurement_value](http://bp4mc2.org/profiles/dqv-ap-sc#QualityMeasurement_value)
+|Eigenschappen en relaties|[is meetwaarde van](http://bp4mc2.org/profiles/dqv-ap-sc#QualityMeasurement_isMeasurementOf), [waarde](http://bp4mc2.org/profiles/dqv-ap-sc#QualityMeasurement_value)
 
 
 ### Eigenschappen
 
-
-### Relaties
-
-|!form data!Eigenschap|Waarde
+|!form data!Eigenschap|waarde
 |----------|------
-|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
-|Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
-|Relatie met|[http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicySpec](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicySpec)
-|Min card.|1
-|Max card.|1
-
-|!form data!Eigenschap|Waarde
-|----------|------
-|Max card.|1
-
-|!form data!Eigenschap|Waarde
-|----------|------
-|Verwijst naar|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
+|Gebruikte term|[dqv:value](http://www.w3.org/ns/dqv#value)
+|Datatype|[rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal)
+|Uitleg|De uitkomst van de meting, de waarde
 |Min card.|1
 |Max card.|1
 
 
 ### Relaties
 
-|!form data!Eigenschap|Waarde
+|!form data!Eigenschap|is meetwaarde van
 |----------|------
 |Gebruikte term|[dqv:isMeasurementOf](http://www.w3.org/ns/dqv#isMeasurementOf)
 |Verwijst naar|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
+|Uitleg|Geeft de meting aan waar deze meetwaarde een uitkomst van is
 |Min card.|1
 |Max card.|1
 
-|!form data!Eigenschap|Waarde
+
+### Relaties
+
+|!form data!Eigenschap|eigenschap
 |----------|------
-|Gebruikte term|[dqv:value](http://www.w3.org/ns/dqv#value)
+|nodeKind|[http://www.w3.org/ns/shacl#BlankNode](http://www.w3.org/ns/shacl#BlankNode)
+|Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
+|Relatie met|[Specificatie van de eis](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicySpec)
+|Uitleg|De regel behorende bij de kwaliteitseis
+|Min card.|1
+|Max card.|1
+
+|!form data!Eigenschap|ernst
+|----------|------
+|Uitleg|De ernst van de kwaliteitseis
+|Max card.|1
+
+|!form data!Eigenschap|betreft
+|----------|------
+|Verwijst naar|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
+|Uitleg|De meting waar deze kwaliteitseis voor geldt
 |Min card.|1
 |Max card.|1
 
@@ -99,13 +111,15 @@ Datakwaliteit
 
 |!form data!Klasse|Kwaliteitseis
 |----------|------
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_targetNode](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_targetNode), [http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_severity](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_severity), [http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_message](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_message), [http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_property](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_property)
+|Getypeerd als|[sh:NodeShape](http://www.w3.org/ns/shacl#NodeShape)
+|Eigenschappen en relaties|[melding](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_message), [eigenschap](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_property), [ernst](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_severity), [betreft](http://bp4mc2.org/profiles/dqv-ap-sc#QualityPolicy_targetNode)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|Waarde
+|!form data!Eigenschap|melding
 |----------|------
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|De melding die gerapporteerd wordt als de meting niet voldoet aan de kwaliteitseis
 
 
