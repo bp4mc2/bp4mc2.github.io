@@ -23,10 +23,19 @@ Provenance can be tracked of metadata descriptions and distributions.
 |!form data!Klasse|Asset
 |----------|------
 |Description|An asset is a set of reusable metadata and reference data  that are used for eGovernment system development.
-|Properties en relations|[has distribution](http://bp4mc2.org/profiles/adms-ap-sc#Asset_distribution), [label](http://bp4mc2.org/profiles/adms-ap-sc#Asset_label), [has landing page](http://bp4mc2.org/profiles/adms-ap-sc#Asset_landingPage), [part of](http://bp4mc2.org/profiles/adms-ap-sc#Asset_partOf), [provenance (asset)](http://bp4mc2.org/profiles/adms-ap-sc#Asset_provenance)
+|Properties en relations|[has distribution](http://bp4mc2.org/profiles/adms-ap-sc#Asset_distribution), [label](http://bp4mc2.org/profiles/adms-ap-sc#Asset_label), [has landing page](http://bp4mc2.org/profiles/adms-ap-sc#Asset_landingPage), [part of](http://bp4mc2.org/profiles/adms-ap-sc#Asset_partOf), [provenance](http://bp4mc2.org/profiles/adms-ap-sc#Asset_provenance)
 
 
 ### Properties
+
+|!form data!Eigenschap|label
+|----------|------
+|Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Description|An asset has a label.
+|Example|Landenlijst
+|Min card.|1
+|Max card.|1
 
 
 ### Relations
@@ -34,21 +43,13 @@ Provenance can be tracked of metadata descriptions and distributions.
 |!form data!Eigenschap|has distribution
 |----------|------
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
+|Related with|[Distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
-
-|!form data!Eigenschap|label
-|----------|------
-|Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Description|An asset has a label.
-|Example|Landenlijst
-|Min card.|1
-|Max card.|1
 
 |!form data!Eigenschap|has landing page
 |----------|------
 |Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
+|Related with|[Landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
@@ -59,10 +60,10 @@ Provenance can be tracked of metadata descriptions and distributions.
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|!form data!Eigenschap|provenance (asset)
+|!form data!Eigenschap|provenance
 |----------|------
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a asset can be described.
 |Example|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
 |Min card.|1
@@ -70,14 +71,11 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ## Asset distribution
 
-|!form data!Klasse|distribution
+|!form data!Klasse|Distribution
 |----------|------
 |Used term|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Description|The way in which an asset is published.
-|Properties en relations|[access url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_accessURL), [download url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_downloadURL), [provenance (asset distribution)](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_provenance), [representation format](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_representationTechnique)
-
-
-### Properties
+|Properties en relations|[access url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_accessURL), [download url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_downloadURL), [provenance](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_provenance), [representation format](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_representationTechnique)
 
 
 ### Relations
@@ -85,21 +83,13 @@ Provenance can be tracked of metadata descriptions and distributions.
 |!form data!Eigenschap|has distribution
 |----------|------
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
+|Related with|[Distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
-
-|!form data!Eigenschap|label
-|----------|------
-|Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Description|An asset has a label.
-|Example|Landenlijst
-|Min card.|1
-|Max card.|1
 
 |!form data!Eigenschap|has landing page
 |----------|------
 |Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
+|Related with|[Landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
@@ -110,10 +100,10 @@ Provenance can be tracked of metadata descriptions and distributions.
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|!form data!Eigenschap|provenance (asset)
+|!form data!Eigenschap|provenance
 |----------|------
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a asset can be described.
 |Example|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
 |Min card.|1
@@ -121,47 +111,9 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ## Landing page
 
-
-### Properties
-
-
-### Relations
-
-|!form data!Eigenschap|has distribution
+|!form data!Klasse|Landing page
 |----------|------
-|Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
-|Description|The way in which an asset is published can be indicated.
-
-|!form data!Eigenschap|label
-|----------|------
-|Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Description|An asset has a label.
-|Example|Landenlijst
-|Min card.|1
-|Max card.|1
-
-|!form data!Eigenschap|has landing page
-|----------|------
-|Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
-|Description|The landing page on the web on which an asset can be found can be specified.
-|Max card.|1
-
-|!form data!Eigenschap|part of
-|----------|------
-|Property|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
-|Related with|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
-|Description|An asset can be part of a dataset.
-|Max card.|1
-
-|!form data!Eigenschap|provenance (asset)
-|----------|------
-|Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
-|Description|Provenance of a asset can be described.
-|Example|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
-|Min card.|1
+|Description|The landing page on the web on which an asset can be found.
 
 
 ## Download format
@@ -175,21 +127,13 @@ Provenance can be tracked of metadata descriptions and distributions.
 |!form data!Eigenschap|has distribution
 |----------|------
 |Property|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Related with|[distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
+|Related with|[Distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
-
-|!form data!Eigenschap|label
-|----------|------
-|Property|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
-|Description|An asset has a label.
-|Example|Landenlijst
-|Min card.|1
-|Max card.|1
 
 |!form data!Eigenschap|has landing page
 |----------|------
 |Property|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Related with|[landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
+|Related with|[Landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
@@ -200,10 +144,10 @@ Provenance can be tracked of metadata descriptions and distributions.
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|!form data!Eigenschap|provenance (asset)
+|!form data!Eigenschap|provenance
 |----------|------
 |Property|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[http://www.w3.org/ns/prov#Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Provenance of a asset can be described.
 |Example|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
 |Min card.|1
