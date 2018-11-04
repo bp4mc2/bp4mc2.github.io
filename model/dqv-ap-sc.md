@@ -74,17 +74,6 @@ Datakwaliteit
 
 ### Relaties
 
-|!form data!Eigenschap|is meetwaarde van
-|----------|------
-|Gebruikte term|[dqv:isMeasurementOf](http://www.w3.org/ns/dqv#isMeasurementOf)
-|Verwijst naar|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
-|Uitleg|Geeft de meting aan waar deze meetwaarde een uitkomst van is
-|Min card.|1
-|Max card.|1
-
-
-### Relaties
-
 |!form data!Eigenschap|eigenschap
 |----------|------
 |Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
@@ -102,6 +91,17 @@ Datakwaliteit
 |----------|------
 |Verwijst naar|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
 |Uitleg|De meting waar deze kwaliteitseis voor geldt
+|Min card.|1
+|Max card.|1
+
+
+### Relaties
+
+|!form data!Eigenschap|is meetwaarde van
+|----------|------
+|Gebruikte term|[dqv:isMeasurementOf](http://www.w3.org/ns/dqv#isMeasurementOf)
+|Verwijst naar|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
+|Uitleg|Geeft de meting aan waar deze meetwaarde een uitkomst van is
 |Min card.|1
 |Max card.|1
 

@@ -25,7 +25,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ![](dcat-ap-sc.png)
 
-## Dataset (algemeen)
+## Dataset
 
 |!form data!Klasse|Dataset
 |----------|------

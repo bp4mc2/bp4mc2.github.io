@@ -74,17 +74,6 @@ Data quality
 
 ### Relations
 
-|!form data!Eigenschap|is measurement of
-|----------|------
-|Used term|[dqv:isMeasurementOf](http://www.w3.org/ns/dqv#isMeasurementOf)
-|Refers to|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
-|Description|States the metric that is measured by this measurement
-|Min card.|1
-|Max card.|1
-
-
-### Relations
-
 |!form data!Eigenschap|property
 |----------|------
 |Used term|[sh:property](http://www.w3.org/ns/shacl#property)
@@ -102,6 +91,17 @@ Data quality
 |----------|------
 |Refers to|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
 |Description|The metric for which this quality policy holds
+|Min card.|1
+|Max card.|1
+
+
+### Relations
+
+|!form data!Eigenschap|is measurement of
+|----------|------
+|Used term|[dqv:isMeasurementOf](http://www.w3.org/ns/dqv#isMeasurementOf)
+|Refers to|[dqv:Metric](http://www.w3.org/ns/dqv#Metric)
+|Description|States the metric that is measured by this measurement
 |Min card.|1
 |Max card.|1
 

@@ -25,7 +25,7 @@ A dataset is actually everything you call a dataset. A dataset is not defined sh
 
 ![](dcat-ap-sc.png)
 
-## Dataset (general)
+## Dataset
 
 |!form data!Klasse|Dataset
 |----------|------
