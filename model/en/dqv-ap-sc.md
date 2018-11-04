@@ -1,16 +1,4 @@
-# DQV Application profile for data quality
-
-
-Data quality
-
-
-![](dqv-ap-sc.png)
-
-## Quality dimension
-
-|!form data!Klasse|Quality dimension
-|----------|------
-|Used term|[dqv:Dimension](http://www.w3.org/ns/dqv#Dimension)
-|Properties en relations|[http://bp4mc2.org/profiles/dqv-ap-sc#QualityDimension_label](http://bp4mc2.org/profiles/dqv-ap-sc#QualityDimension_label)
-
-
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>404 Niet gevonden</title><link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.min.css?version=1.23.1-SNAPSHOT"><link rel="stylesheet" type="text/css" href="/css/ldt-theme.min.css?version=1.23.1-SNAPSHOT"><script type="text/javascript" src="/js/jquery-3.1.1.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/jquery.dataTables.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/dataTables.bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" src="/js/bootstrap.min.js?version=1.23.1-SNAPSHOT"></script><script type="text/javascript" language="javascript" charset="utf-8">
+				var elmo_language = {language:{info:"_START_ tot _END_ van _TOTAL_ resultaten",search:"Zoeken:",lengthMenu:"Toon _MENU_ rijen",zeroRecords:"Niets gevonden",infoEmpty: "Geen resultaten",paginate:{first:"Eerste",previous:"Vorige",next:"Volgende",last:"Laatste"}},paging:true,searching:true,info:true}
+			</script></head><body><div id="page"><div class="content"><div class="container hidden-xs"><div class="row text-center"><img src="/images/ldt-logo.png"></div></div><div class="container"><div class="row"><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">404 Niet gevonden<a href="#" onclick="document.getElementById('errors').className = 'row';">.</a></h3></div><div class="panel-body"><p>Het antwoord op uw verzoek kan niet worden gevonden.</p><a href="#" class="btn btn-default" onclick="window.history.back();">Terug naar de vorige pagina.</a></div></div></div></div></div></div></body></html>
