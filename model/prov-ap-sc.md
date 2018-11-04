@@ -14,9 +14,9 @@ De provenance kent 2 aspecten:
 ** De formele geldigheid wordt vastgelegd in de formele bekendmakingsdatum. Daarbij kan ook de formele status worden vastgelegd, waarvoor de EU waardelijst voor statussen (adms:status) wordt gehanteerd.
 ** De juridische geldigheid in tijd en plaats kan worden vastgelegd in een tijdsperiode en een verwijzing naar een geografisch gebied.
 ** Voor begrippen en collecties van begrippen die hun oorsprong vinden in de onderliggende wet- en regelgeving geldt dat deze tijdsperiode de periode is zoals in die wet- en regelgeving is vastgelegd en het geografisch gebied het gebied is waarover het betreffende bevoegd gezag zeggenschap heeft.
-* De administratief/huishoudelijke aspecten. 
-** Een wijziging in de data wordt vastgelegd in een eigen sd:graph (de verzameling van gewijzigde elementen in 1 transactie). 
-** Deze wijziging wordt doorgevoerd door een prov:agent. 
+* De administratief/huishoudelijke aspecten.
+** Een wijziging in de data wordt vastgelegd in een eigen sd:graph (de verzameling van gewijzigde elementen in 1 transactie).
+** Deze wijziging wordt doorgevoerd door een prov:agent.
 ** Deze prov:agent dient geautoriseerd te zijn om een dergelijke wijziging uit te voeren. Dit betekent dat de prov:agent ook als foaf:Agent bekend is in een lijst met partijen (feitelijk een lijst van organisaties). Via de relatie dcterms:publisher is duidelijk wie de publicist is van een dataset, en daarmee degene die wijzigingen op de informatie over deze dataset mag doorvoeren.
 
 
@@ -29,26 +29,28 @@ De provenance kent 2 aspecten:
 |Gebruikte term|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Metadata van een versie van een entiteit kan worden beschreven.
 |Voorbeeld|De juridische geldigheid en/of de adnimistratieve housekeeping (provenance) gegevens van een entiteit
-|Eigenschappen en relaties|[wijzingsnotitie (metadata)](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [bekendgemaakt](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [geldig in tijd](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [geldig in gebied](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
+|Eigenschappen en relaties|[wijzingsnotitie](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [datum bekendgemaakt](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [geldig in tijd](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [geldig in gebied](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
 
 
 ### Eigenschappen
 
-
-### Relaties
-
-|!form data!Eigenschap|wijzingsnotitie (metadata)
+|!form data!Eigenschap|wijzingsnotitie
 |----------|------
 |Gebruikte term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De reden van een versie en andere aandachtspunten bij een versie kunnen worden toegelicht.
 |Voorbeeld|De toelichting is uitgebreid vanwege een onduidelijkheid.
 
-|!form data!Eigenschap|bekendgemaakt
+|!form data!Eigenschap|datum bekendgemaakt
 |----------|------
 |Gebruikte term|[dcterms:issued](http://purl.org/dc/terms/issued)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
 |Uitleg|Een versie kan bekend worden gemaakt vanaf een bepaald moment.
 |Voorbeeld|21/10/2017 20:21
 |Max card.|1
+
+
+### Relaties
 
 |!form data!Eigenschap|geldig in tijd
 |----------|------
@@ -77,7 +79,7 @@ De provenance kent 2 aspecten:
 |Max card.|1
 
 
-## Adms status
+## Status
 
 |!form data!Klasse|Status waardelijst
 |----------|------
@@ -86,7 +88,7 @@ De provenance kent 2 aspecten:
 |Waardelijst|[http://purl.org/adms/status/1.0](http://purl.org/adms/status/1.0)
 
 
-## Metadata
+## Tijdsperiode
 
 |!form data!Klasse|Tijdsperiode
 |----------|------
@@ -96,7 +98,23 @@ De provenance kent 2 aspecten:
 |Eigenschappen en relaties|[einde](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_end), [start](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_start)
 
 
-### Tijdsperiode
+### Eigenschappen
+
+|!form data!Eigenschap|einde
+|----------|------
+|Gebruikte term|[dcmiperiod:end](http://dublincore.org/documents/2006/04/10/dcmi-period/end)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Uitleg|Een periode eindigt op een bepaalde dataum. Deze datum kan onbekend (leeg) zijn.
+|Voorbeeld|01/08/2018
+|Max card.|1
+
+|!form data!Eigenschap|start
+|----------|------
+|Gebruikte term|[dcmiperiod:start](http://dublincore.org/documents/2006/04/10/dcmi-period/start)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Uitleg|Een periode start op een bepaalde datum. Deze datum kan onbekend (leeg) zijn.
+|Voorbeeld|22/10/2017
+|Max card.|1
 
 
 ## Geografisch gebied
@@ -108,20 +126,40 @@ De provenance kent 2 aspecten:
 |Voorbeeld|de gemeente Apeldoorn
 
 
-## Provenance graaf
+## Data graaf
 
-|!form data!Klasse|Provenance graaf
+|!form data!Klasse|Data graaf
 |----------|------
 |Gebruikte term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
-|Uitleg|De provenance graaf omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dat wil zeggen: een sd:Graph
+|Uitleg|De data graaf omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dat wil zeggen: een sd:Graph
 |Voorbeeld|Alle wijzigingen en nieuwe data die op 8 augustus 2018 in een keer zijn geladen.
-|Eigenschappen en relaties|[doorgevoerd door](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [wijzigingsnotitie (provenance graaf)](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registratiemoment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
+|Eigenschappen en relaties|[doorgevoerd door](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [wijzigingsnotitie](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registratiemoment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
 
 
 ### Eigenschappen
 
+|!form data!Eigenschap|wijzigingsnotitie
+|----------|------
+|Gebruikte term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dataTime](http://www.w3.org/2001/XMLSchema#dataTime)
+|Uitleg|De reden van een set samenhangende wijzigingen kan worden toegelicht.
+|Voorbeeld|Alle definities zijn aangepast overeenkomstig de nieuwe wet op de BAG.
+
 
 ### Relaties
+
+|!form data!Eigenschap|doorgevoerd door
+|----------|------
+|Gebruikte term|[prov:wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo)
+|Verwijst naar|[prov:Agent](http://www.w3.org/ns/prov#Agent)
+|Uitleg|De persoon of organisatie die de wijziging heeft (laten) doorvoeren kan worden vastgelegd
+|Voorbeeld|Het Kadaster
+
+|!form data!Eigenschap|registratiemoment
+|----------|------
+|Gebruikte term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
+|Uitleg|De datum en tijd van de administratieve handeling kan worden bewaard. Daardoor is altijd terug te halen wat op welk tijdstip aan informatie bekend was.
+|Voorbeeld|21/10/2017 20:21
 
 
 ## Agent (provenance)
@@ -134,10 +172,14 @@ De provenance kent 2 aspecten:
 |Eigenschappen en relaties|[uitgevoerd namens](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceAgent_OnBehalfOf)
 
 
-### Eigenschappen
-
-
 ### Relaties
+
+|!form data!Eigenschap|uitgevoerd namens
+|----------|------
+|Gebruikte term|[prov:actedOnBehalfOf](http://www.w3.org/ns/prov#actedOnBehalfOf)
+|Verwijst naar|[prov:Organization](http://www.w3.org/ns/prov#Organization)
+|Uitleg|Een persoon of organisatie kan opereren namens een andere persoon of organisatie.
+|Voorbeeld|overheid:Rijkswaterstaat
 
 
 ## Persoon (provenance)
@@ -167,7 +209,7 @@ De provenance kent 2 aspecten:
 |Voorbeeld|Rijkswaterstaat
 
 
-## Agent (foaf)
+## Geregistreerde Agent
 
 |!form data!Klasse|Agent (foaf)
 |----------|------
@@ -198,7 +240,7 @@ De provenance kent 2 aspecten:
 ## Uri strategie
 
 
-Provenance hoort altijd bij een entiteit. 
+Provenance hoort altijd bij een entiteit.
 * De gegevens over een entiteit zoals die op een bepaald moment geldig is kunnen worden opgevraagd via de doc-uri, aangevuld met yyyy/mm/dd
 #* De gegevens over een locatie zoals die op een bepaalde plaats geldig is kunnen worden opgevraagd via de doc-uri, aangevuld met {UpperCamelCase (rdfs:label van de Locatie)}
 

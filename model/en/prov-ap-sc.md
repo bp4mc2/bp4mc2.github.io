@@ -28,24 +28,26 @@ The provenance has two aspects:
 |----------|------
 |Used term|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Metadata of a version of an entity can be described.
-|Properties en relations|[change note (metadata)](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [issued](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [temporal validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [spatial validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
+|Properties en relations|[change note](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [date issued](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [temporal validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [spatial validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
 
 
 ### Properties
 
-
-### Relations
-
-|!form data!Eigenschap|change note (metadata)
+|!form data!Eigenschap|change note
 |----------|------
 |Used term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The reason for a version and other points of attention in a version can be explained.
 
-|!form data!Eigenschap|issued
+|!form data!Eigenschap|date issued
 |----------|------
 |Used term|[dcterms:issued](http://purl.org/dc/terms/issued)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
 |Description|A version can be issued from a certain moment in time.
 |Max card.|1
+
+
+### Relations
 
 |!form data!Eigenschap|temporal validity
 |----------|------
@@ -73,7 +75,7 @@ The provenance has two aspects:
 |Max card.|1
 
 
-## Adms status
+## Status
 
 |!form data!Klasse|Controlled vocabulary status
 |----------|------
@@ -81,7 +83,7 @@ The provenance has two aspects:
 |Controlled vocabulary|[http://purl.org/adms/status/1.0](http://purl.org/adms/status/1.0)
 
 
-## Metadata
+## Period of time
 
 |!form data!Klasse|Time period
 |----------|------
@@ -90,7 +92,23 @@ The provenance has two aspects:
 |Properties en relations|[end](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_end), [start](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_start)
 
 
-### Time period
+### Properties
+
+|!form data!Eigenschap|end
+|----------|------
+|Used term|[dcmiperiod:end](http://dublincore.org/documents/2006/04/10/dcmi-period/end)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Description|A period of time ends at a certain date. This date can be unknown (empty).
+|Example|01/08/2018
+|Max card.|1
+
+|!form data!Eigenschap|start
+|----------|------
+|Used term|[dcmiperiod:start](http://dublincore.org/documents/2006/04/10/dcmi-period/start)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dateTime](http://www.w3.org/2001/XMLSchema#dateTime)
+|Description|A period of time starts at a certain date. This date can be unknown (empty).
+|Example|22/10/2017
+|Max card.|1
 
 
 ## Geographical area
@@ -101,19 +119,36 @@ The provenance has two aspects:
 |Description|The description of the geographical area in which a version is valid.
 
 
-## Provenance graph
+## Data graph
 
-|!form data!Klasse|Provenance graph
+|!form data!Klasse|Data graph
 |----------|------
 |Used term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
-|Description|The provenance graph contains both the concrete data (represented by a prov:Entity), and the metadata of the prov:Entity, that is: an sd:Graph
-|Properties en relations|[attributed to](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [change note (provenance graph)](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registration moment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
+|Description|The data graph contains both the concrete data (represented by a prov:Entity), and the metadata of the prov:Entity, that is: an sd:Graph
+|Properties en relations|[attributed to](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [change note](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registration moment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
 
 
 ### Properties
 
+|!form data!Eigenschap|change note
+|----------|------
+|Used term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
+|Datatype|[http://www.w3.org/2001/XMLSchema#dataTime](http://www.w3.org/2001/XMLSchema#dataTime)
+|Description|The reason for a set of related changes can be explained.
+
 
 ### Relations
+
+|!form data!Eigenschap|attributed to
+|----------|------
+|Used term|[prov:wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo)
+|Refers to|[prov:Agent](http://www.w3.org/ns/prov#Agent)
+|Description|The person or organization that made or let make the change can be recorded.
+
+|!form data!Eigenschap|registration moment
+|----------|------
+|Used term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
+|Description|The date and time of the administrative operation can be saved. This way you can always retrieve what information was known at what time.
 
 
 ## Agent (provenance)
@@ -125,10 +160,13 @@ The provenance has two aspects:
 |Properties en relations|[acted on behalf of](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceAgent_OnBehalfOf)
 
 
-### Properties
-
-
 ### Relations
+
+|!form data!Eigenschap|acted on behalf of
+|----------|------
+|Used term|[prov:actedOnBehalfOf](http://www.w3.org/ns/prov#actedOnBehalfOf)
+|Refers to|[prov:Organization](http://www.w3.org/ns/prov#Organization)
+|Description|A person or organization can act on behalf of another person or organization.
 
 
 ## Person (provenance)
@@ -155,7 +193,7 @@ The provenance has two aspects:
 |Description|An agent (provenance can be an organization.
 
 
-## Agent (foaf)
+## Registered Agent
 
 |!form data!Klasse|Agent (foaf)
 |----------|------
