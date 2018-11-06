@@ -1,0 +1,7 @@
+/* Style for a public "Working Draft" */
+
+@import "base.css";
+
+body {
+  background-image: url(WD.svg);
+}
