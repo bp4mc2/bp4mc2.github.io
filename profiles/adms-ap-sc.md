@@ -24,12 +24,12 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 |----------|------
 |Uitleg|Een asset is een set van herbruikbare metadata en referentiegegevens die worden gebruikt voor de ontwikkeling van e-overheidssystemen.
 |Voorbeeld|De waardelijst met Kadastrale gemeenten.
-|Eigenschappen en relaties|[heeft distributie](http://bp4mc2.org/profiles/adms-ap-sc#Asset_distribution), [naam](http://bp4mc2.org/profiles/adms-ap-sc#Asset_label), [heeft webpagina](http://bp4mc2.org/profiles/adms-ap-sc#Asset_landingPage), [onderdeel van](http://bp4mc2.org/profiles/adms-ap-sc#Asset_partOf), [herkomst](http://bp4mc2.org/profiles/adms-ap-sc#Asset_provenance)
+|Eigenschappen en relaties|[heeft distributie](#Asset_distribution), [naam](#Asset_label), [heeft webpagina](#Asset_landingPage), [onderdeel van](#Asset_partOf), [herkomst](#Asset_provenance)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|naam
+|!form data#Asset_label!Eigenschap|naam
 |----------|------
 |Gebruikte term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -41,14 +41,14 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ### Relaties
 
-|!form data!Eigenschap|heeft distributie
+|!form data#Asset_distribution!Eigenschap|heeft distributie
 |----------|------
 |Gebruikte term|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Relatie met|[Distributie](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd kan worden aangegeven.
 |Voorbeeld|De lijst met Kadastrale gemeenten kan worden gepubliceerd in genericode.
 
-|!form data!Eigenschap|heeft webpagina
+|!form data#Asset_landingPage!Eigenschap|heeft webpagina
 |----------|------
 |Gebruikte term|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
 |Relatie met|[Webpagina](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
@@ -56,7 +56,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 |Voorbeeld|kadaster.nl/waardelijsten.
 |Max card.|1
 
-|!form data!Eigenschap|onderdeel van
+|!form data#Asset_partOf!Eigenschap|onderdeel van
 |----------|------
 |Gebruikte term|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Relatie met|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
@@ -64,7 +64,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 |Voorbeeld|De lijst met Kadastrale gemeenten is onderdeel van de BRK.
 |Max card.|1
 
-|!form data!Eigenschap|herkomst
+|!form data#Asset_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
@@ -80,41 +80,38 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 |Gebruikte term|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd.
 |Voorbeeld|De genericode publicatie van de lijst met Kadastrale gemeenten.
-|Eigenschappen en relaties|[toegang url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_accessURL), [download url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_downloadURL), [herkomst](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_provenance), [representatie formaat](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_representationTechnique)
+|Eigenschappen en relaties|[toegang url](#AssetDistribution_accessURL), [download url](#AssetDistribution_downloadURL), [herkomst](#AssetDistribution_provenance), [representatie formaat](#AssetDistribution_representationTechnique)
 
 
 ### Relaties
 
-|!form data!Eigenschap|heeft distributie
+|!form data#AssetDistribution_accessURL!Eigenschap|toegang url
 |----------|------
-|Gebruikte term|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Relatie met|[Distributie](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
-|Uitleg|De wijze waarop een asset wordt gepubliceerd kan worden aangegeven.
-|Voorbeeld|De lijst met Kadastrale gemeenten kan worden gepubliceerd in genericode.
+|Gebruikte term|[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL)
+|Uitleg|Een distributie kan vindbaar zijn via een toegang url.
+|Voorbeeld|kadaster.nl/waardelijsten/gc
 
-|!form data!Eigenschap|heeft webpagina
+|!form data#AssetDistribution_downloadURL!Eigenschap|download url
 |----------|------
-|Gebruikte term|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Relatie met|[Webpagina](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
-|Uitleg|De webpagina waarop een asset vindbaar is kan worden gespecificeerd.
-|Voorbeeld|kadaster.nl/waardelijsten.
-|Max card.|1
+|Gebruikte term|[dcat:downloadURL](http://www.w3.org/ns/dcat#downloadURL)
+|Relatie met|[download formaat](http://bp4mc2.org/profiles/adms-ap-sc#DownloadFormat)
+|Uitleg|Een download kan vindbaar zijn via een download url.
+|Voorbeeld|kadaster.nl/waardelijsten/downloads
 
-|!form data!Eigenschap|onderdeel van
-|----------|------
-|Gebruikte term|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
-|Relatie met|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
-|Uitleg|Een asset kan onderdeel zijn van een dataset.
-|Voorbeeld|De lijst met Kadastrale gemeenten is onderdeel van de BRK.
-|Max card.|1
-
-|!form data!Eigenschap|herkomst
+|!form data#AssetDistribution_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
-|Uitleg|Van een asset kan de herkomst worden beschreven.
-|Voorbeeld|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
+|Uitleg|Van een distributie kan de herkomst worden beschreven.
+|Voorbeeld|De metadata van de reSpec beschrijving van het nieuwe informatiemodel voor de BAG
 |Min card.|1
+
+|!form data#AssetDistribution_representationTechnique!Eigenschap|representatie formaat
+|----------|------
+|Gebruikte term|[adms:representationTechnique](http://www.w3.org/ns/adms#representationTechnique)
+|Relatie met|[http://bp4mc2.org/profiles/adms-ap-sc#RepresentationTechnique](http://bp4mc2.org/profiles/adms-ap-sc#RepresentationTechnique)
+|Uitleg|Het formaat waarin een distributie beschikbaar is kan worden gespecificeerd op basis van de adms waardelijst representation techniques.
+|Voorbeeld|genericode
 
 
 ## Webpagina

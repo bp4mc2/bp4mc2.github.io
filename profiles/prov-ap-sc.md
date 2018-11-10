@@ -29,19 +29,19 @@ De provenance kent 2 aspecten:
 |Gebruikte term|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Metadata van een versie van een entiteit kan worden beschreven.
 |Voorbeeld|De juridische geldigheid en/of de adnimistratieve housekeeping (provenance) gegevens van een entiteit
-|Eigenschappen en relaties|[wijzingsnotitie](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [datum bekendgemaakt](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [geldig in tijd](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [geldig in gebied](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
+|Eigenschappen en relaties|[wijzingsnotitie](#Metadata_changeNote), [datum bekendgemaakt](#Metadata_isIssued), [geldig in tijd](#Metadata_isValidDuring), [geldig in gebied](#Metadata_isvalidWithin), [status](#Metadata_status)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|wijzingsnotitie
+|!form data#Metadata_changeNote!Eigenschap|wijzingsnotitie
 |----------|------
 |Gebruikte term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De reden van een versie en andere aandachtspunten bij een versie kunnen worden toegelicht.
 |Voorbeeld|De toelichting is uitgebreid vanwege een onduidelijkheid.
 
-|!form data!Eigenschap|datum bekendgemaakt
+|!form data#Metadata_isIssued!Eigenschap|datum bekendgemaakt
 |----------|------
 |Gebruikte term|[dcterms:issued](http://purl.org/dc/terms/issued)
 |Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -52,7 +52,7 @@ De provenance kent 2 aspecten:
 
 ### Relaties
 
-|!form data!Eigenschap|geldig in tijd
+|!form data#Metadata_isValidDuring!Eigenschap|geldig in tijd
 |----------|------
 |Gebruikte term|[dcterms:temporal](http://purl.org/dc/terms/temporal)
 |Verwijst naar|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
@@ -60,7 +60,7 @@ De provenance kent 2 aspecten:
 |Voorbeeld|22/10/2017 - 
 |Max card.|1
 
-|!form data!Eigenschap|geldig in gebied
+|!form data#Metadata_isvalidWithin!Eigenschap|geldig in gebied
 |----------|------
 |Gebruikte term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
 |Verwijst naar|[dcterms:Location](http://purl.org/dc/terms/Location)
@@ -68,7 +68,7 @@ De provenance kent 2 aspecten:
 |Voorbeeld|gemeente Apeldoorn
 |Max card.|1
 
-|!form data!Eigenschap|status
+|!form data#Metadata_status!Eigenschap|status
 |----------|------
 |Gebruikte term|[adms:status](http://www.w3.org/ns/adms#status)
 |Relatie met|[Status waardelijst](http://bp4mc2.org/profiles/prov-ap-sc#Status)
@@ -94,12 +94,12 @@ De provenance kent 2 aspecten:
 |Gebruikte term|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
 |Uitleg|Een periode kan worden aangeduid met een startdatum en einddatum. 
 |Voorbeeld|22/10/2017 - 01/08/2018
-|Eigenschappen en relaties|[einde](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_end), [start](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_start)
+|Eigenschappen en relaties|[einde](#PeriodOfTime_end), [start](#PeriodOfTime_start)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|einde
+|!form data#PeriodOfTime_end!Eigenschap|einde
 |----------|------
 |Gebruikte term|[dcmiperiod:end](http://dublincore.org/documents/2006/04/10/dcmi-period/end)
 |Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -107,7 +107,7 @@ De provenance kent 2 aspecten:
 |Voorbeeld|01/08/2018
 |Max card.|1
 
-|!form data!Eigenschap|start
+|!form data#PeriodOfTime_start!Eigenschap|start
 |----------|------
 |Gebruikte term|[dcmiperiod:start](http://dublincore.org/documents/2006/04/10/dcmi-period/start)
 |Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -132,19 +132,19 @@ De provenance kent 2 aspecten:
 |Gebruikte term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
 |Uitleg|De data graaf omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dat wil zeggen: een sd:Graph
 |Voorbeeld|Alle wijzigingen en nieuwe data die op 8 augustus 2018 in een keer zijn geladen.
-|Eigenschappen en relaties|[doorgevoerd door](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [wijzigingsnotitie](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registratiemoment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
+|Eigenschappen en relaties|[doorgevoerd door](#ProvenanceGraph_attributedTo), [wijzigingsnotitie](#ProvenanceGraph_changeNote), [registratiemoment](#ProvenanceGraph_generatedAtTime)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|wijzigingsnotitie
+|!form data#ProvenanceGraph_changeNote!Eigenschap|wijzigingsnotitie
 |----------|------
 |Gebruikte term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De reden van een set samenhangende wijzigingen kan worden toegelicht.
 |Voorbeeld|Alle definities zijn aangepast overeenkomstig de nieuwe wet op de BAG.
 
-|!form data!Eigenschap|registratiemoment
+|!form data#ProvenanceGraph_generatedAtTime!Eigenschap|registratiemoment
 |----------|------
 |Gebruikte term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
 |Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -154,7 +154,7 @@ De provenance kent 2 aspecten:
 
 ### Relaties
 
-|!form data!Eigenschap|doorgevoerd door
+|!form data#ProvenanceGraph_attributedTo!Eigenschap|doorgevoerd door
 |----------|------
 |Gebruikte term|[prov:wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo)
 |Verwijst naar|[prov:Agent](http://www.w3.org/ns/prov#Agent)
@@ -169,12 +169,12 @@ De provenance kent 2 aspecten:
 |Gebruikte term|[prov:Agent](http://www.w3.org/ns/prov#Agent)
 |Uitleg| De persoon of organisatie die verantwoordelijk is voor een activiteit, de creatie van een entity of een activiteit van een ander kan worden vastgelegd.
 |Voorbeeld|Het Ministerie van BZK
-|Eigenschappen en relaties|[uitgevoerd namens](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceAgent_OnBehalfOf)
+|Eigenschappen en relaties|[uitgevoerd namens](#ProvenanceAgent_OnBehalfOf)
 
 
 ### Relaties
 
-|!form data!Eigenschap|uitgevoerd namens
+|!form data#ProvenanceAgent_OnBehalfOf!Eigenschap|uitgevoerd namens
 |----------|------
 |Gebruikte term|[prov:actedOnBehalfOf](http://www.w3.org/ns/prov#actedOnBehalfOf)
 |Verwijst naar|[prov:Organization](http://www.w3.org/ns/prov#Organization)
@@ -234,7 +234,19 @@ De provenance kent 2 aspecten:
 |Gebruikte term|[org:Organization](http://www.w3.org/ns/org#Organization)
 |Uitleg|De organisatie zoals opgenomen in de formele lijst met OIN nummers.
 |Voorbeeld|345879873452
-|Eigenschappen en relaties|[heeft OIN](http://bp4mc2.org/profiles/prov-ap-sc#OrgOrganization_oin)
+|Eigenschappen en relaties|[heeft OIN](#OrgOrganization_oin)
+
+
+### Eigenschappen
+
+|!form data#OrgOrganization_oin!Eigenschap|heeft OIN
+|----------|------
+|Gebruikte term|[org:identifier](http://www.w3.org/ns/org#identifier)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Uitleg|De organisatie die verantwoordelijk is voor een dataset is opgenomen in de formele lijst met OIN nummers.
+|Voorbeeld|345879873452
+|Min card.|1
+|Max card.|1
 
 
 ## Uri strategie

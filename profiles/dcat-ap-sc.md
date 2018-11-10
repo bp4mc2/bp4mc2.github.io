@@ -32,19 +32,19 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Gebruikte term|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Uitleg|Een dataset is een algemene beschrijving van een verzameling data, gepubliceerd of samengesteld door één beheerder.
 |Voorbeeld|De Basisregistratie Kadaster (BRK) bestaat uit de kadastrale registratie van onroerende zaken, zakelijke rechten en de kadastrale kaart.
-|Eigenschappen en relaties|[beschrijving](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_description), [titel](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_label), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_language), [herkomst](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_provenance), [publicist](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_publisher), [type dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset_type)
+|Eigenschappen en relaties|[beschrijving](#Dataset_description), [titel](#Dataset_label), [taal](#Dataset_language), [herkomst](#Dataset_provenance), [publicist](#Dataset_publisher), [type dataset](#Dataset_type)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|beschrijving
+|!form data#Dataset_description!Eigenschap|beschrijving
 |----------|------
 |Gebruikte term|[dcterms:description](http://purl.org/dc/terms/description)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De dataset kan een duidelijke beschrijving hebben.
 |Voorbeeld|Met de Omgevingswet wil de overheid de regels voor ruimtelijke ontwikkeling vereenvoudigen en samenvoegen. Zodat het straks bijvoorbeeld makkelijker is om bouwprojecten te starten. De Crisis- en herstelwet (Chw) maakt dit nu al mogelijk, bijvoorbeeld door bestaande regels aan te passen. Naar verwachting treedt de Omgevingswet in 2019 in werking.
 
-|!form data!Eigenschap|titel
+|!form data#Dataset_label!Eigenschap|titel
 |----------|------
 |Gebruikte term|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -56,14 +56,14 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ### Relaties
 
-|!form data!Eigenschap|taal
+|!form data#Dataset_language!Eigenschap|taal
 |----------|------
 |Gebruikte term|[dcterms:language](http://purl.org/dc/terms/language)
 |Relatie met|[Taal](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Uitleg|De taal waarin de dataset is beschreven (vanwege de compatibiliteit met het DCAT-AP NL) kan worden vastgelegd.
 |Voorbeeld|@nl
 
-|!form data!Eigenschap|herkomst
+|!form data#Dataset_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
@@ -71,14 +71,14 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Voorbeeld|De BAG is op xx/xx/xx gelanceerd
 |Min card.|1
 
-|!form data!Eigenschap|publicist
+|!form data#Dataset_publisher!Eigenschap|publicist
 |----------|------
 |Gebruikte term|[dcterms:publisher](http://purl.org/dc/terms/publisher)
 |Verwijst naar|[foaf:Agent](http://xmlns.com/foaf/0.1/Agent)
 |Uitleg|Degene die een dataset publiceert kan worden vastgelegd. Deze organisatie of persoon heeft toestemming om deze handeling uit te voeren.
 |Voorbeeld|overheid:Rijkswaterstaat
 
-|!form data!Eigenschap|type dataset
+|!form data#Dataset_type!Eigenschap|type dataset
 |----------|------
 |Gebruikte term|[dcterms:type](http://purl.org/dc/terms/type)
 |Relatie met|[Datasettype](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetType)
@@ -92,19 +92,19 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |----------|------
 |Uitleg|Een dataset (versie) is een concrete, geversioneerde beschrijving van een verzameling data, gepubliceerd of samengesteld door één beheerder.
 |Voorbeeld|De Basisregistratie Kadaster (BRK) zoals beschreven in IMKAD 2.1.
-|Eigenschappen en relaties|[beschreven door](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_describedBy), [distributie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_distribution), [geografische afbakening](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_geometricDemarcation), [herkomst](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_provenance), [type dataset = DatasetVersie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_type), [versie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_version), [versie-notities](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionNotes), [versie van](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion_versionOf)
+|Eigenschappen en relaties|[beschreven door](#DatasetVersion_describedBy), [distributie](#DatasetVersion_distribution), [geografische afbakening](#DatasetVersion_geometricDemarcation), [herkomst](#DatasetVersion_provenance), [type dataset = DatasetVersie](#DatasetVersion_type), [versie](#DatasetVersion_version), [versie-notities](#DatasetVersion_versionNotes), [versie van](#DatasetVersion_versionOf)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|versie
+|!form data#DatasetVersion_version!Eigenschap|versie
 |----------|------
 |Gebruikte term|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (versie) kan een versie aanduiding hebben.
 |Voorbeeld|2.1.0
 
-|!form data!Eigenschap|versie-notities
+|!form data#DatasetVersion_versionNotes!Eigenschap|versie-notities
 |----------|------
 |Gebruikte term|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -114,28 +114,28 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ### Relaties
 
-|!form data!Eigenschap|beschreven door
+|!form data#DatasetVersion_describedBy!Eigenschap|beschreven door
 |----------|------
 |Gebruikte term|[wdrs:describedBy](http://www.w3.org/2007/05/powder-s#describedBy)
 |Relatie met|[Datamodel](http://bp4mc2.org/profiles/dcat-ap-sc#Datamodel)
 |Uitleg|De data in een dataset (version) is beschreven door een informatiemodel.
 |Voorbeeld|kadaster.nl/schemas/imkad
 
-|!form data!Eigenschap|distributie
+|!form data#DatasetVersion_distribution!Eigenschap|distributie
 |----------|------
 |Gebruikte term|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Verwijst naar|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Uitleg|De kanalen via welke een dataset (versie) kan worden verspreid kunnen worden gespecificeerd.
 |Voorbeeld|Digitale Kadastrale Kaart download service.
 
-|!form data!Eigenschap|geografische afbakening
+|!form data#DatasetVersion_geometricDemarcation!Eigenschap|geografische afbakening
 |----------|------
 |Gebruikte term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
 |Verwijst naar|[dcterms:Location](http://purl.org/dc/terms/Location)
 |Uitleg|Het gebied waar de dataset over gaat kan worden gespecificeerd.
 |Voorbeeld|de link naar de aanduiding voor de gemeente Apeldoorn
 
-|!form data!Eigenschap|herkomst
+|!form data#DatasetVersion_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
@@ -143,7 +143,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Voorbeeld|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
 
-|!form data!Eigenschap|type dataset = DatasetVersie
+|!form data#DatasetVersion_type!Eigenschap|type dataset = DatasetVersie
 |----------|------
 |Gebruikte term|[dcterms:type](http://purl.org/dc/terms/type)
 |Waarde|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
@@ -152,7 +152,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Min card.|1
 |Max card.|1
 
-|!form data!Eigenschap|versie van
+|!form data#DatasetVersion_versionOf!Eigenschap|versie van
 |----------|------
 |Gebruikte term|[dcterms:isVersionOf](http://purl.org/dc/terms/isVersionOf)
 |Relatie met|[Dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Dataset)
@@ -167,19 +167,19 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |----------|------
 |Uitleg|Een dataset (product) is een concreet, geversioneerd informatieproduct op basis van de data in een dataset (versie)
 |Voorbeeld|De BRK levering versie 2.2 zoals beschreven in BRKlevering.uml
-|Eigenschappen en relaties|[distributie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_distribution), [afgeleid van](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_isDerivedFrom), [herkomst](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_provenance), [heeft gemeten kwaliteit](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_qualityMeasurement), [type dataset = DatasetProduct](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_type), [versie](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_version), [versie notities](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct_versionNotes)
+|Eigenschappen en relaties|[distributie](#DatasetProduct_distribution), [afgeleid van](#DatasetProduct_isDerivedFrom), [herkomst](#DatasetProduct_provenance), [heeft gemeten kwaliteit](#DatasetProduct_qualityMeasurement), [type dataset = DatasetProduct](#DatasetProduct_type), [versie](#DatasetProduct_version), [versie notities](#DatasetProduct_versionNotes)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|versie
+|!form data#DatasetProduct_version!Eigenschap|versie
 |----------|------
 |Gebruikte term|[adms:version](http://www.w3.org/ns/adms#version)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|Een dataset (product) kan een versie aanduiding hebben.
 |Voorbeeld|2.1.0
 
-|!form data!Eigenschap|versie notities
+|!form data#DatasetProduct_versionNotes!Eigenschap|versie notities
 |----------|------
 |Gebruikte term|[adms:versionNotes](http://www.w3.org/ns/adms#versionNotes)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -189,21 +189,21 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ### Relaties
 
-|!form data!Eigenschap|distributie
+|!form data#DatasetProduct_distribution!Eigenschap|distributie
 |----------|------
 |Gebruikte term|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
 |Verwijst naar|[dcat:Distribution](http://www.w3.org/ns/dcat#Distribution)
 |Uitleg|De kanalen via welke een dataset (product) kan worden verspreid kunnen worden gespecificeerd.
 |Voorbeeld|De 'BAG extract' download service.
 
-|!form data!Eigenschap|afgeleid van
+|!form data#DatasetProduct_isDerivedFrom!Eigenschap|afgeleid van
 |----------|------
 |Gebruikte term|[dcterms:relation](http://purl.org/dc/terms/relation)
 |Relatie met|[Dataset (versie)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetVersion)
 |Uitleg|Een dataset (product) kan zijn afgeleid van een dataset (versie).
 |Voorbeeld|BRK levering 2.2 isafgeleid van IMKAD 2.1.0.
 
-|!form data!Eigenschap|herkomst
+|!form data#DatasetProduct_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
@@ -211,14 +211,14 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Voorbeeld|De BAG 2.0 is op xx/xx/xx gelanceerd
 |Min card.|1
 
-|!form data!Eigenschap|heeft gemeten kwaliteit
+|!form data#DatasetProduct_qualityMeasurement!Eigenschap|heeft gemeten kwaliteit
 |----------|------
 |Gebruikte term|[dqv:hasQualityMeasurement](http://www.w3.org/ns/dqv#hasQualityMeasurement)
 |Verwijst naar|[dqv:QualityMeasurement](http://www.w3.org/ns/dqv#QualityMeasurement)
 |Uitleg|Een dataset (product) kan een schatting van de kwaliteit hebben tegen een specifieke kwaliteitsmetriek.
 |Voorbeeld|De data in het BAG extract voor de gemeente Apeldoorn zijn voor 99,5% corect op basis van handmatige controle van een steekproef.
 
-|!form data!Eigenschap|type dataset = DatasetProduct
+|!form data#DatasetProduct_type!Eigenschap|type dataset = DatasetProduct
 |----------|------
 |Gebruikte term|[dcterms:type](http://purl.org/dc/terms/type)
 |Waarde|[Dataset (product)](http://bp4mc2.org/profiles/dcat-ap-sc#DatasetProduct)
@@ -235,19 +235,19 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Gebruikte term|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Uitleg|Een catalogus is een samengestelde verzameling (federatief beheerde) metagegevens over datasets (algemeen, versie en product), distributies en bijbehorende assets
 |Voorbeeld|De catalogus voor de BRK met de verschillende versies, informatieproducten, begrippen, waardelijsten en informatiemodellen
-|Eigenschappen en relaties|[bevat dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [beschrijving](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [webpagina](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [licentie](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [naam](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [herkomst](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rechten](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
+|Eigenschappen en relaties|[bevat dataset](#Catalog_dataset), [beschrijving](#Catalog_description), [webpagina](#Catalog_homepage), [taal](#Catalog_language), [licentie](#Catalog_licence), [naam](#Catalog_name), [herkomst](#Catalog_provenance), [rechten](#Catalog_rights)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|beschrijving
+|!form data#Catalog_description!Eigenschap|beschrijving
 |----------|------
 |Gebruikte term|[dcterms:description](http://purl.org/dc/terms/description)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De catalogus kan een beschrijving hebben.
 |Voorbeeld|De Catalogus voor de Omgevingswet is een centrale ingang tot het stelsel, waarin wetgeving, begrippen, regels, informatiemodellen, datasets, producten en services met elkaar worden verbonden. De catalogus is daarmee een centrale plek waar de verschillende gebruikersgroepen van het stelsel kunnen zien waar het stelsel uit bestaat, wat begrippen betekenen en hoe de verschillende elementen van het stelsel aan elkaar zijn gerelateerd.
 
-|!form data!Eigenschap|naam
+|!form data#Catalog_name!Eigenschap|naam
 |----------|------
 |Gebruikte term|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -257,35 +257,35 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ### Relaties
 
-|!form data!Eigenschap|bevat dataset
+|!form data#Catalog_dataset!Eigenschap|bevat dataset
 |----------|------
 |Gebruikte term|[dcat:dataset](http://www.w3.org/ns/dcat#dataset)
 |Verwijst naar|[dcat:Dataset](http://www.w3.org/ns/dcat#Dataset)
 |Uitleg|Een al dan niet elders beheerde dataset kan worden opgenomen in de catalogus via een link naar die dataset (algemeen).
 |Voorbeeld|De opname van de beschrijving van de BAG in de stelselcatalogus Omgevingswet via een link naar bag.basisregsitraties.overheid.nl/id/dataset/BAG
 
-|!form data!Eigenschap|webpagina
+|!form data#Catalog_homepage!Eigenschap|webpagina
 |----------|------
 |Gebruikte term|[foaf:homepage](http://xmlns.com/foaf/0.1/homepage)
 |Verwijst naar|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Uitleg|De webpagina via welke de catalogus vindbaar is kan worden gespecificeerd.
 |Voorbeeld|http://catalogus.kadaster.nl/
 
-|!form data!Eigenschap|taal
+|!form data#Catalog_language!Eigenschap|taal
 |----------|------
 |Gebruikte term|[dcterms:language](http://purl.org/dc/terms/language)
 |Relatie met|[Taal](http://bp4mc2.org/profiles/dcat-ap-sc#Language)
 |Uitleg|De taal waarin de metadata de catalogus is beschreven kan worden gespecificeerd.
 |Voorbeeld|@nl
 
-|!form data!Eigenschap|licentie
+|!form data#Catalog_licence!Eigenschap|licentie
 |----------|------
 |Gebruikte term|[dcterms:license](http://purl.org/dc/terms/license)
 |Verwijst naar|[dcterms:LicenseDocument](http://purl.org/dc/terms/LicenseDocument)
 |Uitleg|De licentie is van toepassing op de catalogus kan worden gespecificeerd. Dit kan een andere licentie zijn als de licentie voor distributies van datasets.
 |Voorbeeld|Creative Commons Naamsvermelding 4.0 licentie
 
-|!form data!Eigenschap|herkomst
+|!form data#Catalog_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
@@ -293,7 +293,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Voorbeeld|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
 
-|!form data!Eigenschap|rechten
+|!form data#Catalog_rights!Eigenschap|rechten
 |----------|------
 |Gebruikte term|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Verwijst naar|[dcterms:RightsStatement](http://purl.org/dc/terms/RightsStatement)
@@ -308,19 +308,19 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Gebruikte term|[dcat:Catalog](http://www.w3.org/ns/dcat#Catalog)
 |Uitleg|Een catalogus is een samengestelde verzameling (federatief beheerde) metagegevens over datasets (algemeen, versie en product), distributies en bijbehorende assets
 |Voorbeeld|De catalogus voor de BRK met de verschillende versies, informatieproducten, begrippen, waardelijsten en informatiemodellen
-|Eigenschappen en relaties|[bevat dataset](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_dataset), [beschrijving](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_description), [webpagina](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_homepage), [taal](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_language), [licentie](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_licence), [naam](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_name), [herkomst](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_provenance), [rechten](http://bp4mc2.org/profiles/dcat-ap-sc#Catalog_rights)
+|Eigenschappen en relaties|[bevat dataset](#Catalog_dataset), [beschrijving](#Catalog_description), [webpagina](#Catalog_homepage), [taal](#Catalog_language), [licentie](#Catalog_licence), [naam](#Catalog_name), [herkomst](#Catalog_provenance), [rechten](#Catalog_rights)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|beschrijving
+|!form data#Distribution_description!Eigenschap|beschrijving
 |----------|------
 |Gebruikte term|[dcterms:description](http://purl.org/dc/terms/description)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De distributie kan een beschrijving hebben.
 |Voorbeeld|Het Kadaster is houder van de Basisregistratie Kadaster (BRK). Onderdeel van de BRK is de Digitale kadastrale kaart. Deze is beschikbaar als open data en nu via dit portaal ook als Linked Open Data (vooralsnog zonder de topografie).
 
-|!form data!Eigenschap|naam (distirbutie)
+|!form data#Distribution_name!Eigenschap|naam (distirbutie)
 |----------|------
 |Gebruikte term|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -330,28 +330,28 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 
 ### Relaties
 
-|!form data!Eigenschap|toegangs url
+|!form data#Distribution_accessURL!Eigenschap|toegangs url
 |----------|------
 |Gebruikte term|[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL)
 |Verwijst naar|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
 |Uitleg|Een distributie kan een API zijn of een webservice die toegankelijk is via een url.
 |Voorbeeld|https://data.pdok.nl/brk/api/v1
 
-|!form data!Eigenschap|download url
+|!form data#Distribution_downloadURL!Eigenschap|download url
 |----------|------
 |Gebruikte term|[dcat:downloadURL](http://www.w3.org/ns/dcat#downloadURL)
 |Verwijst naar|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
 |Uitleg|Een distributie kan een downloadservice zijn die toegankelijk is via een url.
 |Voorbeeld|https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-kadaster/kadastrale-kaart
 
-|!form data!Eigenschap|licentie
+|!form data#Distribution_license!Eigenschap|licentie
 |----------|------
 |Gebruikte term|[dcterms:license](http://purl.org/dc/terms/license)
 |Verwijst naar|[dcterms:LicenseDocument](http://purl.org/dc/terms/LicenseDocument)
 |Uitleg|De licentie is van toepassing op de distributie kan worden gespecificeerd. Dit kan een andere licentie zijn als de licentie voor de catalogus.
 |Voorbeeld|Creative Commons Naamsvermelding 4.0 licentie
 
-|!form data!Eigenschap|herkomst
+|!form data#Distribution_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
 |Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
@@ -359,7 +359,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |Voorbeeld|De beschrijving van de catalogus voor de BAG is aangepast nav de nieuwe wet op de BAG
 |Min card.|1
 
-|!form data!Eigenschap|rechten
+|!form data#Distribution_rights!Eigenschap|rechten
 |----------|------
 |Gebruikte term|[dcterms:rights](http://purl.org/dc/terms/rights)
 |Verwijst naar|[dcterms:RightsStatement](http://purl.org/dc/terms/RightsStatement)
@@ -372,12 +372,12 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |!form data!Klasse|Licentiedocument
 |----------|------
 |Gebruikte term|[dcterms:LicenseDocument](http://purl.org/dc/terms/LicenseDocument)
-|Eigenschappen en relaties|[titel](http://bp4mc2.org/profiles/dcat-ap-sc#LicenseDocument_title)
+|Eigenschappen en relaties|[titel](#LicenseDocument_title)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|titel
+|!form data#LicenseDocument_title!Eigenschap|titel
 |----------|------
 |Gebruikte term|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
@@ -392,12 +392,12 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |!form data!Klasse|Rechtenbeschrijving
 |----------|------
 |Gebruikte term|[dcterms:RightsStatement](http://purl.org/dc/terms/RightsStatement)
-|Eigenschappen en relaties|[titel](http://bp4mc2.org/profiles/dcat-ap-sc#RightsStatement_title)
+|Eigenschappen en relaties|[titel](#RightsStatement_title)
 
 
 ### Eigenschappen
 
-|!form data!Eigenschap|titel
+|!form data#RightsStatement_title!Eigenschap|titel
 |----------|------
 |Gebruikte term|[dcterms:title](http://purl.org/dc/terms/title)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)

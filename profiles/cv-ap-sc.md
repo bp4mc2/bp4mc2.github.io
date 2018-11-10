@@ -24,7 +24,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 |----------|------
 |Uitleg|Een waardelijst is een verzameling van begrippen of elementen die worden gebruikt om inhoud te indexeren en / of inhoud op te halen via browsen of zoeken. Hij bevat meestal voorkeurs- en varianttermen en heeft een gedefinieerde scope of beschrijft een specifiek domein.
 |Voorbeeld|De lijst met Kadastrale gemeenten.
-|Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [gespecificeerd](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_specification)
+|Eigenschappen en relaties|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [gespecificeerd](#ControlledVocabulary_specification)
 
 
 ### Eigenschappen
@@ -32,7 +32,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 ### Relaties
 
-|!form data!Eigenschap|gespecificeerd
+|!form data#ControlledVocabulary_specification!Eigenschap|gespecificeerd
 |----------|------
 |Gebruikte term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
 |Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#NodeShape](http://bp4mc2.org/profiles/cv-ap-sc#NodeShape)
@@ -54,7 +54,7 @@ Bij instanties van klassen kunnen alle extra kenmerken van die klasse die nodig 
 
 ### Relaties
 
-|!form data!Eigenschap|Waarde
+|!form data#SchemeControlledVocabulary_property!Eigenschap|Waarde
 |----------|------
 |Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
 |Relatie met|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec)
