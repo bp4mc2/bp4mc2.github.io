@@ -19,7 +19,7 @@ The FRBR application profile makes it possible to refer to:
 |!form data#Concept_dctsource!Eigenschap|source on the web
 |----------|------
 |Used term|[dcterms:source](http://purl.org/dc/terms/source)
-|Related with|b473927
+|Related with|b493797
 |Description|A concept can be derived from a source that can be found on the web. This can be a (version of) a description of a specific concept or a document in which a description of the concept can be found.
 
 

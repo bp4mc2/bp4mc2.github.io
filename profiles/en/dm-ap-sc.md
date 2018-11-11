@@ -28,9 +28,6 @@ An example of the BAG model elaborated in this way can be found at [https://bag.
 |Properties en relations|[type asset = data model](#DataModel_typeDataModel)
 
 
-### Properties
-
-
 ### Relations
 
 |!form data#DataModel_typeDataModel!Eigenschap|type asset = data model
@@ -42,7 +39,123 @@ An example of the BAG model elaborated in this way can be found at [https://bag.
 |Max card.|1
 
 
-## shapes graph
+## Shapes graph
+
+
+## Vocabulary
+
+|!form data#Ontology!Klasse|Vocabulary
+|----------|------
+|Used term|[owl:Ontology](http://www.w3.org/2002/07/owl#Ontology)
+|Description|The description of the vocabulary and its semantics (ontology)
+|Properties en relations|[shape description](#Ontology_shapesGraph)
+
+
+### Relations
+
+|!form data#Ontology_shapesGraph!Eigenschap|shape description
+|----------|------
+|Used term|[sh:shapesGraph](http://www.w3.org/ns/shacl#shapesGraph)
+|Related with|[Asset (Data model)](#DataModel)
+|Description|A data model can be described in a shapes graph.
+
+
+## node shape
+
+|!form data#NodeShape!Klasse|Node shape
+|----------|------
+|Used term|[sh:NodeShape](http://www.w3.org/ns/shacl#NodeShape)
+|Properties en relations|[is defined by](#NodeShape_isDefinedBy), [name](#NodeShape_name), [eigenschap](#NodeShape_property), [target class](#NodeShape_targetClass)
+
+
+### Properties
+
+|!form data#NodeShape_name!Eigenschap|name
+|----------|------
+|Used term|[sh:name](http://www.w3.org/ns/shacl#name)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Max card.|1
+
+
+### Relations
+
+|!form data#NodeShape_isDefinedBy!Eigenschap|is defined by
+|----------|------
+|Used term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
+|Related with|[Asset (Data model)](#DataModel)
+|Min card.|1
+|Max card.|1
+
+|!form data#NodeShape_property!Eigenschap|eigenschap
+|----------|------
+|Used term|[sh:property](http://www.w3.org/ns/shacl#property)
+|Refers to|[sh:PropertyShape](#PropertyShape)
+
+|!form data#NodeShape_targetClass!Eigenschap|target class
+|----------|------
+|Used term|[sh:targetClass](http://www.w3.org/ns/shacl#targetClass)
+|Refers to|[owl:Class](#Class)
+
+
+## class
+
+|!form data#Class!Klasse|Class
+|----------|------
+|Used term|[owl:Class](http://www.w3.org/2002/07/owl#Class)
+|Properties en relations|[is defined by](#Class_isDefinedBy)
+
+
+### Relations
+
+|!form data#Class_isDefinedBy!Eigenschap|is defined by
+|----------|------
+|Used term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
+|Related with|[Vocabulary](#Ontology)
+|Min card.|1
+|Max card.|1
+
+
+## property shape
+
+|!form data#PropertyShape!Klasse|Property shape
+|----------|------
+|Used term|[sh:PropertyShape](http://www.w3.org/ns/shacl#PropertyShape)
+|Properties en relations|[name](#PropertyShape_name), [path](#PropertyShape_path)
+
+
+### Properties
+
+|!form data#PropertyShape_name!Eigenschap|name
+|----------|------
+|Used term|[sh:name](http://www.w3.org/ns/shacl#name)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Max card.|1
+
+
+### Relations
+
+|!form data#PropertyShape_path!Eigenschap|path
+|----------|------
+|Used term|[sh:path](http://www.w3.org/ns/shacl#path)
+|Related with|[Property](#Property)
+
+
+## class
+
+|!form data#Property!Klasse|Property
+|----------|------
+|Used term|[rdf:Property](http://www.w3.org/1999/02/22-rdf-syntax-ns#Property)
+|Properties en relations|[is defined by](#Property_isDefinedBy)
+
+
+### Relations
+
+|!form data#Property_isDefinedBy!Eigenschap|is defined by
+|----------|------
+|Used term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
+|Refers to|[owl:Ontology](#Ontology)
+|Min card.|1
+|Max card.|1
 
 
 ## Uri strategy

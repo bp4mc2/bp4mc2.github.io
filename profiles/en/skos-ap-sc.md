@@ -48,7 +48,7 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |----------|------
 |Used term|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Description|A  concept is an idea or notion, a unit of thought, a topic in the universe of discourse.
-|Properties en relations|[alternative label](#Concept_altLabel), [broadly matches with](#Concept_broadlyMatches), [closely matches with](#Concept_closelyMatches), [comment](#Concept_comment), [consists of](#Concept_consistsOf), [source](#Concept_dcsource), [source reference](#Concept_dctsource), [definition](#Concept_definition), [domain](#Concept_domain), [editorial note](#Concept_editorialNote), [exactly matches with](#Concept_exactlyMatches), [example](#Concept_example), [generalization of](#Concept_generalisationOf), [other search labels](#Concept_hiddenLabel), [related to](#Concept_isRelatedTo), [label](#Concept_label), [narrowly matches with](#Concept_narrowlyMatches), [Notation (code)](#Concept_notation), [part of](#Concept_partOf), [preferred label](#Concept_prefLabel), [provenance](#Concept_provenance), [scope note](#Concept_scopeNote), [related to](#Concept_seeAlso), [specialization of](#Concept_specialisationOf)
+|Properties en relations|[alternative label](#Concept_altLabel), [broadly matches with](#Concept_broadlyMatches), [closely matches with](#Concept_closelyMatches), [comment](#Concept_comment), [consists of](#Concept_consistsOf), [source](#Concept_dcsource), [source reference](#Concept_dctsource), [definition](#Concept_definition), [domain](#Concept_domain), [editorial note](#Concept_editorialNote), [exactly matches with](#Concept_exactlyMatches), [example](#Concept_example), [generalization of](#Concept_generalisationOf), [other search labels](#Concept_hiddenLabel), [related to](#Concept_isRelatedTo), [label](#Concept_label), [narrowly matches with](#Concept_narrowlyMatches), [notation](#Concept_notation), [part of](#Concept_partOf), [preferred label](#Concept_prefLabel), [provenance](#Concept_provenance), [scope note](#Concept_scopeNote), [related to](#Concept_seeAlso), [specialization of](#Concept_specialisationOf)
 
 
 ### Properties
@@ -105,11 +105,11 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Description|A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en
 |Min card.|1
 
-|!form data#Concept_notation!Eigenschap|Notation (code)
+|!form data#Concept_notation!Eigenschap|notation
 |----------|------
 |Used term|[skos:notation](http://www.w3.org/2004/02/skos/core#notation)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
-|Description|A code that corresponds to the concept
+|Description|A notation or code that corresponds to the concept
 |Example|AU (bij het begrip 'Goud', de chemische notatie)
 
 |!form data#Concept_prefLabel!Eigenschap|preferred label
@@ -260,7 +260,7 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 
 |!form data#AssetConceptScheme!Klasse|Asset (ConceptScheme)
 |----------|------
-|Typed as|[adms:Asset](#Asset), [skos:ConceptScheme](#ConceptScheme)
+|Typed as|[skos:ConceptScheme](#ConceptScheme), [adms:Asset](#Asset)
 |Description|A concept scheme can be identified as an asset.
 |Properties en relations|[type asset = Concept scheme](#AssetConceptScheme_typeConceptScheme)
 

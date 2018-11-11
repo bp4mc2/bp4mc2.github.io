@@ -29,9 +29,6 @@ Een op deze manier uitgewerkt voorbeeld van het model van de BAG is te vinden op
 |Eigenschappen en relaties|[type asset = datamodel](#DataModel_typeDataModel)
 
 
-### Eigenschappen
-
-
 ### Relaties
 
 |!form data#DataModel_typeDataModel!Eigenschap|type asset = datamodel
@@ -43,7 +40,124 @@ Een op deze manier uitgewerkt voorbeeld van het model van de BAG is te vinden op
 |Max card.|1
 
 
-## model beschrijving
+## Model beschrijving
+
+
+## Vocabulaire
+
+|!form data#Ontology!Klasse|Vocabulaire
+|----------|------
+|Gebruikte term|[owl:Ontology](http://www.w3.org/2002/07/owl#Ontology)
+|Uitleg|De beschrijving van de vocabulaire en zijn semantiek (ontologie)
+|Eigenschappen en relaties|[structuurbeschrijving](#Ontology_shapesGraph)
+
+
+### Relaties
+
+|!form data#Ontology_shapesGraph!Eigenschap|structuurbeschrijving
+|----------|------
+|Gebruikte term|[sh:shapesGraph](http://www.w3.org/ns/shacl#shapesGraph)
+|Relatie met|[Asset (Datamodel)](#DataModel)
+|Uitleg|Een informatiemodel kan worden beschreven in een 'shape graph'.
+|Voorbeeld|De verwijzing naar de beschrijving van het InformatieModel Kadaster (IMKAD).
+
+
+## Klassebeschrijving
+
+|!form data#NodeShape!Klasse|Klassebeschrijving
+|----------|------
+|Gebruikte term|[sh:NodeShape](http://www.w3.org/ns/shacl#NodeShape)
+|Eigenschappen en relaties|[is gedefinieerd door](#NodeShape_isDefinedBy), [naam](#NodeShape_name), [eigenschap](#NodeShape_property), [bijbehorende klasse](#NodeShape_targetClass)
+
+
+### Eigenschappen
+
+|!form data#NodeShape_name!Eigenschap|naam
+|----------|------
+|Gebruikte term|[sh:name](http://www.w3.org/ns/shacl#name)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Max card.|1
+
+
+### Relaties
+
+|!form data#NodeShape_isDefinedBy!Eigenschap|is gedefinieerd door
+|----------|------
+|Gebruikte term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
+|Relatie met|[Asset (Datamodel)](#DataModel)
+|Min card.|1
+|Max card.|1
+
+|!form data#NodeShape_property!Eigenschap|eigenschap
+|----------|------
+|Gebruikte term|[sh:property](http://www.w3.org/ns/shacl#property)
+|Verwijst naar|[sh:PropertyShape](#PropertyShape)
+
+|!form data#NodeShape_targetClass!Eigenschap|bijbehorende klasse
+|----------|------
+|Gebruikte term|[sh:targetClass](http://www.w3.org/ns/shacl#targetClass)
+|Verwijst naar|[owl:Class](#Class)
+
+
+## Klasse
+
+|!form data#Class!Klasse|Klasse
+|----------|------
+|Gebruikte term|[owl:Class](http://www.w3.org/2002/07/owl#Class)
+|Eigenschappen en relaties|[is gedefinieerd door](#Class_isDefinedBy)
+
+
+### Relaties
+
+|!form data#Class_isDefinedBy!Eigenschap|is gedefinieerd door
+|----------|------
+|Gebruikte term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
+|Relatie met|[Vocabulaire](#Ontology)
+|Min card.|1
+|Max card.|1
+
+
+## Eigenschapbeschrijving
+
+|!form data#PropertyShape!Klasse|Eigenschapbeschrijving
+|----------|------
+|Gebruikte term|[sh:PropertyShape](http://www.w3.org/ns/shacl#PropertyShape)
+|Eigenschappen en relaties|[naam](#PropertyShape_name), [pad](#PropertyShape_path)
+
+
+### Eigenschappen
+
+|!form data#PropertyShape_name!Eigenschap|naam
+|----------|------
+|Gebruikte term|[sh:name](http://www.w3.org/ns/shacl#name)
+|Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
+|Max card.|1
+
+
+### Relaties
+
+|!form data#PropertyShape_path!Eigenschap|pad
+|----------|------
+|Gebruikte term|[sh:path](http://www.w3.org/ns/shacl#path)
+|Relatie met|[Eigenschap](#Property)
+
+
+## Eigenschap
+
+|!form data#Property!Klasse|Eigenschap
+|----------|------
+|Gebruikte term|[rdf:Property](http://www.w3.org/1999/02/22-rdf-syntax-ns#Property)
+|Eigenschappen en relaties|[is gedefinieerd door](#Property_isDefinedBy)
+
+
+### Relaties
+
+|!form data#Property_isDefinedBy!Eigenschap|is gedefinieerd door
+|----------|------
+|Gebruikte term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
+|Verwijst naar|[owl:Ontology](#Ontology)
+|Min card.|1
+|Max card.|1
 
 
 ## Uri strategie

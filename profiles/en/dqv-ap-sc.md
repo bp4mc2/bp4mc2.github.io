@@ -8,7 +8,7 @@ Data quality
 
 ## Quality dimension
 
-|!form data#QualityDimension!Klasse|Quality dimension
+|!form data#Dimension!Klasse|Quality dimension
 |----------|------
 |Used term|[dqv:Dimension](http://www.w3.org/ns/dqv#Dimension)
 
@@ -26,7 +26,7 @@ Data quality
 |!form data#QualityIndicator_broader!Eigenschap|Specialization of
 |----------|------
 |Used term|[skos:broader](http://www.w3.org/2004/02/skos/core#broader)
-|Related with|[Quality dimension](#QualityDimension)
+|Related with|[Quality dimension](#Dimension)
 |Description|A quality indicator belongs to a particular quality dimension
 |Min card.|1
 |Max card.|1

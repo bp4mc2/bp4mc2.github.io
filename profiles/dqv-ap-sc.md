@@ -8,7 +8,7 @@ Datakwaliteit
 
 ## Kwaliteitsdimensie
 
-|!form data#QualityDimension!Klasse|Kwaliteitsdimensie
+|!form data#Dimension!Klasse|Kwaliteitsdimensie
 |----------|------
 |Gebruikte term|[dqv:Dimension](http://www.w3.org/ns/dqv#Dimension)
 
@@ -26,7 +26,7 @@ Datakwaliteit
 |!form data#QualityIndicator_broader!Eigenschap|Specialisatie van
 |----------|------
 |Gebruikte term|[skos:broader](http://www.w3.org/2004/02/skos/core#broader)
-|Relatie met|[Kwaliteitsdimensie](#QualityDimension)
+|Relatie met|[Kwaliteitsdimensie](#Dimension)
 |Uitleg|Een kwaliteitsindicator valt binnen een kwaliteitsdimensie
 |Min card.|1
 |Max card.|1

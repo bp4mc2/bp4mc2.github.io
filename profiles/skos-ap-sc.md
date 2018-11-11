@@ -29,7 +29,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |----------|------
 |Gebruikte term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan. 
+|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan.
 |Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
 |Min card.|1
 
@@ -51,7 +51,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Gebruikte term|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip is een idee of notitie, een eenheid van denken, een onderwerp van gesprek.
 |Voorbeeld|het begrip 'Perceel' in de BRK
-|Eigenschappen en relaties|[alternatieve aanduiding](#Concept_altLabel), [lijkt op breder](#Concept_broadlyMatches), [vergelijkbaar met](#Concept_closelyMatches), [uitleg](#Concept_comment), [bestaat uit](#Concept_consistsOf), [bron](#Concept_dcsource), [bronverwijzing](#Concept_dctsource), [definitie](#Concept_definition), [domein](#Concept_domain), [redactionele opmerking](#Concept_editorialNote), [exact gelijk aan](#Concept_exactlyMatches), [voorbeeld](#Concept_example), [generalisatie van](#Concept_generalisationOf), [overige zoektermen](#Concept_hiddenLabel), [gerelateerd aan](#Concept_isRelatedTo), [label](#Concept_label), [lijkt op smaller](#Concept_narrowlyMatches), [Notatie (code)](#Concept_notation), [onderdeel van](#Concept_partOf), [voorkeursterm](#Concept_prefLabel), [herkomst](#Concept_provenance), [toelichting](#Concept_scopeNote), [gerelateerd aan](#Concept_seeAlso), [specialisatie van](#Concept_specialisationOf)
+|Eigenschappen en relaties|[alternatieve aanduiding](#Concept_altLabel), [lijkt op breder](#Concept_broadlyMatches), [vergelijkbaar met](#Concept_closelyMatches), [uitleg](#Concept_comment), [bestaat uit](#Concept_consistsOf), [bron](#Concept_dcsource), [bronverwijzing](#Concept_dctsource), [definitie](#Concept_definition), [domein](#Concept_domain), [redactionele opmerking](#Concept_editorialNote), [exact gelijk aan](#Concept_exactlyMatches), [voorbeeld](#Concept_example), [generalisatie van](#Concept_generalisationOf), [overige zoektermen](#Concept_hiddenLabel), [gerelateerd aan](#Concept_isRelatedTo), [label](#Concept_label), [lijkt op smaller](#Concept_narrowlyMatches), [notatie](#Concept_notation), [onderdeel van](#Concept_partOf), [voorkeursterm](#Concept_prefLabel), [herkomst](#Concept_provenance), [toelichting](#Concept_scopeNote), [gerelateerd aan](#Concept_seeAlso), [specialisatie van](#Concept_specialisationOf)
 
 
 ### Eigenschappen
@@ -115,11 +115,11 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Voorbeeld|"Kadastraal perceel"@nl / "Cadastral parcel"@en
 |Min card.|1
 
-|!form data#Concept_notation!Eigenschap|Notatie (code)
+|!form data#Concept_notation!Eigenschap|notatie
 |----------|------
 |Gebruikte term|[skos:notation](http://www.w3.org/2004/02/skos/core#notation)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een code die overeen komt met het begrip
+|Uitleg|Een notatie of code die overeen komt met het begrip
 |Voorbeeld|AU (bij het begrip 'Goud', de chemische notatie)
 
 |!form data#Concept_prefLabel!Eigenschap|voorkeursterm
@@ -160,7 +160,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Gebruikte term|[skosthes:narrowerPartitive](http://purl.org/iso25964/skos-thes#narrowerPartitive)
 |Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een begrip kan kan gaan over een aantal onderdelen.
-|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ... 
+|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ...
 
 |!form data#Concept_dctsource!Eigenschap|bronverwijzing
 |----------|------
@@ -290,7 +290,7 @@ Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Datas
 
 |!form data#AssetConceptScheme!Klasse|Asset (Begrippenkader)
 |----------|------
-|Getypeerd als|[adms:Asset](#Asset), [skos:ConceptScheme](#ConceptScheme)
+|Getypeerd als|[skos:ConceptScheme](#ConceptScheme), [adms:Asset](#Asset)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
 |Eigenschappen en relaties|[type asset = Begrippenkader](#AssetConceptScheme_typeConceptScheme)
@@ -321,5 +321,3 @@ Bovenstaande gaat er vanuit dat `{domain}` het begrippenkader al uniek identific
 * `http://{domain}/id/collection/{conceptscheme}/{term}` voor collecties
 
 Het `skos:prefLabel` is in beginsel gelijk aan het `rdfs:label` en deze horen uniek te zijn voor alle concepten in een begrippenkader. Als dit niet het geval is, dan wordt de URI uitgebreid met een `_{context}` postfix. In een dergelijk geval wordt ook het `rdfs:label` uitgebreid met ` ({context})`.
-
-
