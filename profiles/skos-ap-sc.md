@@ -15,7 +15,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ## Begrippenkader
 
-|!form data!Klasse|Begrippenkader
+|!form data#ConceptScheme!Klasse|Begrippenkader
 |----------|------
 |Gebruikte term|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
 |Uitleg|De kennis over de fysieke werkelijkheid wordt beschreven in een talig model, een begrippenmodel.  In een begrippenmodel wordt deze kennis zodanig gestructureerd vastgelegd dat deze door zowel mensen als door computers wordt begrepen.
@@ -39,14 +39,14 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |!form data#ConceptScheme_hasTopConcept!Eigenschap|top concept
 |----------|------
 |Gebruikte term|[skos:hasTopConcept](http://www.w3.org/2004/02/skos/core#hasTopConcept)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een concepten schema kan concepten bevatten die die het meest generiek zijn in een hiërarchie van specialisaties/generalisaties.
 |Voorbeeld|Het concept 'Zakelijk recht' als meest generieke concept voor 'Eigendom', 'Opstal', 'Erfpacht', etc.
 
 
 ## Begrip
 
-|!form data!Klasse|Begrip
+|!form data#Concept!Klasse|Begrip
 |----------|------
 |Gebruikte term|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip is een idee of notitie, een eenheid van denken, een onderwerp van gesprek.
@@ -123,35 +123,35 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |!form data#Concept_broadlyMatches!Eigenschap|lijkt op breder
 |----------|------
 |Gebruikte term|[skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch)
-|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
+|Relatie met|[Extern begrip](#ExternalConcept)
 |Uitleg|Een begrip kan een specialisatie zijn van een begrip in een ander domein.
 |Voorbeeld|Een Appartementsrecht in de BRK is een specialisatie van een Verblijfsobject in de BAG.
 
 |!form data#Concept_closelyMatches!Eigenschap|vergelijkbaar met
 |----------|------
 |Gebruikte term|[skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch)
-|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
+|Relatie met|[Extern begrip](#ExternalConcept)
 |Uitleg|Een begrip kan bijna hetzelfde betekenen als een begrip in een ander domein.
 |Voorbeeld|Een OnroerendGoed in de BRK is ongeveer hetzelfde als een WOZobject in de WOZ.
 
 |!form data#Concept_consistsOf!Eigenschap|bestaat uit
 |----------|------
 |Gebruikte term|[skosthes:narrowerPartitive](http://purl.org/iso25964/skos-thes#narrowerPartitive)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een begrip kan kan gaan over een aantal onderdelen.
 |Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ... 
 
 |!form data#Concept_dctsource!Eigenschap|bron op het web
 |----------|------
 |Gebruikte term|[dcterms:source](http://purl.org/dc/terms/source)
-|Verwijst naar|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
+|Verwijst naar|[rdfs:Resource](#Resource)
 |Uitleg|Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een beschrijving van een specifiek begrip of een document waarin een beschrijving van het begrip is te vinden.
 |Voorbeeld|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
 
 |!form data#Concept_domain!Eigenschap|domein
 |----------|------
 |Gebruikte term|[skos:inScheme](http://www.w3.org/2004/02/skos/core#inScheme)
-|Verwijst naar|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
+|Verwijst naar|[skos:ConceptScheme](#ConceptScheme)
 |Uitleg|Een begrip is gedefinieerd in de context van een bepaald domein.
 |Voorbeeld|Basisregistratie Adressen en Gebouwen (BAG)
 |Min card.|1
@@ -160,42 +160,42 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |!form data#Concept_exactlyMatches!Eigenschap|exact gelijk aan
 |----------|------
 |Gebruikte term|[skos:exactMatch](http://www.w3.org/2004/02/skos/core#exactMatch)
-|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
+|Relatie met|[Extern begrip](#ExternalConcept)
 |Uitleg|Een begrip kan precies hetzelfde betekenen als een begrip in een ander domein.
 |Voorbeeld|Een Perceel in het BAL betekent hetzelfde als een Perceel in de BRK.
 
 |!form data#Concept_generalisationOf!Eigenschap|generalisatie van
 |----------|------
 |Gebruikte term|[skosthes:narrowerGeneric](http://purl.org/iso25964/skos-thes#narrowerGeneric)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een begrip kan een generalisatie zijn van een begrip met een engere of nauwere betekenis.
 |Voorbeeld|Een KadastraalObject is een OnroerendGoed of een Registergoed.
 
 |!form data#Concept_isRelatedTo!Eigenschap|gerelateerd aan
 |----------|------
 |Gebruikte term|[skos:semanticRelation](http://www.w3.org/2004/02/skos/core#semanticRelation)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een begrip kan gerelateerd zijn aan een ander begrip.
 |Voorbeeld|Een perceel is gerelateerd aan KadastraleGrens.
 
 |!form data#Concept_narrowlyMatches!Eigenschap|lijkt op smaller
 |----------|------
 |Gebruikte term|[skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch)
-|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
+|Relatie met|[Extern begrip](#ExternalConcept)
 |Uitleg|Een begrip kan een generalisatie zijn van een begrip in een ander domein.
 |Voorbeeld|Een Postadres is een generalisatie van een Nummeraanduiding en een Postbus.
 
 |!form data#Concept_partOf!Eigenschap|onderdeel van
 |----------|------
 |Gebruikte term|[skosthes:broaderPartitive](http://purl.org/iso25964/skos-thes#broaderPartitive)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een begrip kan gaan over een deel van een breder begrip.
 |Voorbeeld|Een motor is onderdeel van een schip.
 
 |!form data#Concept_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](#Entity)
 |Uitleg|Van een begrip kan de herkomst worden beschreven.
 |Voorbeeld|Op basis van de nieuwe wet op de BAG is de definitie van het begrip 'verblijfsobject' aangepast.
 |Min card.|1
@@ -203,21 +203,21 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |!form data#Concept_seeAlso!Eigenschap|gerelateerd aan
 |----------|------
 |Gebruikte term|[skos:relatedMatch](http://www.w3.org/2004/02/skos/core#relatedMatch)
-|Relatie met|[Extern begrip](http://bp4mc2.org/profiles/skos-ap-sc#ExternalConcept)
+|Relatie met|[Extern begrip](#ExternalConcept)
 |Uitleg|Een begrip kan zijn gerelateerd aan een begrip in een ander domein.
 |Voorbeeld|Een Perceel in de BRK is gerelateerd aan een adres (Nummeraanduiding) in de BAG.
 
 |!form data#Concept_specialisationOf!Eigenschap|specialisatie van
 |----------|------
 |Gebruikte term|[skosthes:broaderGeneric](http://purl.org/iso25964/skos-thes#broaderGeneric)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een begrip kan een specialisatie zijn van een begrip met een bredere betekenis.
 |Voorbeeld|Een Perceel is een OnroerendGoed.
 
 
 ## Collectie
 
-|!form data!Klasse|Collectie
+|!form data#Collection!Klasse|Collectie
 |----------|------
 |Gebruikte term|[skos:Collection](http://www.w3.org/2004/02/skos/core#Collection)
 |Uitleg|Een groep samenhangende begrippen kan worden gebundeld in een collectie.
@@ -241,14 +241,14 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |!form data#Collection_hasMember!Eigenschap|heeft lid
 |----------|------
 |Gebruikte term|[skos:member](http://www.w3.org/2004/02/skos/core#member)
-|Verwijst naar|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een collectie kan één of meerdere begrippen omvatten, die eventueel afkomstig kunnen zijn uit meerdere conceptschema's
 |Voorbeeld|de collectie 'Zakelijke rechten' bevat het begrip 'Erfpacht'
 
 |!form data#Collection_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](#Entity)
 |Uitleg|Van een collectie kan de herkomst worden beschreven.
 |Voorbeeld|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
 |Min card.|1
@@ -256,7 +256,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 ## Begrip (external)
 
-|!form data!Klasse|Extern begrip
+|!form data#ExternalConcept!Klasse|Extern begrip
 |----------|------
 |Getypeerd als|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Uitleg|Een begrip in een ander begrippenkader waarmee een relatie wordt gelegd.
@@ -269,9 +269,9 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Dataset met als inhoud alle eigenschappen van de begrippen en collecties binnen dit begrippenkader.
 
 
-|!form data!Klasse|Asset (Begrippenkader)
+|!form data#AssetConceptScheme!Klasse|Asset (Begrippenkader)
 |----------|------
-|Getypeerd als|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme), [adms:Asset](http://www.w3.org/ns/adms#Asset)
+|Getypeerd als|[adms:Asset](http://www.w3.org/ns/adms#Asset), [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
 |Eigenschappen en relaties|[type asset = Begrippenkader](#AssetConceptScheme_typeConceptScheme)

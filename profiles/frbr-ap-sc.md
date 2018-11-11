@@ -19,13 +19,14 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 |!form data#Concept_dctsource!Eigenschap|bron op het web
 |----------|------
 |Gebruikte term|[dcterms:source](http://purl.org/dc/terms/source)
+|Relatie met|b460566
 |Uitleg|Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een beschrijving van een specifiek begrip of een document waarin een beschrijving van het begrip is te vinden.
 |Voorbeeld|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
 
 
 ## Document
 
-|!form data!Klasse|Document
+|!form data#Document!Klasse|Document
 |----------|------
 |Gebruikte term|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Uitleg|Een document dat vindbaar is op het web.
@@ -46,7 +47,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ## Bibliografische beschrijving
 
-|!form data!Klasse|bibliografische beschrijving
+|!form data#Endeavour!Klasse|bibliografische beschrijving
 |----------|------
 |Gebruikte term|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
 |Uitleg|Een bibliografische beschrijving van een werk of expressie.
@@ -70,7 +71,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 |!form data#Endeavour_isTopicOf!Eigenschap|onderwerp van
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Relatie met|[Document](http://bp4mc2.org/profiles/frbr-ap-sc#Document)
+|Relatie met|[Document](#Document)
 |Uitleg|Een bibliografische beschrijving kan een onderwerp zijn van een document.
 |Voorbeeld|Artikel 1 BW is een onderwerp in het Burgerlijk Wetboek
 |Max card.|1
@@ -78,7 +79,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ## Werk
 
-|!form data!Klasse|Werk
+|!form data#Work!Klasse|Werk
 |----------|------
 |Gebruikte term|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
 |Uitleg|Een bibliografische beschrijving, zonder dat expliciet wordt verwezen naar een specifieke versie.
@@ -87,11 +88,19 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 ## Expressie (versie van een werk)
 
-|!form data!Klasse|expressie, versie van een werk
+|!form data#Expression!Klasse|Expressie, versie van een werk
 |----------|------
 |Gebruikte term|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
 |Uitleg|Een specifieke versie van een werk.
 |Voorbeeld|Artikel 1 van het Burgerlijk Wetboek van 1838
+
+
+## Resource (iets met een URI)
+
+|!form data#Resource!Klasse|Resource
+|----------|------
+|Gebruikte term|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
+|Uitleg|Een ding, geidentificeerd met een URI
 
 
 ## Uri strategie

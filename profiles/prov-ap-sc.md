@@ -1,4 +1,4 @@
-# Toepassingsprofiel voor provenance informatie
+# PROV Toepassingsprofiel voor provenance informatie
 
 
 Formeel/juridische geldigheid en administratieve aspecten worden bijgehouden conform het de prov ontologie. Hierbij gaat het om wie, wat, wanneer en om wat voor reden heeft vastgelegd of gewijzigd.
@@ -24,24 +24,24 @@ De provenance kent 2 aspecten:
 
 ## Metadata
 
-|!form data!Klasse|Metadata
+|!form data#Entity!Klasse|Metadata
 |----------|------
 |Gebruikte term|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Uitleg|Metadata van een versie van een entiteit kan worden beschreven.
 |Voorbeeld|De juridische geldigheid en/of de adnimistratieve housekeeping (provenance) gegevens van een entiteit
-|Eigenschappen en relaties|[wijzingsnotitie](#Metadata_changeNote), [datum bekendgemaakt](#Metadata_isIssued), [geldig in tijd](#Metadata_isValidDuring), [geldig in gebied](#Metadata_isvalidWithin), [status](#Metadata_status)
+|Eigenschappen en relaties|[wijzingsnotitie](#Entity_changeNote), [datum bekendgemaakt](#Entity_isIssued), [geldig in tijd](#Entity_isValidDuring), [geldig in gebied](#Entity_isvalidWithin), [status](#Entity_status)
 
 
 ### Eigenschappen
 
-|!form data#Metadata_changeNote!Eigenschap|wijzingsnotitie
+|!form data#Entity_changeNote!Eigenschap|wijzingsnotitie
 |----------|------
 |Gebruikte term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
 |Uitleg|De reden van een versie en andere aandachtspunten bij een versie kunnen worden toegelicht.
 |Voorbeeld|De toelichting is uitgebreid vanwege een onduidelijkheid.
 
-|!form data#Metadata_isIssued!Eigenschap|datum bekendgemaakt
+|!form data#Entity_isIssued!Eigenschap|datum bekendgemaakt
 |----------|------
 |Gebruikte term|[dcterms:issued](http://purl.org/dc/terms/issued)
 |Datatype|[Datum/tijd](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -52,26 +52,26 @@ De provenance kent 2 aspecten:
 
 ### Relaties
 
-|!form data#Metadata_isValidDuring!Eigenschap|geldig in tijd
+|!form data#Entity_isValidDuring!Eigenschap|geldig in tijd
 |----------|------
 |Gebruikte term|[dcterms:temporal](http://purl.org/dc/terms/temporal)
-|Verwijst naar|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
+|Verwijst naar|[dcterms:PeriodOfTime](#PeriodOfTime)
 |Uitleg|Een versie kan formeel/juridisch geldig zijn gedurende een periode.
 |Voorbeeld|22/10/2017 - 
 |Max card.|1
 
-|!form data#Metadata_isvalidWithin!Eigenschap|geldig in gebied
+|!form data#Entity_isvalidWithin!Eigenschap|geldig in gebied
 |----------|------
 |Gebruikte term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
-|Verwijst naar|[dcterms:Location](http://purl.org/dc/terms/Location)
+|Verwijst naar|[dcterms:Location](#Location)
 |Uitleg|Een versie kan formeel/juridisch geldig zijn in een geografisch gebied.
 |Voorbeeld|gemeente Apeldoorn
 |Max card.|1
 
-|!form data#Metadata_status!Eigenschap|status
+|!form data#Entity_status!Eigenschap|status
 |----------|------
 |Gebruikte term|[adms:status](http://www.w3.org/ns/adms#status)
-|Relatie met|[Status waardelijst](http://bp4mc2.org/profiles/prov-ap-sc#Status)
+|Relatie met|[Status waardelijst](#Status)
 |Uitleg|Een versie heeft een administratieve status op basis van de ADMS waardenlijst.
 |Voorbeeld|Completed
 |Min card.|1
@@ -80,7 +80,7 @@ De provenance kent 2 aspecten:
 
 ## Status
 
-|!form data!Klasse|Status waardelijst
+|!form data#Status!Klasse|Status waardelijst
 |----------|------
 |Uitleg|Een versie kan een administratieve status hebben die wordt ontleend aan de ADMS waardenlijst.
 |Voorbeeld|Completed
@@ -89,7 +89,7 @@ De provenance kent 2 aspecten:
 
 ## Tijdsperiode
 
-|!form data!Klasse|Tijdsperiode
+|!form data#PeriodOfTime!Klasse|Tijdsperiode
 |----------|------
 |Gebruikte term|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
 |Uitleg|Een periode kan worden aangeduid met een startdatum en einddatum. 
@@ -118,7 +118,7 @@ De provenance kent 2 aspecten:
 
 ## Geografisch gebied
 
-|!form data!Klasse|Geografisch gebied
+|!form data#Location!Klasse|Geografisch gebied
 |----------|------
 |Gebruikte term|[dcterms:Location](http://purl.org/dc/terms/Location)
 |Uitleg|De beschrijving van het geografisch gebied waarin een versie geldig is
@@ -127,7 +127,7 @@ De provenance kent 2 aspecten:
 
 ## Data graaf
 
-|!form data!Klasse|Data graaf
+|!form data#ProvenanceGraph!Klasse|Data graaf
 |----------|------
 |Gebruikte term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
 |Uitleg|De data graaf omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dat wil zeggen: een sd:Graph
@@ -157,14 +157,14 @@ De provenance kent 2 aspecten:
 |!form data#ProvenanceGraph_attributedTo!Eigenschap|doorgevoerd door
 |----------|------
 |Gebruikte term|[prov:wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo)
-|Verwijst naar|[prov:Agent](http://www.w3.org/ns/prov#Agent)
+|Verwijst naar|[prov:Agent](#Agent)
 |Uitleg|De persoon of organisatie die de wijziging heeft (laten) doorvoeren kan worden vastgelegd
 |Voorbeeld|Het Kadaster
 
 
 ## Agent (provenance)
 
-|!form data!Klasse|Agent (provenance)
+|!form data#ProvenanceAgent!Klasse|Agent (provenance)
 |----------|------
 |Gebruikte term|[prov:Agent](http://www.w3.org/ns/prov#Agent)
 |Uitleg| De persoon of organisatie die verantwoordelijk is voor een activiteit, de creatie van een entity of een activiteit van een ander kan worden vastgelegd.
@@ -177,14 +177,14 @@ De provenance kent 2 aspecten:
 |!form data#ProvenanceAgent_OnBehalfOf!Eigenschap|uitgevoerd namens
 |----------|------
 |Gebruikte term|[prov:actedOnBehalfOf](http://www.w3.org/ns/prov#actedOnBehalfOf)
-|Verwijst naar|[prov:Organization](http://www.w3.org/ns/prov#Organization)
+|Verwijst naar|[prov:Organization](#Organization)
 |Uitleg|Een persoon of organisatie kan opereren namens een andere persoon of organisatie.
 |Voorbeeld|overheid:Rijkswaterstaat
 
 
 ## Persoon (provenance)
 
-|!form data!Klasse|Persoon (provenance)
+|!form data#ProvenancePerson!Klasse|Persoon (provenance)
 |----------|------
 |Gebruikte term|[prov:Person](http://www.w3.org/ns/prov#Person)
 |Uitleg|Een agent (provenance) kan een mens zijn.
@@ -193,7 +193,7 @@ De provenance kent 2 aspecten:
 
 ## Software agent
 
-|!form data!Klasse|Software agent
+|!form data#ProvenanceSoftwareAgent!Klasse|Software agent
 |----------|------
 |Gebruikte term|[prov:SoftwareAgent](http://www.w3.org/ns/prov#SoftwareAgent)
 |Uitleg|Een agent (provenance) kan een geautomatiseerde routine zijn.
@@ -202,7 +202,7 @@ De provenance kent 2 aspecten:
 
 ## Organisatie (provenance)
 
-|!form data!Klasse|Organisatie (provenance)
+|!form data#Organization!Klasse|Organisatie (provenance)
 |----------|------
 |Gebruikte term|[prov:Organization](http://www.w3.org/ns/prov#Organization)
 |Uitleg|Een agent (provenance) kan een organisatie zijn.
@@ -211,7 +211,7 @@ De provenance kent 2 aspecten:
 
 ## Geregistreerde Agent
 
-|!form data!Klasse|Agent (foaf)
+|!form data#FoafAgent!Klasse|Agent (foaf)
 |----------|------
 |Gebruikte term|[foaf:Agent](http://xmlns.com/foaf/0.1/Agent)
 |Uitleg| De persoon of organisatie die verantwoordelijk is voor een dataset.
@@ -220,7 +220,7 @@ De provenance kent 2 aspecten:
 
 ## Organisatie (foaf)
 
-|!form data!Klasse|Organisatie (foaf)
+|!form data#FoafOrganization!Klasse|Organisatie (foaf)
 |----------|------
 |Gebruikte term|[foaf:Organization](http://xmlns.com/foaf/0.1/Organization)
 |Uitleg| De organisatie die verantwoordelijk is voor een dataset.
@@ -229,7 +229,7 @@ De provenance kent 2 aspecten:
 
 ## Organisatie (org)
 
-|!form data!Klasse|Organisatie (org)
+|!form data#OrgOrganization!Klasse|Organisatie (org)
 |----------|------
 |Gebruikte term|[org:Organization](http://www.w3.org/ns/org#Organization)
 |Uitleg|De organisatie zoals opgenomen in de formele lijst met OIN nummers.

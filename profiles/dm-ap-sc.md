@@ -21,11 +21,26 @@ Een op deze manier uitgewerkt voorbeeld van het model van de BAG is te vinden op
 
 ## Informatiemodel
 
+|!form data#DataModel!Klasse|Asset (Datamodel)
+|----------|------
+|Getypeerd als|[adms:Asset](http://www.w3.org/ns/adms#Asset)
+|Uitleg|Een datamodel is een beschrijving van de structuur waarin data over dingen in een  specifiek domein worden opgeslagen.
+|Voorbeeld|De lijst met Kadastrale gemeenten.
+|Eigenschappen en relaties|[type asset = datamodel](#DataModel_typeDataModel)
+
 
 ### Eigenschappen
 
 
 ### Relaties
+
+|!form data#DataModel_typeDataModel!Eigenschap|type asset = datamodel
+|----------|------
+|Gebruikte term|[dcterms:type](http://purl.org/dc/terms/type)
+|Waarde|[Asset (Datamodel)](http://bp4mc2.org/profiles/dm-ap-sc#DataModel)
+|Uitleg|Een datamodel wordt expliciet getypeerd als datamodel.
+|Min card.|1
+|Max card.|1
 
 
 ## model beschrijving

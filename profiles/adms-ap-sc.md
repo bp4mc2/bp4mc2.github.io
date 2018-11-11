@@ -20,7 +20,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ## Asset
 
-|!form data!Klasse|Asset
+|!form data#Asset!Klasse|Asset
 |----------|------
 |Uitleg|Een asset is een set van herbruikbare metadata en referentiegegevens die worden gebruikt voor de ontwikkeling van e-overheidssystemen.
 |Voorbeeld|De waardelijst met Kadastrale gemeenten.
@@ -44,14 +44,14 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 |!form data#Asset_distribution!Eigenschap|heeft distributie
 |----------|------
 |Gebruikte term|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Relatie met|[Distributie](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
+|Relatie met|[Distributie](#AssetDistribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd kan worden aangegeven.
 |Voorbeeld|De lijst met Kadastrale gemeenten kan worden gepubliceerd in genericode.
 
 |!form data#Asset_landingPage!Eigenschap|heeft webpagina
 |----------|------
 |Gebruikte term|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Relatie met|[Webpagina](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
+|Relatie met|[Webpagina](#LandingPage)
 |Uitleg|De webpagina waarop een asset vindbaar is kan worden gespecificeerd.
 |Voorbeeld|kadaster.nl/waardelijsten.
 |Max card.|1
@@ -67,7 +67,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 |!form data#Asset_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](#Entity)
 |Uitleg|Van een asset kan de herkomst worden beschreven.
 |Voorbeeld|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
 |Min card.|1
@@ -75,7 +75,7 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ## Asset distributie
 
-|!form data!Klasse|Distributie
+|!form data#AssetDistribution!Klasse|Distributie
 |----------|------
 |Gebruikte term|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Uitleg|De wijze waarop een asset wordt gepubliceerd.
@@ -94,14 +94,14 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 |!form data#AssetDistribution_downloadURL!Eigenschap|download url
 |----------|------
 |Gebruikte term|[dcat:downloadURL](http://www.w3.org/ns/dcat#downloadURL)
-|Relatie met|[download formaat](http://bp4mc2.org/profiles/adms-ap-sc#DownloadFormat)
+|Relatie met|[Download formaat](#DownloadFormat)
 |Uitleg|Een download kan vindbaar zijn via een download url.
 |Voorbeeld|kadaster.nl/waardelijsten/downloads
 
 |!form data#AssetDistribution_provenance!Eigenschap|herkomst
 |----------|------
 |Gebruikte term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Verwijst naar|[prov:Entity](http://www.w3.org/ns/prov#Entity)
+|Verwijst naar|[prov:Entity](#Entity)
 |Uitleg|Van een distributie kan de herkomst worden beschreven.
 |Voorbeeld|De metadata van de reSpec beschrijving van het nieuwe informatiemodel voor de BAG
 |Min card.|1
@@ -116,13 +116,27 @@ Van metadatabeschrijvingen en distributies kan provenance worden bijgehouden.
 
 ## Webpagina
 
-|!form data!Klasse|Webpagina
+|!form data#LandingPage!Klasse|Webpagina
 |----------|------
 |Uitleg|De webpagina van welke een asset vindbaar is.
 |Voorbeeld|kadaster.nl/waardelijsten.
 
 
 ## Download formaat
+
+|!form data#DownloadFormat!Klasse|Download formaat
+|----------|------
+|Uitleg|De download kan een bestand zijn of een webpagina met informatie.
+|Voorbeeld|het csv bestand met de waardelijst Kadastrale gemeenten.
+|Eigenschappen en relaties|[is formaat van](#DownloadFormat_isFormatOf)
+
+
+### Relaties
+
+|!form data#DownloadFormat_isFormatOf!Eigenschap|is formaat van
+|----------|------
+|Gebruikte term|[dcterms:isFormatOf](http://purl.org/dc/terms/isFormatOf)
+|Relatie met|[Webpagina](#LandingPage)
 
 
 ## Uri strategie
