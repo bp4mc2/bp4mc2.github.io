@@ -19,7 +19,6 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 |!form data#Concept_dctsource!Eigenschap|bron op het web
 |----------|------
 |Gebruikte term|[dcterms:source](http://purl.org/dc/terms/source)
-|Relatie met|b466832
 |Uitleg|Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een beschrijving van een specifiek begrip of een document waarin een beschrijving van het begrip is te vinden.
 |Voorbeeld|<jci1.3:c:BWBR0005416&titel=IV&hoofdstuk=XV&paragraaf=3&artikel=222>
 
@@ -107,5 +106,3 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
 
 
 Een document, algemeen bibliografische resourcewerk op het web (work) of specifieke versie van een bibliografische resource op het web (expression) heeft een uri die gemunt is door degene die het document of de resource publiceert. In een stelselcatalogus worden hiervoor geen uri's gemunt.
-
-

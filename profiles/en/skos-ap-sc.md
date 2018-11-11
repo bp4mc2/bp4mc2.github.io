@@ -48,10 +48,16 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |----------|------
 |Used term|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
 |Description|A  concept is an idea or notion, a unit of thought, a topic in the universe of discourse.
-|Properties en relations|[broadly matches with](#Concept_broadlyMatches), [closely matches with](#Concept_closelyMatches), [comment](#Concept_comment), [consists of](#Concept_consistsOf), [written source](#Concept_dcsource), [source on the web](#Concept_dctsource), [definition](#Concept_definition), [domain](#Concept_domain), [editorial note](#Concept_editorialNote), [exactly matches with](#Concept_exactlyMatches), [generalization of](#Concept_generalisationOf), [related to](#Concept_isRelatedTo), [label](#Concept_label), [narrowly matches with](#Concept_narrowlyMatches), [part of](#Concept_partOf), [preferred label](#Concept_prefLabel), [provenance](#Concept_provenance), [scope note](#Concept_scopeNote), [related to](#Concept_seeAlso), [specialization of](#Concept_specialisationOf), [alternative label](#Concept_synonym)
+|Properties en relations|[alternative label](#Concept_altLabel), [broadly matches with](#Concept_broadlyMatches), [closely matches with](#Concept_closelyMatches), [comment](#Concept_comment), [consists of](#Concept_consistsOf), [source](#Concept_dcsource), [source reference](#Concept_dctsource), [definition](#Concept_definition), [domain](#Concept_domain), [editorial note](#Concept_editorialNote), [exactly matches with](#Concept_exactlyMatches), [example](#Concept_example), [generalization of](#Concept_generalisationOf), [other search labels](#Concept_hiddenLabel), [related to](#Concept_isRelatedTo), [label](#Concept_label), [narrowly matches with](#Concept_narrowlyMatches), [Notation (code)](#Concept_notation), [part of](#Concept_partOf), [preferred label](#Concept_prefLabel), [provenance](#Concept_provenance), [scope note](#Concept_scopeNote), [related to](#Concept_seeAlso), [specialization of](#Concept_specialisationOf)
 
 
 ### Properties
+
+|!form data#Concept_altLabel!Eigenschap|alternative label
+|----------|------
+|Used term|[skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Description|A concept can have an alternative label, a synonym
 
 |!form data#Concept_comment!Eigenschap|comment
 |----------|------
@@ -60,7 +66,7 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Description|Preferably a concept has a comment in 'clear language'.
 |Min card.|1
 
-|!form data#Concept_dcsource!Eigenschap|written source
+|!form data#Concept_dcsource!Eigenschap|source
 |----------|------
 |Used term|[dc:source](http://purl.org/dc/elements/1.1/source)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
@@ -79,12 +85,32 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A concept can have an editorial comment.
 
+|!form data#Concept_example!Eigenschap|example
+|----------|------
+|Used term|[skos:example](http://www.w3.org/2004/02/skos/core#example)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Description|An example of the corresponding concept
+
+|!form data#Concept_hiddenLabel!Eigenschap|other search labels
+|----------|------
+|Used term|[skos:hiddenLabel](http://www.w3.org/2004/02/skos/core#hiddenLabel)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Description|A concept can have other search labels. These labels are normally not visible, but when search for, the corresponding concept will be found
+|Example|Panden (bij het begrip Pand), of Belgie (bij het begrip België)
+
 |!form data#Concept_label!Eigenschap|label
 |----------|------
 |Used term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A concept has a human-readable label (including spaces and diacritics). This is equal to the skos: prefLabel. An exception to this is the situation that within one concept scheme the same skos:prefLabel is used more than once. This is not a good practice and should be avoided as much as possible. In case this occurs nonetheless, the rdfs: label gets an addition between brackets that indicates the distinction. This label can be multilingual, indicated by @nl or @en
 |Min card.|1
+
+|!form data#Concept_notation!Eigenschap|Notation (code)
+|----------|------
+|Used term|[skos:notation](http://www.w3.org/2004/02/skos/core#notation)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Description|A code that corresponds to the concept
+|Example|AU (bij het begrip 'Goud', de chemische notatie)
 
 |!form data#Concept_prefLabel!Eigenschap|preferred label
 |----------|------
@@ -99,12 +125,6 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Used term|[skos:scopeNote](http://www.w3.org/2004/02/skos/core#scopeNote)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|A concept can be explained.
-
-|!form data#Concept_synonym!Eigenschap|alternative label
-|----------|------
-|Used term|[skos:altLabel](http://www.w3.org/2004/02/skos/core#altLabel)
-|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
-|Description|A concept can have an alternative label, a synonym
 
 
 ### Relations
@@ -127,7 +147,7 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Refers to|[skos:Concept](#Concept)
 |Description|A concept can be about several parts.
 
-|!form data#Concept_dctsource!Eigenschap|source on the web
+|!form data#Concept_dctsource!Eigenschap|source reference
 |----------|------
 |Used term|[dcterms:source](http://purl.org/dc/terms/source)
 |Refers to|[rdfs:Resource](#Resource)
@@ -177,7 +197,6 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Refers to|[prov:Entity](#Entity)
 |Description|Provenance of a concept can be described.
 |Example|Op basis van de nieuwe wet op de BAG is de definitie van het begrip 'verblijfsobject' aangepast.
-|Min card.|1
 
 |!form data#Concept_seeAlso!Eigenschap|related to
 |----------|------
@@ -227,7 +246,6 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 |Refers to|[prov:Entity](#Entity)
 |Description|Provenance of a collection can be described.
 |Example|Op basis van de nieuwe wet op de BAG is een aantal begrippen toegevoegd aan de collectie 'aard gebruik'
-|Min card.|1
 
 
 ## Concept
@@ -242,7 +260,7 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 
 |!form data#AssetConceptScheme!Klasse|Asset (ConceptScheme)
 |----------|------
-|Typed as|[adms:Asset](http://www.w3.org/ns/adms#Asset), [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
+|Typed as|[skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme), [adms:Asset](http://www.w3.org/ns/adms#Asset)
 |Description|A concept scheme can be identified as an asset.
 |Properties en relations|[type asset = Concept scheme](#AssetConceptScheme_typeConceptScheme)
 
