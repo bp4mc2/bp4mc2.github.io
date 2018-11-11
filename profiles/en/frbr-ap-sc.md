@@ -19,6 +19,7 @@ The FRBR application profile makes it possible to refer to:
 |!form data#Concept_dctsource!Eigenschap|source on the web
 |----------|------
 |Used term|[dcterms:source](http://purl.org/dc/terms/source)
+|Related with|b473927
 |Description|A concept can be derived from a source that can be found on the web. This can be a (version of) a description of a specific concept or a document in which a description of the concept can be found.
 
 
@@ -99,3 +100,5 @@ The FRBR application profile makes it possible to refer to:
 
 
 A document, general bibliographic resource on the web (work) or specific version of a bibliographic resource on the web (expression) has a uri that is minted by the publisher of the resource. In a system catalog no uri's are minted for this resources.
+
+

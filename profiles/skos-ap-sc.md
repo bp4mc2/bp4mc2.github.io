@@ -277,7 +277,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 
 |!form data#ExternalConcept!Klasse|Extern begrip
 |----------|------
-|Getypeerd als|[skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)
+|Getypeerd als|[skos:Concept](#Concept)
 |Uitleg|Een begrip in een ander begrippenkader waarmee een relatie wordt gelegd.
 |Voorbeeld|Het begrip Nummeraanduiding in de BAG in relatie tot het begrip Postadres in de BRK
 
@@ -290,7 +290,7 @@ Een begrippenkader kan gezien worden als een asset. Deze Asset betreft een Datas
 
 |!form data#AssetConceptScheme!Klasse|Asset (Begrippenkader)
 |----------|------
-|Getypeerd als|[adms:Asset](http://www.w3.org/ns/adms#Asset), [skos:ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)
+|Getypeerd als|[adms:Asset](#Asset), [skos:ConceptScheme](#ConceptScheme)
 |Uitleg|Een begrippenkader kan worden gezien als een asset.
 |Voorbeeld|De thesaurus of taxonomie met alle begrippen in het Kadastrale domein kunnen worden gezien als asset voor de BRK dataset.
 |Eigenschappen en relaties|[type asset = Begrippenkader](#AssetConceptScheme_typeConceptScheme)

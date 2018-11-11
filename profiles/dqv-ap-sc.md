@@ -17,7 +17,7 @@ Datakwaliteit
 
 |!form data#QualityIndicator!Klasse|Kwaliteitsindicator
 |----------|------
-|Getypeerd als|[dqv:Dimension](http://www.w3.org/ns/dqv#Dimension)
+|Getypeerd als|[dqv:Dimension](#Dimension)
 |Eigenschappen en relaties|[Specialisatie van](#QualityIndicator_broader)
 
 
@@ -121,7 +121,7 @@ Datakwaliteit
 
 |!form data#QualityPolicy!Klasse|Kwaliteitseis
 |----------|------
-|Getypeerd als|[sh:NodeShape](http://www.w3.org/ns/shacl#NodeShape)
+|Getypeerd als|[sh:NodeShape](#NodeShape)
 |Eigenschappen en relaties|[melding](#QualityPolicy_message), [eigenschap](#QualityPolicy_property), [ernst](#QualityPolicy_severity), [betreft](#QualityPolicy_targetNode)
 
 

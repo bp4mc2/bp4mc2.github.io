@@ -23,7 +23,7 @@ An example of the BAG model elaborated in this way can be found at [https://bag.
 
 |!form data#DataModel!Klasse|Asset (Data model)
 |----------|------
-|Typed as|[adms:Asset](http://www.w3.org/ns/adms#Asset)
+|Typed as|[adms:Asset](#Asset)
 |Description|An data model is a description of the structure in which data about things in a specific domain are stored.
 |Properties en relations|[type asset = data model](#DataModel_typeDataModel)
 

@@ -17,7 +17,7 @@ Data quality
 
 |!form data#QualityIndicator!Klasse|Quality indicator
 |----------|------
-|Typed as|[dqv:Dimension](http://www.w3.org/ns/dqv#Dimension)
+|Typed as|[dqv:Dimension](#Dimension)
 |Properties en relations|[Specialization of](#QualityIndicator_broader)
 
 
@@ -121,7 +121,7 @@ Data quality
 
 |!form data#QualityPolicy!Klasse|Quality policy
 |----------|------
-|Typed as|[sh:NodeShape](http://www.w3.org/ns/shacl#NodeShape)
+|Typed as|[sh:NodeShape](#NodeShape)
 |Properties en relations|[message](#QualityPolicy_message), [property](#QualityPolicy_property), [severity](#QualityPolicy_severity), [target](#QualityPolicy_targetNode)
 
 
