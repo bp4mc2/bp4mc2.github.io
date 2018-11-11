@@ -74,7 +74,7 @@ Een dataset is eigenlijk alles wat je een dataset noemt. Dat geeft de ruimte om 
 |!form data#Dataset_publisher!Eigenschap|publicist
 |----------|------
 |Gebruikte term|[dcterms:publisher](http://purl.org/dc/terms/publisher)
-|Verwijst naar|[foaf:Agent](#Agent)
+|Relatie met|[Agent (foaf)](#FoafAgent)
 |Uitleg|Degene die een dataset publiceert kan worden vastgelegd. Deze organisatie of persoon heeft toestemming om deze handeling uit te voeren.
 |Voorbeeld|overheid:Rijkswaterstaat
 

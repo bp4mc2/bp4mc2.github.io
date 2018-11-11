@@ -17,10 +17,10 @@ For class instances, any additional attributes of that class required for use ou
 
 ## Controlled vocabulary
 
-|!form data!Klasse|Asset (ControlledVocabulary)
+|!form data#ControlledVocabulary!Klasse|Asset (ControlledVocabulary)
 |----------|------
 |Description|A controlled vocabulary is an organized arrangement of concepts or elements used to index content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain.
-|Properties en relations|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [specified](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_specification)
+|Properties en relations|[http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary](http://bp4mc2.org/profiles/cv-ap-sc#ControlledVocabulary_typeControlledVocabulary), [specified](#ControlledVocabulary_specification)
 
 
 ### Properties
@@ -28,7 +28,7 @@ For class instances, any additional attributes of that class required for use ou
 
 ### Relations
 
-|!form data!Eigenschap|specified
+|!form data#ControlledVocabulary_specification!Eigenschap|specified
 |----------|------
 |Used term|[rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy)
 |Related with|[http://bp4mc2.org/profiles/cv-ap-sc#NodeShape](http://bp4mc2.org/profiles/cv-ap-sc#NodeShape)
@@ -37,7 +37,7 @@ For class instances, any additional attributes of that class required for use ou
 
 ## Controlled vocabulary as concept scheme
 
-|!form data!Klasse|concept scheme specification
+|!form data#SchemeControlledVocabulary!Klasse|concept scheme specification
 |----------|------
 |Description|A controlled vocabulary can be specified as a separate concept scheme.
 |Properties en relations|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabulary_property)
@@ -48,7 +48,7 @@ For class instances, any additional attributes of that class required for use ou
 
 ### Relations
 
-|!form data!Eigenschap|Waarde
+|!form data#SchemeControlledVocabulary_property!Eigenschap|Waarde
 |----------|------
 |Used term|[sh:property](http://www.w3.org/ns/shacl#property)
 |Related with|[http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec](http://bp4mc2.org/profiles/cv-ap-sc#SchemeControlledVocabularySpec)

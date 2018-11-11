@@ -34,7 +34,6 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 |!form data#Act_agent!Eigenschap|agent
 |----------|------
 |Gebruikte term|[skoslex:agent](http://bp4mc2.org/def/skos-lex#agent)
-|Verwijst naar|[skoslex:Agent](#Agent)
 |Relatie met|[Agent](#LegalAgent)
 |Uitleg|Agent relateert een handeling aan de agent die bij de handeling betrokken is
 |Voorbeeld|Een notaris die een akte opmaakt bij de koop van een onroerend goed.

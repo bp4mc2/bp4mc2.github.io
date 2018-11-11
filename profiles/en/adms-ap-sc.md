@@ -20,15 +20,15 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ## Asset
 
-|!form data!Klasse|Asset
+|!form data#Asset!Klasse|Asset
 |----------|------
 |Description|An asset is a set of reusable metadata and reference data  that are used for eGovernment system development.
-|Properties en relations|[has distribution](http://bp4mc2.org/profiles/adms-ap-sc#Asset_distribution), [label](http://bp4mc2.org/profiles/adms-ap-sc#Asset_label), [has landing page](http://bp4mc2.org/profiles/adms-ap-sc#Asset_landingPage), [part of](http://bp4mc2.org/profiles/adms-ap-sc#Asset_partOf), [provenance](http://bp4mc2.org/profiles/adms-ap-sc#Asset_provenance)
+|Properties en relations|[has distribution](#Asset_distribution), [label](#Asset_label), [has landing page](#Asset_landingPage), [part of](#Asset_partOf), [provenance](#Asset_provenance)
 
 
 ### Properties
 
-|!form data!Eigenschap|label
+|!form data#Asset_label!Eigenschap|label
 |----------|------
 |Used term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
@@ -40,30 +40,30 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ### Relations
 
-|!form data!Eigenschap|has distribution
+|!form data#Asset_distribution!Eigenschap|has distribution
 |----------|------
 |Used term|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Related with|[Distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
+|Related with|[Distribution](#AssetDistribution)
 |Description|The way in which an asset is published can be indicated.
 
-|!form data!Eigenschap|has landing page
+|!form data#Asset_landingPage!Eigenschap|has landing page
 |----------|------
 |Used term|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Related with|[Landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
+|Related with|[Landing page](#LandingPage)
 |Description|The landing page on the web on which an asset can be found can be specified.
 |Max card.|1
 
-|!form data!Eigenschap|part of
+|!form data#Asset_partOf!Eigenschap|part of
 |----------|------
 |Used term|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
 |Related with|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
 |Description|An asset can be part of a dataset.
 |Max card.|1
 
-|!form data!Eigenschap|provenance
+|!form data#Asset_provenance!Eigenschap|provenance
 |----------|------
 |Used term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
+|Refers to|[prov:Entity](#Entity)
 |Description|Provenance of a asset can be described.
 |Example|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
 |Min card.|1
@@ -71,52 +71,62 @@ Provenance can be tracked of metadata descriptions and distributions.
 
 ## Asset distribution
 
-|!form data!Klasse|Distribution
+|!form data#AssetDistribution!Klasse|Distribution
 |----------|------
 |Used term|[distribution](http://www.w3.org/ns/adms#Distribution)
 |Description|The way in which an asset is published.
-|Properties en relations|[access url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_accessURL), [download url](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_downloadURL), [provenance](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_provenance), [representation format](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution_representationTechnique)
+|Properties en relations|[access url](#AssetDistribution_accessURL), [download url](#AssetDistribution_downloadURL), [provenance](#AssetDistribution_provenance), [representation format](#AssetDistribution_representationTechnique)
 
 
 ### Relations
 
-|!form data!Eigenschap|has distribution
+|!form data#AssetDistribution_accessURL!Eigenschap|access url
 |----------|------
-|Used term|[dcat:distribution](http://www.w3.org/ns/dcat#distribution)
-|Related with|[Distribution](http://bp4mc2.org/profiles/adms-ap-sc#AssetDistribution)
-|Description|The way in which an asset is published can be indicated.
+|Used term|[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL)
+|Description|A distribution can be found via an access url.
 
-|!form data!Eigenschap|has landing page
+|!form data#AssetDistribution_downloadURL!Eigenschap|download url
 |----------|------
-|Used term|[dcat:landingPage](http://www.w3.org/ns/dcat#landingPage)
-|Related with|[Landing page](http://bp4mc2.org/profiles/adms-ap-sc#LandingPage)
-|Description|The landing page on the web on which an asset can be found can be specified.
-|Max card.|1
+|Used term|[dcat:downloadURL](http://www.w3.org/ns/dcat#downloadURL)
+|Related with|[Download format](#DownloadFormat)
+|Description|A download can be found via an download url.
 
-|!form data!Eigenschap|part of
-|----------|------
-|Used term|[dcterms:isPartOf](http://purl.org/dc/terms/isPartOf)
-|Related with|[http://bp4mc2.org/profiles/adms-ap-sc#Dataset](http://bp4mc2.org/profiles/adms-ap-sc#Dataset)
-|Description|An asset can be part of a dataset.
-|Max card.|1
-
-|!form data!Eigenschap|provenance
+|!form data#AssetDistribution_provenance!Eigenschap|provenance
 |----------|------
 |Used term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Refers to|[prov:Entity](http://www.w3.org/ns/prov#Entity)
-|Description|Provenance of a asset can be described.
-|Example|Op basis van de nieuwe wet op de BAG is een een nieuw informatiemodel opgesteld
+|Refers to|[prov:Entity](#Entity)
+|Description|Provenance of a distribution can be described.
+|Example|De metadata van de reSpec beschrijving van het nieuwe informatiemodel voor de BAG
 |Min card.|1
+
+|!form data#AssetDistribution_representationTechnique!Eigenschap|representation format
+|----------|------
+|Used term|[adms:representationTechnique](http://www.w3.org/ns/adms#representationTechnique)
+|Related with|[http://bp4mc2.org/profiles/adms-ap-sc#RepresentationTechnique](http://bp4mc2.org/profiles/adms-ap-sc#RepresentationTechnique)
+|Description|The format in which a distribution is available can be specified based on the adms controlled vocabulary on representation techniques.
 
 
 ## Landing page
 
-|!form data!Klasse|Landing page
+|!form data#LandingPage!Klasse|Landing page
 |----------|------
 |Description|The landing page on the web on which an asset can be found.
 
 
 ## Download format
+
+|!form data#DownloadFormat!Klasse|Download format
+|----------|------
+|Description|The download can be a file or a landing page with information.
+|Properties en relations|[is format of](#DownloadFormat_isFormatOf)
+
+
+### Relations
+
+|!form data#DownloadFormat_isFormatOf!Eigenschap|is format of
+|----------|------
+|Used term|[dcterms:isFormatOf](http://purl.org/dc/terms/isFormatOf)
+|Related with|[Landing page](#LandingPage)
 
 
 ## Uri strategy

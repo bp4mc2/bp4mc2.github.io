@@ -16,25 +16,26 @@ The FRBR application profile makes it possible to refer to:
 
 ### Relations
 
-|!form data!Eigenschap|source on the web
+|!form data#Concept_dctsource!Eigenschap|source on the web
 |----------|------
 |Used term|[dcterms:source](http://purl.org/dc/terms/source)
+|Related with|b466832
 |Description|A concept can be derived from a source that can be found on the web. This can be a (version of) a description of a specific concept or a document in which a description of the concept can be found.
 
 
 ## Document
 
-|!form data!Klasse|Document
+|!form data#Document!Klasse|Document
 |----------|------
 |Used term|[foaf:Document](http://xmlns.com/foaf/0.1/Document)
 |Description|A document that can be found on the web.
 |Example|[https://wetten.overheid.nl/BWBR0001840/2017-11-17](https://wetten.overheid.nl/BWBR0001840/2017-11-17)
-|Properties en relations|[label](http://bp4mc2.org/profiles/frbr-ap-sc#Document_label)
+|Properties en relations|[label](#Document_label)
 
 
 ### Properties
 
-|!form data!Eigenschap|label
+|!form data#Document_label!Eigenschap|label
 |----------|------
 |Used term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
@@ -44,16 +45,16 @@ The FRBR application profile makes it possible to refer to:
 
 ## Bibliographic reference
 
-|!form data!Klasse|bibliographic reference
+|!form data#Endeavour!Klasse|bibliographic reference
 |----------|------
 |Used term|[frbr:Endeavour](http://purl.org/vocab/frbr/core#Endeavour)
 |Description|A bibliographic reference of a work or expression.
-|Properties en relations|[topic of](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_isTopicOf), [label](http://bp4mc2.org/profiles/frbr-ap-sc#Endeavour_label)
+|Properties en relations|[topic of](#Endeavour_isTopicOf), [label](#Endeavour_label)
 
 
 ### Properties
 
-|!form data!Eigenschap|label
+|!form data#Endeavour_label!Eigenschap|label
 |----------|------
 |Used term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
@@ -63,17 +64,17 @@ The FRBR application profile makes it possible to refer to:
 
 ### Relations
 
-|!form data!Eigenschap|topic of
+|!form data#Endeavour_isTopicOf!Eigenschap|topic of
 |----------|------
 |Used term|[foaf:isPrimaryTopicOf](http://xmlns.com/foaf/0.1/isPrimaryTopicOf)
-|Related with|[Document](http://bp4mc2.org/profiles/frbr-ap-sc#Document)
+|Related with|[Document](#Document)
 |Description|A bibliographic reference can be a subject of a document.
 |Max card.|1
 
 
 ## Work
 
-|!form data!Klasse|Work
+|!form data#Work!Klasse|Work
 |----------|------
 |Used term|[frbr:Work](http://purl.org/vocab/frbr/core#Work)
 |Description|A bibliographic reference, without an explicit reference to a specific version.
@@ -81,10 +82,18 @@ The FRBR application profile makes it possible to refer to:
 
 ## Expression (version of a work)
 
-|!form data!Klasse|expression, version of a work
+|!form data#Expression!Klasse|Expression, version of a work
 |----------|------
 |Used term|[frbr:Expression](http://purl.org/vocab/frbr/core#Expression)
 |Description|A specific version of a work.
+
+
+## Resource (something with a URI)
+
+|!form data#Resource!Klasse|Resource
+|----------|------
+|Used term|[rdfs:Resource](http://www.w3.org/2000/01/rdf-schema#Resource)
+|Description|A thing, identified by a URI
 
 
 ## Uri strategy

@@ -132,7 +132,7 @@ De provenance kent 2 aspecten:
 |Gebruikte term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
 |Uitleg|De data graaf omvat zowel de concrete data (gerepresenteerd door een prov:Entity), als de metadata van de prov:Entity, dat wil zeggen: een sd:Graph
 |Voorbeeld|Alle wijzigingen en nieuwe data die op 8 augustus 2018 in een keer zijn geladen.
-|Eigenschappen en relaties|[doorgevoerd door](#ProvenanceGraph_attributedTo), [wijzigingsnotitie](#ProvenanceGraph_changeNote), [registratiemoment](#ProvenanceGraph_generatedAtTime)
+|Eigenschappen en relaties|[is doorgevoerd door](#ProvenanceGraph_attributedTo), [wijzigingsnotitie](#ProvenanceGraph_changeNote), [registratiemoment](#ProvenanceGraph_generatedAtTime)
 
 
 ### Eigenschappen
@@ -154,7 +154,7 @@ De provenance kent 2 aspecten:
 
 ### Relaties
 
-|!form data#ProvenanceGraph_attributedTo!Eigenschap|doorgevoerd door
+|!form data#ProvenanceGraph_attributedTo!Eigenschap|is doorgevoerd door
 |----------|------
 |Gebruikte term|[prov:wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo)
 |Verwijst naar|[prov:Agent](#Agent)
@@ -164,17 +164,17 @@ De provenance kent 2 aspecten:
 
 ## Agent (provenance)
 
-|!form data#ProvenanceAgent!Klasse|Agent (provenance)
+|!form data#Agent!Klasse|Agent (provenance)
 |----------|------
 |Gebruikte term|[prov:Agent](http://www.w3.org/ns/prov#Agent)
 |Uitleg| De persoon of organisatie die verantwoordelijk is voor een activiteit, de creatie van een entity of een activiteit van een ander kan worden vastgelegd.
 |Voorbeeld|Het Ministerie van BZK
-|Eigenschappen en relaties|[uitgevoerd namens](#ProvenanceAgent_OnBehalfOf)
+|Eigenschappen en relaties|[uitgevoerd namens](#Agent_OnBehalfOf)
 
 
 ### Relaties
 
-|!form data#ProvenanceAgent_OnBehalfOf!Eigenschap|uitgevoerd namens
+|!form data#Agent_OnBehalfOf!Eigenschap|uitgevoerd namens
 |----------|------
 |Gebruikte term|[prov:actedOnBehalfOf](http://www.w3.org/ns/prov#actedOnBehalfOf)
 |Verwijst naar|[prov:Organization](#Organization)

@@ -21,11 +21,25 @@ An example of the BAG model elaborated in this way can be found at [https://bag.
 
 ## Data model
 
+|!form data#DataModel!Klasse|Asset (Data model)
+|----------|------
+|Typed as|[adms:Asset](http://www.w3.org/ns/adms#Asset)
+|Description|An data model is a description of the structure in which data about things in a specific domain are stored.
+|Properties en relations|[type asset = data model](#DataModel_typeDataModel)
+
 
 ### Properties
 
 
 ### Relations
+
+|!form data#DataModel_typeDataModel!Eigenschap|type asset = data model
+|----------|------
+|Used term|[dcterms:type](http://purl.org/dc/terms/type)
+|Value|[Asset (Data model)](http://bp4mc2.org/profiles/dm-ap-sc#DataModel)
+|Description|A data model is explicitly typed as a data model.
+|Min card.|1
+|Max card.|1
 
 
 ## shapes graph

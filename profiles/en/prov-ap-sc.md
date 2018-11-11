@@ -1,4 +1,4 @@
-# Application profile for provenance information
+# PROV Application profile for provenance information
 
 
 Formal/legal validity and administrative aspects are recorded in accordance with the prov ontology. This involves who, what, when and for whatever reason has been recorded or changed.
@@ -24,22 +24,22 @@ The provenance has two aspects:
 
 ## Metadata
 
-|!form data!Klasse|Waarde
+|!form data#Entity!Klasse|Waarde
 |----------|------
 |Used term|[prov:Entity](http://www.w3.org/ns/prov#Entity)
 |Description|Metadata of a version of an entity can be described.
-|Properties en relations|[change note](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_changeNote), [date issued](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isIssued), [temporal validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isValidDuring), [spatial validity](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_isvalidWithin), [status](http://bp4mc2.org/profiles/prov-ap-sc#Metadata_status)
+|Properties en relations|[change note](#Entity_changeNote), [date issued](#Entity_isIssued), [temporal validity](#Entity_isValidDuring), [spatial validity](#Entity_isvalidWithin), [status](#Entity_status)
 
 
 ### Properties
 
-|!form data!Eigenschap|change note
+|!form data#Entity_changeNote!Eigenschap|change note
 |----------|------
 |Used term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The reason for a version and other points of attention in a version can be explained.
 
-|!form data!Eigenschap|date issued
+|!form data#Entity_isIssued!Eigenschap|date issued
 |----------|------
 |Used term|[dcterms:issued](http://purl.org/dc/terms/issued)
 |Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -49,26 +49,26 @@ The provenance has two aspects:
 
 ### Relations
 
-|!form data!Eigenschap|temporal validity
+|!form data#Entity_isValidDuring!Eigenschap|temporal validity
 |----------|------
 |Used term|[dcterms:temporal](http://purl.org/dc/terms/temporal)
-|Refers to|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
+|Refers to|[dcterms:PeriodOfTime](#PeriodOfTime)
 |Description|A version can be formally / legally valid for a period.
 |Example|22/10/2017 - 
 |Max card.|1
 
-|!form data!Eigenschap|spatial validity
+|!form data#Entity_isvalidWithin!Eigenschap|spatial validity
 |----------|------
 |Used term|[dcterms:spatial](http://purl.org/dc/terms/spatial)
-|Refers to|[dcterms:Location](http://purl.org/dc/terms/Location)
+|Refers to|[dcterms:Location](#Location)
 |Description|A version can be formally / legally valid in an geographical area.
 |Example|gemeente Apeldoorn
 |Max card.|1
 
-|!form data!Eigenschap|status
+|!form data#Entity_status!Eigenschap|status
 |----------|------
 |Used term|[adms:status](http://www.w3.org/ns/adms#status)
-|Related with|[Controlled vocabulary status](http://bp4mc2.org/profiles/prov-ap-sc#Status)
+|Related with|[Controlled vocabulary status](#Status)
 |Description|A version has an administrative status based on the ADMS list of values.
 |Min card.|1
 |Max card.|1
@@ -76,7 +76,7 @@ The provenance has two aspects:
 
 ## Status
 
-|!form data!Klasse|Controlled vocabulary status
+|!form data#Status!Klasse|Controlled vocabulary status
 |----------|------
 |Description|A version can hav an administrative status that is based on the ADMS controlled vocabulary.
 |Controlled vocabulary|[http://purl.org/adms/status/1.0](http://purl.org/adms/status/1.0)
@@ -84,16 +84,16 @@ The provenance has two aspects:
 
 ## Period of time
 
-|!form data!Klasse|Time period
+|!form data#PeriodOfTime!Klasse|Time period
 |----------|------
 |Used term|[dcterms:PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)
 |Description|A period of time is pointed out by a start date and end date.
-|Properties en relations|[end](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_end), [start](http://bp4mc2.org/profiles/prov-ap-sc#PeriodOfTime_start)
+|Properties en relations|[end](#PeriodOfTime_end), [start](#PeriodOfTime_start)
 
 
 ### Properties
 
-|!form data!Eigenschap|end
+|!form data#PeriodOfTime_end!Eigenschap|end
 |----------|------
 |Used term|[dcmiperiod:end](http://dublincore.org/documents/2006/04/10/dcmi-period/end)
 |Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -101,7 +101,7 @@ The provenance has two aspects:
 |Example|01/08/2018
 |Max card.|1
 
-|!form data!Eigenschap|start
+|!form data#PeriodOfTime_start!Eigenschap|start
 |----------|------
 |Used term|[dcmiperiod:start](http://dublincore.org/documents/2006/04/10/dcmi-period/start)
 |Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -112,7 +112,7 @@ The provenance has two aspects:
 
 ## Geographical area
 
-|!form data!Klasse|Geographical area
+|!form data#Location!Klasse|Geographical area
 |----------|------
 |Used term|[dcterms:Location](http://purl.org/dc/terms/Location)
 |Description|The description of the geographical area in which a version is valid.
@@ -120,22 +120,22 @@ The provenance has two aspects:
 
 ## Data graph
 
-|!form data!Klasse|Data graph
+|!form data#ProvenanceGraph!Klasse|Data graph
 |----------|------
 |Used term|[sd:Graph](http://www.w3.org/ns/sparql-service-description#Graph)
 |Description|The data graph contains both the concrete data (represented by a prov:Entity), and the metadata of the prov:Entity, that is: an sd:Graph
-|Properties en relations|[attributed to](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_attributedTo), [change note](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_changeNote), [registration moment](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceGraph_generatedAtTime)
+|Properties en relations|[was attributed to](#ProvenanceGraph_attributedTo), [change note](#ProvenanceGraph_changeNote), [registration moment](#ProvenanceGraph_generatedAtTime)
 
 
 ### Properties
 
-|!form data!Eigenschap|change note
+|!form data#ProvenanceGraph_changeNote!Eigenschap|change note
 |----------|------
 |Used term|[skos:changeNote](http://www.w3.org/2004/02/skos/core#changeNote)
 |Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
 |Description|The reason for a set of related changes can be explained.
 
-|!form data!Eigenschap|registration moment
+|!form data#ProvenanceGraph_generatedAtTime!Eigenschap|registration moment
 |----------|------
 |Used term|[prov:generatedAtTime](http://www.w3.org/ns/prov#generatedAtTime)
 |Datatype|[Date/time](http://www.w3.org/2001/XMLSchema#dateTime)
@@ -144,34 +144,34 @@ The provenance has two aspects:
 
 ### Relations
 
-|!form data!Eigenschap|attributed to
+|!form data#ProvenanceGraph_attributedTo!Eigenschap|was attributed to
 |----------|------
 |Used term|[prov:wasAttributedTo](http://www.w3.org/ns/prov#wasAttributedTo)
-|Refers to|[prov:Agent](http://www.w3.org/ns/prov#Agent)
+|Refers to|[prov:Agent](#Agent)
 |Description|The person or organization that made or let make the change can be recorded.
 
 
 ## Agent (provenance)
 
-|!form data!Klasse|Agent (provenance)
+|!form data#Agent!Klasse|Agent (provenance)
 |----------|------
 |Used term|[prov:Agent](http://www.w3.org/ns/prov#Agent)
 |Description|The person or organization that is responsible for an activity, the creation of a entity or an activity of another can be recorded.
-|Properties en relations|[acted on behalf of](http://bp4mc2.org/profiles/prov-ap-sc#ProvenanceAgent_OnBehalfOf)
+|Properties en relations|[acted on behalf of](#Agent_OnBehalfOf)
 
 
 ### Relations
 
-|!form data!Eigenschap|acted on behalf of
+|!form data#Agent_OnBehalfOf!Eigenschap|acted on behalf of
 |----------|------
 |Used term|[prov:actedOnBehalfOf](http://www.w3.org/ns/prov#actedOnBehalfOf)
-|Refers to|[prov:Organization](http://www.w3.org/ns/prov#Organization)
+|Refers to|[prov:Organization](#Organization)
 |Description|A person or organization can act on behalf of another person or organization.
 
 
 ## Person (provenance)
 
-|!form data!Klasse|Person (provenance)
+|!form data#ProvenancePerson!Klasse|Person (provenance)
 |----------|------
 |Used term|[prov:Person](http://www.w3.org/ns/prov#Person)
 |Description|An agent (provenance can be a human.
@@ -179,7 +179,7 @@ The provenance has two aspects:
 
 ## Software agent
 
-|!form data!Klasse|Software agent
+|!form data#ProvenanceSoftwareAgent!Klasse|Software agent
 |----------|------
 |Used term|[prov:SoftwareAgent](http://www.w3.org/ns/prov#SoftwareAgent)
 |Description|An agent (provenance can be an automated routine.
@@ -187,7 +187,7 @@ The provenance has two aspects:
 
 ## Organization (provenance)
 
-|!form data!Klasse|Organization (provenance)
+|!form data#Organization!Klasse|Organization (provenance)
 |----------|------
 |Used term|[prov:Organization](http://www.w3.org/ns/prov#Organization)
 |Description|An agent (provenance can be an organization.
@@ -195,7 +195,7 @@ The provenance has two aspects:
 
 ## Registered Agent
 
-|!form data!Klasse|Agent (foaf)
+|!form data#FoafAgent!Klasse|Agent (foaf)
 |----------|------
 |Used term|[foaf:Agent](http://xmlns.com/foaf/0.1/Agent)
 |Description|The person or organization that is responsible for a dataset.
@@ -203,7 +203,7 @@ The provenance has two aspects:
 
 ## Organization (foaf)
 
-|!form data!Klasse|Organization (foaf)
+|!form data#FoafOrganization!Klasse|Organization (foaf)
 |----------|------
 |Used term|[foaf:Organization](http://xmlns.com/foaf/0.1/Organization)
 |Description|The organization that is responsible for a dataset.
@@ -211,11 +211,22 @@ The provenance has two aspects:
 
 ## Organization (org)
 
-|!form data!Klasse|Organization (org)
+|!form data#OrgOrganization!Klasse|Organization (org)
 |----------|------
 |Used term|[org:Organization](http://www.w3.org/ns/org#Organization)
 |Description|The organization as included in the formal list with OIN numbers.
-|Properties en relations|[has OIN](http://bp4mc2.org/profiles/prov-ap-sc#OrgOrganization_oin)
+|Properties en relations|[has OIN](#OrgOrganization_oin)
+
+
+### Properties
+
+|!form data#OrgOrganization_oin!Eigenschap|has OIN
+|----------|------
+|Used term|[org:identifier](http://www.w3.org/ns/org#identifier)
+|Datatype|[Text](http://www.w3.org/2001/XMLSchema#string)
+|Description|The organization that is responsible for a dataset is included in the formal list with OIN numbers.
+|Min card.|1
+|Max card.|1
 
 
 ## Uri strategy
