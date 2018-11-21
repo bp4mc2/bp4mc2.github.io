@@ -23,7 +23,7 @@ The following vocabularies are used:
 |spdx|http://spdx.org/rdf/terms#|
 |vcard|http://www.w3.org/2006/vcard/ns#|
 
-![](dcat-ap-eu-profile.png)
+![](geodcat-ap-profile.png)
 
 ## Application profile classes
 
