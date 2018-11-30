@@ -29,7 +29,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |----------|------
 |Gebruikte term|[rdfs:label](http://www.w3.org/2000/01/rdf-schema#label)
 |Datatype|[Tekst](http://www.w3.org/2001/XMLSchema#string)
-|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan.
+|Uitleg|Een begrippenkader heeft een voor mensen leesbare naam. Spaties en diacritische tekens zijn  toegestaan. 
 |Voorbeeld|Het schema dat het domein regelgeving beschrijft heeft als label 'Regelgeving'.
 |Min card.|1
 
@@ -160,7 +160,7 @@ Voor het beschrijven van begrippen wordt SKOS gebruikt. SKOS staat in Nederland 
 |Gebruikte term|[skosthes:narrowerPartitive](http://purl.org/iso25964/skos-thes#narrowerPartitive)
 |Verwijst naar|[skos:Concept](#Concept)
 |Uitleg|Een begrip kan kan gaan over een aantal onderdelen.
-|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ...
+|Voorbeeld|Een schip bestaat uit een romp, kajuit, motor, ... 
 
 |!form data#Concept_dctsource!Eigenschap|bronverwijzing
 |----------|------
@@ -321,3 +321,5 @@ Bovenstaande gaat er vanuit dat `{domain}` het begrippenkader al uniek identific
 * `http://{domain}/id/collection/{conceptscheme}/{term}` voor collecties
 
 Het `skos:prefLabel` is in beginsel gelijk aan het `rdfs:label` en deze horen uniek te zijn voor alle concepten in een begrippenkader. Als dit niet het geval is, dan wordt de URI uitgebreid met een `_{context}` postfix. In een dergelijk geval wordt ook het `rdfs:label` uitgebreid met ` ({context})`.
+
+

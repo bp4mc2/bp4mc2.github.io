@@ -260,7 +260,7 @@ SKOS is used to describe concepts. SKOS is a standard on the appy-or-explain lis
 
 |!form data#AssetConceptScheme!Klasse|Asset (ConceptScheme)
 |----------|------
-|Typed as|[skos:ConceptScheme](#ConceptScheme), [adms:Asset](#Asset)
+|Typed as|[adms:Asset](#Asset), [skos:ConceptScheme](#ConceptScheme)
 |Description|A concept scheme can be identified as an asset.
 |Properties en relations|[type asset = Concept scheme](#AssetConceptScheme_typeConceptScheme)
 
