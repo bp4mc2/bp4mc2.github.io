@@ -4,6 +4,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 # Classes
 archimate:BusinessActor a owl:Class;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/archimate>;
   rdfs:label "BusinessActor"@en;
 .
 archimate:BusinessRole a owl:Class;
