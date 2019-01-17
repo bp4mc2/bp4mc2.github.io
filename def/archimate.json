@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdfs:isDefinedBy": {"@type": "@id"}
+  },
+  "@graph": [
+    {
+      "@id": "http://bp4mc2.org/def/archimate#BusinessActor",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "rdfs:isDefinedBy": "http://bp4mc2.org/def/archimate",
+      "rdfs:label": "BusinessActor"
+    }
+  ]
+}
