@@ -1,14 +1,584 @@
 {
-  "@context": {
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "rdfs:isDefinedBy": {"@type": "@id"}
-  },
-  "@graph": [
-    {
-      "@id": "http://bp4mc2.org/def/archimate#BusinessActor",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "rdfs:isDefinedBy": "http://bp4mc2.org/def/archimate",
-      "rdfs:label": "BusinessActor"
+  "@graph" : [ {
+    "@id" : "archimate:ApplicationCollaboration",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationCollaboration"
     }
-  ]
+  }, {
+    "@id" : "archimate:ApplicationComponent",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationComponent"
+    }
+  }, {
+    "@id" : "archimate:ApplicationEvent",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationEvent"
+    }
+  }, {
+    "@id" : "archimate:ApplicationFunction",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationFunction"
+    }
+  }, {
+    "@id" : "archimate:ApplicationInteraction",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationInteraction"
+    }
+  }, {
+    "@id" : "archimate:ApplicationInterface",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationInterface"
+    }
+  }, {
+    "@id" : "archimate:ApplicationProcess",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationProcess"
+    }
+  }, {
+    "@id" : "archimate:ApplicationService",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ApplicationService"
+    }
+  }, {
+    "@id" : "archimate:Artifact",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Artifact"
+    }
+  }, {
+    "@id" : "archimate:Assessment",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Assessment"
+    }
+  }, {
+    "@id" : "archimate:BusinessActor",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessActor"
+    }
+  }, {
+    "@id" : "archimate:BusinessCollaboration",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessCollaboration"
+    }
+  }, {
+    "@id" : "archimate:BusinessEvent",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessEvent"
+    }
+  }, {
+    "@id" : "archimate:BusinessFunction",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessFunction"
+    }
+  }, {
+    "@id" : "archimate:BusinessInteraction",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessInteraction"
+    }
+  }, {
+    "@id" : "archimate:BusinessInterface",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessInterface"
+    }
+  }, {
+    "@id" : "archimate:BusinessObject",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessObject"
+    }
+  }, {
+    "@id" : "archimate:BusinessProcess",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessProcess"
+    }
+  }, {
+    "@id" : "archimate:BusinessRole",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessRole"
+    }
+  }, {
+    "@id" : "archimate:BusinessService",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "BusinessService"
+    }
+  }, {
+    "@id" : "archimate:Capability",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Capability"
+    }
+  }, {
+    "@id" : "archimate:CommunicationNetwork",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "CommunicationNetwork"
+    }
+  }, {
+    "@id" : "archimate:Constraint",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Constraint"
+    }
+  }, {
+    "@id" : "archimate:Contract",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Contract"
+    }
+  }, {
+    "@id" : "archimate:CourseOfAction",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "CourseOfAction"
+    }
+  }, {
+    "@id" : "archimate:DataObject",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "DataObject"
+    }
+  }, {
+    "@id" : "archimate:Deliverable",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Deliverable"
+    }
+  }, {
+    "@id" : "archimate:Device",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Device"
+    }
+  }, {
+    "@id" : "archimate:DistributionNetwork",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "DistributionNetwork"
+    }
+  }, {
+    "@id" : "archimate:Driver",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Driver"
+    }
+  }, {
+    "@id" : "archimate:Equipment",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Equipment"
+    }
+  }, {
+    "@id" : "archimate:Facility",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Facility"
+    }
+  }, {
+    "@id" : "archimate:Gap",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Gap"
+    }
+  }, {
+    "@id" : "archimate:Goal",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Goal"
+    }
+  }, {
+    "@id" : "archimate:ImplementationEvent",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "ImplementationEvent"
+    }
+  }, {
+    "@id" : "archimate:Material",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Material"
+    }
+  }, {
+    "@id" : "archimate:Meaning",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Meaning"
+    }
+  }, {
+    "@id" : "archimate:Node",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Node"
+    }
+  }, {
+    "@id" : "archimate:Outcome",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Outcome"
+    }
+  }, {
+    "@id" : "archimate:Path",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Path"
+    }
+  }, {
+    "@id" : "archimate:Plateau",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Plateau"
+    }
+  }, {
+    "@id" : "archimate:Principle",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Principle"
+    }
+  }, {
+    "@id" : "archimate:Product",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Product"
+    }
+  }, {
+    "@id" : "archimate:Representation",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Representation"
+    }
+  }, {
+    "@id" : "archimate:Requirement",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Requirement"
+    }
+  }, {
+    "@id" : "archimate:Resource",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Resource"
+    }
+  }, {
+    "@id" : "archimate:Stakeholder",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Stakeholder"
+    }
+  }, {
+    "@id" : "archimate:SystemSoftware",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "SystemSoftware"
+    }
+  }, {
+    "@id" : "archimate:TechnologyCollaboration",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TechnologyCollaboration"
+    }
+  }, {
+    "@id" : "archimate:TechnologyEvent",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TechnologyEvent"
+    }
+  }, {
+    "@id" : "archimate:TechnologyFunction",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TechnologyFunction"
+    }
+  }, {
+    "@id" : "archimate:TechnologyInteraction",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TechnologyInteraction"
+    }
+  }, {
+    "@id" : "archimate:TechnologyInterface",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TechnologyInterface"
+    }
+  }, {
+    "@id" : "archimate:TechnologyProcess",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TechnologyProcess"
+    }
+  }, {
+    "@id" : "archimate:TechnologyService",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "TechnologyService"
+    }
+  }, {
+    "@id" : "archimate:Value",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Value"
+    }
+  }, {
+    "@id" : "archimate:WorkPackage",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "WorkPackage"
+    }
+  }, {
+    "@id" : "archimate:access",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "access"
+    }
+  }, {
+    "@id" : "archimate:aggregation",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "aggregation"
+    }
+  }, {
+    "@id" : "archimate:assignment",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "assignment"
+    }
+  }, {
+    "@id" : "archimate:association",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "association"
+    }
+  }, {
+    "@id" : "archimate:composition",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "composition"
+    }
+  }, {
+    "@id" : "archimate:flow",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "flow"
+    }
+  }, {
+    "@id" : "archimate:influence",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "influence"
+    }
+  }, {
+    "@id" : "archimate:property",
+    "@type" : "owl:DatatypeProperty",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : "property"
+  }, {
+    "@id" : "archimate:readAccess",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "readAccess"
+    },
+    "subPropertyOf" : "archimate:access"
+  }, {
+    "@id" : "archimate:readWriteAccess",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "readWriteAccess"
+    },
+    "subPropertyOf" : "archimate:access"
+  }, {
+    "@id" : "archimate:realization",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "realization"
+    }
+  }, {
+    "@id" : "archimate:serving",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "serving"
+    }
+  }, {
+    "@id" : "archimate:specialization",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "specialization"
+    }
+  }, {
+    "@id" : "archimate:triggering",
+    "@type" : "owl:ObjectProperty",
+    "label" : {
+      "@language" : "en",
+      "@value" : "triggering"
+    }
+  }, {
+    "@id" : "archimate:writeAccess",
+    "@type" : "owl:ObjectProperty",
+    "isDefinedBy" : "http://bp4mc2.org/def/archimate",
+    "label" : {
+      "@language" : "en",
+      "@value" : "writeAccess"
+    },
+    "subPropertyOf" : "archimate:access"
+  } ],
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "archimate" : "http://bp4mc2.org/def/archimate#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+  }
 }
