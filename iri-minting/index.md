@@ -1,25 +1,26 @@
 # IRI-minting
 
-## Introduction
+## 1. Introduction
 One of the important steps during the creation of data on the web is the minting of IRI's for your resources. An IRI can be compared to the primary key of a resource in a database, with the unique feature that an IRI can be universally unique, which is a nice feature when you want to combine data from different datasets, or when you want others to use your IRI's.
 
 This article describes the best practices with regard to the minting of IRI's. It answers the following questions:
 
 1. Should I mint IRI's, URI's, URL's or URN's??
 2. Should I use http or https??
-2. Should I use hash-URI's??
-3. What template should I use for my resources??
+3. Should I use hash-URI's??
+4. What template should I use for my resources??
+5. And what about API URL's?
 
 A best practice is formulated from these answers. This article starts with the resulting best practice and then continues with the answers to these questions (which is a bit more in depth and only needed for understanding the rational behind the best practice).
 
-## Best practice
+## 2. Best practice
 
 1. Use http hash URI's for terms (properties and classes) within a vocabulary (things that should be located on the web);
 2. Use http IRI's for identifing things that should be directly referenceable on the web;
 3. Use https URI's for identifing information resource located on the web.
 4. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
 
-### 1. http hash URI's for terms (properties and classes) within a vocabulary.
+### 2.1. http hash URI's for terms (properties and classes) within a vocabulary.
 
 Common practice for RDF vocabularies is the use of hash URI's. The use of IRI's is not recommended, because this is unfriendly for developers and doesn't work well with current serialization formats.
 
@@ -40,7 +41,7 @@ Example:
 http://bag.basisregistraties.overheid.nl/def/bag#Pand
 ```
 
-### B. http IRI's for identifing things that should be directly referenceable on the web
+### 2.2. http IRI's for identifing things that should be directly referenceable on the web
 
 For resources that should have retrievable information on the web, use http IRIs. Don't use https, as we are minting **identifiers** and not http endpoints. Use IRI's in case of internationalization.
 
@@ -86,7 +87,7 @@ http://bp4mc2.org/example/id/land/5010
 
 (In this example the notation `5010` refers to the country-code of the official Dutch country table: http://publicaties.rvig.nl/dsresource?objectid=4791&type=org)
 
-### C. https URI's for identifying information resources located on the web.
+### 2.3. https URI's for identifying information resources located on the web.
 
 As the http protocol only allows URI's (and not IRI's), it stands for reason to use URI's for identifying information resources located on the web. The use of https (instead of http) stands for reason as https is currently the most common way of requesting information on the web via the http protocol.
 
@@ -99,7 +100,7 @@ https://{domain}/{path}/doc/{class}/{doc-reference}
 - `{domain}`, `{path}`, `{class}` should be the same as the corresponding resource of type B;
 - `{doc-reference}` should be the URI convertion of the `{id-reference}` and may also include a version or time reference (in case of one resource of type B that is the primary topic of multiple information resources).
 
-### Use non-http IRI's for identifing things that should not be directly referenceable on the web;
+### 2.4. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
 
 Things that cannot be looked up directly, should not have http or https IRI's, as this would never result in a meaningful (e.g. 20x or 30x) answer.
 
@@ -115,7 +116,7 @@ The protocol should not be a network protocol, but should identify some identifi
 urn:uuid:{uuid}
 ```
 
-## 1. Should I mint IRI's, URI's, URL's or URN's??
+## 3. Should I mint IRI's, URI's, URL's or URN's??
 
 URI's, URL's and URN's are defined by [[RFC3986]](https://tools.ietf.org/html/rfc3986):
 
@@ -129,12 +130,12 @@ IRI's are defined by [[RFC3987]](https://tools.ietf.org/html/rfc3987):
 
 As defined by [[RDF11-CONCEPTS]](https://www.w3.org/TR/rdf11-concepts), a resource is identified by an IRI. So we can mint IRI's, but should we? For that, we need to answer the following questions:
 
-1.1 Do I need characters outside the ASCII subset that are allowed for URI's?
-1.2 Should my resource have a location on the web?
+3.1 Do I need characters outside the ASCII subset that are allowed for URI's?
+3.2 Should my resource have a location on the web?
 
 Some practical experience with these issues is already available, as described in [[DBPEDIA-I18N]](http://svn.aksw.org/papers/2011/DBpedia_I18n/public.pdf).
 
-### 1.1 Do I need characters outside the ASCII subset that are allowed for URI's?
+### 3.1. Do I need characters outside the ASCII subset that are allowed for URI's?
 
 Some considerations must be made with regard to the use of characters outside the ASCII subset. Such characters do not have standard locations on a typical keyboard, so using those characters for humans might be more difficult. The use of international characters in domain names might lead to security problems (using for example http://githüb.com will not direct you to github, but might be some fraudulent site).
 
@@ -189,3 +190,13 @@ WHERE {<{<http://dbpedia.org/resource/Rosé> ?p ?o}}
 In cases that data is retrieved from a non-latin origin, or in some edge cases (like rosé vs rose), the use of IRI's for identification might be necessary. In such a case, some extra precautions must be made when such resources are looked up.
 
 Other problems can occur when RDF data is serialized. Not all serialization formats allow the use of IRI's. The biggest issues are with IRI's that are used as identifiers of properties.
+
+### 3.2 Should my resource have a location on the web?
+
+The data on the web best practice 10 [[DWBP]](https://www.w3.org/TR/dwbp/) states: "*Reuse other people's URIs as identifiers within datasets where possible*". The "why" behind this best practice is about the network effect: by reusing other people's URIs, you can find other information not enclosed in the original dataset. This will only be possible if the URI corresponds to a location on the web.
+
+So your resource SHOULD have a location on the web, if you want the URI of your resource to be available as identifier that can be used in other people's dataset.
+
+Because any resource that is available on the web could in theory be used as an identifier in other people's dataset, your resource SHOULD NOT have a location on the web, if you don't want the URI of your resource to be available as identifier that can be used in other people's dataset.
+
+If your resource has a location on the web, the corresponding URL SHOULD be persistent. It MAY redirect to different versions of documentation about that resource, but SHOULD identify the resource during its lifecycle.
