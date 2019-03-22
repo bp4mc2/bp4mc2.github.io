@@ -10,29 +10,35 @@ This article describes the best practices with regard to the minting of IRI's. I
 2. Should I use hash-URI's??
 3. What template should I use for my resources??
 
-From these answers, a is formulated. This article starts with the resulting best practice and then continues with the answers to these questions (which is a bit more in depth and only needed for understaning the rational behind the best practice).
+A best practice is formulated from these answers. This article starts with the resulting best practice and then continues with the answers to these questions (which is a bit more in depth and only needed for understanding the rational behind the best practice).
 
 ## Best practice
 
-A. Use http hash URI's for terms (properties and classes) within a vocabulary (things that should be located on the web);
-A. Use http IRI's for identifing things that should be directly referenceable on the web;
-C. Use https URI's for identifing information resource located on the web.
-D. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
+1. Use http hash URI's for terms (properties and classes) within a vocabulary (things that should be located on the web);
+2. Use http IRI's for identifing things that should be directly referenceable on the web;
+3. Use https URI's for identifing information resource located on the web.
+4. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
 
-### A. http hash URI's for terms (properties and classes) within a vocabulary.
+### 1. http hash URI's for terms (properties and classes) within a vocabulary.
 
 Common practice for RDF vocabularies is the use of hash URI's. The use of IRI's is not recommended, because this is unfriendly for developers and doesn't work well with current serialization formats.
 
 Use the following URI template:
 
 ```
-http://{domain}/{path}/{vocabulary}#{term}
+http://{domain}/{path}/def/{vocabulary}#{term}
 ```
 
 - `{domain}` should be a domain that is owned by, or managed on behave of the publisher of the vocabulary;
 - `{path}` is optional and can be used to distinguish between branches or delegations;
 - `{vocabulary}` should be the name of the vocabulary with pattern `[a-z][a-z0-9\-]*`. Spaces should be converted using kebab-case (using a dash `-` instead of a space);
 - `{term}` should be the name of the class or property with pattern `[A-Z][a-zA-Z0-9_]*` for classes and `[a-z][a-zA-Z0-9_]` for properties. Spaces in class or property names should converted using CamelCase.
+
+Example:
+
+```
+http://bag.basisregistraties.overheid.nl/def/bag#Pand
+```
 
 ### B. http IRI's for identifing things that should be directly referenceable on the web
 
@@ -49,6 +55,36 @@ http://{domain}/{path}/id/{class}/{id-reference}
 - `{path}` is optional and can be used to distinguish between branches or delegations;
 - `{class}` should be the name of the most common class of the resource with pattern `[a-z][a-z0-9\-]*`. Spaces should be converted using kebab-case (using a dash `-` instead of a space);
 - `{id-reference}` should be an identifier of the resource. This identifier might use international characters. The reference should be as close to the commonly used identifier as possible (for example: the primary key in a relational database or the identifier used in data exchange interfaces).
+
+Example:
+
+```
+http://bag.basisregistraties.overheid.nl/bag/id/pand/0003100000117485
+```
+
+Reference or master data are common candidates to be identified by http IRI's. A common practice is to use a SKOS vocabulary for these objects. Some extra best practices are available for these cases:
+
+- `{class}` should be `concept` in case you specifically want to refer to the concept itself;
+- `{id-reference}` should be the exact term of the concept using international characters if applicable, start with a capital letter and use CamelCase for spaces.
+
+Example:
+
+```
+http://bp4mc2.org/example/id/concept/Rosé
+```
+
+In some cases, specific reference lists or master data sets are authored. In such cases, the identification of the concept is very closely related to the reference list or master data set itself. In such cases, it is more appropriate to use the class name instead of `concept`. A notation or 'code' is probably also available and should be used instead of the term:
+
+- `{class}` should be the name of the class of the reference or master data in case you specifically want to refer to this class;
+- `{id-reference}` should be the notation of the concept.
+
+Example:
+
+```
+http://bp4mc2.org/example/id/land/5010
+```
+
+(In this example the notation `5010` refers to the country-code of the official Dutch country table: http://publicaties.rvig.nl/dsresource?objectid=4791&type=org)
 
 ### C. https URI's for identifying information resources located on the web.
 
