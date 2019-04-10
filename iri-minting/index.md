@@ -190,12 +190,12 @@ https://{original-uri}.{extension}
 
 Use the following extensions:
 
-|Extension|Format|
-|---------|------|
-|rdf|RDF/XML|
+|Extension|Mime type|Format|
+|---------|---------|------|
+|rdf|application/rdf+xml|XML format for the Resource Description Framework|
 |jsonld|JSON-LD|
-|ttl|Turtle|
-|html|HTML Webpage|
+|ttl|text/turtle|Turtle (Terse RDF Triple Language)|
+|html|HyperText Markup Language (HTML) webpage|
 
 ### 3.4. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
 
