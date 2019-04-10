@@ -182,7 +182,7 @@ https://{domain}/{path}/data/{timestamp}/{class}/{dataset-reference}
 
 Both information resources and information resource versions can have formats. The format of an information resource would be the format of the most current version of that particular information resource.
 
-Use the following URI template for information resource versions:
+Use the following URI template for information resource (version) formats:
 
 ```
 https://{original-uri}.{extension}
