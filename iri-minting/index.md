@@ -197,6 +197,8 @@ Use the following extensions:
 |ttl|text/turtle|Turtle (Terse RDF Triple Language)|
 |html|text/html|HyperText Markup Language (HTML) webpage|
 
+Other formats are also possible. It is not necessary that such formats are RDF formats, like the html format isn't actually a RDF format. In all cases, the resulting serialization should contain the same information as a strict RDF format. It should be possible to translate between formats without losing information.
+
 ### 3.4. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
 
 Things that cannot be looked up directly, should not have http or https IRI's, as this would never result in a meaningful (e.g. 20x or 30x) answer.
