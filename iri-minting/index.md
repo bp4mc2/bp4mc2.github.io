@@ -1,7 +1,17 @@
 # IRI-minting
 
 ## 1. Introduction
-One of the important steps during the creation of data on the web is the minting of IRI's for your resources. An IRI can be compared to the primary key of a resource in a database, with the unique feature that an IRI can be universally unique, which is a nice feature when you want to combine data from different datasets, or when you want others to use your IRI's.
+One of the important steps during the creation of data on the web is the minting of IRI's for your resources. An IRI can be compared to the primary key of a resource in a database, with the unique feature that an IRI can be universally unique, which is a nice feature when you want to combine data from different datasets, or when you want others to use your IRI's. Another unique feature is that (in some cases) this IRI can directly be used as a request for information about the resource that is identified by the IRI.
+
+The is huge! It means that if you mint IRI's the proper way:
+
+- Everybody in the whole world can use your IRI as primary or foreign key, without the need of changing anything;
+- Everybody in the whole world can use your IRI to retrieve information you have about the resource, without the need for any more information!
+
+Compare this to a typical primary key in a typical database, for example "5010":
+
+- Nobody can use "5010" as a primary or foreign key, except when it is stored in a particular column of a table in a specific database;
+- Nobody can retrieve any information about "5010", except when some API is available and it is clear in which way "5010" can be used with this API.
 
 This article describes the best practices with regard to the minting of IRI's. It answers the following questions:
 
@@ -27,7 +37,7 @@ The scope of a IRI is not limited to only identify information resources. An IRI
 
 Non-information resources are by definition resources that are not information resources. They can be identified by a IRI, but they cannot be retrieved by a webserver (as a webserver can only retrieve information resources).
 
-You could, however, request a non-information resource. Although a webserver cannot retrieve such a non-information resource, it might retrieve an information resource *about* the non-information resource. The best practice [COOLURI](https://www.w3.org/TR/cooluris) describes how this should be done.
+You could, however, request a non-information resource. Although a webserver cannot retrieve such a non-information resource, it might retrieve an information resource *about* the non-information resource. The best practice [[COOLURI]](https://www.w3.org/TR/cooluris) describes how this should be done.
 
 ### 2.3 Resource
 A resource is something that can be identified by an IRI. A resource might be an information resource or a non-information resource.
@@ -40,7 +50,7 @@ When someone uses the IRI of the information resource, a webserver should decide
 ### 2.5 Information resource version format
 The information version that is retrieved by a webserver can be serialized in different formats. Common practice is to use the http-accept header to find out what format is most appropriate. When someone uses the IRI of the information resource version, a webserver should decide which particular format should be used for serialization. Common Linked Data formats are JSON-LD, Turtle or RDF/XML. When information is requested by a human via a webbrowser, a HTML representation might be more appropriate.
 
-To mint the IRI for the information resource version format, a common practice is to use the IRI for the information resource version and postfix this IRI with the file extension for the particular format, for example `.jsonld`, `.ttl`, `.rdf` or `.html`.
+To mint the IRI for the information resource version format, a common practice is to use the IRI for the information resource version and suffix this IRI with the file extension for the particular format, for example `.jsonld`, `.ttl`, `.rdf` or `.html`.
 
 ### 2.6 Dereferenceable IRI
 A dereferenceable IRI is an IRI that can be directly used in a request to a webserver. A request using a dereferenceable IRI must be answered by a webserver with a correct response. A dereferenceable IRI usually starts with `http` or `https`, following by the domain at which the webserver is located. The correct response is specified by the http protocol, for example a `200` response in case of a succesful retrieval of the requested information resource, or a `303` to redirect to different information resource, or a `404` in case the information resource has not been found.
@@ -143,7 +153,7 @@ http://bp4mc2.org/example/id/land/5010
 
 ### 3.3. https URI's for identifying information resources located on the web.
 
-#### 3.3.1 Information resource
+#### 3.3.1 Information resource about another resource
 
 As the http protocol only allows URI's (and not IRI's), it stands for reason to use URI's for identifying information resources located on the web. The use of https (instead of http) stands for reason as https is currently the most common way of requesting information on the web via the http protocol.
 
@@ -156,15 +166,38 @@ https://{domain}/{path}/doc/{class}/{doc-reference}
 - `{domain}`, `{path}`, `{class}` should be the same as the corresponding non-information resource;
 - `{doc-reference}` should be the URI convertion of the `{id-reference}`.
 
-In some cases, you want to identify a particular set of data, which is not necessary *about* a specific non-information resource, but might be a curated dataset that is about a lot of different resources. Use the following URI template for information resources that are curated datasets:
+### 3.3.2 Information resource as a set of data
+
+In some cases, you want to identify a particular set of data, which is not necessary *about* a specific non-information resource, but might be a curated set of data that is about a lot of different resources. Use the following URI template for information resources that are curated datasets:
 
 ```
 https://{domain}/{path}/data/{dataset-reference}
 ```
 
-A webserver should retrieve the actual dataset when someone requests such a URI.
+A webserver should retrieve the most current version of the set of data when someone requests such a URI.
 
-### 3.3.2 Information resource version
+### 3.3.3 Information resource as part of a RESTful http API
+
+A http API is a application programming interface using the http protocol. A RESTful http API conform to the principals of the REST architecture [[REST]](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm). Key to the REST architecture is the explicit use of information resources as part of the API. These information resources resemble sets of data, with the distinction that these sets of data might not actually be part of a database, but can also be the result of a query.
+
+Use the following URI template for information resources that are contained within a RESTful http API:
+
+```
+https://{domain}/{path}/{api-version}/{class-plural}/{id-reference}
+```
+
+- `{domain}` and `{path}` is used in the same way as other templates;
+- `{api-version}` should be the specific version of the API. This is not a specific version of an information resource, but the version of the API itself (different versions of an API might return the same version of an information resource);
+- `{class-plural}` should be the name of the class of the requested information in plural;
+- `{id-reference}` is optional in case a specific information resource is requested.
+
+The classname should be plural because the API should return a list of resources that correspond to this class, with the optional filter of limiting the list to the resource with the specific `{id-reference}`.
+
+The {`class-plural`} can also be something that is not actually stored in the database. For example, you could have an API `http://bp4mc2.org/example/v1/firefighters` which might return information about persons that have the occupation of firefighter.
+
+
+
+### 3.3.3 Information resource version
 
 An information resource version is also known as a memento for an information resource (the original resource), as defined by [[RFC7089]](https://tools.ietf.org/html/rfc7089). A memento for an original resource is a resource that encapsulates a prior state of the original resource. A Memento for an original resource as it existed at time T is a resource that encapsulates the state the original resource had at time T.
 
@@ -178,7 +211,7 @@ https://{domain}/{path}/data/{timestamp}/{class}/{dataset-reference}
 - `{domain}`, `{path}`, `{class}`, {`doc-reference`} and {`dataset-reference`} should be the same as the original resource;
 - `{timestamp}` should be the registration timestamp of this particular version, using a YYYYMMDDhhmmsssss format (from year to miliseconds).
 
-### 3.3.3 Information resource version format
+### 3.3.4 Information resource version format
 
 Both information resources and information resource versions can have formats. The format of an information resource would be the format of the most current version of that particular information resource.
 
@@ -300,4 +333,50 @@ Because any resource that is available on the web could in theory be used as an 
 
 If your resource has a location on the web, the corresponding URL SHOULD be persistent. It MAY redirect to different versions of documentation about that resource, but SHOULD identify the resource during its lifecycle.
 
-### 5. Should I use http or https??
+## 5. Should I use http or https??
+
+## 6. Should I use hash-URI's
+
+## 7. What pattern should I use for my IRI's
+
+## 8. And what about API URL's
+
+A http API is a application programming interface using the http protocol. A RESTful http API conform to the principals of the REST architecture [[REST]](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm). Key to the REST architecture is the explicit use of information resources as part of the API. These information resources resemble sets of data, with the distinction that these sets of data might not actually be part of a database, but can also be the result of a query.
+
+URI's used for RESTful http API's are always identifiers for a information resource request, and always result in the corresponding information resource. Unlike RDF, no explicit relation is expected between the identification of these information resources and the primary key that is used for the identification of the information resource in a database.
+
+In most cases, an IRI that identifies an information resource as part of a RESTful http API cannot be used as primary or foreign key. The reason is that most data is not about information resources, but about actual real-life objects: non-information resources.
+
+There are, however, also some advantages of using http RESTful API's as identifiers. Because there is no tight coupling between the RESTful API identifier and the primary key, it is possible to specify new information resources that are not actually stored within the database, but can be the result of a query.
+
+This means that we now have to ways of retrieving the information about some non-information resource:
+
+1. Using doc-URI's;
+2. Using an API.
+
+For example: let's retrieve some information about http://bp4mc2.org/id/person/JohnDoe, you might use one of the following http requests:
+
+```
+https://bp4mc2.org/doc/person/JohnDoe
+https://bp4mc2.org/v1/persons/JohnDoe
+```
+
+The first one corresponds to the doc-URI, the second one corresponds to a RESTful API.
+
+Another example: let's retrieve information about the friends of John Doe. Such a question can only be made using a RESTful API URI:
+
+```
+https://bp4mc2.org/v1/persons/JohnDoe/friends
+```
+
+This RESTful API corresponds with the following SPARQL query:
+
+```
+CONSTRUCT {
+  ?friend ?property ?value
+}
+WHERE {
+  <http://bp4mc2.org/v1/person/JohnDoe> foaf:knows ?friend.
+  ?friend ?property ?value
+}
+```
