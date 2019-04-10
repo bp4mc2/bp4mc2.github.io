@@ -19,7 +19,7 @@ To understand the best practices formulated in this document, it is important to
 
 ### 2.1 Information resource
 
-By design, an IRI identifies a resource [[WEBARCH, section 2.2]](https://www.w3.org/TR/webarch/#id-resources). The term "resource" is used in a general sense for whatever might be identified by a IRI. Traditionally, IRI's are used to identify web pages, images, downloadable files, etc as resources. The distinguishing characteristic of these resources is that all of their essential characteristics can be conveyed in a message. The term **information resource** is used for these kind of resources.
+By design, an IRI identifies a resource [[WEBARCH, section 2.2]](https://www.w3.org/TR/webarch/#id-resources). The term "resource" is used in a general sense for whatever might be identified by an IRI. Traditionally, IRI's are used to identify web pages, images, downloadable files, etc as resources. The distinguishing characteristic of these resources is that all of their essential characteristics can be conveyed in a message. The term **information resource** is used for these kind of resources.
 
 ### 2.2 Non-information resource
 
@@ -27,7 +27,7 @@ The scope of a IRI is not limited to only identify information resources. An IRI
 
 Non-information resources are by definition resources that are not information resources. They can be identified by a IRI, but they cannot be retrieved by a webserver (as a webserver can only retrieve information resources).
 
-You could, however, request a non-information resource. Although a webserver cannot retrieve such a non-information resource, it might retrieve an information resource *about* the non-information resource. The best practice [COOLURI](https://www.w3.org/TR/cooluris) describes how this can be done.
+You could, however, request a non-information resource. Although a webserver cannot retrieve such a non-information resource, it might retrieve an information resource *about* the non-information resource. The best practice [COOLURI](https://www.w3.org/TR/cooluris) describes how this should be done.
 
 ### 2.3 Resource
 A resource is something that can be identified by an IRI. A resource might be an information resource or a non-information resource.
@@ -42,28 +42,31 @@ The information version that is retrieved by a webserver can be serialized in di
 
 To mint the IRI for the information resource version format, a common practice is to use the IRI for the information resource version and postfix this IRI with the file extension for the particular format, for example `.jsonld`, `.ttl`, `.rdf` or `.html`.
 
+### 2.6 Dereferenceable IRI
+A dereferenceable IRI is an IRI that can be directly used in a request to a webserver. A request using a dereferenceable IRI must be answered by a webserver with a correct response. A dereferenceable IRI usually starts with `http` or `https`, following by the domain at which the webserver is located. The correct response is specified by the http protocol, for example a `200` response in case of a succesful retrieval of the requested information resource, or a `303` to redirect to different information resource, or a `404` in case the information resource has not been found.
+
 ### 2.6 Full example
 
 |#|IRI|What the IRI identifies|
 |-|---|-----------------------|
 |IRI-1|`http://bp4mc2.org/example/id/person/JohnDoe`|The real-life person John Doe|
 |IRI-2|`https://bp4mc2.org/example/doc/person/JohnDoe`|Information about the real-life person John Doe|
-|IRI-3|`https://bp4mc2.org/example/doc/2009-06-15T13:45:30.123/person/JohnDoe`|The version of the information about the real-life person John Doe, as registered on the 15th of June 2009, at 13:45:30.123|
-|IRI-4|`https://bp4mc2.org/example/doc/2009-06-15T13:45:30.123/person/JohnDoe.jsonld`|The JSON-LD format of the version of the information about the real-life person John Doe, as registered on the 15th of June 2009, at 13:45:30.123|
+|IRI-3|`https://bp4mc2.org/example/doc/20090615134530123/person/JohnDoe`|The version of the information about the real-life person John Doe, as registered on the 15th of June 2009, at 13:45:30.123|
+|IRI-4|`https://bp4mc2.org/example/doc/20090615134530123/person/JohnDoe.jsonld`|The JSON-LD format of the version of the information about the real-life person John Doe, as registered on the 15th of June 2009, at 13:45:30.123|
 
 IRI-1 represents a non-information resource. IRI-2, IRI-3 and IRI-4 represent information resources. All IRI's can be requested, but only a specific information resource version format will be retrieved:
 
 - When someone requests IRI-1, the webserver redirects the requester to IRI-2 (using a http 303 status code);
 - When someone requests IRI-2, the webserver looks up the most current version, which might be the information identified by IRI-3;
-- When someone requests IRI-3, the webserver uses content negotiation to find out what the most appropriate format is, which ight be the format identified by IRI-4;
+- When someone requests IRI-3, the webserver uses content negotiation to find out what the most appropriate format is, which might be the format identified by IRI-4;
 - When someone requests IRI-4, the webserver retrieves the requested information resource version format.
 
 ## 3. Best practice
 
-1. Use http hash URI's for terms (properties and classes) within a vocabulary (things that should be located on the web);
-2. Use http IRI's for identifing things that should be directly referenceable on the web;
-3. Use https URI's for identifing information resources located on the web.
-4. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
+1. Use http hash URI's for terms (properties and classes) within a vocabulary;
+2. Use http IRI's for identifing non-information resources that should be directly referenceable on the web;
+3. Use https URI's for identifing information resources located on the web;
+4. Use non-http IRI's for identifing resources that should not be directly referenceable on the web.
 
 ### 3.1. http hash URI's for terms (properties and classes) within a vocabulary.
 
@@ -86,7 +89,13 @@ Example:
 http://bag.basisregistraties.overheid.nl/def/bag#Pand
 ```
 
-### 3.2. http IRI's for identifing things that should be directly referenceable on the web
+By definition, a hash IRI identifies a non-information resource. The corresponding information-resource that contains information about this non-information resource is identified by the IRI that can be minted from the hash URI by removing the part that starts from the hash. Example:
+
+```
+http://bag.basisregistraties.overheid.nl/def/bag
+```
+
+### 3.2. http IRI's for identifing information resources that should be directly referenceable on the web
 
 For resources that should have retrievable information on the web, use http IRIs. Don't use https, as we are minting **identifiers** and not http endpoints. Use IRI's in case of internationalization.
 
@@ -108,7 +117,7 @@ Example:
 http://bag.basisregistraties.overheid.nl/bag/id/pand/0003100000117485
 ```
 
-Reference or master data are common candidates to be identified by http IRI's. A common practice is to use a SKOS vocabulary for these objects. Some extra best practices are available for these cases:
+Reference or master data resources are common candidates to be identified by http IRI's. A common practice is to use a SKOS vocabulary for information about these resources. Some extra best practices are available for these cases:
 
 - `{class}` should be `concept` in case you specifically want to refer to the concept itself;
 - `{id-reference}` should be the exact term of the concept using international characters if applicable, start with a capital letter and use CamelCase for spaces.
@@ -121,7 +130,7 @@ http://bp4mc2.org/example/id/concept/Rosé
 
 In some cases, specific reference lists or master data sets are authored. In such cases, the identification of the concept is very closely related to the reference list or master data set itself. In such cases, it is more appropriate to use the class name instead of `concept`. A notation or 'code' is probably also available and should be used instead of the term:
 
-- `{class}` should be the name of the class of the reference or master data in case you specifically want to refer to this class;
+- `{class}` should be the name of the class of the reference or master data resource in case you specifically want to refer to this class;
 - `{id-reference}` should be the notation of the concept.
 
 Example:
@@ -134,16 +143,59 @@ http://bp4mc2.org/example/id/land/5010
 
 ### 3.3. https URI's for identifying information resources located on the web.
 
+#### 3.3.1 Information resource
+
 As the http protocol only allows URI's (and not IRI's), it stands for reason to use URI's for identifying information resources located on the web. The use of https (instead of http) stands for reason as https is currently the most common way of requesting information on the web via the http protocol.
 
-Use the following URI template for information resources *about* resources of type B:
+Use the following URI template for information resources *about* non-information resources:
 
 ```
 https://{domain}/{path}/doc/{class}/{doc-reference}
 ```
 
-- `{domain}`, `{path}`, `{class}` should be the same as the corresponding resource of type B;
-- `{doc-reference}` should be the URI convertion of the `{id-reference}` and may also include a version or time reference (in case of one resource of type B that is the primary topic of multiple information resources).
+- `{domain}`, `{path}`, `{class}` should be the same as the corresponding non-information resource;
+- `{doc-reference}` should be the URI convertion of the `{id-reference}`.
+
+In some cases, you want to identify a particular set of data, which is not necessary *about* a specific non-information resource, but might be a curated dataset that is about a lot of different resources. Use the following URI template for information resources that are curated datasets:
+
+```
+https://{domain}/{path}/data/{dataset-reference}
+```
+
+A webserver should retrieve the actual dataset when someone requests such a URI.
+
+### 3.3.2 Information resource version
+
+An information resource version is also known as a memento for an information resource (the original resource), as defined by [[RFC7089]](https://tools.ietf.org/html/rfc7089). A memento for an original resource is a resource that encapsulates a prior state of the original resource. A Memento for an original resource as it existed at time T is a resource that encapsulates the state the original resource had at time T.
+
+Use one of the following URI templates for information resource versions:
+
+```
+https://{domain}/{path}/doc/{timestamp}/{class}/{doc-reference}
+https://{domain}/{path}/data/{timestamp}/{class}/{dataset-reference}
+```
+
+- `{domain}`, `{path}`, `{class}`, {`doc-reference`} and {`dataset-reference`} should be the same as the original resource;
+- `{timestamp}` should be the registration timestamp of this particular version, using a YYYYMMDDhhmmsssss format (from year to miliseconds).
+
+### 3.3.3 Information resource version format
+
+Both information resources and information resource versions can have formats. The format of an information resource would be the format of the most current version of that particular information resource.
+
+Use the following URI template for information resource versions:
+
+```
+https://{original-uri}.{extension}
+```
+
+Use the following extensions:
+
+|Extension|Format|
+|---------|------|
+|rdf|RDF/XML|
+|jsonld|JSON-LD|
+|ttl|Turtle|
+|html|HTML Webpage|
 
 ### 3.4. Use non-http IRI's for identifing things that should not be directly referenceable on the web;
 
