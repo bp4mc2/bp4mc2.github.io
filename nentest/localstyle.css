@@ -1,0 +1,71 @@
+/*******************************************************************************
+ *                              Local stylesheet                               *
+ *
+ * Local stylesheet:
+ * NEN3610-Linkeddata
+ *
+ ******************************************************************************/
+
+/******************************************************************************/
+/*                              Generic section                               */
+/******************************************************************************/
+
+section.generic {
+    background-color: #EDEDED;
+    border-left-width: .5em;
+    border-left-style: solid;
+    border-color: #A1A1A1;
+    padding: .5em;
+}
+
+/******************************************************************************/
+/*                                Table style                                 */
+/******************************************************************************/
+
+table, th, td {
+    background-color: #F2F2F2;
+    border-collapse: collapse;}
+table {
+    border: 1px solid #000000;
+    width: 100%;
+}
+caption {
+    font-style: italic;
+    text-align: left;
+}
+th, td {
+    border: 1px inset #CCCCCC;
+    hyphens: auto;
+
+    padding: 0.25em;
+}
+
+/******************************************************************************/
+/*                                Example style                               */
+/*                             (adapted from R2RML)                           */
+/******************************************************************************/
+pre.ex-turtle {
+  margin-left: 0;
+  padding: 0 2em;
+  margin-top: 1.5em;
+  padding: 1em 1em 0 1em;
+}
+pre.ex-turtle:before {
+  background: white;
+  display: block;
+  font-family: sans-serif;
+  font-size: 90%;
+  margin: -1em 0 0.4em -1em;
+  padding: 0.2em 1em;
+}
+pre.ex-turtle {
+  background: #eeb;
+}
+pre.ex-turtle, pre.ex-turtle:before {
+  border: 1px solid #cc9;
+}
+pre.ex-turtle:before {
+  color: #996;
+  content: "voorbeeld RDF representatie";
+  width: 13em;
+}
