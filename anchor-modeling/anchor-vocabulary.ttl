@@ -1,0 +1,255 @@
+@prefix anchor: <http://bp4mc2.org/def/anchor#>.
+@prefix shape: <http://bp4mc2.org/def/anchor-shape#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+#Classes
+
+anchor:Anchor a owl:Class;
+  rdfs:label "Anchor"@en;
+.
+anchor:Knot a owl:Class;
+  rdfs:label "Knot"@en;
+.
+anchor:Attribute a owl:Class;
+  rdfs:label "Attribute"@en;
+.
+anchor:Tie a owl:Class;
+  rdfs:label "Tie"@en;
+.
+anchor:AnchorRole a owl:Class;
+  rdfs:label "AnchorRole"@en;
+.
+anchor:KnotRole a owl:Class;
+  rdfs:label "KnotRole"@en;
+.
+
+#Properties
+anchor:mnemonic a owl:DatatypeProperty;
+  rdfs:label "mnemonic"@en;
+.
+anchor:descriptor a owl:DatatypeProperty;
+  rdfs:label "descriptor"@en;
+.
+anchor:description a owl:DatatypeProperty;
+  rdfs:label "description"@en;
+.
+anchor:dataRange a owl:DatatypeProperty;
+  rdfs:label "dataRange"@en;
+.
+anchor:timeRange a owl:DatatypeProperty;
+  rdfs:label "timeRange"@en;
+.
+anchor:attribute a owl:ObjectProperty;
+  rdfs:label "attribute"@en;
+.
+anchor:anchorRole a owl:ObjectProperty;
+  rdfs:label "anchorRole"@en;
+.
+anchor:type a owl:ObjectProperty;
+  rdfs:label "type"@en;
+.
+anchor:identifier a owl:DatatypeProperty;
+  rdfs:labe "identifier"@en;
+.
+
+#Shapes
+shape:Anchor a sh:NodeShape;
+  sh:targetClass anchor:Anchor;
+  sh:name "anchor:Anchor";
+  sh:property [
+    sh:order 1;
+    sh:path anchor:mnemonic;
+    sh:name "anchor:mnemonic";
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 2;
+    sh:path anchor:descriptor;
+    sh:name "anchor:descriptor";
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 3;
+    sh:path anchor:description;
+    sh:name "anchor:description";
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 4;
+    sh:path anchor:timeRange;
+    sh:name anchor:timeRange;
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path anchor:attribute;
+    sh:name "anchor:attribute";
+    sh:class anchor:Attribute;
+    sh:nodeKind sh:BlankNode;
+  ];
+.
+shape:Attribute a sh:NodeShape;
+  sh:targetClass anchor:Attribute;
+  sh:name "anchor:Attribute";
+  sh:property [
+    sh:order 1;
+    sh:path anchor:mnemonic;
+    sh:name "anchor:mnemonic";
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 2;
+    sh:path anchor:descriptor;
+    sh:name "anchor:descriptor";
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 3;
+    sh:path anchor:description;
+    sh:name "anchor:description";
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 4;
+    sh:path anchor:dataRange;
+    sh:name "anchor:dataRange";
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path anchor:knotRange;
+    sh:name "anchor:knotRange";
+    sh:maxCount 1;
+    sh:class anchor:Knot;
+  ]
+.
+shape:Tie a sh:NodeShape;
+  sh:targetClass anchor:Tie;
+  sh:name "anchor:Tie";
+  sh:property [
+    sh:order 1;
+    sh:path anchor:description;
+    sh:name "anchor:description";
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path anchor:anchorRole;
+    sh:name "anchor:anchorRole";
+    sh:minCount 2;
+    sh:class anchor:AnchorRole;
+    sh:nodeKind sh:BlankNode;
+  ];
+  sh:property [
+    sh:path anchor:knotRole;
+    sh:name "anchor:knotRole";
+    sh:maxCount 1;
+    sh:class anchor:KnotRole;
+    sh:nodeKind sh:BlankNode;
+  ];
+.
+shape:AnchorRole a sh:NodeShape;
+  sh:targetClass anchor:AnchorRole;
+  sh:name "anchor:AnchorRole";
+  sh:property [
+    sh:order 1;
+    sh:path anchor:role;
+    sh:name "anchor:role";
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 2;
+    sh:path anchor:identifier;
+    sh:name "anchor:identifier";
+    sh:datatype xsd:boolean;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 3;
+    sh:path anchor:description;
+    sh:name "anchor:description";
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path anchor:type;
+    sh:name "anchor:type";
+    sh:class anchor:Anchor;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+.
+shape:KnotRole a sh:NodeShape;
+  sh:targetClass anchor:KnotRole;
+  sh:name "anchor:KnotRole";
+  sh:property [
+    sh:order 1;
+    sh:path anchor:role;
+    sh:name "anchor:role";
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 2;
+    sh:path anchor:identifier;
+    sh:name "anchor:identifier";
+    sh:datatype xsd:boolean;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 3;
+    sh:path anchor:description;
+    sh:name "anchor:description";
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path anchor:type;
+    sh:name "anchor:type";
+    sh:class anchor:Knot;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+.
+shape:Knot a sh:NodeShape;
+  sh:targetClass anchor:Knot;
+  sh:name "anchor:Knot";
+  sh:property [
+    sh:order 1;
+    sh:path anchor:mnemonic;
+    sh:name "anchor:mnemonic";
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 2;
+    sh:path anchor:descriptor;
+    sh:name "anchor:descriptor";
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:order 3;
+    sh:path anchor:description;
+    sh:name "anchor:description";
+    sh:datatype xsd:string;
+    sh:maxCount 1;
+  ];
+.
