@@ -1,0 +1,22 @@
+prefix container: <http://localhost:8080/data2model/container/>
+prefix am: <http://bp4mc2.org/def/anchor#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+clear graph container:editdata
+
+insert {
+  graph container:editdata {
+    ?class a owl:Class, sh:NodeShape.
+    ?class rdfs:label ?descriptor.
+    ?class rdfs:seeAlso ?anchor.
+  }
+}
+where {
+  graph container:model {
+    ?anchor a am:Anchor.
+    ?anchor am:descriptor ?descriptor.
+    BIND (iri(concat("http://example.org/def#",?descriptor)) as ?class)
+  }
+}

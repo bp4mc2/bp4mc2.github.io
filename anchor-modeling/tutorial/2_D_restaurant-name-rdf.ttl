@@ -1,0 +1,42 @@
+@prefix example: <urn:example:>.
+@prefix exdef: <http://example.org/def#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+example:PizzariaRistoranteMario a exdef:Restaurant.
+
+<urn:uuid:8607519e-59ae-4917-b606-7311679a1684> a exdef:Restaurant_Name;
+  rdf:subject example:PizzariaRistoranteMario;
+  rdf:object "Pizzaria Ristorante Mario"^^xsd:string;
+  rdf:predicate exdef:name;
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Inferred properties
+example:PizzariaRistoranteMario exdef:name "Pizzaria Ristorante Mario"^^xsd:string.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema format="0.99" date="2019-11-08" time="14:05:50">
+  <metadata changingRange="datetime" encapsulation="dbo" identity="int" metadataPrefix="Metadata" metadataType="int" metadataUsage="true" changingSuffix="ChangedAt" identitySuffix="ID" positIdentity="int" positGenerator="true" positingRange="datetime" positingSuffix="PositedAt" positorRange="tinyint" positorSuffix="Positor" reliabilityRange="decimal(5,2)" reliabilitySuffix="Reliability" deleteReliability="0" assertionSuffix="Assertion" partitioning="false" entityIntegrity="true" restatability="true" idempotency="false" assertiveness="true" naming="improved" positSuffix="Posit" annexSuffix="Annex" chronon="datetime2(7)" now="sysdatetime()" dummySuffix="Dummy" versionSuffix="Version" statementTypeSuffix="StatementType" checksumSuffix="Checksum" businessViews="false" decisiveness="true" equivalence="false" equivalentSuffix="EQ" equivalentRange="tinyint" databaseTarget="SQLServer" temporalization="uni"/>
+  <anchor mnemonic="RE" descriptor="Restaurant" identity="int">
+    <metadata capsule="dbo" generator="true"/>
+    <attribute mnemonic="NAM" descriptor="Name" dataRange="xsd:string">
+      <metadata capsule="dbo"/>
+      <layout x="724.24" y="433.35" fixed="false"/>
+    </attribute>
+    <layout x="720.00" y="373.50" fixed="false"/>
+  </anchor>
+</schema>

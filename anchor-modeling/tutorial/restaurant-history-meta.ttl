@@ -1,0 +1,41 @@
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix example: <urn:example:>.
+@prefix anchor: <urn:mnemonics:anchor:>.
+@prefix attribute: <urn:mnemonics:attribute:>.
+@prefix knot: <urn:mnemonics:knot:>.
+@prefix tie: <urn:mnemonics:tie:>.
+@prefix role: <urn:role:>.
+@prefix value: <urn:value:>.
+
+anchor:RE a owl:Class;
+  rdfs:label "Restaurant";
+.
+attribute:RE_NAM a rdf:Statement;
+  rdfs:label "Name";
+  rdf:subject anchor:RE;
+.
+attribute:RE_CUI a rdf:Statement;
+  rdfs:label "Cuisine";
+  rdf:subject anchor:RE;
+  rdf:object knot:CUI;
+.
+anchor:DI a owl:Class;
+  rdfs:label "Dish";
+.
+attribute:DI_NAM a rdf:Statement;
+  rdfs:label "Name";
+  rdf:subject anchor:DI;
+.
+attribute:DI_PRI a rdf:Statement;
+  rdfs:label "Price";
+  rdf:subject anchor:DI;
+  prov:generatedAt "<date>";
+.
+knot:CUI a owl:Class;
+  rdfs:label "Cuisine";
+.
+tie:1 a owl:Class;
+  rdfs:label "";
+  role:isServed anchor:DI;
+  role:at anchor:RE;
+.

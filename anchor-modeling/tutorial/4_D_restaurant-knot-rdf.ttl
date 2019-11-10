@@ -1,0 +1,45 @@
+@prefix example: <urn:example:>.
+@prefix exdef: <http://example.org/def#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+example:PizzariaRistoranteMario a exdef:Restaurant.
+
+<urn:uuid:8607519e-59ae-4917-b606-7311679a1684> a exdef:Restaurant_Name;
+  rdf:subject example:PizzariaRistoranteMario;
+  rdf:object "Pizzaria Ristorante Mario"^^xsd:string;
+  rdf:predicate exdef:name;
+.
+
+<urn:uuid:26613064-7c8b-4bca-89cb-13185e35bb6a> a exdef:Restaurant_at_Dish_isServed;
+  role:at example:PizzariaRistoranteMario;
+  role:isServed example:PizzaMargherita;
+.
+
+<urn:uuid:79d7c07c-633e-49a2-bf24-fac930ddae5f> a exdef:Restaurant_Cuisine;
+  rdf:subject example:PizzariaRistoranteMario;
+  rdf:object example:ItalianCuisine;
+  rdf:predicate exdef:cuisine;
+.
+
+example:ItalianCuisine a knot:CUI;
+  value:Cuisine "Italian Cuisine";
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Inferred properties
+example:PizzariaRistoranteMario exdef:name "Pizzaria Ristorante Mario"^^xsd:string.
+example:PizzariaRistoranteMario exdef:isServed example:PizzaMargherita.
+example:PizzaMargherita exdef:at example:PizzariaRistoranteMario.
+example:PizzariaRistoranteMario exdef:cuisine example:ItalianCuisine.

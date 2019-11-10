@@ -1,0 +1,19 @@
+@prefix am: <http://bp4mc2.org/def/anchor#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix anchor: <urn:mnemonic:anchor:>.
+@prefix attribute: <urn:mnemonic:attribute:>.
+@prefix tie: <urn:mnemonic:tie:>.
+@prefix knot: <urn:mnemonic:knot:>.
+
+anchor:RE a am:Anchor;
+  am:descriptor "Restaurant"^^xsd:string;
+  am:mnemonic "RE"^^xsd:string;
+  am:attribute attribute:RE_NAM;
+
+.
+
+attribute:RE_NAM a am:Attribute;
+  am:descriptor "Name"^^xsd:string;
+  am:mnemonic "NAM"^^xsd:string;
+  am:dataRange "xsd:string"^^xsd:string;
+.

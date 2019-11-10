@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema format="0.99" date="2019-11-08" time="14:44:19">
+  <metadata changingRange="datetime" encapsulation="dbo" identity="int" metadataPrefix="Metadata" metadataType="int" metadataUsage="true" changingSuffix="ChangedAt" identitySuffix="ID" positIdentity="int" positGenerator="true" positingRange="datetime" positingSuffix="PositedAt" positorRange="tinyint" positorSuffix="Positor" reliabilityRange="decimal(5,2)" reliabilitySuffix="Reliability" deleteReliability="0" assertionSuffix="Assertion" partitioning="false" entityIntegrity="true" restatability="true" idempotency="false" assertiveness="true" naming="improved" positSuffix="Posit" annexSuffix="Annex" chronon="datetime2(7)" now="sysdatetime()" dummySuffix="Dummy" versionSuffix="Version" statementTypeSuffix="StatementType" checksumSuffix="Checksum" businessViews="false" decisiveness="true" equivalence="false" equivalentSuffix="EQ" equivalentRange="tinyint" databaseTarget="SQLServer" temporalization="uni"/>
+  <anchor mnemonic="RE" descriptor="Restaurant" identity="int">
+    <metadata capsule="dbo" generator="true"/>
+    <attribute mnemonic="NAM" descriptor="Name" dataRange="xsd:string">
+      <metadata capsule="dbo"/>
+      <layout x="724.24" y="433.35" fixed="false"/>
+    </attribute>
+    <attribute mnemonic="CUI" descriptor="Cuisine" knotRange="CUI">
+      <metadata capsule="dbo"/>
+      <layout x="692.46" y="268.94" fixed="false"/>
+    </attribute>
+    <layout x="687.69" y="371.09" fixed="false"/>
+  </anchor>
+  <tie>
+    <anchorRole role="at" type="RE" identifier="true"/>
+    <anchorRole role="isServed" type="DI" identifier="true"/>
+    <metadata capsule="dbo"/>
+    <layout x="592.71" y="412.28" fixed="false"/>
+  </tie>
+  <anchor mnemonic="DI" descriptor="Dish" identity="int">
+    <metadata capsule="dbo" generator="true"/>
+    <attribute mnemonic="NAM" descriptor="Name" dataRange="xsd:string">
+      <metadata capsule="dbo"/>
+      <layout x="458.29" y="466.40" fixed="false"/>
+    </attribute>
+    <layout x="496.03" y="450.39" fixed="false"/>
+  </anchor>
+  <knot mnemonic="CUI" descriptor="Cuisine" identity="int" dataRange="xsd:string">
+    <metadata capsule="dbo" generator="false"/>
+    <layout x="688.44" y="188.91" fixed="false"/>
+  </knot>
+</schema>

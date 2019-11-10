@@ -1,0 +1,87 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix exdef: <http://example.org/def#>.
+@prefix anchor: <urn:mnemonic:anchor:>.
+
+exdef:Restaurant a owl:Class, sh:NodeShape;
+  rdfs:label "Restaurant"^^xsd:string;
+  rdfs:seeAlso anchor:RE
+.
+
+exdef:name a owl:DatatypeProperty;
+  rdfs:label "name"^^xsd:string;
+.
+exdef:Restaurant_Name a owl:Class, sh:NodeShape;
+  rdfs:subClassOf rdf:Statement;
+  rdfs:label "Name"^^xsd:string;
+  rdfs:seeAlso attribute:RE_NAM;
+  sh:property [
+    sh:path rdf:subject;
+    sh:node exdef:Restaurant;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path rdf:subject;
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path rdf:predicate;
+    sh:hasValue exdef:name;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+.
+
+exdef:Dish a owl:Class, sh:NodeShape;
+  rdfs:label "Dish"^^xsd:string;
+  rdfs:seeAlso anchor:DI;
+.
+
+exdef:Dish_Name a owl:Class, sh:NodeShape;
+  rdfs:subClassOf rdf:Statement;
+  rdfs:label "Name"^^xsd:string;
+  rdfs:seeAlso attribute:DI_NAM;
+  sh:property [
+    sh:path rdf:subject;
+    sh:node exdef:Dish;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path rdf:subject;
+    sh:datatype xsd:string;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+  sh:property [
+    sh:path rdf:predicate;
+    sh:hasValue exdef:name;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ];
+.
+
+exdef:at a owl:ObjectProperty;
+  rdfs:label "at"^^xsd:string;
+.
+exdef:isServed a owl:ObjectProperty;
+  rdfs:label "isServed"^^xsd:string;
+.
+exdef:RestaurantAtDishIsServed a owl:Class, sh:NodeShape;
+  rdfs:label "Restaurant at Dish isServed";
+  rdfs:seeAlso tie:RE_at_DI_isServed;
+  sh:property [
+    sh:path exdef:at;
+    sh:class exdef:Restaurant;
+  ];
+  sh:property [
+    sh:path exdef:isServed;
+    sh:class exdef:Dish;
+  ];
+.

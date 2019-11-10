@@ -56,8 +56,11 @@ anchor:identifier a owl:DatatypeProperty;
 
 #Shapes
 shape:Anchor a sh:NodeShape;
-  sh:targetClass anchor:Anchor;
   sh:name "Anchor (owl:Class)";
+  sh:property [
+    sh:path rdf:type;
+    sh:hasValue owl:Class;
+  ];
   sh:property [
     sh:order 1;
     sh:path anchor:mnemonic;
@@ -82,3 +85,41 @@ shape:Anchor a sh:NodeShape;
     sh:maxCount 1;
   ];
 .
+
+shape:Attribute a sh:NodeShape;
+  sh:name "Attribute (rdf:Statement)";
+  sh:property [
+    sh:path rdf:type;
+    sh:hasValue rdf:Statement;
+  ];
+  sh:property [
+    sh:path rdf:subject;
+    sh:name "rdf:subject";
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:node shape:Anchor;
+  ];
+  sh:property [
+    sh:path rdf:object;
+    sh:name "rdf:object";
+    sh:maxCount 1;
+  ];
+  # Gaat dit goed? Knotted attributen worden dan anders...
+  sh:property [
+    sh:path rdf:object;
+    sh:name "rdf:object";
+    sh:maxCount 1;
+    sh:node shape:Knot;
+  ];
+.
+
+shape:Tie a sh:NodeShape;
+  sh:name "Tie (owl:Class)";
+  sh:property [
+    sh:path rdf:type;
+    sh:hasValue owl:Class;
+  ];
+  sh:property [
+    sh:path model:role;
+    sh:name "<role>";
+  ]

@@ -1,0 +1,58 @@
+@prefix am: <http://bp4mc2.org/def/anchor#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix anchor: <urn:mnemonic:anchor:>.
+@prefix attribute: <urn:mnemonic:attribute:>.
+@prefix tie: <urn:mnemonic:tie:>.
+@prefix knot: <urn:mnemonic:knot:>.
+
+anchor:RE a am:Anchor;
+  am:descriptor "Restaurant"^^xsd:string;
+  am:mnemonic "RE"^^xsd:string;
+  am:attribute attribute:RE_NAM;
+  am:attribute attribute:RE_CUI;
+.
+
+attribute:RE_NAM a am:Attribute;
+  am:descriptor "Name"^^xsd:string;
+  am:mnemonic "NAM"^^xsd:string;
+  am:dataRange "xsd:string"^^xsd:string;
+.
+
+anchor:DI a am:Anchor;
+  am:descriptor "Dish"^^xsd:string;
+  am:mnemonic "DI"^^xsd:string;
+  am:attribute attribute:DI_NAM;
+
+.
+
+attribute:DI_NAM a am:Attribute;
+  am:descriptor "Name"^^xsd:string;
+  am:mnemonic "NAM"^^xsd:string;
+  am:dataRange "xsd:string"^^xsd:string;
+.
+
+tie:RE_at_DI_isServed a am:Tie;
+  am:anchorRole [
+    rdf:type am:AnchorRole;
+    am:identifier "true"^^xsd:string;
+    am:role "at"^^xsd:string;
+    am:type anchor:RE
+  ];
+  am:anchorRole [
+    rdf:type am:AnchorRole;
+    am:identifier "true"^^xsd:string;
+    am:role "isServed"^^xsd:string;
+    am:type anchor:DI
+  ]
+.
+
+attribute:RE_CUI a am:Attribute;
+  am:descriptor "Cuisine"^^xsd:string;
+  am:mnemonic "CUI"^^xsd:string;
+  am:knotRange knot:CUI;
+.
+
+knot:CUI a am:Knot;
+  am:descriptor "Cuisine"^^xsd:string;
+  am:mnemonic "CUI"^^xsd:string;
+.
