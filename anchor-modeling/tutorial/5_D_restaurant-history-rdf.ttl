@@ -27,13 +27,13 @@ example:ItalianCuisine a knot:CUI;
 
 <urn:uuid:fcd5d83c-318b-4b92-b486-f88336086c54> a exdef:Dish_Price;
   rdf:subject example:PizzaMargherita;
-  rdf:object "10,15";
+  rdf:object "10.15"^^xsd:decimal;
   rdf:predicate exdef:price;
   prov:generatedAt "2019-01-01"^^xsd:date;
 .
 <urn:uuid:75cbd44b-f24e-4cde-9707-4c11bd478e7c> a exdef:Dish_Price;
   rdf:subject example:PizzaMargherita;
-  rdf:object "12,95";
+  rdf:object "12.95"^^xsd:decimal;
   rdf:predicate exdef:price;
   prov:generatedAt "2019-08-01"^^xsd:date;
 .
@@ -43,4 +43,4 @@ example:PizzariaRistoranteMario exdef:name "Pizzaria Ristorante Mario"^^xsd:stri
 example:PizzariaRistoranteMario exdef:isServed example:PizzaMargherita.
 example:PizzaMargherita exdef:at example:PizzariaRistoranteMario.
 example:PizzariaRistoranteMario exdef:cuisine example:ItalianCuisine.
-example:PizzaMargherita exdef:price "12,95". #Most recent price
+example:PizzaMargherita exdef:price "12.95"^^xsd:decimal. #Most recent price

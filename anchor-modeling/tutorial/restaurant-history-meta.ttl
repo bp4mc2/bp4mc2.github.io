@@ -6,6 +6,9 @@
 @prefix tie: <urn:mnemonics:tie:>.
 @prefix role: <urn:role:>.
 @prefix value: <urn:value:>.
+@prefix elmo: <http://bp4mc2.org/elmo/def#>.
+
+prov:generatedAt rdfs:label "prov:generatedAt".
 
 anchor:RE a owl:Class;
   rdfs:label "Restaurant";
@@ -29,7 +32,7 @@ attribute:DI_NAM a rdf:Statement;
 attribute:DI_PRI a rdf:Statement;
   rdfs:label "Price";
   rdf:subject anchor:DI;
-  prov:generatedAt "<date>";
+  prov:generatedAt "<xsd:date>";
 .
 knot:CUI a owl:Class;
   rdfs:label "Cuisine";
