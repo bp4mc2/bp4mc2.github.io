@@ -1,34 +1,278 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Linked Data Theatre</title><link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="css/ldt-theme.min.css"><link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"><script type="text/javascript" src="js/jquery-1.11.3.min.js"></script></head><body><div id="page"><div class="content"><div class="container"><shape class-uri="http://bp4mc2.org/def/skos-lex#Act"><property uri="http://bp4mc2.org/def/skos-lex#agent"></property><property uri="http://bp4mc2.org/def/skos-lex#actor"></property><property uri="http://bp4mc2.org/def/skos-lex#object"></property></shape><shape class-uri="http://bp4mc2.org/def/skos-lex#Norm"><property uri="http://bp4mc2.org/def/skos-lex#affects"></property><property uri="http://bp4mc2.org/def/skos-lex#refersTo"></property></shape><shape class-uri="http://www.w3.org/2004/02/skos/core#Concept"><property uri="http://purl.org/dc/terms/source"></property></shape><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title"><a href="http://bp4mc2.org/def/skos-lex#">SKOS legal extension (skos-lex)</a></h3></div><div class="panel-body"><div class="row"><div class="col-md-12">the SKOS legal extension defines the classes en properties necessary to declare legal constructs as skos concepts.</div></div><div class="row"><div class="col-md-6"><div class="nav-tree"><b>Classes</b><ul style="max-height:500px; padding-bottom:20px; overflow-y: auto"><li class="has-child tree-collapsed"><p><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a><ul class="hide"><li><p><a href="#Act">Act</a></p></li><li class="has-child tree-collapsed"><p><a href="#Actor">Actor</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a><ul class="hide"><li><p><a href="#Agent">Agent</a></p></li></ul></li><li><p><a href="#Norm">Norm</a></p></li><li><p><a href="#Object">Object</a></p></li></ul></li></ul></div></div><div class="col-md-6"><div class="nav-tree"><b>Properties</b><ul style="max-height:500px; padding-bottom:20px; overflow-y: auto"><li class="has-child tree-collapsed"><p><a href="http://www.w3.org/2004/02/skos/core#semanticRelation">semanticRelation</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a><ul class="hide"><li class="has-child tree-collapsed"><p><a href="#actor">actor</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a><ul class="hide"><li><p><a href="#agent">agent</a></p></li></ul></li><li><p><a href="#object">object</a></p></li><li class="has-child tree-collapsed"><p><a href="#refersTo">refersTo</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a><ul class="hide"><li><p><a href="#affects">affects</a></p></li></ul></li></ul></li></ul></div></div></div></div></div><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">Classes</h3></div><div class="panel-body"><h4 id="Act"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Act">Act</a></h4><p><i>The class of Acts. An act is a legal construct representing a set of activities, performed by an Actor and with respect to some Object.</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Act</td></tr><tr><td>Subclass of:</td><td><a href="http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a></td></tr><tr><td>Properties include:</td><td><a href="#actor">actor</a>, <a href="#agent">agent</a>, <a href="#object">object</a></td></tr></tbody></table><h4 id="Norm"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Norm">Norm</a></h4><p><i>The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act.</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Norm</td></tr><tr><td>Subclass of:</td><td><a href="http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a></td></tr><tr><td>See also:</td><td><a href="https://en.wikipedia.org/wiki/Norm_(philosophy)">https://en.wikipedia.org/wiki/Norm_(philosophy)</a>, <a href="https://en.wikipedia.org/wiki/Theory_of_Legal_Norms">https://en.wikipedia.org/wiki/Theory_of_Legal_Norms</a></td></tr><tr><td>Properties include:</td><td><a href="#affects">affects</a>, <a href="#refersTo">refersTo</a></td></tr></tbody></table><h4 id="Actor"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Actor">Actor</a></h4><p><i>The class of Actors. An actor is some person (individual, group or organisation) that performs some Act</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Actor</td></tr><tr><td>Subclass of:</td><td><a href="http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a></td></tr><tr><td>Has subclasses:</td><td><a href="#Agent">Agent</a></td></tr></tbody></table><h4 id="Agent"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Agent">Agent</a></h4><p><i>The class of Agent. An agent is some person (individual, group or organisation) involved in some act, without actually performing the act.</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Agent</td></tr><tr><td>Subclass of:</td><td><a href="#Actor">Actor</a></td></tr></tbody></table><h4 id="Object"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Object">Object</a></h4><p><i>The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Object</td></tr><tr><td>Subclass of:</td><td><a href="http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a></td></tr></tbody></table></div></div><div class="panel panel-primary"><div class="panel-heading"><h3 class="panel-title">Properties</h3></div><div class="panel-body"><h4 id="actor"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23actor">actor</a></h4><p><i>Actor relates an Act with the Actor that performs the act.</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#actor</td></tr><tr><td>Property of:</td><td><a href="#Act">Act</a></td></tr><tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation">http://www.w3.org/2004/02/skos/core#semanticRelation</a></td></tr></tbody></table><h4 id="affects"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23affects">affects</a></h4><p><i>Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#affects</td></tr><tr><td>Property of:</td><td><a href="#Norm">Norm</a></td></tr><tr><td>Subproperty of:</td><td><a href="#refersTo">refersTo</a></td></tr></tbody></table><h4 id="agent"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23agent">agent</a></h4><p><i>Agent relates an Act with the Agent involved in the act.</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#agent</td></tr><tr><td>Property of:</td><td><a href="#Act">Act</a></td></tr><tr><td>Subproperty of:</td><td><a href="#actor">actor</a></td></tr></tbody></table><h4 id="object"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23object">object</a></h4><p><i>Object relates an Act with the object that is created, changed or used during the act</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#object</td></tr><tr><td>Property of:</td><td><a href="#Act">Act</a></td></tr><tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation">http://www.w3.org/2004/02/skos/core#semanticRelation</a></td></tr></tbody></table><h4 id="refersTo"><a href="/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23refersTo">refersTo</a></h4><p><i>RefersTo relates a norm with the Act that is refered by the norm. Such an act has some relation with the norm, without further specification. It might be effected by the norm, but could also be a precondition or simply mentioned in the rules.</i></p><table class="basic-text-table"><tbody><tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#refersTo</td></tr><tr><td>Property of:</td><td><a href="#Norm">Norm</a></td></tr><tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation">http://www.w3.org/2004/02/skos/core#semanticRelation</a></td></tr></tbody></table></div></div><script>
-		function toggleNode(node) {
-			if (node.parentElement.children[2].className!='') {
-				node.children[0].className='fa fa-minus-square';
-				node.parentElement.className='has-child';
-				node.parentElement.children[2].className=''
-			} else {
-				node.children[0].className='fa fa-plus-square';
-				node.parentElement.className='has-child tree-collapsed';
-				node.parentElement.children[2].className='hide'
-			}
-		};
-		function expandShallowNodes(cnt,node) {
-			if ($(node).children("li").length+cnt<20) {
-				if (cnt!=0) {
-					node.className='';
-					node.parentElement.className='has-child';
-					node.parentElement.children[1].children[0].className='fa fa-minus-square';
-				}
-				$(node).children("li").each(function() {
-					if(this.children[2]) {
-						cnt = expandShallowNodes($(node).children("li").length+cnt,this.children[2]);
-					}
-				});
-			}
-			return cnt
-		}
-		$(".nav-tree").each(function() {
-			if ($(this).children("ul")) {
-				expandShallowNodes(0,$(this).children("ul")[0]);
-			}
-		});
-	</script></div></div></div></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKOS-LEX ontology</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ldt-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <div class="content">
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li><a href="/def/skos-lex.ttl">ttl</a></li>
+            <li><a href="/def/skos-lex.xml">xml</a></li>
+            <li><a href="/def/skos-lex.json">json</a></li>
+          </ul>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title"><a href="http://bp4mc2.org/def/skos-lex#">SKOS legal extension (skos-lex)</a></h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <p>the SKOS legal extension defines the classes en properties necessary to declare legal constructs as skos concepts.</p>
+                  <table class="basic-text-table">
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="nav-tree">
+                    <b>Classes</b>
+                    <ul style="max-height:500px; padding-bottom:20px; overflow-y: auto">
+                      <li><p><a href="#Norm">Norm</a></p></li>
+                      <li class="has-child tree-collapsed"><p><a href="#Concept">Concept</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a>
+                        <ul class="hide">
+                          <li><p><a href="#Act">Act</a></p></li>
+                          <li class="has-child tree-collapsed"><p><a href="#Actor">Actor</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a>
+                            <ul class="hide">
+                              <li><p><a href="#Agent">Agent</a></p></li>
+                            </ul>
+                          </li>
+                          <li class="has-child tree-collapsed"><p><a href="#Object">Object</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a>
+                            <ul class="hide">
+                              <li><p><a href="#Record">Record</a></p></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="nav-tree">
+                    <b>Properties</b>
+                    <ul style="max-height:500px; padding-bottom:20px; overflow-y: auto">
+                      <li><p><a href="#source">source</a></p></li>
+                      <li class="has-child tree-collapsed"><p><a href="http://www.w3.org/2004/02/skos/core#semanticRelation" style="font-style: italic">semanticRelation</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a>
+                        <ul class="hide">
+                          <li class="has-child tree-collapsed"><p><a href="#actor">actor</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a>
+                            <ul class="hide">
+                              <li><p><a href="#agent">agent</a></p></li>
+                            </ul>
+                          </li>
+                          <li><p><a href="#isAbout">isAbout</a></p></li>
+                          <li><p><a href="#object">object</a></p></li>
+                          <li><p><a href="#record">record</a></p></li>
+                          <li class="has-child tree-collapsed"><p><a href="#refersTo">refersTo</a></p><a class="" href="#" onclick="toggleNode(this);return false;"><i class="fa fa-plus-square"></i></a>
+                            <ul class="hide">
+                              <li><p><a href="#affects">affects</a></p></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="images/skos-lex.png" style="max-width: 100%; width: 600px;"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading"><h3 class="panel-title">Classes</h3></div>
+            <div class="panel-body">
+              <h4 id="Act"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Act">Act</a></h4>
+              <p><i>The class of Acts. An act is a legal construct representing a set of activities, performed by an Actor and with respect to some Object.</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Act</td></tr>
+                  <tr><td>Subclass of:</td><td><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-style: italic">skos:Concept</a></td></tr>
+                  <tr><td>Properties include:</td><td><a href="#actor">actor</a>, <a href="#agent">agent</a>, <a href="#object">object</a>, <a href="#record">record</a></td></tr>
+                  <tr><td>Inherited properties:</td><td><a href="http://purl.org/dc/terms/source" style="font-style: italic">dcterms:source</a></td></tr>
+                  <tr><td>Used with property:</td><td><a href="#affects">affects</a>, <a href="#refersTo">refersTo</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="Actor"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Actor">Actor</a></h4>
+              <p><i>The class of Actors. An actor is some person (individual, group or organisation) that performs some Act</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Actor</td></tr>
+                  <tr><td>Subclass of:</td><td><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-style: italic">skos:Concept</a></td></tr>
+                  <tr><td>Has subclasses:</td><td><a href="#Agent">Agent</a></td></tr>
+                  <tr><td>Properties include:</td><td></td></tr>
+                  <tr><td>Inherited properties:</td><td><a href="http://purl.org/dc/terms/source" style="font-style: italic">dcterms:source</a></td></tr>
+                  <tr><td>Used with property:</td><td><a href="#actor">actor</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="Agent"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Agent">Agent</a></h4>
+              <p><i>The class of Agent. An agent is some person (individual, group or organisation) involved in some act, without actually performing the act.</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Agent</td></tr>
+                  <tr><td>Subclass of:</td><td><a href="#Actor">Actor</a></td></tr>
+                  <tr><td>Properties include:</td><td></td></tr>
+                  <tr><td>Inherited properties:</td><td><a href="http://purl.org/dc/terms/source" style="font-style: italic">dcterms:source</a></td></tr>
+                  <tr><td>Used with property:</td><td><a href="#agent">agent</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="Norm"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Norm">Norm</a></h4>
+              <p><i>The class of norms. A norm effects an Act. It implies what 'ought' or 'should not' be done with regard to an Act. A norm represents the set of rules that apply to an Act.</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Norm</td></tr>
+                  <tr><td>Properties include:</td><td><a href="#affects">affects</a>, <a href="#refersTo">refersTo</a></td></tr>
+                  <tr><td>See also:</td><td><a href="https://en.wikipedia.org/wiki/Norm_(philosophy)" style="font-style: italic">https://en.wikipedia.org/wiki/Norm_(philosophy)</a>, <a href="https://en.wikipedia.org/wiki/Theory_of_Legal_Norms" style="font-style: italic">https://en.wikipedia.org/wiki/Theory_of_Legal_Norms</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="Object"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Object">Object</a></h4>
+              <p><i>The class of objects. An object is some thing (not an actor) that is created, used or changed during some Act</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Object</td></tr>
+                  <tr><td>Subclass of:</td><td><a href="http://www.w3.org/2004/02/skos/core#Concept" style="font-style: italic">skos:Concept</a></td></tr>
+                  <tr><td>Has subclasses:</td><td><a href="#Record">Record</a></td></tr>
+                  <tr><td>Properties include:</td><td></td></tr>
+                  <tr><td>Inherited properties:</td><td><a href="http://purl.org/dc/terms/source" style="font-style: italic">dcterms:source</a></td></tr>
+                  <tr><td>Used with property:</td><td><a href="#object">object</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="Record"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23Record">Record</a></h4>
+              <p><i>The class of records. A record is a some thing (not an actor) that is created to capture the execution of an act</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#Record</td></tr>
+                  <tr><td>Subclass of:</td><td><a href="#Object">Object</a></td></tr>
+                  <tr><td>Properties include:</td><td><a href="#isAbout">isAbout</a></td></tr>
+                  <tr><td>Inherited properties:</td><td><a href="http://purl.org/dc/terms/source" style="font-style: italic">dcterms:source</a></td></tr>
+                  <tr><td>Used with property:</td><td><a href="#record">record</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Properties</h3>
+            </div>
+            <div class="panel-body">
+              <h4 id="actor"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23actor">actor</a></h4>
+              <p><i>Actor relates an Act with the Actor that performs the act.</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#actor</td></tr>
+                  <tr><td>Property of:</td><td><a href="#Act">Act</a></td></tr>
+                  <tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation" style="font-style: italic">skos:semanticRelation</a></td></tr>
+                  <tr><td>Class of object:</td><td><a href="#Actor">Actor</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="affects"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23affects">affects</a></h4>
+              <p><i>Affects relates a norm with the Act that is affected by the norm. Such an act is restricted by the rules identified by the norm</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#affects</td></tr>
+                  <tr><td>Property of:</td><td><a href="#Norm">Norm</a></td></tr>
+                  <tr><td>Subproperty of:</td><td><a href="#refersTo">refersTo</a></td></tr>
+                  <tr><td>Class of object:</td><td><a href="#Act">Act</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="agent"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23agent">agent</a></h4>
+              <p><i>Agent relates an Act with the Agent involved in the act.</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#agent</td></tr>
+                  <tr><td>Property of:</td><td><a href="#Act">Act</a></td></tr>
+                  <tr><td>Subproperty of:</td><td><a href="#actor">actor</a></td></tr>
+                  <tr><td>Class of object:</td><td><a href="#Agent">Agent</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="isAbout"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23isAbout">isAbout</a></h4>
+              <p><i>Is about relates a Record with a concept that this record is about</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#isAbout</td></tr>
+                  <tr><td>Property of:</td><td><a href="#Record">Record</a></td></tr>
+                  <tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation" style="font-style: italic">skos:semanticRelation</a></td></tr>
+                  <tr><td>Class of object:</td><td><a href="#Concept">Concept</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="object"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23object">object</a></h4>
+              <p><i>Object relates an Act with the object that is created, changed or used during the act</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#object</td></tr>
+                  <tr><td>Property of:</td><td><a href="#Act">Act</a></td></tr>
+                  <tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation" style="font-style: italic">skos:semanticRelation</a></td></tr>
+                  <tr><td>Class of object:</td><td><a href="#Object">Object</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="record"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23record">record</a></h4>
+              <p><i>Record relates an Act with the record that is created to capture the execution of the act</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#record</td></tr>
+                  <tr><td>Property of:</td><td><a href="#Act">Act</a></td></tr>
+                  <tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation" style="font-style: italic">skos:semanticRelation</a></td></tr>
+                  <tr><td>Class of object:</td><td><a href="#Record">Record</a></td></tr>
+                </tbody>
+              </table>
+              <h4 id="refersTo"><a href="/data2model/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fskos-lex%23refersTo">refersTo</a></h4>
+              <p><i>RefersTo relates a norm with the Act that is refered by the norm. Such an act has some relation with the norm, without further specification. It might be effected by the norm, but could also be a precondition or simply mentioned in the rules.</i></p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr><td>URI:</td><td>http://bp4mc2.org/def/skos-lex#refersTo</td></tr>
+                  <tr><td>Property of:</td><td><a href="#Norm">Norm</a></td></tr>
+                  <tr><td>Subproperty of:</td><td><a href="http://www.w3.org/2004/02/skos/core#semanticRelation" style="font-style: italic">skos:semanticRelation</a></td></tr>
+                  <tr><td>Class of object:</td><td><a href="#Act">Act</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <script>
+            function toggleNode(node) {
+              if (node.parentElement.children[2].className!='') {
+                node.children[0].className='fa fa-minus-square';
+                node.parentElement.className='has-child';
+                node.parentElement.children[2].className=''
+              } else {
+                node.children[0].className='fa fa-plus-square';
+                node.parentElement.className='has-child tree-collapsed';
+                node.parentElement.children[2].className='hide'
+              }
+            };
+            function expandShallowNodes(cnt,node) {
+              if ($(node).children("li").length+cnt<20) {
+                if (cnt!=0) {
+                  node.className='';
+                  node.parentElement.className='has-child';
+                  node.parentElement.children[1].children[0].className='fa fa-minus-square';
+                }
+                $(node).children("li").each(function() {
+                  if(this.children[2]) {
+                    cnt = expandShallowNodes($(node).children("li").length+cnt,this.children[2]);
+                  }
+                });
+              }
+              return cnt
+            }
+            $(".nav-tree").each(function() {
+              if ($(this).children("ul")) {
+                expandShallowNodes(0,$(this).children("ul")[0]);
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

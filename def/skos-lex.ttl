@@ -53,6 +53,15 @@ skoslex:Object a owl:Class;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
 .
 
+skoslex:Record a owl:Class;
+	rdfs:label "Record"@en;
+	rdfs:label "Opname"@nl;
+	rdfs:comment "The class of records. A record is a some thing (not an actor) that is created to capture the execution of an act"@en;
+	rdfs:comment "The klasse van opnamen. Een opname is een ding (niet een actor) dat gemaakt wordt om de uitvoering van een handeling vast te leggen"@nl;
+	rdfs:subClassOf skoslex:Object;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
 skoslex:Norm a owl:Class;
 	rdfs:label "Norm"@en;
 	rdfs:label "Norm"@nl;
@@ -60,7 +69,6 @@ skoslex:Norm a owl:Class;
 	rdfs:comment "The klasse van normen. Een norm heeft effect op een handeling. De norm stelt wat 'zou moeten' of juist 'niet zo moeten' met betrekking tot de handeling. Een norm representeert de regels die gelden voor de handeling."@nl;
 	rdfs:seeAlso <https://en.wikipedia.org/wiki/Norm_(philosophy)>;
 	rdfs:seeAlso <https://en.wikipedia.org/wiki/Theory_of_Legal_Norms>;
-	rdfs:subClassOf skos:Concept;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
 .
 
@@ -111,51 +119,113 @@ skoslex:object a owl:ObjectProperty;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
 .
 
+skoslex:record a owl:ObjectProperty;
+	rdfs:label "record"@en;
+	rdfs:label "object"@nl;
+	rdfs:comment "Record relates an Act with the record that is created to capture the execution of the act"@en;
+	rdfs:comment" Opname relateert een handeling met een opname die wordt gemaakt om de handeling vast te leggen"@nl;
+	rdfs:subPropertyOf skos:semanticRelation;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
+skoslex:isAbout a owl:ObjectProperty;
+	rdfs:label "isAbout"@en;
+	rdfs:label "gaatOver"@nl;
+	rdfs:comment "Is about relates a Record with a concept that this record is about"@en;
+	rdfs:comment "Gaat over relateert een opname met een concept waar deze opname over gaat"@nl;
+	rdfs:subPropertyOf skos:semanticRelation;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/skos-lex>;
+.
+
 # Shapes
-skoslexshape:Act a sh:Shape;
-	sh:scopeClass skoslex:Act;
+skoslexshape:Act a sh:NodeShape;
+	sh:name "skoslex:Act";
+	sh:targetClass skoslex:Act;
 	sh:property skoslexshape:Act-actor;
 	sh:property skoslexshape:Act-object;
 	sh:property skoslexshape:Act-agent;
+	sh:property skoslexshape:Act-record;
 .
-skoslexshape:Act-actor a sh:PropertyConstraint;
-	sh:predicate skoslex:actor;
-	sh:valueClass skoslex:Actor;
+skoslexshape:Act-actor a sh:PropertyShape;
+	sh:name "skoslex:actor";
+	sh:path skoslex:actor;
+	sh:class skoslex:Actor;
 	sh:nodeKind sh:IRI;
 .
-skoslexshape:Act-agent a sh:PropertyConstraint;
-	sh:predicate skoslex:agent;
-	sh:valueClass skoslex:Agent;
+skoslexshape:Act-agent a sh:PropertyShape;
+	sh:name "skoslex:agent";
+	sh:path skoslex:agent;
+	sh:class skoslex:Agent;
 	sh:nodeKind sh:IRI;
 .
-skoslexshape:Act-object a sh:PropertyConstraint;
-	sh:predicate skoslex:object;
-	sh:valueClass skoslex:Object;
+skoslexshape:Act-object a sh:PropertyShape;
+	sh:name "skoslex:object";
+	sh:path skoslex:object;
+	sh:class skoslex:Object;
+	sh:nodeKind sh:IRI;
+.
+skoslexshape:Act-record a sh:PropertyShape;
+	sh:name "skoslex:record";
+	sh:path skoslex:record;
+	sh:class skoslex:Record;
 	sh:nodeKind sh:IRI;
 .
 
-skoslexshape:Norm a sh:Shape;
+skoslexshape:Actor a sh:NodeShape;
+	sh:name "skoslex:Actor";
+	sh:targetClass skoslex:Actor;
+.
+
+skoslexshape:Agent a sh:NodeShape;
+	sh:name "skoslex:Agent";
+	sh:targetClass skoslex:Agent;
+.
+
+skoslexshape:Object a sh:NodeShape;
+	sh:name "skoslex:Object";
+	sh:targetClass skoslex:Object;
+.
+
+skoslexshape:Record a sh:NodeShape;
+	sh:name "skoslex:Record";
+	sh:targetClass skoslex:Record;
+	sh:property skoslexshape:Record-isAbout;
+.
+
+skoslexshape:Record-isAbout a sh:PropertyShape;
+	sh:name "skoslex:isAbout";
+	sh:path skoslex:isAbout;
+	sh:class skos:Concept;
+	sh:nodeKind sh:IRI;
+.
+
+skoslexshape:Norm a sh:NodeShape;
+	sh:name "skoslex:Norm";
 	sh:scopeClass skoslex:Norm;
 	sh:property skoslexshape:Norm-refersTo;
 	sh:property skoslexshape:Norm-affects;
 .
-skoslexshape:Norm-refersTo a sh:PropertyConstraint;
-	sh:predicate skoslex:refersTo;
-	sh:valueClass skoslex:Act;
+skoslexshape:Norm-refersTo a sh:PropertyShape;
+	sh:name "skoslex:refersTo";
+	sh:path skoslex:refersTo;
+	sh:class skoslex:Act;
 	sh:nodeKind sh:IRI;
 .
-skoslexshape:Norm-affects a sh:PropertyConstraint;
-	sh:predicate skoslex:affects;
-	sh:valueClass skoslex:Act;
+skoslexshape:Norm-affects a sh:PropertyShape;
+	sh:name "skoslex:affects";
+	sh:path skoslex:affects;
+	sh:class skoslex:Act;
 	sh:nodeKind sh:IRI;
 .
 
 # Shape for skos:Concept
 skoslexshape:Concept a sh:Shape;
-	sh:scopeClass skos:Concept;
+	sh:name "skos:Concept";
+	sh:targetClass skos:Concept;
 	sh:property skoslexshape:Concept-source;
 .
-skoslexshape:Concept-source a sh:PropertyConstraint;
-	sh:predicate dcterms:source;
+skoslexshape:Concept-source a sh:PropertyShape;
+	sh:name "dcterms:source";
+	sh:path dcterms:source;
 	sh:nodeKind sh:IRI;
 .
