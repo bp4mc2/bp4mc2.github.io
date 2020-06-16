@@ -9,7 +9,7 @@ Gebeurtenissen kunnen worden beschreven als begrippen. Ze hebben dan dezelfde ke
 * Het vastleggen van een institutionele gebeurtenis gebeurt door een makelaar of door een notaris. Dit wordt een ‘agent’ (in de Engelse betekenis van het woord) genoemd. Dit een een speciaal soort actor. Soms is een 'agent' in de vorm van een bevoegd ambtenaar (notaris) wettelijk nodig om de rechtshandeling te verrichten. Dit is het geval bij een overdracht of bij de vestiging van een hypotheek. Soms is een 'agent' optionaal. Dit is he het geval bij een koopovereenkomst. In de regel wordt die opgesteld door een makelaar, maar dat hoeft niet.
 
 
-![](skoslex-ap-sc.png)
+![](skoslex-ap-zv.png)
 
 ## Handeling
 

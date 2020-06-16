@@ -9,7 +9,7 @@ Het FRBR toepassingsprofiel maakt het mogelijk te verwijzen naar:
   * een beschrijving van een versie van het werk, de "expressie". Bijvoorbeeld "De grondwet, zoals geldig op 17 november 2017".
 
 
-![](frbr-ap-sc.png)
+![](frbr-ap-zv.png)
 
 ## Begrip
 
