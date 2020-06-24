@@ -6,7 +6,7 @@
 
 [SKOS](https://www.w3.org/TR/skos-reference/) is de W3c recommendation voor het beschrijven van een gecontrolleerde vocabulaire zoals begrippenkaders, taxonomieen, thesauri en classificatieschema's. Het is expliciet ontworpen als een "Simpele" beschrijvingswijze (zie: [Key choices in the design of Simple Knowledge Organization System (SKOS)](https://www.sciencedirect.com/science/article/pii/S1570826813000176)), om er voor te zorgen dat elk kennissysteem in ieder geval in SKOS is uit te drukken. Het nadeel van deze ontwerpbeslissing is dat met SKOS vrij weinig daadwerkelijk expliciet is uit te drukken: het blijft vrij algemeen.
 
-Hiervoor heeft SKOS dan ook een [uitbreidingsmechanisme](https://www.w3.org/TR/skos-primer/#secskosspecialization) beschreven, dwz: hoe je SKOS zou kunnen aanvullen op het moment dat je wel explicieter wilt vermelden waar je het over hebt. Een veel gebruikte aanvulling is SKOS-THES, waarin aanvullende constructies zijn opgenomen om SKOS te harmoniseren met de ISO xxx standaard voor het beschrijven van Thesauri.
+Hiervoor heeft SKOS dan ook een [uitbreidingsmechanisme](https://www.w3.org/TR/skos-primer/#secskosspecialization) beschreven, dwz: hoe je SKOS zou kunnen aanvullen op het moment dat je wel explicieter wilt vermelden waar je het over hebt. Een veel gebruikte aanvulling is [SKOS-THES](http://purl.org/iso25964/skos-thes), waarin aanvullende constructies zijn opgenomen om SKOS te harmoniseren met de ISO 25964 standaard voor het beschrijven van Thesauri.
 
 SKOS-LEX is ook een dergelijke uitbreiding op SKOS. Het breid SKOS uit met juridische constructies, zodat ook de basis van juridische formuleringen opgenomen kunnen worden in SKOS.
 
