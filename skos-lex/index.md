@@ -84,22 +84,24 @@ Of een begrip gezien moet worden als [Act](http://bp4mc2.org/def/skos-lex#Act) (
 - Elk begrip dat de rol van [object](http://bp4mc2.org/def/skos-lex#object) vervult bij minimaal één handeling en geen [Record](http://bp4mc2.org/def/skos-lex#Record), [Actor](http://bp4mc2.org/def/skos-lex#Actor), [Agent](http://bp4mc2.org/def/skos-lex#Agent) of [Act](http://bp4mc2.org/def/skos-lex#Act) is, betreft een [Object](http://bp4mc2.org/def/skos-lex#Object).
 - Alle overige begrippen zijn slechts begrippen ([skos:Concept](http://www.w3.org/2004/02/skos/core#Concept)) en geen specialisatie hiervan.
 
-Onderstaande tabel geeft dit grafisch weer.
+Onderstaande tabel en plaatje geven dit grafisch weer.
 
 |           |uitgaand|skos:agent|skos:actor|skos:record|skos:object|
 |-----------|---|---|---|---|---|
-|skos:Act   | x | - | - | - | - |
+|skos:Act   | x | - | - | - | o |
 |skos:Agent | - | x | o | - | o |
 |skos:Actor | - | - | x | - | o |
 |skos:Record| - | - | - | x | o |
 |skos:Object| - | - | - | - | x |
+
+![](relations.png)
 
 [skos:Act](http://bp4mc2.org/def/skos-lex#Act) begrippen hebben een uitgaande relatie skos:agent, skos:Actor, skos:record of skos:object naar een ander begrip. De overige specialisaties hebben juist alleen ingaande relaties.
 
 Een "x" in de kolom betekent dat een dergelijke relatie minimaal moet voordoen. Een "o" in de kolom betekent dat een dergelijke relatie aanvullend ook is toegestaan. Een "-" in de kolom betekent dat de betreffende relatie niet voor mag komen.
 
 ## Relaties versus specialisaties van skos:Concept
-Aangezien de Agent klasse een specialisatie is van de Actor klasse, worden alle Agents ook als Actors gezien. Echter, het is niet de bedoeling om een Agent expliciet ook als Actor te benoemen. Met het benoemen van een partij als agent wordt aangegeven dat de betreffende partij fundamenteel onderdeel is van de aard van de handeling, maar zelf niet daadwerkelijk partij is *in* de handeling. Mocht sprake zijn van verwarring, dan ligt het meer voor de hand om het begrip op te splitsen in twee afzonderlijke begrippen.
+Aangezien de [Agent](http://bp4mc2.org/def/skos-lex#Agent) klasse een specialisatie is van de [Actor](http://bp4mc2.org/def/skos-lex#Actor) klasse, worden alle agents ook als actors gezien. Echter, het is niet de bedoeling om een agent expliciet ook als Actor te benoemen. Met het benoemen van een partij als agent wordt aangegeven dat de betreffende partij fundamenteel onderdeel is van de aard van de handeling, maar zelf niet daadwerkelijk partij is *in* de handeling. Mocht sprake zijn van verwarring, dan ligt het meer voor de hand om het begrip op te splitsen in twee afzonderlijke begrippen.
 
 Laten we bijvoorbeeld een advocaat nemen. In de rechtzaak zal de advocaat gezien worden als Agent. Maar wat als deze advocaat ook mensen in dienst heeft? In de handeling van het in dienst nemen van personen, zal diezelfde persoon gezien worden als actor. In zo'n situatie zal deze persoon een Agent zijn in zijn rol als Advocaat en diezelfde persoon als Actor in zijn rol als Werkgever.
 
