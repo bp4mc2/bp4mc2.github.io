@@ -86,7 +86,7 @@ Of een begrip gezien moet worden als [Act](http://bp4mc2.org/def/skos-lex#Act) (
 
 Onderstaande tabel en plaatje geven dit grafisch weer.
 
-|           |uitgaand|skos:agent|skos:actor|skos:record|skos:object|
+|       |uitgaand|skos:agent|skos:actor|skos:record|skos:object|
 |-----------|---|---|---|---|---|
 |skos:Act   | x | - | - | - | o |
 |skos:Agent | - | x | o | - | o |
@@ -96,15 +96,21 @@ Onderstaande tabel en plaatje geven dit grafisch weer.
 
 ![](relations.png)
 
-[skos:Act](http://bp4mc2.org/def/skos-lex#Act) begrippen hebben een uitgaande relatie skos:agent, skos:Actor, skos:record of skos:object naar een ander begrip. De overige specialisaties hebben juist alleen ingaande relaties.
+[skoslex:Act](http://bp4mc2.org/def/skos-lex#Act) begrippen hebben een uitgaande relatie [skoslex:agent](http://bp4mc2.org/def/skos-lex#agent), [skoslex:actor](http://bp4mc2.org/def/skos-lex#actor), [skoslex:record](http://bp4mc2.org/def/skos-lex#record) of [skoslex:object](http://bp4mc2.org/def/skos-lex#object) naar een ander begrip. De overige specialisaties hebben juist alleen ingaande relaties.
 
 Een "x" in de kolom betekent dat een dergelijke relatie minimaal moet voordoen. Een "o" in de kolom betekent dat een dergelijke relatie aanvullend ook is toegestaan. Een "-" in de kolom betekent dat de betreffende relatie niet voor mag komen.
 
 ## Relaties versus specialisaties van skos:Concept
-Aangezien de [Agent](http://bp4mc2.org/def/skos-lex#Agent) klasse een specialisatie is van de [Actor](http://bp4mc2.org/def/skos-lex#Actor) klasse, worden alle agents ook als actors gezien. Echter, het is niet de bedoeling om een agent expliciet ook als Actor te benoemen. Met het benoemen van een partij als agent wordt aangegeven dat de betreffende partij fundamenteel onderdeel is van de aard van de handeling, maar zelf niet daadwerkelijk partij is *in* de handeling. Mocht sprake zijn van verwarring, dan ligt het meer voor de hand om het begrip op te splitsen in twee afzonderlijke begrippen.
+Aangezien de [Agent](http://bp4mc2.org/def/skos-lex#Agent) klasse een specialisatie is van de [Actor](http://bp4mc2.org/def/skos-lex#Actor) klasse, worden alle agents ook als actors gezien. Echter, het is niet de bedoeling om een agent expliciet ook als Actor te benoemen. Met het benoemen van een partij als agent wordt aangegeven dat de betreffende partij fundamenteel onderdeel is van de aard van de handeling, maar zelf niet daadwerkelijk partij is *in* de handeling. Binnen één begrippenkader zal de term die hiervoor wordt gebruikt, expliciet worden gebruikt voor de betreffende rol als agent. Met die term wordt dan beoogd dat de partij een agent *is*, en niet alleen zich zo gedraagt binnen de handeling.
 
-Laten we bijvoorbeeld een advocaat nemen. In de rechtzaak zal de advocaat gezien worden als Agent. Maar wat als deze advocaat ook mensen in dienst heeft? In de handeling van het in dienst nemen van personen, zal diezelfde persoon gezien worden als actor. In zo'n situatie zal deze persoon een Agent zijn in zijn rol als Advocaat en diezelfde persoon als Actor in zijn rol als Werkgever.
+![](advocaat.png)
 
-Aangezien de Record klasse een specialisatie is van de Object klasse, worden alle Records ook als Objects gezien. Echter, het is niet de bedoeling om een Record expliciet ook als Object te benoemen. Met het benoemen van iets als record wordt aangegeven dat het betreffende ding fundamenteel onderdeel is van de aard van de handeling, maar zelf niet daadwerkelijk object *van* de handeling. Mocht sprake zijn van verwarring, dan ligt het meer voor de hand om het begrip op te splitsen in twee afzonderlijke begrippen.
+Laten we bijvoorbeeld een advocaat nemen. In de rechtbank zal de advocaat gezien worden als [Agent](http://bp4mc2.org/def/skos-lex#Agent). Maar wat als deze advocaat ook mensen in dienst heeft? In de handeling van het in dienst nemen van personen, zal diezelfde persoon gezien worden als [Actor](http://bp4mc2.org/def/skos-lex#Actor). Deze persoon is een agent in zijn rol als Advocaat. Diezelfde persoon is een actor in zijn rol als Werkgever. Het begrip "Advocaat" betreft een [Agent](http://bp4mc2.org/def/skos-lex#Agent), en het begrip "Werkgever" betreft een [Actor](http://bp4mc2.org/def/skos-lex#Actor): twee begrippen voor dezelfde persoon vanuit een andere hoedanigheid. Desondanks kan de persoon als Advocaat nog steeds een acterende rol hebben bij een handeling, bijvoorbeeld bij het voeren van een pleidooi in de rechtbank.
 
-Laten we bijvoorbeeld een contract nemen. Het contract zelf is de vastlegging ("record") van een overeenkomst tussen twee partijen. Bijvoorbeeld een overeenkomst om bepaalde goederen te leveren. Deze goederen zelf zijn het object van de overeenkomst. Het contract is de vastlegging, het "record" van de overeenkomst. De totstandkoming van deze overeenkomst zal ook het opstellen van het contract omvatten. Het opstellen van het contract is een afzonderlijke handeling. Het object van *deze* handeling is het contract zelf. Het contract blijft van het type Record en zal een object-relatie hebben de opstellen-handeling en een record-relatie met de overeenkomst-handeling.
+Aangezien de [Record](http://bp4mc2.org/def/skos-lex#Record) klasse een specialisatie is van de [Object](http://bp4mc2.org/def/skos-lex#Object) klasse, worden alle records ook als objects gezien. Echter, het is niet de bedoeling om een record expliciet ook als object te benoemen. Met het benoemen van iets als record wordt aangegeven dat het betreffende ding fundamenteel onderdeel is van de aard van de handeling, maar zelf niet daadwerkelijk object *van* de handeling. Binnen één begrippenkader zal de term die hiervoor wordt gebruikt, expliciet worden gebruikt voor de betreffende rol als record. Met die term wordt dan beoogd dat het ding een record *is*, en niet alleen zo moet worden gezien in deze handeling.
+
+![](hypotheek.png)
+
+Laten we bijvoorbeeld een hypotheekakte nemen. De akte zelf is de vastlegging ("record") van een overeenkomst tussen twee partijen, in dit geval de vestiging van een recht van hypotheek op een onroerende zaak (bijvoorbeeld een huis). De hypotheekgever is in dit geval de eigenaar van het huis, die een hypotheeknemer het recht van hypotheek geeft, in ruil voor een lening. Zowel de onroerende zaak als het recht van hypotheek zijn object van de overeenkomst. De hypotheekakte is de vastlegging, het "record" van de overeenkomst. De totstandkoming van deze overeenkomst zal ook het opstellen van de hypotheekakte omvatten. Het opstellen van deze akte is een afzonderlijke handeling. Het object van *deze* handeling is de akte zelf. Het opstellen gebeurt door een notaris: een onafhankelijke partij die zorg draagt dat de akte daadwerkelijk beschrijft wat er gedurende de handeling plaatsvindt. Het is niet altijd noodzakelijk dat een record ook wordt opgesteld door een agent: er zijn ook gevallen waar één of meerdere van de actoren zelf de vastlegging uitvoert. Bijvoorbeeld bij een arbeidscontract: dan zal vaak de werkgever het contract opstellen en is geen sprake van een agent.
+
+![](arbeidscontract.png)
