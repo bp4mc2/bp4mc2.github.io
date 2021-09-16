@@ -121,7 +121,7 @@ skoslex:object a owl:ObjectProperty;
 
 skoslex:record a owl:ObjectProperty;
 	rdfs:label "record"@en;
-	rdfs:label "object"@nl;
+	rdfs:label "opname"@nl;
 	rdfs:comment "Record relates an Act with the record that is created to capture the execution of the act"@en;
 	rdfs:comment" Opname relateert een handeling met een opname die wordt gemaakt om de handeling vast te leggen"@nl;
 	rdfs:subPropertyOf skos:semanticRelation;
