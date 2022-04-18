@@ -1,0 +1,107 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix jas: <http://bp4mc2.org/def/jas#>.
+@prefix jasshape: <http://bp4mc2.org/def/jas/>.
+
+<http://bp4mc2.org/def/jas#> a owl:Ontology;
+	rdfs:label "Legal Analysis Scheme (JAS)"@en;
+	rdfs:label "Jurisch Analyse Schema (JAS)"@nl;
+	rdfs:comment "the legal analysis scheme defines the classes en properties necessary to declare legal constructs as skos concepts."@en;
+	rdfs:comment "Het juridisch analyse schema definieert de klassen en eigenschappen die nodig zijn om juridische constructies te declareren als skos concepten."@nl;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+
+jas:Rechtssubject a owl:Class;
+	rdfs:label "Legal subject"@en;
+	rdfs:label "Rechtssubject"@nl;
+	rdfs:subClassOf skos:Concept;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Rechtsobject a owl:Class;
+	rdfs:label "Legal object"@en;
+	rdfs:label "Rechtsobject"@nl;
+	rdfs:subClassOf skos:Concept;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Rechtsbetrekking a owl:Class;
+  rdfs:label "Rechtsbetrekking"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+
+jas:rechthebbende a owl:ObjectProperty;
+	rdfs:label "rights owner"@en;
+	rdfs:label "rechtshebbende"@nl;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:plichtdragende a owl:ObjectProperty;
+	rdfs:label "duty bearer"@en;
+	rdfs:label "plichtdragende"@nl;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:rechtsobject a owl:ObjectProperty;
+	rdfs:label "object"@en;
+	rdfs:label "rechtsobject"@nl;
+	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+
+# Shapes
+jasshape:Rechtssubject a sh:NodeShape;
+	sh:name "jas:Rechtssubject";
+	sh:targetClass jas:Rechtssubject;
+.
+
+jasshape:Rechtsobject a sh:NodeShape;
+	sh:name "jas:Rechtsobject";
+	sh:targetClass jas:Rechtsobject;
+.
+
+jasshape:Rechtsbetrekking a sh:NodeShape;
+  sh:name "jas:Rechtsbetrekking";
+  sh:targetClass jas:Rechtsbetrekking;
+  sh:property jasshape:Rechtsbetrekking-rechthebbende;
+  sh:property jasshape:Rechtsbetrekking-plichtdragende;
+  sh:property jasshape:Rechtsbetrekking-rechtsobject;
+.
+jasshape:Rechtsbetrekking-rechthebbende a sh:PropertyShape;
+	sh:name "jas:rechthebbende";
+	sh:path jas:rechthebbende;
+	sh:class jas:Rechtssubject;
+	sh:nodeKind sh:IRI;
+.
+jasshape:Rechtsbetrekking-plichtdragende a sh:PropertyShape;
+	sh:name "jas:plichtdragende";
+	sh:path jas:plichtdragende;
+	sh:class jas:Rechtssubject;
+	sh:nodeKind sh:IRI;
+.
+jasshape:Rechtsbetrekking-rechtsobject a sh:PropertyShape;
+	sh:name "jas:rechtsobject";
+	sh:path jas:rechtsobject;
+	sh:class jas:Rechtsobject;
+	sh:nodeKind sh:IRI;
+.
+
+# Shape for skos:Concept
+jasshape:Concept a sh:Shape;
+	sh:name "skos:Concept";
+	sh:targetClass skos:Concept;
+	sh:property jasshape:Concept-label;
+  sh:property jasshape:Concept-definition;
+.
+jasshape:Concept-label a sh:PropertyShape;
+	sh:name "rdfs:label";
+	sh:path rdfs:label;
+	sh:nodeKind sh:Literal;
+  sh:datatype xsd:string;
+.
+jasshape:Concept-definition a sh:PropertyShape;
+	sh:name "skos:definition";
+	sh:path skos:definition;
+	sh:nodeKind sh:Literal;
+  sh:datatype xsd:string;
+.

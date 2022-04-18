@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKOS-LEX ontology</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ldt-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <div class="content">
+        <div class="container">
+          <ul class="nav nav-tabs">
+            <li>
+              <a href="/def/jas.ttl">ttl</a>
+            </li>
+          </ul>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <a href="http://bp4mc2.org/def/jas#">Jurisch Analyse Schema (JAS)</a>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <p>Het juridisch analyse schema definieert de klassen en eigenschappen die nodig zijn om juridische constructies te declareren als skos concepten.</p>
+                  <table class="basic-text-table">
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="nav-tree">
+                    <b>Klassen</b>
+                    <ul style="max-height:500px; padding-bottom:20px; overflow-y: auto">
+                      <li class="has-child tree-collapsed">
+                        <p>
+                          <a href="#Concept">Concept</a>
+                        </p>
+                        <a class="" href="#" onclick="toggleNode(this);return false;">
+                          <i class="fa fa-plus-square">
+                          </i>
+                        </a>
+                        <ul class="hide">
+                          <li>
+                            <p>
+                              <a href="#Rechtsbetrekking">Rechtsbetrekking</a>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <a href="#Rechtsobject">Rechtsobject</a>
+                            </p>
+                          </li>
+                          <li>
+                            <p>
+                              <a href="#Rechtssubject">Rechtssubject</a>
+                            </p>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="nav-tree">
+                    <b>Eigenschappen</b>
+                    <ul style="max-height:500px; padding-bottom:20px; overflow-y: auto">
+                      <li>
+                        <p>
+                          <a href="#plichtdragende">plichtdragende</a>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="#rechthebbende">rechthebbende</a>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="#rechtsobject">rechtsobject</a>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="#label">label</a>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Klassen</h3>
+            </div>
+            <div class="panel-body">
+              <h4 id="Rechtsbetrekking">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fjas%23Rechtsbetrekking">Rechtsbetrekking</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://bp4mc2.org/def/jas#Rechtsbetrekking</td>
+                  </tr>
+                  <tr>
+                    <td>Subklasse van:</td>
+                    <td>
+                      <a href="#Concept">http://www.w3.org/2004/02/skos/core#Concept</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschappen:</td>
+                    <td>
+                      <a href="#plichtdragende">plichtdragende</a>, <a href="#rechthebbende">rechthebbende</a>, <a href="#rechtsobject">rechtsobject</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Geërfde eigenschappen:</td>
+                    <td>
+                      <a href="#label">label</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="Rechtsobject">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fjas%23Rechtsobject">Rechtsobject</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://bp4mc2.org/def/jas#Rechtsobject</td>
+                  </tr>
+                  <tr>
+                    <td>Subklasse van:</td>
+                    <td>
+                      <a href="#Concept">http://www.w3.org/2004/02/skos/core#Concept</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschappen:</td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Geërfde eigenschappen:</td>
+                    <td>
+                      <a href="#label">label</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Gebruikt bij eigenschap:</td>
+                    <td>
+                      <a href="#rechtsobject">rechtsobject</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="Rechtssubject">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fjas%23Rechtssubject">Rechtssubject</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://bp4mc2.org/def/jas#Rechtssubject</td>
+                  </tr>
+                  <tr>
+                    <td>Subklasse van:</td>
+                    <td>
+                      <a href="#Concept">http://www.w3.org/2004/02/skos/core#Concept</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschappen:</td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Geërfde eigenschappen:</td>
+                    <td>
+                      <a href="#label">label</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Gebruikt bij eigenschap:</td>
+                    <td>
+                      <a href="#plichtdragende">plichtdragende</a>, <a href="#rechthebbende">rechthebbende</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="Concept">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23Concept">Concept</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://www.w3.org/2004/02/skos/core#Concept</td>
+                  </tr>
+                  <tr>
+                    <td>Heeft subklassen:</td>
+                    <td>
+                      <a href="#Rechtsbetrekking">Rechtsbetrekking</a>, <a href="#Rechtsobject">Rechtsobject</a>, <a href="#Rechtssubject">Rechtssubject</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschappen:</td>
+                    <td>
+                      <a href="#label">label</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Eigenschappen</h3>
+            </div>
+            <div class="panel-body">
+              <h4 id="plichtdragende">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fjas%23plichtdragende">plichtdragende</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://bp4mc2.org/def/jas#plichtdragende</td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschap van:</td>
+                    <td>
+                      <a href="#Rechtsbetrekking">Rechtsbetrekking</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Gerelateerde klasse:</td>
+                    <td>
+                      <a href="#Rechtssubject">Rechtssubject</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="rechthebbende">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fjas%23rechthebbende">rechthebbende</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://bp4mc2.org/def/jas#rechthebbende</td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschap van:</td>
+                    <td>
+                      <a href="#Rechtsbetrekking">Rechtsbetrekking</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Gerelateerde klasse:</td>
+                    <td>
+                      <a href="#Rechtssubject">Rechtssubject</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="rechtsobject">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fbp4mc2.org%2Fdef%2Fjas%23rechtsobject">rechtsobject</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://bp4mc2.org/def/jas#rechtsobject</td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschap van:</td>
+                    <td>
+                      <a href="#Rechtsbetrekking">Rechtsbetrekking</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Gerelateerde klasse:</td>
+                    <td>
+                      <a href="#Rechtsobject">Rechtsobject</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="label">
+                <a href="/modellenbibliotheek/resource?subject=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label">label</a>
+              </h4>
+              <p>
+                <i>
+                </i>
+              </p>
+              <table class="basic-text-table">
+                <tbody>
+                  <tr>
+                    <td>URI:</td>
+                    <td>http://www.w3.org/2000/01/rdf-schema#label</td>
+                  </tr>
+                  <tr>
+                    <td>Eigenschap van:</td>
+                    <td>
+                      <a href="#Concept">Concept</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Datatype:</td>
+                    <td>
+                      <a href="http://www.w3.org/2001/XMLSchema#string" style="font-style: italic">string</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <script>		function toggleNode(node) {			if (node.parentElement.children[2].className!='') {				node.children[0].className='fa fa-minus-square';				node.parentElement.className='has-child';				node.parentElement.children[2].className=''			} else {				node.children[0].className='fa fa-plus-square';				node.parentElement.className='has-child tree-collapsed';				node.parentElement.children[2].className='hide'			}		};		function expandShallowNodes(cnt,node) {			if ($(node).children("li").length+cnt<20) {				if (cnt!=0) {					node.className='';					node.parentElement.className='has-child';					node.parentElement.children[1].children[0].className='fa fa-minus-square';				}				$(node).children("li").each(function() {					if(this.children[2]) {						cnt = expandShallowNodes($(node).children("li").length+cnt,this.children[2]);					}				});			}			return cnt		}		$(".nav-tree").each(function() {			if ($(this).children("ul")) {				expandShallowNodes(0,$(this).children("ul")[0]);			}		});	</script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
