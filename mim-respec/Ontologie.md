@@ -1,89 +1,147 @@
 ## Klassen
 ### Gegevensgroeptype
+|URI|http://bp4mc2.org/def/mim#Gegevensgroeptype|
+|-|-|
 |Definitie|Een groep van met elkaar samenhangende attribuutsoorten. Een gegevensgroeptype is altijd een type van een gegevensgroep.|
 |Bron||
 ### Relatieklasse
+|URI|http://bp4mc2.org/def/mim#Relatieklasse|
+|-|-|
 |Definitie|Een relatiesoort met eigenschappen.|
 |Bron||
 ### Attribuutsoort
+|URI|http://bp4mc2.org/def/mim#Attribuutsoort|
+|-|-|
 |Definitie|De typering van gelijksoortige gegevens die voor een objecttype van toepassing is.|
 |Bron||
 ### View
+|URI|http://bp4mc2.org/def/mim#View|
+|-|-|
 |Definitie|Een groepering van objecttypen die gespecificeerd zijn in een extern informatiemodel en vanuit het perspectief van het eigen informatiemodel inzicht geeft welke gegevens van deze objecttypen relevant zijn binnen het eigen informatiemodel.|
 |Bron||
 ### Domein
+|URI|http://bp4mc2.org/def/mim#Domein|
+|-|-|
 |Definitie|Een groepering van constructies die een semantisch samenhangend gedeelte van een informatiemodel beschrijven.|
 |Bron||
 ### Enumeratiewaarde
+|URI|http://bp4mc2.org/def/mim#Enumeratiewaarde|
+|-|-|
 |Definitie|Een gedefinieerde waarde, in de vorm van een eenmalig vastgesteld constant gegeven.|
 |Bron||
 ### Objecttype
+|URI|http://bp4mc2.org/def/mim#Objecttype|
+|-|-|
 |Definitie|De typering van een groep objecten die binnen een domein relevant zijn en als gelijksoortig worden beschouwd.|
 |Bron||
 ### Extern
+|URI|http://bp4mc2.org/def/mim#Extern|
+|-|-|
 |Definitie|Een groepering van constructies die een externe instantie beheert en beschikbaar stelt aan een informatiemodel en die in het informatiemodel ongewijzigd gebruikt worden.|
 |Bron||
 ### Datatype
+|URI|http://bp4mc2.org/def/mim#Datatype|
+|-|-|
 |Definitie|Een beschrijving van de structuur waaraan een waarde, oftewel de data zelf, aan moet voldoen.|
 |Bron||
 ### Externe koppeling
+|URI|http://bp4mc2.org/def/mim#ExterneKoppeling|
+|-|-|
 |Definitie|Een associatie waarmee vanuit het perspectief van het eigen informatiemodel een objecttype uit het ‘eigen’ informatiemodel gekoppeld wordt aan een objecttype van een extern informatiemodel. De relatie zelf hoort bij het ‘eigen’ objecttype.|
 |Bron||
 ### Constraint
+|URI|http://bp4mc2.org/def/mim#Constraint|
+|-|-|
 |Definitie|Een constraint is een conditie of een beperking, die over een of meerdere modelelementen uit het informatiemodel geldt.|
 |Bron||
 ### Relatierol
+|URI|http://bp4mc2.org/def/mim#Relatierol|
+|-|-|
 |Definitie|De benaming van de manier waarop een object deelneemt aan een relatie met een ander object.|
 |Bron||
 ### Referentielijst
+|URI|http://bp4mc2.org/def/mim#Referentielijst|
+|-|-|
 |Definitie|De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat een aantal kenmerken, die overgenomen zijn van de specificatie van de externe waardelijst.|
 |Bron||
 ### Generalisatie
+|URI|http://bp4mc2.org/def/mim#Generalisatie|
+|-|-|
 |Definitie|De typering van het hiërarchische verband tussen een meer generiek en een meer specifiek modelelement van hetzelfde soort, waarbij het meer specifieke modelelement eigenschappen van het meer generieke modelelement overerft. Dit verband is alleen gedefinieerd voor objecttypen en datatypen.|
 |Bron||
 ### Codelijst
+|URI|http://bp4mc2.org/def/mim#Codelijst|
+|-|-|
 |Definitie|De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat geen kenmerken, voor alle kenmerken wordt verwezen naar de specificatie van de externe waardelijst.|
 |Bron||
 ### Relatiesoort
+|URI|http://bp4mc2.org/def/mim#Relatiesoort|
+|-|-|
 |Definitie|De typering van het structurele verband tussen een object van een objecttype en een (ander) object van een ander (of hetzelfde) objecttype.|
 |Bron||
 ### Primitief datatype
+|URI|http://bp4mc2.org/def/mim#PrimitiefDatatype|
+|-|-|
 |Definitie|Een primitief datatype is een datatype met een eenvoudige basisstructuur, oftewel enkelvoudig en zonder gelaagdheid.|
 |Bron||
 ### Keuze constraint
+|URI|http://bp4mc2.org/def/mim#KeuzeConstraint|
+|-|-|
 |Definitie|Een conditie met een opsomming van meerdere modelelementen, waarbij er maar van één tegelijkertijd sprake kan zijn.|
 |Bron||
 ### Keuze
+|URI|http://bp4mc2.org/def/mim#Keuze|
+|-|-|
 |Definitie|Een opsomming van meerdere modelelementen, waarbij er maar van één tegelijkertijd sprake kan zijn.|
 |Bron||
 ### Informatiemodel
+|URI|http://bp4mc2.org/def/mim#Informatiemodel|
+|-|-|
 |Definitie|De groepering van alle modelelementen waaruit het informatiemodel is opgebouwd. Het informatiemodel als geheel.|
 |Bron||
 ### Modelelement
+|URI|http://bp4mc2.org/def/mim#Modelelement|
+|-|-|
 |Definitie|Een modelelement uit het Metamodel voor Informatie Modellering (MIM)|
 |Bron||
 ### Data element
+|URI|http://bp4mc2.org/def/mim#DataElement|
+|-|-|
 |Definitie|Een onderdeel/element van een Gestructureerd datatype die als type een datatype heeft.|
 |Bron||
 ### Referentie element
+|URI|http://bp4mc2.org/def/mim#ReferentieElement|
+|-|-|
 |Definitie|Een eigenschap van een object in een referentielijst in de vorm van een gegeven.|
 |Bron||
 ### Relatierol doel
+|URI|http://bp4mc2.org/def/mim#RelatierolDoel|
+|-|-|
 |Definitie|De relatierol die de rol beschrijft van het doel van de relatie.|
 |Bron||
 ### Gestructureerd datatype
+|URI|http://bp4mc2.org/def/mim#GestructureerdDatatype|
+|-|-|
 |Definitie|Specifiek benoemd datatype dat de structuur van een gegeven beschrijft, samengesteld uit minimaal twee elementen die in samenhang betekenisvol zijn.|
 |Bron||
 ### Relatierol bron
+|URI|http://bp4mc2.org/def/mim#RelatierolBron|
+|-|-|
 |Definitie|De relatierol die de rol beschrijft van de bron van de relatie.|
 |Bron||
 ### Package
+|URI|http://bp4mc2.org/def/mim#Package|
+|-|-|
 |Definitie|Een package is een benoemde en begrensde verzameling/groepering van modelelementen.|
 |Bron||
 ### Gegevensgroep
+|URI|http://bp4mc2.org/def/mim#Gegevensgroep|
+|-|-|
 |Definitie|Een typering van een groep van gelijksoortige gegevens die voor een objecttype van toepassing is.|
 |Bron||
 ### Enumeratie
+|URI|http://bp4mc2.org/def/mim#Enumeratie|
+|-|-|
 |Definitie|Een datatype waarvan de mogelijke waarden limitatief zijn opgesomd in een statische lijst.|
 |Bron||
 ## Eigenschappen (relaties)
