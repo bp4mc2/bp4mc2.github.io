@@ -4,6 +4,7 @@
 |-|-|
 |Definitie|Een groep van met elkaar samenhangende attribuutsoorten. Een gegevensgroeptype is altijd een type van een gegevensgroep.|
 |Bron||
+
 ### Relatieklasse
 |URI|http://bp4mc2.org/def/mim#Relatieklasse|
 |-|-|
@@ -256,4 +257,3 @@ De beschrijving van de betekenis van dit modelelement.
 Aanduiding dat gegeven afleidbaar is uit andere attribuut- en/of relatiesoorten.
 ### toelichting
 Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.
-
