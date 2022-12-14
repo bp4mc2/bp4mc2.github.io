@@ -27,8 +27,95 @@ jas:Rechtsobject a owl:Class;
 	rdfs:subClassOf skos:Concept;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
 .
+
 jas:Rechtsbetrekking a owl:Class;
   rdfs:label "Rechtsbetrekking"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:BevoegdheidGehoudenheid a owl:Class;
+  rdfs:label "Bevoegdheid - Gehoudenheid"@nl;
+  rdfs:subClassOf jas:Rechtsbetrekking;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:AanspraakVerplichting a owl:Class;
+  rdfs:label "Aanspraak - Verplichting"@nl;
+  rdfs:subClassOf jas:Rechtsbetrekking;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:VerplichtingNaIngebrekestelling a owl:Class;
+  rdfs:label "Verplichting na ingebrekestelling"@nl;
+  rdfs:subClassOf jas:AanspraakVerplichting;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:KrachtigeAanspraakFataleVerplichting a owl:Class;
+  rdfs:label "Krachtige aanspraak - Fatale verplichting"@nl;
+  rdfs:subClassOf jas:AanspraakVerplichting;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+
+jas:Rechtsfeit a owl:Class;
+  rdfs:label "Rechtsfeit"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Variabele a owl:Class;
+  rdfs:label "Variabele"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Delegatiebevoegdheid a owl:Class;
+  rdfs:label "Delegatiebevoegdheid"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Tijdsaanduiding a owl:Class;
+  rdfs:label "Tijdsaanduiding"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Afleidingsregel a owl:Class;
+  rdfs:label "Afleidingsregel"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Brondefinitie a owl:Class;
+  rdfs:label "Brondefinitie"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Operator a owl:Class;
+  rdfs:label "Operator"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Parameterwaarde a owl:Class;
+  rdfs:label "Parameterwaarde"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Voorwaarde a owl:Class;
+  rdfs:label "Voorwaarde"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Tijdvak a owl:Class;
+  rdfs:label "Tijdvak"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Plaatsaanduiding a owl:Class;
+  rdfs:label "Plaatsaanduiding"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Variabelewaarde a owl:Class;
+  rdfs:label "Variabelewaarde"@nl;
+  rdfs:subClassOf skos:Concept;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Tijdstip a owl:Class;
+  rdfs:label "Tijdstip"@nl;
   rdfs:subClassOf skos:Concept;
   rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
 .
