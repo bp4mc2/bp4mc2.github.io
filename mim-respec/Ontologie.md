@@ -1,172 +1,201 @@
-# Klassen
-## Gegevensgroeptype
+## Klassen
+### Gegevensgroeptype
 |Definitie|Een groep van met elkaar samenhangende attribuutsoorten. Een gegevensgroeptype is altijd een type van een gegevensgroep.|
-## Relatieklasse
+|Bron||
+### Relatieklasse
 |Definitie|Een relatiesoort met eigenschappen.|
-## Attribuutsoort
+|Bron||
+### Attribuutsoort
 |Definitie|De typering van gelijksoortige gegevens die voor een objecttype van toepassing is.|
-## View
+|Bron||
+### View
 |Definitie|Een groepering van objecttypen die gespecificeerd zijn in een extern informatiemodel en vanuit het perspectief van het eigen informatiemodel inzicht geeft welke gegevens van deze objecttypen relevant zijn binnen het eigen informatiemodel.|
-## Domein
+|Bron||
+### Domein
 |Definitie|Een groepering van constructies die een semantisch samenhangend gedeelte van een informatiemodel beschrijven.|
-## Enumeratiewaarde
+|Bron||
+### Enumeratiewaarde
 |Definitie|Een gedefinieerde waarde, in de vorm van een eenmalig vastgesteld constant gegeven.|
-## Objecttype
+|Bron||
+### Objecttype
 |Definitie|De typering van een groep objecten die binnen een domein relevant zijn en als gelijksoortig worden beschouwd.|
-## Extern
+|Bron||
+### Extern
 |Definitie|Een groepering van constructies die een externe instantie beheert en beschikbaar stelt aan een informatiemodel en die in het informatiemodel ongewijzigd gebruikt worden.|
-## Datatype
+|Bron||
+### Datatype
 |Definitie|Een beschrijving van de structuur waaraan een waarde, oftewel de data zelf, aan moet voldoen.|
-## Externe koppeling
+|Bron||
+### Externe koppeling
 |Definitie|Een associatie waarmee vanuit het perspectief van het eigen informatiemodel een objecttype uit het ‘eigen’ informatiemodel gekoppeld wordt aan een objecttype van een extern informatiemodel. De relatie zelf hoort bij het ‘eigen’ objecttype.|
-## Constraint
+|Bron||
+### Constraint
 |Definitie|Een constraint is een conditie of een beperking, die over een of meerdere modelelementen uit het informatiemodel geldt.|
-## Relatierol
+|Bron||
+### Relatierol
 |Definitie|De benaming van de manier waarop een object deelneemt aan een relatie met een ander object.|
-## Referentielijst
+|Bron||
+### Referentielijst
 |Definitie|De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat een aantal kenmerken, die overgenomen zijn van de specificatie van de externe waardelijst.|
-## Generalisatie
+|Bron||
+### Generalisatie
 |Definitie|De typering van het hiërarchische verband tussen een meer generiek en een meer specifiek modelelement van hetzelfde soort, waarbij het meer specifieke modelelement eigenschappen van het meer generieke modelelement overerft. Dit verband is alleen gedefinieerd voor objecttypen en datatypen.|
-## Codelijst
+|Bron||
+### Codelijst
 |Definitie|De representatie van een lijst met een opsomming van de mogelijke domeinwaarden van een attribuutsoort, die buiten het model in een externe waardenlijst worden beheerd. De domeinwaarden in de lijst kunnen in de loop van de tijd aangepast, uitgebreid, of verwijderd worden, zonder dat het informatiemodel aangepast wordt (in tegenstelling tot bij een enumeratie). De representatie bevat geen kenmerken, voor alle kenmerken wordt verwezen naar de specificatie van de externe waardelijst.|
-## Relatiesoort
+|Bron||
+### Relatiesoort
 |Definitie|De typering van het structurele verband tussen een object van een objecttype en een (ander) object van een ander (of hetzelfde) objecttype.|
-## Primitief datatype
+|Bron||
+### Primitief datatype
 |Definitie|Een primitief datatype is een datatype met een eenvoudige basisstructuur, oftewel enkelvoudig en zonder gelaagdheid.|
-## Keuze constraint
+|Bron||
+### Keuze constraint
 |Definitie|Een conditie met een opsomming van meerdere modelelementen, waarbij er maar van één tegelijkertijd sprake kan zijn.|
-## Keuze
+|Bron||
+### Keuze
 |Definitie|Een opsomming van meerdere modelelementen, waarbij er maar van één tegelijkertijd sprake kan zijn.|
-## Informatiemodel
+|Bron||
+### Informatiemodel
 |Definitie|De groepering van alle modelelementen waaruit het informatiemodel is opgebouwd. Het informatiemodel als geheel.|
-## Modelelement
+|Bron||
+### Modelelement
 |Definitie|Een modelelement uit het Metamodel voor Informatie Modellering (MIM)|
-## Data element
+|Bron||
+### Data element
 |Definitie|Een onderdeel/element van een Gestructureerd datatype die als type een datatype heeft.|
-## Referentie element
+|Bron||
+### Referentie element
 |Definitie|Een eigenschap van een object in een referentielijst in de vorm van een gegeven.|
-## Relatierol doel
+|Bron||
+### Relatierol doel
 |Definitie|De relatierol die de rol beschrijft van het doel van de relatie.|
-## Gestructureerd datatype
+|Bron||
+### Gestructureerd datatype
 |Definitie|Specifiek benoemd datatype dat de structuur van een gegeven beschrijft, samengesteld uit minimaal twee elementen die in samenhang betekenisvol zijn.|
-## Relatierol bron
+|Bron||
+### Relatierol bron
 |Definitie|De relatierol die de rol beschrijft van de bron van de relatie.|
-## Package
+|Bron||
+### Package
 |Definitie|Een package is een benoemde en begrensde verzameling/groepering van modelelementen.|
-## Gegevensgroep
+|Bron||
+### Gegevensgroep
 |Definitie|Een typering van een groep van gelijksoortige gegevens die voor een objecttype van toepassing is.|
-## Enumeratie
+|Bron||
+### Enumeratie
 |Definitie|Een datatype waarvan de mogelijke waarden limitatief zijn opgesomd in een statische lijst.|
-# Eigenschappen (relaties)
-## aggregatietype
+|Bron||
+## Eigenschappen (relaties)
+### aggregatietype
 Aanduiding of het objecttype die de eigenaar is van een relatie het doel van relatie ziet als een samen te voegen onderdeel die bij het objecttype hoort.
-## equivalent
+### equivalent
 Geeft aan dat een mim metamodel-element equivalent is met een meta-element uit een Linked Data vocabulaire
-## relatiemodelleringstype
+### relatiemodelleringstype
 Aanduiding van een in MIM gedefinieerd alternatief voor een modelleringswijze, en welke keuze hierbij is gemaakt.
-## type
+### type
 Het datatype waarmee waarden van dit modelelement worden vastgelegd.
-## gegevensgroep
+### gegevensgroep
 De binding van een gegevensgroep als groep van eigenschappen aan een objecttype of gegevensgroeptype.
-## data element
+### data element
 De binding van een data element aan een gestructureerd datatype.
-## doelkeuze
+### doelkeuze
 De binding van een keuze uit relatiedoelen aan een objecttype.
-## modelelement
+### modelelement
 
-## constraint
+### constraint
 De binding van een constraint aan een modelelement.
-## relatierol
+### relatierol
 
-## authentiek
+### authentiek
 Aanduiding of het kenmerk een authentiek gegeven betreft.
-## datatypekeuze
+### datatypekeuze
 De binding van een keuze uit datatypen aan een attribuutsoort.
-## supertype
+### supertype
 De binding van een supertype aan een subtype middels een generalisatie.
-## referentie element
+### referentie element
 De binding van een referentie element aan een referentielijst.
-## bron
+### bron
 Aanduiding van het bronobject in een relatie tussen objecten. Een bronobject heeft middels een relatiesoort een relatie met een doelobject.
-## attribuut
+### attribuut
 De binding van een attribuutsoort als eigenschap aan een objecttype.
-## attribuutkeuze
+### attribuutkeuze
 De binding van een keuze uit attributen aan een attribuutsoort of keuze.
-## doel
+### doel
 Aanduiding van het gerelateerde objecttype die het eindpunt van de relatie aangeeft. Naar objecten van dit objecttype wordt verwezen.
-## bevat modelelement
+### bevat modelelement
 
-## waarde
+### waarde
 De binding van een enumeratiewaarde aan een enumeratie.
-## begrip
+### begrip
 Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd.
-## gegevensgroeptype
+### gegevensgroeptype
 De binding van een gegevensgroeptype als waardetype aan een gegevensgroep.
-## subtype
+### subtype
 Het objecttype dat een specialisatie is van een (ander) objecttype.
-# Eigenschappen (attributen)
-## Indicatie materiële historie
+## Eigenschappen (attributen)
+### Indicatie materiële historie
 Indicatie of de materiële historie van het kenmerk van het object te bevragen is.
-## locatie
+### locatie
 Als het type van het attribuutsoort een waardenlijst is, dan wordt hier de locatie waar deze te vinden is opgegeven.
-## informatiedomein
+### informatiedomein
 Aanduiding van het functionele domein waartoe het informatiemodel behoort.
-## kwaliteit
+### kwaliteit
 Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
-## alias
+### alias
 De weergave van de naam van een modelelement in natuurlijke taal (niet technisch).
-## formeel patroon
+### formeel patroon
 Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.
-## indicatie classificerend
+### indicatie classificerend
 Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.
-## informatiemodeltype
+### informatiemodeltype
 De beschrijving van de aard van het informatiemodel, hoe het geïnterpreteerd moet worden.
-## kardinaliteit
+### kardinaliteit
 De kardinaliteit geeft aan hoeveel keer waarden van dit kenmerk van een object kunnen voorkomen bij een object van het betreffende objecttype.
-## specificatie formeel
+### specificatie formeel
 De beschrijving van de constraint in een formele specificatietaal, in OCL
-## begripsterm
+### begripsterm
 Verwijzing naar een begrip in de vorm van een term, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd.
-## indicatie abstract object
+### indicatie abstract object
 Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van één of meerdere objecttypes die niet abstract zijn.
-## MIM taal
+### MIM taal
 De aanduiding van de taal die gebruikt is voor de modelelementen.
-## specificatie tekst
+### specificatie tekst
 De specificatie van de constraint in normale tekst.
-## mogelijk geen waarde
+### mogelijk geen waarde
 Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.
-## code
+### code
 De in een registratie of informatiemodel aan de enumeratiewaarde toegekend unieke code
-## patroon
+### patroon
 De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur.
-## datum opname
+### datum opname
 De datum waarop het modelelement is opgenomen in het informatiemodel.
-## MIM extensie
+### MIM extensie
 De aanduiding van een extensie op MIM.
-## Indicatie formele historie
+### Indicatie formele historie
 Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.
-## herkomst
+### herkomst
 De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
-## identificerend
+### identificerend
 Een aanduiding dat een kenmerk of een combinatie van kenmerken van een objecttype uniek identificerend is voor alle objecten in de populatie van objecten van dit objecttype, of de aanduiding dat een referentie element uniek identificerend is voor alle lijst items in een referentielijst.
-## naam
+### naam
 De naam van een modelelement.
-## MIM versie
+### MIM versie
 De versie van de MIM specificatie die gebruikt is om het informatiemodel in uit te drukken.
-## kardinaliteit relatie bron
+### kardinaliteit relatie bron
 De kardinaliteit relatie bron geeft bij een relatiesoort aan hoeveel instanties van het bron objecttype in een relatie met één instantie van het doel objecttype verbonden kunnen zijn.
-## herkomst definitie
+### herkomst definitie
 De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
-## populatie
+### populatie
 Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)­registratie voorhanden zijn.
-## lengte
+### lengte
 De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze.
-## unidirectioneel
+### unidirectioneel
 De richting van een relatie, welke betekenis geeft aan de relatie vanuit het perspectief van de eigenaar van de relatie.
-## definitie
+### definitie
 De beschrijving van de betekenis van dit modelelement.
-## indicatie afleidbaar
+### indicatie afleidbaar
 Aanduiding dat gegeven afleidbaar is uit andere attribuut- en/of relatiesoorten.
-## toelichting
+### toelichting
 Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.
 
