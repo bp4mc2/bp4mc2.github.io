@@ -6,7 +6,11 @@
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix jas: <http://bp4mc2.org/def/jas#>.
 @prefix jasshape: <http://bp4mc2.org/def/jas/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
+#
+# Ontologie
+#
 <http://bp4mc2.org/def/jas#> a owl:Ontology;
 	rdfs:label "Legal Analysis Scheme (JAS)"@en;
 	rdfs:label "Jurisch Analyse Schema (JAS)"@nl;
@@ -15,12 +19,16 @@
 	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
 .
 
+#
+# Klassen
+#
 jas:Rechtssubject a owl:Class;
 	rdfs:label "Legal subject"@en;
 	rdfs:label "Rechtssubject"@nl;
 	rdfs:subClassOf skos:Concept;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
 .
+
 jas:Rechtsobject a owl:Class;
 	rdfs:label "Legal object"@en;
 	rdfs:label "Rechtsobject"@nl;
@@ -59,6 +67,27 @@ jas:Rechtsfeit a owl:Class;
   rdfs:subClassOf skos:Concept;
   rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
 .
+jas:Rechtshandeling a owl:Class;
+  rdfs:label "Rechtshandeling"@nl;
+  rdfs:subClassOf skos:Rechtsfeit;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:FeitelijkeHandeling a owl:Class;
+  rdfs:label "Feitelijke handeling"@nl;
+  rdfs:subClassOf skos:Rechtsfeit;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Gebeurtenis a owl:Class;
+  rdfs:label "Gebeurtenis"@nl;
+  rdfs:subClassOf skos:Rechtsfeit;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:Tijdsverloop a owl:Class;
+  rdfs:label "Tijdsverloop"@nl;
+  rdfs:subClassOf skos:Rechtsfeit;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+
 jas:Variabele a owl:Class;
   rdfs:label "Variabele"@nl;
   rdfs:subClassOf skos:Concept;
@@ -120,6 +149,9 @@ jas:Tijdstip a owl:Class;
   rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
 .
 
+#
+# Eigenschappen
+#
 jas:rechthebbende a owl:ObjectProperty;
 	rdfs:label "rights owner"@en;
 	rdfs:label "rechtshebbende"@nl;
@@ -135,8 +167,45 @@ jas:rechtsobject a owl:ObjectProperty;
 	rdfs:label "rechtsobject"@nl;
 	rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
 .
+jas:uitvoerende a owl:ObjectProperty;
+  rdfs:label "actor"@en;
+  rdfs:label "uitvoerende"@nl;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
 
+jas:rechtsgevolg a owl:ObjectProperty;
+  rdfs:label "legal effect"@en;
+  rdfs:label "rechtsgevolg"@nl;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:creeert a owl:ObjectProperty;
+  rdfs:label "creates"@en;
+  rdfs:label "creëert"@nl;
+  rdfs:subPropertyOf jas:rechtsgevolg;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:wijzigt a owl:ObjectProperty;
+  rdfs:label "changes"@en;
+  rdfs:label "wijzigt"@nl;
+  rdfs:subPropertyOf jas:rechtsgevolg;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+jas:beeindigt a owl:ObjectProperty;
+  rdfs:label "ends"@en;
+  rdfs:label "beëindigt"@nl;
+  rdfs:subPropertyOf jas:rechtsgevolg;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+
+jas:eigenschapVan a owl:ObjectProperty;
+  rdfs:label "property of"@en;
+  rdfs:label "eigenschap van"@nl;
+  rdfs:isDefinedBy <http://bp4mc2.org/def/jas>;
+.
+
+#
 # Shapes
+#
 jasshape:Rechtssubject a sh:NodeShape;
 	sh:name "jas:Rechtssubject";
 	sh:targetClass jas:Rechtssubject;
@@ -171,6 +240,46 @@ jasshape:Rechtsbetrekking-rechtsobject a sh:PropertyShape;
 	sh:path jas:rechtsobject;
 	sh:class jas:Rechtsobject;
 	sh:nodeKind sh:IRI;
+.
+
+jasshape:Rechtsfeit a sh:NodeShape;
+  sh:name "jas:Rechtsfeit";
+  sh:targetClass jas:Rechtsfeit;
+  sh:property jasshape:Rechtsfeit-uitvoerende;
+  sh:property jasshape:Rechtsfeit-rechtsobject;
+  sh:property jasshape:Rechtsfeit-rechtsgevolg;
+.
+jasshape:Rechtsfeit-uitvoerende a sh:PropertyShape;
+  # Deze eigenschap niet bij jas:Gebeurtenis en jas:Tijdsverloop
+  sh:name "jas:uitvoerende";
+  sh:path jas:uitvoerende;
+  sh:class jas:Rechtssubject;
+  sh:nodeKind sh:IRI;
+.
+jasshape:Rechtsfeit-rechtsobject a sh:PropertyShape;
+  sh:name "jas:rechtsobject";
+  sh:path jas:rechtsobject;
+  sh:class jas:Rechtsobject;
+  sh:nodeKind sh:IRI;
+.
+jasshape:Rechtsfeit-rechtsgevolg a sh:PropertyShape;
+  sh:name "jas:rechtsgevolg";
+  sh:path jas:rechtsgevolg;
+  sh:class jas:Rechtsbetrekking;
+  sh:nodeKind sh:IRI;
+.
+
+jasshape:Variabele a sh:NodeShape;
+  sh:name "jas:Variabele";
+  sh:targetClass jas:Variabele;
+  sh:property jasshape:Variabele-eigenschapVan;
+.
+jasshape:Variabele-eigenschapVan a sh:PropertyShape;
+  sh:name "jas:eigenschapVan";
+  sh:path jas:eigenschapVan;
+  # sh:xone ([sh:class jas:Rechtssubject] [sh:class jas:Rechtsobject]);
+  sh:node [ sh:xone (jasshape:Rechtssubject jasshape:Rechtsobject)];
+  sh:nodeKind sh:IRI;
 .
 
 # Shape for skos:Concept
