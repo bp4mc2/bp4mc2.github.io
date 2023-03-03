@@ -61,6 +61,10 @@ Andere versie van het model kunnen gevonden worden door de URI van de betrefende
 
 Aangezien bij ontologieën gebruik wordt gemaakt van een "#"-URI zal de vindplaats van een modelelement hierbinnen (een klasse, een eigenschap) niet verschillen: op het moment dat de volledige URI van een klasse wordt opgevraagd zal (in geval van HTML) het volledige model worden getoond, en zal de browser automatisch naar de plek in het document gaan waar deze klasse wordt beschreven.
 
+Voorbeeld:
+- <`http://modellen.geostandaarden.nl/def/NEN3610#Gebouw`> resulteert in de pagina:
+- <`http://modellen.geostandaarden.nl/def/NEN3610`>.. waarbij de browser automatisch zal gaan naar het onderdeel "Gebouw".
+
 Het is tegenwoordig gebruikelijk om *naast* de beschrijving van het model (het document dat de modelversie bevat) *ook* nog een meer uitgebreide beschrijving van het model te hebben (dit is de feitelijke "standaard"). Zie ook de DCAT standaard. Het model is te vinden via https://www.w3.org/TR/vocab-dcat-2/, terwijl de standaard gedocumenteerd is op https://www.w3.org/TR/vocab-dcat-2/.
 
 ### Model van begrippen (begrippenkaders)
@@ -70,6 +74,14 @@ Voorbeelden:
 - `<http://definities.geostandaarden.nl/NEN3610>` resulteert in een overzicht van alle begrippen in de actuele versie van het begrippenkader;
 - `<http://definities.geostandaarden.nl/NEN3610/id/begrip/Gebouw>` resulteert in de actuele beschrijving van het begrip;
 - `<http://definities.geostandaarden.nl/NEN3610-2010-05-13/id/begrip/Gebouw>` resulteert in de beschrijving van het begrip zoals in de versie van 2010-05-13 aanwezig was.
+- `<http://definities.geostandaarden.nl/NEN3610/id/conceptschema/NEN3610>` resulteert in een beschrijving van het begrippenkader zelf
+
+Voor begrippen geldt dat de "id"-URI de identificatie van het begrip zelf is, terwijl de "doc"-URI de daadwerkelijk pagina, beschrijving, van het begrip is. Je ziet dan ook vaak dat er een redirect plaatsvindt:
+
+- `<http://definities.geostandaarden.nl/NEN3610/id/begrip/Gebouw>` wordt:
+- <http://definities.geostandaarden.nl/NEN3610/doc/begrip/Gebouw>`
+
+Niet altijd is bovenstaande functionaliteit (goed) aanwezig in de publicatietooling. In plaats daarvan kan ook een catalogus-URI worden getoond (zie sectie hieronder).
 
 ### Alternatieve vindplaatsen (catalogi)
 Vaak worden domeinmodellen, maar zeker begrippenkaders, gepubliceerd in een catalogus. Op dat moment kan er een **Alias URI** aanwezig zijn die de URI van de modelbeschrijving *in* de catalogus voorstelt. Hoe deze URI er uit ziet, is afhankelijk van de gebruikte catalogus en wordt hier verder niet meer behandeld.
