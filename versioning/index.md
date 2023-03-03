@@ -10,7 +10,7 @@ De volgende begrippen zijn relevant met betrekking tot versionering:
 
 - Een **Model** is een abstracte representatie van een model door de tijd heen. Zo kun je het hebben over het *begrippenkader NEN3610*, zonder dat je spreekt over een specifieke versie. De naam van een dergelijk model bevat over het algemeen ook geen versienummer of datum: het gaat immers over het model door de tijd heen. Soms wordt in de naam de "geboortedatum" of "geboortejaar" van het model opgenomen: de datum waarop het model voor het eerst werd gepubliceerd.
 - Een **Modelversie** is een specifieke versie van een model, zoals dit model op een bepaald moment in de tijd bestaat. Een modelversie is dus altijd een "snapshot" een "foto" van het model op een zeker tijdstip. Zo'n versie kan een status hebben (bv: "in concept" of "gepubliceerd"). De versiedatum van een dergelijke modelversie is de datum waarop de versie zijn huidige vorm heeft gekregen (feitelijk: datum laatste wijziging). Een modelversie kan ook een release- of publicatiedatum hebben: de datum waarop deze modelversie daadwerkelijk beschikbaar is gekomen, gepubliceerd in zijn definitieve vorm.
-- Een **Modelelement** is een abstracte representatie van een modelelement door de tijd heen. Bijvoorbeeld het begrip "Gebouw" in een begrippenkader of de eigenschap "bouwjaar" in een ontologie. Merk op dat er vele beschrijvingen door de tijd heen kunnen zijn van deze modelelementen. Het blijft hetzelfde begrip, klasse of eigenschap zolang de betekenis ervan gelijk is gebleven. Uiteindelijk is het een keuze van de modelleur om te bepalen wanneer echt niet meer sprake is van hetzelfde begrip. Zie https://www.w3.org/TR/vocab-dcat-2/ voor een voorbeeld hoe omgegaan wordt met verschillende beschrijving van dezelfde modelelementen. De naam van een modelelement bevat (dus) ook nooit een versienummer of versiedatum.
+- Een **Modelelement** is een abstracte representatie van een modelelement door de tijd heen. Bijvoorbeeld het begrip "Gebouw" in een begrippenkader of de eigenschap "bouwjaar" in een ontologie. Merk op dat er vele beschrijvingen door de tijd heen kunnen zijn van deze modelelementen. Het blijft hetzelfde begrip, klasse of eigenschap zolang de betekenis ervan gelijk is gebleven. Uiteindelijk is het een keuze van de modelleur om te bepalen wanneer echt niet meer sprake is van hetzelfde begrip. Zie [https://www.w3.org/TR/vocab-dcat-2/](https://www.w3.org/TR/vocab-dcat-2/) voor een voorbeeld hoe omgegaan wordt met verschillende beschrijving van dezelfde modelelementen. De naam van een modelelement bevat (dus) ook nooit een versienummer of versiedatum.
 - De **Laatste versie** van een model is een bijzondere modelversie, namelijk de laatst gepubliceerde versie: de actuele, geldige.
 
 ## Identificaties
@@ -62,10 +62,10 @@ Andere versie van het model kunnen gevonden worden door de URI van de betrefende
 Aangezien bij ontologieën gebruik wordt gemaakt van een "#"-URI zal de vindplaats van een modelelement hierbinnen (een klasse, een eigenschap) niet verschillen: op het moment dat de volledige URI van een klasse wordt opgevraagd zal (in geval van HTML) het volledige model worden getoond, en zal de browser automatisch naar de plek in het document gaan waar deze klasse wordt beschreven.
 
 Voorbeeld:
-- <`http://modellen.geostandaarden.nl/def/NEN3610#Gebouw`> resulteert in de pagina:
-- <`http://modellen.geostandaarden.nl/def/NEN3610`>.. waarbij de browser automatisch zal gaan naar het onderdeel "Gebouw".
+- `<http://modellen.geostandaarden.nl/def/NEN3610#Gebouw>` resulteert in de pagina:
+- `<http://modellen.geostandaarden.nl/def/NEN3610>`.. waarbij de browser automatisch zal gaan naar het onderdeel "Gebouw".
 
-Het is tegenwoordig gebruikelijk om *naast* de beschrijving van het model (het document dat de modelversie bevat) *ook* nog een meer uitgebreide beschrijving van het model te hebben (dit is de feitelijke "standaard"). Zie ook de DCAT standaard. Het model is te vinden via https://www.w3.org/TR/vocab-dcat-2/, terwijl de standaard gedocumenteerd is op https://www.w3.org/TR/vocab-dcat-2/.
+Het is tegenwoordig gebruikelijk om *naast* de beschrijving van het model (het document dat de modelversie bevat) *ook* nog een meer uitgebreide beschrijving van het model te hebben (dit is de feitelijke "standaard"). Zie ook de DCAT standaard. Het model is te vinden via [http://www.w3.org/ns/dcat](http://www.w3.org/ns/dcat), terwijl de standaard gedocumenteerd is op [https://www.w3.org/TR/vocab-dcat-2/](https://www.w3.org/TR/vocab-dcat-2/).
 
 ### Model van begrippen (begrippenkaders)
 Voor begrippen geldt dat vaak de begrippen niet in één document worden getoond, maar in een catalogus waarbij slechts een enkel modelelement wordt getoond. Maar ook in deze gevallen kan de originele URI gebruikt worden. Een specifiek beschrijving van een begrip kan dan getoond worden door de modelversie opbouw te gebruiken:
@@ -79,7 +79,7 @@ Voorbeelden:
 Voor begrippen geldt dat de "id"-URI de identificatie van het begrip zelf is, terwijl de "doc"-URI de daadwerkelijk pagina, beschrijving, van het begrip is. Je ziet dan ook vaak dat er een redirect plaatsvindt:
 
 - `<http://definities.geostandaarden.nl/NEN3610/id/begrip/Gebouw>` wordt:
-- <http://definities.geostandaarden.nl/NEN3610/doc/begrip/Gebouw>`
+- `<http://definities.geostandaarden.nl/NEN3610/doc/begrip/Gebouw>`
 
 Niet altijd is bovenstaande functionaliteit (goed) aanwezig in de publicatietooling. In plaats daarvan kan ook een catalogus-URI worden getoond (zie sectie hieronder).
 
