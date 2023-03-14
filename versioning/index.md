@@ -8,7 +8,7 @@ Dit document beschrijft de versionering van modellen. In het bijzonder modellen 
 
 De volgende begrippen zijn relevant met betrekking tot versionering:
 
-- Een **Model** is een abstracte representatie van een model door de tijd heen. Zo kun je het hebben over het *begrippenkader NEN3610*, zonder dat je spreekt over een specifieke versie. De naam van een dergelijk model bevat over het algemeen ook geen versienummer of datum: het gaat immers over het model door de tijd heen. Soms wordt in de naam de "geboortedatum" of "geboortejaar" van het model opgenomen: de datum waarop het model voor het eerst werd gepubliceerd.
+- Een **Model** is een abstracte representatie van een model door de tijd heen. Zo kun je het hebben over het *begrippenkader nen3610*, zonder dat je spreekt over een specifieke versie. De naam van een dergelijk model bevat over het algemeen ook geen versienummer of datum: het gaat immers over het model door de tijd heen. Soms wordt in de naam de "geboortedatum" of "geboortejaar" van het model opgenomen: de datum waarop het model voor het eerst werd gepubliceerd.
 - Een **Modelversie** is een specifieke versie van een model, zoals dit model op een bepaald moment in de tijd bestaat. Een modelversie is dus altijd een "snapshot" een "foto" van het model op een zeker tijdstip. Zo'n versie kan een status hebben (bv: "in concept" of "gepubliceerd"). De versiedatum van een dergelijke modelversie is de datum waarop de versie zijn huidige vorm heeft gekregen (feitelijk: datum laatste wijziging). Een modelversie kan ook een release- of publicatiedatum hebben: de datum waarop deze modelversie daadwerkelijk beschikbaar is gekomen, gepubliceerd in zijn definitieve vorm.
 - Een **Modelelement** is een abstracte representatie van een modelelement door de tijd heen. Bijvoorbeeld het begrip "Gebouw" in een begrippenkader of de eigenschap "bouwjaar" in een ontologie. Merk op dat er vele beschrijvingen door de tijd heen kunnen zijn van deze modelelementen. Het blijft hetzelfde begrip, klasse of eigenschap zolang de betekenis ervan gelijk is gebleven. Uiteindelijk is het een keuze van de modelleur om te bepalen wanneer echt niet meer sprake is van hetzelfde begrip. Zie [https://www.w3.org/TR/vocab-dcat-2/](https://www.w3.org/TR/vocab-dcat-2/) voor een voorbeeld hoe omgegaan wordt met verschillende beschrijving van dezelfde modelelementen. De naam van een modelelement bevat (dus) ook nooit een versienummer of versiedatum.
 - De **Laatste versie** van een model is een bijzondere modelversie, namelijk de laatst gepubliceerde versie: de actuele, geldige.
@@ -17,20 +17,20 @@ De volgende begrippen zijn relevant met betrekking tot versionering:
 Voorkomens van de hierboven genoemde begrippen hebben allemaal een identificatie (URI). Daarbij geldt de volgende conventie:
 
 - De URI van een **Model** is gebaseerd op de **Namespace** van dit model. Een namespace is feitelijk de "naamruimte" binnen het model: alle "namen" van de modelelementen die onderdeel zijn van dit model moeten uniek zijn. Aangezien er maar 1 model is binnen deze naamruimte, is de URI van het model vaak gelijk of vrijwel gelijk aan de namespace.
-- De URI van een **Modelversie** is gebaseerd op de URI van het model, met daarbij ook ruimte voor een versienummer en/of versiedatum.
+- De URI van een **Modelversie** is gebaseerd op de URI van het model, met daarbij ook ruimte voor een versienummer, versienaam en/of (deel van de) versiedatum om de specifieke versie van het model te kunnen duiden.
 - De URI van een **Modelelement** is gebaseerd op de **Namespace** van het model en de naam van het modelelement. Hier zit dus GEEN versienummer of versiedatum bij (!)
 - De URI van de **Laatste versie** is gelijk niets anders dan de URI van de betreffende Modelversie.
 
 Voorbeelden:
 ```
-<http://modellen.geostandaarden.nl/def/NEN3610> a owl:Ontology. #Een model
-<http://modellen.geostandaarden.nl/def/NEN3610-2010-05-13> a owl:Ontology. #Een modelversie
-<http://modellen.geostandaarden.nl/def/NEN3610#Gebouw> a owl:Class. #Een modelelement (klasse)
+<http://modellen.geostandaarden.nl/def/nen3610> a owl:Ontology. #Een model
+<http://modellen.geostandaarden.nl/def/nen3610-2010-05-13> a owl:Ontology. #Een modelversie
+<http://modellen.geostandaarden.nl/def/nen3610#Gebouw> a owl:Class. #Een modelelement (klasse)
 
-<http://definities.geostandaarden.nl/NEN3610> #Een model (van begrippen)
-<http://definities.geostandaarden.nl/NEN3610-2010-05-13> #Een modelversie
-<http://definities.geostandaarden.nl/NEN3610/id/begrip/Gebouw> a skos:Concept #Een modelelement (begrip)
-<http://definities.geostandaarden.nl/NEN3610/id/conceptschema/NEN3610> a skos:ConceptScheme #Een ander modelelement (begrippenkader)
+<http://definities.geostandaarden.nl/nen3610> #Een model (van begrippen)
+<http://definities.geostandaarden.nl/nen3610-2010-05-13> #Een modelversie
+<http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw> a skos:Concept #Een modelelement (begrip)
+<http://definities.geostandaarden.nl/nen3610/id/conceptschema/nen3610> a skos:ConceptScheme #Een ander modelelement (begrippenkader)
 ```
 
 In bovenstaande voorbeelden is ook de URI strategie meegenomen:
@@ -47,9 +47,9 @@ In [Cool URI's for the web](https://www.w3.org/TR/cooluris/) wordt uitgelegd hoe
 Bij het opvragen van een model *kun* je een extensie meegeven: in dat geval krijg je altijd de content die voldoet aan de betreffende extensie. Zonder extensie zal sprake zijn van content negotiation.
 
 Voorbeelden:
-- `<http://modellen.geostandaarden.nl/def/NEN3610-2010-05-13>` resulteert in een HTML weergave van deze modelversie, als de URL in de browser is ingevoerd;
-- `<http://modellen.geostandaarden.nl/def/NEN3610-2010-05-13>` resulteert in een JSON-LD weergave van deze modelversie, als de Web API dit vroeg (via de http header);
-- `<http://modellen.geostandaarden.nl/def/NEN3610-2010-05-13.ttl>` resulteert in een Turtle (TTL) weergave van deze modelversie.
+- `<http://modellen.geostandaarden.nl/def/nen3610-2010-05-13>` resulteert in een HTML weergave van deze modelversie, als de URL in de browser is ingevoerd;
+- `<http://modellen.geostandaarden.nl/def/nen3610-2010-05-13>` resulteert in een JSON-LD weergave van deze modelversie, als de Web API dit vroeg (via de http header);
+- `<http://modellen.geostandaarden.nl/def/nen3610-2010-05-13.ttl>` resulteert in een Turtle (TTL) weergave van deze modelversie.
 
 ## Vindplaatsen (locaties)
 Modellen kunnen op veel plekken te vinden zijn, maar minimaal zijn ze vindbaar via hun identificatie. Daarbij is er een verschil tussen ontologieën en begrippenkaders.
@@ -62,28 +62,62 @@ Andere versie van het model kunnen gevonden worden door de URI van de betrefende
 Aangezien bij ontologieën gebruik wordt gemaakt van een "#"-URI zal de vindplaats van een modelelement hierbinnen (een klasse, een eigenschap) niet verschillen: op het moment dat de volledige URI van een klasse wordt opgevraagd zal (in geval van HTML) het volledige model worden getoond, en zal de browser automatisch naar de plek in het document gaan waar deze klasse wordt beschreven.
 
 Voorbeeld:
-- `<http://modellen.geostandaarden.nl/def/NEN3610#Gebouw>` resulteert in de pagina:
-- `<http://modellen.geostandaarden.nl/def/NEN3610>`.. waarbij de browser automatisch zal gaan naar het onderdeel "Gebouw".
+- `<http://modellen.geostandaarden.nl/def/nen3610#Gebouw>` resulteert in de pagina:
+- `<http://modellen.geostandaarden.nl/def/nen3610>`.. waarbij de browser automatisch zal gaan naar het onderdeel "Gebouw".
 
 Het is tegenwoordig gebruikelijk om *naast* de beschrijving van het model (het document dat de modelversie bevat) *ook* nog een meer uitgebreide beschrijving van het model te hebben (dit is de feitelijke "standaard"). Zie ook de DCAT standaard. Het model is te vinden via [http://www.w3.org/ns/dcat](http://www.w3.org/ns/dcat), terwijl de standaard gedocumenteerd is op [https://www.w3.org/TR/vocab-dcat-2/](https://www.w3.org/TR/vocab-dcat-2/).
+
+Voorbeelden:
+- `<http://modellen.mim-standaarden/def/mim>` beschrijft de ontologie;
+- `<https://docs.geostandaarden.nl/mim/mim/>` beschrijft de standaards
 
 ### Model van begrippen (begrippenkaders)
 Voor begrippen geldt dat vaak de begrippen niet in één document worden getoond, maar in een catalogus waarbij slechts een enkel modelelement wordt getoond. Maar ook in deze gevallen kan de originele URI gebruikt worden. Een specifiek beschrijving van een begrip kan dan getoond worden door de modelversie opbouw te gebruiken:
 
 Voorbeelden:
-- `<http://definities.geostandaarden.nl/NEN3610>` resulteert in een overzicht van alle begrippen in de actuele versie van het begrippenkader;
-- `<http://definities.geostandaarden.nl/NEN3610/id/begrip/Gebouw>` resulteert in de actuele beschrijving van het begrip;
-- `<http://definities.geostandaarden.nl/NEN3610-2010-05-13/id/begrip/Gebouw>` resulteert in de beschrijving van het begrip zoals in de versie van 2010-05-13 aanwezig was.
-- `<http://definities.geostandaarden.nl/NEN3610/id/conceptschema/NEN3610>` resulteert in een beschrijving van het begrippenkader zelf
+- `<http://definities.geostandaarden.nl/nen3610>` resulteert in een overzicht van alle begrippen in de actuele versie van het begrippenkader;
+- `<http://definities.geostandaarden.nl/nen3610/id/begrip/gebouw>` resulteert in de actuele beschrijving van het begrip;
+- `<http://definities.geostandaarden.nl/nen3610-2010-05-13/id/begrip/gebouw>` resulteert in de beschrijving van het begrip zoals in de versie van 2010-05-13 aanwezig was.
+- `<http://definities.geostandaarden.nl/nen3610/id/conceptschema/nen3610>` resulteert in een beschrijving van het begrippenkader zelf
+
+Merk op dat het gebruik van `/begrip/` en `/conceptschema` ook net zo goed `/concept/` en `/begrippenkader/` had kunnen zijn. Dit gaat meer over de te volgen URI strategie, en niet specifiek over versionering.
 
 Voor begrippen geldt dat de "id"-URI de identificatie van het begrip zelf is, terwijl de "doc"-URI de daadwerkelijk pagina, beschrijving, van het begrip is. Je ziet dan ook vaak dat er een redirect plaatsvindt:
 
-- `<http://definities.geostandaarden.nl/NEN3610/id/begrip/Gebouw>` wordt:
-- `<http://definities.geostandaarden.nl/NEN3610/doc/begrip/Gebouw>`
+- `<http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw>` wordt:
+- `<https://definities.geostandaarden.nl/nen3610/doc/begrip/gebouw>`
 
-Niet altijd is bovenstaande functionaliteit (goed) aanwezig in de publicatietooling. In plaats daarvan kan ook een catalogus-URI worden getoond (zie sectie hieronder).
+Merk op: waar identifiers (URIs) vaak beginnen met `http:` (het is immers geen daadwerkelijk webpagina, dus er is ook nog geen sprake van een beveiliging), begint de daadwerkelijk getoonde locatie (URL) vaak met `https:`, aangezien de pagina's beveiligd worden verstuurd. Het gebruik van `http:` identifiers zegt (dus) nog niets over de beveiliging!
+
+Niet altijd is bovenstaande functionaliteit (goed) aanwezig in de publicatietooling. Zo bestaat publicatietooling die (in navolging van dbpedia.org) niet gebruik maakt van de `/doc/`-URI, maar een `/page/`-URI. Het idee is echter hetzelfde: de URI van het "ding" verschilt van de URI van de "pagina-over-dat-ding". Ook kan het zijn dat er sprake is van de encoding van de URI in een algemene catalogus-URI (zie sectie hieronder).
+
+### Taal
+Net als het formaat van een beschrijving van een begrip of modelelement, kan ook de taal via het concept van content-negotiation meegenomen worden. Browsers zullen automatisch vragen om een specifieke taal. Dit is instelbaar in elke browser, zodat websites getoond worden in de eigen taal.
+
+Er zijn catalogi die specifieke URLs gebruiken waarin ook een taalelement wordt meegenomen. Zo kan specifiek in de URL een taal worden gekozen. Dit is nooit de identificatie URI van een begrip of modelelement, maar altijd de URL van de beschrijving daarvan:
+
+- `<http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw>` wordt:
+- `<https://definities.geostandaarden.nl/nen3610-2011/nl/page/Gebouw>`
+
+In dit voorbeeld is niet alleen een specifieke taal van de beschrijving opgenomen in de URL (`/nl/`), maar ook een specifieke versie: (`-2011`).
 
 ### Alternatieve vindplaatsen (catalogi)
 Vaak worden domeinmodellen, maar zeker begrippenkaders, gepubliceerd in een catalogus. Op dat moment kan er een **Alias URI** aanwezig zijn die de URI van de modelbeschrijving *in* de catalogus voorstelt. Hoe deze URI er uit ziet, is afhankelijk van de gebruikte catalogus en wordt hier verder niet meer behandeld.
 
-Het kan zijn dat de hierbovengenoemde URI's niet daadwerkelijk in de catalogus worden getoond, maar dat sprake is van een *redirect* waardoor in de browser URL balk alleen de catalogus-URI zichtbaar is en niet de originele URI. Dit wordt afgeraden. Het is namelijk ook mogelijk om dit "onder water" te doen, waardoor dit niet zichtbaar is en de originele URI wordt getoond. Soms is dit echter technisch niet (of slechts heel lastig) te realiseren in de technologie van de catalogus. In zo'n geval is het aan te raden om **expliciet** in de catalogus de echte, originele URI van het modelelement te tonen.
+Voorbeeld:
+- `https://definities.geostandaarden.nl/mim/nl/page/?uri=http%3A%2F%2Fdefinities.mim-standaard.nl%2Fid%2Fbegrip%2FDomein` laat het begrip met de URI `http://definities.mim-standaard.nl/id/begrip/Domein` zien in de catalogus op de URL `https://definities.geostandaarden.nl`.
+
+Het kan zijn dat de hierbovengenoemde `/doc/`-URI's niet daadwerkelijk in de catalogus worden getoond, maar dat sprake is van een *redirect* waardoor in de browser URL balk alleen de catalogus-URI zichtbaar is en niet de originele URI. Dit wordt afgeraden. Het is namelijk ook mogelijk om dit "onder water" te doen, waardoor dit niet zichtbaar is en de originele URI wordt getoond. Soms is dit echter technisch niet (of slechts heel lastig) te realiseren in de technologie van de catalogus. In zo'n geval is het aan te raden om **expliciet** in de catalogus de echte, originele URI van het modelelement te tonen.
+
+### Persistente link (de echte URI) in de userinterface
+Omdat er verschillende redenen kunnen zijn om in de browser URL-balk niet de daadwerkelijke URI te kunnen tonen van een begrip, klasse of eigenschap, tonen veel user-interfaces tegenwoordig niet alleen de daadwerkelijk (goede) URI, maar wordt het ook makkelijk gemaakt om juist deze URI te gebruiken ipv de URI in de browserbalk:
+
+![](link.png)
+
+## Tabel met voorbeelden
+
+|Situatie nu|Situatie volgens uitleg hierboven|Opmerking|
+|-|-|-|
+|https://definities.geostandaarden.nl/nen3610-2022/nl/ | https://definities.geostandaarden.nl/nen3610-2022/nl/ | Er vanuit gaande dat hier een specifieke versie wordt beoogd, in een specifieke taal. Het gaat hier dus niet om een deel van de identificatie-URI|
+|http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw | http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw | Uitgangspunt is dat het hier niet echt om een ander begrip "Gebouw" gaat, maar slechts een nieuwe versie van het model |
+|https://definities.geostandaarden.nl/nen3610-2022/nl/page/gebouw | https://definities.geostandaarden.nl/nen3610-2022/nl/doc/Gebouw | Hoofdletter was verwacht voor "Gebouw", maar voor de rest zou het kunnen: dit is niet de identificatie van het begrip, maar de pagina hiervan voor de versie van 2022, in het Nederlands. Het gebruik van `page` ipv `doc` wordt niet gezien als een serieuze afwijking|
