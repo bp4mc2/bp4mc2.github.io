@@ -116,8 +116,44 @@ Omdat er verschillende redenen kunnen zijn om in de browser URL-balk niet de daa
 
 ## Tabel met voorbeelden
 
-|Situatie nu|Situatie volgens uitleg hierboven|Opmerking|
-|-|-|-|
-|https://definities.geostandaarden.nl/nen3610-2022/nl/ | https://definities.geostandaarden.nl/nen3610-2022/nl/ | Er vanuit gaande dat hier een specifieke versie wordt beoogd, in een specifieke taal. Het gaat hier dus niet om een deel van de identificatie-URI|
-|http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw | http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw | Uitgangspunt is dat het hier niet echt om een ander begrip "Gebouw" gaat, maar slechts een nieuwe versie van het model |
-|https://definities.geostandaarden.nl/nen3610-2022/nl/page/gebouw | https://definities.geostandaarden.nl/nen3610-2022/nl/doc/Gebouw | Hoofdletter was verwacht voor "Gebouw", maar voor de rest zou het kunnen: dit is niet de identificatie van het begrip, maar de pagina hiervan voor de versie van 2022, in het Nederlands. Het gebruik van `page` ipv `doc` wordt niet gezien als een serieuze afwijking|
+Onderstaande tabel geeft een uitwerking van de verschillende URI's en URL's. Daarbij is de volgende casus genomen:
+- De casus betreft NEN3610
+- Hiervan bestaan twee versies: NEN3610:2011 en NEN3610:2022
+- Uitgangspunt is dat de begrippen die in NEN3610:2011 zijn ontstaan, in NEN3610:2022 nog steeds voorkomen met dezelfde betekenis, waarbij de beschrijving en het gebruik wel anders kan zijn
+- Zowel een model van begrippen als een ontologie wordt opgesteld, voor beide versies.
+
+Met betrekking tot bovenstaande uitleg over versionering worden de volgende besluiten genomen:
+1. Het basispad voor de begrippen wordt `http(s)://definities.geostandaarden.nl`;
+2. Het basispad voor de ontologie wordt `http(s)://modellen.geostandaarden.nl`;
+3. De basisnaam voor de modellen betreft `nen3610`;
+4. De basisnaam voor de versies wordt `nen3610-2011` en `nen3610-2022` (dwz: geen versienummer of volledige versiedatum, slechts het jaartal);
+5. Voor begrippen wordt de aanduiding `/id/begrip/` gebruikt, gevolgd door de voorkeursterm van het begrip, beginnend met een hoofdletter;
+6. Voor modelelementen in de ontologie wordt de aanduiding `#` gebruikt, gevolgd door de naam van het modelelement, bij klassen beginnende met een hoofdletter, bij eigenschappen beginnend met een kleine letter.
+
+Dit leidt tot de volgende URI's en URL's:
+
+|Categorie|URI/URL|Op dit moment|Toelichting|
+|---------|-------|-------------|-----------|
+|Identifier begrip| http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw | http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw en http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw | De begripsidentifier zou niet moeten veranderen tussen versies: het is immers (zie uitgangspunten) nog steeds hetzelfde begrip.|
+|Identifier begrippenkader| http://definities.geostandaarden.nl/id/begrippenkader/nen3610 | http://definities.geostandaarden.nl/id/begrippenkader/nen3610 en http://definities.geostandaarden.nl/nen3610-2022/id/begrippenkader/nen3610-2022 | Ook voor het begrippenkader geldt feitelijk dat nog steeds sprake is van het begrippenkader NEN3610, dus ook hier hoeft de URI niet te wijzigen.|
+|Identifier klasse| http://modellen.geostandaarden.nl/def/nen3610#Gebouw | http://modellen.mim-standaard.nl/def/mim#Informatiemodel | Voor NEN3610 is nog geen ontologie beschikbaar, voor MIM is wel een dergelijke ontologie beschikbaar. Zichtbaar is dat hier dezelfde opbouw is gekozen.|
+|Identifier ontologie | http://modellen.geostandaarden.nl/def/nen3610# | http://modellen.mim-standaard.nl/def/mim# | Zie vorige |
+|Redirect identifier | https://definities.geostandaarden.nl/nen3610/doc/begrip/Gebouw | https://definities.geostandaarden.nl/nen3610/nl/page/Gebouw | Redirect zou naar de laatste versie moeten gaan (de URL zonder versieinformatie toont altijd de laatste versie). Daarbij ook wenselijk om dit in de URL zichtbaar te maken. Toevoeging van taal is een optie |
+|Redirect begrippenkader | https://definities.geostandaarden.nl/doc/begrippenkader/nen3610 of https://definities.geostandaarden.nl/nen3610 | Niet beschikbaar | Gekozen kan worden dat de redirect van het begrippenkader niet specifiek (alleen) de gegevens over het begrippenkader zelf geeft, maar feitelijk de hele lijst van begrippen, en dan de meest recente versie |
+|Redirect ontologie | http://modellen.geostandaarden.nl/def/nen3610 | http://modellen.mim-standaard.nl/def/mim | Door gebruik van de `#` wordt de pagina getoond met de URL voorafgaande aan de `#`. Dit betreft de meest recente versie (de URL zonder versieinformatie toont altijde de laatste versie) |
+|2011 versie van de begrippen | https://definities.geostandaarden.nl/nen3610-2011 | https://definities.geostandaarden.nl/nen3610-2011/nl | Toevoeging van de taal is optioneel |
+|2020 versie van de begrippen | https://definities.geostandaarden.nl/nen3610-2020 | https://definities.geostandaarden.nl/nen3610-2020/nl | Zie vorige |
+|Turtle bestand van de actuele versie van een begrip(beschrijving) | https://definities.geostandaarden.nl/nen3610/doc/begrip/Gebouw.ttl | ?? | |
+|Turtle bestand van de 2011-versie van een begrip(beschrijving) | https://definities.geostandaarde.nl/nen3610-2011/doc/begrip/Gebouw.ttl | ?? | |
+|Turtle bestand van de 2020-versie van een begrip(beschrijving) | https://definities.geostandaarde.nl/nen3610-2020/doc/begrip/Gebouw.ttl | ?? | |
+|Turtle bestand van het volledig 2011 begripsmodel | https://definities.geostandaarde.nl/nen3610-2020.ttl | ?? | |
+|Turtle bestand van de actuele versie van de ontologie | https://modellen.geostandaarden.nl/def/nen360.ttl | ?? | |
+|Turtle bestand van de 2011-versie van de ontologie | https://modellen.geostandaarden.nl/def/nen3610-2011.ttl | ?? | |
+|Turtle bestand van de 2020-versie van de ontologie | https://modellen.geostandaarden.nl/def/nen3610-2022.ttl | ?? | |
+
+Algemene regels:
+- Redirect van identifiers gaan altijd naar een URL die de actuele versie toont van de beschrijving van het geïdentificeerde object;
+- Een URL zonder versieinformatie toont altijd de meest actuele versie;
+- Door toevoegen van `.ttl`, `.jsonld`, `.xml` of `.html` wordt de betreffende serialisatie van het bestand gegeven;
+- Indien geen expliciet bestandsformaat wordt meegegeven, dan wordt content-negotiation gebruikt om het bestandsformaat te bepalen (in browsers feitelijk altijd `.html`);
+- Toevoegen van een taalaanduiding `/nl/` is optioneel. Zonder taal-aanduiding wordt content-negotiation gebruikt om de taal vast te stellen (in browsers altijd de voorkeurstaal zoals in de instellingen van de browser is opgegeven).
