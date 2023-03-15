@@ -134,7 +134,7 @@ Dit leidt tot de volgende URI's en URL's:
 
 |Categorie|URI/URL|Op dit moment|Toelichting|
 |---------|-------|-------------|-----------|
-|Identifier begrip| http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw | http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw en http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw | De begripsidentifier zou niet moeten veranderen tussen versies: het is immers (zie uitgangspunten) nog steeds hetzelfde begrip.|
+|Identifier begrip| !()[http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw] | ()[http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw] en http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw | De begripsidentifier zou niet moeten veranderen tussen versies: het is immers (zie uitgangspunten) nog steeds hetzelfde begrip.|
 |Identifier begrippenkader| http://definities.geostandaarden.nl/id/begrippenkader/nen3610 | http://definities.geostandaarden.nl/id/begrippenkader/nen3610 en http://definities.geostandaarden.nl/nen3610-2022/id/begrippenkader/nen3610-2022 | Ook voor het begrippenkader geldt feitelijk dat nog steeds sprake is van het begrippenkader NEN3610, dus ook hier hoeft de URI niet te wijzigen.|
 |Identifier klasse| http://modellen.geostandaarden.nl/def/nen3610#Gebouw | http://modellen.mim-standaard.nl/def/mim#Informatiemodel | Voor NEN3610 is nog geen ontologie beschikbaar, voor MIM is wel een dergelijke ontologie beschikbaar. Zichtbaar is dat hier dezelfde opbouw is gekozen.|
 |Identifier ontologie | http://modellen.geostandaarden.nl/def/nen3610# | http://modellen.mim-standaard.nl/def/mim# | Zie vorige |
