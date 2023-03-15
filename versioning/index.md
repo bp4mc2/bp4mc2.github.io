@@ -55,7 +55,7 @@ Ook bij een Ontology is een dergelijk onderscheid tussen het model en het modele
   sh:declare [ sh:namespace  "http://modellen.geostandaarde.nl/def/nen3610#" ;
                sh:prefix     "nen3610"
              ]
-  .
+.
 ```
 
 ## Content negotiation
@@ -160,13 +160,13 @@ Dit leidt tot de volgende URI's en URL's:
 |Redirect ontologie | `<http://modellen.geostandaarden.nl/def/nen3610>` | [https://modellen.mim-standaard.nl/def/mim](https://modellen.mim-standaard.nl/def/mim) | Door gebruik van de `#` wordt de pagina getoond met de URL voorafgaande aan de `#`. Dit betreft de meest recente versie (de URL zonder versieinformatie toont altijde de laatste versie) |
 |2011 versie van de begrippen | `<https://definities.geostandaarden.nl/nen3610-2011>` | [https://definities.geostandaarden.nl/nen3610-2011/nl](https://definities.geostandaarden.nl/nen3610-2011/nl) | Toevoeging van de taal is optioneel |
 |2022 versie van de begrippen | `<https://definities.geostandaarden.nl/nen3610-2022>` | [https://definities.geostandaarden.nl/nen3610-2022/nl](https://definities.geostandaarden.nl/nen3610-2022/nl) | Zie vorige |
-|Turtle bestand van de actuele versie van een begrip(beschrijving) | `<https://definities.geostandaarden.nl/nen3610/doc/begrip/Gebouw.ttl'> | ?? | |
-|Turtle bestand van de 2011-versie van een begrip(beschrijving) | `<https://definities.geostandaarde.nl/nen3610-2011/doc/begrip/Gebouw.ttl'> | ?? | |
-|Turtle bestand van de 2022-versie van een begrip(beschrijving) | `<https://definities.geostandaarde.nl/nen3610-2022/doc/begrip/Gebouw.ttl'> | ?? | |
-|Turtle bestand van het volledig 2011 begripsmodel | `<https://definities.geostandaarde.nl/nen3610-2011.ttl'> | ?? | |
-|Turtle bestand van de actuele versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610.ttl'> | ?? | |
-|Turtle bestand van de 2011-versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610-2011.ttl'> | ?? | |
-|Turtle bestand van de 2022-versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610-2022.ttl'> | ?? | |
+|Turtle bestand van de actuele versie van een begrip(beschrijving) | `<https://definities.geostandaarden.nl/nen3610/doc/begrip/Gebouw.ttl>` | Niet beschikbaar | Er is wel een interface om een specifieke versie op te vragen, maar niet de meest actuele |
+|Turtle bestand van de 2011-versie van een begrip(beschrijving) | `<https://definities.geostandaarde.nl/nen3610-2011/doc/begrip/Gebouw.ttl>` | https://definities.geostandaarden.nl/rest/v1/nen3610-2011/data?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610%2Fid%2Fbegrip%2FGebouw&format=text/turtle | |
+|Turtle bestand van de 2022-versie van een begrip(beschrijving) | `<https://definities.geostandaarde.nl/nen3610-2022/doc/begrip/Gebouw.ttl>` | https://definities.geostandaarden.nl/rest/v1/nen3610-2022/data?uri=http%3A%2F%2Fdefinities.geostandaarden.nl%2Fnen3610-2022%2Fid%2Fbegrip%2Fgebouw&format=text/turtle | |
+|Turtle bestand van het volledig 2011 begripsmodel | `<https://definities.geostandaarde.nl/nen3610-2011.ttl>` | Niet beschikbaar | |
+|Turtle bestand van de actuele versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610.ttl>` | Niet beschikbaar | |
+|Turtle bestand van de 2011-versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610-2011.ttl>` | Niet beschikbaar | |
+|Turtle bestand van de 2022-versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610-2022.ttl>` | Niet beschikbaar | |
 
 Algemene regels:
 - Redirect van identifiers gaan altijd naar een URL die de actuele versie toont van de beschrijving van het geïdentificeerde object;
