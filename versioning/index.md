@@ -48,7 +48,7 @@ Ook bij een Ontology is een dergelijk onderscheid tussen het model en het modele
 <http://modellen.geostandaarden.nl/def/nen3610#> a owl:Ontology;
   rdfs:label "De NEN3610 Ontologie";
   owl:versionIRI <http://modellen.geostandaarden.nl/def/nen3610-2022>;
-  owl:versionInfo "2020";
+  owl:versionInfo "2022";
   dct:source <https://docs.geostandaarden.nl/nen3610>;
   dct:hasVersion <http://modellen.geostandaarden.nl/def/nen3610-2011>;
   dct:hasVersion <http://modellen.geostandaarden.nl/def/nen3610-2022>;
@@ -152,21 +152,21 @@ Dit leidt tot de volgende URI's en URL's:
 |Categorie|URI/URL|Op dit moment|Toelichting|
 |---------|-------|-------------|-----------|
 |Identifier begrip| `<http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw>` | [http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw](http://definities.geostandaarden.nl/nen3610/id/begrip/Gebouw) en [http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw](http://definities.geostandaarden.nl/nen3610-2022/id/begrip/gebouw) | De begripsidentifier zou niet moeten veranderen tussen versies: het is immers (zie uitgangspunten) nog steeds hetzelfde begrip.|
-|Identifier begrippenkader| `<http://definities.geostandaarden.nl/id/begrippenkader/nen3610>` | [http://definities.geostandaarden.nl/id/begrippenkader/nen3610](http://definities.geostandaarden.nl/id/begrippenkader/nen3610) en http://definities.geostandaarden.nl/nen3610-2022/id/begrippenkader/nen3610-2022 | Ook voor het begrippenkader geldt feitelijk dat nog steeds sprake is van het begrippenkader NEN3610, dus ook hier hoeft de URI niet te wijzigen.|
+|Identifier begrippenkader| `<http://definities.geostandaarden.nl/id/begrippenkader/nen3610>` | [http://definities.geostandaarden.nl/id/begrippenkader/nen3610](http://definities.geostandaarden.nl/id/begrippenkader/nen3610) en [http://definities.geostandaarden.nl/nen3610-2022/id/begrippenkader/nen3610-2022](http://definities.geostandaarden.nl/nen3610-2022/id/begrippenkader/nen3610-2022) | Ook voor het begrippenkader geldt feitelijk dat nog steeds sprake is van het begrippenkader NEN3610, dus ook hier hoeft de URI niet te wijzigen.|
 |Identifier klasse| `<http://modellen.geostandaarden.nl/def/nen3610#Gebouw>` | [http://modellen.mim-standaard.nl/def/mim#Informatiemodel](http://modellen.mim-standaard.nl/def/mim#Informatiemodel) | Voor NEN3610 is nog geen ontologie beschikbaar, voor MIM is wel een dergelijke ontologie beschikbaar. Zichtbaar is dat hier dezelfde opbouw is gekozen.|
 |Identifier ontologie | `<http://modellen.geostandaarden.nl/def/nen3610#>` | [http://modellen.mim-standaard.nl/def/mim#](http://modellen.mim-standaard.nl/def/mim#) | Zie vorige |
-|Redirect identifier | <`https://definities.geostandaarden.nl/nen3610/doc/begrip/Gebouw`> | [https://definities.geostandaarden.nl/nen3610/nl/page/Gebouw](https://definities.geostandaarden.nl/nen3610/nl/page/Gebouw) | Redirect zou naar de laatste versie moeten gaan (de URL zonder versieinformatie toont altijd de laatste versie). Toevoeging van taal is een optie |
+|Redirect identifier | <`https://definities.geostandaarden.nl/nen3610/doc/begrip/Gebouw`> | [https://definities.geostandaarden.nl/nen3610-2022/nl/page/gebouw](https://definities.geostandaarden.nl/nen3610/nl/page/Gebouw) | Redirect zou naar de laatste versie moeten gaan (de URL zonder versieinformatie toont altijd de laatste versie). Toevoeging van taal is een optie |
 |Redirect begrippenkader | `<https://definities.geostandaarden.nl/doc/begrippenkader/nen3610>` of `<https://definities.geostandaarden.nl/nen3610>` | Niet beschikbaar | Gekozen kan worden dat de redirect van het begrippenkader niet specifiek (alleen) de gegevens over het begrippenkader zelf geeft, maar feitelijk de hele lijst van begrippen, en dan de meest recente versie |
 |Redirect ontologie | `<http://modellen.geostandaarden.nl/def/nen3610>` | [https://modellen.mim-standaard.nl/def/mim](https://modellen.mim-standaard.nl/def/mim) | Door gebruik van de `#` wordt de pagina getoond met de URL voorafgaande aan de `#`. Dit betreft de meest recente versie (de URL zonder versieinformatie toont altijde de laatste versie) |
 |2011 versie van de begrippen | `<https://definities.geostandaarden.nl/nen3610-2011>` | [https://definities.geostandaarden.nl/nen3610-2011/nl](https://definities.geostandaarden.nl/nen3610-2011/nl) | Toevoeging van de taal is optioneel |
-|2022 versie van de begrippen | `<https://definities.geostandaarden.nl/nen3610-2022>` | [https://definities.geostandaarden.nl/nen3610-2020/nl](https://definities.geostandaarden.nl/nen3610-2022/nl) | Zie vorige |
+|2022 versie van de begrippen | `<https://definities.geostandaarden.nl/nen3610-2022>` | [https://definities.geostandaarden.nl/nen3610-2022/nl](https://definities.geostandaarden.nl/nen3610-2022/nl) | Zie vorige |
 |Turtle bestand van de actuele versie van een begrip(beschrijving) | `<https://definities.geostandaarden.nl/nen3610/doc/begrip/Gebouw.ttl'> | ?? | |
 |Turtle bestand van de 2011-versie van een begrip(beschrijving) | `<https://definities.geostandaarde.nl/nen3610-2011/doc/begrip/Gebouw.ttl'> | ?? | |
-|Turtle bestand van de 2020-versie van een begrip(beschrijving) | `<https://definities.geostandaarde.nl/nen3610-2020/doc/begrip/Gebouw.ttl'> | ?? | |
-|Turtle bestand van het volledig 2011 begripsmodel | `<https://definities.geostandaarde.nl/nen3610-2020.ttl'> | ?? | |
-|Turtle bestand van de actuele versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen360.ttl'> | ?? | |
+|Turtle bestand van de 2022-versie van een begrip(beschrijving) | `<https://definities.geostandaarde.nl/nen3610-2022/doc/begrip/Gebouw.ttl'> | ?? | |
+|Turtle bestand van het volledig 2011 begripsmodel | `<https://definities.geostandaarde.nl/nen3610-2011.ttl'> | ?? | |
+|Turtle bestand van de actuele versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610.ttl'> | ?? | |
 |Turtle bestand van de 2011-versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610-2011.ttl'> | ?? | |
-|Turtle bestand van de 2020-versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610-2022.ttl'> | ?? | |
+|Turtle bestand van de 2022-versie van de ontologie | `<https://modellen.geostandaarden.nl/def/nen3610-2022.ttl'> | ?? | |
 
 Algemene regels:
 - Redirect van identifiers gaan altijd naar een URL die de actuele versie toont van de beschrijving van het geïdentificeerde object;
