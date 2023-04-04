@@ -131,6 +131,36 @@ Omdat er verschillende redenen kunnen zijn om in de browser URL-balk niet de daa
 
 ![](link.png)
 
+## Configuratie van een webserver
+
+Het beschikbaar stellen van een begrippenkader kan in de praktijk het eenvoudigst met behulp van een specifiek softwaretool georganiseerd worden. Een voorbeeld hiervan is [Skosmos](https://skosmos.org). Hiermee kan het begrippenkader als één bestand beheerd worden, terwijl er een nette userinterface beschikbaar is om begrippen afzonderlijke te bekijken, in samenhang.
+
+Voor een ontologie geldt dat deze eigenlijk altijd al als geheel getoond wordt. Met behulp van [Respec](https://respec.org) kan hiermee ook een nette userinterface getoond worden. Deze best-practices wordt voor steeds meer ontologieën toegepast, waaronder alle ontologieën van de W3c.
+
+Hiervoor is slechts een webserver noodzakelijk (zoals een [Apache webserver](https://httpd.apache.org) of nog eenvoudiger: door gebruik te maken van standaard publicatievoorzieningen zoals [Github pages](https://pages.github.com). In beide gevallen is het van belang om de indeling (filestructuur) gelijk te houden aan de opbouw van de URI van de ontologie.
+
+```
+Voorbeeld: stel een ontologie moet beschikbaar komen op http://modellen.geostandaarden.nl/def/nen3610, waarbij één versie beschikbaar is, met de URI http://modellen.geostandaarden.nl/def/nen3610-2011
+
+De mappenstructuur ziet er dan als volgt uit: (vanaf de webroot):
+
+- /def
+  - /images
+    - <de diverse images voor de respec>
+  - /js
+    - <de diverse javascript bestanden voor respec>
+  - nen3610-2011.html
+  - nen3610-2011.ttl
+  - nen3610-2011.rdf
+  - nen3610-2011.json
+  - nen3610.html
+  - nen3610.ttl
+  - nen3610.rdf
+  - nen3610.json
+```
+
+In bovenstaand voorbeeld zijn de bestanden zonder de `-2011` versie aanduiding kopieën van de bestandne met de `-2011` aanduiding: de versieloze bestanden zijn steeds kopieën van de meest actuele versie. Zie ook [Best Practice Recipes for Publishing RDF Vocabularies](http://www.w3.org/2001/sw/BestPractices/VM/http-examples/).
+
 ## Tabel met voorbeelden
 
 Onderstaande tabel geeft een uitwerking van de verschillende URI's en URL's. Daarbij is de volgende casus genomen:
