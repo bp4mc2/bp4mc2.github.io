@@ -1,0 +1,180 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
+
+@prefix mimbegrip: <http://begrippen.mim-standaard.nl/mimbegrip>.
+
+#
+# De dingen die "zijn"
+#
+mimbegrip:Gegeven a skos:Concept;
+  rdfs:label "Gegeven"@nl;
+  skos:prefLabel "Gegeven"@nl;
+  skos:definition "Een gegeven is een vastgelegde waarneming of bewering over een getypeerde eigenschap van een object."@nl;
+  skos:related mimbegrip:Object;
+  skos:related mimbegrip:Eigenschap;
+.
+
+mimbegrip:Object a skos:Concept;
+  rdfs:label "Object"@nl;
+  skos:prefLabel "Object"@nl;
+  skos:definition "Een object is een onderscheidbaar iets in het beschouwde domein"@nl;
+.
+
+mimbegrip:Eigenschap a skos:Concept;
+  rdfs:label "Eigenschap"@nl;
+  skos:prefLabel "Eigenschap"@nl;
+  skos:definition "Een eigenschap is een verschijnsel dat typisch is voor bepaalde objecten"@nl;
+.
+
+mimbegrip:IdentificerendeEigenschap a skos:Concept;
+  rdfs:label "Identificerende eigenschap"@nl;
+  skos:prefLabel "Identificerende eigenschap"@nl;
+  skos:definition "Een identificerende eigenschap is een eigenschap waarmee de identiteit van een object kan worden vastgesteld"@nl;
+  skos:scopeNote "Het gaat bij de identificatie of dit object er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende eigenschappen gezamenlijk nodig zijn."@nl;
+  skosthes:broaderGeneric mimbegrip:Eigenschap;
+.
+
+mimbegrip:ToegekendeIdentificerendeEigenschap a skos:Concept;
+  rdfs:label "Toegekende identificerende eigenschap"@nl;
+  skos:prefLabel "Toegekende identificerende eigenschap"@nl;
+  skos:definition "Een toegekende identificerende eigenschap is een identificerende eigenschap die met dat doel is toegekend aan een object"@nl;
+  skos:scopeNote "Een toegekende identificerende eigenschap is feitelijk geen eigenschap van een object, maar wordt juist toegekend aan een object. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen."@nl;
+  skosthes:broaderGeneric mimbegrip:IdentificerendeEigenschap;
+.
+
+mimbegrip:Gegevensobject a skos:Concept;
+  rdfs:label "Gegevensobject"@nl;
+  skos:prefLabel "Gegevensobject"@nl;
+  skos:definition "Een gegevensobject is een geheel van gegevens"@nl;
+  skosthes:narrowerPartitive mimbegrip:Gegeven;
+.
+
+mimbegrip:Rol a skos:Concept;
+  rdfs:label "Rol"@nl;
+  skos:prefLabel "Rol"@nl;
+  skos:definition "Een rol is een eigenschap van een object in een relatie met een ander object"@nl;
+  skosthes:broaderGeneric mimbegrip:Eigenschap;
+  skos:related mimbegrip:Object;
+.
+
+mimbegrip:Kenmerk a skos:Concept;
+  rdfs:label "Kenmerk"@nl;
+  skos:prefLabel "Kenmerk"@nl;
+  skos:definition "Een kenmerk is een eigenschap van een object met een waarde"@nl;
+  skosthes:broaderGeneric mimbegrip:Eigenschap;
+  skos:related mimbegrip:Waarde;
+.
+
+mimbegrip:Waarde a skos:Concept;
+  rdfs:label "Waarde"@nl;
+  skos:prefLabel "Waarde"@nl;
+  skos:definition "Een waarde is een letterlijke aanduiding van de waarde zelf"@nl;
+.
+
+mimbegrip:Classificatie a skos:Concept;
+  rdfs:label "Classificatie"@nl;
+  skos:prefLabel "Classificatie"@nl;
+  skos:definition "Een classificatie is een eigenschap van een object met een toekenning aan een klasse";
+  skosthes:broaderGeneric mimbegrip:Eigenschap;
+  skos:related mimbegrip:Klasse;
+.
+
+mimbegrip:Klasse a skos:Concept;
+  rdfs:label "Klasse"@nl;
+  skos:prefLabel "Klasse"@nl;
+  skos:definition "Een klasse is een aanduiding van een groep objecten die iets gemeen hebben"@nl;
+.
+
+#
+# De typering van de dingen die zijn
+#
+
+mimbegrip:Gegevenstype a skos:Concept;
+  rdfs:label "Gegevenstype"@nl;
+  skos:prefLabel "Gegevenstype"@nl;
+  skos:definition "Een gegevenstype is een typering van gelijksoortige gegevens"@nl;
+  skos:related mimbegrip:Gegeven;
+.
+
+mimbegrip:Objecttype a skos:Concept;
+  rdfs:label "Objecttype"@nl;
+  skos:prefLabel "Objecttype"@nl;
+  skos:definition "Een objecttype is een typering van gelijksoortige objecten"@nl;
+  skos:related mimbegrip:Object;
+.
+
+mimbegrip:Attribuutsoort a skos:Concept;
+  rdfs:label "Attribuutsoort"@nl;
+  skos:prefLabel "Attribuutsoort"@nl;
+  skos:definition "Een attribuutsoort is een typering van een kenmerk van een object, behorende tot een objecttype"@nl;
+  skos:related mimbegrip:Kenmerk;
+  skos:related mimbegrip:Objecttype;
+.
+
+mimbegrip:Relatiesoortrol a skos:Concept;
+  rdfs:label "Relatiesoortrol"@nl;
+  skos:prefLabel "Relatiesoortrol"@nl;
+  skos:definition "Een rolsoort is een typering van gelijksoortige rollen"@nl;
+  skos:related mimbegrip:Rol;
+.
+
+mimbegrip:Gegevensobjecttype a skos:Concept;
+  rdfs:label "Gegevensobjecttype"@nl;
+  skos:prefLabel "Gegevensobjecttype"@nl;
+  skos:definition "Een gegevensobjecttype is een typering van gelijksoortige gegevensobjecten"@nl;
+  skos:related mimbegrip:Gegevensobject
+.
+
+mimbegrip:Hoofdonderwerp a skos:Concept;
+  rdfs:label "Hoofdonderwerp"@nl;
+  skos:prefLabel "Hoofdonderwerp"@nl;
+  skos:definition "Een hoofdonderwerp is een objecttype waarvan de identificerende eigenschappen de sleutel vormen van het gegevensobjecttype"@nl;
+  skosthes:broaderGeneric mimbegrip:Objecttype;
+  skos:related mimbegrip:IdentificerendeEigenschap;
+  skos:related mimbegrip:Gegevensobjecttype;
+.
+
+# We kennen ook nog specialisaties van Gegevensobjecttypen
+mimbegrip:Gegevenstypegroep a skos:Concept;
+  rdfs:label "Gegevenstypegroep"@nl;
+  skos:prefLabel "Gegevenstypegroep"@nl;
+  skos:definition "Een gegevenstypegroep is een gegevensobjecttype zonder hoofdonderwerp"@nl;
+  skosthes:broaderGeneric mimbegrip:Gegevensobjectype;
+.
+mimbegrip:LogischObjecttype a skos:Concept;
+  rdfs:label "Logisch objecttype"@nl;
+  skos:prefLabel "Logisch objecttype"@nl;
+  skos:definition "Een logisch objecttype is een gegevensobjecttype met precies één hoofdonderwerp"@nl;
+.
+mimbegrip:StriktLogischObjecttype a skos:Concept;
+  rdfs:label "Strik logisch objecttype"@nl;
+  skos:prefLabel "Strikt logisch objecttype"@nl;
+  skos:definition "Een strikt logisch objecttype is een logisch objecttype over alleen eigenschappen van het hoofdonderwerp"@nl;
+.
+
+# We kennen ook nog specialisaties van Gegevenstypen
+mimbegrip:DirectGegevenstype a skos:Concept;
+  rdfs:label "Direct gegevenstype"@nl;
+  skos:prefLabel "Direct gegevenstype"@nl;
+  skos:definition "Een direct gegevenstype is een gegevenstype over één eigenschap van een objecttype, vastgelegd bij een gegevensobjectype dat dit objecttype als hoofdonderwerp heeft"@nl;
+  skos:scopeNote "Een voorbeeld is werknemer.geboortedatum. Geboortedatum is een eigenschap van een werknemer (feitelijk een eigenschap van een mens, maar aangezien elke werknemer een mens is, is dit ook een eigenschap van een werknemer)"@nl;
+.
+mimbegrip:IndirectGegevenstype a skos:Concept;
+  rdfs:label "Indirect gegevenstype"@nl;
+  skos:prefLabel "Indirect gegevenstype"@nl;
+  skos:definition "Een indirect gegevenstype is een gegevenstype over één eigenschap van een objecttype, vastgelegd bij een gegevensobjecttype dat dit objecttype niet als hoofdonderwerp heeft"@nl;
+  skos:scopeNote "Een voorbeeld is werknemer.woonplaatsnaam. Woonplaatsnaam is geen eigenschap van een werknemer, maar een eigenschap van een woonplaats. De indirectie is (dus) werknemer > woont in woonplaats, woonplaats.naam"@nl;
+.
+mimbegrip:SamengesteldEnkelvoudigGegevenstype a skos:Concept;
+  rdfs:label "Samengesteld enkelvoudig gegevenstype"@nl;
+  skos:prefLabel "Samengesteld enkelvoudig gegevenstype"@nl;
+  skos:definition "Een samengesteld enkelvoudig gegevenstype is een gegevenstype over één eigenschap van meerdere objecten"@nl;
+  skos:scopeNote "Een voorbeeld is aantal werknemers of totaalbedrag orderregels"@nl;
+.
+mimbegrip:SamengesteldMeervoudigGegevenstype a skos:Concept;
+  rdfs:label "Samengesteld meervoudig gegevenstype"@nl;
+  skos:prefLabel "Samengesteld meervoudig gegevenstype"@nl;
+  skos:definition "Een samengesteld meervoudig gegevenstype is een gegevenstype over meerdere eigenschappen van één of meerdere objecten"@nl;
+  skos:scopeNote "Een voorbeeld is percentage ziekteverzuim (van één persoon), of juist percentage ziekteverzuim van een groep personen"@nl;
+.

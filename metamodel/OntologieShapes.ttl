@@ -1,0 +1,72 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+
+@prefix mimbegrip: <http://begrippen.mim-standaard.nl/mimbegrip>.
+@prefix mimshape: <http://ontologie.mim-standaard.nl/def/mim/>.
+@prefix mim: <http://ontologie.mim-standaard.nl/def/mim#>.
+
+#
+# Concrete zaken
+#
+mim:Gegeven a owl:Class;
+  rdfs:label "Gegeven";
+  dct:subject mimbegrip:Gegeven;
+.
+mimshape:Gegeven a sh:NodeShape;
+  rdfs:label "Gegeven";
+  sh:name "mim:Gegeven";
+  sh:targetClass mim:Gegeven;
+  sh:property mimshape:Gegeven.onderwerp;
+  sh:property mimshape:Gegeven.eigenschap;
+  sh:property mimshape:Gegeven.invulling;
+.
+mimshape:Gegeven.onderwerp a sh:PropertyShape;
+  rdfs:label "onderwerp";
+  sh:name "mim:onderwerp";
+  sh:class mim:ObjectIdentificatie;
+  sh:minCount 1;
+  sh:maxCount 1;
+.
+mimshape:ObjectIdentificatie a sh:PropertyShape;
+  rdfs:label "Objectidentificatie";
+  sh:name "mim:Objectidentificatie";
+.
+
+mimshape:Gegeven.eigenschap a sh:PropertyShape;
+  rdfs:label "eigenschap";
+  sh:name "mim:eigenschap";
+  sh:class mim:Eigenschap;
+  sh:minCount 1;
+  sh:maxCount 1;
+.
+mimshape:Gegeven.invulling a sh:PropertyShape;
+  rdfs:label "invulling";
+  sh:name "mim:invulling";
+  sh:class mim:Invulling;
+  sh:minCount 1;
+  sh:maxCount 1;
+.
+
+mim:Gegevensobject a owl:Class;
+  rdfs:label "Gegevensobject";
+  dct:subject mimbegrip:Gegevensobject;
+.
+mimshape:Gegevensobject a sh:NodeShape;
+  rdfs:label "Gegevensobject";
+  sh:name "mim:Gegevensobject";
+  sh:targetClass mim:Gegevensobject;
+  sh:property mimshape:Gegevensobject.bestaatUit;
+.
+mimshape:Gegevensobject.bestaatUit a sh:PropertyShape;
+  rdfs:label "bestaat uit";
+  sh:name "mim:bestaatUit";
+  sh:nodeKind sh:BlankNode;
+  sh:minCount 1;
+  sh:class mim:Gegeven;
+.
+
+#
+# Typering
+#
