@@ -2,6 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 @prefix mimbegrip: <http://begrippen.mim-standaard.nl/mimbegrip>.
 @prefix mimshape: <http://ontologie.mim-standaard.nl/def/mim/>.
@@ -70,6 +71,16 @@ mimshape:Gegevensobject.bestaatUit a sh:PropertyShape;
 #
 # Typering
 #
+
+# Generieke elementen
+mimshape:naam a sh:PropertyShape;
+  rdfs:label "naam"@nl;
+  sh:name "mim:naam";
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:datatype xsd:string;
+.
+
 mim:Objecttype a owl:Class;
   rdfs:label "Objecttype"@nl;
   dct:subject mimbegrip:Objecttype;
@@ -78,6 +89,7 @@ mimshape:Objecttype a sh:NodeShape;
   rdfs:label "Objecttype";
   sh:name "mim:Objecttype";
   sh:targetClass mim:Objecttype;
+  sh:property mimshape:naam;
 .
 
 mim:Attribuutsoort a owl:Class;
@@ -88,6 +100,7 @@ mimshape:Attribuutsoort a sh:NodeShape;
   rdfs:label "Attribuutsoort"@nl;
   sh:name "mim:Attribuutsoort";
   sh:targetClass mim:Attribuutsoort;
+  sh:property mimshape:naam;
   sh:property mimshape:Attribuutsoort.eigenschapVan;
   sh:property mimshape:Attribuutsoort.eigenschap;
 .
@@ -103,6 +116,7 @@ mimshape:Attribuutsoort.eigenschap a sh:PropertyShape;
   sh:name "mim:eigenschap";
   sh:minCount 1;
   sh:maxCount 1;
+  sh:class mim:Eigenschap;
 .
 
 mim:Relatiesoort a owl:Class;
@@ -113,6 +127,7 @@ mimshape:Relatiesoort a sh:NodeShape;
   rdfs:label "Relatiesoort"@nl;
   sh:name "mim:Relatiesoort";
   sh:targetClass mim:Relatiesoort;
+  sh:property mimshape:naam;
   sh:property mimshape:Relatiesoort.relateert;
   sh:property mimshape:Relatiesoort.aan;
 .
@@ -139,6 +154,7 @@ mimshape:Relatiesoortrol a sh:NodeShape;
   rdfs:label "Relatiesoortrol"@nl;
   sh:name "mim:Relatiesoortrol";
   sh:targetClass mim:Relatiesoortrol;
+  sh:property mimshape:naam;
   sh:property mimshape:Relatiesoortrol.eigenschap;
   sh:property mimshape:Relatiesoortrol.inRelatieVan;
   sh:property mimshape:Relatiesoortrol.eigenschapVan;
@@ -149,6 +165,7 @@ mimshape:Relatiesoortrol.eigenschap a sh:PropertyShape;
   sh:name "mim:eigenschap";
   sh:minCount 1;
   sh:maxCount 1;
+  sh:class mim:Eigenschap
 .
 mimshape:Relatiesoortrol.inRelatieVan a sh:PropertyShape;
   rdfs:label "in relatie van"@nl;

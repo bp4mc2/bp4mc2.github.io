@@ -123,6 +123,33 @@ De begrippen die we hiermee gedefinieerd hebben, zijn behoorlijk abstract. Aange
 
 ![](objecttypemodel.svg)
 
+In het voorbeeld willen we de typering vastleggen uit het concrete voorbeeld hierboven over Jan.
+
+- We beschrijven het objecttype met de naam "Persoon". Het object met de voornaam Jan typeren we als het objecttype «Persoon».
+- Dit objecttype kent dus in ieder geval ook de attribuutsoort «voornaam», die de overeenkomstige eigenschap «voornaam» betreft.
+- Hier koppelen we de attribuutsoort met de naam "BSN" aan. Deze attribuutsoort betreft de toegekende identificerende eigenschap «BSN».
+- Ook koppelen we hier de attribuutsoort met de naam "geboortedatum". Deze attribuutsoort betreft het kenmerk «geboortedatum».
+- Tenslotte koppelen we hier de classificerende attribuutsoort met de naam "geslacht" aan. Deze attribuutsoort betreft de classificatie «geslacht».
+- Als relatiesoort onderkennen we de relatiesoort met de naam "werkt bij". Deze relateert het objecttype «Persoon» aan het objecttype «Bedrijf».
+- Als relatiesoortrol onderkennen we eentje met de naam "werkgever". Dit is een eigenschap van (objecten getypeerd als) het objecttype «Persoon» en wordt ingevuld door (objecten getypeerd als) het objecttype «Bedrijf».
+- Andersom is er een relatiesoorrol te onderkennen met de naam "werknemer". Dit is een eigenschap van (objecten getypeerd als) het objecttype «Bedrijf» en wordt ingevuld door (objecten getypeerd als) het objecttype «Persoon».
+
+Je kunt bovenstaande ook visueel afbeelden als:
+
+![](werkgever-werknemer.svg)
+
+## Classificatie, klassen en (object)subtypen
+
+Wellicht is opgevallen dat «werkgever» een eigenschap is van een persoon (en wordt ingevuld door een bedrijf), waar je mogelijk zou verwachten dat een werkgever juist een *bedrijf* is. Dat laatste is ook zo (een werkgever is een rol die een bedrijf invult), maar dan hebben we het eigenlijk (dus) over iets anders. We hebben het dan niet over een rol of over een eigenschap, maar over een rolvervulling. Zo'n rolvervulling is een typering van objecten die een bepaalde rol invullen. Eigenlijk is dit ook al zichtbaar in de visualisatie hierboven: "werkgever" staat hier twee keer in het diagram: één keer als eigenschap bij het objecttype «Persoon» en één keer als rolinvulling bij het objecttype «Bedrijf». Dit kan ook expliciet worden getoond:
+
+![](werkgever-werknemer-rolinvulling.svg)
+
+Iets vergelijkbaars speelt zich af bij geslacht. De invulling van deze classificatie kan met twee klassen: «Man» en «Vrouw». En net zoals je kunt stellen dat een werknemer een persoon is, kun je stellen dat een man een persoon is, en ook een vrouw een persoon is. Het verschil hier is dat er geen sprake is van een relatie(soort), maar van een classificatie: de classificatie naar geslacht. Je zou dit ook als volgt kunnen visualiseren:
+
+![](persoon-classificatie)
+
+Man en vrouw zijn hier personen, geclassificeerd naar (de classificatie, de eigenschap) geslacht.
+
 # Typering van gegevens
 
 Net zoals het mogelijk is om objecten en eigenschappen te typering, kunnen we ook gegevens typeren.
