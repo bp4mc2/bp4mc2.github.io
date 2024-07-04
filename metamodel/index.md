@@ -144,9 +144,9 @@ Wellicht is opgevallen dat «werkgever» een eigenschap is van een persoon (en w
 
 ![](werkgever-werknemer-rolinvulling.svg)
 
-Iets vergelijkbaars speelt zich af bij geslacht. De invulling van deze classificatie kan met twee klassen: «Man» en «Vrouw». En net zoals je kunt stellen dat een werknemer een persoon is, kun je stellen dat een man een persoon is, en ook een vrouw een persoon is. Het verschil hier is dat er geen sprake is van een relatie(soort), maar van een classificatie: de classificatie naar geslacht. Je zou dit ook als volgt kunnen visualiseren:
+Iets vergelijkbaars speelt zich af bij geslacht. De invulling van deze classificatie kan met twee klassen: «Man» en «Vrouw». En net zoals je kunt stellen dat een werknemer een persoon is, kun je stellen dat een man een persoon is, en ook een vrouw een persoon is. Het verschil hier is dat er geen sprake is van een relatie(soort), maar van een classificatie: de classificatie naar geslacht. En in dit geval zie je dat je objecttypen kunt vormen uit klassen: de objecttypen «Man» en «Vrouw». Je zou dit ook als volgt kunnen visualiseren:
 
-![](persoon-classificatie)
+![](persoon-classificatie.svg)
 
 Man en vrouw zijn hier personen, geclassificeerd naar (de classificatie, de eigenschap) geslacht.
 
@@ -154,10 +154,33 @@ Man en vrouw zijn hier personen, geclassificeerd naar (de classificatie, de eige
 
 Net zoals het mogelijk is om objecten en eigenschappen te typering, kunnen we ook gegevens typeren.
 
-> Een GEGEVENSTYPE is een typering van een GEGEVEN.
+> Een GEGEVENSTYPE is een typering van gelijksoortige GEGEVENs.
 
 En
 
-> Een GEGEVENSOBJECTTYPE is een typering van een GEGEVENSOBJECT.
+> Een GEGEVENSOBJECTTYPE is een typering van gelijksoortige GEGEVENSOBJECTen, als groepering van GEGEVENSTYPEn.
 
-Om een gegeven te kunnen typeren, zullen we de onderdelen van een gegeven moeten typeren: het onderwerp, de eigenschap en de invulling.
+![](gegeven-gegevenstype.svg)
+
+Gegevenstypen typeren gegevens die gaan over objecten. En objecttypen typeren objecten. Om te beschrijven waarover gegevens gaan, kunnen we gegevenstypen relateren aan objecttypen. Onderstaand diagram beschrijft hoe dat gaat:
+
+![](gegevensobjecttypemodel.svg)
+
+## Speciaal soort gegevensobjecttypen
+
+Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorfie*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één object van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in drie soorten gegevensobjecttypen:
+
+- Een **gegevenstypegroep** is een gegevensobjecttype zonder hoofdonderwerp;
+- Een **logisch objecttype** is een gegevensobjecttype met precies één hoofdonderwerp;
+- Een **strikt logisch objecttype** is een logisch objecttype over alleen eigenschappen van het hoofdonderwerp.
+
+Dit onderscheid verklaart ook de kardinaliteit van de eigenschap hoofdonderwerp: bij een gegevenstypegroep is er geen hoofdonderwerp (dus "0"), bij de andere soorten is er juist altijd precies één hoofdonderwerp (dus "1").
+
+## Speciaal soort gegevenstypen
+
+Een gegevenstype kan sterk lijken op een eigenschap (kenmerk, rol, classificatie). In dat geval gaan de gegevens van dit gegevenstype over precies één eigenschap van precies één object. Maar het is ook denkbaar om gegevens vast te leggen die een samenstelling is van meerdere eigenschappen of van meerdere objecten. Hiertoe maken we onderscheid in vier soorten gegevenstypen:
+
+- Een **direct gegevenstype** is een gegevenstype over één eigenschap van een objecttype, vastgelegd bij een gegevensobjectype dat dit objecttype als hoofdonderwerp heeft;
+- Een **indirect gegevenstype** is een gegevenstype over één eigenschap van een objecttype, vastgelegd bij een gegevensobjecttype dat dit objecttype niet als hoofdonderwerp heeft;
+- Een **samengesteld enkelvoudig gegevenstype** is een gegevenstype over één eigenschap van meerdere objecten;
+- Een **samengesteld meervoudig gegevenstype** is een gegevenstype over meerdere eigenschappen van één of meerdere objecten.

@@ -168,6 +168,57 @@ mim:naam (string) [1,1]
             </y:GenericNode>
          </data>
       </node>
+      <node id="http://ontologie.mim-standaard.nl/def/mim/Gegevenstype">
+         <data key="d3">http://ontologie.mim-standaard.nl/def/mim/Gegevenstype</data>
+         <data key="d6">
+            <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+               <y:Geometry height="90.0" width="80.0" x="637.0" y="277.0"/>
+               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+               <y:BorderStyle color="#000000" type="line" width="1.0"/>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3"
+                            configuration="com.yworks.entityRelationship.label.name"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            height="18.1328125"
+                            horizontalTextPosition="center"
+                            iconTextGap="4"
+                            modelName="internal"
+                            modelPosition="t"
+                            textColor="#000000"
+                            verticalTextPosition="bottom"
+                            visible="true"
+                            width="44.25390625"
+                            x="17.873046875"
+                            y="4.0">mim:Gegevenstype</y:NodeLabel>
+               <y:NodeLabel alignment="left" autoSizePolicy="content"
+                            configuration="com.yworks.entityRelationship.label.attributes"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasBackgroundColor="false"
+                            hasLineColor="false"
+                            height="46.3984375"
+                            horizontalTextPosition="center"
+                            iconTextGap="4"
+                            modelName="custom"
+                            textColor="#000000"
+                            verticalTextPosition="top"
+                            visible="true"
+                            width="65.541015625"
+                            x="2.0"
+                            y="30.1328125">mim:gegevensOver [0,n]
+<y:LabelModel>
+                     <y:ErdAttributesNodeLabelModel/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:ErdAttributesNodeLabelModelParameter/>
+                  </y:ModelParameter>
+               </y:NodeLabel>
+            </y:GenericNode>
+         </data>
+      </node>
       <node id="http://ontologie.mim-standaard.nl/def/mim/Gegevensobject">
          <data key="d3">http://ontologie.mim-standaard.nl/def/mim/Gegevensobject</data>
          <data key="d6">
@@ -261,6 +312,57 @@ mim:naam (string) [1,1]
                             x="2.0"
                             y="30.1328125">mim:naam (string) [1,1]
 <y:LabelModel>
+                     <y:ErdAttributesNodeLabelModel/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:ErdAttributesNodeLabelModelParameter/>
+                  </y:ModelParameter>
+               </y:NodeLabel>
+            </y:GenericNode>
+         </data>
+      </node>
+      <node id="http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype">
+         <data key="d3">http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype</data>
+         <data key="d6">
+            <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
+               <y:Geometry height="90.0" width="80.0" x="637.0" y="277.0"/>
+               <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+               <y:BorderStyle color="#000000" type="line" width="1.0"/>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3"
+                            configuration="com.yworks.entityRelationship.label.name"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            height="18.1328125"
+                            horizontalTextPosition="center"
+                            iconTextGap="4"
+                            modelName="internal"
+                            modelPosition="t"
+                            textColor="#000000"
+                            verticalTextPosition="bottom"
+                            visible="true"
+                            width="44.25390625"
+                            x="17.873046875"
+                            y="4.0">mim:Gegevensobjecttype</y:NodeLabel>
+               <y:NodeLabel alignment="left" autoSizePolicy="content"
+                            configuration="com.yworks.entityRelationship.label.attributes"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasBackgroundColor="false"
+                            hasLineColor="false"
+                            height="46.3984375"
+                            horizontalTextPosition="center"
+                            iconTextGap="4"
+                            modelName="custom"
+                            textColor="#000000"
+                            verticalTextPosition="top"
+                            visible="true"
+                            width="65.541015625"
+                            x="2.0"
+                            y="30.1328125">
+                  <y:LabelModel>
                      <y:ErdAttributesNodeLabelModel/>
                   </y:LabelModel>
                   <y:ModelParameter>
@@ -455,6 +557,82 @@ mim:naam (string) [1,1]
                             ratio="0.5"
                             textColor="#000000"
                             visible="true">mim:relateert [1,1]<y:LabelModel>
+                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
+                                                     ratio="0.5"
+                                                     segment="0"/>
+                  </y:ModelParameter>
+                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
+                                                  angleRotationOnRightSide="co"
+                                                  distance="-1.0"
+                                                  frozen="true"
+                                                  placement="anywhere"
+                                                  side="anywhere"
+                                                  sideReference="relative_to_edge_flow"/>
+               </y:EdgeLabel>
+               <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+         </data>
+      </edge>
+      <edge source="http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype"
+            target="http://ontologie.mim-standaard.nl/def/mim/Objecttype">
+         <data key="d7">urn:md5:http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttypehttp://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype.heeftHoofdonderwerphttp://ontologie.mim-standaard.nl/def/mim/Objecttype</data>
+         <data key="d8">http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype.heeftHoofdonderwerp</data>
+         <data key="d10">
+            <y:PolyLineEdge>
+               <y:LineStyle color="#000000" type="line" width="1.0"/>
+               <y:Arrows source="none" target="standard"/>
+               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
+                            distance="2.0"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            modelName="custom"
+                            preferredPlacement="anywhere"
+                            ratio="0.5"
+                            textColor="#000000"
+                            visible="true">mim:heeftHoofdonderwerp [0,1]<y:LabelModel>
+                     <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+                  </y:LabelModel>
+                  <y:ModelParameter>
+                     <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="center"
+                                                     ratio="0.5"
+                                                     segment="0"/>
+                  </y:ModelParameter>
+                  <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute"
+                                                  angleRotationOnRightSide="co"
+                                                  distance="-1.0"
+                                                  frozen="true"
+                                                  placement="anywhere"
+                                                  side="anywhere"
+                                                  sideReference="relative_to_edge_flow"/>
+               </y:EdgeLabel>
+               <y:BendStyle smoothed="false"/>
+            </y:PolyLineEdge>
+         </data>
+      </edge>
+      <edge source="http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype"
+            target="http://ontologie.mim-standaard.nl/def/mim/Gegevenstype">
+         <data key="d7">urn:md5:http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttypehttp://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype.groeperingVanhttp://ontologie.mim-standaard.nl/def/mim/Gegevenstype</data>
+         <data key="d8">http://ontologie.mim-standaard.nl/def/mim/Gegevensobjecttype.groeperingVan</data>
+         <data key="d10">
+            <y:PolyLineEdge>
+               <y:LineStyle color="#000000" type="line" width="1.0"/>
+               <y:Arrows source="none" target="standard"/>
+               <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" configuration="AutoFlippingLabel"
+                            distance="2.0"
+                            fontFamily="Dialog"
+                            fontSize="12"
+                            fontStyle="plain"
+                            hasLineColor="false"
+                            modelName="custom"
+                            preferredPlacement="anywhere"
+                            ratio="0.5"
+                            textColor="#000000"
+                            visible="true">mim:groeperingVan [0,n]<y:LabelModel>
                      <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
                   </y:LabelModel>
                   <y:ModelParameter>
