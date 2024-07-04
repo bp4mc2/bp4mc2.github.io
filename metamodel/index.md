@@ -146,7 +146,7 @@ Wellicht is opgevallen dat «werkgever» een eigenschap is van een persoon (en w
 
 Iets vergelijkbaars speelt zich af bij geslacht. De invulling van deze classificatie kan met twee klassen: «Man» en «Vrouw». En net zoals je kunt stellen dat een werknemer een persoon is, kun je stellen dat een man een persoon is, en ook een vrouw een persoon is. Het verschil hier is dat er geen sprake is van een relatie(soort), maar van een classificatie: de classificatie naar geslacht. En in dit geval zie je dat je objecttypen kunt vormen uit klassen: de objecttypen «Man» en «Vrouw». Je zou dit ook als volgt kunnen visualiseren:
 
-![](persoon-classificatie.svg)
+![](persoon-man-vrouw.svg)
 
 Man en vrouw zijn hier personen, geclassificeerd naar (de classificatie, de eigenschap) geslacht.
 
