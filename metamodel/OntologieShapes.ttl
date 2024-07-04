@@ -70,3 +70,104 @@ mimshape:Gegevensobject.bestaatUit a sh:PropertyShape;
 #
 # Typering
 #
+mim:Objecttype a owl:Class;
+  rdfs:label "Objecttype"@nl;
+  dct:subject mimbegrip:Objecttype;
+.
+mimshape:Objecttype a sh:NodeShape;
+  rdfs:label "Objecttype";
+  sh:name "mim:Objecttype";
+  sh:targetClass mim:Objecttype;
+.
+
+mim:Attribuutsoort a owl:Class;
+  rdfs:label "Attribuutsoort"@nl;
+  dct:subject mimbegrip:Attribuutsoort, mimbegrip:ClassificerendAttribuutsoort;
+.
+mimshape:Attribuutsoort a sh:NodeShape;
+  rdfs:label "Attribuutsoort"@nl;
+  sh:name "mim:Attribuutsoort";
+  sh:targetClass mim:Attribuutsoort;
+  sh:property mimshape:Attribuutsoort.eigenschapVan;
+  sh:property mimshape:Attribuutsoort.eigenschap;
+.
+mimshape:Attribuutsoort.eigenschapVan a sh:PropertyShape;
+  rdfs:label "eigenschap van"@nl;
+  sh:name "mim:eigenschapVan";
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:class mim:Objecttype;
+.
+mimshape:Attribuutsoort.eigenschap a sh:PropertyShape;
+  rdfs:label "eigenschap"@nl;
+  sh:name "mim:eigenschap";
+  sh:minCount 1;
+  sh:maxCount 1;
+.
+
+mim:Relatiesoort a owl:Class;
+  rdfs:label "Relatiesoort"@nl;
+  dct:subject mimbegrip:Relatiesoort;
+.
+mimshape:Relatiesoort a sh:NodeShape;
+  rdfs:label "Relatiesoort"@nl;
+  sh:name "mim:Relatiesoort";
+  sh:targetClass mim:Relatiesoort;
+  sh:property mimshape:Relatiesoort.relateert;
+  sh:property mimshape:Relatiesoort.aan;
+.
+mimshape:Relatiesoort.relateert a sh:PropertyShape;
+  rdfs:label "relateert"@nl;
+  sh:name "mim:relateert";
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:class mim:Objecttype;
+.
+mimshape:Relatiesoort.aan a sh:PropertyShape;
+  rdfs:label "aan"@nl;
+  sh:name "mim:aan";
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:class mim:Objecttype;
+.
+
+mim:Relatiesoortrol a owl:Class;
+  rdfs:label "Relatiesoortrol"@nl;
+  dct:subject mimbegrip:Relatiesoortrol;
+.
+mimshape:Relatiesoortrol a sh:NodeShape;
+  rdfs:label "Relatiesoortrol"@nl;
+  sh:name "mim:Relatiesoortrol";
+  sh:targetClass mim:Relatiesoortrol;
+  sh:property mimshape:Relatiesoortrol.eigenschap;
+  sh:property mimshape:Relatiesoortrol.inRelatieVan;
+  sh:property mimshape:Relatiesoortrol.eigenschapVan;
+  sh:property mimshape:Relatiesoortrol.ingevuldDoor;
+.
+mimshape:Relatiesoortrol.eigenschap a sh:PropertyShape;
+  rdfs:label "eigenschap"@nl;
+  sh:name "mim:eigenschap";
+  sh:minCount 1;
+  sh:maxCount 1;
+.
+mimshape:Relatiesoortrol.inRelatieVan a sh:PropertyShape;
+  rdfs:label "in relatie van"@nl;
+  sh:name "mim:inRelatieVan";
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:class mim:Relatiesoort;
+.
+mimshape:Relatiesoortrol.eigenschapVan a sh:PropertyShape;
+  rdfs:label "eigenschap van"@nl;
+  sh:name "mim:eigenschapVan";
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:class mim:Objecttype;
+.
+mimshape:Relatiesoortrol.ingevuldDoor a sh:PropertyShape;
+  rdfs:label "ingevuld door"@nl;
+  sh:name "mim:ingevuldDoor";
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:class mim:Objecttype;
+.

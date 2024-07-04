@@ -105,7 +105,7 @@ Waar een eigenschap (en daarmee ook een kenmerk) los kan staan van een object, g
 
 Gelijk aan een attribuutsoort met een waarde, zal een classificerende attribuutsoort als invulling een klasse hebben.
 
-~[](attribuutsoort.svg)
+![](attribuutsoort.svg)
 
 ## Relatiesoorten en rollen
 
@@ -114,6 +114,14 @@ Gelijk aan een attribuutsoort met een waarde, zal een classificerende attribuuts
 We kunnen relaties tussen objecten typeren. Echter, als het gaat om gegevens, dan hebben we het over eigenschappen van objecten. We zagen daarin dat een eigenschap van een object een rol kan zijn. Dergelijke rollen kun je ook typering:
 
 > Een RELATIESOORTROL is een typering van een ROL van een OBJECT in een relatie, getypeerd door een RELATIESOORT
+
+![](relatiesoort.svg)
+
+## Wat voorbeelden
+
+De begrippen die we hiermee gedefinieerd hebben, zijn behoorlijk abstract. Aangezien we het hier hebben over typering, was dat ook wel te verwachten. Daarom handig om een aantal voorbeelden te beschrijven: wat kunnen we nu met deze typering? We doen dit aan de hand van het volgende sjabloon:
+
+![](objecttypemodel.svg)
 
 # Typering van gegevens
 

@@ -112,11 +112,27 @@ mimbegrip:Attribuutsoort a skos:Concept;
   skos:related mimbegrip:Objecttype;
 .
 
+mimbegrip:ClassificerendAttribuutsoort a skos:Concept;
+  rdfs:label "Classificerend attribuutsoort"@nl;
+  skos:prefLabel "Classificerend attribuutsoort"@nl;
+  skos:definition "Een classificerend attribuutsoort is een typering van een classificatie van een object, behorende tot een objecttype"@nl;
+  skos:related mimbegrip:Classificatie;
+  skos:related mimbegrip:Objecttype;
+.
+
+mimbegrip:Relatiesoort a skos:Concept;
+  rdfs:label "Relatiesoort"@nl;
+  skos:prefLabel "Relatiesoort"@nl;
+  skos:definition "Een relatiesoort is een typering van een relatie tussen twee objecten"@nl;
+.
+
 mimbegrip:Relatiesoortrol a skos:Concept;
   rdfs:label "Relatiesoortrol"@nl;
   skos:prefLabel "Relatiesoortrol"@nl;
-  skos:definition "Een rolsoort is een typering van gelijksoortige rollen"@nl;
+  skos:definition "Een relatiesoortrol is een typering van een rol van een object in een relatie, getypeerd door een relatiesoort en behorende tot een objecttype"@nl;
   skos:related mimbegrip:Rol;
+  skos:related mimbegrip:Relatiesoort;
+  skos:related mimbegrip:Objecttype;
 .
 
 mimbegrip:Gegevensobjecttype a skos:Concept;
