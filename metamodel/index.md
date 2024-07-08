@@ -23,12 +23,13 @@ We gebruiken hier steeds bewust het begrip «verwerken». We hebben het dan ook 
 # Een voorbeeld - het domein
 Voor dit document gebruiken we een voorbeeld, een casus op basis waarvan we de overige modellen zullen invullen.
 
-> Jan is geboren op 10 februari 1970 in Zwolle.
-> Hij is de zoon van Paul en Marie Veenstra.
-> Jan heeft inmiddels een lengte van 2.05 bereikt.
-> En hoewel Jan oorspronkelijk gezegend was met een flinke bos haar, is hij inmiddels vrijwel volledig kaal.
-> Hij werkt sinds 1990 als bakker bij Bakkerij Broodjes.
-> Jan woont inmiddels in Meppel. Hij is in die gemeente ingeschreven met BSN nummer 12345678.
+> - Jan is geboren op 10 februari 1970 in Zwolle.
+> - Hij is de zoon van Paul en Marie Veenstra.
+> - Jan heeft inmiddels een lengte van 2.05 bereikt.
+> - En hoewel Jan oorspronkelijk gezegend was met een flinke bos haar, is hij inmiddels vrijwel volledig kaal.
+> - Hij werkt sinds 1990 als bakker bij Bakkerij Broodjes.
+> - Jan woont inmiddels in Meppel. Hij is in die gemeente ingeschreven met BSN nummer 12345678.
+> - Jan is getrouwd met Marie op 6 september 2003.
 
 **TODO: Voorbeeld nog verder uitwerken. Liefst ook met een stukje wet- en regelgeving, bijvoorbeeld arbeidsrecht**
 
@@ -113,11 +114,36 @@ We kunnen het zo over de volgende gegevens hebben:
 - Dit object heeft als geboortedatum 25 mei 1970 (de invulling voor de eigenschap «geboortedatum» van dit object is de waarde 25 mei 1970);
 - Jan is een man (de invulling voor de classificatie-eigenschap «geslacht» is de klasse «mannelijk»);
 - Jan is de werknemer van een object met de naam 'Bakkerij Broodjes' (de invulling voor de rol werkgever van Jan is Bakkerij Broodjes).
+- Jan is getrouwd met Marie (de invulling van de rol partner van Jan is Marie).
 
 Deze vijf uitspraken zijn vijf gegevens die gegroepeerd kunnen worden tot één gegevensobject met als hoofdontwerp het object met het BSN 12345678.
 
+## Rol, rolinvulling en relatie-object
+
+In onze kijk op het domein hebben we het slechts over objecten en eigenschappen van objecten gehad. En hoewel we relaties hebben besproken, komt relatie niet terug in ons voorbeeld. Alleen de rol komt terug.
+
+Dit heeft alles te maken met hoe we tegen het domein aankijken: blijkbaar is een relatie niet "bijzonder" genoeg om deze daadwerkelijk te identificeren. Dat was in ons voorbeeld het geval. Maar dat hoeft niet: dit hangt sterk af van hoe we tegen het domein aan willen kijken.
+
+Als we de relatie *zelf* willen onderkennen, dan kunnen we de relatie simpelweg als een object beschouwen.
+
+Zo kunnen we het bijvoorbeeld over de huwelijksrelatie tussen Jan en Marie hebben. Zo'n huwelijksrelatie betreft dan een (relatie)object. Het relatieobject heeft dan zelf eigenschappen, zoals de huwelijksdatum, de gehuwden en getuigen.
+
+Relaties hebben vaak te maken met gebeurtenissen waaruit de relatie ontstaan. In bovenstaand voorbeeld stond de gebeurtenis centraal. Maar ook het resultaat van de gebeurtenis kan gezien worden als object. In zo'n geval zou huwelijk mogelijk een eigenschap hebben als huwelijkse voorwaarden.
+
+Bij het betalen van een rekening is zo sprake van de gebeurtenis van betalen, het resultaat van de betaling en de rollen betaler en ontvanger. Het is aan de modelleur om aan te geven welke onderdelen hij hiervan als objecten en eigenschappen wenst te zien in het domein.
+
+En ook de rol(invulling) zelf kunnen we zien als een object. Zo is een eigenschap van een betaling de rol «betaler». Als we naar de invulling van die rol kijken, dan wordt die ingevuld door een object dat we de «Betaler» kunnen noemen. Met andere woorden:
+
+> Als Bakkerij Broodjes het loon van Jan overmaakt (4700 euro), dan:
+> - Is er sprake van een betaling;
+> - Een eigenschap van die betaling is het «bedrag»;
+> - De invulling van deze eigenschap voor deze betaling is 4700 euro;
+> - Een eigenschap van die betaling is de «betaler»;
+> - De invulling van deze eigenschap voor deze betaling is Bakkerij Broodjes
+> - Bakkerij Broodjes is in deze betaling de betaler.
+
 # Typering van objecten
-Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. En eigenlijk zijn we daar ook al een beetje mee begonnen. Want eigenschappen en klassen zijn eigen ook een vorm van typering (zoals we hieronder zullen zien).
+Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. En eigenlijk zijn we daar ook al een beetje mee begonnen. Want eigenschappen en klassen zijn eigenlijk ook al een vorm van typering (zoals we hieronder zullen zien).
 
 ## Objecttype en attribuutsoorten
 
