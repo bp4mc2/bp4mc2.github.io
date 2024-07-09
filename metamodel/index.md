@@ -244,6 +244,8 @@ Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomor
 - Een **logisch objecttype** is een gegevensobjecttype met precies één hoofdonderwerp;
 - Een **strikt logisch objecttype** is een logisch objecttype over alleen eigenschappen van het hoofdonderwerp.
 
+![](gegevensobjecttypen.svg)
+
 Dit onderscheid verklaart ook de kardinaliteit van de eigenschap hoofdonderwerp: bij een gegevenstypegroep is er geen hoofdonderwerp (dus "0"), bij de andere soorten is er juist altijd precies één hoofdonderwerp (dus "1").
 
 ## Speciaal soort gegevenstypen
@@ -254,5 +256,7 @@ Een gegevenstype kan sterk lijken op een eigenschap (kenmerk, rol, classificatie
 - Een **indirect gegevenstype** is een gegevenstype over één eigenschap van een objecttype, vastgelegd bij een gegevensobjecttype dat dit objecttype niet als hoofdonderwerp heeft;
 - Een **samengesteld enkelvoudig gegevenstype** is een gegevenstype over één eigenschap van meerdere objecten;
 - Een **samengesteld meervoudig gegevenstype** is een gegevenstype over meerdere eigenschappen van één of meerdere objecten.
+
+![](gegevenstypen.svg)
 
 # Volledige model
