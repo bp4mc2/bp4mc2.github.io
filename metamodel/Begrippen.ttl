@@ -112,6 +112,13 @@ mimbegrip:Attribuutsoort a skos:Concept;
   skos:related mimbegrip:Objecttype;
 .
 
+mimbegrip:Waardetype a skos:Concept;
+  rdfs:label "Waardetype"@nl;
+  skos:prefLabel "Waardetype"@nl;
+  skos:definition "Een waardetype is een typering van gelijksoortige waarden"@nl;
+  skos:related mimbegrip:Waarde;
+.
+
 mimbegrip:ClassificerendAttribuutsoort a skos:Concept;
   rdfs:label "Classificerend attribuutsoort"@nl;
   skos:prefLabel "Classificerend attribuutsoort"@nl;

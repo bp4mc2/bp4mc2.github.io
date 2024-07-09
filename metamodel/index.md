@@ -98,6 +98,14 @@ In ons voorbeeld kunnen we bijvoorbeeld het volgende gegeven uitdrukken, door ge
 
 Zet enkele gegevens bij elkaar, en je krijgt een gegevensobject. Zo'n gegevensobject *zelf* is weer een object! Dus het is niet zo maar een groepering van gegevens, het is een groepering van gegevens die onderscheidbaar zijn in een domein. En in dit geval is dit het gegevensdomein. Meta-gegevens (gegevens *over* gegevens) kunnen zo ook worden uitgedrukt: een (meta)gegeven is daarmee een vastgelegd waarneming of bewering over een getypeerde eigenschap van een gegevensobject.
 
+## Informatieobjecten: de duurzame vastlegging van gegevens
+
+> Een INFORMATIEOBJECT is een verzameling van aan elkaar gerelateerde GEGEVENs die als eenheid wordt behandeld
+
+Deze definitie van informatieobject is afkomstig uit de MTDO. Waar het bij gegevensobjecten gaat over de verwerking, gaat het bij informatieobjecten over het (leveren van) informatie. Oorspronkelijk ging het daarbij om documenten (bestaande uit ongestructureerde gegevens). Vanuit de context van gegevenstypering, is een informatieobject feitelijk een verzameling van gegevens (en dus ook een verzameling van gegevensobjecten), waarbij het verschil is dat een informatieobject duurzaam beschikbaar is. Akten, huwelijkscontracten, een verslag van een vergadering of een rapportage zijn voorbeelden van informatieobjecten.
+
+Een informatieobject kan relevant zijn vanuit gegevenstypering omdat een informatieobject zelf ook als object gezien kan worden (waarover we gegevens vastleggen). Een informatieobject heeft bijvoorbeeld eigenschappen als auteur, versienummer, versiedatum, rubricering, etc.
+
 ![](object-gegeven-eigenschap.svg)
 
 ## Wat voorbeelden
@@ -116,7 +124,7 @@ We kunnen het zo over de volgende gegevens hebben:
 - Jan is de werknemer van een object met de naam 'Bakkerij Broodjes' (de invulling voor de rol werkgever van Jan is Bakkerij Broodjes).
 - Jan is getrouwd met Marie (de invulling van de rol partner van Jan is Marie).
 
-Deze vijf uitspraken zijn vijf gegevens die gegroepeerd kunnen worden tot één gegevensobject met als hoofdontwerp het object met het BSN 12345678.
+Deze zes uitspraken zijn vijf gegevens die gegroepeerd kunnen worden tot één gegevensobject met als hoofdontwerp het object met het BSN 12345678.
 
 ## Rol, rolinvulling en relatie-object
 
@@ -159,7 +167,13 @@ Waar een eigenschap (en daarmee ook een kenmerk) los kan staan van een object, g
 
 > Een CLASSIFICERENDE ATTRIBUUTSOORT is een ATTRIBUUTSOORT als typering van een classificatie
 
-Gelijk aan een attribuutsoort met een waarde, zal een classificerende attribuutsoort als invulling een klasse hebben.
+Gelijk aan een attribuutsoort als typering van een kenmerk met als invulling een waarde, zal een classificerende attribuutsoort als invulling een klasse hebben. Waarden kunnen we daarbij ook typeren. Zo zal een kenmerk «geboortedatum» niet zomaar elke waarde kunnen zijn, maar kunnen we ook deze waarde typeren. Zo zal een geboortedatum van het waardetype «Datum» kunnen zijn.
+
+> Een WAARDETYPE is een typering van gelijksoortige WAARDEn
+
+Bij classificerende attribuutsoorten gaat het net wat anders: een classificatie heeft als invulling een klasse, wat al een vorm van typering betreft. Wel is relevant welke klassen precies bij een classificerende attribuutsoort gebruikt kunnen worden. Dit is het classificatieschema. Dit kan een lijstje zijn van klassen die zijn toegestaan, maar kan bijvoorbeeld ook een hiërarchie van klassen omvatten.
+
+> Een CLASSIFICATIESCHEMA is een systematische ordening van OBJECTen in KLASSEn
 
 ![](attribuutsoort.svg)
 
