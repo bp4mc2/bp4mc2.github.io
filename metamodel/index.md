@@ -187,6 +187,20 @@ We kunnen relaties tussen objecten typeren. Echter, als het gaat om gegevens, da
 
 ![](relatiesoort.svg)
 
+## Condities
+
+De typering van objecttypen bestaat niet alleen uit het toewijzen van een eigenschap aan een objecttype. Het is ook relevant om te weten onder welke condities zo'n eigenschap geldt voor een object. En ook of een object tot een objecttype behoort kunnen we conditioneren.
+
+> Een CONDITIE is een noodzakelijke voorwaarde die moet gelden voor een typering
+
+We onderscheiden verschillende soorten condities, afhankelijk voor welke typering zo'n conditie wordt gebruikt. De meest prominente condities zijn:
+
+- **Cardinaliteit** is een conditie waarbij van een eigenschap wordt aangegeven hoeveel invullingen er voor één object minimaal en maximaal zijn.
+- **Lengte** is een conditie waarbij van een kenmerk wordt aangegeven hoe lang de invulling (de waarde) van dat kenmerk mag zijn.
+- **Datatype** is een conditie waarbij van een kenmerk wordt aangegeven wat voor datatype de invulling (de waarde) heeft. Een datatype is bijvoorbeeld: getal, tekst, datum, etc.
+- **Informele conditie** is een conditie die informeel beschreven is, dwz: in natuurlijke taal.
+- **Formele conditie** is een conditie die formeel beschreven is, dwz: in een machine-interpreteerbare taal.
+
 ## Wat voorbeelden
 
 De begrippen die we hiermee gedefinieerd hebben, zijn behoorlijk abstract. Aangezien we het hier hebben over typering, was dat ook wel te verwachten. Daarom handig om een aantal voorbeelden te beschrijven: wat kunnen we nu met deze typering? We doen dit aan de hand van het volgende sjabloon:
