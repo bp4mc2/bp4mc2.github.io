@@ -208,26 +208,36 @@ mimshape:Gegevenstype.gegevensOver a sh:PropertyShape;
   sh:class [sh:or (mim:Attribuutsoort mim:Relatiesoortrol)];
 .
 
+mim:Gegevensgroeptype a owl:Class;
+  rdfs:label "Gegevensgroeptype"@nl;
+  dct:subject mimbegrip:Gegevensgroeptype;
+.
+mimshape:Gegevensgroeptype a sh:NodeShape;
+  rdfs:label "Gegevensgroeptype";
+  sh:targetClass mim:Gegevensgroeptype;
+  sh:property mimshape:Gegevensgroeptype.groeperingVan;
+.
+mimshape:Gegevensgroeptype.groeperingVan a sh:PropertyShape;
+  rdfs:label "groepering van"@nl;
+  sh:name "mim:groeperingVan";
+  sh:class mim:Gegevenstype;
+.
+
 mim:Gegevensobjecttype a owl:Class;
   rdfs:label "Gegevensobjecttype"@nl;
+  rdfs:subClassOf mim:Gegevensgroeptype;
   dct:subject mimbegrip:Gegevensobjecttype;
 .
 mimshape:Gegevensobjecttype a sh:NodeShape;
   rdfs:label "Gegevensobjecttype";
   sh:name "mim:Gegevensobjecttype";
   sh:targetClass mim:Gegevensobjecttype;
-  sh:property mimshape:Gegevensobjecttype.groeperingVan;
-  sh:property mimshape:Gegevensobjecttype.heeftHoofdonderwerp;
-.
-mimshape:Gegevensobjecttype.groeperingVan a sh:PropertyShape;
-  rdfs:label "groepering van"@nl;
-  sh:name "mim:groeperingVan";
-  sh:class mim:Gegevenstype;
   sh:property mimshape:Gegevensobjecttype.heeftHoofdonderwerp;
 .
 mimshape:Gegevensobjecttype.heeftHoofdonderwerp a sh:PropertyShape;
   rdfs:label "heeft hoofdonderwerp"@nl;
   sh:name "mim:heeftHoofdonderwerp";
   sh:class mim:Objecttype;
+  sh:minCount 1;
   sh:maxCount 1;
 .

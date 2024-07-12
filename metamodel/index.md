@@ -90,7 +90,9 @@ Een classificatie zit tussen een kenmerk en een rol in. Het lijkt een beetje op 
 
 > Een GEGEVEN is een vastgelegde waarneming of bewering over een getypeerde EIGENSCHAP van een OBJECT
 
-> Een GEGEVENSOBJECT is een OBJECT als groepering van GEGEVENs
+> Een GEGEVENSGROEP is een groepering van GEGEVENs
+
+> Een GEGEVENSOBJECT is een OBJECT als geheel van GEGEVENs met één hoofdonderwerp
 
 Hoewel een gegevensobject en (speciaal soort) object is, is het niet direct mogelijk om de twee met elkaar te verbinden. Gegevens bestaan, zo gezegd, in een andere werkelijkheid dan objecten. Denk bijvoorbeeld aan een object als een persoon, of een voertuig of een weg. Van alle drie kun je gegevens vastleggen. Maar om daarbij de relatie te leggen *waarover* deze gegevens gaan, zul je de betreffende persoon, voertuig of weg moeten identificeren. De enige manier om gegevens en objecten direct aan elkaar te relateren is letterlijk de gegevens op het object te "plakken". In de digitale werkelijkheid is dit een uitzondering. Vaak gebruiken we een toegekende identificerende eigenschap om bij een gegeven aan te kunnen geven over welk object het gaat.
 
@@ -248,7 +250,9 @@ Net zoals het mogelijk is om objecten en eigenschappen te typering, kunnen we oo
 
 En
 
-> Een GEGEVENSOBJECTTYPE is een typering van gelijksoortige GEGEVENSOBJECTen, als groepering van GEGEVENSTYPEn.
+> Een GEGEVENSGROEPTYPE is een typering van gelijksoortige GEGEVENSGROEPen
+
+> Een GEGEVENSOBJECTTYPE is een typering van gelijksoortige GEGEVENSOBJECTen
 
 ![](gegeven-gegevenstype.svg)
 
@@ -258,15 +262,16 @@ Gegevenstypen typeren gegevens die gaan over objecten. En objecttypen typeren ob
 
 ## Speciaal soort gegevensobjecttypen
 
-Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorfie*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één object van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in drie soorten gegevensobjecttypen:
+Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorfie*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één object van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in twee soorten gegevensobjecttypen:
 
-- Een **gegevenstypegroep** is een gegevensobjecttype zonder hoofdonderwerp;
 - Een **logisch objecttype** is een gegevensobjecttype met precies één hoofdonderwerp;
 - Een **strikt logisch objecttype** is een logisch objecttype over alleen eigenschappen van het hoofdonderwerp.
 
-![](gegevensobjecttypen.svg)
+Het is denkbaar om gegevens ook te groeperen, zonder dat er expliciet een hoofdonderwerp is. In zo'n geval spreken we over een gegevensgroep: een groep van gegevens. En zo'n gegevensgroep kun je ook typeren: dan ontstaat een gegevensgroeptype. Het is simpelweg het bij elkaar zetten van enkele gegevens als groep, zonder dat er expliciet een hoofdonderwerp voor die groep van gegevens bestaat (de gegevens gaan over meerdere objecten).
 
-Dit onderscheid verklaart ook de kardinaliteit van de eigenschap hoofdonderwerp: bij een gegevenstypegroep is er geen hoofdonderwerp (dus "0"), bij de andere soorten is er juist altijd precies één hoofdonderwerp (dus "1").
+Ook gegevenstypen zelf kun je groeperen. Bijvoorbeeld als je het wilt hebben over alle gegevenstypen die "geheim" zijn. Het is nu dat we deze gegevens als groep bij elkaar willen zetten, om ze vervolgens (als groep) te typeren, maar juist de gegevens*typen* willen we groeperen.
+
+![](gegevensobjecttypen.svg)
 
 ## Speciaal soort gegevenstypen
 
