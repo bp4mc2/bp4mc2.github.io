@@ -104,13 +104,13 @@ Zet enkele gegevens bij elkaar, en je krijgt een gegevensobject. Zo'n gegevensob
 
 ## Informatieobjecten: de duurzame vastlegging van gegevens
 
-> Een INFORMATIEOBJECT is een verzameling van aan elkaar gerelateerde GEGEVENs die als eenheid wordt behandeld
+> Een INFORMATIEOBJECT is een object als verzameling van aan elkaar gerelateerde GEGEVENs die als eenheid wordt behandeld
 
 Deze definitie van informatieobject is afkomstig uit de MTDO. Waar het bij gegevensobjecten gaat over de verwerking, gaat het bij informatieobjecten over het (leveren van) informatie. Oorspronkelijk ging het daarbij om documenten (bestaande uit ongestructureerde gegevens). Vanuit de context van gegevenstypering, is een informatieobject feitelijk een verzameling van gegevens (en dus ook een verzameling van gegevensobjecten), waarbij het verschil is dat een informatieobject duurzaam beschikbaar is. Akten, huwelijkscontracten, een verslag van een vergadering of een rapportage zijn voorbeelden van informatieobjecten.
 
 Een informatieobject kan relevant zijn vanuit gegevenstypering omdat een informatieobject zelf ook als object gezien kan worden (waarover we gegevens vastleggen). Een informatieobject heeft bijvoorbeeld eigenschappen als auteur, versienummer, versiedatum, rubricering, etc.
 
-> Een INHOUD is een een eigenschap van een informatieobject met als waarde het informatieobject zelf, of een deel daarvan.
+> Een INHOUD is een een eigenschap van een informatieobject met als invulling het informatieobject zelf, of een deel daarvan.
 
 Een informatieobject kan ook een video zijn, of een tekstbestand. Een eigenschap van zo'n informatieobject is dan zijn «inhoud». Net als bij waarden, kijk je daarbij eigenlijk naar het informatieobject *zelf*, in plaats van dat de eigenschap over iets anders gaat.
 
@@ -181,7 +181,7 @@ Gelijk aan een attribuutsoort als typering van een kenmerk met als invulling een
 
 Bij classificerende attribuutsoorten gaat het net wat anders: een classificatie heeft als invulling een klasse, wat al een vorm van typering betreft. Wel is relevant welke klassen precies bij een classificerende attribuutsoort gebruikt kunnen worden. Dit is het classificatieschema. Dit kan een lijstje zijn van klassen die zijn toegestaan, maar kan bijvoorbeeld ook een hiërarchie van klassen omvatten.
 
-> Een CLASSIFICATIESCHEMA is een systematische ordening van OBJECTen in KLASSEn
+> Een CLASSIFICATIESCHEMA is een systematische ordening van objecten in KLASSEn
 
 ![](attribuutsoort.svg)
 
@@ -191,7 +191,7 @@ Bij classificerende attribuutsoorten gaat het net wat anders: een classificatie 
 
 We kunnen relaties tussen objecten typeren. Echter, als het gaat om gegevens, dan hebben we het over eigenschappen van objecten. We zagen daarin dat een eigenschap van een object een rol kan zijn. Dergelijke rollen kun je ook typering:
 
-> Een RELATIESOORTROL is een typering van een ROL van een OBJECT in een relatie, getypeerd door een RELATIESOORT
+> Een RELATIESOORTROL is een typering van een ROL van een OBJECT in een relatie, getypeerd door een RELATIESOORT en behorende tot een OBJECTTYPE
 
 ![](relatiesoort.svg)
 
@@ -206,8 +206,8 @@ We onderscheiden verschillende soorten condities, afhankelijk voor welke typerin
 - **Cardinaliteit** is een conditie waarbij van een eigenschap wordt aangegeven hoeveel invullingen er voor één object minimaal en maximaal zijn.
 - **Lengte** is een conditie waarbij van een kenmerk wordt aangegeven hoe lang de invulling (de waarde) van dat kenmerk mag zijn.
 - **Datatype** is een conditie waarbij van een kenmerk wordt aangegeven wat voor datatype de invulling (de waarde) heeft. Een datatype is bijvoorbeeld: getal, tekst, datum, etc.
-- **Informele conditie** is een conditie die informeel beschreven is, dwz: in natuurlijke taal.
-- **Formele conditie** is een conditie die formeel beschreven is, dwz: in een machine-interpreteerbare taal.
+- **Informele conditie** is een conditie die beschreven is in een natuurlijke taal, dwz: in een taal die mensen gebruiken in onderlinge communicatie.
+- **Formele conditie** is een conditie die beschreven is in een machine-interpreteerbare taal.
 
 ## Wat voorbeelden
 
@@ -262,10 +262,12 @@ Gegevenstypen typeren gegevens die gaan over objecten. En objecttypen typeren ob
 
 ## Speciaal soort gegevensobjecttypen
 
-Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorfie*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één object van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in twee soorten gegevensobjecttypen:
+Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorf*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één object van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in twee soorten gegevensobjecttypen:
 
 - Een **logisch objecttype** is een gegevensobjecttype met precies één hoofdonderwerp;
 - Een **strikt logisch objecttype** is een logisch objecttype over alleen eigenschappen van het hoofdonderwerp.
+
+> Een HOOFDONDERWERP is een OBJECTTYPE waarvan de IDENTIFICERENDE EIGENSCHAPpen de sleutel vormen van het GEGEVENSOBJECTTYPE
 
 Het is denkbaar om gegevens ook te groeperen, zonder dat er expliciet een hoofdonderwerp is. In zo'n geval spreken we over een gegevensgroep: een groep van gegevens. En zo'n gegevensgroep kun je ook typeren: dan ontstaat een gegevensgroeptype. Het is simpelweg het bij elkaar zetten van enkele gegevens als groep, zonder dat er expliciet een hoofdonderwerp voor die groep van gegevens bestaat (de gegevens gaan over meerdere objecten).
 

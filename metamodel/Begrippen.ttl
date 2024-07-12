@@ -25,6 +25,7 @@ mimbegrip:Eigenschap a skos:Concept;
   rdfs:label "Eigenschap"@nl;
   skos:prefLabel "Eigenschap"@nl;
   skos:definition "Een eigenschap is een verschijnsel dat typisch is voor bepaalde objecten"@nl;
+  skos:related mimbegrip:Object;
 .
 
 mimbegrip:IdentificerendeEigenschap a skos:Concept;
@@ -58,6 +59,23 @@ mimbegrip:Gegevensgroep a skos:Concept;
   skos:definition "Een gegevensgroep is een groepering van gegevens"@nl;
   skos:scopeNote "Een gegevensgroep heeft geen hoofdonderwerp. Indien wel sprake is van een hoofdonderwerp, dan betreft de groep van gegevens een gegevensobject"@nl;
   skosthes:narrowerPartitive mimbegrip:Gegeven;
+.
+
+mimbegrip:Informatieobject a skos:Concept;
+  rdfs:label "Informatieobject"@nl;
+  skos:prefLabel "Informatieobject"@nl;
+  skos:definition "Een informatieobject is een object als verzameling van aan elkaar gerelateerde gegevens die als eenheid wordt behandeld";
+  skos:scopeNote "Een informatieobject is net als een gegevensgroep of gegevensobject een geheel van gegevens. Het onderscheid zich van deze, doordat het informatieobject zelf als eenheid wordt behandeld. Vaak bestaat een informatieobject uit meerdere gegevensobjecten. En van een informatieobject wordt ook eigenlijk altijd zelf weer gegevens over vastgelegd (metadata), bijvoorbeeld de auteur of de datum waarop het informatieobject is opgemaakt."@nl;
+  skosthes:broaderGeneric mimbegrip:Object;
+  skosthes:narrowerPartitive mimbegrip:Gegeven;
+.
+
+mimbegrip:Inhoud a skos:Concept;
+  rdfs:label "Inhoud"@nl;
+  skos:prefLabel "Inhoud"@nl;
+  skos:definition "Een inhoud is een eigenschap van een informatieobject met als invulling het informatieobject zelf, of een deel daarvan.";
+  skosthes:broaderInstantial mimbegrip:Eigenschap;
+  skos:related mimbegrip:Informatieobject;
 .
 
 mimbegrip:Rol a skos:Concept;
@@ -129,6 +147,13 @@ mimbegrip:Waardetype a skos:Concept;
   skos:related mimbegrip:Waarde;
 .
 
+mimbegrip:Classificatieschema a skos:Concept;
+  rdfs:label "Classificatieschema"@nl;
+  skos:prefLabel "Classificatieschema"@nl;
+  skos:definition "Een classificatieschema is een systematische ordening van objecten in klassen";
+  skos:related mimbegrip:Klasse;
+.
+
 mimbegrip:ClassificerendAttribuutsoort a skos:Concept;
   rdfs:label "Classificerend attribuutsoort"@nl;
   skos:prefLabel "Classificerend attribuutsoort"@nl;
@@ -150,6 +175,50 @@ mimbegrip:Relatiesoortrol a skos:Concept;
   skos:related mimbegrip:Rol;
   skos:related mimbegrip:Relatiesoort;
   skos:related mimbegrip:Objecttype;
+.
+
+mimbegrip:Conditie a skos:Concept;
+  rdfs:label "Conditie"@nl;
+  skos:prefLabel "Conditie"@nl;
+  skos:definition "Een conditie is een noodzakelijke voorwaarde die moet gelden voor een typering"@nl;
+.
+
+mimbegrip:Cardinaliteit a skos:Concept;
+  rdfs:label "Cardinaliteit"@nl;
+  skos:prefLabel "Cardinaliteit"@nl;
+  skos:definition "Een cardinaliteit is een conditie waarbij van een eigenschap is gesteld hoeveel invullingen er voor één object minimaal en maximaal zijn"@nl;
+  skos:broaderGeneric mimbegrip:Conditie;
+  skos:related mimbegrip:Eigenschap;
+  skos:related mimbegrip:Object;
+.
+
+mimbegrip:Lengte a skos:Concept;
+  rdfs:label "Lengte"@nl;
+  skos:prefLabel "Lengte"@nl;
+  skos:definition "Een lengte is een conditie waarbij van een kenmerk of waarde is gesteld hoe lang de waarde of invulling van dat kenmerk mag zijn"@nl;
+  skos:scopeNote "Een lengte kan zowel op een specifiek kenmerk van toepassing zijn (bijvoorbeeld de lengte die een voornaam-kenmerk mag hebben), maar ook voor gelijksoortige waarden (bijvoorbeeld de lengte die een postcode-waarde mag hebben)"@nl;
+  skosthes:broaderGeneric mimbegrip:Conditie;
+.
+mimbegrip:Datatype a skos:Concept;
+  rdfs:label "Datatype"@nl;
+  skos:prefLabel "Datatype"@nl;
+  skos:definition "Een datatype is een conditie waarbij van een kenmerk of waarde is gesteld wat voor datatype de waarde of invulling van dat kenmerk mag zijn"@nl;
+  skos:scopeNote "Een datatype kan zowel op een specifiek kenmerk van toepassing zijn (bijvoorbeel dat geboortedatum een datum is), maar ook voor gelijksoortige waarden (bijvoorbeeld dat een bedrag een getal is)"@nl;
+  skosthes:broaderGeneric mimbegrip:Conditie;
+.
+mimbegrip:InformeleConditie a skos:Concept;
+  rdfs:label "Informatie conditie"@nl;
+  skos:prefLabel "Informele conditie"@nl;
+  skos:definition "Een informele conditie is een conditie die beschreven is in natuurlijk taal"@nl;
+  skos:scopeNote "Een natuurlijke taal is een taal die mensen gebruiken in onderlinge communicatie. Zo'n taal is per definitie leesbaar voor mensen. Hoewel de taal leesbaar kan zijn voor machines, zullen machines de taal niet (volledig) kunnen interpreteren."@nl;
+  skosthes:broaderGeneric mimbegrip:Conditie;
+.
+mimbegrip:FormeleConditie a skos:Concept;
+  rdfs:label "Formele conditie"@nl;
+  skos:prefLabel "Formele conditie"@nl;
+  skos:definition "Een formele conditie is een conditie die beschreven is in een machine-interpreteerbare taal"@nl;
+  skos:scopeNote "Machine-interpreteerbaar betekent dat een machine (geautomatiseerd) kan vaststellen of aan de conditie is voldaan of juist niet"@nl;
+  skosthes:broaderGeneric mimbegrip:Conditie;
 .
 
 mimbegrip:Gegevensobjecttype a skos:Concept;
@@ -182,13 +251,13 @@ mimbegrip:Gegevensgroeptype a skos:Concept;
   skos:related mimbegrip:Gegevensgroep;
 .
 
-# We kennen ook nog specialisaties van Gegevensobjecttypen
 mimbegrip:LogischObjecttype a skos:Concept;
   rdfs:label "Logisch objecttype"@nl;
   skos:prefLabel "Logisch objecttype"@nl;
   skos:definition "Een logisch objecttype is een gegevensobjecttype met precies één hoofdonderwerp"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevensobjecttype;
 .
+
 mimbegrip:StriktLogischObjecttype a skos:Concept;
   rdfs:label "Strik logisch objecttype"@nl;
   skos:prefLabel "Strikt logisch objecttype"@nl;
@@ -196,7 +265,6 @@ mimbegrip:StriktLogischObjecttype a skos:Concept;
   skosthes:broaderGeneric mimbegrip:Gegevensobjecttype;
 .
 
-# We kennen ook nog specialisaties van Gegevenstypen
 mimbegrip:DirectGegevenstype a skos:Concept;
   rdfs:label "Direct gegevenstype"@nl;
   skos:prefLabel "Direct gegevenstype"@nl;
