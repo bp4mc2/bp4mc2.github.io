@@ -264,8 +264,10 @@ Gegevenstypen typeren gegevens die gaan over objecten. En objecttypen typeren ob
 
 Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorf*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één object van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in twee soorten gegevensobjecttypen:
 
-- Een **logisch objecttype** is een gegevensobjecttype met precies één hoofdonderwerp;
-- Een **strikt logisch objecttype** is een logisch objecttype over alleen eigenschappen van het hoofdonderwerp.
+- Een **logisch (gegevens)objecttype** is een gegevensobjecttype met precies één hoofdonderwerp;
+- Een **strikt logisch (gegevens)objecttype** is een logisch objecttype over alleen eigenschappen van het hoofdonderwerp.
+
+Merk op dat het afleidbaar is wanneer een gegevensobjecttype een strikt logisch (gegevens)objecttype is en wanneer niet. Zolang alle eigenschappen waarover dit gegevensobjecttype gaan behoren tot de eigenschappen van het hoofdonderwerp, is sprake van een strikt logisch (gegevens)objecttype, en alle andere gevallen niet.
 
 > Een HOOFDONDERWERP is een OBJECTTYPE waarvan de IDENTIFICERENDE EIGENSCHAPpen de sleutel vormen van het GEGEVENSOBJECTTYPE
 
