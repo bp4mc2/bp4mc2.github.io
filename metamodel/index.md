@@ -37,7 +37,7 @@ Voor dit document gebruiken we een voorbeeld, een casus op basis waarvan we de o
 
 ## De basis: objecten en eigenschappen
 
-> Een OBJECT is een onderscheidbaar iets in het domein
+> Een OBJECT is een onderscheidbaar iets in het beschouwde domein
 
 Wat we onderscheiden in een domein, en wat (dus) hier een object is, hangt af van wat we willen beschouwen. Als we het over objecten hebben, dan hebben we het daarmee over het conceptueel model. Het conceptueel model is, met andere woorden, een model van objecten.
 
@@ -98,6 +98,8 @@ In ons voorbeeld kunnen we bijvoorbeeld het volgende gegeven uitdrukken, door ge
 
 Zet enkele gegevens bij elkaar, en je krijgt een gegevensobject. Zo'n gegevensobject *zelf* is weer een object! Dus het is niet zo maar een groepering van gegevens, het is een groepering van gegevens die onderscheidbaar zijn in een domein. En in dit geval is dit het gegevensdomein. Meta-gegevens (gegevens *over* gegevens) kunnen zo ook worden uitgedrukt: een (meta)gegeven is daarmee een vastgelegd waarneming of bewering over een getypeerde eigenschap van een gegevensobject.
 
+![](object-gegeven-eigenschap.svg)
+
 ## Informatieobjecten: de duurzame vastlegging van gegevens
 
 > Een INFORMATIEOBJECT is een verzameling van aan elkaar gerelateerde GEGEVENs die als eenheid wordt behandeld
@@ -106,7 +108,11 @@ Deze definitie van informatieobject is afkomstig uit de MTDO. Waar het bij gegev
 
 Een informatieobject kan relevant zijn vanuit gegevenstypering omdat een informatieobject zelf ook als object gezien kan worden (waarover we gegevens vastleggen). Een informatieobject heeft bijvoorbeeld eigenschappen als auteur, versienummer, versiedatum, rubricering, etc.
 
-![](object-gegeven-eigenschap.svg)
+> Een INHOUD is een een eigenschap van een informatieobject met als waarde het informatieobject zelf, of een deel daarvan.
+
+Een informatieobject kan ook een video zijn, of een tekstbestand. Een eigenschap van zo'n informatieobject is dan zijn «inhoud». Net als bij waarden, kijk je daarbij eigenlijk naar het informatieobject *zelf*, in plaats van dat de eigenschap over iets anders gaat.
+
+![](informatieobject.svg)
 
 ## Wat voorbeelden
 
