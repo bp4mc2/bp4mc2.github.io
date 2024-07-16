@@ -289,3 +289,5 @@ Een gegevenstype kan sterk lijken op een eigenschap (kenmerk, rol, classificatie
 ![](gegevenstypen.svg)
 
 # Volledige model
+
+<TODO>
