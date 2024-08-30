@@ -7,25 +7,48 @@
 #
 # De dingen die "zijn"
 #
+mimbegrip:Beschouwingsdomein a skos:Concept;
+  rdfs:label "Beschouwingsdomein"@nl;
+  skos:definition "Een beschouwingsdomein is een domein dat wordt beschouwd bij het modelleren van die dingen die in dit domein voorkomen en de kennis daarover.";
+  skos:scopeNote "Het beschouwingsdomein is het domein waar we het over willen hebben, en waar we uiteindelijk gegevens over vastleggen en regels voor stellen.";
+  skos:altLabel "Beschouwde domein"@nl;
+  skos:altLabel "Domein"@nl;
+  skos:altLabel "Universe of discourse"@en;
+.
+mimbegrip:Verwerkingsdomein a skos:Concept;
+  rdfs:label "Verwerkingsdomein"@nl;
+  skos:definition "Een verwerkingsdomein is een domein betreffende de verwerking van gegevens"@nl;
+  skos:scopeNote "Het verwerkingsdomein is het domein van de gegevens. Aangezien gegevens gaan over de dingen in het beschouwingsdomein (en niet over zichzelf), is het verwerkingsdomein altijd te onderscheiden van het beschouwingsdomein: het zijn twee verschillende domeinen. Wel hangen ze sterk samen: het verwerkingsdomein bevat de gegevens die gaan over het beschouwingsdomein. Het verwerkingsdomein en het beschouwingsdomein zijn dan ook vaak gelijkvormig. Zo kun je het hebben over een «persoon», maar ook over «persoonsgegevens». Een persoon heeft eigenschappen, bijvoorbeeld een leeftijd, en gegevens over die leeftijd zijn vervolgens weer onderdeel van de persoonsgegevens."@nl;
+  skos:altLabel "Gegevensverwerkingsdomein"@nl;
+  skos:altLabel "Gegevensdomein"@nl;
+.
 mimbegrip:Gegeven a skos:Concept;
   rdfs:label "Gegeven"@nl;
   skos:prefLabel "Gegeven"@nl;
   skos:definition "Een gegeven is een vastgelegde waarneming of bewering over een getypeerde eigenschap van een object."@nl;
-  skos:related mimbegrip:Object;
+  skos:related mimbegrip:Domeinobject;
   skos:related mimbegrip:Eigenschap;
 .
 
 mimbegrip:Object a skos:Concept;
   rdfs:label "Object"@nl;
   skos:prefLabel "Object"@nl;
-  skos:definition "Een object is een onderscheidbaar iets in het beschouwde domein"@nl;
+  skos:editorialNote "Nog goed kijken wat we willen met object. Het verbindt nu domeinobject, informatieobject en gegevensobject met elkaar, maar de vraag is of dat op deze manier wenselijk en nodig is. We kunnen er eigenlijk geen goede definitie van geven, want een object is pas een object als je hem als zodanig beschouwd, en dat heb je het weer over een domeinobject..."@nl;
+.
+
+mimbegrip:Domeinobject a skos:Concept;
+  rdfs:label "Domeinobject"@nl;
+  skos:prefLabel "Domeinobject"@nl;
+  skos:altLabel "Object"@nl;
+  skos:definition "Een domeinobject is een onderscheidbaar iets in het beschouwde domein"@nl;
+  skos:related mimbegrip:Beschouwingsdomein;
 .
 
 mimbegrip:Eigenschap a skos:Concept;
   rdfs:label "Eigenschap"@nl;
   skos:prefLabel "Eigenschap"@nl;
   skos:definition "Een eigenschap is een verschijnsel dat typisch is voor bepaalde objecten"@nl;
-  skos:related mimbegrip:Object;
+  skos:related mimbegrip:Domeinobject;
 .
 
 mimbegrip:IdentificerendeEigenschap a skos:Concept;
@@ -83,7 +106,7 @@ mimbegrip:Rol a skos:Concept;
   skos:prefLabel "Rol"@nl;
   skos:definition "Een rol is een eigenschap van een object in een relatie met een ander object"@nl;
   skosthes:broaderGeneric mimbegrip:Eigenschap;
-  skos:related mimbegrip:Object;
+  skos:related mimbegrip:Domeinobject;
 .
 
 mimbegrip:Kenmerk a skos:Concept;
@@ -128,8 +151,8 @@ mimbegrip:Gegevenstype a skos:Concept;
 mimbegrip:Objecttype a skos:Concept;
   rdfs:label "Objecttype"@nl;
   skos:prefLabel "Objecttype"@nl;
-  skos:definition "Een objecttype is een typering van gelijksoortige objecten"@nl;
-  skos:related mimbegrip:Object;
+  skos:definition "Een objecttype is een typering van gelijksoortige domeinobjecten"@nl;
+  skos:related mimbegrip:Domeinobject;
 .
 
 mimbegrip:Attribuutsoort a skos:Concept;
@@ -186,10 +209,10 @@ mimbegrip:Conditie a skos:Concept;
 mimbegrip:Cardinaliteit a skos:Concept;
   rdfs:label "Cardinaliteit"@nl;
   skos:prefLabel "Cardinaliteit"@nl;
-  skos:definition "Een cardinaliteit is een conditie waarbij van een eigenschap is gesteld hoeveel invullingen er voor één object minimaal en maximaal zijn"@nl;
+  skos:definition "Een cardinaliteit is een conditie waarbij van een eigenschap is gesteld hoeveel invullingen er voor één domeinobject minimaal en maximaal zijn"@nl;
   skos:broaderGeneric mimbegrip:Conditie;
   skos:related mimbegrip:Eigenschap;
-  skos:related mimbegrip:Object;
+  skos:related mimbegrip:Domeinobject;
 .
 
 mimbegrip:Lengte a skos:Concept;

@@ -6,21 +6,24 @@ Met gegevensmodelleren en gegevenstypering beschrijven we gegevens. Die gegevens
 
 Om nauwkeurig gegevens te kunnen typeren, zullen we het (vooral ook) over deze betekenis moeten hebben. En daarvoor is het van belang om bepaalde zaken van elkaar te onderscheiden.
 
-Enerzijds kunnen we het hebben over het domein *waarover* we gegevens willen verwerken. En anderzijds kunnen we het over de gegevens (en de verwerking daarvan) *zelf* hebben. En dit zijn verschillende zaken!
+Enerzijds kunnen we het hebben over het domein *waarover* we gegevens willen verwerken. En anderzijds kunnen we het over de gegevens (en de verwerking daarvan) *zelf* hebben. En dit zijn verschillende zaken! Eerstgenoemde domein zullen we het *beschouwingsdomein* noemen, laatstgenoemde het *verwerkingsdomein*
 
-Aangezien gegevens over de dingen in het domein gaan, zullen we die dingen moeten kunnen identificeren. Dit lijkt vaak makkelijk, maar dat is het niet. Zo is het relatief makkelijk om te bepalen wie een mens is en wie niet. Maar als het om meer abstracte zaken gaat (wanneer ben je Belastingplichtige, Verdachte of Eigenaar?), dan wordt het moeilijk. En als we dingen niet alleen willen herkennen, maar ook identificeren, dan wordt het al snel een stuk minder makkelijk. Modelleren neemt daarvoor een belangrijke plek in.
+We gebruiken hier steeds het begrip «verwerken». We hebben het dan ook over zowel het lezen, gebruiken, uitwisselen, opslaan, wijzigen en vernietigen van gegevens.
 
-Bij het modelleren maken we onderscheid in verschillende beschouwingsniveaus. De eerste drie beschouwingsniveaus gaan over het domein zelf. Steeds nauwkeuriger beschouwen we de dingen in het domein. De laatste twee beschouwingsniveaus gaan over de gegevens(verwerking). Pas op dat niveau beschrijven we de gegevens zelf, door aan te geven over welke dingen uit het domein (zoals gemodelleerd in de eerste drie beschouwingsniveaus), we gegevens verwerken en hoe.
+Aangezien gegevens over de dingen in het beschouwingsdomein gaan, zullen we die dingen moeten kunnen identificeren. Dit lijkt vaak makkelijk, maar dat is het niet. Zo is het relatief makkelijk om te bepalen wie een mens is en wie niet. Maar als het om meer abstracte zaken gaat (wanneer ben je Belastingplichtige, Verdachte of Eigenaar?), dan wordt het moeilijk. En als we dingen niet alleen willen herkennen, maar ook identificeren, dan wordt het al snel een stuk minder makkelijk. Modelleren neemt daarvoor een belangrijke plek in.
 
-We gebruiken hier steeds bewust het begrip «verwerken». We hebben het dan ook over zowel het lezen, gebruiken, uitwisselen, opslaan, wijzigen en vernietigen van gegevens.
+We modelleren zowel het beschouwingsdomein als het verwerkingsdomein. En het is daarbij verstandig om niet alles in één model te willen stoppen: hierdoor wordt het model te complex en niet meer te begrijpen. Modelleren is juist een werkwijze om op een eenduidige wijze een beschrijving te maken met precies voldoende detail voor optimaal begrip. Oftewel: "*Ik kan wel (heel) precies zijn, maar dan wordt ik niet begrepen. Als ik begrepen wil worden, kan ik niet (te) precies zijn*"). De eenduidige werkwijze is afgestemd op het doel dat we willen bereiken met het model. We onderscheiden vijf verschillende doelen, en evenzoveel soorten modellen:
 
-1. **Kennisbronnen** en **verhalen**. Betekenis kan gevonden worden in bepaalde kennisbronnen, in de zin van: "de betekenis is, zoals beoogd in dit document". Zo'n kennisbron heeft bepaalde autoriteit, bijvoorbeeld een wet of een standaard waar we ons aan willen houden. Maar ook verhalen kunnen helpen: ze nemen de lezer mee in de betekenis vanuit voorbeelden en concrete gebeurtenissen.
-2. **Model van begrippen**. Een eerste, talige, model van begrippen kan helpen om een beter inzicht te krijgen wat er wordt bedoeld als een bepaald woord of woordcombinatie ("term") wordt gebruikt in een bepaalde context. We modelleren hier de communicatie: welke woorden *daadwerkelijk* worden gebruikt in het domein en wat ze in die context betekenen voor degenen die deze woorden gebruiken.
-3. **Conceptueel model**, waarmee inzicht wordt gegeven welke objecten relevant zijn om te beschouwen en welke eigenschappen daarvan en relaties daartussen. Anders dan bij een model van begrippen, gaat het ons hier niet primair om de gebruikte taal, maar juist de dingen waarover wordt gesproken (letterlijk: "de onderwerpen van gesprek").
-4. **Logisch gegevensmodel**. Waar we in de vorige modellen kijken naar het domein waarover we gegevens willen verwerken, gaat dit model juist over die gegevens zelf.
-5. **Fysiek datamodel**. Tenslotte zullen gegevens ook daadwerkelijk vastgelegd moeten worden. Het fysieke datamodel beschrijft hoe gegevens als data worden vastgelegd.
+1. **Kennisbronnen** en **verhalen**. Beiden zijn voor mensen leesbare en begrijpbare beschrijvingen in natuurlijke taal van de kennis over het beschouwingsdomein. Uit deze kennisbronnen en verhalen kan de betekenis worden gevonden, in de zin van: "de betekenis is, zoals beoogd in dit document". Zo'n kennisbron legitimeert de beoogde betekenis, bijvoorbeeld een wet of een standaard waar we ons aan willen houden. Maar ook verhalen kunnen helpen: ze nemen de lezer mee in de betekenis vanuit voorbeelden en concrete gebeurtenissen.
+2. **Model van begrippen**. Een eerste, talige, model van begrippen helpt om een beter inzicht te krijgen wat er wordt bedoeld als een bepaald woord of woordcombinatie ("term") wordt gebruikt in het beschouwingsdomein. We modelleren hier het begrip dat we hebben als we met elkaar communiceren: welke woorden *daadwerkelijk* worden gebruikt in het beschouwingsdomein en wat ze in die context betekenen voor degenen die deze woorden gebruiken. Dergelijke woorden kunnen duiding geven aan een subject of object in het beschouwde domein ("werknemer", "woning") en ook aan afspraken of verplichtingen die in het beschouwingsdomein gelden ("arbeidscontract", "eigendom" of "belastingplicht").
+3. **Conceptueel model**, waarmee inzicht wordt gegeven welke objecten (inclusief actoren en handelingen) relevant zijn om te beschouwen en welke eigenschappen daarvan en relaties daartussen. Anders dan bij een model van begrippen, gaat het ons hier niet primair om de gebruikte taal, maar juist de dingen waarover wordt gesproken (letterlijk: "de onderwerpen van gesprek"). Ook gaat het in een dergelijk model over de regels die gelden met betrekking tot de beschreven handelingen. Zo kan ook onderscheid gemaakt worden in een conceptueel informatiemodel (dat zich richt op de relevante informatie), conceptueel regelmodel (dat zich op de relevante regels) en een conceptueel procesmodel (dat zich richt op de relevante processen)
+4. **Logisch gegevensmodel**. Waar we in de vorige modellen kijken naar het beschouwingsdomein waarover we gegevens willen verwerken, kijken we in dit model juist naar die gegevens zelf. Het logisch gegevensmodel is een model van het verwerkingsdomein. Het logisch gegevensmodel is **geen** model van het beschouwingsdomein! Net als bij het conceptuele model, kunnen we bij het logisch gegevensmodel een nader onderscheid maken tussen modellen van administraties (hoe gegevens worden opgeslagen), modellen van interacties (hoe gegevens worden uitgewisseld) en modellen van de verwerking binnen een proces (hoe gegevens worden verwerkt). Het uitdrukking geven van process en regels zie we dan ook nadrukkelijk onderdeel van het logisch gegevensmodel.
+5. **Fysiek datamodel**. Tenslotte zullen gegevens ook daadwerkelijk vastgelegd, uitgewisseld of bewerkt moeten worden. Het fysieke datamodel beschrijft hoe gegevens als data worden vastgelegd, uitgewisseld of bewerkt.
 
-# Een voorbeeld - het domein
+## Gebruik van quotes
+Dit document gaat over metamodellen. We introduceren daarbij bepaalde begrippen en gebruiken daar bepaalde termen voor. Daarbij is het soms van belang om expliciet te maken dat we een begrip bedoelen en soms expliciet van belang dat we een term bedoelen. De term "drie" heeft vier letters, terwijl het begrip «drie» de betekenis heeft van het getal 3. Waar we verwijzen naar een term gebruiken we daarvoor aanhalingstekens, waar we verwijzen naar een begrip gebruiken we [guillemets](https://nl.wikipedia.org/wiki/Guillemet), zoals in het voorbeeld in deze paragraaf.
+
+# Een voorbeeld - het beschouwingsdomein
 Voor dit document gebruiken we een voorbeeld, een casus op basis waarvan we de overige modellen zullen invullen.
 
 > - Jan is geboren op 10 februari 1970 in Zwolle.
@@ -33,26 +36,34 @@ Voor dit document gebruiken we een voorbeeld, een casus op basis waarvan we de o
 
 **TODO: Voorbeeld nog verder uitwerken. Liefst ook met een stukje wet- en regelgeving, bijvoorbeeld arbeidsrecht**
 
-# De concrete zaken uit het domein
+# De concrete zaken uit het beschouwde domein
 
-## De basis: objecten en eigenschappen
+De termen "beschouwingsdomein" "beschouwde domein" en "domein" kunnen in dit document als synoniem van elkaar worden gelezen. Waar we het over "verwerkingsdomein" hebben, bedoelen we expliciet het domein van de gegevensverwerking.
 
-> Een OBJECT is een onderscheidbaar iets in het beschouwde domein
+## De basis: (domein-)objecten en eigenschappen
 
-Wat we onderscheiden in een domein, en wat (dus) hier een object is, hangt af van wat we willen beschouwen. Als we het over objecten hebben, dan hebben we het daarmee over het conceptueel model. Het conceptueel model is, met andere woorden, een model van objecten.
+> Een DOMEINOBJECT is een onderscheidbaar iets in het beschouwde domein
 
-> Een EIGENSCHAP is een verschijnsel dat typisch is voor bepaalde objecten
+Wat we onderscheiden in een domein, en wat (dus) hier een object is, hangt af van wat we willen beschouwen. Als we het over domeinobjecten hebben, dan hebben we het daarmee over het conceptueel model. Het conceptueel model is, met andere woorden, een model van domeinobjecten.
 
-1. Een object is onderscheidbaar. Dit houdt in dat je voor iets in het domein kunt zeggen dat het er eentje is (en niet twee), dat het er zo-eentje is (en niet iets anders) en dat het die ene is (en niet een andere).
-2. Een object is iets in het domein. Dit houdt in dat wat je onderscheid, bepaald wordt door het domein. In verschillende domeinen kun je dus ook andere dingen (willen) onderscheiden. We stellen hier ook dat DE werkelijkheid niet bestaat, maar dat je er altijd met een bepaalde blik naar kijkt: je domeinblik.
-3. Een eigenschap is typisch voor bepaalde objecten. Dus bepaalde objecten *hebben* zo'n eigenschap. Maar dat wil niet zeggen dat een eigenschap is voorbehouden aan een bepaalde groep van objecten. Zo kan de eigenschap «haarkleur» een eigenschap zijn van zowel (het haar van een voorkomen van) een mens, een konijn of zelfs een knuffelbeertje. We stellen hiermee alleen dat die voorkomens iets gemeen hebben: een haarkleur.
-4. Wat een eigenschap is, is ook domeinspecifiek. In het vorige voorbeeld zou je ook kunnen stellen dat mensen, konijnen en knuffelbeertjes geen «haarkleur» hebben, maar dat «haarkleur» een eigenschap is van «haar», en dat een eigenschap van mensen, konijnen en knuffelbeertjes is dat ze «haar» kunnen hebben. Dat laatste is net wat preciezer, maar mogelijk niet relevant in jouw domein.
+We gebruiken hier bewust het woord "domeinobject" om expliciet te maken dat we het over de objecten hebben die we beschouwen in een domein. Alles kan immers een object zijn, afhankelijk wat je beschouwd. Zo hebben java-programmeurs het ook over objecten, maar dan bedoelen ze de java-objecten in hun programmeertaal (want dat is dan hetgeen ze beschouwen!). Verderop in dit document zullen we het hebben over gegevensobjecten. En dan bedoelen we dus ook weer die objecten die we beschouwen als we het over het gegevens hebben, dwz: het verwerkingsdomein.
+
+Verdieping: stel dat we een conceptueel model zouden maken van de Java programmeertaal. Het beschouwingsdomein is dan (dus) de Java programmeertaal. En de domeinobjecten zijn dan (dus) onder meer de Java-objecten (en classes, interfaces, functions, etc). Op diezelfde manier kunnen we *ook* een conceptueel model maken van de gegevensverwerking. De domeinobjecten zijn dan (dus) onder meer de gegevensobjecten. Vaak worden dergelijke modellen ook wel *meta*modellen genoemd, omdat we de gegevensverwerking zelf beschouwen, dwz: een model-van-een-model, en gegevens-over-gegevens.
+
+> Een EIGENSCHAP is een verschijnsel dat typisch is voor bepaalde DOMEINOBJECTen
+
+De definities van «domeinobject» en «eigenschap» zijn niet heel precies. Er kan van alles onder vallen. Dat is bewust: we willen immers zo'n beetje alle kunnen beschouwen wat we relevant vinden *om* te beschouwen. Toch is er uit de definities wel het één en ander te halen:
+
+1. Een domeinobject is onderscheidbaar. Dit houdt in dat je voor iets in het beschouwingsdomein kunt zeggen dat het er eentje is (en niet twee), dat het er zo-eentje is (en niet iets anders) en dat het die ene is (en niet een andere).
+2. Een domeinobject is iets in het beschouwde domein. Dit houdt in dat wat je onderscheid, bepaald wordt door het domein **en** hoe je dit domein wilt beschouwen. In verschillende domeinen of vanuit verschillende invalshoeken kun je dus ook andere dingen (willen) onderscheiden. We stellen hier ook dat DE werkelijkheid niet bestaat, maar dat je er altijd met een bepaalde blik naar kijkt: jou invalshoek op het beschouwde domein.
+3. Een eigenschap is typisch voor bepaalde objecten in het domein. Dus bepaalde domeinobjecten *hebben* zo'n eigenschap. Zo'n eigenschap is overigens niet voorbehouden aan een bepaalde groep van domeinobjecten. Zo kan de eigenschap «haarkleur» een eigenschap zijn van zowel (het haar van een voorkomen van) een mens, een konijn of zelfs een knuffelbeertje. We stellen hiermee alleen dat die objecten iets gemeen hebben: een haarkleur.
+4. Wat een eigenschap is, is ook domeinspecifiek. In het vorige voorbeeld zou je ook kunnen stellen dat mensen, konijnen en knuffelbeertjes geen «haarkleur» hebben, maar dat «haarkleur» een eigenschap is van «haar», en dat een eigenschap van mensen, konijnen en knuffelbeertjes is dat ze «haar» kunnen hebben. Dat laatste is net wat preciezer, maar mogelijk niet relevant in jouw domein. Andersom kan het ook zijn dat we het juist (alleen) relevant vinden wie de eigenschap «rood haar» heeft. Als we dat domein beschouwen, dan kennen we alleen de eigenschap «rood haar», en kunnen we wel objecten onderscheiden in objecten die rood haar hebben, en de objecten die dat niet hebben. In dit domein kunnen we dan niet de objecten kunnen onderscheiden met een andere haarkleur.
 
 "Jan" uit ons voorbeeld is een object, maar ook "Zwolle" en "Bakkerij broodjes". Een eigenschap van Jan is dat hij geboren is, en dat Jan bakker is.
 
 ## Identificerende eigenschap
 
-Als we het over objecten in de werkelijkheid hebben, dan kunnen we die objecten aanwijzen. Zoals in de zin "Hij daar, is de bakker". Stel dat die zin wordt uitgesproken in de winkel van Bakkerij Broodjes en er staan 5 mannen in die winkel, je zult dan de juiste persoon moeten aanwijzen! Je kunt ook gebruik maken van eigenschappen die de juiste persoon identificeren, zoals in de zin: "Die lange kale man daar, is Jan, de bakker".
+Als we het over objecten in de werkelijkheid hebben, dan kunnen we die objecten aanwijzen. Zoals in de zin "Hij daar, is de eigenaar". Stel dat die zin wordt uitgesproken in de winkel van Bakkerij Broodjes en er staan 5 mannen in die winkel, je zult dan de juiste persoon moeten aanwijzen! Je kunt ook gebruik maken van eigenschappen die de juiste persoon identificeren, zoals in de zin: "Die lange man met rood haar daar, is Jan, de eigenaar".
 
 > Een IDENTIFICERENDE EIGENSCHAP is een EIGENSCHAP waarmee de identiteit van een object kan worden vastgesteld
 
@@ -62,21 +73,27 @@ Veel identificerende eigenschappen zijn, goed beschouwd, feitelijk geen eigensch
 
 > Een TOEGEKENDE IDENTIFICERENDE EIGENSCHAP is een IDENTIFICERENDE EIGENSCHAP die met dat doel is toegekend aan een object
 
+Om expliciet aan te geven dat een eigenschap niet is toegekend, maar dat we vinden dat deze daadwerkelijk **eigen** is aan een object, kunnen we de term "intrinsieke eigenschap" gebruiken.
+
+Merk op dat wat we intrinsiek vinden en wat we toegekend vinden vooral een domeinaangelegenheid is: het is maar net hoe je er naar kijkt. Dat is dan ook precies wat we in een conceptueel model aan het doen zijn. Zo kun je stellen dat de naam van een persoon een intrinsieke eigenschap is, maar feitelijk is ook die maar toegekend ("en we noemen haar..."). En ook van het geslacht van een persoon kun je stellen dat dit een intrinsieke eigenschap is, maar er zijn ook beschouwingsdomeinen waar dit eerder als een toegekende eigenschap wordt gezien. Van belang is dus meer *of* sprake is van een eigenschap van een domeinobject, en niet zozeer of dit een intrinsieke dan wel toegekende is.
+
 ![](identificerende-eigenschap.svg)
 
 ## Kenmerken, classificaties en rollen
 
-Als we naar de eigenschappen van een object kijken, dan valt op dat er verschillende soorten eigenschappen zijn te onderkennen. Een eigenschap van een object kent een invulling. Zo is de invulling van de eigenschap «(heeft) lengte» van het object Jan uit ons voorbeeld gelijk aan 2 meter en 5 centimeter. En de invulling van de eigenschap «(heeft) werkgever» is Bakkerij Broodjes. Tenslotte is de invulling van de eigenschap «(heeft) geslacht» gelijk aan man. Drie eigenschappen, maar geheel andere invullingen. We hebben het respectievelijk over een kenmerk, rol en classificatie.
-
-> Een ROL is een EIGENSCHAP van een OBJECT in een relatie met een ander OBJECT
-
-Objecten kunnen zich verhouden tot andere objecten en dat kunnen wezenlijke eigenschappen zijn van zo'n object. Zo is een werkgever een rol van een persoon in een arbeidsrelatie met een andere persoon. Net zo goed als je kunt vragen "Wat is de leeftijd van Jan" (een vraag over de eigenschap 'leeftijd' van een persoon) kun je de vraag stellen "Wie is de werkgever van Jan". De rol van werkgever wordt hier bijvoorbeeld vervuld door Bakkerij Broodjes. En Jan zelf vervuld de rol van werknemer. In dit geval is '(heeft) werkgever' dus een eigenschap van Jan. De *invulling* van die rol ligt bij Bakkerij Broodjes.
+Als we naar de eigenschappen van een domeinobject kijken, dan valt op dat er verschillende soorten eigenschappen zijn te onderkennen. Een eigenschap van een domeinobject kent een invulling. Zo is de invulling van de eigenschap «(heeft) lengte» van het domeinobject Jan uit ons voorbeeld gelijk aan 2 meter en 5 centimeter. En de invulling van de eigenschap «(heeft) werkgever» is Bakkerij Broodjes. Tenslotte is de invulling van de eigenschap «(heeft) geslacht» gelijk aan man. Drie eigenschappen, maar geheel andere invullingen. We hebben het respectievelijk over een kenmerk, rol en classificatie.
 
 > Een KENMERK is een EIGENSCHAP van een OBJECT met een WAARDE
 
 > Een WAARDE is een letterlijke aanduiding van de waarde zelf
 
-Anders dan bij een rol, is een kenmerk een eigenschap met slechts een waarde. Zoals leeftijd in het voorgaande voorbeeld. Een waarde is geen object, maar juist een letterlijke invulling van de eigenschap. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Gelijk aan rollen is in dit geval '(heeft) leeftijd' een eigenschap van Jan. De *invulling* van dit kenmerk is bijvoorbeeld de waarde 25.
+Een kenmerk is een eigenschap met "slechts" een waarde. Zoals leeftijd in het voorgaande voorbeeld. Een waarde is geen object, maar juist een letterlijke invulling van de eigenschap. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een eigenschap van Jan. De *invulling* van dit kenmerk is bijvoorbeeld de waarde, het getal 25. En ook de eigenschap «(heeft) naam» van Jan is een kenmerk, met de waarde "Jan" (een woord bestaande uit drie letters).
+
+> Een ROL is een EIGENSCHAP van een OBJECT in een relatie met een ander OBJECT
+
+Objecten kunnen zich verhouden tot andere objecten en dat kunnen wezenlijke eigenschappen zijn van zo'n object. Zo is een werkgever een rol van een persoon in een arbeidsrelatie met een andere persoon. Net zo goed als je kunt vragen "Wat is de leeftijd van Jan" (een vraag over de eigenschap «leeftijd» van een persoon) kun je de vraag stellen "Wie is de werkgever van Jan". De rol van werkgever wordt hier bijvoorbeeld vervuld door Bakkerij Broodjes. En Jan zelf vervuld de rol van werknemer. In dit geval is «(heeft) werkgever» dus een eigenschap van Jan. De *invulling* van die rol ligt bij Bakkerij Broodjes.
+
+We bedoelen hier dus echt de Bakkerij Broodjes *zelf*. Dit is wezenlijk anders dan de eigenschap «naam» van die bakkerij. Als we zouden zeggen: "De werknemer van Jan is 'Bakkerij broodjes'", dan lijkt het alsof de werknemer van Jan een naam is die bestaat uit twee woorden (!). Van een dergelijk verschil tussen waarden en objecten wordt gebruik gemaakt in de grap: "Hoeveel is '1' plus '1'?" (antwoord: "11"). in bovenstaande zin wordt met Bakkerij Broodjes (dus) verwezen naar de Bakkerij zelf en niet naar de naam van de Bakkerij.
 
 > Een CLASSIFICATIE is een EIGENSCHAP van een OBJECT met een toekenning aan een KLASSE
 
@@ -84,23 +101,56 @@ Anders dan bij een rol, is een kenmerk een eigenschap met slechts een waarde. Zo
 
 Een classificatie zit tussen een kenmerk en een rol in. Het lijkt een beetje op een kenmerk, maar toch is een klasse geen waarde. En het lijkt een beetje op een rol, maar ook hier is een klasse geen object. Het zit er tussenin. Een klasse is een aanduiding voor een groep van objecten die iets gemeen hebben. Een classificatie verbindt een object met die klasse. Zou kun je bijvoorbeeld objecten groeperen die levende wezens zijn en waarvan de moeders de jongen melk geeft, dwz: de groep van zoogdieren. De klasse «zoogdier» kan dan de invulling zijn van de eigenschap 'biologische klasse' van een levend wezen.
 
+Er zijn eigenschappen die gaan over een onderscheid tussen objecten die onveranderlijk is. Zo zal de eigenschap «geboortedatum» van een persoon nooit veranderen: een persoon is nu eenmaal geboren op een bepaalde dag, dat zal niet meer veranderen. De eigenschap «leeftijd» verandert daarentegen elkaar jaar, maar wel op een hele reguliere manier (elk jaar eentje erbij). Er zijn ook eigenschappen niet veel veranderlijker zijn. Zo zijn rollen over het algemeen veranderlijk: Jan is (nu) werknemer van Bakkerij Broodjes, maar mogelijk is hij dat over een tijdje niet meer, en er is ook een tijd geweest dat hij het (nog) niet was.
+
+Ook voor classificaties geldt dit. Er zijn classificaties die onveranderlijk zijn. Zo zal een levend wezen altijd tot de klasse van zoogdieren behoren, of juist niet. De classificatie «werkeloos» is echt juist weer veranderlijk (en hangt in dit geval ook samen met de rol «werknemer»!).
+
 ![](kenmerk-rol-classificatie.svg)
 
-## Gegevens: de concrete zaken van de verwerking
+## Gegevens: de concrete zaken uit het verwerkingsdomein
 
-> Een GEGEVEN is een vastgelegde waarneming of bewering over een getypeerde EIGENSCHAP van een OBJECT
+> Een GEGEVEN is een vastgelegde waarneming of bewering over een getypeerde EIGENSCHAP van een DOMEINOBJECT
 
-> Een GEGEVENSGROEP is een groepering van GEGEVENs
+Eén enkel gegeven is een waarneming of bewering over een getypeerde eigenschap van een domeinobject. En dit gegeven is vastgelegd, op wat voor manier dan ook: van een kleitablet, papieren document tot electronisch bericht en van een papieren register (boekhouding, teboekstelling) tot digitale database. Zo'n gegeven gaat over een eigenschap van een domeinobject, bijvoorbeeld de eigenschap «geboortedatum» van de persoon Jan uit ons voorbeeld. Dergelijke gegevens zijn waarneming of beweringen: ze hoeven niet waar te zijn, maar ze zijn in ieder geval *gedaan* door iets (bv een sensor) of iemand (een daadwerkelijke persoon).
 
-> Een GEGEVENSOBJECT is een OBJECT als geheel van GEGEVENs met één hoofdonderwerp
-
-Hoewel een gegevensobject en (speciaal soort) object is, is het niet direct mogelijk om de twee met elkaar te verbinden. Gegevens bestaan, zo gezegd, in een andere werkelijkheid dan objecten. Denk bijvoorbeeld aan een object als een persoon, of een voertuig of een weg. Van alle drie kun je gegevens vastleggen. Maar om daarbij de relatie te leggen *waarover* deze gegevens gaan, zul je de betreffende persoon, voertuig of weg moeten identificeren. De enige manier om gegevens en objecten direct aan elkaar te relateren is letterlijk de gegevens op het object te "plakken". In de digitale werkelijkheid is dit een uitzondering. Vaak gebruiken we een toegekende identificerende eigenschap om bij een gegeven aan te kunnen geven over welk object het gaat.
+Hoewel gegevens gaan over de domeinobjecten , is het niet direct mogelijk om de twee met elkaar te verbinden. Gegevens bestaan, zo gezegd, eigenlijk altijd in een andere werkelijkheid dan domeinobjecten. Denk bijvoorbeeld aan een domeinobject als een persoon, of een voertuig of een weg. Van alle drie kun je gegevens vastleggen. Maar om daarbij de relatie te leggen *waarover* deze gegevens gaan, zul je de betreffende persoon, voertuig of weg moeten identificeren. De enige manier om gegevens en domeinobjecten direct aan elkaar te relateren is letterlijk de gegevens op het domeinobject te "plakken", of (net zo letterlijk): het domeinobject te "oormerken" (!). In onze huidige, digitale, samenleving is dit een uitzondering. Vaak gebruiken we een toegekende identificerende eigenschap om bij een gegeven aan te kunnen geven over welk domeinobject het gaat.
 
 In ons voorbeeld kunnen we bijvoorbeeld het volgende gegeven uitdrukken, door gebruik te maken van de toegekende identificerende eigenschap «BSN»: "De persoon met BSN 12345678 heeft geboortedatum 10 februari 1970". Dit is een bewering over de eigenschap «geboortedatum» van het object dat geïdentificeerd met het BSN 12345678, dwz: onze Jan.
 
-Zet enkele gegevens bij elkaar, en je krijgt een gegevensobject. Zo'n gegevensobject *zelf* is weer een object! Dus het is niet zo maar een groepering van gegevens, het is een groepering van gegevens die onderscheidbaar zijn in een domein. En in dit geval is dit het gegevensdomein. Meta-gegevens (gegevens *over* gegevens) kunnen zo ook worden uitgedrukt: een (meta)gegeven is daarmee een vastgelegd waarneming of bewering over een getypeerde eigenschap van een gegevensobject.
+> Een GEGEVENSGROEP is een groepering van GEGEVENs
+
+Een gegevensgroep is simpelweg het groeperen van enkele gegevens die we op een bepaalde manier bij elkaar vinden horen. Dus bijvoorbeeld een lijstje van geboortedata van personen (we groeperen dan op de eigenschap), of enkele gegevens over hetzelfde domeinobject, bijvoorbeeld onze Jan.
+
+> Een GEGEVENSOBJECT is een geheel van GEGEVENs over één of meerdere DOMEINOBJECTen
+
+
+
+Verdieping: Zet enkele gegevens bij elkaar, en je krijgt een gegevensobject. Zo'n gegevensobject *zelf* kunnen we ook weer zien als een domeinobject. Dus het is niet zo maar een groepering van gegevens, het is een groepering van gegevens die onderscheidbaar zijn in een domein. En in dit geval is dit het verwerkingsdomein van gegevens. Meta-gegevens (gegevens *over* gegevens) kunnen zo ook worden uitgedrukt: een (meta)gegeven is daarmee een vastgelegd waarneming of bewering over een getypeerde eigenschap van een gegevensobject.
+
+Verdieping: Merk op dat als we het hebben over gegevens-over-gegevens, we het over metagegevens hebben. Dergelijke metagegevens bestaan in dit geval *wel* in dezelfde werkelijkheid als de gegevens waarover ze gaan. Het is dan over het algemeen ook veel makkelijker om metagegevens en gegevens bij elkaar te plaatsen. Wel blijft van belang om te blijven erkennen dat het hier om twee verschillende objecten gaat. Onderstaand voorbeeld geeft dit weer:
+
+Een gegeven: "De persoon met BSN 12345678 heeft geboortedatum 10 februari 1970"
+Een metagegeven: "Het gegeven: 'De persoon met BSN 12345678 heeft geboortedatum 10 februari 1970' bevat een foutieve waarde voor de eigenschap BSN"
+
+Het gegeven *gaat over* een persoon, het metagegeven *gaat over* een gegeven.
 
 ![](object-gegeven-eigenschap.svg)
+
+## Gebruik van identificerende eigenschappen voor verwijzingen
+
+Een eigenschap kan een kenmerk, rol of classificatie zijn. Een gegeven kan daarmee dus gaan over zowel kenmerken, rollen en classificaties. Daarbij is duidelijk dat als je het over een eigenschap van een domeinobject hebt, je dit domeinobject zelf moet identificeren. Hiervoor hebben we de identificerende eigenschappen van een domeinobject gebruikt.
+
+Een gegeven dat gaat over een kenmerk, kunnen we direct de waarde van dat kenmerk zelf gebruiken, zoals in het gegeven uit bovenstaand voorbeeld: "10 februari 1970" was de waarde van het kenmerk waarover dit gegeven gaat. De waarde zelf kan letterlijk gebruikt worden in het gegeven, er is geen verschil tussen de manier waarop we de waarde *geven* en wat de waarde *betekent*. Dit gaat niet op voor rollen en classificaties.
+
+Bij een rol is de invulling van de rol geen waarde, maar een (ander) bedrijfsobject. Ook daar zullen we (dus) weer gebruik moeten maken van de identificerende eigenschappen van dit bedrijfsobject, zoals in het gegeven: "De persoon met BSN 12345678 is werknemer van het bedrijf met RSIN 87654321". Met dit gegeven wordt overigens hetzelfde bedoelt als met het gegeven "De persoon met de naam Jan is werknemer van het bedrijf met de naam Bakkerij Broodjes". Laatstgenoemde vorm is echter niet zo precies, aangezien het maar de vraag is of de eigenschap «naam» voldoende identificerend is.
+
+Daarnaast zie je bij relaties en rollen dat je hetzelfde gegeven in drie verschillende vormen kunt uitdrukken, met elk dezelfde betekenis:
+
+1. "De persoon met BSN 12345678 is werknemer van het bedrijf met RSIN 87654321"
+2. "De persoon met BSN 12345678 heeft werkgever het bedrijf met RSIN 87654321"
+3. "Het bedrijf met RSIN 87654321 heeft werknemer de persoon met BSN 12345678"
+
+Bij een classificatie is de invulling van een classificatie geen waarde, maar een klasse. We kunnen de letterlijke aanduiding van die klasse niet gebruiken in het gegeven, we zullen moeten verwijzen door gebruik te maken van een identificerende eigenschap van die klasse.
 
 ## Informatieobjecten: de duurzame vastlegging van gegevens
 
