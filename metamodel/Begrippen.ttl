@@ -47,23 +47,23 @@ mimbegrip:Domeinobject a skos:Concept;
 mimbegrip:Eigenschap a skos:Concept;
   rdfs:label "Eigenschap"@nl;
   skos:prefLabel "Eigenschap"@nl;
-  skos:definition "Een eigenschap is een verschijnsel dat typisch is voor bepaalde objecten"@nl;
+  skos:definition "Een eigenschap is een verschijnsel dat typisch is voor bepaalde domeinobjecten"@nl;
   skos:related mimbegrip:Domeinobject;
 .
 
 mimbegrip:IdentificerendeEigenschap a skos:Concept;
   rdfs:label "Identificerende eigenschap"@nl;
   skos:prefLabel "Identificerende eigenschap"@nl;
-  skos:definition "Een identificerende eigenschap is een eigenschap waarmee de identiteit van een object kan worden vastgesteld"@nl;
-  skos:scopeNote "Het gaat bij de identificatie of dit object er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende eigenschappen gezamenlijk nodig zijn."@nl;
+  skos:definition "Een identificerende eigenschap is een eigenschap waarmee de identiteit van een domeinobject kan worden vastgesteld"@nl;
+  skos:scopeNote "Het gaat bij de identificatie of dit domeinobject er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende eigenschappen gezamenlijk nodig zijn."@nl;
   skosthes:broaderGeneric mimbegrip:Eigenschap;
 .
 
 mimbegrip:ToegekendeIdentificerendeEigenschap a skos:Concept;
   rdfs:label "Toegekende identificerende eigenschap"@nl;
   skos:prefLabel "Toegekende identificerende eigenschap"@nl;
-  skos:definition "Een toegekende identificerende eigenschap is een identificerende eigenschap die met dat doel is toegekend aan een object"@nl;
-  skos:scopeNote "Een toegekende identificerende eigenschap is feitelijk geen eigenschap van een object, maar wordt juist toegekend aan een object. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen."@nl;
+  skos:definition "Een toegekende identificerende eigenschap is een identificerende eigenschap die met dat doel is toegekend aan een domeinobject"@nl;
+  skos:scopeNote "Een toegekende identificerende eigenschap is feitelijk geen eigenschap van een domeinobject, maar wordt juist toegekend aan een domeinobject. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen."@nl;
   skosthes:broaderGeneric mimbegrip:IdentificerendeEigenschap;
 .
 
@@ -104,7 +104,7 @@ mimbegrip:Inhoud a skos:Concept;
 mimbegrip:Rol a skos:Concept;
   rdfs:label "Rol"@nl;
   skos:prefLabel "Rol"@nl;
-  skos:definition "Een rol is een eigenschap van een object in een relatie met een ander object"@nl;
+  skos:definition "Een rol is een eigenschap van een domeinobject in een relatie met een ander object"@nl;
   skosthes:broaderGeneric mimbegrip:Eigenschap;
   skos:related mimbegrip:Domeinobject;
 .
@@ -112,7 +112,7 @@ mimbegrip:Rol a skos:Concept;
 mimbegrip:Kenmerk a skos:Concept;
   rdfs:label "Kenmerk"@nl;
   skos:prefLabel "Kenmerk"@nl;
-  skos:definition "Een kenmerk is een eigenschap van een object met een waarde"@nl;
+  skos:definition "Een kenmerk is een eigenschap van een domeinobject met een waarde"@nl;
   skosthes:broaderGeneric mimbegrip:Eigenschap;
   skos:related mimbegrip:Waarde;
 .
@@ -126,7 +126,7 @@ mimbegrip:Waarde a skos:Concept;
 mimbegrip:Classificatie a skos:Concept;
   rdfs:label "Classificatie"@nl;
   skos:prefLabel "Classificatie"@nl;
-  skos:definition "Een classificatie is een eigenschap van een object met een toekenning aan een klasse";
+  skos:definition "Een classificatie is een eigenschap van een domeinobject met een toekenning aan een klasse";
   skosthes:broaderGeneric mimbegrip:Eigenschap;
   skos:related mimbegrip:Klasse;
 .
@@ -158,7 +158,7 @@ mimbegrip:Objecttype a skos:Concept;
 mimbegrip:Attribuutsoort a skos:Concept;
   rdfs:label "Attribuutsoort"@nl;
   skos:prefLabel "Attribuutsoort"@nl;
-  skos:definition "Een attribuutsoort is een typering van een kenmerk van een object, behorende tot een objecttype"@nl;
+  skos:definition "Een attribuutsoort is een typering van een kenmerk van een domeinobject, behorende tot een objecttype"@nl;
   skos:related mimbegrip:Kenmerk;
   skos:related mimbegrip:Objecttype;
 .
