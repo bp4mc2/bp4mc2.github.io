@@ -1,4 +1,4 @@
-# Metamodelleren - inleiding
+# Inleiding
 
 NB: Dit document bouwt het metamodel beetje-bij-beetje op, door steeds iets meer van het model prijs te geven. Voor degene die graag het eindresultaat wil zien (het volledige metamodel), kun je ook direct naar de metamodel navigeren, onderaan deze pagina.
 
