@@ -59,6 +59,7 @@ We gebruiken hier bewust het woord "domeinobject" om expliciet te maken dat we h
 > ##### Verdieping
 >
 > Stel dat we een conceptueel model zouden maken van de Java programmeertaal. Het beschouwingsdomein is dan (dus) de Java programmeertaal. En de domeinobjecten zijn dan (dus) onder meer de Java-objecten (en classes, interfaces, functions, etc). Op diezelfde manier kunnen we *ook* een conceptueel model maken van de gegevensverwerking. De domeinobjecten zijn dan (dus) onder meer de gegevensobjecten. Vaak worden dergelijke modellen ook wel *meta*modellen genoemd, omdat we de gegevensverwerking zelf beschouwen, dwz: een model-van-een-model, en gegevens-over-gegevens.
+{: .block-tip }
 
 > Een EIGENSCHAP is een verschijnsel dat typisch is voor bepaalde DOMEINOBJECTen
 
