@@ -39,9 +39,11 @@ Bij een rol is de invulling van de rol geen waarde, maar een (ander) domeinobjec
 
 Daarnaast zie je bij relaties en rollen dat je hetzelfde gegeven in drie verschillende vormen kunt uitdrukken, met elk dezelfde betekenis:
 
+<pre>
 1. "De persoon met BSN 12345678 is werknemer van het bedrijf met RSIN 87654321"
 2. "De persoon met BSN 12345678 heeft werkgever het bedrijf met RSIN 87654321"
 3. "Het bedrijf met RSIN 87654321 heeft werknemer de persoon met BSN 12345678"
+</pre>
 
 Bij een classificatie is de invulling van een classificatie geen waarde, maar een klasse. We kunnen de letterlijke aanduiding van die klasse niet gebruiken in het gegeven, we zullen moeten verwijzen door gebruik te maken van een identificerende eigenschap van die klasse.
 

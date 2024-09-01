@@ -71,7 +71,7 @@ We bedoelen hier dus echt de [Bakkerij Broodjes] *zelf*. Dit is wezenlijk anders
 
 > Een CLASSIFICATIE is een EIGENSCHAP van een DOMEINOBJECT met een toekenning aan een KLASSE
 
-> KLASSE is een aanduiding van een groep DOMEINOBJECTen die iets gemeen hebben
+> Een KLASSE is een aanduiding van een groep DOMEINOBJECTen die iets gemeen hebben
 
 Een classificatie zit tussen een kenmerk en een rol in. Het lijkt een beetje op een kenmerk, maar toch is een klasse geen waarde. En het lijkt een beetje op een rol, maar een klasse is geen object. Het zit er tussenin. Een klasse is een aanduiding voor een groep van objecten die iets gemeen hebben. Een classificatie verbindt een object met die klasse. Zou kun je bijvoorbeeld objecten groeperen die levende wezens zijn en waarvan de moeders de jongen melk geeft, dwz: de groep van zoogdieren. De klasse «zoogdier» kan dan de invulling zijn van de eigenschap «biologische klasse» van een levend wezen.
 
