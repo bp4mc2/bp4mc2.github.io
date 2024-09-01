@@ -20,6 +20,12 @@ Gegevenstypen typeren gegevens die gaan over domeinobjecten. En objecttypen type
 
 ![](gegevensobjecttypemodel.svg)
 
+## Identificeren van gegevensobjecten: sleutels
+
+> Een sleutel is de verzameling van gegevenstypen waarmee een unieke aanduiding voor een gegevensobject kan worden gevormd
+
+*TODO: Uitleggen wat een sleutel is en hoe deze verschilt van de identificerende eigenschappen van een domeinobject. Relatie legggen met hoofdonderwerp*
+
 ## Speciaal soort gegevensobjecttypen
 
 Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorf*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één domeinobject van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in drie soorten gegevensobjecttypen:
@@ -28,13 +34,11 @@ Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomor
 - Een **eenduidig gegevensobjecttype** is een gegevensobjecttype met precies één hoofdonderwerp;
 - Een **strikt eenduidig gegevensobjecttype** is een eenduidig gegevensobjecttype over alleen eigenschappen van het hoofdonderwerp.
 
-Merk op dat het afleidbaar is wanneer een gegevensobjecttype een strikt logisch gegevensobjecttype is en wanneer niet. Zolang alle eigenschappen waarover dit gegevensobjecttype gaan behoren tot de eigenschappen van het hoofdonderwerp, is sprake van een strikt logisch (gegevens)objecttype, en alle andere gevallen niet.
-
-> Een HOOFDONDERWERP is een OBJECTTYPE waarvan de IDENTIFICERENDE EIGENSCHAPpen de sleutel vormen van het GEGEVENSOBJECTTYPE
+Merk op dat het afleidbaar is wanneer een gegevensobjecttype een strikt eenduidig gegevensobjecttype is en wanneer niet. Zolang alle eigenschappen waarover dit gegevensobjecttype gaan behoren tot de eigenschappen van het hoofdonderwerp, is sprake van een strikt eenduidig gegevensobjecttype, en alle andere gevallen niet.
 
 Het is denkbaar om gegevens ook te groeperen, zonder dat er expliciet een hoofdonderwerp is. In zo'n geval spreken we over een gegevensgroep: een groep van gegevens. En zo'n gegevensgroep kun je ook typeren: dan ontstaat een gegevensgroeptype. Het is simpelweg het bij elkaar zetten van enkele gegevens als groep, zonder dat er expliciet een hoofdonderwerp voor die groep van gegevens bestaat (de gegevens gaan over meerdere objecten).
 
-Ook gegevenstypen zelf kun je groeperen. Bijvoorbeeld als je het wilt hebben over alle gegevenstypen die "geheim" zijn. Het is nu dat we deze gegevens als groep bij elkaar willen zetten, om ze vervolgens (als groep) te typeren, maar juist de gegevens*typen* willen we groeperen.
+Ook gegevenstypen zelf kun je groeperen. Bijvoorbeeld als je het wilt hebben over alle gegevenstypen die "geheim" zijn. Het is nu niet dat we deze gegevens als groep bij elkaar willen zetten, om ze vervolgens (als groep) te typeren. In dit geval willen we juist de gegevens*typen* zelf groeperen.
 
 ![](gegevensobjecttypen.svg)
 
