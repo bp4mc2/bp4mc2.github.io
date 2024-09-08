@@ -25,7 +25,7 @@ mimbegrip:Verwerkingsdomein a skos:Concept;
 mimbegrip:Gegeven a skos:Concept;
   rdfs:label "Gegeven"@nl;
   skos:prefLabel "Gegeven"@nl;
-  skos:definition "Een gegeven is een vastgelegde waarneming of bewering over een getypeerde eigenschap van een object."@nl;
+  skos:definition "Een gegeven is een vastgelegde waarneming of bewering over een getypeerde eigenschap van een domeinobject."@nl;
   skos:related mimbegrip:Domeinobject;
   skos:related mimbegrip:Eigenschap;
 .
@@ -70,9 +70,10 @@ mimbegrip:ToegekendeIdentificerendeEigenschap a skos:Concept;
 mimbegrip:Gegevensobject a skos:Concept;
   rdfs:label "Gegevensobject"@nl;
   skos:prefLabel "Gegevensobject"@nl;
-  skos:definition "Een gegevensobject is een object als geheel van gegevens met één hoofdonderwerp"@nl;
-  skos:scopeNote "Een gegevensobject bestaat uit gegevens die elk gaan over een object. Dit kunnen verschillende objecten zijn, maar bij een gegevensobject zal er één object zijn dat het hoofdonderwerp van dit gegevensobject is. Het gegevensobject zelf gaat over dit object. Hiermee onderscheid een gegevensobject zich van een gegevensgroep, die geen hoofdonderwerp heeft, maar slechts een groepering van gegevens (over mogelijk verschillende objecten)"@nl;
+  skos:definition "Een gegevensobject is een onderscheidbaar geheel van gegevens over één of meerdere domeinobjecten"@nl;
+  skos:scopeNote "De definitie van gegevensobject lijkt sterk op die van een domeinobject. Ook hier gaat het om een onderscheidbaar 'iets' in een domein, namelijk: het domein van de gegevensverwerking. En dat 'iets' is altijd een geheel van gegevens. Elk afzonderlijk gegeven gaat vervolgens over een domeinobject, waarmee het gegevensobject gaat over al deze domeinobjecten gezamenlijk. Als alle gegevens over hetzelfde domeinobject gaan, dan gaat ook het gegevensobject over precies dit ene domeinobject."@nl;
   skosthes:broaderGeneric mimbegrip:Object;
+  skos:related mimbegrip:Domeinobject;
   skosthes:narrowerPartitive mimbegrip:Gegeven;
 .
 
@@ -80,14 +81,26 @@ mimbegrip:Gegevensgroep a skos:Concept;
   rdfs:label "Gegevensgroep"@nl;
   skos:prefLabel "Gegevensgroep"@nl;
   skos:definition "Een gegevensgroep is een groepering van gegevens"@nl;
-  skos:scopeNote "Een gegevensgroep heeft geen hoofdonderwerp. Indien wel sprake is van een hoofdonderwerp, dan betreft de groep van gegevens een gegevensobject"@nl;
+  skos:scopeNote "Een gegevensgroep is simpelweg een groepje van gegevens, zonder dat we deze groep als een onderscheidbaar geheel zien."@nl;
   skosthes:narrowerPartitive mimbegrip:Gegeven;
+.
+
+mimbegrip:Hoofdonderwerp a skos:Concept;
+  rdfs:label "Hoofdonderwerp"@nl;
+  skos:prefLabel "Hoofdonderwerp"@nl;
+  skos:definition "Een hoofdonderwerp is een domeinobject waarover een gegevensobject in hoofdzaak gaat"@nl;
+  skosthes:broaderGeneric mimbegrip:Domeinobject;
+  skosthes:related mimbegrip:Gegevensobject;
+  # skos:definition "Een hoofdonderwerp is een objecttype waarvan de identificerende eigenschappen de sleutel vormen van het gegevensobjecttype"@nl;
+  # skosthes:broaderGeneric mimbegrip:Objecttype;
+  # skos:related mimbegrip:IdentificerendeEigenschap;
+  # skos:related mimbegrip:Gegevensobjecttype;
 .
 
 mimbegrip:Informatieobject a skos:Concept;
   rdfs:label "Informatieobject"@nl;
   skos:prefLabel "Informatieobject"@nl;
-  skos:definition "Een informatieobject is een object als verzameling van aan elkaar gerelateerde gegevens die als eenheid wordt behandeld";
+  skos:definition "Een informatieobject is een onderscheidbaar geheel van aan elkaar gerelateerde gegevens die als eenheid wordt behandeld";
   skos:scopeNote "Een informatieobject is net als een gegevensgroep of gegevensobject een geheel van gegevens. Het onderscheid zich van deze, doordat het informatieobject zelf als eenheid wordt behandeld. Vaak bestaat een informatieobject uit meerdere gegevensobjecten. En van een informatieobject wordt ook eigenlijk altijd zelf weer gegevens over vastgelegd (metadata), bijvoorbeeld de auteur of de datum waarop het informatieobject is opgemaakt."@nl;
   skosthes:broaderGeneric mimbegrip:Object;
   skosthes:narrowerPartitive mimbegrip:Gegeven;
@@ -104,7 +117,7 @@ mimbegrip:Inhoud a skos:Concept;
 mimbegrip:Rol a skos:Concept;
   rdfs:label "Rol"@nl;
   skos:prefLabel "Rol"@nl;
-  skos:definition "Een rol is een eigenschap van een domeinobject in een relatie met een ander object"@nl;
+  skos:definition "Een rol is een eigenschap van een domeinobject in een relatie met een ander domeinobject"@nl;
   skosthes:broaderGeneric mimbegrip:Eigenschap;
   skos:related mimbegrip:Domeinobject;
 .
@@ -134,7 +147,7 @@ mimbegrip:Classificatie a skos:Concept;
 mimbegrip:Klasse a skos:Concept;
   rdfs:label "Klasse"@nl;
   skos:prefLabel "Klasse"@nl;
-  skos:definition "Een klasse is een aanduiding van een groep objecten die iets gemeen hebben"@nl;
+  skos:definition "Een klasse is een aanduiding van een groep domeinobjecten die iets gemeen hebben"@nl;
 .
 
 #
@@ -249,15 +262,6 @@ mimbegrip:Gegevensobjecttype a skos:Concept;
   skos:prefLabel "Gegevensobjecttype"@nl;
   skos:definition "Een gegevensobjecttype is een typering van gelijksoortige gegevensobjecten"@nl;
   skos:related mimbegrip:Gegevensobject
-.
-
-mimbegrip:Hoofdonderwerp a skos:Concept;
-  rdfs:label "Hoofdonderwerp"@nl;
-  skos:prefLabel "Hoofdonderwerp"@nl;
-  skos:definition "Een hoofdonderwerp is een objecttype waarvan de identificerende eigenschappen de sleutel vormen van het gegevensobjecttype"@nl;
-  skosthes:broaderGeneric mimbegrip:Objecttype;
-  skos:related mimbegrip:IdentificerendeEigenschap;
-  skos:related mimbegrip:Gegevensobjecttype;
 .
 
 mimbegrip:Gegevenstypegroep a skos:Concept;

@@ -12,9 +12,9 @@ In ons voorbeeld kunnen we bijvoorbeeld het volgende gegeven uitdrukken, door ge
 
 Een gegevensgroep is simpelweg het groeperen van enkele gegevens die we op een bepaalde manier bij elkaar vinden horen. Dus bijvoorbeeld een lijstje van geboortedata van personen (we groeperen dan op die eigenschap), of enkele gegevens over hetzelfde domeinobject, bijvoorbeeld onze [Jan].
 
-> Een GEGEVENSOBJECT is een geheel van GEGEVENs over één of meerdere DOMEINOBJECTen
+> Een GEGEVENSOBJECT is een onderscheidbaar geheel van GEGEVENs over één of meerdere DOMEINOBJECTen
 
-Als we een groep van gegevens als een geheel willen beschouwen, dus als een eigen object, een geheel, dan hebben we het over een gegevensobject. Zo'n object kan gegevens omvatten die gaan over precies één domeinobject (het onderwerp van het gegevensobject), maar ook over meerdere domeinobjecten. Als een gegevensobject vooral gaat over één domeinobject, dan noemen we dat domeinobject het *hoofdonderwerp* van het gegevensobject.
+Als we een groep van gegevens als een geheel willen beschouwen, dus als een eigen object, een geheel, dan hebben we het over een gegevensobject. Zo'n object kan gegevens omvatten die gaan over precies één domeinobject (het onderwerp van het gegevensobject), maar ook over meerdere domeinobjecten. De definitie van gegevensobject lijkt sterk op die van een domeinobject. Ook hier gaat het om een onderscheidbaar 'iets' in een domein, namelijk: het domein van de gegevensverwerking. En dat 'iets' is altijd een geheel van gegevens. Elk afzonderlijk gegeven gaat vervolgens over een domeinobject, waarmee het gegevensobject gaat over al deze domeinobjecten gezamenlijk. Als alle gegevens over hetzelfde domeinobject gaan, dan gaat ook het gegevensobject over precies dit ene domeinobject. Als een gegevensobject vooral gaat over één domeinobject, dan noemen we dat domeinobject het *hoofdonderwerp* van het gegevensobject.
 
 > Een HOOFDONDERWERP is een DOMEINOBJECT waarover een GEGEVENSOBJECT in hoofdzaak gaat
 
@@ -51,11 +51,13 @@ Bij een classificatie is de invulling van een classificatie geen waarde, maar ee
 
 ## Informatieobjecten: de duurzame vastlegging van gegevens
 
-> Een INFORMATIEOBJECT is een object als verzameling van aan elkaar gerelateerde GEGEVENs die als eenheid wordt behandeld
+> Een INFORMATIEOBJECT is een onderscheidbaar geheel van aan elkaar gerelateerde GEGEVENs die als eenheid wordt behandeld
 
-Deze definitie van informatieobject is afkomstig uit de [MTDO, Metagegevens voor duurzaam toegankelijke overheidsinformatie](https://www.nationaalarchief.nl/archiveren/mdto). Waar het bij gegevensobjecten gaat over de verwerking, gaat het bij informatieobjecten over het (leveren van) informatie. Oorspronkelijk ging het daarbij om documenten (bestaande uit ongestructureerde gegevens). Vanuit de context van gegevenstypering, is een informatieobject feitelijk een verzameling van gegevens (en dus ook een verzameling van gegevensobjecten), waarbij het verschil is dat een informatieobject duurzaam toegankelijk is. Akten, huwelijkscontracten, een verslag van een vergadering of een rapportage zijn voorbeelden van informatieobjecten.
+Deze definitie van informatieobject is gebaseerd de [MTDO, Metagegevens voor duurzaam toegankelijke overheidsinformatie](https://www.nationaalarchief.nl/archiveren/mdto). Waar het bij gegevensobjecten gaat over de verwerking van gegevens over domeinobjecten, gaat het bij informatieobjecten over het (leveren van) informatie. Oorspronkelijk ging het daarbij om documenten (bestaande uit ongestructureerde gegevens). Vanuit de context van gegevenstypering is een informatieobject feitelijk een geheel van gegevens (en daarmee ook een verzameling van één of meerdere gegevensobjecten), waarbij het verschil is dat een informatieobject duurzaam toegankelijk is. Akten, huwelijkscontracten, een verslag van een vergadering of een rapportage zijn voorbeelden van informatieobjecten.
 
-Een gegevensobject zou daarmee gelijktijdig *ook* een informatieobject kunnen zijn. Vaak bestaat een informatieobject echter uit meerdere gegevensobjecten, die gezamenlijk als één geheel worden behandeld.
+De definitie van een informatieobject lijkt dan ook sterk op die van een gegevensobject. Waar bij een gegevensobject de nadruk ligt op de relatie met domeinobjecten, ligt de relatie bij een informatieobject juist op de behandeling van het informatieobject *zelf*.
+
+Een gegevensobject zou gelijktijdig *ook* een informatieobject kunnen zijn. Vaak bestaat een informatieobject echter uit meerdere gegevensobjecten, die gezamenlijk als één geheel worden behandeld.
 
 Omdat een informatieobject als eenheid wordt behandeld, wordt van een informatieobject ook altijd gegevens bijgehouden: de metagegevens. Daarmee is een informatieobject *in het beschouwingsdomein van de informatiehuishouding* dus een domeinobject (!). Een informatieobject heeft bijvoorbeeld eigenschappen als auteur, versienummer, versiedatum, rubricering, etc. De metagagevens van zo'n informatieobject zijn daarmee gegevensobjecten die *gaan over* een informatieobject.
 
