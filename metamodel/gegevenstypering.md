@@ -97,7 +97,7 @@ Een gegevenstype dat gegevens typeert over classificaties, kun je koppelen aan e
 |Mannen meerkamponderdelen|HOOG|Hoogspringen|[High jump](http://dbpedia.org/resource/High_jump)|
 |Mannen meerkamponderdelen|400V|400 meter vlak|[400 metres](http://dbpedia.org/resource/400_metres)|
 |Mannen meerkamponderdelen|110H|110 meter horden|[100 metres hurdles](http://dbpedia.org/resource/110_metres_hurdles)|
-|Mannen meerkamponderdelen|DIS|Discuswerpen|[Discus throw](http://dbpedia.org/resource/Discus_throw)|
+|Mannen meerkamponderdelen|DISCUS|Discuswerpen|[Discus throw](http://dbpedia.org/resource/Discus_throw)|
 |Mannen meerkamponderdelen|POLSTOK|Polstokhoogspringen|[Pole vault](http://dbpedia.org/resource/Pole_vault)|
 |Mannen meerkamponderdelen|SPEER|Speerwerpen|[Javelin throw](http://dbpedia.org/resource/Javelin_throw)|
 |Mannen meerkamponderdelen|1500V|1500 meter vlak|[1500 metres](http://dbpedia.org/resource/1500_metres)|
@@ -106,14 +106,14 @@ Merk op dat deze classificatielijst eenvoudig is te verdiepen tot een classifica
 
 |Code|Klasse|Naam|Betekenis|
 |----|------|----|---------|
-|VER|SPRING|||
-|100V|LOOP|||
-|KOGEL|WERP|||
-|SPRING|ATHL|Springonderdeel||
-|LOOP|ATHL||Looponderdeel||
-|WERP|ATHL||Werponderdeel||
-|ATHL|SPORT||Athletiek||
-|SPORT||Sport||
+|VER|SPRING|..|..|
+|100V|LOOP|..|..|
+|KOGEL|WERP|..|..|
+|SPRING|ATHL|Springonderdeel|..|
+|LOOP|ATHL|Looponderdeel|..|
+|WERP|ATHL|Werponderdeel|..|
+|ATHL|SPORT|Athletiek|..|
+|SPORT|Sport|..|
 
 ### Gegevenstypen en gegevens m.b.t. populaties
 Een gegevenstype dat gegevens typeert over populaties, kun je ook koppelen aan een referentielijst. Deze referentielijst bevat referentiewaarden. Anders dan "echte" waarden, verwijzen deze referentiewaarden naar afzonderlijke domeinobjecten uit deze populatie. Deze referentiewaarden zijn feitelijk de sleutel van het betreffende domeinobject. Zo kun je een gegevenstype specificeren van de rol "land van herkomst" met als referentielijst een lijst met referentiewaarden die refereren aan de hierboven genoemde landen met een ISO 3166-1 landencode. Relevante eigenschappen van deze landen kunnen daarbij bijvoorbeeld zijn: naam, alpha-2 en alpha-3. Daarbij is zowel de alpha-2 als alpha-3 eigenschap bruikbaar als referentiewaarde. De naam is de identificerende eigenschap zoals deze voor mensen herkenbaar is (in dit geval degenen die de Nederlandse taal machtig zijn). Deze referentielijst bestaat uit de volgende gegevens (alleen de gegevens van de eerste drie landen zijn hieronder getoond):
