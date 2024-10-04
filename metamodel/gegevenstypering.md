@@ -122,4 +122,4 @@ Een gegevenstype dat gegevens typeert over populaties, kun je ook koppelen aan e
 |----------|-------|-------|----|
 |ISO 3166-1|AF|AFG|Afghanistan|
 |ISO 3166-1|AX|ALA|Åland|
-|ISO 3166-1|Albanië|AL|ALB|
+|ISO 3166-1|AL|ALB|Albanië|
