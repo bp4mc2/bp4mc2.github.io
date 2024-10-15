@@ -1,0 +1,47 @@
+@prefix mim: <http://bp4mc2.org/def/mim#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ex: <http://bp4mc2.org/def/mimex#>.
+
+ex:Getalwaardelijst a mim:Objecttype;
+  rdfs:label "Getalwaardelijst";
+  mim:attribuut ex:Getalwaardelijst.naam;
+  mim:attribuut ex:Getalwaardelijst.waarde;
+.
+ex:Getalwaardelijst.naam a mim:Attribuutsoort;
+  rdfs:label "naam";
+  mim:type mim:Tekst;
+  mim:kardinaliteit "1..1";
+.
+ex:Getalwaardelijst.waarde a mim:Attribuutsoort;
+  rdfs:label "waarde";
+  mim:type mim:Getal;
+  mim:kardinaliteit "0..*";
+.
+
+ex:Waardelijst a mim:Objecttype;
+  rdfs:label "Waardelijst";
+  mim:attribuut ex:Waardelijst.naam;
+.
+ex:Waardelijst.naam a mim:Attribuutsoort;
+  rdfs:label "naam";
+  mim:type mim:Tekst;
+  mim:kardinaliteit "1..1";
+.
+
+ex:Waarde a mim:Objecttype;
+  rdfs:label "Waarde";
+  mim:attribuut ex:Waarde.letterlijkeWaarde;
+.
+ex:Waarde.letterlijkeWaarde a mim:Attribuutsoort;
+  rdfs:label "letterlijke waarde";
+  mim:type mim:Getal;
+  mim:kardinaliteit "1..1";
+.
+
+ex:WaardelijstWaarde a mim:Relatiesoort;
+  rdfs:label "bevat";
+  mim:bron ex:Waardelijst;
+  mim:doel ex:Waarde;
+  mim:kardinaliteit "0..*";
+  mim:unidirectioneel true;
+.

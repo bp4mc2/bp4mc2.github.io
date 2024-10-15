@@ -86,6 +86,10 @@ Een gegevenstype dat gegevens typeert over kenmerken, kun je koppelen aan een wa
 |Fibonachegetallen onder 30|13|
 |Fibonachegetallen onder 30|21|
 
+De typering, het model van deze waardelijst zou er als volgt uit kunnen zien. Links is het onderscheid tussen de waardelijst en de waarde expliciet zichtbaar gemaakt, maar eigenlijk zou enkel de waardelijst voldoende kunnen zijn!
+
+![](getalwaardelijst.svg) 
+
 ### Gegevenstypen en gegevens m.b.t. classificatielijsten
 Een gegevenstype dat gegevens typeert over classificaties, kun je koppelen aan een referentielijst. Deze referentielijst bevat referentiewaarden. Anders dan "echte" waarden, verwijzen deze referentiewaarden naar afzonderlijke klassen. Deze referentiewaarden zijn feitelijk de sleutel van de betreffende klasse. Zo kun je een gegevenstype specificeren van de classificatie "onderdeel" met als referentielijst een lijst met referentiewaarden die refereren aan de hierboven genoemde klassen. Relevante eigenschappen van deze klassen kunnen daarbij bijvoorbeeld zijn: code, naam en betekenis. De code is de identificerende eigenschap van de klasse die gebruikt wordt als de referentiewaarde in het gegeven. De naam is de identificerende eigenschap zoals deze voor mensen herkenbaar is en de betekenis is de eigenschap die verwijst naar een begrip waarin de betekenis wordt uitgelegd. Deze referentielijst bestaat uit de volgende gegevens:
 
