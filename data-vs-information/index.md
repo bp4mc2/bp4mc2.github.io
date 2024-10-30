@@ -4,13 +4,13 @@ A very common discussion is the difference between «data» and «information».
 
 Let's finish this discussion one and for all! This page had the intention to make all thinks clear, and finally have some wisdom about this topic! ;-D
 
-> One might say that  wise people know when not to discuss a particular topic, so let's understand that the symbol used at the end of the previous sentence is used to indicate humor and that we won't discuss the concept of «wisdom» at all, and let this page be at least informative about the topic at hand!
+> One might say that wise people know when not to discuss a particular topic, so let's understand that the symbol used at the end of the previous sentence is used to indicate humor and that we won't discuss the concept of «wisdom» at all, and let this page be at least informative about the topic at hand!
 
 ## Some common understanding
 
 ### Terms and concepts
 
-When discussing the topic of data and information, we are actually talking about means of communication and language. For this, it is important to understand the basics of semiotics, or at least the difference between a term and the concept it refers to. A «term» is a sequence of one or more words that we use to refer to a particular concept. A «concept» is a unit of thought, an idea. When we use natural language, each word we use in a specific context, typically refers to a concept (and not the literal term). So when we say for example: "three plus four", we might understand the terms "three" and "four" as refering to the concepts of the number 3 and number 4, so we could continue with: "..makes seven".
+When discussing the topic of data and information, we are actually talking about means of communication and language. For this, it is important to understand the basics of semiotics, or at least the difference between a term and the concept it refers to. A «term» is a sequence of one or more words that we use to refer to a particular concept. A «concept» is a unit of thought, an idea. When we use natural language, each term we use in a specific context, typically refers to a concept (and not the literal term). So when we say for example: "three plus four", we might understand the terms "three" and "four" as refering to the concepts of the number 3 and number 4, and the term "plus" to the mathematical operation of addition, so we could continue with: "..makes seven".
 
 In this paper, we use french quotation marks («») when we explicitly want to refer to a concept. We will use double quotion marks ("") when we explicitly want to refer to the term itself. For example:
 
@@ -63,7 +63,9 @@ The last two examples are more that just physical data, because these examples c
 
 ### Logical data
 
-> `<http://dbpedia.org/resource/September_11_attacks> <http://example.org/def#occuredAt> “2001-09-11”^^xsd:date.` is a single piece of logical data
+Let's consider the following example of a single piece of logical data:
+
+> `<http://dbpedia.org/resource/September_11_attacks> <http://example.org/def#occuredAt> “2001-09-11”^^xsd:date.`
 
 We consider this a single piece of logical data (in the physical form of a RDF triple), because:
 
@@ -80,7 +82,7 @@ Another possible physical form is depicted below, where the first part is again 
 
 > `123456, 1000159200`
 
-These three examples are all examples of physical data that should be read as the same logical data. But we can only read this correctly with some knowledge, some metadata. The first example actually contains some of that metadata in the physical form, probability enough to find the actual knowledge to correctly read the logical data from its physical form. The second and third example do not contain enough metadata to read the logical data from its physical form correctly. This form is prone to errors and should be handled with great care. The third is the worst: why should "123456" be a reference to an event? And why should "1000159200" actually refer to a date??? We have no clue from the original physical data. Digital archeologists would have a hard time figuring this out.
+These three examples are all examples of physical data that should be read as the same logical data. But we can only read this correctly with some knowledge, some metadata. The first example actually contains some of that metadata in the physical form, probability enough to find the actual knowledge to correctly read the logical data from its physical form. The second and third example do not contain enough metadata to read the logical data from its physical form correctly. This form is prone to errors and should be handled with great care. The third is the worst: why should "123456" be a reference to an event? And why should "1000159200" actually refer to a date? And what is the relationship between these two??? We have no clue from the original physical data. Digital archeologists would have a hard time figuring this out.
 
 ### Information
 
@@ -97,3 +99,12 @@ If we want to interpret the logical data into information, the essence of this p
 We cannot know if this piece of information is true or false (in the real life), but we *can* know that this is the piece of information that should be interpreted from the data given.
 
 The question remains: when can a piece of logical data be interpreted as information. The answer is: when that piece of logical data contains enough metadata, that you can interpret the meaning of the data correctly (with possibly the help of some external resources to which the given metadata refers).
+
+### Why we model
+
+This give us the reason of why we model. We model, because it is import to have meaningful data, to correctly interpret the information message that is hidden within the physical structure of the data. For that we need:
+
+- **Physical models** to know what structure of physical data is available, and to link this to its logical form
+- **Logical models** to know what logical structures are available to represent facts
+- **Information models** to know which facts are part of the scope, which objects and their properties are relevant
+- **Semantic models** to describe what these facts mean, for what they stand in reality.
