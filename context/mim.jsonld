@@ -1,6 +1,8 @@
 {
   "@context": {
     "mim": "http://modellen.mim-standaard.nl/def/mim#",
-    "mim:type": {"@type": "@id"}
+    "mim:type": {"@type": "@id"},
+    "mim:bron": {"@type": "@id"},
+    "mim:doel": {"@type": "@id"}
   }
 }
