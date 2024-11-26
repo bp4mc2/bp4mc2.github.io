@@ -1,4 +1,6 @@
 {
-  "mim": "http://modellen.mim-standaard.nl/def/mim#",
-  "mim:type": {"@type": "@id"}
+  "@context": {
+    "mim": "http://modellen.mim-standaard.nl/def/mim#",
+    "mim:type": {"@type": "@id"}
+  }
 }
