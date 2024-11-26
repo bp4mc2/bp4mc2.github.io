@@ -1,8 +1,20 @@
 {
   "@context": {
     "mim": "http://modellen.mim-standaard.nl/def/mim#",
-    "mim:type": {"@type": "@id"},
-    "mim:bron": {"@type": "@id"},
-    "mim:doel": {"@type": "@id"}
+    "naam": {"@id": "mim:naam"},
+    "kardinaliteit": {"@id": "mim:kardinaliteit"},
+    "waarde": {"@id": "mim:waarde"},
+    "type": {"@id": "mim:type", "@type": "@id"},
+    "bron": {"@id": "mim:bron", "@type": "@id"},
+    "doel": {"@id": "mim:doel", "@type": "@id"},
+    "relatierol": {"@id": "mim:relatierol", "@type": "@id"},
+    "attribuut": {"@id": "mim:attribuut", "@type": "@id"},
+    "dataElement": {"@id": "mim:dataElement", "@type": "@id"},
+    "modelelementen": {"@id": "mim:bevatModelelement", "@container": "@type"},
+    "objecttypen": {"@id": "mim:Objecttype"},
+    "relatiesoorten": {"@id": "mim:Relatiesoort"},
+    "gestructureerde-datatypen": {"@id": "mim:GestructureerdDatatype"},
+    "primitieve-datatypen": {"@id": "mim:PrimitiefDatatype"},
+    "enumeraties": {"@id": "mim:Enumeratie"}
   }
 }
