@@ -1,0 +1,4 @@
+{
+  "mim": "http://bp4mc2.org/def/mim#",
+  "mim:type": {"@type": "@id"}
+}
