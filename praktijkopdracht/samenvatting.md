@@ -1,0 +1,3 @@
+Dit document beschrijft de gegevenstypering van het nieuw Wetboek van Strafvordering, zoals uitgewerkt door de trainees in de praktijkopdracht Gegevenstypering.
+
+...
