@@ -1,2 +1,115 @@
 var localBiblio = {
+  "AP": {
+    title: "Autoriteit Persoonsgegevens",
+    href: "https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/privacy-en-persoonsgegevens/wat-zijn-persoonsgegevens#:~:text=Genetische%20gegevens.,maakt%20de%20informatie%20zo%20gevoelig.",
+  },
+  "Adw": {
+    title: "Algemene Douanewet",
+  },
+  "AmbtsinstructiePolitie": {
+    title: "Ambtsinstructie voor de politie, de Koninklijke marechaussee en andere opsporingsambtenaren",
+  },
+  "BW": {
+    title: "Burgerlijk Wetboek",
+  },
+  "ECLINLHR2001AB2202": {
+    title: "ECLI:NL:HR:2001:AB2202",
+  },
+  "GemeenteAmsterdam": {
+    title: "Bijlage 1 bij protocol Alcohol-, drugs- en medicijngebruik: Wet- en regelgeving",
+  },
+  "Gw": {
+    title: "Grondwet",
+  },
+  "Handboekvoorstrafzaken": {
+    title: "Handboek voor strafzaken",
+  },
+  "KamerstukkenII20040526671nr7": {
+    title: "Kamerstukken II 2004/05, 26671, nr. 7, p. 35",
+  },
+  "KamerstukkenII201314339893": {
+    title: "Kamerstukken II 2013/14, 33989, 3, p. 8",
+  },
+  "LawInsider": {
+    title: "Intimate parts definition",
+    href: "https://www.lawinsider.com/dictionary/intimate-parts",
+  },
+  "NFI-1": {
+    title: "Herkomstonderzoek op basis van isotopen",
+    href: "https://www.forensischinstituut.nl/forensisch-onderzoek/herkomstonderzoek-op-basis-van-isotopen",
+  },
+  "NFI-2": {
+    title: "Toxicologie (Forensische)",
+    href: "https://www.forensischinstituut.nl/forensisch-onderzoek/toxicologie-forensische#:~:text=Toxicologie%20is%20de%20wetenschap%20die,rijden%20onder%20invloed%20en%20bedwelming.",
+  },
+  "NFI-3": {
+    title: "Vakbijlage Vergelijkend handschriftonderzoek",
+    href: "https://www.forensischinstituut.nl/publicaties/publicaties/2017/10/18/vakbijlage-vergelijkend-handschriftonderzoek",
+  },
+  "NFI-4": {
+    title: "Vergelijkend Spraakonderzoek",
+    href: "https://www.forensischinstituut.nl/publicaties/publicaties/2020/02/03/vakbijlage-vergelijkend-spraakonderzoek",
+  },
+  "NFI-5": {
+    title: "Vergelijkend onderzoek",
+    href: "https://www.forensischinstituut.nl/over-het-nfi/organisatie/organisatiestructuur",
+  },
+  "NFPO": {
+    title: "Haaranalyse door het Nederlands Forensisch Instituut bij het vermoeden van een aan drug of geneesmiddel gerelateerd misdrijf",
+    href: "https://www.npfo.nl/assets/archive_item/pdf/8b903dcba5bd7f5594e490b6aa51bdbd_2011wp0187.pdf",
+  },
+  "NaturePortfolio": {
+    title: "Microbiology articles from across Nature Portfolio",
+    href: "https://www-nature-com.translate.goog/subjects/microbiology?error=cookies_not_supported&code=b35b1c7e-484c-486e-9488-fdf9450364c2&_x_tr_sl=en&_x_tr_tl=nl&_x_tr_hl=nl&_x_tr_pto=rq#:~:text=Microbiology%20is%20the%20study%20of,host%20response%20to%20these%20agents.",
+  },
+  "Postwet2009": {
+    title: "Postwet 2009",
+  },
+  "Pw": {
+    title: "Politiewet 2012",
+  },
+  "RIVM-1": {
+    title: "Rijksinstituut voor Volksgezondheid en Milieu",
+    href: "https://rvs.rivm.nl/onderwerpen/normen/werkende/grenswaarden#:~:text=De%20grenswaarde%20is%20de%20maximaal,en%2Fof%2015%20minuten).",
+  },
+  "RIVM-2": {
+    title: "Infectieziekten en Veiligheid",
+    href: "https://www.rivm.nl/bibliotheek/digitaaldepot/wrr_infectieziekten.pdf",
+  },
+  "RVV1990": {
+    title: "Reglement verkeersregels en verkeerstekens 1990",
+  },
+  "Sv": {
+    title: "Wetboek van Strafvordering (nieuw)",
+  },
+  "ThesaurusPolitieacademie": {
+    title: "Thesaurus Politieacademie",
+  },
+  "VKJP": {
+    title: "Vereniging voor Kinder- en Jeugdpsychotherapie",
+    href: "https://www.vkjp.nl/de-praktijk/wet-en-regelgeving/jeugdstrafrecht#:~:text=Jeugddetentie%20is%20een%20maatregel%20die,en%20terugkeer%20in%20de%20maatschappij.",
+  },
+  "Vreemdelingenwet2000": {
+    title: "Vreemdelingenwet 2000",
+  },
+  "WODC": {
+    title: "WODC, Forensische expertise, jrg. 30, nr. 1 2004, p. 21",
+    href: "https://repository.wodc.nl/bitstream/handle/20.500.12832/695/jv0401-volledige-tekst_tcm28-76799.pdf?sequence=2&isAllowed=y",
+  },
+  "WetBig": {
+    title: "Wet op de beroepen in de individuele gezondheidszorg",
+  },
+  "ZiekenhuisGelderseVallei": {
+    title: "'MRI-onderzoek van het hart (met stress)'', Ziekenhuis Gelderse Vallei",
+    href: "https://www.geldersevallei.nl/patient/onderzoeken/mri-onderzoek-met-stress",
+  },
+  "juridischwoordenboeknl": {
+    title: "juridischwoordenboek.nl",
+  },
+  "omnl": {
+    title: "om.nl",
+  },
+  "rechtspraaknl": {
+    title: "rechtspraak.nl",
+  },
 }
