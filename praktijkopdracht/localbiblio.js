@@ -272,7 +272,7 @@ var localBiblio = {
   },
   "Sv": {
     title: "Nieuwe wetboek van Strafvordering",
-    href: "https://wetten.overheid.nl/BWBR0001903/2025-02-04",
+    href: "https://www.strafrechtketen.nl/onderwerpen/wetboek-van-strafvordering/documenten/kamerstukken/2023/03/21/wetsvoorstel-nieuw-wetboek-van-strafvordering",
   },
   "TC": {
     title: "Tekst & Commentaar",
