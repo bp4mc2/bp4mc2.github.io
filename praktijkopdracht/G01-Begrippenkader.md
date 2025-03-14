@@ -6,6 +6,8 @@
 
 ### Aanhouden
 
+*Een «Aanhouden» is een rechtshandeling.*
+
 > Het feitelijk vasthouden van iemand die er van verdacht wordt een strafbaar feit te hebben begaan.
 
 *Deze defnitie geldt in het strafrecht, in een civiele of strafprocedure is het het uitstel van de behandeling of de beslissing van de rechter.*
@@ -14,11 +16,15 @@ Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### Aanwezigheidsplicht
 
+*Een «Aanwezigheidsplicht» is een rechtsbetrekking.*
+
 > Een aanwezigheidsplicht is de verplichting op bepaalde tijdstippen of gedurende een bepaalde periode op een bepaalde locatie aanwezig te zijn
 
 Bron: Artikel 2.5.33 lid 2 sub c [[Sv]]
 
 ### Afstand doen van een recht
+
+*Een «Afstand doen van een recht» is een rechtshandeling.*
 
 > Het door zijn gedragingen te kennen geven dat men van zijn recht geen gebruik wenst te maken.
 
@@ -28,19 +34,25 @@ Voorbeeld(en): Afstand doen van het recht gehoord te worden
 
 ### Alcohol- en drugsverbod
 
+*Een «Alcohol- en drugsverbod» is een rechtsbetrekking.*
+
 > Een alcohol- en drugsverbod is het verbod op het gebruik van [verdovende middelen](#verdovende-middelen) of alcohol en de verplichting ten behoeve van de naleving van dit verbod mee te werken aan [bloedonderzoek](#bloedonderzoek) of [urineonderzoek](#urineonderzoek).
 
 Bron: Artikel 2.5.33 lid 2 sub f [[Sv]]
 
-Gerelateerd: [Urineonderzoek](#urineonderzoek), [Bloedonderzoek](#bloedonderzoek), [Verdovende middelen](#verdovende-middelen)
+Gerelateerd: [Urineonderzoek](#urineonderzoek), [Verdovende middelen](#verdovende-middelen), [Bloedonderzoek](#bloedonderzoek)
 
 ### Arts
+
+*Een «Arts» is een rechtssubject.*
 
 > Een arts is een persoon die in het BIG-register staat aangeduid als arts. 
 
 Bron: Artikel 3 lid 1 [[WetBIG]]
 
 ### Beslagexploot
+
+*Een «Beslagexploot» is een rechtshandeling.*
 
 > Een beslagexploot is een [exploot](#exploot) met betrekking tot inbeslagneming door een deurwaarder.
 
@@ -50,6 +62,8 @@ Gerelateerd: [Exploot](#exploot)
 
 ### Besmettelijke ziekte
 
+*Een «Besmettelijke ziekte» is een rechtsobject.*
+
 Alternatieve aanduiding: *infectieziekten*
 
 > Een besmettelijke ziekte is een infectieziekte waar er een besmetting is van mens of dier met microbiële agentia als bacteriën, virussen, schimmels en parasieten of met eiwitten (prionen in het geval van de gekke koeienziekte), leidend tot infecties.   
@@ -57,6 +71,8 @@ Alternatieve aanduiding: *infectieziekten*
 Bron: Rijksinstituut voor Volksgezondheid en Milieu [[RIVM]]
 
 ### Bewaring van het recht
+
+*Een «Bewaring van het recht» is een rechtsobject.*
 
 > Een bewaring van recht is een middel dat een schuldeiser kan inroepen tegen een schuldenaar zodat wordt voorkomen dat de schuldenaar zijn vermogen wegmaakt.
 
@@ -66,6 +82,8 @@ Voorbeeld(en): Conservatoir beslag, revindicatoir beslag
 
 ### Bezoek
 
+*Een «Bezoek» is een rechtsobject.*
+
 > Bezoek is ieder visueel contact tussen een gedetineerde en een ander persoon, die niet op de afdeling van de gedetineerde verblijft en evenmin gezamenlijk met hem aan bepaalde activiteiten deelneemt
 
 Toelichting: Bezoek kan dus ook contact tussen twee gedetineerden in één en dezelfde inrichting omvatten.
@@ -74,11 +92,15 @@ Bron: Kamerstukken II, 24 263, nr. 3, p. 58-59 (MvT) bij artikel 38 P [[BW]]
 
 ### Bloedonderzoek
 
+*Een «Bloedonderzoek» is een rechtsobject.*
+
 > Bloedonderzoek is een onderzoek dat betrekking heeft op het gebruik van alcohol of een of meer van de volgende stoffen: amfetamine, methamfetamine, cocaïne, MDMA, MDEA, MDA, cannabis, heroïne, morfine, GHB, gamma butyrolacton en 1,4-butaandiol.
 
 Bron: Artikel 1 [[BADGV]]
 
 ### Buitenvervolgingsstelling
+
+*Een «Buitenvervolgingsstelling» is een rechtsfeit.*
 
 > Een besluit van de rechtbank (naar aanleiding van een bezwaarschrift) waarbij zij de verdachte buiten vervolging stelt.
 
@@ -88,6 +110,8 @@ Bron: Artikel 3.2.4 lid 2 [[Sv]]
 
 ### Cel
 
+*Een «Cel» is een rechtsobject.*
+
 > Een cel is een afsluitbare ruimte geschikt voor het dag- en nachtverblijf van een persoon.
 
 Bron: 
@@ -95,6 +119,8 @@ Bron:
 Voorbeeld(en): Politiecel, cel van de koninklijke marechaussee
 
 ### Confrontatie
+
+*Een «Confrontatie» is een rechtsobject.*
 
 Alternatieve aanduiding: *Bewijsconfrontatie*
 
@@ -104,17 +130,23 @@ Bron:
 
 ### Contactverbod
 
+*Een «Contactverbod» is een rechtsbetrekking.*
+
 > Een contactverbod is het verbod contact te leggen of te laten leggen met bepaalde personen of instellingen.
 
 Bron: Artikel 2.5.33 lid 2 sub a [[Sv]]
 
 ### Curator
 
+*Een «Curator» is een rechtssubject.*
+
 > Een curator is iemand die door de rechter is aangewezen om geldzaken en andere belangrijke zaken (zoals zorg en wonen) te regelen voor iemand die dat zelf niet kan.
 
 Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### DNA-onderzoek
+
+*Een «DNA-onderzoek» is een rechtsobject.*
 
 > Het vaststellen of het uit dat celmateriaal bepaalde [DNA-profiel](#dna-profiel) overeenkomt met het [DNA-profiel](#dna-profiel) van een of meer veiliggestelde [sporen]() of met een of meer van de op grond van deze afdeling of de Wet DNA-onderzoek bij veroordeelden verwerkte [DNA-profielen](#dna-profiel).
 
@@ -124,11 +156,15 @@ Gerelateerd: , [DNA-profiel](#dna-profiel)
 
 ### DNA-profiel
 
+*Een «DNA-profiel» is een rechtsobject.*
+
 > Een DNA-profiel is een unieke set van genetische merkers.
 
 Bron: Interne documenten NFI [[NFI]]
 
 ### Dadelijke uitvoerbaarheid
+
+*Een «Dadelijke uitvoerbaarheid» is een rechtsfeit.*
 
 > Dadelijk uitvoerbaarheid is een gerechtelijke uitspraak die direct na die uitspraak uitgevoerd kan worden.
 
@@ -138,11 +174,15 @@ Bron:
 
 ### Doorzoeking
 
+*Een «Doorzoeking» is een rechtshandeling.*
+
 > Onderzoek dat verder gaat dan zoekend rondkijken. 
 
 Bron: Thesaurus Politieacademie [[ThesaurusPolitieacademie]]
 
 ### Drager van een ziekte
+
+*Een «Drager van een ziekte» is een rechtssubject.*
 
 > onderscheidt infectieziekten van andere soorten ziektebeelden.
 
@@ -154,6 +194,8 @@ Bron: p. 21.4, [[Handboekvoorstrafzaken]]
 
 ### Exploot
 
+*Een «Exploot» is een rechtsobject.*
+
 > Een exploot is een verzamelnaam voor officiële stukken die uitsluitend door de bevoegde deurwaarder kunnen worden uitgebracht.
 
 Bron: rechtspraak.nl [[rechtspraaknl]]
@@ -161,6 +203,8 @@ Bron: rechtspraak.nl [[rechtspraaknl]]
 Voorbeeld(en): Dagvaarding
 
 ### Forensisch Onderzoek
+
+*Een «Forensisch Onderzoek» is een rechtsobject.*
 
 > Forensisch onderzoek is onderzoek naar de toedracht van een vermoedelijk [strafbaar feit]() of de strafbaarheid van de verdachte
 
@@ -174,17 +218,23 @@ Voorbeeld(en): Sectie
 
 ### Gebiedsverbod
 
+*Een «Gebiedsverbod» is een rechtsbetrekking.*
+
 > Een gebiedsverbod is het verbod zich op of in de directe omgeving van een bepaalde locatie te bevinden.
 
 Bron: Artikel 2.5.33 lid 2 sub b [[Sv]]
 
 ### Genetische gegevens
 
+*Een «Genetische gegevens» is een rechtsobject.*
+
 > Genetische gegevens geven unieke informatie over iemands fysiologie of gezondheid en/of over de gezondheid van familieleden.
 
 Bron: Autoriteit Persoonsgegevens [[AP]]
 
 ### Grenswaarde
+
+*Een «Grenswaarde» is een rechtsobject.*
 
 > Een grenswaarde is de maximaal toegestane concentratie van een (gevaarlijke) stof in de individuele ademhalingszone van een werkende. 
 
@@ -194,6 +244,8 @@ Bron: Rijksinstituut voor Volksgezondheid en Milieu [[RIVM]]
 
 ### Haaronderzoek
 
+*Een «Haaronderzoek» is een rechtsobject.*
+
 > Haaronderzoek is onderzoek aan de uiterlijke kenmerken (morfologie) en onderzoek aan het DNA van het haar.
 
 Toelichting: Haaronderzoek, wordt veelal uitgevoerd op haar dat afkomstig is van de vertex posterior (achterzijde van het hoofd), maar kan ook worden toegepast op schaamhaar, borsthaar en okselhaar. 
@@ -201,6 +253,8 @@ Toelichting: Haaronderzoek, wordt veelal uitgevoerd op haar dat afkomstig is van
 Bron: Haaranalyse door het Nederlands Forensisch Instituut bij het vermoeden van een aan drug of geneesmiddel gerelateerd misdrijf [[NFPO]]
 
 ### Huis van bewaring
+
+*Een «Huis van bewaring» is een rechtsobject.*
 
 > Een huis van bewaring is een gebouw waar verdachten zitten die nog niet zijn voorgekomen en die in voorlopige hechtenis zitten.
 
@@ -210,11 +264,15 @@ Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### Ingeslotene
 
+*Een «Ingeslotene» is een rechtssubject.*
+
 > Een ingeslotene is een persoon die rechtens van zijn vrijheid is beroofd, alsmede de persoon die ten behoeve van de hulpverlening aan hem op een politiebureau is ondergebrach
 
 Bron: 
 
 ### Inrichting voor jeugdigen
+
+*Een «Inrichting voor jeugdigen» is een rechtsobject.*
 
 > Inrichtingen voor jeugdigen zijn voorzieningen van residentiële hulpverlening ten behoeve van de tenuitvoerlegging van vrijheidsstraffen en vrijheidsbenemende maatregelen alsmede voor de tenuitvoerlegging van een machtiging van de rechter om een jeugdige in een inrichtingen voor jeugdigen te doen opnemen.
 
@@ -224,17 +282,23 @@ Bron:
 
 ### Intieme delen
 
+*Een «Intieme delen» is een rechtsobject.*
+
 > Intieme delen geslachtsorganen, genitale gebied, anale gebied, binnenkant van de dij, lies, bil, of borst van een persoon
 
 Bron: Intimate parts definition [[LawInsider]]
 
 ### Inwendig schouwen van het lichaam
 
+*Een «Inwendig schouwen van het lichaam» is een rechtshandeling.*
+
 Alternatieve aanduiding: *lijfsvisitatie*
 
 > Het inwendig schouwen van het lichaam is het inwendig bekijken van het lichaam
 
 ### Isotopenonderzoek
+
+*Een «Isotopenonderzoek» is een rechtsobject.*
 
 > Een Isotopenonderzoek is het wetenschappelijke onderzoek naar de verhouding van verschillende isotopen van elementen in lichaamsmateriaal of andere materialen om informatie te verkrijgen over de herkomst of herkomstgeschiedenis van een persoon of object.
 
@@ -244,6 +308,8 @@ Bron: Herkomstonderzoek op basis van isotopen [[NFI-ISO]]
 
 ### Jeugddetentie
 
+*Een «Jeugddetentie» is een rechtsobject.*
+
 > Jeugddetentie is een maatregel kan worden opgelegd aan jongeren tussen de 12 en 23 jaar die veroordeeld zijn voor een misdrijf. 
 
 Toelichting: Het doel van jeugddetentie is om de jongere te straffen voor het gepleegde delict, maar ook om te werken aan zijn of haar resocialisatie en terugkeer in de maatschappij.
@@ -252,11 +318,15 @@ Bron: Vereniging voor Kinder- en Jeugdpsychotherapie [[VKJP]]
 
 ### Korpschef
 
+*Een «Korpschef» is een rechtssubject.*
+
 > De korpschef is belast met de leiding en het beheer van de politie.
 
 Bron: Artikel 27 lid 1 [[Pw]]
 
 ### Maatregel van terbeschikkingstelling
+
+*Een «Maatregel van terbeschikkingstelling» is een rechtsobject.*
 
 Alternatieve aanduiding: *terbeschikkingstelling, tbs*
 
@@ -265,6 +335,8 @@ Alternatieve aanduiding: *terbeschikkingstelling, tbs*
 Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### Medisch deskundige
+
+*Een «Medisch deskundige» is een rechtssubject.*
 
 Alternatieve aanduiding: *Medisch specialist*
 
@@ -278,11 +350,15 @@ Voorbeeld(en): gynaecoloog, cardioloog, huisarts
 
 ### Meldplicht
 
+*Een «Meldplicht» is een rechtsbetrekking.*
+
 > Een meldplicht is de verplichting zich op bepaalde tijdstippen te melden bij een bepaalde instantie.
 
 Bron: Artikel 2.5.33 lid 2 sub d [[Sv]]
 
 ### Microbiologisch onderzoek
+
+*Een «Microbiologisch onderzoek» is een rechtsobject.*
 
 > Microbiologisch onderzoek is de studie van microscopische organismen, zoals bacteriën, virussen, archaea, schimmels en protozoa.
 
@@ -291,6 +367,8 @@ Toelichting: Deze discipline omvat fundamenteel onderzoek naar de biochemie, fys
 Bron: 
 
 ### Nader ademonderzoek
+
+*Een «Nader ademonderzoek» is een rechtsobject.*
 
 Alternatieve aanduiding: *ademanalyse, nader onderzoek van uitgeademende lucht*
 
@@ -302,6 +380,8 @@ Bron: Artikel 163 lid 2 WVW 1995,  [[TC]]
 
 ### Niet-invasief beeldvormend onderzoek
 
+*Een «Niet-invasief beeldvormend onderzoek» is een rechtsobject.*
+
 > Niet-invasief beeldvormend onderzoek is onderzoek met onderzoekstechnieken die niet in het lichaam maar aan de buitenkant van uw lichaam worden gedaan.
 
 Bron: 'MRI-onderzoek van het hart (met stress)'', Ziekenhuis Gelderse Vallei [[ZiekenhuisGelderseVallei]]
@@ -309,6 +389,8 @@ Bron: 'MRI-onderzoek van het hart (met stress)'', Ziekenhuis Gelderse Vallei [[Z
 Voorbeeld(en): CT-scan, MRI-scan, nucleaire scan met een radioactieve stof
 
 ### Observatiecel
+
+*Een «Observatiecel» is een rechtsobject.*
 
 > Een observatiecel is een [cel](#cel) waarin de [ingeslotene](#ingeslotene) permanent kan worden geobserveerd.
 
@@ -318,17 +400,23 @@ Gerelateerd: [Cel](#cel), [Ingeslotene](#ingeslotene)
 
 ### Onderzoek aan de kleding
 
+*Een «Onderzoek aan de kleding» is een rechtsobject.*
+
 > Een onderzoek aan de kleding is het oppervlakkig aftasten van de kleding en het nauwkeurig onderzoek van de hoofdbedekking en het schoeisel.
 
 Bron: Artikel 20, lid 1, Ambtsinstructie Politie, Artikel 1:28, lid 5 sub A Artikel 20, lid 1, [[AmbtsinstructiePolitie]] [[Adw]]
 
 ### Onderzoek in het lichaam
 
+*Een «Onderzoek in het lichaam» is een rechtsobject.*
+
 > Het uitwendig en inwendig schouwen en onderzoeken van de openingen en holten van het onderlichaam, [het inwendig schouwen]() en onderzoeken van de openingen en holten van het bovenlichaam of het verrichten van [niet-invasief beeldvormend onderzoek](#niet-invasief-beeldvormend-onderzoek) en dat onderzoek niet met een technisch hulpmiddel wordt verricht waarbij röntgenstralen worden gebruikt als gevolg waarvan dat onderzoek risico's voor de gezondheid kan opleveren
 
 Gerelateerd: , [Niet-invasief beeldvormend onderzoek](#niet-invasief-beeldvormend-onderzoek)
 
 ### Onroerende zaak.
+
+*Een «Onroerende zaak.» is een rechtsobject.*
 
 > Een onroerende zaak is de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken.
 
@@ -340,6 +428,8 @@ Bron: Artikel 3:3 lid 1 [[BW]]
 
 ### Ontdoen van de kleding
 
+*Een «Ontdoen van de kleding» is een rechtshandeling.*
+
 Alternatieve aanduiding: *Uitkleden*
 
 > Ontdoen van de kleding is het uittrekken of afdoen van een of meer kledingstukken.
@@ -348,11 +438,15 @@ Bron: Art. 2.6.6 Sv en  Art. 2.6.6 [[Sv]] [[TC]]
 
 ### Postvervoerbedrijf
 
+*Een «Postvervoerbedrijf» is een rechtssubject.*
+
 > Een postvervoerbedrijf is eenieder die een of meer handelingen bedrijfsmatig verricht teneinde poststukken af te leveren
 
 Bron: Artikel 2 lid 1 sub e [[Postwet2009]]
 
 ### Rechthebbende
+
+*Een «Rechthebbende» is een rechtssubject.*
 
 > Een rechthebbende is een persoon die een recht bezit.
 
@@ -362,11 +456,15 @@ Bron: Kadaster [[Kadaster]]
 
 ### Reclassering
 
+*Een «Reclassering» is een rechtssubject.*
+
 > De reclassering is een instelling die het herintreden in de maatschappij van veroordeelden wil bevorderen en voorlichting geeft aan de rechter over de persoon van de verdachte.
 
 Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### Roerende zaak
+
+*Een «Roerende zaak» is een rechtsobject.*
 
 > Een roerende zaak is een zaak die geen [onroerende zaak]() is.
 
@@ -376,6 +474,8 @@ Gerelateerd:
 
 ### Schouw
 
+*Een «Schouw» is een rechtsobject.*
+
 > Een schouw is een bezichtiging op de plaats van het delict.
 
 Toelichting: Wat in het civiel en bestuursrecht een descente of plaatsopneming wordt genoemd, heet in het strafprocesrecht een schouw.
@@ -383,6 +483,8 @@ Toelichting: Wat in het civiel en bestuursrecht een descente of plaatsopneming w
 Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### Schriftuur
+
+*Een «Schriftuur» is een rechtshandeling.*
 
 > Een schriftuur is een schriftelijk stuk waarin gemotiveerd en welomschreven de redenen van een [cassatieberoep]() zijn opgesomd of worden weersproken.
 
@@ -392,6 +494,8 @@ Gerelateerd:
 
 ### Sectie
 
+*Een «Sectie» is een rechtsobject.*
+
 > Een sectie is een uit- en inwendig medisch [forensisch onderzoek](#forensisch-onderzoek) op een lichaam of één of meerdere lichaamsdelen van een overleden persoon 
 
 Bron: Forensisch Pathologisch Onderzoek [[NFI-S]]
@@ -399,6 +503,8 @@ Bron: Forensisch Pathologisch Onderzoek [[NFI-S]]
 Gerelateerd: [Forensisch Onderzoek](#forensisch-onderzoek)
 
 ### Speekselonderzoek
+
+*Een «Speekselonderzoek» is een rechtsobject.*
 
 Alternatieve aanduiding: *Onderzoek van speeksel*
 
@@ -408,11 +514,15 @@ Bron:
 
 ### Stopteken
 
+*Een «Stopteken» is een rechtsobject.*
+
 > Een stopteken is mondeling of door middel van handgebaren of lichtsignalen gegeven aanwijzing die weggebruikers verplicht te stoppen.
 
 Bron: Artikel 82  [[RVV1990]]
 
 ### Taakstraf
+
+*Een «Taakstraf» is een rechtsobject.*
 
 Alternatieve aanduiding: *werkstraf*
 
@@ -424,17 +534,23 @@ Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### Tandarts
 
+*Een «Tandarts» is een rechtssubject.*
+
 > Een tandarts is een persoon die in het BIG-register staat aangeduid als tandarts. 
 
 Bron: Artikel 3 lid 1 [[WetBIG]]
 
 ### Telecommunicatie
 
+*Een «Telecommunicatie» is een rechtshandeling.*
+
 > Telecommunicatie is iedere overdracht, uitzending of ontvangst van gegevens van welke aard ook door middel van kabels, langs radio-elektrische weg of door middel van optische of andere elektro-magnetische systemen.
 
 Bron: Kamerstukken II 2004/05, 26671, nr. 7, p. 35 [[MvTTelecommunicatie]]
 
 ### Telecommunicatiegeheim
+
+*Een «Telecommunicatiegeheim» is een rechtsbetrekking.*
 
 > Telecommunicatiegeheim is de bescherming [telecommunicatie](#telecommunicatie) tegen heimelijke overheidsinzage van privé-communicatie
 
@@ -444,6 +560,8 @@ Gerelateerd: [Telecommunicatie](#telecommunicatie)
 
 ### Terugwijzen
 
+*Een «Terugwijzen» is een rechtshandeling.*
+
 > Terugwijzen is het door een hoger gerecht ter behandeling terugsturen van een vernietigde rechterlijke uitspraak aan een lager gerecht.
 
 Toelichting: Meestal is dit een rechtbank in een andere jurisdictie, maar van dezelfde rang als de rechtbank die de vernietigde beslissing in eerste instantie heeft genomen.
@@ -451,6 +569,8 @@ Toelichting: Meestal is dit een rechtbank in een andere jurisdictie, maar van de
 Bron: juridischwoordenboek.nl [[juridischwoordenboeknl]]
 
 ### Toxilogisch onderzoek
+
+*Een «Toxilogisch onderzoek» is een rechtsobject.*
 
 Alternatieve aanduiding: *Toxicologie*
 
@@ -462,6 +582,8 @@ Bron: Toxicologie (Forensische) [[NFI-TOX]]
 
 ### Uitreiken in persoon
 
+*Een «Uitreiken in persoon» is een rechtshandeling.*
+
 Alternatieve aanduiding: *Betekenen*
 
 > Uitreiken in persoon is het overhandigen van gerechtelijke stukken, zoals een dagvaarding, een oproeping of een vonnis, aan een verdachte, een getuige, een gedaagde partij of belanghebbende.
@@ -472,11 +594,15 @@ Bron: rechtspraak.nl [[rechtspraaknl]]
 
 ### Uitreisverbod
 
+*Een «Uitreisverbod» is een rechtsbetrekking.*
+
 > Een uitreisverbod is de beperking van het recht om Nederland te verlaten of de verplichting het paspoort of ander reisdocument in te leveren.
 
 Bron: Artikel 2.5.33 lid 2 sub e [[Sv]]
 
 ### Uitwendig schouwen van het lichaam
+
+*Een «Uitwendig schouwen van het lichaam» is een rechtshandeling.*
 
 Alternatieve aanduiding: *onderzoek aan het lichaam*
 
@@ -486,11 +612,15 @@ Bron: Art. 2.6.6 lid 3 [[Sv]]
 
 ### Urineonderzoek
 
+*Een «Urineonderzoek» is een rechtsobject.*
+
 > Urineonderzoek is onderzoek van de urine op aanwezigheid van gedragsbeïnvloedende middelen. 
 
 Bron: Artikel 30 lid 1 P [[BW]]
 
 ### Verdovende middelen
+
+*Een «Verdovende middelen» is een rechtsobject.*
 
 Alternatieve aanduiding: *Drugs, stimulerende middelen, bedwelmingsmiddelen, roesmiddelen, geestverruimende middelen, verboden middelen of dope*
 
@@ -500,11 +630,15 @@ Bron: Bijlage 1 bij protocol Alcohol-, drugs- en medicijngebruik: Wet- en regelg
 
 ### Vergelijkend handschriftonderzoek
 
+*Een «Vergelijkend handschriftonderzoek» is een rechtsobject.*
+
 > Vergelijkend handschriftonderzoek is gebaseerd op een systematische vergelijking van een aantal schriftkenmerken. 
 
 Bron: Vakbijlage Vergelijkend handschriftonderzoek [[NFI-HO]]
 
 ### Vergelijkend onderzoek
+
+*Een «Vergelijkend onderzoek» is een rechtsobject.*
 
 > Een vergelijkend onderzoek is een onderzoek waarbij verschillende monsters met elkaar en met de NFI-database vergeleken worden om de herkomst te bepalen.
 
@@ -512,11 +646,15 @@ Bron: Vergelijkend onderzoek [[NFI-VO]]
 
 ### Vergelijkend spraakonderzoek
 
+*Een «Vergelijkend spraakonderzoek» is een rechtsobject.*
+
 > Bij een vergelijkend spraakonderzoek worden de spraakuitingen van de te onderzoeken spreker vergeleken met de spraakuitingen van een meestal bekende spreker in een andere opname.
 
 Bron: Vergelijkend Spraakonderzoek [[NFI-SO]]
 
 ### Verklaring van afstand
+
+*Een «Verklaring van afstand» is een rechtshandeling.*
 
 > Een verklaring van afstand is een verklaring van de eigenaar waarin deze zijn wil om de eigendom prijs te geven heeft geopenbaard.
 
@@ -524,11 +662,15 @@ Bron: art. 3:33 [[BW]]
 
 ### Verpleegkundige
 
+*Een «Verpleegkundige» is een rechtssubject.*
+
 > Een verpleegkundige is een persoon die in het BIG-register staat aangeduid als verpleegkundige. 
 
 Bron: Artikel 3 lid 1 [[WetBIG]]
 
 ### Voorlopig ademonderzoek
+
+*Een «Voorlopig ademonderzoek» is een rechtsobject.*
 
 Alternatieve aanduiding: *blaastest*
 
@@ -540,17 +682,23 @@ Bron: Artikel 160 lid 5 sub b WVW 1995. ECLI:NL:PHR:2024:1226, [[ThesaurusPoliti
 
 ### Voorwaardelijke straf
 
+*Een «Voorwaardelijke straf» is een rechtsobject.*
+
 > Een voorwaardelijke straf is een straf die pas uitgevoerd wordt als de veroordeelde zich niet aan bepaalde voorwaarden houdt.
 
 Bron: strafrecht.nl [[strafrechtnl]]
 
 ### Vreemdeling
 
+*Een «Vreemdeling» is een rechtssubject.*
+
 > Een vreemdeling is ieder die de Nederlandse nationaliteit niet bezit en niet op grond van een wettelijke bepaling als Nederlander moet worden behandeld.
 
 Bron: Artikel 1 [[Vreemdelingenwet2000]]
 
 ### Vrijheidsbenemende maatregel
+
+*Een «Vrijheidsbenemende maatregel» is een rechtsobject.*
 
 > Een vrijheidsbenemende maatregel is een [voorlopige hechtenis](), vreemdelingenbewaring, gijzeling, lijfsdwang, terbeschikkingstelling met bevel tot verpleging, plaatsing in een inrichting voor stelselmatige daders en vrijheidsbeneming op andere gronden.
 
@@ -560,6 +708,8 @@ Gerelateerd:
 
 ### Vrijheidsbenemende straf
 
+*Een «Vrijheidsbenemende straf» is een rechtsobject.*
+
 > Een vrijheidsbenemende straf is een [gevangenisstraf](), (vervangende) [hechtenis](), militaire detentie en (vervangende) jeugddetentie
 
 Bron: Artikel 1 sub r P [[BW]]
@@ -567,6 +717,8 @@ Bron: Artikel 1 sub r P [[BW]]
 Gerelateerd: , 
 
 ### Woning
+
+*Een «Woning» is een rechtsobject.*
 
 > Een [onroerende zaak]() waar daadwerkelijk de bestemming aan is gegeven om te wonen
 
@@ -577,6 +729,8 @@ Bron:   [[ECLINLHR2001AB2202]]
 Gerelateerd: 
 
 ### Zekerheidsstelling
+
+*Een «Zekerheidsstelling» is een rechtsobject.*
 
 > Een zekerheidsstelling is het betalen van een met het Openbaar Ministerie afgesproken bedrag waartegen in beslag genomen voorwerpen teruggegeven kunnen worden
 

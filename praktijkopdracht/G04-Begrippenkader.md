@@ -6,15 +6,19 @@
 
 ### Aanhouding
 
+*Een «Aanhouding» is een rechtshandeling.*
+
 Alternatieve aanduiding: *Arrestatie*
 
 > Een aanhouding is het meenemen van een [verdachte](#verdachte) naar een plaats voor [verhoor](#verhoor) door een [opsporingsambtenaar](#opsporingsambtenaar).
 
 Bron: Artikel 2.5.4, [[Sv]]
 
-Gerelateerd: [Opsporingsambtenaar](#opsporingsambtenaar), [Verdachte](#verdachte), [Verhoor](#verhoor)
+Gerelateerd: [Verdachte](#verdachte), [Opsporingsambtenaar](#opsporingsambtenaar), [Verhoor](#verhoor)
 
 ### Advocaat
+
+*Een «Advocaat» is een rechtssubject.*
 
 Alternatieve aanduiding: *Raadsman; Raadsvrouw*
 
@@ -25,6 +29,8 @@ Bron: Artikel 1 lid 1, [[Advw]], Artikel 1, [[Advw]], Artikel 1.2.15 lid 2, [[Sv
 Gerelateerd: [Jurist](#jurist)
 
 ### Akte van opsporingsbevoegheid
+
+*Een «Akte van opsporingsbevoegheid» is een rechtsobject.*
 
 Alternatieve aanduiding: *Bevoegdheid tot opsporing*
 
@@ -38,15 +44,19 @@ Gerelateerd: [Domein](#domein), [College van procureurs-generaal](#college-van-p
 
 ### Algemene maatregel van bestuur
 
+*Een «Algemene maatregel van bestuur» is een rechtsfeit.*
+
 > Een algemene maatregel van bestuur is een algemeen geldende regel die een lagere bevoegdheid heeft dan een wet.
 
 Toelichting: Elke maatregel van bestuur valt onder een wet.
 
 *Wordt niet gedefinieerd in de wet, maar wel toegelicht op de website van de Nederlandse Grondwet.*
 
-Bron: Artikel 89, [[Parlementnl]], Artikel 89, [[Gw]]
+Bron: Artikel 89, [[Gw]], Artikel 89, [[Parlementnl]]
 
 ### Ambtenaar van politie
+
+*Een «Ambtenaar van politie» is een rechtssubject.*
 
 > Een ambtenaar van politie is een medewerker in dienst van de politie.
 
@@ -60,17 +70,23 @@ Bron: Artiekl 1.11.1 [[Sv]]
 
 ### Arrest
 
+*Een «Arrest» is een rechtsobject.*
+
 > Een arrest is de beslissing in een [zaak](#zaak) zoals behandelt in het [gerechtshof](#gerechtshof)
 
 Gerelateerd: [Gerechtshof](#gerechtshof), [Zaak](#zaak)
 
 ### Basisregistratie personen
 
+*Een «Basisregistratie personen» is een rechtsobject.*
+
 > De basisregistratie personen is een registratie bevattende persoongegevens van alle ingezetenen in Nederland en bij wettelijke bepaling niet-ingezetenen.
 
 Bron: 
 
 ### Bedreigde getuige
+
+*Een «Bedreigde getuige» is een rechtssubject.*
 
 Alternatieve aanduiding: *Afgeschermde getuige*
 
@@ -92,6 +108,8 @@ Gerelateerd: [Verdachte](#verdachte), [Slachtoffer](#slachtoffer), [Herstelrecht
 
 ### Benadeelde partij
 
+*Een «Benadeelde partij» is een rechtssubject.*
+
 > De benadeelde partij is de [natuurlijk persoon](#natuurlijk-persoon) of de rechtspersoon die als rechtstreeks gevolg van een [strafbaar feit](#strafbaar-feit) vermogensschade heeft geleden of, voor zover de wet op vergoeding hiervan recht geeft, ander nadeel heeft ondervonden, kan zich met zijn vordering tot schadevergoeding voegen in het strafproces.
 
 Bron: 
@@ -100,13 +118,17 @@ Gerelateerd: [natuurlijk persoon](#natuurlijk-persoon), [Strafbaar feit](#strafb
 
 ### Berechten
 
+*Een «Berechten» is een rechtshandeling.*
+
 > Het berechten is de behandeling van een [zaak](#zaak) door de rechter in [eerste aanleg](#eerste-aanleg) of in [hoger beroep]() ter bepaling van de gegrondheid van de tegen een [verdachte](#verdachte) ingestelde [vervolging](#vervolging).
 
 Bron: Arikel 1.1.7 lid 1, [[Sv]]
 
-Gerelateerd: [Zaak](#zaak), [Eerste aanleg](#eerste-aanleg), [Verdachte](#verdachte), [Vervolging](#vervolging), 
+Gerelateerd: [Zaak](#zaak), [Eerste aanleg](#eerste-aanleg), [Verdachte](#verdachte), , [Vervolging](#vervolging)
 
 ### Beroep
+
+*Een «Beroep» is een rechtshandeling.*
 
 Alternatieve aanduiding: *Hoger beroep*
 
@@ -114,17 +136,21 @@ Alternatieve aanduiding: *Hoger beroep*
 
 Bron: Artikel 1.2.13 lid 1 sub a, [[Sv]]
 
-Gerelateerd: [Gewoon rechtsmiddel](#gewoon-rechtsmiddel), , [Procespartij](#procespartij)
+Gerelateerd: , [Gewoon rechtsmiddel](#gewoon-rechtsmiddel), [Procespartij](#procespartij)
 
 ### Beroep in cassatie
+
+*Een «Beroep in cassatie» is een rechtshandeling.*
 
 > Beroep in cassatie is het beroep aantekenen bij de [Hoge Raad]() tegen een [uitspraak](#uitspraak) of [vonnis](#vonnis) van een lagere rechter
 
 Bron: Artikel 398, [[Rv]]
 
-Gerelateerd: , [Vonnis](#vonnis), [Uitspraak](#uitspraak)
+Gerelateerd: [Vonnis](#vonnis), , [Uitspraak](#uitspraak)
 
 ### Bevel tot medebrenging
+
+*Een «Bevel tot medebrenging» is een rechtshandeling.*
 
 > Een bevel tot medebrenging is een middel dat een rechter in kan zetten om de aanwezigheid van een persoon te verplichten
 
@@ -132,25 +158,31 @@ Bron: Artikel 1.2.19 lid 2, [[Sv]]
 
 ### Bevoegdheid
 
+*Een «Bevoegdheid» is een rechtsbetrekking.*
+
 > Een bevoegdheid is een door een wet toegekende toestemming om in bepaalde situaties te mogen handelen
 
 Bron: Artikel 1.2.15 lid 3, [[Sv]]
 
 ### Bewaring
 
+*Een «Bewaring» is een rechtshandeling.*
+
 > Bewaring is het in voorlopige hechtenis stellen van een [verdachte](#verdachte) door de [Rechter-commissaris]() 
 
-Bron: Inbewaringstelling, [[Rechtspraaknl]], Artikel 1.2.9 lid 1 sub b, [[Sv]]
+Bron: Artikel 1.2.9 lid 1 sub b, [[Sv]], Inbewaringstelling, [[Rechtspraaknl]]
 
 Gerelateerd: , [Verdachte](#verdachte)
 
 ### Bezwaarschrift
 
+*Een «Bezwaarschrift» is een rechtsobject.*
+
 > Een bezwaarschrift is een [gewoon rechtsmiddel](#gewoon-rechtsmiddel) waarin een [procespartij](#procespartij) bezwaar kan maken tegen een [beslissing]()
 
 Bron: Artikel 6.5 lid 1, [[Awb]], Artikel 1.2.12 lid 3, [[Sv]]
 
-Gerelateerd: [Procespartij](#procespartij), , [Gewoon rechtsmiddel](#gewoon-rechtsmiddel)
+Gerelateerd: , [Procespartij](#procespartij), [Gewoon rechtsmiddel](#gewoon-rechtsmiddel)
 
 ### Bijzondere opsporingsdienst
 
@@ -162,6 +194,8 @@ Bron: Artikel 3 [[Wbo]], Artikel 1 lid a [[Wbo]]
 
 ### Buitengewoon opsporingsambtenaar
 
+*Een «Buitengewoon opsporingsambtenaar» is een rechtssubject.*
+
 > Een buitengewoon opsporingsambtenaar is een ambtenaar met een specifieke opsporingsbevoegdheid.
 
 Toelichting: Ambtenaren met een buitengewone opsporingsbevoegdheid middels de Wet op bijzondere opsporingsdiensten zijn uitgesloten.
@@ -169,6 +203,8 @@ Toelichting: Ambtenaren met een buitengewone opsporingsbevoegdheid middels de We
 Bron: Artikel 1.3.11 lid 1 onderdelen a, b, en c [[Sv]]
 
 ### College van procureurs-generaal
+
+*Een «College van procureurs-generaal» is een rechtssubject.*
 
 > Het college van procureurs-generaal is de landelijke leiding van het [Openbaar Ministerie](#openbaar-ministerie) die het landelijke opsporings- en vervolgingsbeleid vastellen.
 
@@ -178,9 +214,13 @@ Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Openbaar Ministerie](
 
 ### Dagtekening
 
+*Een «Dagtekening» is een rechtsfeit.*
+
 > De dagtekening is de datum die op een brief, factuur of officieel document is vermeld.
 
 ### Direct slachtoffer
+
+*Een «Direct slachtoffer» is een rechtssubject.*
 
 > Het direct slachtoffer is de [natuurlijk persoon](#natuurlijk-persoon) of de rechtspersoon die als rechtstreeks gevolg van een [strafbaar feit](#strafbaar-feit) lichamelijke, geestelijke of emotionele schade heeft geleden of economisch nadeel heeft ondervonden, of een familielid van een persoon wiens overlijden rechtstreeks veroorzaakt is door een [strafbaar feit](#strafbaar-feit).
 
@@ -200,6 +240,8 @@ Gerelateerd: [Opsporingsbevoegdheid](#opsporingsbevoegdheid), [Strafbaar feit](#
 
 ### Eerste aanleg
 
+*Een «Eerste aanleg» is een rechtsfeit.*
+
 Alternatieve aanduiding: *Eerste instantie*
 
 > De eerste aanleg is het [gerecht](#gerecht) waar een procedure begint.
@@ -212,6 +254,8 @@ Gerelateerd: [Gerecht](#gerecht)
 
 ### Eindarrest
 
+*Een «Eindarrest» is een rechtsobject.*
+
 > Een eindarrest is een [arrest](#arrest) dat aan het einde van een [zaak](#zaak) wordt opgesteld
 
 Bron: Artikel 1.2.3 lid 3, [[Sv]]
@@ -220,17 +264,23 @@ Gerelateerd: [Zaak](#zaak), [Arrest](#arrest)
 
 ### Eindvonnis
 
+*Een «Eindvonnis» is een rechtsobject.*
+
 > Een eindvonnis is een [vonnis](#vonnis) dat aan het einde van een [zaak](#zaak) wordt opgesteld
 
 Gerelateerd: [Vonnis](#vonnis), [Zaak](#zaak)
 
 ### Elektronische handtekening
 
+*Een «Elektronische handtekening» is een rechtsobject.*
+
 > Een elektronische handtekening is een handtekening die bestaat uit elektronische gegevens die gehecht zijn aan of logisch verbonden zijn met andere elektronische gegevens die worden gebruikt door de ondertekenaar om te ondertekenen.
 
 Bron: Artikel 1.1.12 lid 1, [[Sv]]
 
 ### Elektronische voorziening
+
+*Een «Elektronische voorziening» is een rechtsobject.*
 
 > Een elektronische voorziening is de bij of krachtens [algemene maatregel van bestuur](#algemene-maatregel-van-bestuur) aangewezen voorziening ten behoeve van de overdracht van berichten en het indienen van stukken langs elektronische weg.
 
@@ -240,13 +290,17 @@ Gerelateerd: [Algemene maatregel van bestuur](#algemene-maatregel-van-bestuur)
 
 ### Enkelvoudige kamer
 
+*Een «Enkelvoudige kamer» is een rechtssubject.*
+
 > Een enkelvoudige kamer is een [raadkamer](#raadkamer) waarbij één [rechter]() rechtspreekt
 
 Bron: Enkelvoudige kamer, [[Rechtspraaknl]], Artikel 1.2.5 lid 1, [[Sv]], Artikel 8.10, [[Awb]]
 
-Gerelateerd: [Raadkamer](#raadkamer), 
+Gerelateerd: , [Raadkamer](#raadkamer)
 
 ### Europees Openbaar Ministerie
+
+*Een «Europees Openbaar Ministerie» is een rechtssubject.*
 
 > Het Europees Openbaar Ministerie is het [Openbaar Ministerie](#openbaar-ministerie) van de Europese Unie
 
@@ -255,6 +309,8 @@ Bron: Artikel 1.2.9 lid 2 sub c, [[Sv]]
 Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Openbaar Ministerie](#openbaar-ministerie)
 
 ### Feitelijke verblijfplaats
+
+*Een «Feitelijke verblijfplaats» is een rechtsfeit.*
 
 Alternatieve aanduiding: *Woonadres*
 
@@ -266,19 +322,25 @@ Bron: , lid 2, [[WetBRP]]
 
 ### Functioneel parket
 
+*Een «Functioneel parket» is een rechtssubject.*
+
 > Het functioneel parket is een onderdeel van het [Openbaar Ministerie](#openbaar-ministerie) dat zich richt op complexe fraude en milieucriminaliteit en het afhandelen van complexe ontnemingszaken
 
-Bron: Artikel 1.2.9 lid 2 sub b, [[Sv]], Functioneel parket, [[OM]]
+Bron: Functioneel parket, [[OM]], Artikel 1.2.9 lid 2 sub b, [[Sv]]
 
 Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Openbaar Ministerie](#openbaar-ministerie)
 
 ### Gerecht
+
+*Een «Gerecht» is een rechtshandeling.*
 
 > Een gerecht is een rechtsprekende instantie.
 
 Bron: Gerecht, [[Rechtspraaknl]]
 
 ### Gerechtshof
+
+*Een «Gerechtshof» is een rechtsobject.*
 
 > Een gerechtshof is een [gerecht](#gerecht) dat een [zaak](#zaak) in hoger beroep behandelt.
 
@@ -287,6 +349,8 @@ Bron: Artikel 1.2.3 lid 1, [[Sv]]
 Gerelateerd: [Zaak](#zaak), [Gerecht](#gerecht)
 
 ### Getuige
+
+*Een «Getuige» is een rechtssubject.*
 
 Alternatieve aanduiding: *Verklaren*
 
@@ -300,6 +364,8 @@ Bron: Getuige à charge, [[Rechtspraaknl]], Getuige à decharge, [[Rechtspraaknl
 
 ### Gevangenhouding
 
+*Een «Gevangenhouding» is een rechtshandeling.*
+
 > Een gevangenhouding is het voortzetten van een [vrijheidsbenemende]() maatregel
 
 Bron: Artikel 1.2.13 lid 1 sub b, [[Sv]]
@@ -307,6 +373,8 @@ Bron: Artikel 1.2.13 lid 1 sub b, [[Sv]]
 Gerelateerd: 
 
 ### Gevangenneming
+
+*Een «Gevangenneming» is een rechtshandeling.*
 
 > Een gevangenneming is een [vrijheidsbenemende]() maatregel
 
@@ -316,13 +384,17 @@ Gerelateerd:
 
 ### Gewoon opsporingsambtenaar
 
+*Een «Gewoon opsporingsambtenaar» is een rechtssubject.*
+
 > Een gewoon opsporingsambtenaar is een [opsporingsambtenaar](#opsporingsambtenaar) die een [officier van justitie](#officier-van-justitie) is, of een [ambtenaar van politie](#ambtenaar-van-politie), of [militair van de Koninklijke marechaussee](), of een [opsporingsambtenaar](#opsporingsambtenaar) van de [bijzondere opsporingsdiensten]().
 
 Bron: Artikel 1.3.10, [[Sv]]
 
-Gerelateerd: [Officier van Justitie](#officier-van-justitie), , [Ambtenaar van politie](#ambtenaar-van-politie), , [Opsporingsambtenaar](#opsporingsambtenaar)
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Ambtenaar van politie](#ambtenaar-van-politie), , [Opsporingsambtenaar](#opsporingsambtenaar), 
 
 ### Gewoon rechtsmiddel
+
+*Een «Gewoon rechtsmiddel» is een rechtsbetrekking.*
 
 > Een gewoon rechtsmiddel is een middel dat een [procespartij](#procespartij) in kan zetten tijdens de [zitting](#zitting)
 
@@ -333,6 +405,8 @@ Gerelateerd: [Procespartij](#procespartij), [Zitting](#zitting)
 Voorbeeld(en): Bezwaarschrift, klaagschrift, hoger beroep
 
 ### Griffier
+
+*Een «Griffier» is een rechtssubject.*
 
 > Een griffier is een medewerker van de rechtbank, die opschrijft wat er gebeurt tijdens een [zitting](#zitting)
 
@@ -346,7 +420,7 @@ Gerelateerd: [Zitting](#zitting)
 
 Bron: Artikel 1.11.1 [[Sv]]
 
-Gerelateerd: [Veroordeelde](#veroordeelde), , [Slachtoffer](#slachtoffer), [Strafbaar feit](#strafbaar-feit), [Verdachte](#verdachte)
+Gerelateerd: [Veroordeelde](#veroordeelde), [Slachtoffer](#slachtoffer), [Strafbaar feit](#strafbaar-feit), [Verdachte](#verdachte), 
 
 ### Herstelrechtvoorziening
 
@@ -358,15 +432,19 @@ Gerelateerd: [Herstelrecht](#herstelrecht)
 
 ### Hulpofficier van justitie
 
+*Een «Hulpofficier van justitie» is een rechtssubject.*
+
 > Een hulpofficier van justitie is een [officier van justitie](#officier-van-justitie) met speciale opleiding en bevoegdheden voor opsporing en vervolging.
 
 *Regeling hulpofficieren van justitie 2008 bepaalt wie van deze categorieën ook daadwerkelijk hulpofficier is.*
 
-Bron: , Artikel 1.3.13 lid 1 [[Sv]]
+Bron: Artikel 1.3.13 lid 1 [[Sv]], 
 
 Gerelateerd: [Officier van Justitie](#officier-van-justitie)
 
 ### In gebreke
+
+*Een «In gebreke» is een rechtsfeit.*
 
 > In gebreke verwijst naar de toestand waarin een [natuurlijk persoon](#natuurlijk-persoon) of rechtspersoon zijn verplichtingen, die voortvloeien uit de wet of rechterlijke [uitspraak](#uitspraak), niet nakomt.
 
@@ -378,6 +456,8 @@ Gerelateerd: [Uitspraak](#uitspraak), [natuurlijk persoon](#natuurlijk-persoon)
 
 ### Indirect slachtoffer
 
+*Een «Indirect slachtoffer» is een rechtssubject.*
+
 > Een indirect slachtoffer is een familielid van een persoon wiens overlijden rechtstreeks veroorzaakt is door een [strafbaar feit](#strafbaar-feit).
 
 Bron: 
@@ -385,6 +465,8 @@ Bron:
 Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 ### Inverzekeringstelling
+
+*Een «Inverzekeringstelling» is een rechtshandeling.*
 
 > Inverzekeringstelling is de [vrijheidsbeneming](#vrijheidsbeneming) van een [verdachte](#verdachte) door een [officier van justitie](#officier-van-justitie) of [hulpofficier van justitie](#hulpofficier-van-justitie) op grond van ernstige bezwaren en onderzoeksbelang.
 
@@ -394,17 +476,23 @@ Gerelateerd: [Hulpofficier van justitie](#hulpofficier-van-justitie), [Vrijheids
 
 ### Jurist
 
+*Een «Jurist» is een rechtssubject.*
+
 > Een jurist is een professional die rechtsgeleerdheid heeft gestudeerd en werkzaam is in een juridische functie.
 
 Bron: Jurist, [[Rechtspraaknl]]
 
 ### Kennisgeven
 
+*Een «Kennisgeven» is een rechtshandeling.*
+
 > Kennisgeven is een eenzijdige verklaring waarmee een persoon of instantie een ander informeert over een juridisch relevante omstandigheid, zonder dat deze verklaring op zichzelf een rechtsgevolg beoogt te creëren.
 
 Bron: 
 
 ### Kennisneming
+
+*Een «Kennisneming» is een rechtshandeling.*
 
 > Een kennisneming is het inzien van de [processtukken]() ter raadgeving
 
@@ -414,13 +502,17 @@ Gerelateerd:
 
 ### Klaagschrift
 
+*Een «Klaagschrift» is een rechtsobject.*
+
 > Een klaagschrift is een [gewoon rechtsmiddel](#gewoon-rechtsmiddel) waarin een [procespartij](#procespartij) zich kan beklagen tegen een [beslissing]()
 
 Bron: Artikel 1.2.12 lid 3, [[Sv]], Artikel 6.4.1, [[Sv]]
 
-Gerelateerd: [Gewoon rechtsmiddel](#gewoon-rechtsmiddel), [Procespartij](#procespartij), 
+Gerelateerd: [Gewoon rechtsmiddel](#gewoon-rechtsmiddel), , [Procespartij](#procespartij)
 
 ### Landelijk parket
+
+*Een «Landelijk parket» is een rechtssubject.*
 
 > Het landelijk parket is een onderdeel van het [Openbaar Ministerie](#openbaar-ministerie) dat zich richt op (inter)nationale georganiseerde en ondermijnende criminaliteit
 
@@ -436,6 +528,8 @@ Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Openbaar Ministerie](
 
 ### Meervoudige kamer
 
+*Een «Meervoudige kamer» is een rechtssubject.*
+
 > Een meervoudige kamer is een [raadkamer](#raadkamer) waarbij meerdere [rechters]() rechtspreken
 
 Bron: Artikel 1.2.5 lid 1, [[Sv]], Artikel 6 lid 2, [[Wro]], Meervoudige kamer, [[Rechtspraaknl]]
@@ -444,11 +538,15 @@ Gerelateerd: [Raadkamer](#raadkamer),
 
 ### Minderjarig slachtoffer
 
+*Een «Minderjarig slachtoffer» is een rechtssubject.*
+
 > Het minderjarig slachtoffer is het slachtoffer dat jonger is dan achttien jaar.
 
 Bron: 
 
 ### Minderjarige
+
+*Een «Minderjarige» is een rechtssubject.*
 
 > Een minderjarige is een persoon welke de leeftijd van achttien jaren niet heeft bereikt en niet valt onder enkele uitzonderingen wat betreft de leeftijd van [meerjarigheid](#meerjarigheid). 
 
@@ -460,11 +558,15 @@ Gerelateerd: [Meerjarigheid](#meerjarigheid)
 
 ### Ministeriële regeling
 
+*Een «Ministeriële regeling» is een rechtshandeling.*
+
 > Een ministeriële regeling is een algemeen verbindend voorschrift dat wordt vastgesteld door een minister of staatssecretaris op basis van een wettelijke bevoegdheid.
 
 Bron: Artikel 89, [[Gw]]
 
 ### Officier van Justitie
+
+*Een «Officier van Justitie» is een rechtssubject.*
 
 > Een officier van justitie is de vertegenwoordiger van het [Openbaar Ministerie](#openbaar-ministerie) bij de [rechtbank](#rechtbank)
 
@@ -476,6 +578,8 @@ Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Rechtbank](#rechtbank
 
 ### Ondertekening
 
+*Een «Ondertekening» is een rechtsfeit.*
+
 Alternatieve aanduiding: *Getekend, waarmerken, gewaarmerkt, ondertekend.*
 
 > Een ondertekening is het ondertekenen met een [elektronische handtekening](#elektronische-handtekening) die voldoet aan de bij of krachtens [algemene maatregel van bestuur](#algemene-maatregel-van-bestuur) te stellen eisen ten aanzien van in elk geval het betrouwbaarheidsniveau van authenticatie
@@ -486,6 +590,8 @@ Gerelateerd: [Algemene maatregel van bestuur](#algemene-maatregel-van-bestuur), 
 
 ### Onderzoek op de terechtzitting
 
+*Een «Onderzoek op de terechtzitting» is een rechtshandeling.*
+
 > Het onderzoek op de [zitting](#zitting) dat plaatsheeft in het kader van de berechting.
 
 Bron: Artikel 1.1.7 lid 2, [[Sv]]
@@ -493,6 +599,8 @@ Bron: Artikel 1.1.7 lid 2, [[Sv]]
 Gerelateerd: [Zitting](#zitting)
 
 ### Openbaar Ministerie
+
+*Een «Openbaar Ministerie» is een rechtssubject.*
 
 Alternatieve aanduiding: *OM*
 
@@ -502,6 +610,8 @@ Bron: Artikel 124, [[Wro]]
 
 ### Oproeping
 
+*Een «Oproeping» is een rechtshandeling.*
+
 > Een oproeping is een dringende vraag van de rechter aan een persoon om als [procespartij](#procespartij) of getuige aanwezig te zijn bij een [zitting](#zitting)
 
 Bron: Artikel 1.2.19 lid 4, [[Sv]]
@@ -509,6 +619,8 @@ Bron: Artikel 1.2.19 lid 4, [[Sv]]
 Gerelateerd: [Zitting](#zitting), [Procespartij](#procespartij)
 
 ### Opsporen
+
+*Een «Opsporen» is een rechtshandeling.*
 
 > Het opsporen is een onderzoek in verband met strafbare feiten onder gezag van de [officier van justitie](#officier-van-justitie) met als doel het nemen van een strafvorderlijke beslissing
 
@@ -518,6 +630,8 @@ Gerelateerd: [Officier van Justitie](#officier-van-justitie)
 
 ### Opsporingsambtenaar
 
+*Een «Opsporingsambtenaar» is een rechtssubject.*
+
 > Een opsporingsambtenaar is een persoon belast met de opsporing van [strafbare feiten](#strafbaar-feit).
 
 Bron: Artikel 1.1.5, [[Sv]]
@@ -525,6 +639,8 @@ Bron: Artikel 1.1.5, [[Sv]]
 Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 ### Opsporingsbevoegdheid
+
+*Een «Opsporingsbevoegdheid» is een rechtsbetrekking.*
 
 > Opsporingsbevoegdheid is de bevoegdheid van een persoon om [strafbare feiten](#strafbaar-feit) op te sporen.
 
@@ -536,13 +652,17 @@ Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 ### Ouder van de minderjarige
 
+*Een «Ouder van de minderjarige» is een rechtssubject.*
+
 > Een ouder van de minderjarige is een ouder of [voogd](#voogd) welke het [ouderlijk gezag](#ouderlijk-gezag) over een [minderjarige](#minderjarige) uitvoert.
 
 Bron: Artikel 245 Boek 1, [[Bw]]
 
-Gerelateerd: [Minderjarige](#minderjarige), [Ouderlijk gezag](#ouderlijk-gezag), [Voogd](#voogd)
+Gerelateerd: [Ouderlijk gezag](#ouderlijk-gezag), [Voogd](#voogd), [Minderjarige](#minderjarige)
 
 ### Ouderlijk gezag
+
+*Een «Ouderlijk gezag» is een rechtsbetrekking.*
 
 > Het ouderlijk gezag is het gezag voortkomende uit de plicht om een [minderjarige](#minderjarige) te verzorgen en op te voeden.
 
@@ -558,6 +678,8 @@ Bron: Artikel 3 [[Politiewet2012]]
 
 ### Proces-verbaal
 
+*Een «Proces-verbaal» is een rechtsobject.*
+
 > Een proces-verbaal is een schriftelijk verslag van hetgeen wat tijdens een [zitting](#zitting) heeft plaatsgevonden
 
 Bron: Artikel 1.2.3 lid 4, [[Sv]], Proces-verbaal, [[Rechtspraaknl]]
@@ -565,6 +687,8 @@ Bron: Artikel 1.2.3 lid 4, [[Sv]], Proces-verbaal, [[Rechtspraaknl]]
 Gerelateerd: [Zitting](#zitting)
 
 ### Procesbetrokkene
+
+*Een «Procesbetrokkene» is een rechtssubject.*
 
 > Een procesbetrokkene is een persoon die enigzins bij de [zaak](#zaak) betrokken is, maar niet deelneemt aan de [zitting](#zitting)
 
@@ -574,6 +698,8 @@ Gerelateerd: [Zitting](#zitting), [Zaak](#zaak)
 
 ### Procesdeelnemer
 
+*Een «Procesdeelnemer» is een rechtssubject.*
+
 > Een procesdeelnemer is een partij die deelneemt aan een [zitting](#zitting), maar niet een van de twee [procespartijen](#procespartij) is
 
 Bron: Artikel 1.2.6 lid 3, [[Sv]]
@@ -582,13 +708,17 @@ Gerelateerd: [Procespartij](#procespartij), [Zitting](#zitting)
 
 ### Procesinleiding
 
+*Een «Procesinleiding» is een rechtsobject.*
+
 > Een procesinleiding is een document waarmee een [procespartij](#procespartij) een [vordering](#vordering) indient bij de [rechtbank](#rechtbank)
 
 Bron: Artikel 1.2.9 lid 1 sub d, [[Sv]]
 
-Gerelateerd: [Rechtbank](#rechtbank), [Vordering](#vordering), [Procespartij](#procespartij)
+Gerelateerd: [Procespartij](#procespartij), [Rechtbank](#rechtbank), [Vordering](#vordering)
 
 ### Procespartij
+
+*Een «Procespartij» is een rechtssubject.*
 
 > Een procespartij is een van de twee partijen die onderwerp is van een [zaak](#zaak) tijdens een [zitting](#zitting)
 
@@ -600,6 +730,8 @@ Voorbeeld(en): Aanklager, tegenpartij
 
 ### Processtuk
 
+*Een «Processtuk» is een rechtsobject.*
+
 > Een processtuk is een stuk dat van belang is voor de [beslissing]() die gemaakt moet worden door de rechter
 
 Bron: Artikel 1.2.15 lid 1, [[Sv]]
@@ -607,6 +739,8 @@ Bron: Artikel 1.2.15 lid 1, [[Sv]]
 Gerelateerd: 
 
 ### Procureur-generaal bij de Hoge Raad
+
+*Een «Procureur-generaal bij de Hoge Raad» is een rechtssubject.*
 
 Alternatieve aanduiding: *pg*
 
@@ -620,6 +754,8 @@ Gerelateerd: ,
 
 ### Raadkamer
 
+*Een «Raadkamer» is een rechtssubject.*
+
 > Een raadkamer is een onderdeel van een [rechtbank](#rechtbank) of [gerechtshof](#gerechtshof) die strafzaken behandelt waarvoor in de regel geen openbare [zitting](#zitting) is voorgeschreven
 
 Bron: Artikel 1.2.4 [[Sv]], Raadkamer, [[Rechtspraaknl]]
@@ -628,6 +764,8 @@ Gerelateerd: [Rechtbank](#rechtbank), [Gerechtshof](#gerechtshof), [Zitting](#zi
 
 ### Rechtbank
 
+*Een «Rechtbank» is een rechtsobject.*
+
 > Een rechtbank is een rechtsprekend oorgaan, dat oordeelt in een [zaak](#zaak).
 
 Bron: Artikel 1.2.3 lid 1, [[Sv]]
@@ -635,6 +773,8 @@ Bron: Artikel 1.2.3 lid 1, [[Sv]]
 Gerelateerd: [Zaak](#zaak)
 
 ### Rechtelijke beslissing
+
+*Een «Rechtelijke beslissing» is een rechtshandeling.*
 
 Alternatieve aanduiding: *Beslissing, uitspraak*
 
@@ -646,11 +786,15 @@ Gerelateerd:
 
 ### Rechtsbijstand
 
+*Een «Rechtsbijstand» is een rechtsbetrekking.*
+
 > Rechtsbijstand is de rechtskundige bijstand aan een rechtzoekende ter zake van een rechtsbelang dat hem rechtstreeks en individueel aangaat
 
 Bron: Artikel 1, [[Wrb]]
 
 ### Rechtsgebied
+
+*Een «Rechtsgebied» is een rechtsbetrekking.*
 
 > Een rechtsgebied is een gebied van Nederland waarover de [rechtbank](#rechtbank) de [bevoegdheid](#bevoegdheid) heeft om recht te spreken
 
@@ -659,6 +803,8 @@ Bron: Artikel 1.2.9 lid 1 sub a, [[Sv]]
 Gerelateerd: [Bevoegdheid](#bevoegdheid), [Rechtbank](#rechtbank)
 
 ### Rechtspleging
+
+*Een «Rechtspleging» is een rechtshandeling.*
 
 > De rechtspleging is het verloop van een [zitting](#zitting)
 
@@ -684,6 +830,8 @@ Gerelateerd: [Vervolging](#vervolging), [Strafbaar feit](#strafbaar-feit)
 
 ### Redelijk vermoeden van schuld
 
+*Een «Redelijk vermoeden van schuld» is een rechtsfeit.*
+
 > Een redelijk vermoeden van schuld is de objectief bepaalbare, op concrete feiten en omstandigheden gebaseerde waarschijnlijkheid dat een persoon een [strafbaar feit](#strafbaar-feit) heeft gepleegd en vormt het juridische vereiste om een persoon als [verdachte](#verdachte) te mogen aanmerken
 
 Toelichting: Een redelijk vermoeden van schuld is een specifiekere en sterkere vorm van verdenking.
@@ -694,6 +842,8 @@ Gerelateerd: [Verdachte](#verdachte), [Strafbaar feit](#strafbaar-feit)
 
 ### Schorsing
 
+*Een «Schorsing» is een rechtshandeling.*
+
 > Een schorsing is een tijdelijke stop van de [zitting](#zitting) voor (on)bepaalde tijd
 
 Bron: Artikel 1.2.20 lid 1, [[Sv]]
@@ -701,6 +851,8 @@ Bron: Artikel 1.2.20 lid 1, [[Sv]]
 Gerelateerd: [Zitting](#zitting)
 
 ### Slachtoffer
+
+*Een «Slachtoffer» is een rechtssubject.*
 
 > Een slachtoffer is iemand die getroffen is door een [strafbaar feit](#strafbaar-feit) of ongeluk en daar schade aan heeft ondervonden.
 
@@ -710,6 +862,8 @@ Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 ### Staandehouding
 
+*Een «Staandehouding» is een rechtshandeling.*
+
 > Een staandehouding is een handeling van een [opsporingsambtenaar](#opsporingsambtenaar) waarbij een [verdachte](#verdachte) kort ter plaatse wordt gehouden en gevraagd wordt om zijn identiteitsgegevens.
 
 Bron: Artikel 2.5.3 lid 1, [[Sv]]
@@ -717,6 +871,8 @@ Bron: Artikel 2.5.3 lid 1, [[Sv]]
 Gerelateerd: [Verdachte](#verdachte), [Opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Strafbaar
+
+*Een «Strafbaar» is een rechtsfeit.*
 
 Alternatieve aanduiding: *Feit*
 
@@ -726,6 +882,8 @@ Bron: Artikel 1.2.9 lid 1, [[Sv]]
 
 ### Strafbaar feit
 
+*Een «Strafbaar feit» is een rechtshandeling.*
+
 Alternatieve aanduiding: *Delict*
 
 > Een strafbaar feit is een rechtshandeling of natuurlijke handeling die in strijd is met het strafrecht.
@@ -734,13 +892,17 @@ Bron: Artikel 16, [[Gw]]
 
 ### Strafbeschikking
 
+*Een «Strafbeschikking» is een rechtshandeling.*
+
 > Een strafbeschikking is de afdoening van een [strafzaak](#strafzaak) door het [Openbaar Ministerie](#openbaar-ministerie)
 
 Bron: Artikel 3.3.1, [[Sv]]
 
-Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Openbaar Ministerie](#openbaar-ministerie), [Strafzaak](#strafzaak)
+Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Strafzaak](#strafzaak), [Openbaar Ministerie](#openbaar-ministerie)
 
 ### Strafvorderen
+
+*Een «Strafvorderen» is een rechtshandeling.*
 
 > Strafvorderen is een procedure waarbij, middels de bij wet voorziene manier, een passende justitiële reactie kan worden gegeven op een gepleegd [strafbaar feit](#strafbaar-feit).
 
@@ -749,6 +911,8 @@ Bron: Artikel 1.1.1, [[Sv]]
 Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 ### Strafzaak
+
+*Een «Strafzaak» is een rechtshandeling.*
 
 Alternatieve aanduiding: *Strafproces; Zaak*
 
@@ -766,11 +930,15 @@ Bron: Artikel 83, [[Sr]]
 
 ### Tijdelijk onkundig
 
+*Een «Tijdelijk onkundig» is een rechtsfeit.*
+
 > Tijdig onkundig verwijst naar de toestand waarin een natuurlijk persoon zich bevindt wanneer hij door een gebrek aan kennis of informatie niet in staat is een recht uit te oefenen of een verplichting na te komen.
 
 Bron: Artikel 1.4.18, [[Sv]]
 
 ### Toehoorder
+
+*Een «Toehoorder» is een rechtssubject.*
 
 > Een toehoorder is een niet betrokken bezoeker van een [zitting](#zitting)
 
@@ -779,6 +947,8 @@ Bron: Artikel 1.2.16 lid 5, [[Sv]]
 Gerelateerd: [Zitting](#zitting)
 
 ### Toetsing
+
+*Een «Toetsing» is een rechtshandeling.*
 
 > Een toetsing is het opnieuw bekijken van een [beslissing]()
 
@@ -796,6 +966,8 @@ Gerelateerd: , [Procespartij](#procespartij)
 
 ### Tussenarrest
 
+*Een «Tussenarrest» is een rechtsobject.*
+
 > Een tussenarrest is een [arrest](#arrest) dat tijdens de [zaak](#zaak) wordt opgesteld en wordt vervangen door het [eindarrest](#eindarrest)
 
 Bron: Artikel 1.2.3 lid 4, [[Sv]]
@@ -803,6 +975,8 @@ Bron: Artikel 1.2.3 lid 4, [[Sv]]
 Gerelateerd: [Eindarrest](#eindarrest), [Zaak](#zaak), [Arrest](#arrest)
 
 ### Tussenvonnis
+
+*Een «Tussenvonnis» is een rechtsobject.*
 
 > Een tussenvonnis is een [vonnis](#vonnis) dat tijdens de [zaak](#zaak) wordt opgesteld en wordt vervangen door het [eindvonnis](#eindvonnis)
 
@@ -812,13 +986,17 @@ Gerelateerd: [Zaak](#zaak), [Vonnis](#vonnis), [Eindvonnis](#eindvonnis)
 
 ### Uitspraak
 
+*Een «Uitspraak» is een rechtshandeling.*
+
 > Een uitspraak is een [rechterlijke beslissing]() in een [zaak](#zaak) waarvan de wet voorschrijft dat zij op de [zitting](#zitting) worden uitgesproken.
 
 Bron: Artikel 1.1.8 lid 2, [[Sv]]
 
-Gerelateerd: , [Zitting](#zitting), [Zaak](#zaak)
+Gerelateerd: [Zaak](#zaak), [Zitting](#zitting), 
 
 ### Verdachte
+
+*Een «Verdachte» is een rechtssubject.*
 
 > Een verdachte is een [natuurlijk persoon](#natuurlijk-persoon) of rechtspersoon ten aanzien van wie uit feiten of omstandigheden een [redelijk vermoeden van schuld](#redelijk-vermoeden-van-schuld) bestaat dat diegene een bepaald [strafbaar feit](#strafbaar-feit) gepleegd heeft, en die als zodanig is aangemerkt.
 
@@ -828,13 +1006,17 @@ Gerelateerd: [natuurlijk persoon](#natuurlijk-persoon), [Redelijk vermoeden van 
 
 ### Verdediging
 
+*Een «Verdediging» is een rechtshandeling.*
+
 > De verdediging is het geheel van handelingen en middelen waarmee een [verdachte](#verdachte) of diens [raadsman]() zich verweert tegen een beschuldiging in een [strafzaak](#strafzaak).
 
 Bron: Artikel 1.4.14, [[Sv]]
 
-Gerelateerd: , [Strafzaak](#strafzaak), [Verdachte](#verdachte)
+Gerelateerd: [Verdachte](#verdachte), , [Strafzaak](#strafzaak)
 
 ### Verdenking
+
+*Een «Verdenking» is een rechtsfeit.*
 
 > Verdenking is het op basis van concrete feiten en omstandigheden bestaande redelijke vermoeden dat een persoon een [strafbaar feit](#strafbaar-feit) heeft gepleegd waardoor deze als [verdachte](#verdachte) kan worden aangemerkt.
 
@@ -844,6 +1026,8 @@ Gerelateerd: [Verdachte](#verdachte), [Strafbaar feit](#strafbaar-feit)
 
 ### Verhoor
 
+*Een «Verhoor» is een rechtshandeling.*
+
 > Een verhoor is een situatie waar een [verdachte](#verdachte) wordt gehoord over een [onderzoek]()
 
 Bron: Artikel 1.2.12 lid 4, [[Sv]]
@@ -851,6 +1035,8 @@ Bron: Artikel 1.2.12 lid 4, [[Sv]]
 Gerelateerd: , [Verdachte](#verdachte)
 
 ### Veroordeelde
+
+*Een «Veroordeelde» is een rechtssubject.*
 
 > Een veroordeelde is een persoon die bij een [zitting](#zitting) door een [rechterlijke beslissing]() schuldig is bevonden
 
@@ -860,15 +1046,19 @@ Gerelateerd: , [Zitting](#zitting)
 
 ### Veroordeling
 
+*Een «Veroordeling» is een rechtshandeling.*
+
 Alternatieve aanduiding: *Schuldigverklaring*
 
 > Een veroordeling is in het strafrecht een bindende rechterlijke uitspraak waarbij een [natuurlijk persoon](#natuurlijk-persoon) of rechtspersoon schuldig wordt bevonden aan een [strafbaar feit](#strafbaar-feit).
 
 Bron: 
 
-Gerelateerd: [Strafbaar feit](#strafbaar-feit), [natuurlijk persoon](#natuurlijk-persoon)
+Gerelateerd: [natuurlijk persoon](#natuurlijk-persoon), [Strafbaar feit](#strafbaar-feit)
 
 ### Verschoning
+
+*Een «Verschoning» is een rechtshandeling.*
 
 > Een verschoning is een [verzoek](#verzoek) van een rechter om zichzelf te laten vervangen
 
@@ -878,6 +1068,8 @@ Gerelateerd: [Verzoek](#verzoek)
 
 ### Verschoningsgerechtigde
 
+*Een «Verschoningsgerechtigde» is een rechtssubject.*
+
 > De verschoningsgerechtigde is een persoon met  het recht gebruik te maken van het [verschoningsrecht](#verschoningsrecht).
 
 Bron: Artikel 1.6.11, [[Sv]]
@@ -885,6 +1077,8 @@ Bron: Artikel 1.6.11, [[Sv]]
 Gerelateerd: [Verschoningsrecht](#verschoningsrecht)
 
 ### Verschoningsplicht
+
+*Een «Verschoningsplicht» is een rechtsfeit.*
 
 > De verschoningsplicht is een plicht van de [verschoningsgerechtigde](#verschoningsgerechtigde) om gebruik te maken van het [verschoningsrecht](#verschoningsrecht).
 
@@ -894,6 +1088,8 @@ Gerelateerd: [Verschoningsrecht](#verschoningsrecht), [Verschoningsgerechtigde](
 
 ### Verschoningsrecht
 
+*Een «Verschoningsrecht» is een rechtsfeit.*
+
 > Het verschoningsrecht is een uitzondering op de plicht van een persoon voor de rechter [getuige](#getuige) af te leggen. 
 
 Bron: Artikel 1.6.5, [[Sv]]
@@ -902,15 +1098,19 @@ Gerelateerd: [Getuige](#getuige)
 
 ### Vervolgen
 
+*Een «Vervolgen» is een rechtsfeit.*
+
 Alternatieve aanduiding: *Vervolging*
 
 > Vervolgen is het door het een [officier van justitie](#officier-van-justitie) of een [procureur-generaal]() aanklagen van een [verdachte](#verdachte) bij een [gerecht](#gerecht).
 
 Bron: Artikel 1.3.2 [[Sv]]
 
-Gerelateerd: , [Officier van Justitie](#officier-van-justitie), [Gerecht](#gerecht), [Verdachte](#verdachte)
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Gerecht](#gerecht), , [Verdachte](#verdachte)
 
 ### Vervolging
+
+*Een «Vervolging» is een rechtshandeling.*
 
 Alternatieve aanduiding: *Strafvervolging*
 
@@ -922,6 +1122,8 @@ Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Verdachte](#verdachte
 
 ### Vervolging instellen
 
+*Een «Vervolging instellen» is een rechtsfeit.*
+
 > Vervolging instellen is het starten van een vervolging door het [uitvaardigen van een strafbeschikking]() of het indienen van een [procesinleiding](#procesinleiding).
 
 Bron: Artikel 1.3.3 [[Sv]]
@@ -930,11 +1132,13 @@ Gerelateerd: , [Procesinleiding](#procesinleiding)
 
 ### Verzoek
 
+*Een «Verzoek» is een rechtshandeling.*
+
 > Een verzoek is een juridische handeling waarin een [procespartij](#procespartij) de [rechter]() vraagt iets te doen
 
 Bron: Verzoekschriftprocedure, [[Rechtspraaknl]], Artikel 1.2.4 [[Sv]]
 
-Gerelateerd: , [Procespartij](#procespartij)
+Gerelateerd: [Procespartij](#procespartij), 
 
 ### Videocoferentie
 
@@ -946,6 +1150,8 @@ Gerelateerd: [Verhoor](#verhoor)
 
 ### Voeging
 
+*Een «Voeging» is een rechtshandeling.*
+
 > Voeging is het samenvoegen van verschillende [strafbare feiten](#strafbaar-feit) tot één [strafzaak](#strafzaak).
 
 Bron: Voeging, [[Rechtspraaknl]]
@@ -954,11 +1160,15 @@ Gerelateerd: [Strafzaak](#strafzaak), [Strafbaar feit](#strafbaar-feit)
 
 ### Vonnis
 
+*Een «Vonnis» is een rechtsobject.*
+
 > Een vonnis is de beslissing in een [zaak](#zaak) zoals behandelt in de [rechtbank](#rechtbank)
 
 Gerelateerd: [Rechtbank](#rechtbank), [Zaak](#zaak)
 
 ### Voogd
+
+*Een «Voogd» is een rechtssubject.*
 
 > Een voogd is een voor een bepaald termijn benoemd persoon welke het [ouderlijk gezag](#ouderlijk-gezag) in plaats van een ouder uitvoert.
 
@@ -968,6 +1178,8 @@ Gerelateerd: [Ouderlijk gezag](#ouderlijk-gezag)
 
 ### Voorlopige hechtenis
 
+*Een «Voorlopige hechtenis» is een rechtshandeling.*
+
 > Voorlopige hechtenis is de [vrijheidsbeneming](#vrijheidsbeneming) ingevolge een bevel van [bewaring](#bewaring), [gevangenneming](#gevangenneming) of [gevangenhouding](#gevangenhouding)
 
 Bron: Artikel 2.1.1, [[Sv]]
@@ -975,6 +1187,8 @@ Bron: Artikel 2.1.1, [[Sv]]
 Gerelateerd: [Bewaring](#bewaring), [Gevangenneming](#gevangenneming), [Gevangenhouding](#gevangenhouding), [Vrijheidsbeneming](#vrijheidsbeneming)
 
 ### Voorzitter
+
+*Een «Voorzitter» is een rechtssubject.*
 
 > Een voorzitter is een persoon die leiding heeft over een [zitting](#zitting)
 
@@ -984,6 +1198,8 @@ Gerelateerd: [Zitting](#zitting)
 
 ### Vordering
 
+*Een «Vordering» is een rechtshandeling.*
+
 > Een vordering is een eis van een [procespartij](#procespartij)
 
 Bron: Artikel 1.2.3 lid 2, [[Sv]]
@@ -991,6 +1207,8 @@ Bron: Artikel 1.2.3 lid 2, [[Sv]]
 Gerelateerd: [Procespartij](#procespartij)
 
 ### Vrijheidsbeneming
+
+*Een «Vrijheidsbeneming» is een rechtshandeling.*
 
 Alternatieve aanduiding: *Vrijheidsontneming*, *Vrijheidsbenemende*
 
@@ -1000,6 +1218,8 @@ Bron: Artikel 15, [[Gw]], Artikel 1.2.13 lid 1 sub c, [[Sv]], Artikel 3.29, [[Wo
 
 ### Waarnemen
 
+*Een «Waarnemen» is een rechtshandeling.*
+
 > Waarnemen is het tijdelijk overnemen van de taken van een [advocaat](#advocaat) door een andere [advocaat](#advocaat).
 
 Bron: Artikel 1.4.16, [[Sv]]
@@ -1008,11 +1228,15 @@ Gerelateerd: [Advocaat](#advocaat)
 
 ### Wederrechtelijkheid
 
+*Een «Wederrechtelijkheid» is een rechtsfeit.*
+
 > Wederrechtelijkheid verwijst naar een situatie waarbij een feitelijke handeling in strijd is met het objectieve recht.
 
 Bron: Wederrechtelijk, [[Rechtspraaknl]]
 
 ### Wraking
+
+*Een «Wraking» is een rechtshandeling.*
 
 > Een wraking is een [verzoek](#verzoek) van een procespartij om een rechter te laten vervangen
 
@@ -1022,6 +1246,8 @@ Gerelateerd: [Verzoek](#verzoek)
 
 ### Zaak
 
+*Een «Zaak» is een rechtsobject.*
+
 > Een zaak is de behandeling van de feiten die plaatsvindt in een [rechtbank](#rechtbank)
 
 Bron: Artikel 1.2.2, [[Sv]]
@@ -1029,6 +1255,8 @@ Bron: Artikel 1.2.2, [[Sv]]
 Gerelateerd: [Rechtbank](#rechtbank)
 
 ### Zaak achter gesloten deuren
+
+*Een «Zaak achter gesloten deuren» is een rechtsobject.*
 
 > Een zaak achter gesloten deuren is een [zaak](#zaak) die niet in het openbaar behandeld wordt
 
@@ -1038,6 +1266,8 @@ Gerelateerd: [Zaak](#zaak)
 
 ### Zaak van enkelvoudige aard
 
+*Een «Zaak van enkelvoudige aard» is een rechtsobject.*
+
 > Een zaak van enkelvoudige aard is een [zaak](#zaak) die wordt behandeld door een [enkelvoudige kamer](#enkelvoudige-kamer)
 
 Bron: Artikel 1.2.13 lid 1, [[Sv]]
@@ -1045,6 +1275,8 @@ Bron: Artikel 1.2.13 lid 1, [[Sv]]
 Gerelateerd: [Enkelvoudige kamer](#enkelvoudige-kamer), [Zaak](#zaak)
 
 ### Zitting
+
+*Een «Zitting» is een rechtshandeling.*
 
 Alternatieve aanduiding: *Terechtzitting, proces*
 
@@ -1056,17 +1288,23 @@ Gerelateerd: [Zaak](#zaak), [Procespartij](#procespartij)
 
 ### familielid
 
+*Een «familielid» is een rechtssubject.*
+
 > Een familie lid is de echtgenoot, de geregistreerde partner of een andere levensgezel van het directe slachtoffer, de bloedverwant in rechte lijn, de bloedverwant in de zijlijn tot en met de vierde graad en de persoon die van het directe slachtoffer afhankelijk is.
 
 Bron: 
 
 ### gerechtelijke deskundige
 
+*Een «gerechtelijke deskundige» is een rechtssubject.*
+
 > Een gerechtelijk deskundige is een door de rechter benoemde specialist met specifieke vakkennis, die onafhankelijk en objectief advies of onderzoek levert ter ondersteuning van de rechtspraak in strafzaken, civiele zaken of bestuursrechtelijke procedures.
 
 Bron: 
 
 ### natuurlijk persoon
+
+*Een «natuurlijk persoon» is een rechtssubject.*
 
 Alternatieve aanduiding: *rechtspersoon*
 
@@ -1076,6 +1314,8 @@ Bron:
 
 ### overige deskundige
 
+*Een «overige deskundige» is een rechtssubject.*
+
 > Een overige deskundige is een specialist die door de rechter of het [Openbaar Ministerie](#openbaar-ministerie) wordt geraadpleegd voor deskundig advies of onderzoek, maar die niet als gerechtelijk deskundige is geregistreerd of formeel benoemd volgens de wettelijke procedure, en wiens bijdrage ondersteunend is aan het juridische proce
 
 Bron: 
@@ -1083,6 +1323,8 @@ Bron:
 Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Openbaar Ministerie](#openbaar-ministerie)
 
 ### verhorende ambtenaar
+
+*Een «verhorende ambtenaar» is een rechtssubject.*
 
 > Een verhorende ambtenaar is een functionaris, meestal een politieambtenaar of een opsporingsambtenaar, die belast is met het afnemen van verhoren van verdachten, getuigen of andere betrokkenen in het kader van een strafrechtelijk onderzoek
 
