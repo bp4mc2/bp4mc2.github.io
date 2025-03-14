@@ -330,7 +330,7 @@ Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 > Aanvullend of contra-[onderzoek naar gegevens]() uitgevoerd door een [deskundige](#deskundige) ter verdediging en waarbij kennisgenomen kan worden van het eerste onderzoek
 
-Bron: , Artikel 2.4.3 [[Sv]], Artikel 2.4.4 [[Sv]]
+Bron: Wet deskundige in strafzaken [[Wetdeskundigeinstrafzaken]], Artikel 2.4.3 [[Sv]], Artikel 2.4.4 [[Sv]]
 
 Gerelateerd: [Deskundige](#deskundige), 
 

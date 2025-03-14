@@ -24,7 +24,7 @@ Gerelateerd: , , ,
 
 > Een alternatieve kwalificatie is het kwalificeren van meerdere alternatief bewezen [feiten]() als het ene of andere [strafbare feit](). 
 
-Bron: Art. 4.3.4 lid 2 [[Sv]], https://www.boomportaal.nl/tijdschrift/PM [[Sv]]
+Bron: Art. 4.3.4 lid 2 [[Sv]]
 
 Gerelateerd: , 
 
@@ -52,7 +52,7 @@ Gerelateerd: , ,
 
 Bron: Art. 4.2.37 [[Sv]], Art. 4.2.44 [[Sv]], Rechtspraak - Juridische begrippen [[Rechtspraak]]
 
-Gerelateerd: , [Eed](#eed), , 
+Gerelateerd: , , [Eed](#eed), 
 
 ### Bijkomende straf
 
@@ -60,7 +60,7 @@ Gerelateerd: , [Eed](#eed), ,
 
 Bron: Art. 9 [[Sr]]
 
-Gerelateerd: [Rechterlijke uitspraak](#rechterlijke-uitspraak), , [Hoofdstraf](#hoofdstraf), 
+Gerelateerd: [Rechterlijke uitspraak](#rechterlijke-uitspraak), , , [Hoofdstraf](#hoofdstraf)
 
 ### Dagvaarding
 
@@ -90,7 +90,7 @@ Alternatieve aanduiding: *Huwelijkspartner*
 
 > Een echtgenoot is een bij wet en huwelijk vastgelegde partner.
 
-Bron: 
+Bron: Art. 1:81 [[BW]]
 
 ### Eed
 
@@ -132,14 +132,6 @@ Bron: ECLI:NL:HR:2011:BP0291 [[ECLINLHR2011BP0291]]
 
 Gerelateerd: , 
 
-### Gegrond vermoeden
-
-> Een gegrond vermoeden is een vemoeden dat op redelijke gronden is gebaseerd; het vermoeden van een reëel risico of voorzienbare (negatieve) gevolgen.
-
-*Gevonden in de memorie van toelichting*
-
-Bron: Nieuw Wetboek van Strafvordering [[Sv]]
-
 ### Geregistreerd partner
 
 > Een geregistreerde partner is een bij wet vastgelegde partner. Net als bij een huwelijk hebben partners bij een geregistreerd partnerschap rechten en plichten tegenover elkaar. De juridische gevolgen van een geregistreerd partnerschap zijn hetzelfde als bij een huwelijk.
@@ -152,7 +144,7 @@ Bron: Art. 1:80a [[BW]]
 
 Bron: Art. 9 [[Sr]]
 
-Gerelateerd: , [Bijkomende straf](#bijkomende-straf), , , , 
+Gerelateerd: [Bijkomende straf](#bijkomende-straf), , , , , 
 
 ### In beslag nemen
 
@@ -172,7 +164,7 @@ Bron: Art. 31 [[Rv]]
 
 > Een levensgezel is een partner met wie de relatie qua hechtheid vergelijkbaar is met die tussen echtgenoten of geregistreerde partners.
 
-Bron: 
+Bron: ECLI:NL:PHR:2021:574 [[ECLINLPHR2021574]]
 
 ### Meineed
 
@@ -214,7 +206,7 @@ Gerelateerd:
 
 > Een ontnemingsschikking is een afspraak met het [Openbaar Ministerie]() waarin wordt vastgelegd hoe geld dat met een [strafbaar feit]() is verdiend wordt terugbetaald.
 
-Bron: 
+Bron: CJIB [[CJIB]]
 
 Gerelateerd: , 
 
@@ -222,7 +214,7 @@ Gerelateerd: ,
 
 > Het ontslaan van rechtsvervolging is een beslissing van de [rechter](), waarbij hij het door de [officier van justitie]() [ten laste gelegde feit]() wel bewezen acht, maar van oordeel is dat het feit of de [verdachte]() niet [strafbaar]() is.
 
-Bron: 
+Bron: CBS [[CBS]]
 
 Gerelateerd: , , , , 
 
@@ -320,7 +312,7 @@ Gerelateerd:
 
 > Een stuk van overtuiging is een in beslag genomen voorwerp of ander voorwerp dat van belang is voor de [schuldvraag]().
 
-Bron: 
+Bron: Toelichting stukken [[Toelichtingstukken]]
 
 Gerelateerd: 
 
@@ -386,7 +378,7 @@ Gerelateerd:
 
 > Een verpleging van overheidswege is een vorm van [vrijheidsbeneming](). Binnen het kader van beveiliging en behandeling wordt onder andere door middel van (gecontroleerde) verloven in een Forensisch Psychiatrisch Centrum (FPC) gewerkt aan een uiteindelijk veilig en verantwoord verblijf buiten het FPC.
 
-Bron: Aanwijzing tbs met voorwaarden en voorwaardelijke beëindiging van het bevel tot verpleging van overheidswege [[Aanwijzingtbs]]
+Bron: Aanwijzing tbs [[Aanwijzingtbs]]
 
 Gerelateerd: 
 

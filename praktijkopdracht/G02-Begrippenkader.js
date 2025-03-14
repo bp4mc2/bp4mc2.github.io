@@ -17,6 +17,7 @@ var localBiblio = {
   },
   "MvT": {
     title: "Memorie van toelichting nieuw Wetboek van Strafvordering",
+    href: "https://www.strafrechtketen.nl/onderwerpen/wetboek-van-strafvordering/documenten/kamerstukken/2023/03/21/memorie-van-toelichting-nieuw-wetboek-van-strafvordering",
   },
   "RO": {
     title: "Wet op de rechterlijke organisatie",
@@ -24,6 +25,7 @@ var localBiblio = {
   },
   "Rechtspraak": {
     title: "De Rechtspraak: Juridische begrippen",
+    href: "https://www.rechtspraak.nl/juridische-begrippen/Paginas/default.aspx",
   },
   "Sr": {
     title: "Wetboek van Strafrecht",
@@ -31,6 +33,7 @@ var localBiblio = {
   },
   "Sv": {
     title: "Nieuw Wetboek van Strafvordering",
+    href: "https://www.strafrechtketen.nl/onderwerpen/wetboek-van-strafvordering/documenten/kamerstukken/2023/03/21/wetsvoorstel-nieuw-wetboek-van-strafvordering",
   },
   "WRO": {
     title: "Wet op Rechterlijk Organisatie",

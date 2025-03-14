@@ -45,7 +45,7 @@ var localBiblio = {
   },
   "Rechtspraak": {
     title: "Website van de Rechtspraak",
-    href: "https://www.rechtspraak.nl/",
+    href: "https://www.rechtspraak.nl/juridische-begrippen",
   },
   "Rv": {
     title: "Wetboek van Burgerlijke Rechtsvordering (Rv)",
@@ -70,6 +70,10 @@ var localBiblio = {
   "WetBedigdetolkenenvertalers": {
     title: "Bureau Wbtv",
     href: "https://wetten.overheid.nl/BWBR0022704/2018-07-28",
+  },
+  "Wetdeskundigeinstrafzaken": {
+    title: "Wet deskundige in strafzaken",
+    href: "https://wetten.overheid.nl/BWBR0025251/2010-01-01%20",
   },
   "Wetopdebijzondereopsporingsdiensten": {
     title: "Wet op de bijzondere opsporingsdiensten",

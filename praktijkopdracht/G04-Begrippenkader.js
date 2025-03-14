@@ -10,6 +10,7 @@ var localBiblio = {
   },
   "Cbsnl": {
     title: "Begrippen Centraal Bureau voor de Statistiek",
+    href: "http://www.cbs.nl/nl-nl/onze-diensten/methoden/begrippen",
   },
   "Gw": {
     title: "Grondwet",
@@ -20,7 +21,7 @@ var localBiblio = {
   },
   "Parlementnl": {
     title: "Denederlandsegrondwet.nl",
-    href: "https://www.denederlandsegrondwet.nl/",
+    href: "https://www.denederlandsegrondwet.nl/%20",
   },
   "Politiewet2012": {
     title: "Politiewet 2012",
@@ -34,6 +35,7 @@ var localBiblio = {
   },
   "Rijksoverheid": {
     title: "Rijksoverheid",
+    href: "http://www.rijksoverheid.nl",
   },
   "Rv": {
     title: "Wetboek van Burgerlijke Rechtsvordering",

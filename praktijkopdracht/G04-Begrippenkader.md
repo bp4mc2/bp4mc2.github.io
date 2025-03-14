@@ -150,7 +150,7 @@ Gerelateerd: , [Verdachte](#verdachte)
 
 Bron: Artikel 6.5 lid 1, [[Awb]], Artikel 1.2.12 lid 3, [[Sv]]
 
-Gerelateerd: , [Procespartij](#procespartij), [Gewoon rechtsmiddel](#gewoon-rechtsmiddel)
+Gerelateerd: [Procespartij](#procespartij), , [Gewoon rechtsmiddel](#gewoon-rechtsmiddel)
 
 ### Bijzondere opsporingsdienst
 
@@ -244,7 +244,7 @@ Gerelateerd: [Algemene maatregel van bestuur](#algemene-maatregel-van-bestuur)
 
 Bron: Enkelvoudige kamer, [[Rechtspraaknl]], Artikel 1.2.5 lid 1, [[Sv]], Artikel 8.10, [[Awb]]
 
-Gerelateerd: , [Raadkamer](#raadkamer)
+Gerelateerd: [Raadkamer](#raadkamer), 
 
 ### Europees Openbaar Ministerie
 
@@ -320,7 +320,7 @@ Gerelateerd:
 
 Bron: Artikel 1.3.10, [[Sv]]
 
-Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Ambtenaar van politie](#ambtenaar-van-politie), [Opsporingsambtenaar](#opsporingsambtenaar), , 
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), , [Ambtenaar van politie](#ambtenaar-van-politie), , [Opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Gewoon rechtsmiddel
 
@@ -388,7 +388,7 @@ Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 > Inverzekeringstelling is de [vrijheidsbeneming](#vrijheidsbeneming) van een [verdachte](#verdachte) door een [officier van justitie](#officier-van-justitie) of [hulpofficier van justitie](#hulpofficier-van-justitie) op grond van ernstige bezwaren en onderzoeksbelang.
 
-Bron: 2.5.14 lid 1, [[Sv]], 
+Bron: , 2.5.14 lid 1, [[Sv]]
 
 Gerelateerd: [Hulpofficier van justitie](#hulpofficier-van-justitie), [Vrijheidsbeneming](#vrijheidsbeneming), [Officier van Justitie](#officier-van-justitie), [Verdachte](#verdachte)
 
@@ -824,7 +824,7 @@ Gerelateerd: , [Zitting](#zitting), [Zaak](#zaak)
 
 Bron: , lid 2, [[Sv]]
 
-Gerelateerd: [Redelijk vermoeden van schuld](#redelijk-vermoeden-van-schuld), [Strafbaar feit](#strafbaar-feit), [natuurlijk persoon](#natuurlijk-persoon)
+Gerelateerd: [natuurlijk persoon](#natuurlijk-persoon), [Redelijk vermoeden van schuld](#redelijk-vermoeden-van-schuld), [Strafbaar feit](#strafbaar-feit)
 
 ### Verdediging
 
@@ -908,7 +908,7 @@ Alternatieve aanduiding: *Vervolging*
 
 Bron: Artikel 1.3.2 [[Sv]]
 
-Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Gerecht](#gerecht), , [Verdachte](#verdachte)
+Gerelateerd: , [Officier van Justitie](#officier-van-justitie), [Gerecht](#gerecht), [Verdachte](#verdachte)
 
 ### Vervolging
 

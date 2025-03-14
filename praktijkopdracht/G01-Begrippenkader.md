@@ -32,19 +32,19 @@ Voorbeeld(en): Afstand doen van het recht gehoord te worden
 
 Bron: Artikel 2.5.33 lid 2 sub f [[Sv]]
 
-Gerelateerd: [Verdovende middelen](#verdovende-middelen), [Bloedonderzoek](#bloedonderzoek), [Urineonderzoek](#urineonderzoek)
+Gerelateerd: [Urineonderzoek](#urineonderzoek), [Bloedonderzoek](#bloedonderzoek), [Verdovende middelen](#verdovende-middelen)
 
 ### Arts
 
 > Een arts is een persoon die in het BIG-register staat aangeduid als arts. 
 
-Bron: 
+Bron: Artikel 3 lid 1 [[WetBIG]]
 
 ### Beslagexploot
 
 > Een beslagexploot is een [exploot](#exploot) met betrekking tot inbeslagneming door een deurwaarder.
 
-Bron: 
+Bron: rechtspraak.nl [[rechtspraaknl]]
 
 Gerelateerd: [Exploot](#exploot)
 
@@ -54,7 +54,7 @@ Alternatieve aanduiding: *infectieziekten*
 
 > Een besmettelijke ziekte is een infectieziekte waar er een besmetting is van mens of dier met microbiële agentia als bacteriën, virussen, schimmels en parasieten of met eiwitten (prionen in het geval van de gekke koeienziekte), leidend tot infecties.   
 
-Bron: 
+Bron: Rijksinstituut voor Volksgezondheid en Milieu [[RIVM]]
 
 ### Bewaring van het recht
 
@@ -76,7 +76,7 @@ Bron: Kamerstukken II, 24 263, nr. 3, p. 58-59 (MvT) bij artikel 38 P [[BW]]
 
 > Bloedonderzoek is een onderzoek dat betrekking heeft op het gebruik van alcohol of een of meer van de volgende stoffen: amfetamine, methamfetamine, cocaïne, MDMA, MDEA, MDA, cannabis, heroïne, morfine, GHB, gamma butyrolacton en 1,4-butaandiol.
 
-Bron: 
+Bron: Artikel 1 [[BADGV]]
 
 ### Buitenvervolgingsstelling
 
@@ -126,7 +126,7 @@ Gerelateerd: , [DNA-profiel](#dna-profiel)
 
 > Een DNA-profiel is een unieke set van genetische merkers.
 
-Bron: 
+Bron: Interne documenten NFI [[NFI]]
 
 ### Dadelijke uitvoerbaarheid
 
@@ -140,7 +140,7 @@ Bron:
 
 > Onderzoek dat verder gaat dan zoekend rondkijken. 
 
-Bron: voor eerste vernoeming zie artikel 2.5.7 Bron: [[ThesaurusPolitieacademie]]
+Bron: Thesaurus Politieacademie [[ThesaurusPolitieacademie]]
 
 ### Drager van een ziekte
 
@@ -150,13 +150,13 @@ Bron: voor eerste vernoeming zie artikel 2.5.7 Bron: [[ThesaurusPolitieacademie]
 
 > Er is sprake van ernstige bezwaren indien er een meer dan redelijk vermoeden van schuld van de verdachte is.
 
-Bron: 
+Bron: p. 21.4, [[Handboekvoorstrafzaken]]
 
 ### Exploot
 
 > Een exploot is een verzamelnaam voor officiële stukken die uitsluitend door de bevoegde deurwaarder kunnen worden uitgebracht.
 
-Bron: 
+Bron: rechtspraak.nl [[rechtspraaknl]]
 
 Voorbeeld(en): Dagvaarding
 
@@ -166,7 +166,7 @@ Voorbeeld(en): Dagvaarding
 
 Toelichting: Forensisch onderzoek is meestal gericht op waarheidsvinding in het kader van onderzoek naar een strafbaarfeit. In het geval van forensisch psychologisch onderzoek en forensisch psychiatrisch onderzoek richt het onderzoek zich op de strafbaarheid van de verdachte.
 
-Bron: 
+Bron: Forensische expertise, jrg. 30, nr. 1 2004, p. 21, [[WODC]]
 
 Gerelateerd: 
 
@@ -190,7 +190,7 @@ Bron: Autoriteit Persoonsgegevens [[AP]]
 
 Toelichting: De stof kan voorkomen als gas, damp, deeltje, aerosol of vezel.
 
-Bron: 
+Bron: Rijksinstituut voor Volksgezondheid en Milieu [[RIVM]]
 
 ### Haaronderzoek
 
@@ -228,13 +228,19 @@ Bron:
 
 Bron: Intimate parts definition [[LawInsider]]
 
+### Inwendig schouwen van het lichaam
+
+Alternatieve aanduiding: *lijfsvisitatie*
+
+> Het inwendig schouwen van het lichaam is het inwendig bekijken van het lichaam
+
 ### Isotopenonderzoek
 
 > Een Isotopenonderzoek is het wetenschappelijke onderzoek naar de verhouding van verschillende isotopen van elementen in lichaamsmateriaal of andere materialen om informatie te verkrijgen over de herkomst of herkomstgeschiedenis van een persoon of object.
 
 Toelichting: Isotopenonderzoek maakt gebruik van de variaties in isotopenratio's die door verschillende chemische, fysische en biologische processen worden beïnvloed
 
-Bron: 
+Bron: Herkomstonderzoek op basis van isotopen [[NFI-ISO]]
 
 ### Jeugddetentie
 
@@ -266,7 +272,7 @@ Alternatieve aanduiding: *Medisch specialist*
 
 Toelichting: Hiervoor heeft de arts na de opleiding geneeskunde nog een specialiserende opleiding gevolgd in een bepaald vakgebied.
 
-Bron: 
+Bron: TMI [[TMI]]
 
 Voorbeeld(en): gynaecoloog, cardioloog, huisarts
 
@@ -292,7 +298,7 @@ Alternatieve aanduiding: *ademanalyse, nader onderzoek van uitgeademende lucht*
 
 Toelichting: Nader ademonderzoek kan enkel plaatsvinden als er een verdenking is van rijden onder invloed van alcohol, bijvoorbeeld omdat een voorlopig ademonderzoek dat heeft aangetoond.
 
-Bron: 
+Bron: Artikel 163 lid 2 WVW 1995,  [[TC]]
 
 ### Niet-invasief beeldvormend onderzoek
 
@@ -308,23 +314,37 @@ Voorbeeld(en): CT-scan, MRI-scan, nucleaire scan met een radioactieve stof
 
 Bron: 
 
-Gerelateerd: [Ingeslotene](#ingeslotene), [Cel](#cel)
+Gerelateerd: [Cel](#cel), [Ingeslotene](#ingeslotene)
 
 ### Onderzoek aan de kleding
 
 > Een onderzoek aan de kleding is het oppervlakkig aftasten van de kleding en het nauwkeurig onderzoek van de hoofdbedekking en het schoeisel.
 
-Bron: Artikel 20, lid 1, Artikel 20, lid 1, Ambtsinstructie Politie, Artikel 1:28, lid 5 sub A [[AmbtsinstructiePolitie]] [[Adw]]
+Bron: Artikel 20, lid 1, Ambtsinstructie Politie, Artikel 1:28, lid 5 sub A Artikel 20, lid 1, [[AmbtsinstructiePolitie]] [[Adw]]
 
 ### Onderzoek in het lichaam
 
-> Het uitwendig en inwendig schouwen en onderzoeken van de openingen en holten van het onderlichaam, [het inwendig schouwen]() en onderzoeken van de openingen en holten van het bovenlichaam of het verrichten van [niet-invasief beeldvormend onderzoek](#niet-invasief-beeldvormend-onderzoek) en dat onderzoek niet met een [technisch hulpmiddel]() wordt verricht waarbij röntgenstralen worden gebruikt als gevolg waarvan dat onderzoek risico's voor de gezondheid kan opleveren
+> Het uitwendig en inwendig schouwen en onderzoeken van de openingen en holten van het onderlichaam, [het inwendig schouwen]() en onderzoeken van de openingen en holten van het bovenlichaam of het verrichten van [niet-invasief beeldvormend onderzoek](#niet-invasief-beeldvormend-onderzoek) en dat onderzoek niet met een technisch hulpmiddel wordt verricht waarbij röntgenstralen worden gebruikt als gevolg waarvan dat onderzoek risico's voor de gezondheid kan opleveren
 
-Gerelateerd: , , [Niet-invasief beeldvormend onderzoek](#niet-invasief-beeldvormend-onderzoek)
+Gerelateerd: , [Niet-invasief beeldvormend onderzoek](#niet-invasief-beeldvormend-onderzoek)
 
 ### Onroerende zaak.
 
 > Een onroerende zaak is de grond, de nog niet gewonnen delfstoffen, de met de grond verenigde beplantingen, alsmede de gebouwen en werken die duurzaam met de grond zijn verenigd, hetzij rechtstreeks, hetzij door vereniging met andere gebouwen of werken.
+
+Bron: Artikel 3:3 lid 1 [[BW]]
+
+### Ontbloten
+
+> Ontbloten is het zichtbaar maken van een of meer lichaamsdelen.
+
+### Ontdoen van de kleding
+
+Alternatieve aanduiding: *Uitkleden*
+
+> Ontdoen van de kleding is het uittrekken of afdoen van een of meer kledingstukken.
+
+Bron: Art. 2.6.6 Sv en  Art. 2.6.6 [[Sv]] [[TC]]
 
 ### Postvervoerbedrijf
 
@@ -338,7 +358,7 @@ Bron: Artikel 2 lid 1 sub e [[Postwet2009]]
 
 Toelichting: Een rechthebbende is een persoon of een organisatie die een recht heeft. Dit betekent dat deze persoon of organisatie eigenaar is van iets of het recht heeft om iets te gebruiken, te bezitten of te genieten. Een rechthebbende heeft bepaalde rechten of eigendommen waar anderen rekening mee moeten houden.
 
-Bron: 
+Bron: Kadaster [[Kadaster]]
 
 ### Reclassering
 
@@ -374,7 +394,7 @@ Gerelateerd:
 
 > Een sectie is een uit- en inwendig medisch [forensisch onderzoek](#forensisch-onderzoek) op een lichaam of één of meerdere lichaamsdelen van een overleden persoon 
 
-Bron: 
+Bron: Forensisch Pathologisch Onderzoek [[NFI-S]]
 
 Gerelateerd: [Forensisch Onderzoek](#forensisch-onderzoek)
 
@@ -406,19 +426,19 @@ Bron: rechtspraak.nl [[rechtspraaknl]]
 
 > Een tandarts is een persoon die in het BIG-register staat aangeduid als tandarts. 
 
-Bron: 
+Bron: Artikel 3 lid 1 [[WetBIG]]
 
 ### Telecommunicatie
 
 > Telecommunicatie is iedere overdracht, uitzending of ontvangst van gegevens van welke aard ook door middel van kabels, langs radio-elektrische weg of door middel van optische of andere elektro-magnetische systemen.
 
-Bron: 
+Bron: Kamerstukken II 2004/05, 26671, nr. 7, p. 35 [[MvTTelecommunicatie]]
 
 ### Telecommunicatiegeheim
 
 > Telecommunicatiegeheim is de bescherming [telecommunicatie](#telecommunicatie) tegen heimelijke overheidsinzage van privé-communicatie
 
-Bron: Kamerstukken II 2013/14, 33989, 3, p. 8, artikel 13 [[Gw]]
+Bron: MvT Telecommunicatiegeheim, 3, p. 8, artikel 13 [[Gw]]
 
 Gerelateerd: [Telecommunicatie](#telecommunicatie)
 
@@ -438,7 +458,7 @@ Alternatieve aanduiding: *Toxicologie*
 
 Toelichting: Strafrechtelijk gezien wordt toxicologisch onderzoek verricht in geval van niet-natuurlijk overlijden zoals moord, zelfmoord of euthanasie, rijden onder invloed en bedwelming.
 
-Bron: 
+Bron: Toxicologie (Forensische) [[NFI-TOX]]
 
 ### Uitreiken in persoon
 
@@ -455,6 +475,14 @@ Bron: rechtspraak.nl [[rechtspraaknl]]
 > Een uitreisverbod is de beperking van het recht om Nederland te verlaten of de verplichting het paspoort of ander reisdocument in te leveren.
 
 Bron: Artikel 2.5.33 lid 2 sub e [[Sv]]
+
+### Uitwendig schouwen van het lichaam
+
+Alternatieve aanduiding: *onderzoek aan het lichaam*
+
+> Het uitwendig schouwen van het lichaam is het uitwendig bekijken van het lichaam
+
+Bron: Art. 2.6.6 lid 3 [[Sv]]
 
 ### Urineonderzoek
 
@@ -474,19 +502,19 @@ Bron: Bijlage 1 bij protocol Alcohol-, drugs- en medicijngebruik: Wet- en regelg
 
 > Vergelijkend handschriftonderzoek is gebaseerd op een systematische vergelijking van een aantal schriftkenmerken. 
 
-Bron: 
+Bron: Vakbijlage Vergelijkend handschriftonderzoek [[NFI-HO]]
 
 ### Vergelijkend onderzoek
 
 > Een vergelijkend onderzoek is een onderzoek waarbij verschillende monsters met elkaar en met de NFI-database vergeleken worden om de herkomst te bepalen.
 
-Bron: 
+Bron: Vergelijkend onderzoek [[NFI-VO]]
 
 ### Vergelijkend spraakonderzoek
 
 > Bij een vergelijkend spraakonderzoek worden de spraakuitingen van de te onderzoeken spreker vergeleken met de spraakuitingen van een meestal bekende spreker in een andere opname.
 
-Bron: 
+Bron: Vergelijkend Spraakonderzoek [[NFI-SO]]
 
 ### Verklaring van afstand
 
@@ -498,7 +526,7 @@ Bron: art. 3:33 [[BW]]
 
 > Een verpleegkundige is een persoon die in het BIG-register staat aangeduid als verpleegkundige. 
 
-Bron: 
+Bron: Artikel 3 lid 1 [[WetBIG]]
 
 ### Voorlopig ademonderzoek
 
@@ -512,9 +540,9 @@ Bron: Artikel 160 lid 5 sub b WVW 1995. ECLI:NL:PHR:2024:1226, [[ThesaurusPoliti
 
 ### Voorwaardelijke straf
 
-> Een voorwaardelijke straf is een straf die pas uitgevoerd wordt als de veroordeelde zich niet aan bepaalde voorwaarden houdt. Als voorwaarde geldt altijd dat de veroordeelde zich niet binnen de proeftijd opnieuw aan een strafbaar feit schuldig maakt
+> Een voorwaardelijke straf is een straf die pas uitgevoerd wordt als de veroordeelde zich niet aan bepaalde voorwaarden houdt.
 
-Bron: 
+Bron: strafrecht.nl [[strafrechtnl]]
 
 ### Vreemdeling
 
