@@ -1,0 +1,5 @@
+Dit document beschrijft (een deel van) de gegevenstypering voor het nieuw Wetboek van Strafvordering, zoals uitgewerkt door de trainees in de praktijkopdracht Gegevenstypering. Het betreft hier het uitwerken van de begrippen zoals deze in het wetboek zijn benoemd, conform de NL-SBB standaard voor het beschrijven van begrippen.
+
+18 trainees hebben in groepjes van 4 of 5 elk gewerkt aan een deel van het nieuwe wetboek. Zij hebben in 6 weken, 1 dag per week aan onderstaande uitwerking gewerkt. Voorafgaand aan de opdracht hadden de trainees geen kennis van dit wetboek. Ook hadden de trainees geen kennis van de aanpak om tot een dergelijke gegevenstypering te komen. Gedurende deze zes weken hebben zij het cursusmateriaal eigen gemaakt om tot een dergelijke beschrijving te komen. In totaal is dit daarmee het resultaat van 150 mandagen werk.
+
+> Disclaimer: De inhoud van onderstaand document is niet gevalideerd door enige kennishouder (domeinexpert, SME) of geverifieerd. Het geeft puur het resultaat dat bereikt is door de trainees zelf.
