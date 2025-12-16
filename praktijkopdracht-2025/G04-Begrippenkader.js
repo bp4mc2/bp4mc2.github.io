@@ -43,6 +43,14 @@ var localBiblio = {
     title: "Verdrag inzake de verkrijging van bewijs in het buitenland in burgerlijke en in handelszaken, 's-Gravenhage",
     href: "https://wetten.overheid.nl/BWBV0001993/1981-06-07",
   },
+  "WID": {
+    title: "Wet op de Identificatieplicht",
+    href: "https://wetten.overheid.nl/BWBR0006297/2017-03-01",
+  },
+  "WRB": {
+    title: "Wet op de Rechtsbijstand",
+    href: "https://wetten.overheid.nl/BWBR0006368/2025-01-01",
+  },
   "Wpg": {
     title: "Wet Politiegegevens",
     href: "https://wetten.overheid.nl/BWBR0022463/2025-07-01",

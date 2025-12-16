@@ -4,7 +4,9 @@
 
 ### Arrest
 
-> Uitspraak door de hoogste gerechtelijke instantie.
+> Uitspraak door de hoogste gerechtelijke instantie, hoger dan een [rechtbank](#rechtbank), en een bijbehorende [rechter](#rechter). 
+
+Gerelateerd: [Rechtbank](#rechtbank), [Rechter](#rechter)
 
 ### Beeld- en geluidopname als bewijsmiddel
 
@@ -12,23 +14,31 @@
 
 Bron: art. 4.3.8 [[Sv]], art. 4.2.31 [[Sv]], art. 4.1.7 [[Sv]], art. 4.2.34 [[Sv]]
 
-Gerelateerd: [wettigen bewijsmiddelen](#wettigen-bewijsmiddelen), [bewijs](#bewijs)
+Gerelateerd: [bewijs](#bewijs), [wettigen bewijsmiddelen](#wettigen-bewijsmiddelen)
+
+### Beraadslaging
+
+> Een beraadslaging vindt na een [terechtzitting]() plaats. Tijdens een beraadslaging bespreekt een [rechter](#rechter) dan wel niet met andere rechters een terechtzitting en overweegt een [uitspraak]().
+
+*Lijkt geen definitie van te zijn in het wetboek zelf*
+
+Gerelateerd: [terechtzitting](#terechtzitting), [uitspraak](#uitspraak), [Rechter](#rechter)
 
 ### Berechting
 
-> Een behandeling van een [rechtszaak]() door de rechter in [eerste aanleg](#eerste-aanleg) of in [hoger beroep](#hoger-beroep) ter bepaling van de gegrondheid van de tegen een [verdachte](#verdachte) ingestelde [vervolging]().
+> Een behandeling van een [rechtszaak](#rechtszaak) door de rechter in [eerste aanleg](#eerste-aanleg) of in [hoger beroep](#hoger-beroep) ter bepaling van de gegrondheid van de tegen een [verdachte](#verdachte) ingestelde [vervolging](#vervolging).
 
 Bron: art. 1.1.7 [[Sv]]
 
-Gerelateerd: [Verdachte](#verdachte), , [Hoger beroep](#hoger-beroep), [Eerste aanleg](#eerste-aanleg), 
+Gerelateerd: [Verdachte](#verdachte), [Vervolging](#vervolging), [Hoger beroep](#hoger-beroep), [Eerste aanleg](#eerste-aanleg), [Rechtszaak](#rechtszaak)
 
 ### Bewijscriterium "buiten redelijke twijfel"
 
-> Een bewijscriterium "buiten redelijke twijfel" ziet erop dat een [rechter]() geen [veroordeling]() mag uitspreken indien deze betreffende rechter redelijke twijfel heeft over de waarschijnlijkheid van een [tenlastelegging](#tenlastelegging) op basis van de [wettige bewijsmiddelen](). 
+> Een bewijscriterium "buiten redelijke twijfel" ziet erop dat een [rechter](#rechter) geen [veroordeling]() mag uitspreken indien deze betreffende rechter redelijke twijfel heeft over de waarschijnlijkheid van een [tenlastelegging](#tenlastelegging) op basis van de [wettige bewijsmiddelen](). 
 
 Bron: art. 4.3.7 [[Sv]]
 
-Gerelateerd: , [veroordeling](#veroordeling), [wettige bewijsmiddelen](#wettige-bewijsmiddelen), [Tenlastelegging](#tenlastelegging)
+Gerelateerd: [Rechter](#rechter), [wettige bewijsmiddelen](#wettige-bewijsmiddelen), [veroordeling](#veroordeling), [Tenlastelegging](#tenlastelegging)
 
 ### Deskundige
 
@@ -42,49 +52,59 @@ Gerelateerd: [persoon](#persoon)
 
 ### Eerste aanleg
 
-> Een [rechtszaak]() bij de eerste rechter, de rechtbank. 
+> Een [rechtszaak](#rechtszaak) bij de eerste [rechter](#rechter), de [rechtbank](#rechtbank). 
 
-Gerelateerd: 
+Gerelateerd: [Rechtszaak](#rechtszaak), [Rechter](#rechter), [Rechtbank](#rechtbank)
 
 ### Eigen waarneming van de rechter
 
-> Een eigen waarneming van een [rechter]() is de waarneming die bij het onderzoek op de [terechtzitting]() door hem persoonlijk is gedaan.
+> Een eigen waarneming van een [rechter](#rechter) is de waarneming die bij het onderzoek op de [terechtzitting]() door hem persoonlijk is gedaan.
 
 Bron: art. 4.3.9 [[Sv]]
 
-Gerelateerd: [terechtzitting](#terechtzitting), 
+Gerelateerd: [terechtzitting](#terechtzitting), [Rechter](#rechter)
 
 ### Gerechtshof
 
-> Een gerechtelijke instantie waar een [hogere rechter]() een [rechtszaak]() opnieuw behandeld na de [eerste aanleg](#eerste-aanleg).
+> Een gerechtelijke instantie waar een hogere [rechter](#rechter) een [rechtszaak](#rechtszaak) opnieuw behandeld na de [eerste aanleg](#eerste-aanleg).
 
-Gerelateerd: [hogere rechter](#hogere-rechter), , [Eerste aanleg](#eerste-aanleg)
+Gerelateerd: [Eerste aanleg](#eerste-aanleg), [Rechtszaak](#rechtszaak), [Rechter](#rechter)
 
 ### Getuige
 
-> Iemand die wordt gehoord.
+> Iemand die wordt gehoord. Dit kan onder andere worden aangevraagd via een [getuigenverzoek](#getuigenverzoek).
 
 Bron: art. 1.6.1. - 1.6.4. [[Sv]]
 
+Gerelateerd: [Getuigenverzoek](#getuigenverzoek)
+
+### Getuigenverzoek
+
+> Een getuigenveroek is een verzoek om een [getuige](#getuige) te horen. Een getuigenverzoek kan worden aangevraagd door een [officier van justitie](#officier-van-justitie) of een [verdachte](#verdachte)
+
+Gerelateerd: [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie), [Getuige](#getuige)
+
 ### Hoger beroep
 
-> Het opnieuw behandelen van een [rechtszaak]() door een [hogere rechter]()
+> Het opnieuw behandelen van een [rechtszaak](#rechtszaak) door een hogere [rechter](#rechter)
 
 Bron: 
 
-Gerelateerd: [hogere rechter](#hogere-rechter), 
+Gerelateerd: [Rechter](#rechter), [Rechtszaak](#rechtszaak)
 
 ### Laatste woord
 
-> Weghalen?
+> Een laatste woord is een afsluiting van een [terechtzitting]() en daarmee komt dit na een [pleidooi](#pleidooi).
 
 *Lijkt geen term te zijn (zie artiel 4.2.26.3 en .6)*
+
+Gerelateerd: [terechtzitting](#terechtzitting), [Pleidooi](#pleidooi)
 
 ### Officier van Justitie
 
 > Een officier van justitie is een openbaar aanklager en vertegenwoordiger van het [Openbaar Ministerie](). Deze spreekt een [tenlastelegging](#tenlastelegging) jegens een [verdachte](#verdachte) uit. 
 
-Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Tenlastelegging](#tenlastelegging), [Verdachte](#verdachte)
+Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Verdachte](#verdachte), [Tenlastelegging](#tenlastelegging)
 
 ### Openbaarheid van de berechting
 
@@ -96,23 +116,23 @@ Gerelateerd: [Berechting](#berechting), [Rechtbank](#rechtbank), [Vonnis](#vonni
 
 ### Pleidooi
 
-> Een pleidooi is een schriftelijk opgestelde tekst die mondeling aan een [rechter]() wordt voorgedragen ter ondersteuning van een combinatie van elk [wettig bewijsmiddel](#wettig-bewijsmiddel) dat bijdraagt aan het bewijzen dan wel ontkrachten van een [tenlastelegging](#tenlastelegging). 
+> Een pleidooi is een schriftelijk opgestelde tekst die mondeling aan een [rechter](#rechter) wordt voorgedragen ter ondersteuning van een combinatie van elk [wettig bewijsmiddel](#wettig-bewijsmiddel) dat bijdraagt aan het bewijzen dan wel ontkrachten van een [tenlastelegging](#tenlastelegging). 
 
-Gerelateerd: [Tenlastelegging](#tenlastelegging), [Wettig bewijsmiddel](#wettig-bewijsmiddel), 
+Gerelateerd: [Tenlastelegging](#tenlastelegging), [Wettig bewijsmiddel](#wettig-bewijsmiddel), [Rechter](#rechter)
 
 ### Procesinleiding
 
-> Een procesinleiding is een dossier dat, waneer ingediend door de [officier van justitie](#officier-van-justitie) aan de  [voorzitter van de rechtbank](), een [rechtszaak]() ter [berechting](#berechting) aanbrengt en deze aan de [verdachte](#verdachte) betekent.
+> Een procesinleiding is een dossier dat, waneer ingediend door de [officier van justitie](#officier-van-justitie) aan de  [voorzitter van de rechtbank](), een [rechtszaak](#rechtszaak) ter [berechting](#berechting) aanbrengt en deze aan de [verdachte](#verdachte) betekent.
 
 Toelichting: Een procesinleiding bevat de volgende onderdelen: een opgave van het feit dat wordt tenlastegelegd, met vermelding op welke plaats en omstreeks welke tijd het begaan zou zijn; de wettelijke voorschriften waarbij het feit is strafbaar gesteld; een opgave van de getuigen, deskundigen, slachtoffers, personen die op de grond van artikel 1.5.8 het spreekrecht kunnen uitoefenen en tolken die de officier van justitie voor de terechtzitting zal oproepen; een opgave van geluids- of beeldopnamen waarvan geen volledig proces-verbaal is opgemaak.
 
 Bron: art 4.1.1 [[Sv]]
 
-Gerelateerd: [Berechting](#berechting), [voorzitter van de rechtbank](#voorzitter-van-de-rechtbank), , [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Berechting](#berechting), [voorzitter van de rechtbank](#voorzitter-van-de-rechtbank), [Rechtszaak](#rechtszaak), [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
 
 ### Raadkamer
 
-> Een Raadkamer is het [rechterlijk college]() dat [beslissingen]() neemt over [strafrechten]() achter gesloten deuren.
+> Een Raadkamer is een [rechterlijk college]() dat [beslissingen]() neemt over [strafrechten]() achter gesloten deuren.
 
 Bron: art. 4.21.1 [[Sv]]
 
@@ -120,13 +140,13 @@ Gerelateerd: [strafrechten](#strafrechten), [beslissingen](#beslissingen), [rech
 
 ### Rechtbank
 
-> Een gerechtelijke instantie die een [rechtszaak]() als eerste behandeld.
+> Een gerechtelijke instantie die een [rechtszaak](#rechtszaak) als eerste behandeld.
 
-Gerelateerd: 
+Gerelateerd: [Rechtszaak](#rechtszaak)
 
 ### Rechten van de verdachte
 
-> Rechten van de [verdachte](#verdachte) zijn de wettelijke waarborgen die een [verdachte](#verdachte) beschermen tijdens het strafproces
+> Rechten van de [verdachte](#verdachte) zijn de wettelijke waarborgen die een [verdachte](#verdachte) beschermen tijdens het strafproces.
 
 Bron: art. 1.4.2 [[Sv]]
 
@@ -134,17 +154,37 @@ Gerelateerd: [Verdachte](#verdachte)
 
 ### Rechten van het slachtoffer
 
-> De wettelijke waarborgen die een [slachtoffer](#slachtoffer) beschermen tijdens het strafproces
+> De wettelijke waarborgen die een [slachtoffer](#slachtoffer) beschermen tijdens het strafproces.
 
 Bron: Boek 1 Titel 5.2 [[Sv]]
 
 Gerelateerd: [Slachtoffer](#slachtoffer)
 
+### Rechter
+
+> Een rechter is een persoon binnen een [rechtbank](#rechtbank) die oordeelt of een [verdachte](#verdachte) jegens een [slachtoffer](#slachtoffer) een [strafbaar feit]() heeft gepleegd. 
+
+Gerelateerd: [strafbaar feit](#strafbaar-feit), [Rechtbank](#rechtbank), [Verdachte](#verdachte), [Slachtoffer](#slachtoffer)
+
 ### Rechter-commissaris
 
-> Een rechter-commissaris degene die beoordeelt of  een verdachte langer in voorarrest mag houden en moet ook goedkeuring geven als er van bijzondere opsporingsmethoden gebruik gemaakt wil worden
+> Een rechter-commissaris degene die beoordeelt of  een [verdachte](#verdachte) langer in voorarrest mag houden en moet ook goedkeuring geven als er van bijzondere opsporingsmethoden gebruik gemaakt wil worden
 
 Bron: 
+
+Gerelateerd: [Verdachte](#verdachte)
+
+### Rechtszaak
+
+> Een rechtszaak is een proces waarbij een [rechter](#rechter) onderzoekt of een [verdachte](#verdachte) jegens een [slachtoffer](#slachtoffer) een [strafbaar feit]() heeft gepleegd.
+
+Gerelateerd: [strafbaar feit](#strafbaar-feit), [Slachtoffer](#slachtoffer), [Verdachte](#verdachte), [Rechter](#rechter)
+
+### Requisitoir
+
+> Een requisitoir is een samenvatting van de [officier van justitie](#officier-van-justitie) betreffende [feitelijke handelingen]() van een [verdenking]() van een [strafbaar feit]() gepleegd door een [verdachte](#verdachte). 
+
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Verdachte](#verdachte), [feitelijke handelingen](#feitelijke-handelingen), [strafbaar feit](#strafbaar-feit), [verdenking](#verdenking)
 
 ### Slachtoffer
 
@@ -160,7 +200,7 @@ Gerelateerd: [strafbaar feit](#strafbaar-feit), [rechtspersoon](#rechtspersoon),
 
 Bron: art. 1.5.8 [[Sv]]
 
-Gerelateerd: [delict](#delict), [Verdachte](#verdachte), [Slachtoffer](#slachtoffer)
+Gerelateerd: [delict](#delict), [Slachtoffer](#slachtoffer), [Verdachte](#verdachte)
 
 ### Tenlastelegging
 
@@ -168,11 +208,19 @@ Gerelateerd: [delict](#delict), [Verdachte](#verdachte), [Slachtoffer](#slachtof
 
 Gerelateerd: [strafbaar feit](#strafbaar-feit), [schuld](#schuld), [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
 
+### Tussenuitspraak
+
+> Een tussenuitspraak is een uitspraak tijdens een [rechtszaak](#rechtszaak), niet zijnde hoofduitspraak waarmee de zaak wordt afgedaan. 
+
+Gerelateerd: [Rechtszaak](#rechtszaak)
+
 ### Verdachte
 
-> Een verdachte is een persoon die, door feiten of omstandigheden, een redelijk vermoeden van schuld heeft voor het begaan van een strafbaar feit 
+> Een verdachte is een persoon die, door feiten of omstandigheden, een redelijk vermoeden van schuld heeft voor het begaan van een [strafbaar feit]().
 
 Bron: art. 1.4.1. [[Sv]]
+
+Gerelateerd: [strafbaar feit](#strafbaar-feit)
 
 ### Verklaring van de verdachte
 
@@ -198,29 +246,39 @@ Bron: art. 4.3.9 [[Sv]]
 
 Gerelateerd: [terechtzitting](#terechtzitting), [Getuige](#getuige)
 
+### Vervolging
+
+> Wanneer een [persoon]() wordt verdacht van een [strafbaar feit]() en daarmee een [verdachte](#verdachte) is, kan worden besloten dat er wordt overgegaan tot een vervolging, waarbij een proces wordt gestart door een [officier van justitie](#officier-van-justitie) bij een [rechtbank](#rechtbank) een een bevoegde [rechter](#rechter).
+
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Rechtbank](#rechtbank), [strafbaar feit](#strafbaar-feit), [Rechter](#rechter), [persoon](#persoon), [Verdachte](#verdachte)
+
 ### Vonnis
 
-> Document met uitspraak van een rechter en het bijbehorende proces.
+> Document met uitspraak van een [rechter](#rechter) en het bijbehorende proces met informatie over zaken als een [terechtzitting]() en een [beraadslaging](#beraadslaging).
+
+Gerelateerd: [terechtzitting](#terechtzitting), [Beraadslaging](#beraadslaging), [Rechter](#rechter)
 
 ### Voorbereidend onderzoek
 
-> Een handeling uitgevoerd door een [rechter](), waarbij voorafgaand aan een [terechtzitting]() onderzoek wordt gedaan.
+> Een handeling uitgevoerd door een [rechter](#rechter), waarbij voorafgaand aan een [terechtzitting]() onderzoek wordt gedaan.
 
-Gerelateerd: [terechtzitting](#terechtzitting), 
+Gerelateerd: [terechtzitting](#terechtzitting), [Rechter](#rechter)
 
 ### Voorzitter
 
-> Een voorzitter heeft de leiding van het onderzoek op de zitting en geeft daartoe de nodige bevelen
+> Een voorzitter is een [rechter](#rechter) en heeft de leiding van het onderzoek op de zitting en geeft daartoe de nodige bevelen.
 
 Bron: art. 1.2.5. [[Sv]]
 
+Gerelateerd: [Rechter](#rechter)
+
 ### Wettig bewijsmiddel
 
-> Een wettig bewijsmiddel is een door de [rechter]() toegestane vorm van [bewijs]() die een rechter mag gebruiken om [feiten]() in een [berechting](#berechting) vast te stellen.
+> Een wettig bewijsmiddel is een door de [rechter](#rechter) toegestane vorm van [bewijs]() die een rechter mag gebruiken om [feiten]() in een [berechting](#berechting) vast te stellen.
 
 Toelichting: Als wettige bewijsmiddelen worden alleen erkend: de verklaring van de verdachte, de verklaring van een getuige, de verklaring van een deskundige, een schriftelijk stuk, een opname van beeld, een opname van geluid, een opname van beeld en geluid, of de eigen waarneming van de rechter. eiten of omstandigheden van algemene bekendheid behoeven geen bewijs (art. 4.3.8 Sv)
 
 Bron: art. 4.3.7 [[Sv]], art. 4.3.8 [[Sv]]
 
-Gerelateerd: [bewijs](#bewijs), [feiten](#feiten), [Berechting](#berechting), 
+Gerelateerd: [bewijs](#bewijs), [Berechting](#berechting), [Rechter](#rechter), [feiten](#feiten)
 

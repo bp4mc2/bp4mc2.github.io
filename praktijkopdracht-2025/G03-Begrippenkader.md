@@ -30,7 +30,7 @@ Alternatieve aanduiding: *beklaagd*
 
 > Een beklag is de mogelijkheid voor een rechtstreeks [belanghebbende](#belanghebbende) om te klagen als door het Openbaar Ministerie is besloten om een [strafbaar feit](#strafbaar-feit) niet (verder) te [vervolgen](). De beslissing om al dan niet alsnog te [vervolgen]() wordt ter beoordeling aan het [gerechtshof](#gerechtshof) voorgelegd.
 
-Gerelateerd: [Gerechtshof](#gerechtshof), [vervolgen](#vervolgen), [Strafbaar feit](#strafbaar-feit), [Belanghebbende](#belanghebbende)
+Gerelateerd: [vervolgen](#vervolgen), [Gerechtshof](#gerechtshof), [Strafbaar feit](#strafbaar-feit), [Belanghebbende](#belanghebbende)
 
 ### Belanghebbende
 
@@ -42,7 +42,7 @@ Gerelateerd: [Rechtspersoon](#rechtspersoon), [Natuurlijk persoon](#natuurlijk-p
 
 *Een «Beslissing (deze kan weg maar ik laat deze staan zodat de nummers nog kloppen)» is een rechtshandeling.*
 
-> Een beslissing is een beslissing van de rechter-commissaris.
+> g
 
 Toelichting: Definitie van rechterlijke beslissingen
 

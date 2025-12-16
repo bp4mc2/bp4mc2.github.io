@@ -10,7 +10,7 @@
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [gegevens verwerkt](#gegevens-verwerkt), , [Geautomatiseerd werk](#geautomatiseerd-werk), [gebruikers van de communicatiedienst](#gebruikers-van-de-communicatiedienst)
+Gerelateerd: [gegevens verwerkt](#gegevens-verwerkt), , [natuurlijke persoon](#natuurlijke-persoon), [Geautomatiseerd werk](#geautomatiseerd-werk), [gebruikers van de communicatiedienst](#gebruikers-van-de-communicatiedienst)
 
 ### Beslagene
 
@@ -20,31 +20,31 @@ Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [gegevens verwerkt](#g
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [inbeslaggenomen](#inbeslaggenomen), [Voorwerp](#voorwerp)
+Gerelateerd: [Voorwerp](#voorwerp), [inbeslaggenomen](#inbeslaggenomen)
 
 ### Bevoegdheid
 
 *Een «Bevoegdheid» is een rechtsbetrekking.*
 
-> Een bevoegdheid is een recht om bepaalde handelingen uit te voeren binnen de [wettelijke kaders]() en uitsluitend voor het gegeven doel.
+> Een bevoegdheid is een recht om bepaalde handelingen uit te voeren binnen de wettelijke kaders en uitsluitend voor het gegeven doel.
 
-Bron: Memorie van Toelichting & Artikel 2.1.2 [[Sv]]
+Bron: Memorie van Toelichting [[Sv]], Artikel 2.1.2 [[Sv]]
 
-Gerelateerd: [wettelijke kaders](#wettelijke-kaders)
+### Bewaarder van inbeslaggenomen voorwerpen
 
-### Bewaarder inbeslaggenomen voorwerpen
+*Een «Bewaarder van inbeslaggenomen voorwerpen» is een rechtssubject.*
 
-*Een «Bewaarder inbeslaggenomen voorwerpen» is een rechtssubject.*
+> Een bewaarder van inbeslaggenomen voorwerpen is een door de [officier van justitie]() onder de hoede van een bij algemene maatregel van bestuur aangewezen persoon voor het [bewaren van inbeslaggenomen voorwerpen](#bewaren-van-inbeslaggenomen-voorwerpen).
 
-> Een bewaarder van inbeslaggenomen voorwerpen is een door de [officier van justitie]() onder de hoede van een bij algemene maatregel van bestuur aangewezen persoon voor [het bewaren van inbeslaggenomen voorwerpen]().
+Bron: Artikel 2.7.28 [[Sv]]
 
-Gerelateerd: [het bewaren van inbeslaggenomen voorwerpen](#het-bewaren-van-inbeslaggenomen-voorwerpen), 
+Gerelateerd: , [Bewaren van inbeslaggenomen voorwerpen](#bewaren-van-inbeslaggenomen-voorwerpen)
 
 ### Bewaren van inbeslaggenomen voorwerpen
 
 *Een «Bewaren van inbeslaggenomen voorwerpen» is een rechtshandeling.*
 
-> Het onder zich nemen of gaan houden van een [voorwerp](#voorwerp) ten behoeve van de strafvordering
+> Het bewaren van inbeslaggenomen voorwerpen is het onder zich nemen of gaan houden van een [voorwerp](#voorwerp) ten behoeve van de strafvordering.
 
 Bron: Artikel 2.7.27 [[Sv]]
 
@@ -56,7 +56,7 @@ Gerelateerd: [Voorwerp](#voorwerp)
 
 > Een brief is een op een fysieke drager aangebrachte geadresseerde schriftelijke mededeling.
 
-Bron: Artikel 2, eerste lid, onderdeel a, van de [[Post]]
+Bron: Artikel 2 lid 1a [[Post]]
 
 ### Buitenvervolgstelling
 
@@ -64,7 +64,7 @@ Bron: Artikel 2, eerste lid, onderdeel a, van de [[Post]]
 
 > Een buitenvervolgstelling is een beslissing van de raadkamer, met als gevolg dat een [verdachte]() niet opnieuw vervolgd kan worden voor een bepaald feit.
 
-Bron: Artikel 2.5.39 [[Sv]]
+Bron: Artikel 2.5.39 [[Sv]], Artikel 3.2.4 [[Sv]]
 
 Gerelateerd: 
 
@@ -86,7 +86,7 @@ Gerelateerd: [Gegeven](#gegeven)
 
 *Deze definitie is niet direct overgenomen uit de bron, maar geconstrueerd uit de definities van verchillende soorten communicatiediensten die in de Europese richtlijn zijn geformuleerd.*
 
-Bron: Artikel 14, 15 & 16  [[REPec]]
+Bron: Artikel 14 [[REPec]], Artikel 15 [[REPec]], Artikel 16  [[REPec]]
 
 ### Deskundig onderzoek
 
@@ -102,11 +102,11 @@ Gerelateerd: ,
 
 *Een «Digitale-gegevensdrager» is een rechtsobject.*
 
-> Een digitale-gegevensdrager is een [gegevensdrager](#gegevensdrager), niet zijnde een [geautomatiseerd werk](#geautomatiseerd-werk), bestemd of mede bestemd voor de [opslag van gegevens]() die geschikt zijn voor overdracht, interpretatie of [verwerking]() door [geautomatiseerde werken](#geautomatiseerd-werk).
+> Een digitale-gegevensdrager is een gegevensdrager, niet zijnde een [geautomatiseerd werk](#geautomatiseerd-werk), bestemd of mede bestemd voor de [opslag van gegevens]() die geschikt zijn voor overdracht, interpretatie of [verwerking van gegevens](#verwerking-van-gegevens) door [geautomatiseerde werken](#geautomatiseerd-werk).
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Gegevensdrager](#gegevensdrager), [Geautomatiseerd werk](#geautomatiseerd-werk), [opslag van gegevens](#opslag-van-gegevens), [verwerking](#verwerking)
+Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [opslag van gegevens](#opslag-van-gegevens), [Verwerking van gegevens](#verwerking-van-gegevens)
 
 ### Functionaris
 
@@ -114,7 +114,7 @@ Gerelateerd: [Gegevensdrager](#gegevensdrager), [Geautomatiseerd werk](#geautoma
 
 > Een functionaris is een persoon die is aangesteld om, als [opsporingsambtenaar](), op te treden naar aanleiding van een geconstateerd [strafbaar feit](), de functionaris voert het onderzoek uit en heeft formeel toestemming om [bevoegdheden](#bevoegdheid) uit te oefenen.
 
-Bron: Artikel 1.2.30 [[Sv]]
+Bron: Artikel 2.10.69 [[Sv]], Artikel 2.6.3 [[Sv]], Artikel 1.2.30 [[Sv]]
 
 Gerelateerd: , , [Bevoegdheid](#bevoegdheid)
 
@@ -123,9 +123,11 @@ Gerelateerd: , , [Bevoegdheid](#bevoegdheid)
 *Een «Geautomatiseerd werk» is een rechtsobject.*
 
 > Een geautomatiseerd werk is een apparaat of groep van onderling verbonden of samenhangende 
-apparaten, waarvan er één of meer op basis van een programma automatisch digitale [gegevens verwerken]().
+apparaten, waarvan er één of meer op basis van een programma zich bezighouden met de automatische [verwerking van gegevens](#verwerking-van-gegevens) die digitaal van aard zijn.
 
-Gerelateerd: [gegevens verwerken](#gegevens-verwerken)
+Bron: Artikel 2.1.1 [[Sv]]
+
+Gerelateerd: [Verwerking van gegevens](#verwerking-van-gegevens)
 
 ### Gebruiker van een communicatiedienst
 
@@ -135,23 +137,17 @@ Gerelateerd: [gegevens verwerken](#gegevens-verwerken)
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [Aanbieder van een communicatiedienst](#aanbieder-van-een-communicatiedienst), [Communicatiedienst](#communicatiedienst), 
+Gerelateerd: [Aanbieder van een communicatiedienst](#aanbieder-van-een-communicatiedienst), [natuurlijke persoon](#natuurlijke-persoon), [Communicatiedienst](#communicatiedienst), 
 
 ### Gegeven
 
 *Een «Gegeven» is een rechtsobject.*
 
-> Een gegeven is iedere weergave van feiten, begrippen of instructies, geschikt voor overdracht, interpretatie of [verwerking]() door personen of [geautomatiseerde werken](#geautomatiseerd-werk).
+> Een gegeven is iedere weergave van feiten, begrippen of instructies, geschikt voor overdracht, interpretatie of [verwerking van gegevens](#verwerking-van-gegevens) door personen of [geautomatiseerde werken](#geautomatiseerd-werk).
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [verwerking](#verwerking)
-
-### Gegevensdrager
-
-*Een «Gegevensdrager» is een rechtsobject.*
-
-> ?
+Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens)
 
 ### Geldende rechtsregels
 
@@ -159,7 +155,7 @@ Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [verwerking](#verwer
 
 > Geldende rechtsregels zijn de wettelijke regels en rechtersrecht waarmee de ondergeschikten aan het [bevoegd]() gezag, zorgen voor de daadwerkelijke handhaving van de rechtsorde en hulp verleent aan degenen die deze nodig hebben. 
 
-Bron: artikel 3 Politiewet 2012 & Artikel 2.1.9 [[Sv]]
+Bron: Artikel 2.1.9 [[Sv]], Artikel 3 [[Pw]] [[Pw12]]
 
 Gerelateerd: [bevoegd](#bevoegd)
 
@@ -198,15 +194,15 @@ Gerelateerd: , [Stelselmatig onderzoek van gegevens](#stelselmatig-onderzoek-van
 > Een hulpofficier van justitie is een door [onze minister]() bij [ministeriële regeling]() aangewezen ambtenaar voor de uitvoering van een [politietaak](), of de door [onze minister]() in overeenstemming met de Minister van Defensie aangewezen militair van de Koninklijke Marechaussee, de door [onze minister]() aangewezen [opsporingsambtenaar]() van de [bijzondere opsporingsdiensten]() en/of de door [onze minister]() aangewezen [buitengewoon opsporingsambtenaar]() die [bevoegdheden](#bevoegdheid) binnen de grenzen van de hem toegekende 
 [bevoegdheid](#bevoegdheid) tot opsporing uitvoert.
 
-Bron: Artikel 1.3.13 [[Sv]], , Artikel 2.1.12 [[Sv]], 
+Bron: Artikel 1.3.13 [[Sv]], Artikel 2 [[Pw]] [[Pw12]], Artikel 2.1.12 [[Sv]], 
 
-Gerelateerd: [politietaak](#politietaak), [Bevoegdheid](#bevoegdheid), , [ministeriële regeling](#ministeriële-regeling), [onze minister](#onze-minister), [buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), [bijzondere opsporingsdiensten](#bijzondere-opsporingsdiensten)
+Gerelateerd: [Bevoegdheid](#bevoegdheid), [buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), , [onze minister](#onze-minister), [ministeriële regeling](#ministeriële-regeling), [bijzondere opsporingsdiensten](#bijzondere-opsporingsdiensten), [politietaak](#politietaak)
 
 ### Identiteit
 
 *Een «Identiteit» is een variabele.*
 
-> Identiteit is de verzameling [persoonsgegeven](#persoonsgegeven), die worden vastgesteld om een persoon te identificeren in processen.
+> Identiteit is de verzameling [persoonsgegevens](#persoonsgegeven), die worden vastgesteld om een persoon te identificeren in processen.
 
 Bron: Artikel 1.2.18 [[Sv]], Artikel 2.3.3 [[Sv]]
 
@@ -216,11 +212,11 @@ Gerelateerd: [Persoonsgegeven](#persoonsgegeven)
 
 *Een «Identiteitsbewijs» is een rechtsobject.*
 
-> Een documenten waarmee in bij de wet aangewezen gevallen de [identiteit](#identiteit) van een persoon kan worden vastgesteld
+> Een identiteitsbewijs is een document waarmee in bij de wet aangewezen gevallen de [identiteit](#identiteit) van een persoon kan worden vastgesteld.
 
 *Een document waarmee in bij de wet aangewezen geval de identiteit van een persoon kan worden vastgesteld.*
 
-Bron: 
+Bron: Artikel 1 [[WID]]
 
 Gerelateerd: [Identiteit](#identiteit)
 
@@ -230,7 +226,7 @@ Gerelateerd: [Identiteit](#identiteit)
 
 > Het inbeslagnemen van een voorwerp is het onder zich nemen of gaan houden van dat [voorwerp](#voorwerp) ten behoeve van de strafvordering.
 
-Bron: Artikel 2.7.4 lid 1a-d [[Sv]]
+Bron: Artikel 2.7.4 lid 1a-d [[Sv]], Artikel 2.1.1 [[Sv]]
 
 Gerelateerd: [Voorwerp](#voorwerp)
 
@@ -252,13 +248,21 @@ Gerelateerd: [verdachten](#verdachten), [misdrijven](#misdrijven),
 
 Gerelateerd: 
 
+### Onbevoegdverklaring
+
+*Een «Onbevoegdverklaring» is een rechtsfeit.*
+
+> Een onbevoegdverklaring is een schriftelijke verklaring dat een persoon niet bevoegd is om (bepaalde) rechtshandelingen te verrichten.
+
+Bron: Artikel 2.5.39 [[Sv]]
+
 ### Onderzoek ter plaatse
 
 *Een «Onderzoek ter plaatse» is een rechtshandeling.*
 
 > Een onderzoek ter plaatse is een onderzoek bij een verdenking van een verdacht feit waarbij de [officier van justitie]() of [hulpofficier van justitie](#hulpofficier-van-justitie) elke plaats kan betreden om een plaatselijke toestand of [voorwerp](#voorwerp) te schouwen.
 
-Bron: Art. 2.7.67 [[Sv]]
+Bron:  Artikel 2.7.67 [[Sv]]
 
 Gerelateerd: , [Voorwerp](#voorwerp), [Hulpofficier van Justitie](#hulpofficier-van-justitie)
 
@@ -282,7 +286,7 @@ Alternatieve aanduiding: *Handeling van onderzoek (Artikel 1.8.9 Sv).*
 
 *De ViVB is een Europees verdrag uit 1970 wat een korte en duidelijke definitie van een onderzoekshandeling draagt, namelijk "een handeling tot het verkrijgen van bewijs". Een definitie uit een specifieke strafvorderlijke bron (BoGW) is toegevoegd om het beter te doen relateren aan het domein van strafvordering.*
 
-Bron: Artikel 1 [[ViVB]]
+Bron:  Artikel 1b [[BoGW]], Artikel 1 [[ViVB]]
 
 Gerelateerd: , [Opsporingsonderzoek](#opsporingsonderzoek)
 
@@ -296,25 +300,25 @@ Bron: Artikel 2.1.1 [[Sv]]
 
 Gerelateerd: 
 
-### Ontoegankelijkmaken van gegevens
+### Ontoegankelijkmaking van gegevens
 
-*Een «Ontoegankelijkmaken van gegevens» is een rechtsbetrekking.*
+*Een «Ontoegankelijkmaking van gegevens» is een rechtsbetrekking.*
 
-> Een ontoegankelijkmaking van gegevens is het treffen van voorlopige maatregelen ter voorkoming van de verdere kennisneming, gebruikmaking of verspreiding van die [gegevens](#gegeven) of het verwijderen van gegevens uit een [digitale-gegevensdrager](#digitale-gegevensdrager) of een [geautomatiseerd werk](#geautomatiseerd-werk), met behoud van die gegevens ten behoeve van de strafvordering.
+> Een ontoegankelijkmaking van gegevens is het treffen van voorlopige maatregelen ter voorkoming van de verdere kennisneming, gebruikmaking of verspreiding van die [gegevens](#gegeven) of het verwijderen van gegevens uit een [digitale-gegevensdrager](#digitale-gegevensdrager) of een [geautomatiseerd werk](#geautomatiseerd-werk), met behoud van die [gegevens](#gegeven) ten behoeve van de strafvordering.
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Gegeven](#gegeven), [Geautomatiseerd werk](#geautomatiseerd-werk), [Digitale-gegevensdrager](#digitale-gegevensdrager)
+Gerelateerd: [Digitale-gegevensdrager](#digitale-gegevensdrager), [Geautomatiseerd werk](#geautomatiseerd-werk), [Gegeven](#gegeven)
 
 ### Opsporingsonderzoek
 
 *Een «Opsporingsonderzoek» is een rechtsfeit.*
 
-> Een opsporingsonderzoek is een onderzoek onder leiding van de [officier van justitie]() naar aanleiding van een [redelijk vermoeden]() dat een [strafbaar feit]() is begaan of een [misdrijf]() wordt beraamd of gepleegd, met als doel het [nemen van strafvorderlijke beslissingen]().
+> Een opsporingsonderzoek is een onderzoek onder leiding van de [officier van justitie]() naar aanleiding van een [redelijk vermoeden]() dat een [strafbaar feit]() is begaan of een [misdrijf]() wordt beraamd of gepleegd, met als doel het nemen van strafvorderlijke beslissingen.
 
 Bron: Artikel 132 lid a Wv Artikel 132 lid a [[Sv]] [[WvSv]]
 
-Gerelateerd: , , , , [nemen van strafvorderlijke beslissingen](#nemen-van-strafvorderlijke-beslissingen)
+Gerelateerd: , , , 
 
 ### Overnemen van gegevens
 
@@ -330,11 +334,11 @@ Gerelateerd: [Gegeven](#gegeven)
 
 *Een «Persoonsgegeven» is een rechtsobject.*
 
-> Een persoonsgegeven is alle informatie over een geïdentificeerde of identificeerbare [natuurlijke persoon]().
+> Een persoonsgegeven is een [gegeven](#gegeven) dat informatie geeft over een geïdentificeerde of identificeerbare [natuurlijke persoon]().
 
-Bron: Artikel 1a [[Wpg]]
+Bron: Artikel 1 lid a [[Wpg]]
 
-Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon)
+Gerelateerd: [Gegeven](#gegeven), [natuurlijke persoon](#natuurlijke-persoon)
 
 ### Poststuk
 
@@ -342,7 +346,7 @@ Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon)
 
 > Een poststuk is een [brief](#brief) of een ander bij algemene maatregel van bestuur aangewezen geadresseerd stuk.
 
-Bron: Artikel 2, eerste lid, onderdeel b, van de [[Post]]
+Bron: Artikel 2 lid 1b [[Post]]
 
 Gerelateerd: [Brief](#brief)
 
@@ -352,7 +356,7 @@ Gerelateerd: [Brief](#brief)
 
 > Rechtsbijstand is rechtskundige bijstand aan een rechtzoekende ter zake van een [rechtsbelang]() dat hem rechtstreeks en individueel aangaat, voor zover als geregeld in deze wet en de daarop berustende bepalingen.
 
-Bron: , Artikel 2.3.7 [[Sv]]
+Bron: Artikel 2.3.7 [[Sv]], Artikel 1 [[WRB]]
 
 Gerelateerd: 
 
@@ -360,11 +364,13 @@ Gerelateerd:
 
 *Een «Rechtsgebied» is een rechtsobject.*
 
-> Een rechtsgebied is een specifiek domein binnen het juridische systeem waarbinnen de [bevoegdheid](#bevoegdheid) van rechtbanken en rechters geldt, zoals burgerlijk recht, strafrecht of bestuursrecht. Het rechtsgebied bepaalt welke rechtbank berechting behandelt en in welk geografisch gebied deze [bevoegdheden](#bevoegdheid) worden uitgeoefend, zoals wanneer een [rechter-commissaris]() handelt binnen het rechtsgebied waar een verdachte voor het eerst is verhoord.
+> Een rechtsgebied is een specifiek domein binnen het juridische systeem waarbinnen de [bevoegdheid](#bevoegdheid) van rechtbanken en rechters geldt.
+
+Toelichting: Voorbeelden van rechtsgebieden zijn onder andere burgerlijk recht, strafrecht of bestuursrecht. Het rechtsgebied bepaalt welke rechtbank berechting behandelt en in welk geografisch gebied deze bevoegdheden worden uitgeoefend, zoals wanneer een rechter-commissaris handelt binnen het rechtsgebied waar een verdachte voor het eerst is verhoord.
 
 Bron:  Bijlage 9 [[RA]], Artikel 2.10.2 [[Sv]]
 
-Gerelateerd: , [Bevoegdheid](#bevoegdheid)
+Gerelateerd: [Bevoegdheid](#bevoegdheid)
 
 ### Stelselmatig onderzoek van gegevens
 
@@ -390,7 +396,7 @@ Gerelateerd: [Observatie](#observatie)
 
 *Een «Tegenonderzoek» is een rechtshandeling.*
 
-> Een tegenonderzoek is onderzoek uitgevoerd door een andere [deskundige]() dan bedoeld in Hfd 7 Boek 1, op bevel van de [officier van justitie]() of op verzoek van de [verdachte]() met als doel het verkrijgen van informatie binnen de context van dezelfde zaak.
+> Een tegenonderzoek is onderzoek uitgevoerd door een andere [deskundige]() dan degene die in het beginsel de betreffende zaak heeft onderzocht, op bevel van de [officier van justitie]() of op verzoek van de [verdachte](), met als doel het verkrijgen van informatie binnen de context van dezelfde zaak.
 
 Bron: Artikel 2.4.3 [[Sv]], Artikel 2.8.4 [[Sv]]
 
@@ -442,9 +448,7 @@ Gerelateerd: [Vermogensrecht](#vermogensrecht)
 
 > Een vrijheidsbeneming is een [vrijheidsstraf](#vrijheidsstraf), niet zijnde een [vrijheidsbeperking](#vrijheidsbeperking), waarbij een veroordeelde in een penintentiaire instelling is of wordt geplaatst.
 
-*Geen definitie in sv2*
-
-Gerelateerd: [Vrijheidsstraf](#vrijheidsstraf), [Vrijheidsbeperking](#vrijheidsbeperking)
+Gerelateerd: [Vrijheidsbeperking](#vrijheidsbeperking), [Vrijheidsstraf](#vrijheidsstraf)
 
 ### Vrijheidsbeperking
 
@@ -454,13 +458,13 @@ Alternatieve aanduiding: *Gedragsbeinvloeding*
 
 > Een vrijheidsbeperking is een [vrijheidsstraf](#vrijheidsstraf), niet zijnde een [vrijheidsbeneming](#vrijheidsbeneming), waarbij een veroordeelde bepaalde gedragingen opgelegd krijgt of heeft gekregen.
 
-*Geen definitie in sv2*
-
 Gerelateerd: [Vrijheidsstraf](#vrijheidsstraf), [Vrijheidsbeneming](#vrijheidsbeneming)
 
 ### Vrijheidsstraf
 
 *Een «Vrijheidsstraf» is een rechtsobject.*
 
-> Een vrijheidsstraf is een maatregel bij welke een veroordeelde zijn zelfstandigheid wordt beperkt, niet zijnde een voorlopige hechtenis.
+> Een vrijheidsstraf is een maatregel bij welke een veroordeelde zijn zelfstandigheid wordt beperkt, niet zijnde een [voorlopige hechtenis]().
+
+Gerelateerd: 
 
