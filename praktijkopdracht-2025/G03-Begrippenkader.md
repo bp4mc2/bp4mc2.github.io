@@ -1,6 +1,6 @@
 # Begrippen
 
-## Template gegevenstyperingsbeleid groep 3
+## Boek 3 hfdst 4 en 5
 
 ### Advocaat-generaal
 
@@ -14,7 +14,7 @@ Gerelateerd: [Gerechtshof](#gerechtshof)
 
 > Een ambtenaar is een [natuurlijk persoon](#natuurlijk-persoon) die krachtens een arbeidsovereenkomst naar Nederlands recht met een overheidswerkgever werkzaam is.
 
-Gerelateerd: [Natuurlijk persoon](#natuurlijk-persoon)
+Specialisatie van: [Natuurlijk persoon](#natuurlijk-persoon)
 
 ### Arrondissement
 
@@ -22,7 +22,9 @@ Gerelateerd: [Natuurlijk persoon](#natuurlijk-persoon)
 
 Toelichting: Nederland heeft 11 arrondisementen: Rechtbank Amsterdam · Rechtbank Den Haag · Rechtbank Gelderland · Rechtbank Limburg · Rechtbank Midden-Nederland · Rechtbank Noord-Holland · Rechtbank Noord-Nederland.
 
-Gerelateerd: [Rechtsgebied](#rechtsgebied), [Rechtbank](#rechtbank)
+Onderdeel van: [Rechtsgebied](#rechtsgebied)
+
+Gerelateerd: [Rechtbank](#rechtbank)
 
 ### Beklag
 
@@ -30,13 +32,13 @@ Alternatieve aanduiding: *beklaagd*
 
 > Een beklag is de mogelijkheid voor een rechtstreeks [belanghebbende](#belanghebbende) om te klagen als door het Openbaar Ministerie is besloten om een [strafbaar feit](#strafbaar-feit) niet (verder) te [vervolgen](). De beslissing om al dan niet alsnog te [vervolgen]() wordt ter beoordeling aan het [gerechtshof](#gerechtshof) voorgelegd.
 
-Gerelateerd: [vervolgen](#vervolgen), [Gerechtshof](#gerechtshof), [Strafbaar feit](#strafbaar-feit), [Belanghebbende](#belanghebbende)
+Gerelateerd: [Vervolging](#vervolging), [Gerechtshof](#gerechtshof), [Strafbaar feit](#strafbaar-feit), [Belanghebbende](#belanghebbende), [vervolgen](#vervolgen)
 
 ### Belanghebbende
 
 > Een belanghebbende is een [natuurlijk persoon](#natuurlijk-persoon) of [rechtspersoon](#rechtspersoon) wiens belang rechtstreeks bij een besluit is betrokken.
 
-Gerelateerd: [Rechtspersoon](#rechtspersoon), [Natuurlijk persoon](#natuurlijk-persoon)
+Specialisatie van: [Rechtspersoon](#rechtspersoon), [Natuurlijk persoon](#natuurlijk-persoon)
 
 ### Beslissing (deze kan weg maar ik laat deze staan zodat de nummers nog kloppen)
 
@@ -98,7 +100,7 @@ Gerelateerd: [Natuurlijk persoon](#natuurlijk-persoon)
 
 *Is het nodig om zaken nog te classificieren als zijnde "objecten" en niet als dingen?*
 
-Gerelateerd: [rechtspersonen](#rechtspersonen), [Natuurlijk persoon](#natuurlijk-persoon)
+Gerelateerd: [rechtspersonen](#rechtspersonen), [Rechtspersoon](#rechtspersoon), [Natuurlijk persoon](#natuurlijk-persoon)
 
 ### Hoger beroep
 
@@ -116,7 +118,7 @@ Gerelateerd: [Natuurlijk persoon](#natuurlijk-persoon)
 
 > Een klaagschrift is de schriftelijke uiting van een [beklag](#beklag).
 
-Gerelateerd: [Beklag](#beklag)
+Onderdeel van: [Beklag](#beklag)
 
 ### Klager
 
@@ -124,7 +126,7 @@ Gerelateerd: [Beklag](#beklag)
 
 > Een klager is een [natuurlijk persoon](#natuurlijk-persoon) of [rechtspersoon](#rechtspersoon) die zich heeft [beklaagd](). 
 
-Gerelateerd: [beklaagd](#beklaagd), [Rechtspersoon](#rechtspersoon), [Natuurlijk persoon](#natuurlijk-persoon)
+Gerelateerd: [beklaagd](#beklaagd), [Natuurlijk persoon](#natuurlijk-persoon), [Rechtspersoon](#rechtspersoon)
 
 ### Maand
 
@@ -161,7 +163,9 @@ Alternatieve aanduiding: *Opsporingsonderzoek*
 
 > Een opsporing is het [onderzoek](#onderzoek) in verband met [strafbare feiten]() onder gezag van de Officier van Justitie met als doel het nemen van strafvorderlijke beslissingen.
 
-Gerelateerd: [strafbare feiten](#strafbare-feiten), [Onderzoek](#onderzoek)
+Omvat: [Onderzoek](#onderzoek)
+
+Gerelateerd: [strafbare feiten](#strafbare-feiten), [Strafbaar feit](#strafbaar-feit)
 
 ### Opsporingsdienst
 
@@ -173,7 +177,7 @@ b. de ambtenaren van politie in de zin van artikel 2 van de Politiewet 2012, voo
 c. de door Onze Minister in overeenstemming met Onze Minister van Defensie aangewezen militairen van de Koninklijke marechaussee;
 d. de opsporingsambtenaren van de bijzondere opsporingsdiensten, bedoeld in artikel 2 van de Wet op de bijzondere opsporingsdiensten.
 
-Gerelateerd: [strafbare feiten](#strafbare-feiten), [Opsporing](#opsporing)
+Gerelateerd: [strafbare feiten](#strafbare-feiten), [Opsporing](#opsporing), [Strafbaar feit](#strafbaar-feit)
 
 ### Overtreding
 
@@ -229,7 +233,7 @@ Alternatieve aanduiding: *seponering*
 
 > Een sepot is het afzien van [vervolging](#vervolging) onder het stellen van bepaalde voorwaarden door de [Officier van Justitie]() indien het feit naar zijn oordeel bewijsbaar en strafbaar is.
 
-Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Vervolging](#vervolging)
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Officier van Justititie](#officier-van-justititie)
 
 ### Strafbaar feit
 
@@ -245,7 +249,9 @@ Toelichting: Strafbare feiten worden onderscheiden in overtredingen en misdrijve
 
 > Een strafbeschikking is een beschikking waarin straffen, maatregelen en (gedrags)aanwijzingen opgelegd en gegeven kunnen worden aan plegers van misdrijven waarop maximaal zes jaar [gevangenisstraf](#gevangenisstraf) staat en aan degenen die een [overtreding](#overtreding) hebben begaan.
 
-Gerelateerd: [Overtreding](#overtreding), [Gevangenisstraf](#gevangenisstraf)
+Generalisatie van: [Gevangenisstraf](#gevangenisstraf)
+
+Gerelateerd: [Overtreding](#overtreding)
 
 ### Tenuitvoerlegging
 
@@ -263,7 +269,9 @@ Alternatieve aanduiding: *Beschuldigde, aangeklaagde, beklaagde, gedaagde*
 
 > Een verdachte is een [natuurlijk persoon](#natuurlijk-persoon) of [rechtspersoon](#rechtspersoon) ten aanzien van wie uit feiten of omstandigheden een redelijk vermoeden van schuld bestaat dat diegene een [strafbaar feit](#strafbaar-feit) gepleegd heeft, en die als zodanig is aangemerkt.
 
-Gerelateerd: [Natuurlijk persoon](#natuurlijk-persoon), [Rechtspersoon](#rechtspersoon), [Strafbaar feit](#strafbaar-feit)
+Specialisatie van: [Rechtspersoon](#rechtspersoon), [Natuurlijk persoon](#natuurlijk-persoon)
+
+Gerelateerd: [Strafbaar feit](#strafbaar-feit)
 
 ### Verhoren
 
@@ -289,7 +297,7 @@ Alternatieve aanduiding: *arrestant*
 
 > Een veroordeelde is een [natuurlijk persoon](#natuurlijk-persoon) die bij een zitting bij een rechterlijke beslissing schuldig is bevonden.
 
-Gerelateerd: [Natuurlijk persoon](#natuurlijk-persoon)
+Specialisatie van: [Natuurlijk persoon](#natuurlijk-persoon)
 
 ### Vervolging
 
@@ -297,7 +305,9 @@ Gerelateerd: [Natuurlijk persoon](#natuurlijk-persoon)
 
 > Een vervolging is de beslissing van het Openbaar Ministerie om een [verdachte](#verdachte) voor de rechter te brengen of een [strafbeschikking](#strafbeschikking) op te leggen.
 
-Gerelateerd: [Strafbeschikking](#strafbeschikking), [Verdachte](#verdachte)
+Generalisatie van: [Strafbeschikking](#strafbeschikking)
+
+Gerelateerd: [Verdachte](#verdachte)
 
 ### Woonplaats
 
@@ -315,5 +325,5 @@ Alternatieve aanduiding: *Rechtszaak, strafzaak*
 
 > Een zaak is een [onderzoek](#onderzoek) dat door de rechter wordt uitgevoerd waarvan hij is belast op de zitting.
 
-Gerelateerd: [Onderzoek](#onderzoek)
+Omvat: [Onderzoek](#onderzoek)
 

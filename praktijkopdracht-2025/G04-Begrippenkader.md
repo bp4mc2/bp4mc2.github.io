@@ -1,16 +1,18 @@
 # Begrippen
 
-## Wetboek van strafrecht. Boek 2: Het Opsporingsonderzoek
+## Boek 2
 
 ### Aanbieder van een communicatiedienst
 
 *Een «Aanbieder van een communicatiedienst» is een rechtssubject.*
 
-> Een aanbieder van een communicatiedienst is een [natuurlijke persoon]() of [rechtspersoon]() die in de uitoefening van een beroep of bedrijf aan de gebruikers van zijn dienst de mogelijkheid biedt te communiceren met behulp van een [geautomatiseerd werk](#geautomatiseerd-werk), of [gegevens verwerkt]() ten behoeve van een zodanige dienst of de [gebruikers van de communicatiedienst]().
+> Een aanbieder van een communicatiedienst is een [natuurlijke persoon]() of [rechtspersoon]() die in de uitoefening van een beroep of bedrijf aan de gebruikers van zijn dienst de mogelijkheid biedt te communiceren met behulp van een [geautomatiseerd werk](#geautomatiseerd-werk), of zich bezigt met de [verwerking van gegevens](#verwerking-van-gegevens) ten behoeve van een zodanige dienst of een [gebruiker van een communicatiedienst](#gebruiker-van-een-communicatiedienst).
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [gegevens verwerkt](#gegevens-verwerkt), , [natuurlijke persoon](#natuurlijke-persoon), [Geautomatiseerd werk](#geautomatiseerd-werk), [gebruikers van de communicatiedienst](#gebruikers-van-de-communicatiedienst)
+Specialisatie van: , 
+
+Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens), [Gegevensverwerking](#gegevensverwerking), [Gebruiker van een communicatiedienst](#gebruiker-van-een-communicatiedienst), [rechtspersoon](#rechtspersoon)
 
 ### Beslagene
 
@@ -20,7 +22,7 @@ Gerelateerd: [gegevens verwerkt](#gegevens-verwerkt), , [natuurlijke persoon](#n
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Voorwerp](#voorwerp), [inbeslaggenomen](#inbeslaggenomen)
+Gerelateerd: [Voorwerp](#voorwerp), [inbeslaggenomen](#inbeslaggenomen), [Inbeslagnemen van een voorwerp](#inbeslagnemen-van-een-voorwerp)
 
 ### Bevoegdheid
 
@@ -30,6 +32,8 @@ Gerelateerd: [Voorwerp](#voorwerp), [inbeslaggenomen](#inbeslaggenomen)
 
 Bron: Memorie van Toelichting [[Sv]], Artikel 2.1.2 [[Sv]]
 
+Onderdeel van: 
+
 ### Bewaarder van inbeslaggenomen voorwerpen
 
 *Een «Bewaarder van inbeslaggenomen voorwerpen» is een rechtssubject.*
@@ -38,7 +42,7 @@ Bron: Memorie van Toelichting [[Sv]], Artikel 2.1.2 [[Sv]]
 
 Bron: Artikel 2.7.28 [[Sv]]
 
-Gerelateerd: , [Bewaren van inbeslaggenomen voorwerpen](#bewaren-van-inbeslaggenomen-voorwerpen)
+Gerelateerd: [officier van justitie](#officier-van-justitie), [Bewaren van inbeslaggenomen voorwerpen](#bewaren-van-inbeslaggenomen-voorwerpen), [Officier van Justitie](#officier-van-justitie)
 
 ### Bewaren van inbeslaggenomen voorwerpen
 
@@ -66,7 +70,7 @@ Bron: Artikel 2 lid 1a [[Post]]
 
 Bron: Artikel 2.5.39 [[Sv]], Artikel 3.2.4 [[Sv]]
 
-Gerelateerd: 
+Gerelateerd: [Verdachte](#verdachte), [verdachte](#verdachte)
 
 ### Communicatie
 
@@ -96,27 +100,37 @@ Bron: Artikel 14 [[REPec]], Artikel 15 [[REPec]], Artikel 16  [[REPec]]
 
 Bron: Art. 2.4.1 [[Sv]], Art. 2.4.2 [[Sv]]
 
-Gerelateerd: , 
+Onderdeel van: 
+
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), [deskundige](#deskundige), [officier van justitie](#officier-van-justitie)
 
 ### Digitale-gegevensdrager
 
 *Een «Digitale-gegevensdrager» is een rechtsobject.*
 
-> Een digitale-gegevensdrager is een gegevensdrager, niet zijnde een [geautomatiseerd werk](#geautomatiseerd-werk), bestemd of mede bestemd voor de [opslag van gegevens]() die geschikt zijn voor overdracht, interpretatie of [verwerking van gegevens](#verwerking-van-gegevens) door [geautomatiseerde werken](#geautomatiseerd-werk).
+> Een digitale-gegevensdrager is een gegevensdrager, niet zijnde een [geautomatiseerd werk](#geautomatiseerd-werk), bestemd of mede bestemd voor de opslag van [gegevens](#gegeven) die geschikt zijn voor overdracht, interpretatie of [verwerking van gegevens](#verwerking-van-gegevens) door [geautomatiseerde werken](#geautomatiseerd-werk).
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [opslag van gegevens](#opslag-van-gegevens), [Verwerking van gegevens](#verwerking-van-gegevens)
+Specialisatie van: 
+
+Gerelateerd: [Verwerking](#verwerking), [Gegeven](#gegeven), [Opslag van gegevens](#opslag-van-gegevens), [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens)
 
 ### Functionaris
 
 *Een «Functionaris» is een rechtssubject.*
 
-> Een functionaris is een persoon die is aangesteld om, als [opsporingsambtenaar](), op te treden naar aanleiding van een geconstateerd [strafbaar feit](), de functionaris voert het onderzoek uit en heeft formeel toestemming om [bevoegdheden](#bevoegdheid) uit te oefenen.
+> Een functionaris is een persoon die is aangesteld om, als [opsporingsambtenaar](), op te treden naar aanleiding van een geconstateerd [strafbaar feit]().
+
+Toelichting: De functionaris voert het onderzoek uit en heeft formeel toestemming om bevoegdheden uit te oefenen.
 
 Bron: Artikel 2.10.69 [[Sv]], Artikel 2.6.3 [[Sv]], Artikel 1.2.30 [[Sv]]
 
-Gerelateerd: , , [Bevoegdheid](#bevoegdheid)
+Generalisatie van: 
+
+Omvat: [Bevoegdheid](#bevoegdheid), 
+
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [strafbaar feit](#strafbaar-feit)
 
 ### Geautomatiseerd werk
 
@@ -127,7 +141,7 @@ apparaten, waarvan er één of meer op basis van een programma zich bezighouden 
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Verwerking van gegevens](#verwerking-van-gegevens)
+Gerelateerd: [Gegevens verwerken](#gegevens-verwerken), [Verwerking van gegevens](#verwerking-van-gegevens)
 
 ### Gebruiker van een communicatiedienst
 
@@ -137,17 +151,19 @@ Gerelateerd: [Verwerking van gegevens](#verwerking-van-gegevens)
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Aanbieder van een communicatiedienst](#aanbieder-van-een-communicatiedienst), [natuurlijke persoon](#natuurlijke-persoon), [Communicatiedienst](#communicatiedienst), 
+Specialisatie van: , 
+
+Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [rechtspersoon](#rechtspersoon), [Aanbieder van een communicatiedienst](#aanbieder-van-een-communicatiedienst), [Communicatiedienst](#communicatiedienst)
 
 ### Gegeven
 
 *Een «Gegeven» is een rechtsobject.*
 
-> Een gegeven is iedere weergave van feiten, begrippen of instructies, geschikt voor overdracht, interpretatie of [verwerking van gegevens](#verwerking-van-gegevens) door personen of [geautomatiseerde werken](#geautomatiseerd-werk).
+> Een gegeven is iedere weergave van feiten, begrippen of instructies, geschikt voor overdracht, interpretatie of verwerking door personen of [geautomatiseerde werken](#geautomatiseerd-werk).
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens)
+Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking](#verwerking)
 
 ### Geldende rechtsregels
 
@@ -155,7 +171,9 @@ Gerelateerd: [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gege
 
 > Geldende rechtsregels zijn de wettelijke regels en rechtersrecht waarmee de ondergeschikten aan het [bevoegd]() gezag, zorgen voor de daadwerkelijke handhaving van de rechtsorde en hulp verleent aan degenen die deze nodig hebben. 
 
-Bron: Artikel 2.1.9 [[Sv]], Artikel 3 [[Pw]] [[Pw12]]
+Bron: Artikel 3 [[Pw]] [[Pw12]], Artikel 2.1.9 [[Sv]]
+
+Onderdeel van: [Bevoegdheid](#bevoegdheid)
 
 Gerelateerd: [bevoegd](#bevoegd)
 
@@ -167,7 +185,7 @@ Gerelateerd: [bevoegd](#bevoegd)
 
 Bron: Artikel 2.10.35 [[Sv]], Artikel 2.10.38 [[Sv]], Artikel 1 [[Pbw]]
 
-Gerelateerd: , [Vrijheidsbeneming](#vrijheidsbeneming)
+Gerelateerd: [getuige](#getuige), [Getuige](#getuige)
 
 ### Hechtenis
 
@@ -175,28 +193,33 @@ Gerelateerd: , [Vrijheidsbeneming](#vrijheidsbeneming)
 
 > Een hechtenis is een [vrijheidsbeneming](#vrijheidsbeneming) waarbij een veroordeelde in een penitentiaire inrichting is of wordt geplaatst.
 
-Gerelateerd: [Vrijheidsbeneming](#vrijheidsbeneming)
-
 ### Heimelijke bevoegdheid
 
 *Een «Heimelijke bevoegdheid» is een rechtsbetrekking.*
 
-> Een heimelijke bevoegdheid is een bevoegdheid tot [stelselmatige observatie](#stelselmatige-observatie), het stelselmatig overnemen van persoonsgegevens, pseudo-inkoop of -dienstverlening, [stelselmatig onderzoek van gegevens](#stelselmatig-onderzoek-van-gegevens) of infiltratie door een door de [officier van justitie]() aangesteld [opsporingsambtenaar]() of persoon die geen opsporingsambtenaar is maar wel aan de wettelijke voorwaarden voldoet om bijstand te leveren aan de opsporing door uitoefening van de bevoegdheid 
+> Een heimelijke bevoegdheid is een bevoegdheid tot [stelselmatige observatie](#stelselmatige-observatie), het stelselmatig overnemen van persoonsgegevens, pseudo-inkoop of -dienstverlening, [stelselmatig onderzoek van gegevens](#stelselmatig-onderzoek-van-gegevens) of infiltratie door een door de [officier van justitie]() aangesteld [opsporingsambtenaar]() of persoon die geen opsporingsambtenaar is maar wel aan de wettelijke voorwaarden voldoet om bijstand te leveren aan de opsporing door uitoefening van de bevoegdheid.
 
 Bron: Artikel 2.8 [[Sv]]
 
-Gerelateerd: , [Stelselmatig onderzoek van gegevens](#stelselmatig-onderzoek-van-gegevens), [Stelselmatige observatie](#stelselmatige-observatie), 
+Onderdeel van: [Stelselmatig onderzoek van gegevens](#stelselmatig-onderzoek-van-gegevens), [Stelselmatige observatie](#stelselmatige-observatie)
+
+Omvat: 
+
+Gerelateerd: [officier van justitie](#officier-van-justitie), [Officier van Justitie](#officier-van-justitie), [opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Hulpofficier van Justitie
 
 *Een «Hulpofficier van Justitie» is een rechtssubject.*
 
-> Een hulpofficier van justitie is een door [onze minister]() bij [ministeriële regeling]() aangewezen ambtenaar voor de uitvoering van een [politietaak](), of de door [onze minister]() in overeenstemming met de Minister van Defensie aangewezen militair van de Koninklijke Marechaussee, de door [onze minister]() aangewezen [opsporingsambtenaar]() van de [bijzondere opsporingsdiensten]() en/of de door [onze minister]() aangewezen [buitengewoon opsporingsambtenaar]() die [bevoegdheden](#bevoegdheid) binnen de grenzen van de hem toegekende 
-[bevoegdheid](#bevoegdheid) tot opsporing uitvoert.
+> Een hulpofficier van justitie is een [opsporingsambtenaar]() die is aangewezen voor de uitvoering van een [politietaak]() of die opsporingstaken voor de [officier van justitie]() uitvoert.
 
-Bron: Artikel 1.3.13 [[Sv]], Artikel 2 [[Pw]] [[Pw12]], Artikel 2.1.12 [[Sv]], 
+Bron: Artikel 1.3.13 [[Sv]], Artikel 2 [[Pw]] [[Pw12]], Artikel 2.1.13 [[Sv]], Artikel 2.1.12 [[Sv]]
 
-Gerelateerd: [Bevoegdheid](#bevoegdheid), [buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), , [onze minister](#onze-minister), [ministeriële regeling](#ministeriële-regeling), [bijzondere opsporingsdiensten](#bijzondere-opsporingsdiensten), [politietaak](#politietaak)
+Specialisatie van: 
+
+Omvat: [Bevoegdheid](#bevoegdheid)
+
+Gerelateerd: [politietaak](#politietaak), [opsporingsambtenaar](#opsporingsambtenaar), [Onze Minister](#onze-minister), [Bijzondere opsporingsambtenaar](#bijzondere-opsporingsambtenaar), [Ministeriele regeling](#ministeriele-regeling), [officier van justitie](#officier-van-justitie), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar)
 
 ### Identiteit
 
@@ -205,6 +228,8 @@ Gerelateerd: [Bevoegdheid](#bevoegdheid), [buitengewoon opsporingsambtenaar](#bu
 > Identiteit is de verzameling [persoonsgegevens](#persoonsgegeven), die worden vastgesteld om een persoon te identificeren in processen.
 
 Bron: Artikel 1.2.18 [[Sv]], Artikel 2.3.3 [[Sv]]
+
+Omvat: 
 
 Gerelateerd: [Persoonsgegeven](#persoonsgegeven)
 
@@ -238,7 +263,7 @@ Gerelateerd: [Voorwerp](#voorwerp)
 
 Bron: Artikel 2.8.12 lid 1 [[Sv]]
 
-Gerelateerd: [verdachten](#verdachten), [misdrijven](#misdrijven), 
+Gerelateerd: [verdachten](#verdachten), [opsporingsambtenaar](#opsporingsambtenaar), [Misdrijf](#misdrijf), [Verdachte](#verdachte), [misdrijven](#misdrijven), [Opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Observatie
 
@@ -246,7 +271,7 @@ Gerelateerd: [verdachten](#verdachten), [misdrijven](#misdrijven),
 
 > Observatie is het volgen van een persoon of het waarnemen van de aanwezigheid en het gedrag van een persoon, zoals uitgevoerd door een [opsporingsambtenaar]().
 
-Gerelateerd: 
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Onbevoegdverklaring
 
@@ -264,7 +289,9 @@ Bron: Artikel 2.5.39 [[Sv]]
 
 Bron:  Artikel 2.7.67 [[Sv]]
 
-Gerelateerd: , [Voorwerp](#voorwerp), [Hulpofficier van Justitie](#hulpofficier-van-justitie)
+Onderdeel van: [Voorwerp](#voorwerp)
+
+Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Hulpofficier van Justitie](#hulpofficier-van-justitie), [officier van justitie](#officier-van-justitie)
 
 ### Onderzoek van gegevens
 
@@ -274,7 +301,7 @@ Gerelateerd: , [Voorwerp](#voorwerp), [Hulpofficier van Justitie](#hulpofficier-
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Gegeven](#gegeven)
+Omvat: [Gegeven](#gegeven)
 
 ### Onderzoekshandeling
 
@@ -288,7 +315,9 @@ Alternatieve aanduiding: *Handeling van onderzoek (Artikel 1.8.9 Sv).*
 
 Bron:  Artikel 1b [[BoGW]], Artikel 1 [[ViVB]]
 
-Gerelateerd: , [Opsporingsonderzoek](#opsporingsonderzoek)
+Onderdeel van: [Opsporingsonderzoek](#opsporingsonderzoek)
+
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Ontdekking op heterdaad
 
@@ -298,7 +327,7 @@ Gerelateerd: , [Opsporingsonderzoek](#opsporingsonderzoek)
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: 
+Gerelateerd: [strafbaar feit](#strafbaar-feit), [Strafbaar feit](#strafbaar-feit)
 
 ### Ontoegankelijkmaking van gegevens
 
@@ -316,15 +345,19 @@ Gerelateerd: [Digitale-gegevensdrager](#digitale-gegevensdrager), [Geautomatisee
 
 > Een opsporingsonderzoek is een onderzoek onder leiding van de [officier van justitie]() naar aanleiding van een [redelijk vermoeden]() dat een [strafbaar feit]() is begaan of een [misdrijf]() wordt beraamd of gepleegd, met als doel het nemen van strafvorderlijke beslissingen.
 
-Bron: Artikel 132 lid a Wv Artikel 132 lid a [[Sv]] [[WvSv]]
+Bron: Artikel 132 lid a Artikel 132 lid a Wv [[Sv]] [[WvSv]]
 
-Gerelateerd: , , , 
+Specialisatie van: , 
+
+Omvat: , , 
+
+Gerelateerd: [strafbaar feit](#strafbaar-feit), [misdrijf](#misdrijf), [officier van justitie](#officier-van-justitie), [redelijk vermoeden](#redelijk-vermoeden)
 
 ### Overnemen van gegevens
 
 *Een «Overnemen van gegevens» is een rechtshandeling.*
 
-> Een overname van gegevens is het kopiëren van [gegevens](#gegeven) uit een externe bron.
+> Het overnemen van gegevens is het kopiëren van [gegevens](#gegeven) uit een externe bron.
 
 Bron: Artikel 2.1.1 [[Sv]]
 
@@ -338,7 +371,7 @@ Gerelateerd: [Gegeven](#gegeven)
 
 Bron: Artikel 1 lid a [[Wpg]]
 
-Gerelateerd: [Gegeven](#gegeven), [natuurlijke persoon](#natuurlijke-persoon)
+Gerelateerd: [Gegeven](#gegeven), [Natuurlijk persoon](#natuurlijk-persoon), [natuurlijke persoon](#natuurlijke-persoon)
 
 ### Poststuk
 
@@ -348,7 +381,7 @@ Gerelateerd: [Gegeven](#gegeven), [natuurlijke persoon](#natuurlijke-persoon)
 
 Bron: Artikel 2 lid 1b [[Post]]
 
-Gerelateerd: [Brief](#brief)
+Omvat: [Brief](#brief)
 
 ### Rechtsbijstand
 
@@ -358,7 +391,9 @@ Gerelateerd: [Brief](#brief)
 
 Bron: Artikel 2.3.7 [[Sv]], Artikel 1 [[WRB]]
 
-Gerelateerd: 
+Onderdeel van: 
+
+Gerelateerd: [rechtsbelang](#rechtsbelang)
 
 ### Rechtsgebied
 
@@ -370,7 +405,7 @@ Toelichting: Voorbeelden van rechtsgebieden zijn onder andere burgerlijk recht, 
 
 Bron:  Bijlage 9 [[RA]], Artikel 2.10.2 [[Sv]]
 
-Gerelateerd: [Bevoegdheid](#bevoegdheid)
+Omvat: , [Bevoegdheid](#bevoegdheid)
 
 ### Stelselmatig onderzoek van gegevens
 
@@ -380,7 +415,9 @@ Gerelateerd: [Bevoegdheid](#bevoegdheid)
 
 Bron: Artikel 2.1.1 [[Sv]], Artikel 2.7.38 [[Sv]]
 
-Gerelateerd: , , [Onderzoek van gegevens](#onderzoek-van-gegevens)
+Specialisatie van: [Onderzoek van gegevens](#onderzoek-van-gegevens)
+
+Gerelateerd: [Opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie), [opsporingsambtenaar](#opsporingsambtenaar), [officier van justitie](#officier-van-justitie)
 
 ### Stelselmatige observatie
 
@@ -390,7 +427,7 @@ Gerelateerd: , , [Onderzoek van gegevens](#onderzoek-van-gegevens)
 
 Bron: Artikel 2.8.7 [[Sv]]
 
-Gerelateerd: [Observatie](#observatie)
+Specialisatie van: [Observatie](#observatie)
 
 ### Tegenonderzoek
 
@@ -400,17 +437,17 @@ Gerelateerd: [Observatie](#observatie)
 
 Bron: Artikel 2.4.3 [[Sv]], Artikel 2.8.4 [[Sv]]
 
-Gerelateerd: , , 
+Gerelateerd: [Deskundige](#deskundige), [Officier van Justitie](#officier-van-justitie), [Verdachte](#verdachte), [officier van justitie](#officier-van-justitie), [deskundige](#deskundige), [verdachte](#verdachte)
 
 ### Verkennend onderzoek
 
 *Een «Verkennend onderzoek» is een rechtshandeling.*
 
-> Een verkennend onderzoek is een onderzoek uitgevoerd door een [opsporingsambtenaar]() op bevel van de [officier van justitie]() op basis van aanwijzingen van de beraming of pleging van misdaden, niet zijnde misdaden waar minder dan 4 jaar gevangenisstraf voor staat, bestaande uit [stelselmatige observatie](#stelselmatige-observatie) of het [overnemen van gegevens](#overnemen-van-gegevens) uit publiek toegankelijke bronnen, met een looptijd van maximaal 3 maanden.
+> Een verkennend onderzoek is een onderzoek uitgevoerd door een [opsporingsambtenaar]() op bevel van de [officier van justitie]() bestaande uit [stelselmatige observatie](#stelselmatige-observatie) of het [overnemen van gegevens](#overnemen-van-gegevens) uit publiek toegankelijke bronnen.
 
 Bron: Art. 2.9.1 [[Sv]]
 
-Gerelateerd: , [Overnemen van gegevens](#overnemen-van-gegevens), , [Stelselmatige observatie](#stelselmatige-observatie)
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Overnemen van gegevens](#overnemen-van-gegevens), [Stelselmatige observatie](#stelselmatige-observatie), [officier van justitie](#officier-van-justitie), [Opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie)
 
 ### Vermogensrecht
 
@@ -440,7 +477,7 @@ Gerelateerd: [Gegeven](#gegeven)
 
 Bron: Artikel 2 Boek 3 [[BW]], Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Vermogensrecht](#vermogensrecht)
+Onderdeel van: [Vermogensrecht](#vermogensrecht)
 
 ### Vrijheidsbeneming
 
@@ -448,7 +485,9 @@ Gerelateerd: [Vermogensrecht](#vermogensrecht)
 
 > Een vrijheidsbeneming is een [vrijheidsstraf](#vrijheidsstraf), niet zijnde een [vrijheidsbeperking](#vrijheidsbeperking), waarbij een veroordeelde in een penintentiaire instelling is of wordt geplaatst.
 
-Gerelateerd: [Vrijheidsbeperking](#vrijheidsbeperking), [Vrijheidsstraf](#vrijheidsstraf)
+Specialisatie van: [Vrijheidsstraf](#vrijheidsstraf)
+
+Gerelateerd: [Vrijheidsbeperking](#vrijheidsbeperking)
 
 ### Vrijheidsbeperking
 
@@ -458,7 +497,9 @@ Alternatieve aanduiding: *Gedragsbeinvloeding*
 
 > Een vrijheidsbeperking is een [vrijheidsstraf](#vrijheidsstraf), niet zijnde een [vrijheidsbeneming](#vrijheidsbeneming), waarbij een veroordeelde bepaalde gedragingen opgelegd krijgt of heeft gekregen.
 
-Gerelateerd: [Vrijheidsstraf](#vrijheidsstraf), [Vrijheidsbeneming](#vrijheidsbeneming)
+Specialisatie van: [Vrijheidsstraf](#vrijheidsstraf)
+
+Gerelateerd: [Vrijheidsbeneming](#vrijheidsbeneming)
 
 ### Vrijheidsstraf
 
@@ -466,5 +507,5 @@ Gerelateerd: [Vrijheidsstraf](#vrijheidsstraf), [Vrijheidsbeneming](#vrijheidsbe
 
 > Een vrijheidsstraf is een maatregel bij welke een veroordeelde zijn zelfstandigheid wordt beperkt, niet zijnde een [voorlopige hechtenis]().
 
-Gerelateerd: 
+Gerelateerd: [voorlopige hechtenis](#voorlopige-hechtenis), [Voorlopige hechtenis](#voorlopige-hechtenis)
 

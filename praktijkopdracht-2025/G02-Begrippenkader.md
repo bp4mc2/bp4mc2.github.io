@@ -1,6 +1,6 @@
 # Begrippen
 
-## Wetboek van Strafvordering Boek 1
+## Boek 1
 
 ### Aangewezen raadsman
 
@@ -18,9 +18,9 @@ Toelichting: "raadsman of advocaat" in art. 1.2.18 Sv, verschil: een raadsman (i
 
 Bron: Art. 1.4.13 [[Sv]]
 
-Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Raadsman](#raadsman), [Verdachte](#verdachte), [Bewaring](#bewaring), [Gevangenneming](#gevangenneming), [rechtsbijstand](#rechtsbijstand), [voorlopige 
+Gerelateerd: [rechtsbijstand](#rechtsbijstand), [Openbaar Ministerie](#openbaar-ministerie), [Raadsman](#raadsman), [Verdachte](#verdachte), [Bewaring](#bewaring), [Gevangenneming](#gevangenneming), [voorlopige 
 hechtenis](#voorlopige-
-hechtenis), [Hoger beroep](#hoger-beroep)
+hechtenis), [Terechtzitting](#terechtzitting), [Hoger beroep](#hoger-beroep), [Strafprocedure](#strafprocedure)
 
 ### Aanhouding
 
@@ -34,7 +34,7 @@ Toelichting: In geval van ontdekking op heterdaad van een strafbaar feit is een 
 
 Bron: art. 2.5.4 [[Sv]], Art. 2.5.3 [[Sv]], 
 
-Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Heterdaad](#heterdaad), [Verdachte](#verdachte), [Plaats voor verhoor](#plaats-voor-verhoor)
+Gerelateerd: [Strafbare feiten](#strafbare-feiten), [Vervolging](#vervolging), [Heterdaad](#heterdaad), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Verdachte](#verdachte), [Plaats voor verhoor](#plaats-voor-verhoor), [Strafbeschikking](#strafbeschikking), [Tenlastegelegde feit](#tenlastegelegde-feit), [opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Advocaat-Generaal
 
@@ -47,7 +47,9 @@ Bij de [Hoge Raad](#hoge-raad) heeft hij een andere functie, hij is dan de advis
 
 Bron: 
 
-Gerelateerd: [Hoger beroep](#hoger-beroep), [Hoge Raad](#hoge-raad), [Officier van Justitie](#officier-van-justitie), [Openbaar Ministerie](#openbaar-ministerie), [Gerechtshof](#gerechtshof)
+Onderdeel van: [Officier van Justitie](#officier-van-justitie)
+
+Gerelateerd: [Hoger beroep](#hoger-beroep), [Hoge Raad](#hoge-raad), [Openbaar Ministerie](#openbaar-ministerie), [Gerechtshof](#gerechtshof)
 
 ### Algemeen verbindend voorschrift
 
@@ -59,6 +61,8 @@ Alternatieve aanduiding: *AVV*
 
 Bron: Hoge Raad Uitspraak Landbouwvliegers [[ECLINLHR1986AC9354]]
 
+Specialisatie van: [Formele wet](#formele-wet)
+
 ### Algemene maatregel van bestuur
 
 *Een «Algemene maatregel van bestuur» is een rechtshandeling.*
@@ -69,7 +73,9 @@ Alternatieve aanduiding: *AMvB*
 
 Bron: Art. 89 [[Gw]]
 
-Gerelateerd: [Koninklijk besluit](#koninklijk-besluit), [Formele wet](#formele-wet), [Regering](#regering)
+Specialisatie van: [Koninklijk besluit](#koninklijk-besluit), [Formele wet](#formele-wet)
+
+Gerelateerd: [Regering](#regering)
 
 ### Ambtenaar
 
@@ -91,7 +97,7 @@ Bron:
 
 Bron: , 
 
-Gerelateerd: [parketten](#parketten), [Hoofdofficier van Justitie](#hoofdofficier-van-justitie), [Arrondissement](#arrondissement), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Hoofdofficier van Justitie](#hoofdofficier-van-justitie), [parketten](#parketten), [Arrondissement](#arrondissement), [Officier van Justitie](#officier-van-justitie)
 
 ### Basisregistratie
 
@@ -111,6 +117,8 @@ Bron: Art. 1.2  [[wbp]]
 
 Bron: Art. 1.1.7 lid 1 [[Sv]]
 
+Onderdeel van: [Onderzoek ter terechtzitting](#onderzoek-ter-terechtzitting)
+
 Gerelateerd: [Hoger beroep](#hoger-beroep), [Rechter](#rechter), [Vervolging](#vervolging), [Verdachte](#verdachte)
 
 ### Bewaring
@@ -123,7 +131,7 @@ Alternatieve aanduiding: *Voorlopige Hechtenis*
 
 Bron: art. 2.5.29 [[Sv]], art. 2.5.42 [[Sv]], art. 2.5.26 [[Sv]], Afdeling 5.4.5 [[Sv]], art. 2.5.27 [[Sv]]
 
-Gerelateerd: [Vordering](#vordering), [Voorlopige hechtenis](#voorlopige-hechtenis), [Rechter-Commissaris](#rechter-commissaris), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Vordering](#vordering), [Rechter-Commissaris](#rechter-commissaris), [Officier van Justitie](#officier-van-justitie)
 
 ### Buitengewoon opsporingsambtenaar
 
@@ -137,7 +145,7 @@ Toelichting: De personen die in art. 1.3.10 worden genoemd zijn in beginsel niet
 
 Bron: Art. 1.3.11 [[Sv]]
 
-Gerelateerd: [Ambtenaar](#ambtenaar)
+Onderdeel van: [Ambtenaar](#ambtenaar)
 
 Voorbeeld(en): Jachtopzichters, milieu-inspecteurs, leerplichtambtenaren, parkeerwachten.
 
@@ -149,7 +157,9 @@ Voorbeeld(en): Jachtopzichters, milieu-inspecteurs, leerplichtambtenaren, parkee
 
 Bron: 
 
-Gerelateerd: [Hoge Raad](#hoge-raad), [Hoger beroep](#hoger-beroep)
+Specialisatie van: [Hoger beroep](#hoger-beroep)
+
+Gerelateerd: [Hoge Raad](#hoge-raad)
 
 ### Feitelijke verblijfplaats
 
@@ -158,6 +168,8 @@ Gerelateerd: [Hoge Raad](#hoge-raad), [Hoger beroep](#hoger-beroep)
 > Een feitelijke verblijfplaats is een locatie waar iemand daadwerkelijk woont of verblijft, ongeacht eventuele formele inschrijvingen of officiële adressen.
 
 Bron: 
+
+Onderdeel van: [Slachtoffer](#slachtoffer), [Verdachte](#verdachte), [Getuige](#getuige)
 
 ### Formele wet
 
@@ -168,6 +180,8 @@ Alternatieve aanduiding: *Wet in formele zin*
 > Een formele wet is een wet die tot stand is gekomen door de [regering](#regering) en de Staten-Generaal gezamenlijk.
 
 Bron: Art. 81 [[Gw]]
+
+Generalisatie van: , [Recht op rechtsbijstand](#recht-op-rechtsbijstand), [Recht op vertolking en vertaling](#recht-op-vertolking-en-vertaling), [Spreekrecht](#spreekrecht)
 
 Gerelateerd: [Regering](#regering)
 
@@ -203,7 +217,7 @@ Alternatieve aanduiding: *Voorlopige Hechtenis*
 
 Bron: Afdeling 5.4.6 [[Sv]], art. 2.5.44 [[Sv]]
 
-Gerelateerd: [Bewaring](#bewaring), [Verdachte](#verdachte), [Gevangenneming](#gevangenneming), [Voorlopige hechtenis](#voorlopige-hechtenis), [rechtbank](#rechtbank)
+Gerelateerd: [rechtbank](#rechtbank), [Bewaring](#bewaring), [Verdachte](#verdachte), [Gevangenneming](#gevangenneming), [Rechter-Commissaris](#rechter-commissaris), [Officier van Justitie](#officier-van-justitie)
 
 ### Gevangenneming
 
@@ -215,7 +229,7 @@ Alternatieve aanduiding: *Voorlopige Hechtenis*
 
 Bron: art. 2.5.44 [[Sv]], Afdeling 5.4.6 [[Sv]]
 
-Gerelateerd: [Verdachte](#verdachte), [rechtbank](#rechtbank), [Voorlopige hechtenis](#voorlopige-hechtenis), [Vordering](#vordering), [Bewaring](#bewaring), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Verdachte](#verdachte), [rechtbank](#rechtbank), [Vordering](#vordering), [Rechter-Commissaris](#rechter-commissaris), [Bewaring](#bewaring), [Officier van Justitie](#officier-van-justitie)
 
 ### Gewoon opsporingsambtenaar
 
@@ -228,7 +242,9 @@ de ambtenaren van politie, de door Onze Minister van Veiligheid en Justitie in o
 
 Bron: Art. 1.3.10 [[Sv]]
 
-Gerelateerd: [Ambtenaar](#ambtenaar), [strafbare feit](#strafbare-feit), [opsporing](#opsporing)
+Onderdeel van: [Ambtenaar](#ambtenaar)
+
+Gerelateerd: [strafbare feit](#strafbare-feit), [opsporing](#opsporing)
 
 Voorbeeld(en): 
 
@@ -238,7 +254,7 @@ Voorbeeld(en):
 
 Bron: Art. 2.1.1 [[Sv]]
 
-Gerelateerd: [strafbare feit](#strafbare-feit)
+Gerelateerd: [strafbare feit](#strafbare-feit), [Aanhouding](#aanhouding)
 
 ### Hoge Raad
 
@@ -250,7 +266,7 @@ Alternatieve aanduiding: *Cassatierechter*
 
 Toelichting: De Hoge Raad beoordeelt niet de feiten; alleen of het recht goed is toegepast.
 
-Bron: 79 Wet RO en art. 17 [[RV]], , 
+Bron: , , 79 Wet RO en art. 17 [[RV]]
 
 Gerelateerd: [Hoger beroep](#hoger-beroep)
 
@@ -272,7 +288,9 @@ Bron: ,
 
 Bron: 
 
-Gerelateerd: [Officier van Justitie](#officier-van-justitie), [Arrondissementsparket](#arrondissementsparket)
+Onderdeel van: [Officier van Justitie](#officier-van-justitie)
+
+Gerelateerd: [Arrondissementsparket](#arrondissementsparket)
 
 ### Hulpofficier van Justitie
 
@@ -284,7 +302,9 @@ Alternatieve aanduiding: *HOvJ*
 
 Bron: Art. 1.3.13 [[Sv]], art. 2 [[Pw2012]]
 
-Gerelateerd: [Ministeriële regeling](#ministeriële-regeling), [Officier van Justitie](#officier-van-justitie), [opsporingsambtenaar](#opsporingsambtenaar)
+Onderdeel van: [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar)
+
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Ministeriële regeling](#ministeriële-regeling), [Officier van Justitie](#officier-van-justitie)
 
 ### Koninklijk besluit
 
@@ -294,7 +314,9 @@ Alternatieve aanduiding: *KB*
 
 > Een koninklijk besluit is een besluit van de [regering](#regering) dat zonder medewerking van de Staten-Generaal wordt genomen.
 
-Bron: , Art. 89 [[Gw]],  art. 47 [[Gw]]
+Bron: Art. 89 [[Gw]],  art. 47 [[Gw]], 
+
+Onderdeel van: [Algemene maatregel van bestuur](#algemene-maatregel-van-bestuur)
 
 Gerelateerd: [Regering](#regering)
 
@@ -316,9 +338,9 @@ Alternatieve aanduiding: *MR*
 
 Toelichting: Een ministeriële regeling is vaak een verdere uitwerking van een AMvB
 
-Bron: , , , Art. 89 [[Gw]], art. 47 [[Gw]]
+Bron: , Art. 89 [[Gw]], art. 47 [[Gw]], , 
 
-Gerelateerd: [Algemeen verbindend voorschrift](#algemeen-verbindend-voorschrift)
+Specialisatie van: [Algemeen verbindend voorschrift](#algemeen-verbindend-voorschrift)
 
 ### Misdrijf
 
@@ -329,6 +351,8 @@ Alternatieve aanduiding: *Zwaar strafrechtelijk feit*
 > Een misdrijf is een wettelijk omschreven gedraging in het wetboek van strafrecht die zo ernstig wordt geacht dat zij strafrechtelijke [vervolging](#vervolging) rechtvaardigt en zwaardere sancties mogelijk maakt.
 
 Bron: Boek 2, Titel 1 [[Sr]]
+
+Onderdeel van: [Staandehouding](#staandehouding), [Strafprocedure](#strafprocedure), [Berechting](#berechting)
 
 Gerelateerd: [Vervolging](#vervolging)
 
@@ -362,7 +386,7 @@ Alternatieve aanduiding: *OvJ*
 
 Bron: 
 
-Gerelateerd: [Rechter](#rechter), [strafvervolgingen](#strafvervolgingen), [Arrondissementsparket](#arrondissementsparket), [Verdachte](#verdachte)
+Gerelateerd: [Rechter](#rechter), [Arrondissementsparket](#arrondissementsparket), [strafvervolgingen](#strafvervolgingen), [Verdachte](#verdachte)
 
 ### Onderzoek ter terechtzitting
 
@@ -392,7 +416,7 @@ Alternatieve aanduiding: *Parket*
 
 Bron: Art. 2.3 [[Sv]]
 
-Gerelateerd: [Opsporingsonderzoek](#opsporingsonderzoek), [Verdachte](#verdachte), [strafbare feit](#strafbare-feit), [vervolgen](#vervolgen)
+Gerelateerd: [vervolgen](#vervolgen), [Opsporingsonderzoek](#opsporingsonderzoek), [Verdachte](#verdachte), [strafbare feit](#strafbare-feit)
 
 ### Opheffing voorlopige hechtenis
 
@@ -412,7 +436,7 @@ Gerelateerd: [Verdachte](#verdachte), [Voorlopige hechtenis](#voorlopige-hechten
 
 > Een opsporingsonderzoek is een onderzoek onder leiding van de [officier van justitie](#officier-van-justitie) waarbij de politie op zoek gaat naar de [verdachte](#verdachte) en bewijs verzamelt. Alle bevindingen van de politie komen in een [proces-verbaal](#proces-verbaal).
 
-Gerelateerd: [Proces-verbaal](#proces-verbaal), [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Proces-verbaal](#proces-verbaal), [Verdachte](#verdachte), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie)
 
 ### Overeenkomstig de bepalingen van dit wetboek
 
@@ -422,13 +446,17 @@ Alternatieve aanduiding: *Overeenkomstig deze wet, bij deze wet bepaald*
 
 Toelichting: Verschil met krachtens deze wet: dit betekent op grond van de wet, maar dit kan ook uitgewerkt zijn in andere wetgeving (bijv. AMvB)
 
+Onderdeel van: [Formele wet](#formele-wet)
+
 ### Parket
 
 > Een parket is het kantoor van het [Openbaar Ministerie](#openbaar-ministerie) in de hoofdplaats van een rechtbank of van een [gerechtshof](#gerechtshof).
 
 Bron: , , 
 
-Gerelateerd: [Gerechtshof](#gerechtshof), [Openbaar Ministerie](#openbaar-ministerie)
+Onderdeel van: [Openbaar Ministerie](#openbaar-ministerie)
+
+Gerelateerd: [Gerechtshof](#gerechtshof)
 
 ### Plaats voor verhoor
 
@@ -448,6 +476,8 @@ Alternatieve aanduiding: *P-V*
 
 Bron: Art. 1.2.8 [[Sv]]
 
+Gerelateerd: [Verhoor](#verhoor)
+
 ### Procesinleiding
 
 *Een «Procesinleiding» is een rechtsbetrekking.*
@@ -456,7 +486,9 @@ Bron: Art. 1.2.8 [[Sv]]
 
 Bron: Art. 4.1.1 en 4.1.2 [[Sv]]
 
-Gerelateerd: [Strafzaak](#strafzaak), [Rechter](#rechter), [Strafprocedure](#strafprocedure), [Vordering](#vordering)
+Onderdeel van: [Strafprocedure](#strafprocedure)
+
+Gerelateerd: [Strafzaak](#strafzaak), [Rechter](#rechter), [Vordering](#vordering)
 
 Voorbeeld(en): Dagvaarding en strafbeschikking.
 
@@ -470,7 +502,9 @@ Alternatieve aanduiding: *Dossier(stukken)*
 
 Bron: Art. 1.8.3 [[Sv]]
 
-Gerelateerd: [Rechter](#rechter), [Berechting](#berechting)
+Onderdeel van: [Berechting](#berechting)
+
+Gerelateerd: [Rechter](#rechter)
 
 ### Procureur-Generaal
 
@@ -484,7 +518,9 @@ Toelichting: De Procureur-Generaal schrijft conclusies, bewaakt de eenheid en on
 
 Bron: , 
 
-Gerelateerd: [Hoge Raad](#hoge-raad), [Cassatie](#cassatie)
+Onderdeel van: [Hoge Raad](#hoge-raad)
+
+Gerelateerd: [Cassatie](#cassatie)
 
 ### Raadsheer
 
@@ -496,7 +532,9 @@ Toelichting: Let op, verschilt met raadsman.
 
 Bron: 
 
-Gerelateerd: [Hoge Raad](#hoge-raad), [Rechter](#rechter), [Gerechtshof](#gerechtshof)
+Onderdeel van: [Rechter](#rechter)
+
+Gerelateerd: [Hoge Raad](#hoge-raad), [Gerechtshof](#gerechtshof)
 
 ### Raadsman
 
@@ -509,7 +547,7 @@ Alternatieve aanduiding: *Advocaat (maar dan verkeerd gebruikt in de verwijzing 
 Toelichting: "raadsman of advocaat" in art. 1.2.18 Sv, verschil: een raadsman (indien het de verdachte betreft) of advocaat 
 (indien het een andere procespartij betreft) p. 120 MvT
 
-Bron: art. 1.4.9 lid 2 [[Sv]], Art. 1.4.9 lid 1 [[Sv]], 
+Bron: art. 1.4.9 lid 2 [[Sv]], , Art. 1.4.9 lid 1 [[Sv]]
 
 Gerelateerd: [Verdachte](#verdachte)
 
@@ -523,7 +561,9 @@ Alternatieve aanduiding: *Recht op een advocaat*
 
 Bron: art. 47 en 48 [[EU-Handvest]], art. 17 [[IVBPR]], art. 6 [[EVRM]], Art. 1.4.5 [[Sv]], art. 1.4.6 [[Sv]]
 
-Gerelateerd: [Raadsman](#raadsman), [Verdachte](#verdachte)
+Specialisatie van: 
+
+Gerelateerd: [Vervolging](#vervolging), [Verdachte](#verdachte)
 
 ### Recht op vertolking en vertaling
 
@@ -551,7 +591,7 @@ Alternatieve aanduiding: *R-C*
 
 > Een rechter-commissaris is belast is met de behandeling van strafzaken in de voorbereidende fase en die toezicht houdt op de voortgang en de rechtmatigheid van het [opsporingsonderzoek](#opsporingsonderzoek). 
 
-Bron: , Art. 1.11.8   [[Sv]]
+Bron: Art. 1.11.8   [[Sv]], 
 
 Gerelateerd: [Opsporingsonderzoek](#opsporingsonderzoek)
 
@@ -562,6 +602,8 @@ Gerelateerd: [Opsporingsonderzoek](#opsporingsonderzoek)
 > De regering bestaat uit de Koning en de ministers.
 
 Bron: Art. 42 lid 1 [[Gw]]
+
+Gerelateerd: [Formele wet](#formele-wet)
 
 ### Schuld
 
@@ -593,7 +635,9 @@ Alternatieve aanduiding: *Uitingsbevoegdheid*
 
 Bron: Art. 1.5.8 [[Sv]]
 
-Gerelateerd: [Nauwe band](#nauwe-band), [Nauwe persoonlijke betrekking](#nauwe-persoonlijke-betrekking), [Strafzaak](#strafzaak)
+Specialisatie van: 
+
+Gerelateerd: [Terechtzitting](#terechtzitting), [Nauwe band](#nauwe-band), [Nauwe persoonlijke betrekking](#nauwe-persoonlijke-betrekking), [Strafzaak](#strafzaak)
 
 ### Staandehouding
 
@@ -605,7 +649,7 @@ Toelichting: Een opsporingsambtenaar spreekt iemand aan en vraagt om zijn/haar p
 
 Bron: Art. 2.5.3 [[Sv]], art. 8 lid 1 [[Pw2012]]
 
-Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar)
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), [Aanhouding](#aanhouding)
 
 ### Strafbaar feit
 
@@ -613,15 +657,19 @@ Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar)
 
 Toelichting: Er zijn twee soorten strafbare feiten. Overtredingen, Dit zijn lichtere strafbare feiten en misdrijven, deze zijn ernstiger.
 
+Onderdeel van: [Vervolging](#vervolging)
+
+Gerelateerd: [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), [Verdachte](#verdachte)
+
 ### Strafbeschikking
 
 *Een «Strafbeschikking» is een rechtsbetrekking.*
 
 > Een strafbeschikking is een in een document opgesteld door een [officier van justitie](#officier-van-justitie) waarin hij zelf straffen en maatregelen aan een [verdachte](#verdachte) oplegt, zonder tussenkomst van een strafrechter. 
 
-Bron: , art. 3.3.1 [[Sv]]
+Bron: art. 3.3.1 [[Sv]], 
 
-Gerelateerd: [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Rechter](#rechter), [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
 
 ### Strafprocedure
 
@@ -629,7 +677,9 @@ Gerelateerd: [Verdachte](#verdachte), [Officier van Justitie](#officier-van-just
 
 > Een strafprocedure is een rechtszaak tussen een [verdachte](#verdachte) en het [Openbaar Ministerie](#openbaar-ministerie).
 
-Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie), [Verdachte](#verdachte)
+Omvat: [Slachtoffer](#slachtoffer), [Getuige](#getuige), [Rechter](#rechter), [Verdachte](#verdachte)
+
+Gerelateerd: [Openbaar Ministerie](#openbaar-ministerie)
 
 ### Strafzaak
 
@@ -661,7 +711,9 @@ Gerelateerd: [Rechter](#rechter), [Verdachte](#verdachte)
 
 Bron: 
 
-Gerelateerd: [Strafzaak](#strafzaak)
+Onderdeel van: [Strafbeschikking](#strafbeschikking)
+
+Gerelateerd: [Tenlastegelegde feit](#tenlastegelegde-feit), [Strafzaak](#strafzaak)
 
 ### Verdachte
 
@@ -685,7 +737,9 @@ Toelichting: Commentaar: "geconstateerd feit" -> beter als het "strafbaar feit" 
 
 Bron: art. 2.3.6 [[Sv]], HR 2 oktober 1979, NJ 1980, 243, [[ECLINLPHR1979AB7396]], Art. 2.3.5 [[Sv]]
 
-Gerelateerd: [Strafbaar feit](#strafbaar-feit), [opsporingsambtenaar](#opsporingsambtenaar), [Verdachte](#verdachte)
+Onderdeel van: [Vervolging](#vervolging)
+
+Gerelateerd: [Strafbaar feit](#strafbaar-feit), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Verdachte](#verdachte), [Strafbare feiten](#strafbare-feiten), [opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Verklaring
 
@@ -695,7 +749,9 @@ Gerelateerd: [Strafbaar feit](#strafbaar-feit), [opsporingsambtenaar](#opsporing
 
 Bron: Art. 4.2.37 [[Sv]]
 
-Gerelateerd: [Onderzoek ter terechtzitting](#onderzoek-ter-terechtzitting)
+Onderdeel van: [Strafprocedure](#strafprocedure), [Onderzoek ter terechtzitting](#onderzoek-ter-terechtzitting)
+
+Gerelateerd: [Slachtoffer](#slachtoffer), [Getuige](#getuige), [Verdachte](#verdachte)
 
 ### Vervolging
 
@@ -705,7 +761,9 @@ Gerelateerd: [Onderzoek ter terechtzitting](#onderzoek-ter-terechtzitting)
 
 Bron: 
 
-Gerelateerd: [Strafbeschikking](#strafbeschikking), [Openbaar Ministerie](#openbaar-ministerie), [Strafzaak](#strafzaak)
+Omvat: [Verdachte](#verdachte), [Tenlastegelegde feit](#tenlastegelegde-feit)
+
+Gerelateerd: [Strafbeschikking](#strafbeschikking), [Openbaar Ministerie](#openbaar-ministerie), [Rechter](#rechter), [Strafzaak](#strafzaak)
 
 ### Voorlopige hechtenis
 
@@ -717,7 +775,9 @@ Alternatieve aanduiding: *VH*
 
 Bron: Art. 2.1.1 [[Sv]], 
 
-Gerelateerd: [Gevangenhouding](#gevangenhouding), [Gevangenneming](#gevangenneming), [Bewaring](#bewaring)
+Generalisatie van: [Bewaring](#bewaring), [Gevangenhouding](#gevangenhouding), [Gevangenneming](#gevangenneming)
+
+Gerelateerd: [Misdrijf](#misdrijf), [Officier van Justitie](#officier-van-justitie), [Rechter-Commissaris](#rechter-commissaris)
 
 ### Vordering
 
@@ -726,6 +786,8 @@ Gerelateerd: [Gevangenhouding](#gevangenhouding), [Gevangenneming](#gevangennemi
 > Een vordering is het recht dat iemand heeft op een ander om iets te doen, te geven of na te komen.
 
 Bron: Art. 2.5.2, 2.5.34, 2.5.35 [[Sv]]
+
+Gerelateerd: [Rechter-Commissaris](#rechter-commissaris), [Officier van Justitie](#officier-van-justitie), [Rechter](#rechter)
 
 ### Vrijwillig
 

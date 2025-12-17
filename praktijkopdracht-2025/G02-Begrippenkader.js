@@ -55,7 +55,7 @@ var localBiblio = {
   },
   "Kamerstuk": {
     title: "Tweede Kamer der Staten-Generaal Stuk",
-    href: "https://zoek.officielebekendmakingen.nl/kst-29849-3.html%20",
+    href: "https://zoek.officielebekendmakingen.nl/kst-29849-3.html",
   },
   "MvT29849nr3": {
     title: "Memorie van Toelicht Modernisering Wetboek van Strafvordering",

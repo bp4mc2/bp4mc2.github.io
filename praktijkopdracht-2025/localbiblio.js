@@ -75,7 +75,7 @@ var localBiblio = {
   },
   "Kamerstuk": {
     title: "Tweede Kamer der Staten-Generaal Stuk",
-    href: "https://zoek.officielebekendmakingen.nl/kst-29849-3.html%20",
+    href: "https://zoek.officielebekendmakingen.nl/kst-29849-3.html",
   },
   "MvT29849nr3": {
     title: "Memorie van Toelicht Modernisering Wetboek van Strafvordering",
@@ -145,6 +145,10 @@ var localBiblio = {
     title: "Modernisering Wetboek van Strafvordering",
     href: "https://wetten.overheid.nl/BWBR0001903/2025-07-01",
   },
+  "SvSVB4": {
+    title: "Nieuwe Wetboek van Strafvordering, boek 4",
+    href: "https://wetten.overheid.nl/BWBR0001903/2025-07-01",
+  },
   "ViVB": {
     title: "Verdrag inzake de verkrijging van bewijs in het buitenland in burgerlijke en in handelszaken, 's-Gravenhage",
     href: "https://wetten.overheid.nl/BWBV0001993/1981-06-07",
@@ -152,6 +156,10 @@ var localBiblio = {
   "WID": {
     title: "Wet op de Identificatieplicht",
     href: "https://wetten.overheid.nl/BWBR0006297/2017-03-01",
+  },
+  "WRB": {
+    title: "Wet op de Rechtsbijstand",
+    href: "https://wetten.overheid.nl/BWBR0006368/2025-01-01",
   },
   "WetRO": {
     title: "Wet op de Rechterlijke Organisatie",
