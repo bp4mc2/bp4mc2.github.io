@@ -32,7 +32,7 @@ Alternatieve aanduiding: *beklaagd*
 
 > Een beklag is de mogelijkheid voor een rechtstreeks [belanghebbende](#belanghebbende) om te klagen als door het Openbaar Ministerie is besloten om een [strafbaar feit](#strafbaar-feit) niet (verder) te [vervolgen](). De beslissing om al dan niet alsnog te [vervolgen]() wordt ter beoordeling aan het [gerechtshof](#gerechtshof) voorgelegd.
 
-Gerelateerd: [Vervolging](#vervolging), [Gerechtshof](#gerechtshof), [Strafbaar feit](#strafbaar-feit), [Belanghebbende](#belanghebbende), [vervolgen](#vervolgen)
+Gerelateerd: [Vervolging](#vervolging), [vervolgen](#vervolgen), [Gerechtshof](#gerechtshof), [Strafbaar feit](#strafbaar-feit), [Belanghebbende](#belanghebbende)
 
 ### Belanghebbende
 

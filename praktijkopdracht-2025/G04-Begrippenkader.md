@@ -12,7 +12,7 @@ Bron: Artikel 2.1.1 [[Sv]]
 
 Specialisatie van: , 
 
-Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens), [Gegevensverwerking](#gegevensverwerking), [Gebruiker van een communicatiedienst](#gebruiker-van-een-communicatiedienst), [rechtspersoon](#rechtspersoon)
+Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [rechtspersoon](#rechtspersoon), [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens), [Gegevensverwerking](#gegevensverwerking), [Gebruiker van een communicatiedienst](#gebruiker-van-een-communicatiedienst)
 
 ### Beslagene
 
@@ -22,7 +22,7 @@ Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [Geautomatiseerd werk]
 
 Bron: Artikel 2.1.1 [[Sv]]
 
-Gerelateerd: [Voorwerp](#voorwerp), [inbeslaggenomen](#inbeslaggenomen), [Inbeslagnemen van een voorwerp](#inbeslagnemen-van-een-voorwerp)
+Gerelateerd: [inbeslaggenomen](#inbeslaggenomen), [Voorwerp](#voorwerp), [Inbeslagnemen van een voorwerp](#inbeslagnemen-van-een-voorwerp)
 
 ### Bevoegdheid
 
@@ -70,7 +70,7 @@ Bron: Artikel 2 lid 1a [[Post]]
 
 Bron: Artikel 2.5.39 [[Sv]], Artikel 3.2.4 [[Sv]]
 
-Gerelateerd: [Verdachte](#verdachte), [verdachte](#verdachte)
+Gerelateerd: [verdachte](#verdachte), [Verdachte](#verdachte)
 
 ### Communicatie
 
@@ -114,7 +114,7 @@ Bron: Artikel 2.1.1 [[Sv]]
 
 Specialisatie van: 
 
-Gerelateerd: [Verwerking](#verwerking), [Gegeven](#gegeven), [Opslag van gegevens](#opslag-van-gegevens), [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens)
+Gerelateerd: [Opslag van gegevens](#opslag-van-gegevens), [Verwerking](#verwerking), [Gegeven](#gegeven), [Geautomatiseerd werk](#geautomatiseerd-werk), [Verwerking van gegevens](#verwerking-van-gegevens)
 
 ### Functionaris
 
@@ -153,7 +153,7 @@ Bron: Artikel 2.1.1 [[Sv]]
 
 Specialisatie van: , 
 
-Gerelateerd: [natuurlijke persoon](#natuurlijke-persoon), [rechtspersoon](#rechtspersoon), [Aanbieder van een communicatiedienst](#aanbieder-van-een-communicatiedienst), [Communicatiedienst](#communicatiedienst)
+Gerelateerd: [Aanbieder van een communicatiedienst](#aanbieder-van-een-communicatiedienst), [Communicatiedienst](#communicatiedienst), [natuurlijke persoon](#natuurlijke-persoon), [rechtspersoon](#rechtspersoon)
 
 ### Gegeven
 
@@ -185,7 +185,7 @@ Gerelateerd: [bevoegd](#bevoegd)
 
 Bron: Artikel 2.10.35 [[Sv]], Artikel 2.10.38 [[Sv]], Artikel 1 [[Pbw]]
 
-Gerelateerd: [getuige](#getuige), [Getuige](#getuige)
+Gerelateerd: [Getuige](#getuige), [getuige](#getuige)
 
 ### Hechtenis
 
@@ -205,7 +205,7 @@ Onderdeel van: [Stelselmatig onderzoek van gegevens](#stelselmatig-onderzoek-van
 
 Omvat: 
 
-Gerelateerd: [officier van justitie](#officier-van-justitie), [Officier van Justitie](#officier-van-justitie), [opsporingsambtenaar](#opsporingsambtenaar)
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie), [officier van justitie](#officier-van-justitie)
 
 ### Hulpofficier van Justitie
 
@@ -219,7 +219,7 @@ Specialisatie van:
 
 Omvat: [Bevoegdheid](#bevoegdheid)
 
-Gerelateerd: [politietaak](#politietaak), [opsporingsambtenaar](#opsporingsambtenaar), [Onze Minister](#onze-minister), [Bijzondere opsporingsambtenaar](#bijzondere-opsporingsambtenaar), [Ministeriele regeling](#ministeriele-regeling), [officier van justitie](#officier-van-justitie), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar)
+Gerelateerd: [Onze Minister](#onze-minister), [officier van justitie](#officier-van-justitie), [Bijzondere opsporingsambtenaar](#bijzondere-opsporingsambtenaar), [Ministeriele regeling](#ministeriele-regeling), [opsporingsambtenaar](#opsporingsambtenaar), [politietaak](#politietaak), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar)
 
 ### Identiteit
 
@@ -263,7 +263,7 @@ Gerelateerd: [Voorwerp](#voorwerp)
 
 Bron: Artikel 2.8.12 lid 1 [[Sv]]
 
-Gerelateerd: [verdachten](#verdachten), [opsporingsambtenaar](#opsporingsambtenaar), [Misdrijf](#misdrijf), [Verdachte](#verdachte), [misdrijven](#misdrijven), [Opsporingsambtenaar](#opsporingsambtenaar)
+Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [verdachten](#verdachten), [Opsporingsambtenaar](#opsporingsambtenaar), [Verdachte](#verdachte), [Misdrijf](#misdrijf), [misdrijven](#misdrijven)
 
 ### Observatie
 
@@ -405,7 +405,7 @@ Toelichting: Voorbeelden van rechtsgebieden zijn onder andere burgerlijk recht, 
 
 Bron:  Bijlage 9 [[RA]], Artikel 2.10.2 [[Sv]]
 
-Omvat: , [Bevoegdheid](#bevoegdheid)
+Omvat: [Bevoegdheid](#bevoegdheid), 
 
 ### Stelselmatig onderzoek van gegevens
 
@@ -417,7 +417,7 @@ Bron: Artikel 2.1.1 [[Sv]], Artikel 2.7.38 [[Sv]]
 
 Specialisatie van: [Onderzoek van gegevens](#onderzoek-van-gegevens)
 
-Gerelateerd: [Opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie), [opsporingsambtenaar](#opsporingsambtenaar), [officier van justitie](#officier-van-justitie)
+Gerelateerd: [Opsporingsambtenaar](#opsporingsambtenaar), [opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie), [officier van justitie](#officier-van-justitie)
 
 ### Stelselmatige observatie
 
@@ -437,7 +437,7 @@ Specialisatie van: [Observatie](#observatie)
 
 Bron: Artikel 2.4.3 [[Sv]], Artikel 2.8.4 [[Sv]]
 
-Gerelateerd: [Deskundige](#deskundige), [Officier van Justitie](#officier-van-justitie), [Verdachte](#verdachte), [officier van justitie](#officier-van-justitie), [deskundige](#deskundige), [verdachte](#verdachte)
+Gerelateerd: [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie), [officier van justitie](#officier-van-justitie), [deskundige](#deskundige), [verdachte](#verdachte), [Deskundige](#deskundige)
 
 ### Verkennend onderzoek
 
@@ -447,7 +447,7 @@ Gerelateerd: [Deskundige](#deskundige), [Officier van Justitie](#officier-van-ju
 
 Bron: Art. 2.9.1 [[Sv]]
 
-Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Overnemen van gegevens](#overnemen-van-gegevens), [Stelselmatige observatie](#stelselmatige-observatie), [officier van justitie](#officier-van-justitie), [Opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [officier van justitie](#officier-van-justitie), [opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie), [Overnemen van gegevens](#overnemen-van-gegevens), [Stelselmatige observatie](#stelselmatige-observatie), [Opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Vermogensrecht
 

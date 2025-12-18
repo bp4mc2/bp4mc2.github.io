@@ -18,9 +18,9 @@ Toelichting: "raadsman of advocaat" in art. 1.2.18 Sv, verschil: een raadsman (i
 
 Bron: Art. 1.4.13 [[Sv]]
 
-Gerelateerd: [rechtsbijstand](#rechtsbijstand), [Openbaar Ministerie](#openbaar-ministerie), [Raadsman](#raadsman), [Verdachte](#verdachte), [Bewaring](#bewaring), [Gevangenneming](#gevangenneming), [voorlopige 
+Gerelateerd: [rechtsbijstand](#rechtsbijstand), [Openbaar Ministerie](#openbaar-ministerie), [Raadsman](#raadsman), [voorlopige 
 hechtenis](#voorlopige-
-hechtenis), [Terechtzitting](#terechtzitting), [Hoger beroep](#hoger-beroep), [Strafprocedure](#strafprocedure)
+hechtenis), [Verdachte](#verdachte), [Bewaring](#bewaring), [Gevangenneming](#gevangenneming), [Terechtzitting](#terechtzitting), [Hoger beroep](#hoger-beroep), [Strafprocedure](#strafprocedure)
 
 ### Aanhouding
 
@@ -32,9 +32,9 @@ Alternatieve aanduiding: *Arrest*
 
 Toelichting: In geval van ontdekking op heterdaad van een strafbaar feit is een ieder bevoegd de verdachte aan te houden. Buiten heterdaad: Opsporingsambtenaar neemt iemand mee naar het politiebureau op bevel van OvJ.
 
-Bron: art. 2.5.4 [[Sv]], Art. 2.5.3 [[Sv]], 
+Bron: art. 2.5.4 [[Sv]], , Art. 2.5.3 [[Sv]]
 
-Gerelateerd: [Strafbare feiten](#strafbare-feiten), [Vervolging](#vervolging), [Heterdaad](#heterdaad), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Verdachte](#verdachte), [Plaats voor verhoor](#plaats-voor-verhoor), [Strafbeschikking](#strafbeschikking), [Tenlastegelegde feit](#tenlastegelegde-feit), [opsporingsambtenaar](#opsporingsambtenaar)
+Gerelateerd: [Vervolging](#vervolging), [Heterdaad](#heterdaad), [Strafbare feiten](#strafbare-feiten), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Verdachte](#verdachte), [Plaats voor verhoor](#plaats-voor-verhoor), [Strafbeschikking](#strafbeschikking), [Tenlastegelegde feit](#tenlastegelegde-feit), [opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Advocaat-Generaal
 
@@ -97,7 +97,7 @@ Bron:
 
 Bron: , 
 
-Gerelateerd: [Hoofdofficier van Justitie](#hoofdofficier-van-justitie), [parketten](#parketten), [Arrondissement](#arrondissement), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Hoofdofficier van Justitie](#hoofdofficier-van-justitie), [Arrondissement](#arrondissement), [Officier van Justitie](#officier-van-justitie), [parketten](#parketten)
 
 ### Basisregistratie
 
@@ -181,7 +181,7 @@ Alternatieve aanduiding: *Wet in formele zin*
 
 Bron: Art. 81 [[Gw]]
 
-Generalisatie van: , [Recht op rechtsbijstand](#recht-op-rechtsbijstand), [Recht op vertolking en vertaling](#recht-op-vertolking-en-vertaling), [Spreekrecht](#spreekrecht)
+Generalisatie van: [Recht op rechtsbijstand](#recht-op-rechtsbijstand), [Recht op vertolking en vertaling](#recht-op-vertolking-en-vertaling), , [Spreekrecht](#spreekrecht)
 
 Gerelateerd: [Regering](#regering)
 
@@ -217,7 +217,7 @@ Alternatieve aanduiding: *Voorlopige Hechtenis*
 
 Bron: Afdeling 5.4.6 [[Sv]], art. 2.5.44 [[Sv]]
 
-Gerelateerd: [rechtbank](#rechtbank), [Bewaring](#bewaring), [Verdachte](#verdachte), [Gevangenneming](#gevangenneming), [Rechter-Commissaris](#rechter-commissaris), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Bewaring](#bewaring), [Verdachte](#verdachte), [Gevangenneming](#gevangenneming), [Rechter-Commissaris](#rechter-commissaris), [rechtbank](#rechtbank), [Officier van Justitie](#officier-van-justitie)
 
 ### Gevangenneming
 
@@ -229,7 +229,7 @@ Alternatieve aanduiding: *Voorlopige Hechtenis*
 
 Bron: art. 2.5.44 [[Sv]], Afdeling 5.4.6 [[Sv]]
 
-Gerelateerd: [Verdachte](#verdachte), [rechtbank](#rechtbank), [Vordering](#vordering), [Rechter-Commissaris](#rechter-commissaris), [Bewaring](#bewaring), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Verdachte](#verdachte), [Vordering](#vordering), [Rechter-Commissaris](#rechter-commissaris), [Bewaring](#bewaring), [Officier van Justitie](#officier-van-justitie), [rechtbank](#rechtbank)
 
 ### Gewoon opsporingsambtenaar
 
@@ -244,7 +244,7 @@ Bron: Art. 1.3.10 [[Sv]]
 
 Onderdeel van: [Ambtenaar](#ambtenaar)
 
-Gerelateerd: [strafbare feit](#strafbare-feit), [opsporing](#opsporing)
+Gerelateerd: [opsporing](#opsporing), [strafbare feit](#strafbare-feit)
 
 Voorbeeld(en): 
 
@@ -266,7 +266,7 @@ Alternatieve aanduiding: *Cassatierechter*
 
 Toelichting: De Hoge Raad beoordeelt niet de feiten; alleen of het recht goed is toegepast.
 
-Bron: , , 79 Wet RO en art. 17 [[RV]]
+Bron: , 79 Wet RO en art. 17 [[RV]], 
 
 Gerelateerd: [Hoger beroep](#hoger-beroep)
 
@@ -304,7 +304,7 @@ Bron: Art. 1.3.13 [[Sv]], art. 2 [[Pw2012]]
 
 Onderdeel van: [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar)
 
-Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Ministeriële regeling](#ministeriële-regeling), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Ministeriële regeling](#ministeriële-regeling), [opsporingsambtenaar](#opsporingsambtenaar), [Officier van Justitie](#officier-van-justitie)
 
 ### Koninklijk besluit
 
@@ -338,7 +338,7 @@ Alternatieve aanduiding: *MR*
 
 Toelichting: Een ministeriële regeling is vaak een verdere uitwerking van een AMvB
 
-Bron: , Art. 89 [[Gw]], art. 47 [[Gw]], , 
+Bron: Art. 89 [[Gw]], , art. 47 [[Gw]], , 
 
 Specialisatie van: [Algemeen verbindend voorschrift](#algemeen-verbindend-voorschrift)
 
@@ -386,7 +386,7 @@ Alternatieve aanduiding: *OvJ*
 
 Bron: 
 
-Gerelateerd: [Rechter](#rechter), [Arrondissementsparket](#arrondissementsparket), [strafvervolgingen](#strafvervolgingen), [Verdachte](#verdachte)
+Gerelateerd: [Rechter](#rechter), [Arrondissementsparket](#arrondissementsparket), [Verdachte](#verdachte), [strafvervolgingen](#strafvervolgingen)
 
 ### Onderzoek ter terechtzitting
 
@@ -416,7 +416,7 @@ Alternatieve aanduiding: *Parket*
 
 Bron: Art. 2.3 [[Sv]]
 
-Gerelateerd: [vervolgen](#vervolgen), [Opsporingsonderzoek](#opsporingsonderzoek), [Verdachte](#verdachte), [strafbare feit](#strafbare-feit)
+Gerelateerd: [strafbare feit](#strafbare-feit), [vervolgen](#vervolgen), [Opsporingsonderzoek](#opsporingsonderzoek), [Verdachte](#verdachte)
 
 ### Opheffing voorlopige hechtenis
 
@@ -547,7 +547,7 @@ Alternatieve aanduiding: *Advocaat (maar dan verkeerd gebruikt in de verwijzing 
 Toelichting: "raadsman of advocaat" in art. 1.2.18 Sv, verschil: een raadsman (indien het de verdachte betreft) of advocaat 
 (indien het een andere procespartij betreft) p. 120 MvT
 
-Bron: art. 1.4.9 lid 2 [[Sv]], , Art. 1.4.9 lid 1 [[Sv]]
+Bron: art. 1.4.9 lid 2 [[Sv]], Art. 1.4.9 lid 1 [[Sv]], 
 
 Gerelateerd: [Verdachte](#verdachte)
 
@@ -591,7 +591,7 @@ Alternatieve aanduiding: *R-C*
 
 > Een rechter-commissaris is belast is met de behandeling van strafzaken in de voorbereidende fase en die toezicht houdt op de voortgang en de rechtmatigheid van het [opsporingsonderzoek](#opsporingsonderzoek). 
 
-Bron: Art. 1.11.8   [[Sv]], 
+Bron: , Art. 1.11.8   [[Sv]]
 
 Gerelateerd: [Opsporingsonderzoek](#opsporingsonderzoek)
 
@@ -649,7 +649,7 @@ Toelichting: Een opsporingsambtenaar spreekt iemand aan en vraagt om zijn/haar p
 
 Bron: Art. 2.5.3 [[Sv]], art. 8 lid 1 [[Pw2012]]
 
-Gerelateerd: [opsporingsambtenaar](#opsporingsambtenaar), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), [Aanhouding](#aanhouding)
+Gerelateerd: [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Buitengewoon opsporingsambtenaar](#buitengewoon-opsporingsambtenaar), [Aanhouding](#aanhouding), [opsporingsambtenaar](#opsporingsambtenaar)
 
 ### Strafbaar feit
 
@@ -667,7 +667,7 @@ Gerelateerd: [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Buiteng
 
 > Een strafbeschikking is een in een document opgesteld door een [officier van justitie](#officier-van-justitie) waarin hij zelf straffen en maatregelen aan een [verdachte](#verdachte) oplegt, zonder tussenkomst van een strafrechter. 
 
-Bron: art. 3.3.1 [[Sv]], 
+Bron: , art. 3.3.1 [[Sv]]
 
 Gerelateerd: [Rechter](#rechter), [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
 
@@ -739,7 +739,7 @@ Bron: art. 2.3.6 [[Sv]], HR 2 oktober 1979, NJ 1980, 243, [[ECLINLPHR1979AB7396]
 
 Onderdeel van: [Vervolging](#vervolging)
 
-Gerelateerd: [Strafbaar feit](#strafbaar-feit), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Verdachte](#verdachte), [Strafbare feiten](#strafbare-feiten), [opsporingsambtenaar](#opsporingsambtenaar)
+Gerelateerd: [Strafbaar feit](#strafbaar-feit), [Strafbare feiten](#strafbare-feiten), [opsporingsambtenaar](#opsporingsambtenaar), [Gewoon opsporingsambtenaar](#gewoon-opsporingsambtenaar), [Verdachte](#verdachte)
 
 ### Verklaring
 

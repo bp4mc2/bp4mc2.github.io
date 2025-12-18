@@ -63,23 +63,23 @@
 |Boek 1|Aanhouding| |
 |Boek 1|Advocaat-Generaal|Art. 138, 111 en 122 Wet RO|
 |Boek 1|Arrondissement|Art. 3 RI. |
-|Boek 1|Arrondissementsparket|Art. 2 RO|
 |Boek 1|Arrondissementsparket|Art. 9 - 13 RO|
+|Boek 1|Arrondissementsparket|Art. 2 RO|
 |Boek 1|Cassatie|Art. 78 RO en Art. 79 Wet RO|
 |Boek 1|Feitelijke verblijfplaats|Art. 1.10 bw|
-|Boek 1|Hoge Raad|78|
 |Boek 1|Hoge Raad|Art. 72|
+|Boek 1|Hoge Raad|78|
 |Boek 1|Hoger beroep|Art. 332 Rv|
 |Boek 1|Hoger beroep| Artikel 76 Wet RO|
 |Boek 1|Hoofdofficier van Justitie|Art. 136 - 138 Wet RO|
 |Boek 1|Koninklijk besluit|Begrippenlijst Overheid|
 |Boek 1|Ministeriële regeling| Aanwijzing 3.18 Aanwijzingen|
-|Boek 1|Ministeriële regeling|voor de|
 |Boek 1|Ministeriële regeling|regelgeving|
+|Boek 1|Ministeriële regeling|voor de|
 |Boek 1|Officier van Justitie|Art. 125, 125a en 136 Wet RO|
-|Boek 1|Parket|Art. 136 en Art. 138 RO.|
-|Boek 1|Parket|Art. 111|
 |Boek 1|Parket|Art. 125|
+|Boek 1|Parket|Art. 111|
+|Boek 1|Parket|Art. 136 en Art. 138 RO.|
 |Boek 1|Procureur-Generaal|Art. 111 lid 1 Wet RO|
 |Boek 1|Procureur-Generaal|Art. 122 Wet RO|
 |Boek 1|Raadsheer|Art. 60 Wet RO|
@@ -89,10 +89,10 @@
 |Boek 1|Terechtzitting|Art. 121 gw|
 |Boek 1|Vervolging|MvT 29849 nr. 3 |
 |Boek 1|Voorlopige hechtenis|Titel 5.4|
-|Boek 4|Beeld- en geluidopname als bewijsmiddel|art. 4.2.34 Sv|
 |Boek 4|Beeld- en geluidopname als bewijsmiddel|art. 4.2.31 Sv|
 |Boek 4|Beeld- en geluidopname als bewijsmiddel|art. 4.3.8 Sv|
 |Boek 4|Beeld- en geluidopname als bewijsmiddel|art. 4.1.7 Sv|
+|Boek 4|Beeld- en geluidopname als bewijsmiddel|art. 4.2.34 Sv|
 |Boek 4|Berechting|art. 1.1.7 Sv|
 |Boek 4|Bewijscriterium "buiten redelijke twijfel"|art. 4.3.7 Sv|
 |Boek 4|Deskundige|art. 1.7.2 Sv|
@@ -122,34 +122,34 @@
 |Boek 1|Aangewezen raadsman|voorlopige 
 hechtenis||
 |Boek 1|Aangewezen raadsman|rechtsbijstand||
-|Boek 1|Aanhouding|opsporingsambtenaar||
 |Boek 1|Aanhouding|Strafbare feiten||
+|Boek 1|Aanhouding|opsporingsambtenaar||
 |Boek 1|Arrondissementsparket|parketten||
 |Boek 1|Gevangenhouding|rechtbank||
 |Boek 1|Gevangenneming|rechtbank||
-|Boek 1|Gewoon opsporingsambtenaar|opsporing||
 |Boek 1|Gewoon opsporingsambtenaar|strafbare feit||
+|Boek 1|Gewoon opsporingsambtenaar|opsporing||
 |Boek 1|Heterdaad|strafbare feit||
 |Boek 1|Hulpofficier van Justitie|opsporingsambtenaar||
 |Boek 1|Officier van Justitie|strafvervolgingen||
 |Boek 1|Openbaar Ministerie|vervolgen||
 |Boek 1|Openbaar Ministerie|strafbare feit||
 |Boek 1|Staandehouding|opsporingsambtenaar||
-|Boek 1|Verhoor|Strafbare feiten||
 |Boek 1|Verhoor|opsporingsambtenaar||
-|Boek 2|Aanbieder van een communicatiedienst|rechtspersoon||
-|Boek 2|Aanbieder van een communicatiedienst|natuurlijke persoon||
+|Boek 1|Verhoor|Strafbare feiten||
 |Boek 2|Aanbieder van een communicatiedienst|Gegevensverwerking||
+|Boek 2|Aanbieder van een communicatiedienst|natuurlijke persoon||
+|Boek 2|Aanbieder van een communicatiedienst|rechtspersoon||
 |Boek 2|Beslagene|inbeslaggenomen||
-|Boek 2|Bewaarder van inbeslaggenomen voorwerpen|Officier van Justitie|Boek 4 Boek 1|
 |Boek 2|Bewaarder van inbeslaggenomen voorwerpen|officier van justitie||
+|Boek 2|Bewaarder van inbeslaggenomen voorwerpen|Officier van Justitie|Boek 4 Boek 1|
 |Boek 2|Buitenvervolgstelling|verdachte||
 |Boek 2|Buitenvervolgstelling|Verdachte|Boek 4 Boek 1 Boek 3 hfdst 4 en 5|
+|Boek 2|Deskundig onderzoek|deskundige||
 |Boek 2|Deskundig onderzoek|Officier van Justitie|Boek 4 Boek 1|
 |Boek 2|Deskundig onderzoek|officier van justitie||
-|Boek 2|Deskundig onderzoek|deskundige||
-|Boek 2|Digitale-gegevensdrager|Verwerking||
 |Boek 2|Digitale-gegevensdrager|Opslag van gegevens||
+|Boek 2|Digitale-gegevensdrager|Verwerking||
 |Boek 2|Functionaris|opsporingsambtenaar||
 |Boek 2|Functionaris|strafbaar feit||
 |Boek 2|Geautomatiseerd werk|Gegevens verwerken||
@@ -157,52 +157,52 @@ hechtenis||
 |Boek 2|Gebruiker van een communicatiedienst|natuurlijke persoon||
 |Boek 2|Gegeven|Verwerking||
 |Boek 2|Geldende rechtsregels|bevoegd||
-|Boek 2|Gijzeling|Getuige|Boek 4 Boek 1 Boek 3 hfdst 4 en 5|
 |Boek 2|Gijzeling|getuige||
-|Boek 2|Heimelijke bevoegdheid|officier van justitie||
-|Boek 2|Heimelijke bevoegdheid|Officier van Justitie|Boek 4 Boek 1|
+|Boek 2|Gijzeling|Getuige|Boek 4 Boek 1 Boek 3 hfdst 4 en 5|
 |Boek 2|Heimelijke bevoegdheid|opsporingsambtenaar||
-|Boek 2|Hulpofficier van Justitie|politietaak||
-|Boek 2|Hulpofficier van Justitie|Ministeriele regeling||
-|Boek 2|Hulpofficier van Justitie|Onze Minister||
+|Boek 2|Heimelijke bevoegdheid|Officier van Justitie|Boek 4 Boek 1|
+|Boek 2|Heimelijke bevoegdheid|officier van justitie||
+|Boek 2|Hulpofficier van Justitie|Bijzondere opsporingsambtenaar||
 |Boek 2|Hulpofficier van Justitie|opsporingsambtenaar||
 |Boek 2|Hulpofficier van Justitie|officier van justitie||
+|Boek 2|Hulpofficier van Justitie|Onze Minister||
+|Boek 2|Hulpofficier van Justitie|politietaak||
 |Boek 2|Hulpofficier van Justitie|Buitengewoon opsporingsambtenaar|Boek 1|
-|Boek 2|Hulpofficier van Justitie|Bijzondere opsporingsambtenaar||
-|Boek 2|Infiltratie|opsporingsambtenaar||
-|Boek 2|Infiltratie|Misdrijf|Boek 1|
-|Boek 2|Infiltratie|misdrijven||
-|Boek 2|Infiltratie|verdachten||
+|Boek 2|Hulpofficier van Justitie|Ministeriele regeling||
 |Boek 2|Infiltratie|Opsporingsambtenaar||
+|Boek 2|Infiltratie|opsporingsambtenaar||
+|Boek 2|Infiltratie|misdrijven||
+|Boek 2|Infiltratie|Misdrijf|Boek 1|
 |Boek 2|Infiltratie|Verdachte|Boek 4 Boek 1 Boek 3 hfdst 4 en 5|
-|Boek 2|Observatie|opsporingsambtenaar||
+|Boek 2|Infiltratie|verdachten||
 |Boek 2|Observatie|Opsporingsambtenaar||
-|Boek 2|Onderzoek ter plaatse|Officier van Justitie|Boek 4 Boek 1|
+|Boek 2|Observatie|opsporingsambtenaar||
 |Boek 2|Onderzoek ter plaatse|officier van justitie||
+|Boek 2|Onderzoek ter plaatse|Officier van Justitie|Boek 4 Boek 1|
 |Boek 2|Onderzoekshandeling|opsporingsambtenaar||
 |Boek 2|Onderzoekshandeling|Opsporingsambtenaar||
 |Boek 2|Ontdekking op heterdaad|strafbaar feit||
 |Boek 2|Ontdekking op heterdaad|Strafbaar feit|Boek 1 Boek 3 hfdst 4 en 5|
 |Boek 2|Opsporingsonderzoek|officier van justitie||
 |Boek 2|Opsporingsonderzoek|redelijk vermoeden||
-|Boek 2|Opsporingsonderzoek|misdrijf||
 |Boek 2|Opsporingsonderzoek|strafbaar feit||
+|Boek 2|Opsporingsonderzoek|misdrijf||
 |Boek 2|Persoonsgegeven|Natuurlijk persoon|Boek 3 hfdst 4 en 5|
 |Boek 2|Persoonsgegeven|natuurlijke persoon||
 |Boek 2|Rechtsbijstand|rechtsbelang||
-|Boek 2|Stelselmatig onderzoek van gegevens|Officier van Justitie|Boek 4 Boek 1|
-|Boek 2|Stelselmatig onderzoek van gegevens|Opsporingsambtenaar||
 |Boek 2|Stelselmatig onderzoek van gegevens|officier van justitie||
 |Boek 2|Stelselmatig onderzoek van gegevens|opsporingsambtenaar||
-|Boek 2|Tegenonderzoek|Verdachte|Boek 4 Boek 1 Boek 3 hfdst 4 en 5|
-|Boek 2|Tegenonderzoek|Deskundige|Boek 4|
+|Boek 2|Stelselmatig onderzoek van gegevens|Opsporingsambtenaar||
+|Boek 2|Stelselmatig onderzoek van gegevens|Officier van Justitie|Boek 4 Boek 1|
 |Boek 2|Tegenonderzoek|officier van justitie||
 |Boek 2|Tegenonderzoek|deskundige||
 |Boek 2|Tegenonderzoek|verdachte||
 |Boek 2|Tegenonderzoek|Officier van Justitie|Boek 4 Boek 1|
+|Boek 2|Tegenonderzoek|Deskundige|Boek 4|
+|Boek 2|Tegenonderzoek|Verdachte|Boek 4 Boek 1 Boek 3 hfdst 4 en 5|
+|Boek 2|Verkennend onderzoek|Opsporingsambtenaar||
 |Boek 2|Verkennend onderzoek|officier van justitie||
 |Boek 2|Verkennend onderzoek|opsporingsambtenaar||
-|Boek 2|Verkennend onderzoek|Opsporingsambtenaar||
 |Boek 2|Verkennend onderzoek|Officier van Justitie|Boek 4 Boek 1|
 |Boek 2|Vrijheidsstraf|voorlopige hechtenis||
 |Boek 2|Vrijheidsstraf|Voorlopige hechtenis|Boek 1|
@@ -227,15 +227,15 @@ hechtenis||
 |Boek 4|Procesinleiding|Voorzitter van de rechtbank||
 |Boek 4|Raadkamer|Strafrechten||
 |Boek 4|Rechter|Strafbaar feit|Boek 1 Boek 3 hfdst 4 en 5|
-|Boek 4|Rechter-commissaris |bevoegdheden||
 |Boek 4|Rechter-commissaris |Strafvordering||
+|Boek 4|Rechter-commissaris |bevoegdheden||
 |Boek 4|Requisitoir|Strafbaar feit|Boek 1 Boek 3 hfdst 4 en 5|
 |Boek 4|Requisitoir|Verdenking||
 |Boek 4|Slachtoffer|Strafbaar feit|Boek 1 Boek 3 hfdst 4 en 5|
 |Boek 4|Spreekrecht|Delict||
 |Boek 4|Spreekrecht|Terechtzitting|Boek 1|
-|Boek 4|Tenlastelegging|Schuld|Boek 1|
 |Boek 4|Tenlastelegging|Strafbaar feit|Boek 1 Boek 3 hfdst 4 en 5|
+|Boek 4|Tenlastelegging|Schuld|Boek 1|
 |Boek 4|Verdachte|Strafbaar feit|Boek 1 Boek 3 hfdst 4 en 5|
 |Boek 4|Verdachte|Schuld|Boek 1|
 |Boek 4|Verklaring van de verdachte|Terechtzitting|Boek 1|

@@ -32,13 +32,13 @@ Omvat:
 
 ### Berechting
 
-> Een behandeling van een [rechtszaak](#rechtszaak) door de rechter in [eerste aanleg](#eerste-aanleg) of in [hoger beroep](#hoger-beroep) ter bepaling van de gegrondheid van de tegen een [verdachte](#verdachte) ingestelde [vervolging](#vervolging).
+> Een berechting is een behandeling van een [rechtszaak](#rechtszaak) door de [rechter](#rechter) in [eerste aanleg](#eerste-aanleg) of in [hoger beroep](#hoger-beroep) ter bepaling van de gegrondheid van de tegen een [verdachte](#verdachte) ingestelde [vervolging](#vervolging).
 
 Bron: 
 
 Onderdeel van: [Eerste aanleg](#eerste-aanleg), [Hoger beroep](#hoger-beroep), [Rechtszaak](#rechtszaak)
 
-Gerelateerd: [Verdachte](#verdachte), [Vervolging](#vervolging)
+Gerelateerd: [Rechter](#rechter), [Verdachte](#verdachte), [Vervolging](#vervolging)
 
 ### Bewijscriterium "buiten redelijke twijfel"
 
@@ -138,7 +138,7 @@ Bron:
 
 Specialisatie van: [Berechting](#berechting)
 
-Gerelateerd: [Vonnis](#vonnis), [Rechtbank](#rechtbank), [Rechtspraak](#rechtspraak)
+Gerelateerd: [Vonnis](#vonnis), [Rechtspraak](#rechtspraak), [Rechtbank](#rechtbank)
 
 ### Pleidooi
 
@@ -154,7 +154,7 @@ Toelichting: Een procesinleiding bevat de volgende onderdelen: een opgave van he
 
 Bron: 
 
-Gerelateerd: [Berechting](#berechting), [Voorzitter van de rechtbank](#voorzitter-van-de-rechtbank), [Rechtszaak](#rechtszaak), [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
+Gerelateerd: [Berechting](#berechting), [Rechtszaak](#rechtszaak), [Voorzitter van de rechtbank](#voorzitter-van-de-rechtbank), [Verdachte](#verdachte), [Officier van Justitie](#officier-van-justitie)
 
 ### Raadkamer
 
@@ -206,11 +206,11 @@ Gerelateerd: [Strafbaar feit](#strafbaar-feit), [Slachtoffer](#slachtoffer), [Re
 
 Bron: 
 
-Gerelateerd: [Rechter](#rechter), [Strafvordering](#strafvordering), [bevoegdheden](#bevoegdheden)
+Gerelateerd: [Rechter](#rechter), [bevoegdheden](#bevoegdheden), [Strafvordering](#strafvordering)
 
 ### Rechtszaak
 
-> Een rechtszaak is een proces waarbij een [rechter](#rechter) onderzoekt of een [verdachte](#verdachte) jegens een [slachtoffer](#slachtoffer) een [strafbaar feit]() heeft gepleegd.
+> Een rechtszaak is een proces waarbij een [rechter](#rechter) onderzoekt of een [verdachte](#verdachte) jegens een [slachtoffer](#slachtoffer) een [strafbaar feit]() heeft gepleegd. 
 
 Specialisatie van: [Rechter](#rechter)
 
@@ -224,7 +224,7 @@ Specialisatie van: [Officier van Justitie](#officier-van-justitie)
 
 Omvat: 
 
-Gerelateerd: [Verdachte](#verdachte), [Strafbaar feit](#strafbaar-feit), [Verdenking](#verdenking)
+Gerelateerd: [Verdenking](#verdenking), [Verdachte](#verdachte), [Strafbaar feit](#strafbaar-feit)
 
 ### Slachtoffer
 
@@ -244,7 +244,7 @@ Bron:
 
 Specialisatie van: 
 
-Gerelateerd: [Slachtoffer](#slachtoffer), [Terechtzitting](#terechtzitting), [Delict](#delict), [Verdachte](#verdachte)
+Gerelateerd: [Delict](#delict), [Terechtzitting](#terechtzitting), [Slachtoffer](#slachtoffer), [Verdachte](#verdachte)
 
 ### Tenlastelegging
 
