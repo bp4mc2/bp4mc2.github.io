@@ -14,23 +14,8 @@
       <rect x="-328" width="2212" height="1499" y="-1134" clip-path="url(#clipPath2)" stroke="none"/>
     </g>
     <g id="y.node.0">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="45.4814" ry="33" cx="1134.5" cy="-220.9015" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="45.4814" fill="none" ry="33" cx="1134.5" cy="-220.9015"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="1096.0186" xml:space="preserve" y="-216.3663" stroke="none">Artikel 31 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.1">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel52Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="45.4814" ry="33" cx="1137.0703" cy="-831.3793" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -43,24 +28,24 @@
         </g>
       </a>
     </g>
-    <g id="y.node.2">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel50lid1Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="60.3174" ry="33" cx="117" cy="-526.5" stroke="none"/>
+    <g id="y.node.1">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="45.4814" ry="33" cx="1134.5" cy="-220.9015" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="117" cy="-526.5"/>
+          <ellipse rx="45.4814" fill="none" ry="33" cx="1134.5" cy="-220.9015"/>
         </g>
         <g>
           <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="63.6826" xml:space="preserve" y="-521.9648" stroke="none">Artikel 50 lid 1 Pw</text>
+            <text x="1096.0186" xml:space="preserve" y="-216.3663" stroke="none">Artikel 31 Pw</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.node.3">
+    <g id="y.node.2">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel50Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="45.4814" ry="33" cx="595.5" cy="-406.5" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -73,9 +58,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.4">
+    <g id="y.node.3">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel50lid2Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="-252" cy="-304.5" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -88,39 +73,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.5">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel34Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="45.4814" ry="33" cx="588" cy="-757.5" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="45.4814" fill="none" ry="33" cx="588" cy="-757.5"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="549.5186" xml:space="preserve" y="-752.9648" stroke="none">Artikel 34 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.6">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel32Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="45.4814" ry="33" cx="1229" cy="-979.5" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="45.4814" fill="none" ry="33" cx="1229" cy="-979.5"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="1190.5186" xml:space="preserve" y="-974.9648" stroke="none">Artikel 32 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.7">
+    <g id="y.node.4">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel33Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="45.4814" ry="33" cx="1249.5333" cy="-883.5" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -133,24 +88,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.8">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36Pw" xlink:show="new">
-        <g fill="rgb(0,204,255)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(0,204,255)">
-          <ellipse rx="45.4814" ry="33" cx="683" cy="-899.5" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="45.4814" fill="none" ry="33" cx="683" cy="-899.5"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="644.5186" xml:space="preserve" y="-894.9648" stroke="none">Artikel 36 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.9">
+    <g id="y.node.5">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="45.4814" ry="33" cx="1485.316" cy="95.8036" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -163,9 +103,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.10">
+    <g id="y.node.6">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Participatiewet" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(208,208,208)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(208,208,208)">
           <ellipse rx="49.4922" ry="33" cx="1819" cy="-575.5" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -178,9 +118,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.11">
+    <g id="y.node.7">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36lid2Pw" xlink:show="new">
-        <g fill="rgb(0,204,255)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(0,204,255)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="241" cy="-795.5" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -193,39 +133,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.12">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36lid1Pw" xlink:show="new">
-        <g fill="rgb(0,204,255)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(0,204,255)">
-          <ellipse rx="60.3174" ry="33" cx="426.5" cy="-918.5" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="426.5" cy="-918.5"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="373.1826" xml:space="preserve" y="-913.9648" stroke="none">Artikel 36 lid 1 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.13">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid4Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="60.3174" ry="33" cx="924.3672" cy="-289.1778" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="924.3672" cy="-289.1778"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="871.0498" xml:space="preserve" y="-284.6426" stroke="none">Artikel 31 lid 4 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.14">
+    <g id="y.node.8">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid5Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="1004.6308" cy="-42.1518" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -238,9 +148,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.15">
+    <g id="y.node.9">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36lid4Pw" xlink:show="new">
-        <g fill="rgb(0,204,255)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(0,204,255)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="752.2465" cy="-657.8108" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -253,39 +163,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.16">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid6Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="60.3174" ry="33" cx="1264.3692" cy="-42.1518" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="1264.3692" cy="-42.1518"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="1211.0519" xml:space="preserve" y="-37.6167" stroke="none">Artikel 31 lid 6 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.17">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36lid3Pw" xlink:show="new">
-        <g fill="rgb(0,204,255)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(0,204,255)">
-          <ellipse rx="60.3174" ry="33" cx="241" cy="-1085.5" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="241" cy="-1085.5"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="187.6826" xml:space="preserve" y="-1080.9648" stroke="none">Artikel 36 lid 3 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.18">
+    <g id="y.node.10">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid1Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="1344.6328" cy="-289.1778" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -298,24 +178,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.19">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid2Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="60.3174" ry="33" cx="186.602" cy="-220.9015" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="186.602" cy="-220.9015"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="133.2846" xml:space="preserve" y="-216.3663" stroke="none">Artikel 31 lid 2 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.20">
+    <g id="y.node.11">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37lid1Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="426.5" cy="64.4738" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -328,9 +193,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.21">
+    <g id="y.node.12">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid3Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="1134.5" cy="-441.8482" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -343,9 +208,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.22">
+    <g id="y.node.13">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37lid3Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="1264.3692" cy="95.8036" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -358,39 +223,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.23">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37lid2Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="60.3174" ry="33" cx="1485.316" cy="316.7503" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="1485.316" cy="316.7503"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="1431.9985" xml:space="preserve" y="321.2855" stroke="none">Artikel 37 lid 2 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.24">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel43Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="45.4814" ry="33" cx="1136" cy="-719" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="45.4814" fill="none" ry="33" cx="1136" cy="-719"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="1097.5186" xml:space="preserve" y="-714.4648" stroke="none">Artikel 43 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.25">
+    <g id="y.node.14">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37lid5Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="1706.2627" cy="95.8036" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -403,24 +238,24 @@
         </g>
       </a>
     </g>
-    <g id="y.node.26">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37lid4Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="60.3174" ry="33" cx="1485.316" cy="-125.1431" stroke="none"/>
+    <g id="y.node.15">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel43Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="45.4814" ry="33" cx="1136" cy="-719" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="1485.316" cy="-125.1431"/>
+          <ellipse rx="45.4814" fill="none" ry="33" cx="1136" cy="-719"/>
         </g>
         <g>
           <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="1431.9985" xml:space="preserve" y="-120.608" stroke="none">Artikel 37 lid 4 Pw</text>
+            <text x="1097.5186" xml:space="preserve" y="-714.4648" stroke="none">Artikel 43 Pw</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.node.27">
+    <g id="y.node.16">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel49Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="45.4814" ry="33" cx="1134.9297" cy="-606.6207" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -433,9 +268,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.28">
+    <g id="y.node.17">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel34lid3Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="-252" cy="-636.5" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -448,24 +283,9 @@
         </g>
       </a>
     </g>
-    <g id="y.node.29">
-      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel34lid2Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
-          <ellipse rx="60.3174" ry="33" cx="-68" cy="-574.5" stroke="none"/>
-        </g>
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <ellipse rx="60.3174" fill="none" ry="33" cx="-68" cy="-574.5"/>
-        </g>
-        <g>
-          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-            <text x="-121.3174" xml:space="preserve" y="-569.9648" stroke="none">Artikel 34 lid 2 Pw</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.node.30">
+    <g id="y.node.18">
       <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel34lid1Pw" xlink:show="new">
-        <g fill="rgb(255,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(255,204,0)">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
           <ellipse rx="60.3174" ry="33" cx="573.1641" cy="-1019.5" stroke="none"/>
         </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
@@ -478,72 +298,182 @@
         </g>
       </a>
     </g>
-    <g id="y.edge.2">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+    <g id="y.node.19">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel50lid1Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="117" cy="-526.5" stroke="none"/>
+        </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M171.8314 -512.7492 L544.7541 -419.2263"/>
-          <path d="M552.5138 -417.2802 L542.0905 -425.0491 L543.7841 -419.4695 L539.658 -415.3495 Z" stroke="none"/>
+          <ellipse rx="60.3174" fill="none" ry="33" cx="117" cy="-526.5"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.97,0.2433,-0.2433,0.97,669.6347,654.4876)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="63.6826" xml:space="preserve" y="-521.9648" stroke="none">Artikel 50 lid 1 Pw</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.edge.4">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+    <g id="y.node.20">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel34Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="45.4814" ry="33" cx="588" cy="-757.5" stroke="none"/>
+        </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-193.0912 -311.5899 L542.689 -400.144"/>
-          <path d="M550.6317 -401.0999 L538.1202 -404.6302 L541.6961 -400.0245 L539.3151 -394.7018 Z" stroke="none"/>
+          <ellipse rx="45.4814" fill="none" ry="33" cx="588" cy="-757.5"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9928,-0.1195,0.1195,0.9928,481.2744,771.5918)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="549.5186" xml:space="preserve" y="-752.9648" stroke="none">Artikel 34 Pw</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.edge.5">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+    <g id="y.node.21">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel32Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="45.4814" ry="33" cx="1229" cy="-979.5" stroke="none"/>
+        </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-211.4191 -328.9145 L69.5641 -497.9613"/>
-          <path d="M76.4191 -502.0855 L63.559 -500.1836 L68.7072 -497.4458 L68.7142 -491.6148 Z" stroke="none"/>
+          <ellipse rx="45.4814" fill="none" ry="33" cx="1229" cy="-979.5"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.8569,-0.5155,0.5155,0.8569,242.5847,718.6976)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="1190.5186" xml:space="preserve" y="-974.9648" stroke="none">Artikel 32 Pw</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.edge.0">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+    <g id="y.node.22">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="45.4814" ry="33" cx="683" cy="-899.5" stroke="none"/>
+        </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1171.5151 -240.0768 L1772.8138 -551.5737"/>
-          <path d="M1779.9172 -555.2535 L1766.9622 -554.1735 L1771.9259 -551.1137 L1771.562 -545.2941 Z" stroke="none"/>
+          <ellipse rx="45.4814" fill="none" ry="33" cx="683" cy="-899.5"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.8879,-0.46,0.46,0.8879,1776.3856,740.2824)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="644.5186" xml:space="preserve" y="-894.9648" stroke="none">Artikel 36 Pw</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.edge.1">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+    <g id="y.node.23">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36lid1Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="426.5" cy="-918.5" stroke="none"/>
+        </g>
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1169.5308 -808.2647 L1361.39 -671.645 L1763.9668 -587.0626"/>
-          <path d="M1771.7959 -585.4177 L1761.0803 -592.7783 L1762.9882 -587.2682 L1759.0242 -582.9919 Z" stroke="none"/>
+          <ellipse rx="60.3174" fill="none" ry="33" cx="426.5" cy="-918.5"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.8146,0.58,-0.58,0.8146,1600.1814,387.7009)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="373.1826" xml:space="preserve" y="-913.9648" stroke="none">Artikel 36 lid 1 Pw</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.node.24">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid4Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="924.3672" cy="-289.1778" stroke="none"/>
+        </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <ellipse rx="60.3174" fill="none" ry="33" cx="924.3672" cy="-289.1778"/>
+        </g>
+        <g>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="871.0498" xml:space="preserve" y="-284.6426" stroke="none">Artikel 31 lid 4 Pw</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.node.25">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid6Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="1264.3692" cy="-42.1518" stroke="none"/>
+        </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <ellipse rx="60.3174" fill="none" ry="33" cx="1264.3692" cy="-42.1518"/>
+        </g>
+        <g>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="1211.0519" xml:space="preserve" y="-37.6167" stroke="none">Artikel 31 lid 6 Pw</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.node.26">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel36lid3Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="241" cy="-1085.5" stroke="none"/>
+        </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <ellipse rx="60.3174" fill="none" ry="33" cx="241" cy="-1085.5"/>
+        </g>
+        <g>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="187.6826" xml:space="preserve" y="-1080.9648" stroke="none">Artikel 36 lid 3 Pw</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.node.27">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel31lid2Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="186.602" cy="-220.9015" stroke="none"/>
+        </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <ellipse rx="60.3174" fill="none" ry="33" cx="186.602" cy="-220.9015"/>
+        </g>
+        <g>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="133.2846" xml:space="preserve" y="-216.3663" stroke="none">Artikel 31 lid 2 Pw</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.node.28">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37lid2Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="1485.316" cy="316.7503" stroke="none"/>
+        </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <ellipse rx="60.3174" fill="none" ry="33" cx="1485.316" cy="316.7503"/>
+        </g>
+        <g>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="1431.9985" xml:space="preserve" y="321.2855" stroke="none">Artikel 37 lid 2 Pw</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.node.29">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel37lid4Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="1485.316" cy="-125.1431" stroke="none"/>
+        </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <ellipse rx="60.3174" fill="none" ry="33" cx="1485.316" cy="-125.1431"/>
+        </g>
+        <g>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="1431.9985" xml:space="preserve" y="-120.608" stroke="none">Artikel 37 lid 4 Pw</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.node.30">
+      <a target="_blank" xlink:type="simple" xlink:href="http://example.org/doc#Artikel34lid2Pw" xlink:show="new">
+        <g fill="rgb(160,160,160)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke="rgb(160,160,160)">
+          <ellipse rx="60.3174" ry="33" cx="-68" cy="-574.5" stroke="none"/>
+        </g>
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <ellipse rx="60.3174" fill="none" ry="33" cx="-68" cy="-574.5"/>
+        </g>
+        <g>
+          <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+            <text x="-121.3174" xml:space="preserve" y="-569.9648" stroke="none">Artikel 34 lid 2 Pw</text>
           </g>
         </g>
       </a>
@@ -551,13 +481,69 @@
     <g id="y.edge.3">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M-193.0912 -311.5899 L542.689 -400.144"/>
+          <path d="M550.6317 -401.0999 L538.1202 -404.6302 L541.6961 -400.0245 L539.3151 -394.7018 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9928,-0.1195,0.1195,0.9928,463.1736,773.7703)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.0">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M1177.4692 -816.2205 L1768.3784 -594.4946"/>
+          <path d="M1775.8685 -591.6841 L1766.39 -600.5812 L1767.4421 -594.8459 L1762.8768 -591.2186 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9363,0.3513,-0.3513,0.9363,1766.7491,406.1355)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.1">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M1171.5151 -240.0768 L1772.8138 -551.5737"/>
+          <path d="M1779.9172 -555.2535 L1766.9622 -554.1735 L1771.9259 -551.1137 L1771.562 -545.2941 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.8879,-0.46,0.46,0.8879,1760.1974,748.6686)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.2">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
           <path fill="none" d="M640.179 -412.6714 L1762.6121 -567.7112"/>
           <path d="M1770.5369 -568.8058 L1757.9656 -572.1169 L1761.6215 -567.5744 L1759.3339 -562.2109 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9906,-0.1368,0.1368,0.9906,1507.2499,637.7151)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9906,-0.1368,0.1368,0.9906,1489.1899,640.2097)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.7">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M1285.9984 -863.7776 L1773.5265 -600.0947"/>
+          <path d="M1780.5632 -596.2888 L1772.3868 -606.3955 L1772.6469 -600.5704 L1767.6295 -597.5996 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.8796,0.4757,-0.4757,0.8796,1826.558,374.8792)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -565,41 +551,13 @@
     <g id="y.edge.8">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M632.5657 -750.9111 L1762.7675 -583.8138"/>
-          <path d="M1770.6814 -582.6438 L1759.5417 -589.3451 L1761.7782 -583.9601 L1758.0791 -579.4526 Z" stroke="none"/>
+          <path fill="none" d="M1500.7463 64.7608 L1799.8688 -537.0118"/>
+          <path d="M1803.4297 -544.1756 L1793.611 -535.6555 L1799.4237 -536.1163 L1802.5657 -531.2043 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9892,0.1463,-0.1463,0.9892,1506.1001,454.5797)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.9">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1262.0774 -956.8505 L1777.8713 -603.6627"/>
-          <path d="M1784.4722 -599.1428 L1777.3959 -610.0481 L1777.0463 -604.2276 L1771.746 -601.7971 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.8251,0.565,-0.565,0.8251,1834.4983,333.5276)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.10">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1285.9984 -863.7776 L1773.5265 -600.0947"/>
-          <path d="M1780.5632 -596.2888 L1772.3868 -606.3955 L1772.6469 -600.5704 L1767.6295 -597.5996 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.8796,0.4757,-0.4757,0.8796,1842.5942,383.5525)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.4451,-0.8955,0.8955,0.4451,1952.8012,928.8193)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -607,83 +565,55 @@
     <g id="y.edge.11">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M725.3286 -887.4274 L1765.8027 -590.6724"/>
-          <path d="M1773.496 -588.4783 L1763.3275 -596.5778 L1764.8411 -590.9467 L1760.5848 -586.9612 Z" stroke="none"/>
+          <path fill="none" d="M1026.911 -72.8179 L1108.5884 -185.2372"/>
+          <path d="M1113.2906 -191.7093 L1102.1921 -184.94 L1108.0006 -184.4281 L1110.2823 -179.0622 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9617,0.2743,-0.2743,0.9617,1555.4503,380.3554)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.12">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1500.7463 64.7608 L1799.8688 -537.0118"/>
-          <path d="M1803.4297 -544.1756 L1793.611 -535.6555 L1799.4237 -536.1163 L1802.5657 -531.2043 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.4451,-0.8955,0.8955,0.4451,1960.9162,912.4935)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.13">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M296.4103 -808.5377 L631.9492 -887.488"/>
-          <path d="M639.7366 -889.3204 L626.9103 -891.439 L630.9758 -887.259 L629.2008 -881.7048 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.9734,-0.229,0.229,0.9734,771.0164,281.6527)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.14">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M279.3879 -820.954 L381.4446 -888.625"/>
-          <path d="M388.1121 -893.046 L375.3478 -890.5817 L380.6112 -888.0724 L380.8741 -882.2474 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.8334,-0.5526,0.5526,0.8334,643.8606,277.9836)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.5878,-0.809,0.809,0.5878,1364.826,1032.1105)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
     </g>
     <g id="y.edge.15">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M486.272 -914.0724 L629.7756 -903.4426"/>
-          <path d="M637.7537 -902.8516 L626.1559 -908.7244 L628.7783 -903.5164 L625.4171 -898.7517 Z" stroke="none"/>
+          <path fill="none" d="M798.7874 -678.8023 L1091.1511 -810.6682"/>
+          <path d="M1098.4436 -813.9573 L1085.4491 -813.5814 L1090.2395 -810.257 L1089.5605 -804.4657 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9973,0.0739,-0.0739,0.9973,865.9167,214.6618)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9116,-0.4111,0.4111,0.9116,1257.7194,386.197)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
     </g>
     <g id="y.edge.16">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M455.5196 -889.5703 L555.5703 -789.8293"/>
-          <path d="M561.2358 -784.1813 L556.2675 -796.1944 L554.8621 -790.5354 L549.2074 -789.1124 Z" stroke="none"/>
+          <path fill="none" d="M1292.7717 -272.3271 L1183.6179 -236.8608"/>
+          <path d="M1176.0095 -234.3887 L1188.9673 -233.3416 L1184.5691 -237.1698 L1185.8771 -242.8522 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.7082,0.706,-0.706,0.7082,830.707,278.6691)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.9511,-0.309,0.309,0.9511,1516.2414,886.1039)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.5">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M-209.2204 -281.2361 L376.6924 37.3881"/>
+          <path d="M383.7204 41.21 L375.5671 31.0846 L375.8139 36.9103 L370.7897 39.8696 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.8785,0.4777,-0.4777,0.8785,401.6278,996.2588)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -691,13 +621,13 @@
     <g id="y.edge.17">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M976.2282 -272.3271 L1085.3821 -236.8608"/>
-          <path d="M1092.9905 -234.3887 L1083.1229 -242.8522 L1084.4309 -237.1698 L1080.0327 -233.3416 Z" stroke="none"/>
+          <path fill="none" d="M486.7294 66.256 L1431.8757 94.2224"/>
+          <path d="M1439.8722 94.459 L1428.0253 89.1062 L1430.8761 94.1928 L1427.7296 99.1019 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9511,0.309,-0.309,0.9511,1343.887,865.0259)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9996,0.0296,-0.0296,0.9996,1248.3923,1204.0175)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -705,13 +635,13 @@
     <g id="y.edge.18">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1026.911 -72.8179 L1108.5884 -185.2372"/>
-          <path d="M1113.2906 -191.7093 L1102.1921 -184.94 L1108.0006 -184.4281 L1110.2823 -179.0622 Z" stroke="none"/>
+          <path fill="none" d="M1134.5 -408.8482 L1134.5 -261.9015"/>
+          <path d="M1134.5 -253.9015 L1139.5 -265.9015 L1134.5 -262.9015 L1129.5 -265.9015 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.5878,-0.809,0.809,0.5878,1375.5422,1017.361)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0,-1,1,0,1453.4336,845.8459)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -719,111 +649,111 @@
     <g id="y.edge.19">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M742.9057 -690.4127 L694.4604 -859.5002"/>
-          <path d="M692.257 -867.1907 L690.7555 -854.2777 L694.7358 -858.5388 L700.3687 -857.032 Z" stroke="none"/>
+          <path fill="none" d="M1324.6866 95.8036 L1431.8345 95.8036"/>
+          <path d="M1439.8345 95.8036 L1427.8345 90.8036 L1430.8345 95.8036 L1427.8345 100.8036 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.2754,0.9613,-0.9613,0.2754,1047.4562,328.8247)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(1,0,0,1,328,1134)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="1339.0399" width="86.4414" height="18.1328" y="86.7372" stroke="none"/>
+            <text fill="black" x="1341.0398" xml:space="preserve" y="100.3388" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.20">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M1645.9453 95.8036 L1538.7974 95.8036"/>
+          <path d="M1530.7974 95.8036 L1542.7974 100.8036 L1539.7974 95.8036 L1542.7974 90.8036 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(1,0,-0,1,1873.1506,1220.7372)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.13">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M810.1547 -667.0442 L1083.6783 -710.6573"/>
+          <path d="M1091.5785 -711.9171 L1078.9409 -714.9651 L1082.6908 -710.4999 L1080.5155 -705.0898 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9875,-0.1575,0.1575,0.9875,1257.932,438.6764)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.21">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M1179.6868 -709.8213 L1763.9668 -587.0626"/>
+          <path d="M1771.7959 -585.4177 L1761.0803 -592.7783 L1762.9882 -587.2682 L1759.0242 -582.9919 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9786,0.2056,-0.2056,0.9786,1763.0616,468.5692)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.14">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M810.838 -649.9732 L1082.2727 -613.6644"/>
+          <path d="M1090.202 -612.6038 L1078.9709 -619.1506 L1081.2815 -613.797 L1077.645 -609.2389 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9912,0.1326,-0.1326,0.9912,1259.952,491.0806)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
     </g>
     <g id="y.edge.22">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M811.2911 -664.5542 L910.94 -675.935 L1097.4609 -804.1514"/>
-          <path d="M1104.0536 -808.6832 L1091.3323 -806.0059 L1096.637 -803.5849 L1096.9971 -797.7651 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.9935,-0.1135,0.1135,0.9935,1184.0609,455.2073)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.23">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1242.089 -72.8179 L1160.4116 -185.2372"/>
-          <path d="M1155.7094 -191.7093 L1158.7177 -179.0622 L1160.9994 -184.4281 L1166.8079 -184.94 Z" stroke="none"/>
+          <path fill="none" d="M1180.322 -604.5557 L1761.6309 -578.1099"/>
+          <path d="M1769.6226 -577.7463 L1757.8622 -583.2866 L1760.6318 -578.1554 L1757.4077 -573.2969 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.5878,0.809,-0.809,0.5878,1520.0812,976.9275)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.24">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M288.8105 -1065.3806 L636.283 -919.1592"/>
-          <path d="M643.6567 -916.0562 L634.5355 -925.3192 L635.3613 -919.5471 L630.6568 -916.1021 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.9217,0.3879,-0.3879,0.9217,777.9016,126.5724)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.25">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M272.3249 -1057.2992 L389.2296 -952.0535"/>
-          <path d="M395.1751 -946.7009 L389.6021 -958.4457 L388.4864 -952.7225 L382.9114 -951.0138 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.7432,0.6691,-0.6691,0.7432,656.3314,114.9226)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.26">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1292.7717 -272.3271 L1183.6179 -236.8608"/>
-          <path d="M1176.0095 -234.3887 L1188.9673 -233.3416 L1184.5691 -237.1698 L1185.8771 -242.8522 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.9511,-0.309,0.309,0.9511,1533.5806,880.4701)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.999,0.0454,-0.0454,0.999,1760.1955,531.8271)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
     </g>
     <g id="y.edge.27">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M246.9193 -220.9015 L1081.0186 -220.9015"/>
-          <path d="M1089.0186 -220.9015 L1077.0186 -225.9015 L1080.0186 -220.9015 L1077.0186 -215.9015 Z" stroke="none"/>
+          <path fill="none" d="M629.7789 -1008.1162 L1197.8607 -893.89"/>
+          <path d="M1205.7037 -892.313 L1194.9248 -899.5804 L1196.8804 -894.0872 L1192.9536 -889.7766 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(1,0,0,1,328,1134)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="642.9797" width="49.9785" height="18.1328" y="-229.9679" stroke="none"/>
-            <text fill="black" x="644.9797" xml:space="preserve" y="-216.3663" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9804,0.1971,-0.1971,0.9804,1228.5184,171.0744)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.edge.6">
+    <g id="y.edge.4">
       <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-209.2204 -281.2361 L376.6924 37.3881"/>
-          <path d="M383.7204 41.21 L375.5671 31.0846 L375.8139 36.9103 L370.7897 39.8696 Z" stroke="none"/>
+          <path fill="none" d="M-211.4191 -328.9145 L69.5641 -497.9613"/>
+          <path d="M76.4191 -502.0855 L63.559 -500.1836 L68.7072 -497.4458 L68.7142 -491.6148 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.8785,0.4777,-0.4777,0.8785,406.0057,998.6395)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.8569,-0.5155,0.5155,0.8569,238.3145,721.2666)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -831,13 +761,41 @@
     <g id="y.edge.28">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M486.7294 66.256 L1431.8757 94.2224"/>
-          <path d="M1439.8722 94.459 L1428.0253 89.1062 L1430.8761 94.1928 L1427.7296 99.1019 Z" stroke="none"/>
+          <path fill="none" d="M171.8314 -512.7492 L544.7541 -419.2263"/>
+          <path d="M552.5138 -417.2802 L542.0905 -425.0491 L543.7841 -419.4695 L539.658 -415.3495 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9996,0.0296,-0.0296,0.9996,1266.6158,1204.5567)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.97,0.2433,-0.2433,0.97,651.9509,650.0527)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.23">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M-193.6705 -644.9022 L535.4709 -749.9333"/>
+          <path d="M543.3892 -751.0739 L530.799 -754.3119 L534.4811 -749.7907 L532.2247 -744.4141 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9898,-0.1426,0.1426,0.9898,459.3462,433.1199)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.25">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M575.0318 -986.5158 L585.6807 -798.4594"/>
+          <path d="M586.1329 -790.4722 L590.4465 -802.7357 L585.6241 -799.4578 L580.4625 -802.1703 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.0565,0.9984,-0.9984,0.0565,915.1904,201.8359)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -845,13 +803,27 @@
     <g id="y.edge.29">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1134.5 -408.8482 L1134.5 -261.9015"/>
-          <path d="M1134.5 -253.9015 L1139.5 -265.9015 L1134.5 -262.9015 L1129.5 -265.9015 Z" stroke="none"/>
+          <path fill="none" d="M632.5657 -750.9111 L1762.7675 -583.8138"/>
+          <path d="M1770.6814 -582.6438 L1759.5417 -589.3451 L1761.7782 -583.9601 L1758.0791 -579.4526 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0,-1,1,0,1453.4336,827.6144)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9892,0.1463,-0.1463,0.9892,1488.0647,451.9133)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.26">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M633.1101 -1015.8438 L1175.6932 -982.7512"/>
+          <path d="M1183.6783 -982.2642 L1172.005 -987.9855 L1174.6951 -982.8121 L1171.3962 -978.004 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9981,0.0609,-0.0609,0.9981,1216.6533,124.6587)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -859,13 +831,41 @@
     <g id="y.edge.30">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1324.6866 95.8036 L1431.8345 95.8036"/>
-          <path d="M1439.8345 95.8036 L1427.8345 90.8036 L1430.8345 95.8036 L1427.8345 100.8036 Z" stroke="none"/>
+          <path fill="none" d="M1262.0774 -956.8505 L1777.8713 -603.6627"/>
+          <path d="M1784.4722 -599.1428 L1777.3959 -610.0481 L1777.0463 -604.2276 L1771.746 -601.7971 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(1,0,0,1,328,1134)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="1357.2713" width="49.9785" height="18.1328" y="86.7372" stroke="none"/>
-            <text fill="black" x="1359.2712" xml:space="preserve" y="100.3388" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.8251,0.565,-0.565,0.8251,1819.4555,323.2271)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.9">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M296.4103 -808.5377 L631.9492 -887.488"/>
+          <path d="M639.7366 -889.3204 L626.9103 -891.439 L630.9758 -887.259 L629.2008 -881.7048 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9734,-0.229,0.229,0.9734,753.2696,285.8284)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.12">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M742.9057 -690.4127 L694.4604 -859.5002"/>
+          <path d="M692.257 -867.1907 L690.7555 -854.2777 L694.7358 -858.5388 L700.3687 -857.032 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.2754,0.9613,-0.9613,0.2754,1042.4347,311.2985)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -873,27 +873,27 @@
     <g id="y.edge.31">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1485.3159 283.7503 L1485.3159 136.8036"/>
-          <path d="M1485.3159 128.8036 L1480.3159 140.8036 L1485.3159 137.8036 L1490.3159 140.8036 Z" stroke="none"/>
+          <path fill="none" d="M725.3286 -887.4274 L1765.8027 -590.6724"/>
+          <path d="M1773.496 -588.4783 L1763.3275 -596.5778 L1764.8411 -590.9467 L1760.5848 -586.9612 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0,-1,1,0,1804.2495,1365.2662)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9617,0.2743,-0.2743,0.9617,1537.918,375.355)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
     </g>
-    <g id="y.edge.20">
+    <g id="y.edge.10">
       <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M811.2911 -664.5542 L910.94 -675.935 L1084.1647 -709.0814"/>
-          <path d="M1092.0221 -710.5849 L1079.2963 -713.2405 L1083.1825 -708.8934 L1081.1757 -703.4187 Z" stroke="none"/>
+          <path fill="none" d="M279.3879 -820.954 L381.4446 -888.625"/>
+          <path d="M388.1121 -893.046 L375.3478 -890.5817 L380.6112 -888.0724 L380.8741 -882.2474 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9935,-0.1135,0.1135,0.9935,1184.0609,455.2073)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.8334,-0.5526,0.5526,0.8334,639.7073,280.7375)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -901,27 +901,27 @@
     <g id="y.edge.32">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1179.6868 -709.8213 L1361.39 -671.645 L1763.9668 -587.0626"/>
-          <path d="M1771.7959 -585.4177 L1761.0803 -592.7783 L1762.9882 -587.2682 L1759.0242 -582.9919 Z" stroke="none"/>
+          <path fill="none" d="M486.272 -914.0724 L629.7756 -903.4426"/>
+          <path d="M637.7537 -902.8516 L626.1559 -908.7244 L628.7783 -903.5164 L625.4171 -898.7517 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9786,0.2056,-0.2056,0.9786,1592.5043,432.7347)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9973,0.0739,-0.0739,0.9973,847.7351,213.3151)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
     </g>
     <g id="y.edge.33">
-      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1645.9453 95.8036 L1538.7974 95.8036"/>
-          <path d="M1530.7974 95.8036 L1542.7974 100.8036 L1539.7974 95.8036 L1542.7974 90.8036 Z" stroke="none"/>
+          <path fill="none" d="M455.5196 -889.5703 L555.5703 -789.8293"/>
+          <path d="M561.2358 -784.1813 L556.2675 -796.1944 L554.8621 -790.5354 L549.2074 -789.1124 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(1,0,-0,1,1891.3821,1220.7372)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.7082,0.706,-0.706,0.7082,827.1778,275.1508)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -929,27 +929,13 @@
     <g id="y.edge.34">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1485.3159 -92.1431 L1485.3159 54.8036"/>
-          <path d="M1485.3159 62.8036 L1490.3159 50.8036 L1485.3159 53.8036 L1480.3159 50.8036 Z" stroke="none"/>
+          <path fill="none" d="M976.2282 -272.3271 L1085.3821 -236.8608"/>
+          <path d="M1092.9905 -234.3887 L1083.1229 -242.8522 L1084.4309 -237.1698 L1080.0327 -233.3416 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0,-1,1,0,1804.2495,1144.3195)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.21">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M811.2911 -664.5542 L910.94 -675.935 L1085.4519 -621.9318"/>
-          <path d="M1093.0944 -619.5668 L1083.1088 -627.8907 L1084.4966 -622.2274 L1080.1526 -618.3377 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.9935,-0.1135,0.1135,0.9935,1184.0609,455.2073)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.9511,0.309,-0.309,0.9511,1326.5479,859.392)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -957,13 +943,13 @@
     <g id="y.edge.35">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M1177.2201 -618.7637 L1361.39 -671.645 L1763.9668 -587.0626"/>
-          <path d="M1771.7959 -585.4177 L1761.0803 -592.7783 L1762.9882 -587.2682 L1759.0242 -582.9919 Z" stroke="none"/>
+          <path fill="none" d="M1242.089 -72.8179 L1160.4116 -185.2372"/>
+          <path d="M1155.7094 -191.7093 L1158.7177 -179.0622 L1160.9994 -184.4281 L1166.8079 -184.94 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9612,-0.276,0.276,0.9612,1588.1401,481.9945)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.5878,0.809,-0.809,0.5878,1509.365,962.178)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -971,27 +957,13 @@
     <g id="y.edge.36">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-193.6705 -644.9022 L535.4709 -749.9333"/>
-          <path d="M543.3892 -751.0739 L530.799 -754.3119 L534.4811 -749.7907 L532.2247 -744.4141 Z" stroke="none"/>
+          <path fill="none" d="M288.8105 -1065.3806 L636.283 -919.1592"/>
+          <path d="M643.6567 -916.0562 L634.5355 -925.3192 L635.3613 -919.5471 L630.6568 -916.1021 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9898,-0.1426,0.1426,0.9898,477.3914,430.5205)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
-          </g>
-        </g>
-      </a>
-    </g>
-    <g id="y.edge.7">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
-        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-230.9281 -335.4207 L-93.5771 -536.9684"/>
-          <path d="M-89.0719 -543.5792 L-99.9615 -536.4786 L-94.1402 -536.142 L-91.6979 -530.8472 Z" stroke="none"/>
-        </g>
-        <g>
-          <g stroke-linecap="butt" transform="matrix(0.5631,-0.8264,0.8264,0.5631,151.8055,702.1641)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.9217,0.3879,-0.3879,0.9217,761.0974,119.5009)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -999,13 +971,13 @@
     <g id="y.edge.37">
       <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-200.6418 -619.1945 L-126.9394 -594.36"/>
-          <path d="M-119.3582 -591.8055 L-129.1334 -600.3755 L-127.8871 -594.6794 L-132.3266 -590.8991 Z" stroke="none"/>
+          <path fill="none" d="M272.3249 -1057.2992 L389.2296 -952.0535"/>
+          <path d="M395.1751 -946.7009 L389.6021 -958.4457 L388.4864 -952.7225 L382.9114 -951.0138 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9476,0.3193,-0.3193,0.9476,156.2509,514.9738)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.7432,0.6691,-0.6691,0.7432,652.6278,111.5883)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -1013,41 +985,69 @@
     <g id="y.edge.38">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-14.2647 -589.4902 L537.8423 -743.5078"/>
-          <path d="M545.548 -745.6575 L532.6458 -747.2491 L536.879 -743.2391 L535.3329 -737.6169 Z" stroke="none"/>
+          <path fill="none" d="M246.9193 -220.9015 L1081.0186 -220.9015"/>
+          <path d="M1089.0186 -220.9015 L1077.0186 -225.9015 L1080.0186 -220.9015 L1077.0186 -215.9015 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9632,-0.2687,0.2687,0.9632,568.9116,463.9124)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(1,0,0,1,328,1134)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="624.7482" width="86.4414" height="18.1328" y="-229.9679" stroke="none"/>
+            <text fill="black" x="626.7482" xml:space="preserve" y="-216.3663" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
     </g>
     <g id="y.edge.39">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-13.5006 -560.3596 L54.757 -542.6495"/>
-          <path d="M62.5006 -540.6404 L52.1409 -548.4938 L53.7891 -542.9007 L49.6295 -538.8144 Z" stroke="none"/>
+          <path fill="none" d="M1485.3159 283.7503 L1485.3159 136.8036"/>
+          <path d="M1485.3159 128.8036 L1480.3159 140.8036 L1485.3159 137.8036 L1490.3159 140.8036 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9679,0.2511,-0.2511,0.9679,339.8191,570.8432)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0,-1,1,0,1804.2495,1383.4977)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
     </g>
     <g id="y.edge.40">
-      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+      <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M-45.8925 -543.7964 L159.8199 -258.0972"/>
-          <path d="M164.4945 -251.605 L161.5402 -264.2649 L159.2356 -258.9087 L153.425 -258.4217 Z" stroke="none"/>
+          <path fill="none" d="M1485.3159 -92.1431 L1485.3159 54.8036"/>
+          <path d="M1485.3159 62.8036 L1490.3159 50.8036 L1485.3159 53.8036 L1480.3159 50.8036 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.5843,0.8115,-0.8115,0.5843,385.629,718.461)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0,-1,1,0,1804.2495,1162.551)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.6">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M-230.9281 -335.4207 L-93.5771 -536.9684"/>
+          <path d="M-89.0719 -543.5792 L-99.9615 -536.4786 L-94.1402 -536.142 L-91.6979 -530.8472 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.5631,-0.8264,0.8264,0.5631,148.9991,706.2821)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
+          </g>
+        </g>
+      </a>
+    </g>
+    <g id="y.edge.24">
+      <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
+        <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
+          <path fill="none" d="M-200.6418 -619.1945 L-126.9394 -594.36"/>
+          <path d="M-119.3582 -591.8055 L-129.1334 -600.3755 L-127.8871 -594.6794 L-132.3266 -590.8991 Z" stroke="none"/>
+        </g>
+        <g>
+          <g stroke-linecap="butt" transform="matrix(0.9476,0.3193,-0.3193,0.9476,151.5284,513.3825)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -1055,13 +1055,13 @@
     <g id="y.edge.41">
       <a target="_blank" xlink:type="simple" xlink:href="http://purl.org/dc/terms/isPartOf" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M575.0318 -986.5158 L585.6807 -798.4594"/>
-          <path d="M586.1329 -790.4722 L590.4465 -802.7357 L585.6241 -799.4578 L580.4625 -802.1703 Z" stroke="none"/>
+          <path fill="none" d="M-14.2647 -589.4902 L537.8423 -743.5078"/>
+          <path d="M545.548 -745.6575 L532.6458 -747.2491 L536.879 -743.2391 L535.3329 -737.6169 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.0565,0.9984,-0.9984,0.0565,916.2212,220.0381)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="49.9785" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">isPartOf</text>
+          <g stroke-linecap="butt" transform="matrix(0.9632,-0.2687,0.2687,0.9632,551.3506,468.8113)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="86.4414" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">onderdeel van</text>
           </g>
         </g>
       </a>
@@ -1069,13 +1069,13 @@
     <g id="y.edge.42">
       <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M633.1101 -1015.8438 L1175.6932 -982.7512"/>
-          <path d="M1183.6783 -982.2642 L1172.005 -987.9855 L1174.6951 -982.8121 L1171.3962 -978.004 Z" stroke="none"/>
+          <path fill="none" d="M-13.5006 -560.3596 L54.757 -542.6495"/>
+          <path d="M62.5006 -540.6404 L52.1409 -548.4938 L53.7891 -542.9007 L49.6295 -538.8144 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9981,0.0609,-0.0609,0.9981,1221.6275,124.9621)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.9679,0.2511,-0.2511,0.9679,334.9954,569.5917)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
@@ -1083,13 +1083,13 @@
     <g id="y.edge.43">
       <a target="_blank" xlink:type="simple" xlink:href="http://data.europa.eu/eli/ontology#cites" xlink:show="new">
         <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" transform="matrix(1,0,0,1,328,1134)" stroke-linecap="butt">
-          <path fill="none" d="M629.7789 -1008.1162 L1197.8607 -893.89"/>
-          <path d="M1205.7037 -892.313 L1194.9248 -899.5804 L1196.8804 -894.0872 L1192.9536 -889.7766 Z" stroke="none"/>
+          <path fill="none" d="M-45.8925 -543.7964 L159.8199 -258.0972"/>
+          <path d="M164.4945 -251.605 L161.5402 -264.2649 L159.2356 -258.9087 L153.425 -258.4217 Z" stroke="none"/>
         </g>
         <g>
-          <g stroke-linecap="butt" transform="matrix(0.9804,0.1971,-0.1971,0.9804,1233.404,172.0568)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
-            <rect x="0" width="30.9062" height="18.1328" y="0" stroke="none"/>
-            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">cites</text>
+          <g stroke-linecap="butt" transform="matrix(0.5843,0.8115,-0.8115,0.5843,382.7171,714.4169)" fill="white" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="white" stroke-miterlimit="1.45">
+            <rect x="0" width="40.873" height="18.1328" y="0" stroke="none"/>
+            <text fill="black" x="2" xml:space="preserve" y="13.6016" font-family="sans-serif" stroke="none">citeert</text>
           </g>
         </g>
       </a>
