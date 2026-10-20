@@ -1,0 +1,1013 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta charset="utf-8">
+<meta name="generator" content="ReSpec 37.4.1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+.dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel .marker.cddl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+    
+    
+<title>Normgrammatica</title>
+    
+    
+<style>
+
+      .legislation {
+         margin: 1em 0;
+         padding: 0.5em 1em;
+         background: #eef6ff;
+         border-left: 4px solid #5b9bd5;
+         font-family: Arial, Verdana, sans-serif;
+         font-size: 0.95em;
+         line-height: 1.5;
+      }
+
+      .legislation .lid,
+      .legislation .onderdeel {
+        margin: 0.25em 0;
+      }
+
+      .legislation .lid {
+        padding-left: 2em;
+        text-indent: -1em;
+      }
+
+      .legislation .onderdeel {
+        padding-left: 3em;
+        text-indent: -1em;
+      }
+
+      .legislation .nr {
+        display: inline-block;
+        font-weight: normal;
+      }
+
+      .legislation .lid .nr {
+        width: 1em;
+      }
+
+      .legislation .onderdeel .nr {
+        width: 1em;
+      }
+    
+</style>
+    
+    
+  
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+@media (prefers-color-scheme:dark){
+#references :target{background:color-mix(in srgb, #eaf3ff 15%, transparent)}
+}
+body:has(input[name=color-scheme][value=dark]:checked) #references :target{background:color-mix(in srgb, #eaf3ff 15%, transparent)}
+cite .bibref{font-style:italic}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(:where(#toc>h2,#abstract>h2,#sotd>h2,.head>h2)):has(+a.self-link){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(:where(#toch2))+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.8;text-decoration:none}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§"}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h2,h3)+a.self-link::before{color:var(--heading-text)}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+body:has(input[name=color-scheme][value=light]:checked),head:not(:has(meta[name=color-scheme][content~=dark]))+body{color-scheme:light}
+body:has(input[name=color-scheme][value=dark]:checked){color-scheme:dark}
+</style>
+<meta name="color-scheme" content="light">
+<meta name="description" content="Deze pagina beschrijft het toepassingsprofiel voor het semantische echelon, de eerste verdieping op de tekst. Het gaat daarbij om de intelectuele duiding van de regels zoals op basis van de tekst gelezen zou moeten worden.">
+<style>
+var:hover{text-decoration:underline;cursor:pointer}
+var.respec-hl{color:var(--color,#000);background-color:var(--bg-color);box-shadow:0 0 0 2px var(--bg-color)}
+@media (prefers-color-scheme:dark){
+var.respec-hl{filter:saturate(.9) brightness(.9)}
+}
+var.respec-hl-c1{--bg-color:#f4d200}
+var.respec-hl-c2{--bg-color:#ff87a2}
+var.respec-hl-c3{--bg-color:#96e885}
+var.respec-hl-c4{--bg-color:#3eeed2}
+var.respec-hl-c5{--bg-color:#eacfb6}
+var.respec-hl-c6{--bg-color:#82ddff}
+var.respec-hl-c7{--bg-color:#ffbcf2}
+@media print{
+var.respec-hl{background:0 0;color:#000;box-shadow:unset}
+}
+</style>
+<style>
+var[data-type]{position:relative}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#222}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#222;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specStatus": "base",
+  "shortName": "RV",
+  "subtitle": "Toepassingsprofiel tekstuele echelon met voorbeelden",
+  "postProcess": [
+    null,
+    null,
+    null
+  ],
+  "latestVersion": "https://bp4mc2.org/normgrammatica",
+  "editors": [
+    {
+      "name": "Werkgroep"
+    }
+  ],
+  "authors": [
+    {
+      "name": "MB",
+      "company": "Architolk",
+      "companyURL": "https://www.architolk.nl"
+    }
+  ],
+  "lint": false,
+  "publishISODate": "2026-10-20T00:00:00.000Z",
+  "generatedSubtitle": "20 oktober 2026"
+}</script>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/base.css">
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/dark.css" disabled=""></head>
+  <body class="h-entry informative"><div class="head">
+    
+    <h1 id="title" class="title">Normgrammatica</h1> <h2 id="subtitle" class="subtitle">Toepassingsprofiel tekstuele echelon met voorbeelden</h2>
+    <p id="w3c-state"> <time class="dt-published" datetime="2026-10-20">20 oktober 2026</time></p>
+    <details open="">
+      <summary>Meer informatie over dit document</summary>
+      <dl>
+        
+        <dt>Laatst gepubliceerde versie:</dt><dd>
+                  <a href="https://bp4mc2.org/normgrammatica">https://bp4mc2.org/normgrammatica</a>
+                </dd>
+        
+        
+        
+        
+        
+        
+        
+        <dt>
+                  Redacteur:
+                </dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Werkgroep</span>
+  </dd>
+        
+        <dt>
+                  Auteur:
+                </dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">MB</span> (<a class="p-org org h-org" href="https://www.architolk.nl">Architolk</a>)
+  </dd>
+        
+        
+        
+      </dl>
+    </details>
+    
+    
+    <p class="copyright">
+    </p>
+    <hr title="Separator for header">
+  </div>
+    <section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2><p>Deze pagina beschrijft het toepassingsprofiel voor het semantische echelon, de eerste verdieping op de tekst. Het gaat daarbij om de intelectuele duiding van de regels zoals op basis van de tekst gelezen zou moeten worden.</p>
+<p>Een juridische regel wordt daarbij bepaald door één of meerdere tekstfragment, de <em>bepaling</em> zelf. Voorschrijvende juridische (gedrags)regels zijn daarbij te beschrijven als:</p>
+<p><em>Een primair subject kan/mag/moet een bepaalde handeling jegens een secundair subject met betrekking tot een object onder condities, wat leidt tot een resultaat</em></p>
+<p>De kenmerken van een <strong>voorschrijvende regel</strong> zijn daarbij:</p>
+<ul>
+<li>Het <em>primair subject</em> (iemand, een persoon of organisatie);</li>
+<li>De <em>modaliteit</em> (zoals: kan, mag, moet);</li>
+<li>De <em>handeling</em> die wordt genormeerd;</li>
+<li>Het <em>object</em> dat hierbij betrokken is;</li>
+<li>De <em>condities</em> waaronder de regel van toepassing is;</li>
+<li>Het <em>juridisch effect</em> (het resultaat) dat de regel verbindt aan de handeling.</li>
+</ul>
+<p>Naast voorschrijvende (gedrags)regels, bestaan er ook constitutionele (bevoegdheids)regels. Die regels zijn daarbij te beschrijven als:</p>
+<p><em>Een primair subject is bevoegd om een bepaalde handeling jegens een secundair subject met betrekking tot een object onder condities te verrichten, wat leidt tot een resultaat</em></p>
+<p>Een dergelijke regel wordt ook wel een institutionele regel genoemd. De reden is dat dergelijke regels "instituties" constitueren, ze maken institutionele feiten mogelijk. De kenmerken van een <strong>institutionele regel</strong> zijn:</p>
+<ul>
+<li>Het <em>primair subject</em> (iemand, een persoon of organisatie);</li>
+<li>De <em>modaliteit</em> (zoals: kan of moet);</li>
+<li>De <em>handeling</em> die wordt gemachtigd;</li>
+<li>Het <em>object</em> dat hierbij betrokken is;</li>
+<li>De <em>condities</em> waaronder de regel van toepassing is;</li>
+<li>Het <em>juridisch effect</em> (het resultaat) dat de regel verbindt aan de handeling.</li>
+</ul>
+<p>Een speciale vorm van een institutionele regels is de "van-rechtswege" regel. In dat geval is er geen bevoegdheid nodig. Ook is er geen sprake van een modaliteit. De regel stelt simpel dat onder condities sprake is van een juridisch effect. Er is geen sprake van een handeling of iemand die bevoegd wordt gemaakt.</p>
+<p>Tenslotte kennen we de begripsregel. Ook dit betreft een constitutionele regel. In dit geval ontstaat er geen juridisch effect, maar ontstaat er (slechts) een juridisch begrip. Die regel is te beschrijven als:</p>
+<p><em>Een term heeft definitie en moet onder condities worden begrepen als begrip</em></p>
+<p>De kenmerken van een begripsregel zijn:</p>
+<ul>
+<li>De <em>term</em></li>
+<li>Het <em>begrip</em></li>
+<li>De <em>definitie</em></li>
+<li>De <em>condities</em></li>
+</ul>
+</section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#toepassingsprofiel"><bdi class="secno">1. </bdi>Toepassingsprofiel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#klassen"><bdi class="secno">1.1 </bdi>Klassen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#TExpression"><bdi class="secno">1.1.1 </bdi>eli:Expression</a></li><li class="tocline"><a class="tocxref" href="#TCompoundCondition"><bdi class="secno">1.1.2 </bdi>lg:CompoundCondition</a></li><li class="tocline"><a class="tocxref" href="#TCondition"><bdi class="secno">1.1.3 </bdi>lg:Condition</a></li><li class="tocline"><a class="tocxref" href="#TElementaryCondition"><bdi class="secno">1.1.4 </bdi>lg:ElementaryCondition</a></li><li class="tocline"><a class="tocxref" href="#TAction"><bdi class="secno">1.1.5 </bdi>lomo:Action</a></li><li class="tocline"><a class="tocxref" href="#TConstitutiveRule"><bdi class="secno">1.1.6 </bdi>lomo:ConstitutiveRule</a></li><li class="tocline"><a class="tocxref" href="#TDefinition"><bdi class="secno">1.1.7 </bdi>lomo:Definition</a></li><li class="tocline"><a class="tocxref" href="#TInstitutionalRule"><bdi class="secno">1.1.8 </bdi>lomo:InstitutionalRule</a></li><li class="tocline"><a class="tocxref" href="#TLegalRule"><bdi class="secno">1.1.9 </bdi>lomo:LegalRule</a></li><li class="tocline"><a class="tocxref" href="#TPrescriptiveRule"><bdi class="secno">1.1.10 </bdi>lomo:PrescriptiveRule</a></li><li class="tocline"><a class="tocxref" href="#TConcept"><bdi class="secno">1.1.11 </bdi>skos:Concept</a></li></ol></li><li class="tocline"><a class="tocxref" href="#datatypes"><bdi class="secno">1.2 </bdi>Datatypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#TCompountConditionOperator"><bdi class="secno">1.2.1 </bdi>Operator</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#voorbeelden"><bdi class="secno">2. </bdi>Voorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#belanghebbende-van-bijstand-begrip"><bdi class="secno">2.1 </bdi>Belanghebbende van bijstand (begrip)</a></li><li class="tocline"><a class="tocxref" href="#college-van-burgemeester-en-wethouders-begrip"><bdi class="secno">2.2 </bdi>College van burgemeester en wethouders (begrip)</a></li><li class="tocline"><a class="tocxref" href="#individuele-inkomenstoeslag-begrip"><bdi class="secno">2.3 </bdi>Individuele inkomenstoeslag (begrip)</a></li><li class="tocline"><a class="tocxref" href="#langdurig-laag-inkomen-begrip"><bdi class="secno">2.4 </bdi>Langdurig laag inkomen (begrip)</a></li><li class="tocline"><a class="tocxref" href="#pensioengerechtigde-leeftijd-begrip"><bdi class="secno">2.5 </bdi>Pensioengerechtigde leeftijd (begrip)</a></li><li class="tocline"><a class="tocxref" href="#vermogen-voor-bijstand-begrip"><bdi class="secno">2.6 </bdi>Vermogen voor bijstand (begrip)</a></li><li class="tocline"><a class="tocxref" href="#verlenen-individuele-inkomenstoeslag-regel"><bdi class="secno">2.7 </bdi>Verlenen individuele inkomenstoeslag (regel)</a></li></ol></li></ol></nav>
+    <section id="toepassingsprofiel"><div class="header-wrapper"><h2 id="x1-toepassingsprofiel"><bdi class="secno">1. </bdi>Toepassingsprofiel</h2><a class="self-link" href="#toepassingsprofiel" aria-label="Permalink for Section 1."></a></div>
+<p>
+      </p><figure id="fig-logisch-model-tekstueel-echelon">
+        <img src="echelon1-nl.svg" alt="">
+        <figcaption><a class="self-link" href="#fig-logisch-model-tekstueel-echelon">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">logisch model tekstueel echelon</span></figcaption>
+      </figure>
+    <p></p>
+<p>
+      </p><figure id="fig-gebruikte-vocabulaires-voor-het-tekstueel-echelon">
+        <img src="echelon1.svg" alt="">
+        <figcaption><a class="self-link" href="#fig-gebruikte-vocabulaires-voor-het-tekstueel-echelon">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">gebruikte vocabulaires voor het tekstueel echelon</span></figcaption>
+      </figure>
+    <p></p>
+<section id="klassen"><div class="header-wrapper"><h3 id="x1-1-klassen"><bdi class="secno">1.1 </bdi>Klassen</h3><a class="self-link" href="#klassen" aria-label="Permalink for Section 1.1"></a></div>
+<section id="eli-expression"><div class="header-wrapper"><h4 id="TExpression"><bdi class="secno">1.1.1 </bdi>eli:Expression</h4><a class="self-link" href="#TExpression" aria-label="Permalink for Section 1.1.1"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://data.europa.eu/eli/ontology#Expression">http://data.europa.eu/eli/ontology#Expression</a></th>
+</tr>
+</thead>
+</table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+</table></div>
+</section><section id="lg-compoundcondition"><div class="header-wrapper"><h4 id="TCompoundCondition"><bdi class="secno">1.1.2 </bdi>lg:CompoundCondition</h4><a class="self-link" href="#TCompoundCondition" aria-label="Permalink for Section 1.1.2"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://bp4mc2.org/legalgrammar/CompoundCondition">http://bp4mc2.org/legalgrammar/CompoundCondition</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="#TCondition">lg:Condition</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lg:conditionList</td>
+<td>1..1</td>
+<td></td>
+</tr>
+<tr>
+<td>lg:operator</td>
+<td>1..1</td>
+<td><a href="#TCompountConditionOperator">Operator</a></td>
+</tr>
+</tbody></table></div>
+</section><section id="lg-condition"><div class="header-wrapper"><h4 id="TCondition"><bdi class="secno">1.1.3 </bdi>lg:Condition</h4><a class="self-link" href="#TCondition" aria-label="Permalink for Section 1.1.3"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://bp4mc2.org/legalgrammar/Condition">http://bp4mc2.org/legalgrammar/Condition</a></th>
+</tr>
+</thead>
+</table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+</table></div>
+</section><section id="lg-elementarycondition"><div class="header-wrapper"><h4 id="TElementaryCondition"><bdi class="secno">1.1.4 </bdi>lg:ElementaryCondition</h4><a class="self-link" href="#TElementaryCondition" aria-label="Permalink for Section 1.1.4"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://bp4mc2.org/legalgrammar/ElementaryCondition">http://bp4mc2.org/legalgrammar/ElementaryCondition</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="#TCondition">lg:Condition</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lg:references</td>
+<td>0..n</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+<tr>
+<td>lg:condition</td>
+<td>1..1</td>
+<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">langString</a></td>
+</tr>
+</tbody></table></div>
+</section><section id="lomo-action"><div class="header-wrapper"><h4 id="TAction"><bdi class="secno">1.1.5 </bdi>lomo:Action</h4><a class="self-link" href="#TAction" aria-label="Permalink for Section 1.1.5"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://data.europa.eu/leg/lomo#Action">http://data.europa.eu/leg/lomo#Action</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+</table></div>
+</section><section id="lomo-constitutiverule"><div class="header-wrapper"><h4 id="TConstitutiveRule"><bdi class="secno">1.1.6 </bdi>lomo:ConstitutiveRule</h4><a class="self-link" href="#TConstitutiveRule" aria-label="Permalink for Section 1.1.6"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://data.europa.eu/leg/lomo#ConstitutiveRule">http://data.europa.eu/leg/lomo#ConstitutiveRule</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="#TLegalRule">lomo:LegalRule</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+</table></div>
+</section><section id="lomo-definition"><div class="header-wrapper"><h4 id="TDefinition"><bdi class="secno">1.1.7 </bdi>lomo:Definition</h4><a class="self-link" href="#TDefinition" aria-label="Permalink for Section 1.1.7"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://data.europa.eu/leg/lomo#Definition">http://data.europa.eu/leg/lomo#Definition</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="#TConstitutiveRule">lomo:ConstitutiveRule</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lomo:defines</td>
+<td>1..1</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+</tbody></table></div>
+</section><section id="lomo-institutionalrule"><div class="header-wrapper"><h4 id="TInstitutionalRule"><bdi class="secno">1.1.8 </bdi>lomo:InstitutionalRule</h4><a class="self-link" href="#TInstitutionalRule" aria-label="Permalink for Section 1.1.8"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://data.europa.eu/leg/lomo#InstitutionalRule">http://data.europa.eu/leg/lomo#InstitutionalRule</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="#TConstitutiveRule">lomo:ConstitutiveRule</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lg:secondarySubject</td>
+<td>1..1</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+<tr>
+<td>lg:legalEffect</td>
+<td>0..n</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+<tr>
+<td>lg:object</td>
+<td>0..n</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+<tr>
+<td>lg:empowers</td>
+<td>0..n</td>
+<td><a href="#TAction">lomo:Action</a></td>
+</tr>
+<tr>
+<td>lg:primarySubject</td>
+<td>1..1</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+</tbody></table></div>
+</section><section id="lomo-legalrule"><div class="header-wrapper"><h4 id="TLegalRule"><bdi class="secno">1.1.9 </bdi>lomo:LegalRule</h4><a class="self-link" href="#TLegalRule" aria-label="Permalink for Section 1.1.9"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://data.europa.eu/leg/lomo#LegalRule">http://data.europa.eu/leg/lomo#LegalRule</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lomo:establishedIn</td>
+<td>0..n</td>
+<td><a href="#TExpression">eli:Expression</a></td>
+</tr>
+<tr>
+<td>lg:condition</td>
+<td>0..1</td>
+<td><a href="#TCondition">lg:Condition</a></td>
+</tr>
+</tbody></table></div>
+</section><section id="lomo-prescriptiverule"><div class="header-wrapper"><h4 id="TPrescriptiveRule"><bdi class="secno">1.1.10 </bdi>lomo:PrescriptiveRule</h4><a class="self-link" href="#TPrescriptiveRule" aria-label="Permalink for Section 1.1.10"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://data.europa.eu/leg/lomo#PrescriptiveRule">http://data.europa.eu/leg/lomo#PrescriptiveRule</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Specialisatie van</td>
+<td><a href="#TLegalRule">lomo:LegalRule</a></td>
+</tr>
+</tbody></table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>lg:secondarySubject</td>
+<td>1..1</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+<tr>
+<td>lg:legalEffect</td>
+<td>0..n</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+<tr>
+<td>lomo:produces</td>
+<td>0..n</td>
+<td><a href="#TAction">lomo:Action</a></td>
+</tr>
+<tr>
+<td>lg:object</td>
+<td>0..n</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+<tr>
+<td>lg:primarySubject</td>
+<td>1..1</td>
+<td><a href="#TConcept">skos:Concept</a></td>
+</tr>
+</tbody></table></div>
+</section><section id="skos-concept"><div class="header-wrapper"><h4 id="TConcept"><bdi class="secno">1.1.11 </bdi>skos:Concept</h4><a class="self-link" href="#TConcept" aria-label="Permalink for Section 1.1.11"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>URI</th>
+<th><a href="http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a></th>
+</tr>
+</thead>
+</table></div>
+<div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Eigenschap</th>
+<th>Kardinaliteit</th>
+<th>Datatype/klasse</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>skos:prefLabel</td>
+<td>1..1</td>
+<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">langString</a></td>
+</tr>
+</tbody></table></div>
+</section></section><section id="datatypes"><div class="header-wrapper"><h3 id="x1-2-datatypes"><bdi class="secno">1.2 </bdi>Datatypes</h3><a class="self-link" href="#datatypes" aria-label="Permalink for Section 1.2"></a></div>
+<section id="operator"><div class="header-wrapper"><h4 id="TCompountConditionOperator"><bdi class="secno">1.2.1 </bdi>Operator</h4><a class="self-link" href="#TCompountConditionOperator" aria-label="Permalink for Section 1.2.1"></a></div><div class="overlarge"><table class="simple data">
+<thead>
+<tr>
+<th>Waarde</th>
+<th>Omschrijving</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OF</td>
+<td></td>
+</tr>
+<tr>
+<td>EN</td>
+<td></td>
+</tr>
+</tbody></table></div>
+</section></section></section>
+    <section id="voorbeelden"><div class="header-wrapper"><h2 id="x2-voorbeelden"><bdi class="secno">2. </bdi>Voorbeelden</h2><a class="self-link" href="#voorbeelden" aria-label="Permalink for Section 2."></a></div>
+   
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8"><style type="text/css">
+
+        span.condition { background-color: #33ff33;}
+        span.normexpression { background-color: #ff66ff;}
+        span.primarysubject { background-color: #ffff00;}
+        span.secondarysubject { background-color: #eeee33;}
+        span.object { background-color: #ff6666;}
+        span.legaleffect { background-color: #00ffff;}
+        span.term { background-color: #c0c0c0}
+        span.definition { background-color: #9090ff}
+        ul {
+            list-style: none;
+            padding-left: 2em;
+        }
+
+        li > p {
+            position: relative;
+        }
+
+        li > p > span:first-child {
+            position: absolute;
+            right: 100%;
+            margin-right: 0.5em;
+            font-weight: bold;
+        }
+      
+</style>
+   
+      
+      <section id="belanghebbende-van-bijstand-begrip"><div class="header-wrapper"><h3 id="x2-1-belanghebbende-van-bijstand-begrip"><bdi class="secno">2.1 </bdi>Belanghebbende van bijstand (begrip)</h3><a class="self-link" href="#belanghebbende-van-bijstand-begrip" aria-label="Permalink for Section 2.1"></a></div>
+      </section><section id="college-van-burgemeester-en-wethouders-begrip"><div class="header-wrapper"><h3 id="x2-2-college-van-burgemeester-en-wethouders-begrip"><bdi class="secno">2.2 </bdi>College van burgemeester en wethouders (begrip)</h3><a class="self-link" href="#college-van-burgemeester-en-wethouders-begrip" aria-label="Permalink for Section 2.2"></a></div>
+      </section><section id="individuele-inkomenstoeslag-begrip"><div class="header-wrapper"><h3 id="x2-3-individuele-inkomenstoeslag-begrip"><bdi class="secno">2.3 </bdi>Individuele inkomenstoeslag (begrip)</h3><a class="self-link" href="#individuele-inkomenstoeslag-begrip" aria-label="Permalink for Section 2.3"></a></div>
+      </section><section id="langdurig-laag-inkomen-begrip"><div class="header-wrapper"><h3 id="x2-4-langdurig-laag-inkomen-begrip"><bdi class="secno">2.4 </bdi>Langdurig laag inkomen (begrip)</h3><a class="self-link" href="#langdurig-laag-inkomen-begrip" aria-label="Permalink for Section 2.4"></a></div>
+      </section><section id="pensioengerechtigde-leeftijd-begrip"><div class="header-wrapper"><h3 id="x2-5-pensioengerechtigde-leeftijd-begrip"><bdi class="secno">2.5 </bdi>Pensioengerechtigde leeftijd (begrip)</h3><a class="self-link" href="#pensioengerechtigde-leeftijd-begrip" aria-label="Permalink for Section 2.5"></a></div>
+      </section><section id="vermogen-voor-bijstand-begrip"><div class="header-wrapper"><h3 id="x2-6-vermogen-voor-bijstand-begrip"><bdi class="secno">2.6 </bdi>Vermogen voor bijstand (begrip)</h3><a class="self-link" href="#vermogen-voor-bijstand-begrip" aria-label="Permalink for Section 2.6"></a></div>
+      </section><section id="verlenen-individuele-inkomenstoeslag-regel"><div class="header-wrapper"><h3 id="x2-7-verlenen-individuele-inkomenstoeslag-regel"><bdi class="secno">2.7 </bdi>Verlenen individuele inkomenstoeslag (regel)</h3><a class="self-link" href="#verlenen-individuele-inkomenstoeslag-regel" aria-label="Permalink for Section 2.7"></a></div>
+      <div class="overlarge"><table class="simple data">
+         <tbody><tr>
+            <th>Type</th>
+            <td>Bevoegdheidsregel</td>
+         </tr>
+         <tr>
+            <th>Bevoegdheid tot</th>
+            <td>Verlenen individuele inkomenstoeslag</td>
+         </tr>
+         <tr>
+            <th>Door</th>
+            <td>College van burgemeester en wethouders</td>
+         </tr>
+         <tr>
+            <th>Jegens</th>
+            <td>Belanghebbende van bijstand</td>
+         </tr>
+      </tbody></table></div>
+   
+</section></section>
+  
+
+<p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Terug naar boven">↑</abbr></a>
+  </p><script id="respec-highlight-vars">(() => {
+// @ts-check
+
+if (document.respec) {
+  document.respec.ready.then(setupVarHighlighter);
+} else {
+  setupVarHighlighter();
+}
+
+function setupVarHighlighter() {
+  document
+    .querySelectorAll("var")
+    .forEach(varElem => varElem.addEventListener("click", highlightListener));
+}
+
+/**
+ * @param {MouseEvent} ev
+ */
+function highlightListener(ev) {
+  ev.stopPropagation();
+  const varElem = /** @type {HTMLElement} */ (ev.target);
+  const hightligtedElems = highlightVars(varElem);
+  const resetListener = () => {
+    const hlColor = getHighlightColor(varElem);
+    hightligtedElems.forEach(el => removeHighlight(el, hlColor));
+    [...HL_COLORS.keys()].forEach(key => HL_COLORS.set(key, true));
+  };
+  if (hightligtedElems.length) {
+    document.body.addEventListener("click", resetListener, { once: true });
+  }
+}
+
+// availability of highlight colors. colors from var.css
+const HL_COLORS = new Map([
+  ["respec-hl-c1", true],
+  ["respec-hl-c2", true],
+  ["respec-hl-c3", true],
+  ["respec-hl-c4", true],
+  ["respec-hl-c5", true],
+  ["respec-hl-c6", true],
+  ["respec-hl-c7", true],
+]);
+
+/**
+ * @param {HTMLElement} target
+ */
+function getHighlightColor(target) {
+  // return current colors if applicable
+  const { value } = target.classList;
+  const re = /respec-hl-\w+/;
+  const activeClass = re.test(value) && value.match(re);
+  if (activeClass) return activeClass[0];
+
+  // first color preference
+  if (HL_COLORS.get("respec-hl-c1") === true) return "respec-hl-c1";
+
+  // otherwise get some other available color
+  return [...HL_COLORS.keys()].find(c => HL_COLORS.get(c)) || "respec-hl-c1";
+}
+
+/**
+ * @param {HTMLElement} varElem
+ */
+function highlightVars(varElem) {
+  const textContent = norm(varElem.textContent);
+  const parent = /** @type {HTMLElement} */ (
+    varElem.closest(".algorithm, section")
+  );
+  if (!parent) return [];
+  const highlightColor = getHighlightColor(varElem);
+
+  const varsToHighlight = [...parent.querySelectorAll("var")].filter(
+    el =>
+      norm(el.textContent) === textContent &&
+      el.closest(".algorithm, section") === parent
+  );
+
+  // update availability of highlight color
+  const colorStatus = varsToHighlight[0].classList.contains("respec-hl");
+  HL_COLORS.set(highlightColor, colorStatus);
+
+  // highlight vars
+  if (colorStatus) {
+    varsToHighlight.forEach(el => removeHighlight(el, highlightColor));
+    return [];
+  } else {
+    varsToHighlight.forEach(el => addHighlight(el, highlightColor));
+  }
+  return varsToHighlight;
+}
+
+/**
+ * @param {HTMLElement} el
+ * @param {string} highlightColor
+ */
+function removeHighlight(el, highlightColor) {
+  el.classList.remove("respec-hl", highlightColor);
+  // clean up empty class attributes so they don't come in export
+  if (!el.classList.length) el.removeAttribute("class");
+}
+
+/**
+ * @param {HTMLElement} elem
+ * @param {string} highlightColor
+ */
+function addHighlight(elem, highlightColor) {
+  elem.classList.add("respec-hl", highlightColor);
+}
+
+/**
+ * Same as `norm` from src/core/utils, but our build process doesn't allow
+ * imports in runtime scripts, so duplicated here.
+ * @param {string} str
+ */
+function norm(str) {
+  return str.trim().replace(/\s+/g, " ");
+}
+})()</script><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement | null} */
+  let panel = null;
+  /**
+   * @param {KeyboardEvent|MouseEvent} event
+   */
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (
+      type === "keydown" &&
+      /** @type {KeyboardEvent} */ (event).key !== "Enter"
+    )
+      return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement | null} */
+        const dfn = target.closest("dfn, .index-term");
+        if (!dfn?.id) break;
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        if (!panel) break;
+        const coords = deriveCoordinates(
+          /** @type {MouseEvent|KeyboardEvent} */ (event)
+        );
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        if (panel) {
+          panel.style.left = "";
+          panel.style.top = "";
+          panel.classList.add("docked");
+        }
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+
+    const panel = /** @type {HTMLElement} */ (target.closest(".dfn-panel"));
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement | null} */
+    const caret = panel.querySelector(".caret");
+    if (caret) caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  /**
+   * @param {KeyboardEvent} event
+   */
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement | null} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
